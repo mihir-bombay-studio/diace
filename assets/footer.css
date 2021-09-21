@@ -1,0 +1,53 @@
+footer{
+	background-color: var(--background-grey);
+      padding-top: 52px;
+      padding-bottom: 26px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+}
+
+.footer-part{
+	max-width: 25%;
+}
+
+.social-icon:last-child{
+	margin-left: 17px;
+}
+
+.btw {
+    margin: 16px 0;
+}
+
+.brand-logo-footer{
+	margin-bottom: 25px;
+    display: block;
+}
+
+.footer-title {
+    margin-bottom: 26px;
+  margin-top: 10px;
+    letter-spacing: 0.8px;
+}
+
+.footer-nav-item {
+    margin: 8px 0;
+}
+
+.mailto-email a{
+	text-decoration: underline;
+  margin-bottom: 26px;
+    display: block;
+}
+
+.footer-lower{
+	margin-top: 26px;
+}
+
+.footer-lower-left{
+	width: 40%;
+}
+
+.footer-lower-right{
+	width: 25%;
+}

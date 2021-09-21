@@ -1,0 +1,121 @@
+{{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
+
+{% assign product_handle = section.settings.featured_collection %}
+
+<div class="featured-collection-wrapper container">
+  <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
+  <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
+  
+  <div class="featured-products flex-box justify-between">
+  	{% for product in collections[product_handle].products limit: 3 %}
+    <div class="featured-product-card">
+      <div class="featured-product-img rel">
+    	<img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+        <div class="fp-hover-text flex-box align-center">
+          <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+          <a href="" class="hover-text bold">KOPEN</a>
+        </div>
+      </div>
+      <div class="product-title-price flex-box justify-between">
+      	<div class="product-title semibold">{{ product.title | escape  }}</div>
+        <div class="product-compare-to-and-price">
+          <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
+          <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
+        </div>
+      </div>
+      <div class="product-colors flex-box justify-between light">
+          <div class="product-color">
+            <span>Kleur: </span>
+            <span>
+               Paars
+            </span>
+          </div>
+          <div class="other-available-colors">
+            <a class="featured-product-link" href="{{ product.url }}">Meer kleuren beschikbaar</a>
+          </div>
+        </div>
+        
+    </div>
+    {% endfor %}
+  </div>
+  
+  {% for block in section.blocks %}
+  {% if block.type == "button" %}
+  {%- if block.settings.button_label != blank -%}
+  <a href="{{ block.settings.button_link }}" class="btn center-it {% if block.settings.button-color == 'grey' %}btn-grey{% else %}btn-yellow{% endif %}">{{ block.settings.button_label | escape }}</a>
+  {%- endif -%}
+  {% endif %}
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "name": "Featured Collection",
+    "settings": [
+		{
+          "type": "text",
+          "id": "featured_collection_title",
+          "label": "Featured Collection Title"
+        },
+		{
+          "type": "text",
+          "id": "featured_collection_desc",
+          "label": "Featured Collection Desc"
+        },
+		{
+          "type": "collection",
+          "id": "featured_collection",
+          "label": "Featured Collection"
+        }
+	],
+	"blocks": [
+	{
+          "type": "button",
+          "name": "Button",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "text",
+              "id": "button_label",
+              "default": "Button label",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+              "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+            },
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+            },
+            {
+              "type": "select",
+              "id": "button-color",
+              "options": [
+                {
+                  "value": "grey",
+                  "label": "Grey"
+                },
+                {
+                  "value": "yellow",
+                  "label": "Yellow"
+                }
+              ],
+              "default": "grey",
+              "label": "Grey"
+            }
+          ]
+        }
+  ],
+  "presets": [
+    {
+      "name": "Featured Collection",
+		"category":"section"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

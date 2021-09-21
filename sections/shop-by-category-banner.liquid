@@ -1,0 +1,84 @@
+{{ 'shop-by-category-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="shop-by-category-banner-wrapper container">
+  <div class="shop-by-category-banner flex-box justify-between">
+    <div class="banner-left">
+      <div class="banner-title bold">{{ section.settings.banner_title }}</div>
+      <div class="banner-desc light">{{ section.settings.banner_desc }}</div>
+      {% for block in section.blocks %}
+      {% if block.type == "button" %}
+      {%- if block.settings.button_label != blank -%}
+      <div class="banner-link">
+      <a href="{{ block.settings.button_link }}" class="bold">{{ block.settings.button_label | escape }}</a>
+      <span class="right-black-chveron">{% include 'icon-black-right-chevron' %}</span>
+      </div>
+      {%- endif -%}
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="banner-right">
+    <img 
+         src="{{ section.settings.banner_img | img_url: '533x' }}"
+         alt="{{ section.settings.banner_img.alt | escape }}"
+         loading="lazy"
+         >
+  </div>
+  </div>
+  
+</div>
+
+{% schema %}
+  {
+    "name": "Shop By Category Banner",
+    "settings": [
+		{
+      "type": "image_picker",
+      "id": "banner_img",
+      "label": "Banner Image"
+    },
+	{
+      "type": "text",
+      "id": "banner_title",
+      "label": "Banner Title"
+    },
+	{
+      "type": "text",
+      "id": "banner_desc",
+      "label": "Banner Desc"
+    }
+	],
+	"blocks": [
+		{
+          "type": "button",
+          "name": "Button",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "text",
+              "id": "button_label",
+              "default": "Button label",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+              "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+            },
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+            }
+          ]
+        }
+	],
+	"presets": [
+    {
+      "name": "Shop By Category Banner",
+		"category":"section"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

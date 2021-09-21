@@ -1,0 +1,76 @@
+{{ 'our-values.css' | asset_url | stylesheet_tag }}
+
+<div class="our-values-wrapper container">
+	<h2 class="our-values-heading bold">{{section.settings.our_value_heading}}</h2>
+  <div class="our-values flex-box justify-between">
+  	{% for block in section.blocks %}
+      {% if block.type == "value" %}
+    <div class="value flex-box">
+      <div class="value-svg">
+        {{ block.settings.value_svg }}
+      </div>
+      <div class="value-title bold">
+      	{{ block.settings.value_title }}
+      </div>
+      <div class="value-desc light">
+      	{{ block.settings.value_desc }}
+      </div>
+    </div>
+      
+      {% endif %}
+      {% endfor %}
+    
+  </div>
+  	
+</div>
+{% schema %}
+  {
+  "name": "Three Blocks",
+  "settings": [
+    {
+      "type": "text",
+      "id": "our_value_heading",
+      "label": "Our Value Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "value",
+      "name": "Value",
+      "limit": 3,
+      "settings": [
+        {
+          "id": "value_svg",
+          "type": "text",
+          "label": "Value SVG"
+
+        },
+		{
+          "id": "value_title",
+          "type": "text",
+          "label": "Value Title"
+
+        },
+		{
+          "id": "value_desc",
+          "type": "text",
+          "label": "Value Description"
+
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Three Blocks",
+		"category":"section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

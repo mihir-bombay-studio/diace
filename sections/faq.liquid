@@ -1,0 +1,124 @@
+{{ 'faq.css' | asset_url | stylesheet_tag }}
+
+<div class="faq-wrapper container">
+  <h2 class="faq-heading bold">{{section.settings.faq_heading}}</h2>
+  
+  {% for block in section.blocks %}
+  {% if block.type == "faq" %}
+  <div class="accordion question semibold flex-box justify-between">
+    <div class="question-left">{{ block.settings.question }}</div>
+    <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+  </div>
+  <div class="panel answer light">{{ block.settings.answer }}</div>
+  {% endif %}
+  {% endfor %}
+  
+  {% for block in section.blocks %}
+  {% if block.type == "button" %}
+  {%- if block.settings.button_label != blank -%}
+  <a href="{{ block.settings.button_link }}" class="btn center-it {% if block.settings.button-color == 'grey' %}btn-grey{% else %}btn-yellow{% endif %}">{{ block.settings.button_label | escape }}</a>
+  {%- endif -%}
+  {% endif %}
+  {% endfor %}
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.classList.remove("panel-bottom-border");
+    } else {
+      var new_height = panel.scrollHeight + 16;
+      panel.style.maxHeight = new_height + "px";
+      panel.classList.add("panel-bottom-border");
+    } 
+    this.classList.toggle("active");
+  });
+}
+</script>
+
+{% schema %}
+  {
+  "name": "FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "faq_heading",
+      "label": "FAQ Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "limit": 5,
+      "settings": [
+        {
+          "id": "question",
+          "type": "text",
+          "label": "Question"
+
+        },
+		{
+          "id": "answer",
+          "type": "text",
+          "label": "Answer"
+
+        }
+      ]
+    },
+	{
+          "type": "button",
+          "name": "Button",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "text",
+              "id": "button_label",
+              "default": "Button label",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+              "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+            },
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+            },
+            {
+              "type": "select",
+              "id": "button-color",
+              "options": [
+                {
+                  "value": "grey",
+                  "label": "Grey"
+                },
+                {
+                  "value": "yellow",
+                  "label": "Yellow"
+                }
+              ],
+              "default": "grey",
+              "label": "Grey"
+            }
+          ]
+        }
+  ],
+  "presets": [
+    {
+      "name": "FAQ",
+		"category":"section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,83 @@
+{{ 'product-block.css' | asset_url | stylesheet_tag }}
+
+<div class="product-block-wrapper container">
+  <div class="product-block flex-box justify-between">
+    <div class="product-block-left">
+      <div class="slider-for">
+        {% for image in product.images %}
+        <img src="{{ image.src | img_url: 'master' }}" alt="{{ product.title | escape }}" style="width: 100%;">
+        {% endfor %}
+      </div>
+      <div class="slider-nav">
+        {% for image in product.images %}
+        <img src="{{ image.src | img_url: 'master' }}" alt="{{ product.title | escape }}" style="width: 100%;">
+        {% endfor %}
+      </div>
+    </div>
+    <div class="product-block-right">
+      <h2 class="product-title bold">{{ product.title }}</h2>
+      <div class="product-price-wrapper">
+        <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
+        <span class="product-price semibold">{{ product.price | money }}</span>
+        <span class="incl-tax light">incl. BTW</span>
+      </div>
+      <div class="product-desc light">{{ product.description }}</div>
+      <div class="product-qty-add-to-cart-wrapper flex-box justify-between">
+        <div class="product-qty semibold flex-box">
+          <span class="qty-minus qty-nav flex-box align-center justify-center"><span>-</span></span>
+          <span class="qty flex-box align-center justify-center" data-qty="1">1</span>
+          <span class="qty-plus qty-nav flex-box align-center justify-center"><span>+</span></span>
+        </div>
+        <div id="add-to-cart" class="add-to-cart-btn btn btn-yellow bold flex-box justify-center align-center"><span>TOEVOEGEN AAN WINKELMANDJE</span></div>
+      </div>
+      <div class="cont-shopping light">
+        <a href="#">Verder winkelen</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('.qty-minus').click(function() {
+  	var data_qty = parseInt($(this).next().data('qty'));
+    if( data_qty != 1 )
+    {
+    	data_qty = data_qty - 1;
+      $(this).next().data('qty', data_qty);
+      $(this).next().html(data_qty);
+    }
+  });
+  
+  $('.qty-plus').click(function() {
+  	var data_qty = parseInt($(this).prev().data('qty'));
+    	data_qty = data_qty + 1;
+    	$(this).prev().data('qty', data_qty);
+      $(this).prev().html(data_qty);
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Product-Block",
+    "settings": [
+		{
+            "type": "text",
+            "id": "featured_collection_title",
+            "label": "Featured Collection Title"
+		}
+	],
+	"presets": [
+    {
+      "name": "Product-Block",
+		"category":"section"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

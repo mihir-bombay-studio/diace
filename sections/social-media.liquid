@@ -1,0 +1,158 @@
+{{ 'social-media.css' | asset_url | stylesheet_tag }}
+
+<div class="social-media-wrapper container">
+  <div class="social-media flex-box justify-between">
+    <div class="sm-left rel">
+    	<img 
+            src="{{ section.settings.sm_main_img | img_url: '533x' }}"
+            alt="{{ section.settings.sm_main_img.alt | escape }}"
+            loading="lazy"
+          >
+      <div class="text-over-sm bold">{{section.settings.text_over_img}}</div>
+      <div class="bg-yellow-dots dots-left-down">
+      	{% include 'bg-grey-dots' %}
+      </div>
+      <div class="sm-hover-text flex-box align-center">
+          <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+          <a href="#" class="hover-text bold">JOIN US @FACEBOOK</a>
+        </div>
+    </div>
+    <div class="sm-right flex-box justify-between">
+      {% for block in section.blocks %}
+      {% if block.type == "sm_other_imgs" %}
+      <div class="sm-other-img rel">
+      	<img 
+            src="{{ block.settings.sm_other_img | img_url: '533x' }}"
+            alt="{{ block.settings.sm_other_img.alt | escape }}"
+            loading="lazy"
+          >
+        {% if block.settings.sm_logo == 'facebook' %}
+        <a href="{{block.settings.sm_link}}" target="_blank" class="social-logo">
+        	{% include 'icon-fb' %}
+        </a>
+        {% elsif block.settings.sm_logo == 'instagram' %}
+        <a href="{{block.settings.sm_link}}" target="_blank" class="social-logo">
+        	{% include 'icon-insta' %}
+        </a>
+        {% endif %}
+      </div>
+      {% endif %}
+      {% endfor %}
+      {% for block in section.blocks %}
+      {% if block.type == "sm_text" %}
+      	<div class="sm-other-img sm-text-block flex-box align-center justify-center text-center semibold">
+          {{block.settings.sm_text}}
+      	</div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="socila-media-lower">
+    <h2 class="text-center newsletter-subscription-heading bold">{{section.settings.subscription_heading}}</h2>
+    <div class="text-center newsletter-subscription-desc light">{{section.settings.subscription_desc}}</div>
+    <div class="subscription-form flex-box">
+      {% form 'contact' %}
+      {%- if form.errors -%}
+      {{ form.errors | default_errors  }}
+      {%- endif -%}
+      {%- if form.posted_successfully? -%}
+
+      {%- endif -%}
+      {% endform %}
+      <input class="subscription-form-input" type="email" name="contact[email]" placeholder="youremail@mail.com" required>
+      <button class="submit-btn btn bold" type="submit" form="contact_form" value="Submit">VERZENDEN</button>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+  "name": "Social Media",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "sm_main_img",
+      "label": "Social Main Image"
+    },
+	{
+      "type": "text",
+      "id": "text_over_img",
+      "label": "Text Over Image"
+    },
+	{
+		"type": "text",
+      "id": "subscription_heading",
+      "label": "Subscription Heading"
+	},
+	{
+		"type": "text",
+      "id": "subscription_desc",
+      "label": "Subscription Desc"
+	}
+  ],
+  "blocks": [
+    {
+      "type": "sm_other_imgs",
+      "name": "Social Other Img",
+      "limit": 3,
+      "settings": [
+        {
+          "id": "sm_other_img",
+          "type": "image_picker",
+          "label": "Social Other Img"
+
+        },
+		{
+			"id": "sm_logo",
+			"type": "select",
+			"options": [
+            {
+              "value": "facebook",
+              "label": "Facebook"
+            },
+            {
+              "value": "instagram",
+              "label": "Instagram"
+            },
+			{
+				"value": "none",
+				"label": "None"
+			}
+          ],
+          "default": "none",
+          "label": "None"
+		},
+		{
+			"id": "sm_link",
+			"type": "text",
+			"label": "Social Media Link"
+		}
+      ]
+    },
+	{
+		"type": "sm_text",
+      "name": "SM text",
+		"limit": 1,
+		"settings": [
+			{
+				"id": "sm_text",
+			"type": "text",
+			"label": "Social Media Text"
+			}
+		]
+	}
+  ],
+  "presets": [
+    {
+      "name": "Social Media",
+		"category":"section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

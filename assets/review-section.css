@@ -1,0 +1,41 @@
+.review-part {
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 72px 14px 0;
+    line-height: 24px;
+    height: 278px;
+    width: 48%;
+    margin-bottom: 16px;
+    border: 2px solid var(--background-yellow);
+}
+
+.review-text {
+    line-height: 24px;
+}
+
+.review-btn {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    background-color: #FFFFFF;
+}
+
+.review-btn:hover{
+	background-color: var(--background-grey);
+}
+
+.review-wrapper{
+	margin-bottom: 220px;
+}
+
+.review .hero-left{
+	height: 572px;
+}
+
+.review .hero-left img{
+	height: 100%;
+}
+
+.review-wrapper .dots-left-down {
+    bottom: -60px;
+}

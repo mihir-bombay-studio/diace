@@ -1,0 +1,154 @@
+{{ 'latest-blogs.css' | asset_url | stylesheet_tag }}
+
+<div class="latest-blogs-wrapper container">
+	<h2 class="latest-blogs-heading bold">{{section.settings.latest_blogs_heading}}</h2>
+  	<div class="latest-blogs flex-box justify-between">
+  	{% for block in section.blocks %}
+      {% if block.type == "latest_blog" %}
+    <div class="latest-blog">
+      <div class="blog-img">
+        
+          <img 
+            src="{{ block.settings.blog_img | img_url: '533x' }}"
+            alt="{{ block.settings.blog_img.alt | escape }}"
+            loading="lazy"
+          >
+      </div>
+      <div class="blog-date-read-time flex-box justify-between light">
+        <div class="blog-date">{{ block.settings.blog_date }}</div>
+        <div class="blog-read-time">{{ block.settings.read_time }}</div>
+      </div>
+      <div class="blog-topic bold">
+      	{{ block.settings.blog_topic }}
+      </div>
+      <div class="blog-title semibold">
+      	{{ block.settings.blog_title }}
+      </div>
+      <div class="blog-desc light">
+      	{{ block.settings.blog_desc }}
+      </div>
+      <a href="{{ block.settings.blog_link }}" class="blog-link light">Verder lezen >></a>
+    </div>
+      
+      {% endif %}
+      {% endfor %}
+    
+  </div>
+  {% for block in section.blocks %}
+  {% if block.type == "button" %}
+  {%- if block.settings.button_label != blank -%}
+  <a href="{{ block.settings.button_link }}" class="btn center-it {% if block.settings.button-color == 'grey' %}btn-grey{% else %}btn-yellow{% endif %}">{{ block.settings.button_label | escape }}</a>
+  {%- endif -%}
+  {% endif %}
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+  "name": "Latest Blogs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "latest_blogs_heading",
+      "label": "Latest Blog Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "latest_blog",
+      "name": "Latest Blog",
+      "limit": 3,
+      "settings": [
+        {
+          "id": "blog_img",
+          "type": "image_picker",
+          "label": "Blog Image"
+
+        },
+		{
+          "id": "blog_date",
+          "type": "text",
+          "label": "Blog Date"
+
+        },
+		{
+          "id": "read_time",
+          "type": "text",
+          "label": "Read Time"
+
+        },
+		{
+          "id": "blog_topic",
+          "type": "text",
+          "label": "Blog Topic"
+
+        },
+		{
+          "id": "blog_title",
+          "type": "text",
+          "label": "Blog Title"
+
+        },
+		{
+          "id": "blog_desc",
+          "type": "text",
+          "label": "Blog Desc"
+
+        },
+		{
+          "id": "blog_link",
+          "type": "url",
+          "label": "Blog Link"
+        }
+      ]
+    },
+	{
+          "type": "button",
+          "name": "Button",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "text",
+              "id": "button_label",
+              "default": "Button label",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+              "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+            },
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+            },
+            {
+              "type": "select",
+              "id": "button-color",
+              "options": [
+                {
+                  "value": "grey",
+                  "label": "Grey"
+                },
+                {
+                  "value": "yellow",
+                  "label": "Yellow"
+                }
+              ],
+              "default": "grey",
+              "label": "Grey"
+            }
+          ]
+        }
+  ],
+  "presets": [
+    {
+      "name": "Latest Blogs",
+		"category":"section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

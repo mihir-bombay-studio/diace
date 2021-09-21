@@ -1,0 +1,122 @@
+{{ 'header.css' | asset_url | stylesheet_tag }}
+
+<header>
+  <span class="header-anouncement flex-box semibold justify-center align-center">
+			{{ section.settings.announcement_text }}
+			<span id="header-anouncement-close" class="flex-box">{% include 'icon-close-circle' %}</span>
+		</span>
+  <div class="header-wrapper">
+    <div class="container flex-box justify-between">
+    <nav class="left-wrap">
+      <a href="/">
+        {% if section.settings.brand_logo != blank %}
+        <img
+             srcset="{% if section.settings.brand_logo.width >= 174 %}{{ section.settings.brand_logo | img_url: '174x' }} 174w{% endif %}"
+             class="brand-logo-size" src="{{ section.settings.brand_logo  | img_url: '150x150', scale: 2 }}"
+             loading="lazy" alt = "brand-logo">
+        {% else %}{{ section.settings.brand_logo_svg }}{% endif %}
+      </a>
+    </nav>
+    <nav class="right-wrap">
+      <div class="right-nav-upper light">
+        <ul class="header-nav-list">
+                  {% for block in section.blocks %}
+  			      {% for link in linklists[block.settings.nav_list].links %}
+					<li class="right-nav-list"><a href="{{link.url}}">{{link.title}}</a></li>
+				  {% endfor %}
+                  {% endfor %}
+					<li class="right-nav-list dropdown bold">
+						<a href="#">
+                          NL
+                          {% include 'icon-grey-down-chevron' %}
+						</a>
+						<ul class="header-nav-list-sub">   
+				            <li>
+				              <a href="#">EN</a>
+				            </li>
+				            <li>
+				              <a href="#">FR</a>
+				            </li>
+				            <li>
+				              <a href="#">DE</a>
+				            </li>
+			          	</ul>
+					</li>
+
+					<li><a href="/account">{% include 'icon-user' %}{% include 'icon-grey-down-chevron' %}</a></li>
+					<li class="no-t-m right-nav-list"><a class="cart-toggler" onClick="return false;">{% include 'icon-cart-new' %}<span class="cart-items {% if cart.item_count < 1 %}no-disp{% endif %}">{{ cart.item_count }}</span></a></li>
+				</ul>
+      </div>
+      <div class="right-nav-lower">
+        <ul class="header-nav-list flex-box justify-between bold">
+                  {% for block in section.blocks %}
+  			      {% for link in linklists[block.settings.nav_list_lower].links %}
+          <li class="right-nav-list"><a href="{{link.url}}">{{link.title}}</a><span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span></li>
+				  {% endfor %}
+                  {% endfor %}
+				</ul>
+      </div>
+    </nav>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+  {
+    "name": "header",
+    "settings": [
+		{
+          "id": "announcement_text",
+          "type": "text",
+          "label": "Announcement"
+
+        },
+        {
+        "id": "brand_logo",
+        "type": "image_picker",
+        "label": "Select Brand Logo"
+
+        },
+        {
+        "id": "brand_logo_svg",
+        "type": "text",
+        "label": "Brand Logo SVG"
+
+        }
+	],
+	"blocks": [
+        {
+        "type": "select",
+        "name": "Header Upper Menu",
+        "settings": [
+
+        {
+        "id": "nav_list",
+        "type": "link_list",
+        "label": "Menu"
+
+        }
+      ]
+    },
+	{
+        "type": "add",
+        "name": "Header Lower Menu",
+        "settings": [
+
+        {
+        "id": "nav_list_lower",
+        "type": "link_list",
+        "label": "Menu"
+
+        }
+      ]
+    }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
