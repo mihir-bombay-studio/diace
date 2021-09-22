@@ -1,3 +1,7 @@
+.product-block-wrapper {
+    margin-bottom: 136px;
+}
+
 .product-block-left, .product-block-right {
 	width: 49%;
 }
