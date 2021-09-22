@@ -729,90 +729,78 @@
 
 
 {% schema %}
-  {
-    "name": "Collection Filter",
-    "settings": [
-		{
-      "type": "collection",
-      "id": "collection_type",
-      "label": "Collection Banner"
+{
+  "name": "t:sections.main-collection-product-grid.name",
+  "class": "spaced-section collection-grid-section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "products_per_page",
+      "min": 8,
+      "max": 24,
+      "step": 4,
+      "default": 16,
+      "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-collection-product-grid.settings.header__3.content"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
     },
     {
       "type": "checkbox",
-      "id": "enable_sorting",
-      "default": true,
-      "label": "Enable Sorting"
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_image_padding",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.add_image_padding.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-collection-product-grid.settings.header__1.content"
     },
     {
       "type": "checkbox",
       "id": "enable_filtering",
       "default": true,
-      "label": "Enable Filtering"
-	}
-	],
-	"blocks": [
-		{
-          "type": "button",
-          "name": "Button",
-          "limit": 1,
-          "settings": [
-            {
-              "type": "text",
-              "id": "button_label",
-              "default": "Button label",
-              "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
-              "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
-            },
-            {
-              "type": "url",
-              "id": "button_link",
-              "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
-            }
-          ]
-        },
-		{
-          "type": "checkboxes",
-		  "name": "Filters",
-		  "settings": [
-			{
-              "type": "checkbox",
-              "id": "show_price_filter",
-              "label": "Show Price Filter",
-              "default": true
-            },
-		  	{
-              "type": "checkbox",
-              "id": "show_gender_filter",
-              "label": "Show Gender Filter",
-              "default": true
-            },
-		  	{
-              "type": "checkbox",
-              "id": "show_size_filter",
-              "label": "Show size Filter",
-              "default": true
-            },
-            {
-              "type": "checkbox",
-              "id": "show_brand_filter",
-              "label": "Show Brand Filter",
-              "default": true
-            }
-		  ]
-        }
-		
-	],
-	"presets": [
+      "label": "t:sections.main-collection-product-grid.settings.enable_filtering.label",
+      "info": "t:sections.main-collection-product-grid.settings.enable_filtering.info"
+    },
     {
-      "name": "Collection Filter",
-		"category":"section"
+      "type": "checkbox",
+      "id": "enable_sorting",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
     }
   ]
-  }
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
