@@ -1,1 +1,58 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"1632117875e7ef7fbe":{"type":"product-block","settings":{"featured_collection_title":""}}},"order":["main","1632117875e7ef7fbe"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1632117875e7ef7fbe": {
+      "type": "product-block",
+      "settings": {
+        "featured_collection_title": ""
+      }
+    },
+    "1632294615f908e16b": {
+      "type": "our-values",
+      "blocks": {
+        "1c81f3dd-2258-4ae8-8d2b-244338cdd8f6": {
+          "type": "value",
+          "settings": {
+            "value_svg": "",
+            "value_title": "BELGISCH",
+            "value_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+          }
+        },
+        "e86de89a-4eb6-4a5b-b4d9-bba5020e954e": {
+          "type": "value",
+          "settings": {
+            "value_svg": "",
+            "value_title": "KLANTGERICHT",
+            "value_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+          }
+        },
+        "7a5eea25-2bd0-4e24-89b0-8db1adcc7f62": {
+          "type": "value",
+          "settings": {
+            "value_svg": "",
+            "value_title": "INNOVATIE",
+            "value_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+          }
+        }
+      },
+      "block_order": [
+        "1c81f3dd-2258-4ae8-8d2b-244338cdd8f6",
+        "e86de89a-4eb6-4a5b-b4d9-bba5020e954e",
+        "7a5eea25-2bd0-4e24-89b0-8db1adcc7f62"
+      ],
+      "settings": {
+        "our_value_heading": "ONZE WAARDEN"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1632117875e7ef7fbe",
+    "1632294615f908e16b"
+  ]
+}
