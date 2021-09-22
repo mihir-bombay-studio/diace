@@ -20,6 +20,12 @@
   {%- endif -%}
   {% endif %}
   {% endfor %}
+  
+  <div class="banner-link">
+    <a href="{{ block.settings.button_link }}" class="bold">{{ block.settings.button_label | escape }}</a>
+    <span class="right-black-chveron">{% include 'icon-black-right-chevron' %}</span>
+  </div>
+  
 </div>
 
 <script>
