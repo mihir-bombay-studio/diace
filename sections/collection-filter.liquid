@@ -1,22 +1,7 @@
-<link rel="preload" href="{{ 'component-card.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ 'component-price.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ 'component-badge.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-<noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
-
-
 {{ 'shop-by-category-banner.css' | asset_url | stylesheet_tag }}
 {{ 'collection-filter.css' | asset_url | stylesheet_tag }}
 {{ 'product-collection.css' | asset_url | stylesheet_tag }}
 {{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
-
-{{ 'template-collection.css' | asset_url | stylesheet_tag }}
-{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
-
 
 <style>
   .selected .check-box{
@@ -28,10 +13,7 @@
 
 {% assign collection = section.settings.collection_type %}
 
-{%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
-
-
-<div class="collection-filter-wrapper container" id="main-collection-filters" data-id="{{ section.id }}">
+<div class="collection-filter-wrapper container">
   <div class="collection-filter flex-box justify-between">
     <div class="collection-filter-left">
       <div class="filter-tags">
@@ -165,207 +147,44 @@
       <div class="sorting-wrapper light flex-box justify-between">
         <div class="sorting-part total-items flex-box border-bottom justify-between"><div>Toon 16 items</div><div>{% include 'icon-black-down-chevron' %}</div></div>
         <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
-  {% comment %} <div class="sorting-part sorting flex-box border-bottom justify-between"><div>Sorteer op</div><div>{% include 'icon-black-down-chevron' %}</div></div>{% endcomment %}
-        
-     
-        
-        {%- if section.settings.enable_sorting -%}
-        {%- assign total_active_values = 0 -%}
-        
-        
-        <collection-filters-form class="facets small-hide">
-          <form id="CollectionFiltersForm" class="facets__form">
-            {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
-            <div class="active-facets active-facets-desktop">
-              <a href="{{ collection.url }}?sort_by={{ sort_by }}" class="active-facets__button button button--secondary js-facet-remove">{{ 'sections.collection_template.clear_all' | t }}</a>
-              {%- for filter in collection.filters -%}
-              {%- for value in filter.active_values -%}
-              <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ value.url_to_remove }}">
-                {{ value.label | escape }}
-                {% render 'icon-close-small' %}
-              </a>
-              {%- endfor -%}
-              {% if filter.type == "price_range" %}
-              {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
-              <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ filter.url_to_remove }}">
-                {%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
-                {% render 'icon-close-small' %}
-              </a>
-              {%- endif -%}
-              {% endif %}
-              {%- endfor -%}
-            </div>
-            {% endif %}
-
-            {% if collection.current_vendor or collection.current_type %}
-            <input type="hidden" name="q" value="{{ collection.current_vendor }}{{ collection.current_type }}">
-            {% endif %}
-
-            {%- if section.settings.enable_sorting -%}
-            <div class="collection-filters__item sorting">
-              <div class="collection-filters__field">
-                <label class="collection-filters__label" for="SortBy">{{ 'sections.collection_template.sort_by_label' | t }}</label>
-                <div class="select">
-                  {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
-                  <select name="sort_by" class="select__select collection-filters__sort" id="SortBy" aria-describedby="a11y-refresh-page-message">
-                    {%- for option in collection.sort_options -%}
-                    <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
-                    {%- endfor -%}
-                  </select>
-                  {% render 'icon-caret' %}
-                </div>
-              </div>
-
-              <noscript>
-                <button type="submit" class="button button--small">{{ 'sections.collection_template.sort_button' | t }}</button>
-              </noscript>
-            </div>
-            {%- endif -%}
-          </form>
-        </collection-filters-form>
-        
-        <menu-drawer class="mobile-facets__wrapper">
-          <details class="disclosure-has-popup medium-hide large-up-hide">
-            <summary>
-              <span class="mobile-facets__open button button--secondary">
-                {% render 'icon-filter' %}
-                <span>{{ 'sections.collection_template.filter_and_sort' | t }}</span>
-                <span class="count-bubble">
-                  {%- if total_active_values > 0 -%}{{ total_active_values }}{%- endif -%}
-                </span>
-              </span>
-              <span tabindex="0" class="mobile-facets__close mobile-facets__close--no-js">{%- render 'icon-close' -%}</span>
-            </summary>
-            <collection-filters-form>
-              <form id="CollectionFiltersFormMobile" class="mobile-facets">
-                <div class="mobile-facets__inner">
-                  <div class="mobile-facets__header">
-                    <div class="mobile-facets__header-inner">
-                      <h2 class="mobile-facets__heading">{{ 'sections.collection_template.filter_and_sort' | t }}</h2>
-                      <p class="mobile-facets__count">{{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}</p>
-                    </div>
-                  </div>
-                  <div class="mobile-facets__main">
-                    {%- if section.settings.enable_sorting -%}
-                    <div class="mobile-facets__details js-filter" data-index="mobile-{{ forloop.index }}">
-                      <div class="mobile-facets__summary">
-                        <div class="mobile-facets__sort">
-                          <label for="SortBy-mobile">Sort by</label>
-                          <div class="select">
-                            <select name="sort_by" class="select__select" id="SortBy-mobile" aria-describedby="a11y-refresh-page-message">
-                              {%- for option in collection.sort_options -%}
-                              <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
-                              {%- endfor -%}
-                            </select>
-                            {% render 'icon-caret' %}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    {%- endif -%}
-
-                    <div class="mobile-facets__footer">
-                      <a href="{{ collection.url }}" class="mobile-facets__clear button button--secondary js-facet-remove">{{ 'sections.collection_template.clear' | t }}</a>
-                      <button type="button" class="no-js-hidden button button--primary" onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">{{ 'sections.collection_template.apply' | t }}</button>
-                      <noscript><button class="button button--primary">{{ 'sections.collection_template.apply' | t }}</button></noscript>
-                    </div>
-                  </div>
-
-                  {% if collection.current_vendor or collection.current_type %}
-                  <input type="hidden" name="q" value="{{ collection.current_vendor }}{{ collection.current_type }}">
-                  {% endif %}
-                </div>
-              </form>
-            </collection-filters-form>
-          </details>
-        </menu-drawer>
-
-        <div class="active-facets active-facets-mobile">
-          <a href="{{ collection.url }}?sort_by={{ sort_by }}" class="active-facets__button button button--secondary js-facet-remove">{{ 'sections.collection_template.clear_all' | t }}</a>
-          {%- for filter in collection.filters -%}
-          {%- for value in filter.active_values -%}
-          <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ value.url_to_remove }}">
-            {{ value.label | escape }}
-            {% render 'icon-close-small' %}
-          </a>
-          {%- endfor -%}
-
-          {% if filter.type == "price_range" %}
-          {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
-          <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ filter.url_to_remove }}">
-            {%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
-            {% render 'icon-close-small' %}
-          </a>
-          {%- endif -%}
-          {% endif %}
-          {%- endfor -%}
-        </div>
+        <div class="sorting-part sorting flex-box border-bottom justify-between"><div>Sorteer op</div><div>{% include 'icon-black-down-chevron' %}</div></div>
       </div>
 
-      <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
-
-      
-      <div id="CollectionProductGrid">
-        
-        {%- if collection.products.size == 0 -%}
-        <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
-          <div class="loading-overlay">
-            <div class="loading-overlay__spinner">
-              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-              </svg>
+      <div class="product-collection flex-box">
+        {% for product in collections[collection].products %}
+        <div class="product-collection-card" data-price="{{ product.price }}" data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
+          <div class="featured-product-img rel">
+            <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+            <div class="product-hover-text flex-box align-center">
+              <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+              <a href="" class="hover-text bold">KOPEN</a>
             </div>
           </div>
-        </div>
-        {% else %}
-        
-        <div class="collection">
-          <div class="loading-overlay">
-          <div class="loading-overlay__spinner">
-            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-            </svg>
-          </div>
-        </div>
-          <div class="product-collection flex-box">
-            {% for product in collections[collection].products %}
-            <div id="main-collection-product-grid" data-id="{{ section.id }}" class="product-collection-card" data-price="{{ product.price }}" data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
-              <div class="featured-product-img rel">
-                <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
-                <div class="product-hover-text flex-box align-center">
-                  <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-                  <a href="" class="hover-text bold">KOPEN</a>
-                </div>
-              </div>
-              <div class="product-title-price flex-box justify-between">
-                <div class="product-title semibold">{{ product.title | escape  }}</div>
-                <div class="product-compare-to-and-price">
-                  <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
-                  <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
-                </div>
-              </div>
-              <div class="product-colors flex-box justify-between light">
-                <div class="product-color">
-                  <span>Kleur: </span>
-                  <span>
-                    Paars
-                  </span>
-                </div>
-                <div class="other-available-colors">
-                  <a class="featured-product-link" href="{{ product.url }}">Meer kleuren beschikbaar</a>
-                </div>
-              </div>
-
+          <div class="product-title-price flex-box justify-between">
+            <div class="product-title semibold">{{ product.title | escape  }}</div>
+            <div class="product-compare-to-and-price">
+              <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
+              <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
             </div>
-            {% endfor %}
           </div>
+          <div class="product-colors flex-box justify-between light">
+            <div class="product-color">
+              <span>Kleur: </span>
+              <span>
+                Paars
+              </span>
+            </div>
+            <div class="other-available-colors">
+              <a class="featured-product-link" href="{{ product.url }}">Meer kleuren beschikbaar</a>
+            </div>
+          </div>
+
         </div>
-        {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
 </div>
-
 
 
 <script>
@@ -462,12 +281,6 @@
       "type": "collection",
       "id": "collection_type",
       "label": "Collection Banner"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_sorting",
-      "default": true,
-      "label": "Enable Sorting"
     }
 	],
 	"blocks": [
@@ -536,10 +349,3 @@
 
 {% javascript %}
 {% endjavascript %}
-
-
-
-
-
-
-
