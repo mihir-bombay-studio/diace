@@ -529,89 +529,89 @@
 {%- endif -%}
 </div>
 
-      <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
 
 
-      <div id="CollectionProductGrid">
-        {%- paginate collection.products by section.settings.products_per_page -%}
-        {%- if collection.products.size == 0 -%}
-        <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
-          <div class="loading-overlay">
-            <div class="loading-overlay__spinner">
-              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-              </svg>
-            </div>
-          </div>
+<div id="CollectionProductGrid">
+  {%- paginate collection.products by section.settings.products_per_page -%}
+  {%- if collection.products.size == 0 -%}
+  <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
+    <div class="loading-overlay">
+      <div class="loading-overlay__spinner">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+        </svg>
+      </div>
+    </div>
 
-          <p class="collection-product-count light">
-            {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
-          </p>
+    <p class="collection-product-count light">
+      {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
+    </p>
 
-          <div class="title-wrapper center">
-            <h2 class="title title--primary">
-              {{ 'sections.collection_template.empty' | t }}<br>
-              {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
-            </h2>
-          </div>
-        </div>
-        {%- else -%}
-        <div class="collection page-width">
-          <div class="loading-overlay">
-            <div class="loading-overlay__spinner">
-              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-              </svg>
-            </div>
-          </div>
-
-          <p class="collection-product-count light">
-            {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
-          </p>
-
-          <div class="product-collection flex-box">
-            {% for product in collection.products %}
-            <div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price }}" data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
-              <div class="featured-product-img rel">
-                <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
-                <div class="product-hover-text flex-box align-center">
-                  <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-                  <a href="" class="hover-text bold">KOPEN</a>
-                </div>
-              </div>
-              <div class="product-title-price flex-box justify-between">
-                <div class="product-title semibold">{{ product.title | escape  }}</div>
-                <div class="product-compare-to-and-price">
-                  <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
-                  <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
-                </div>
-              </div>
-              <div class="product-colors flex-box justify-between light">
-                <div class="product-color">
-                  <span>Kleur: </span>
-                  <span>
-                    Paars
-                  </span>
-                </div>
-                <div class="other-available-colors">
-                  <a class="featured-product-link" href="{{ product.url }}">Meer kleuren beschikbaar</a>
-                </div>
-              </div>
-
-            </div>
-            {% endfor %}
-          </div>
-          {%- if paginate.pages > 1 -%}
-          {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
-          {%- endif -%}
-        </div>
-        {%- endif -%}
-        {%- endpaginate -%}
-</div>
-
-      
+    <div class="title-wrapper center">
+      <h2 class="title title--primary">
+        {{ 'sections.collection_template.empty' | t }}<br>
+        {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+      </h2>
     </div>
   </div>
+  {%- else -%}
+  <div class="collection page-width">
+    <div class="loading-overlay">
+      <div class="loading-overlay__spinner">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+        </svg>
+      </div>
+    </div>
+
+    <p class="collection-product-count light">
+      {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
+    </p>
+
+    <div class="product-collection flex-box">
+      {% for product in collection.products %}
+      <div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price }}" data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
+        <div class="featured-product-img rel">
+          <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+          <div class="product-hover-text flex-box align-center">
+            <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+            <a href="" class="hover-text bold">KOPEN</a>
+          </div>
+        </div>
+        <div class="product-title-price flex-box justify-between">
+          <div class="product-title semibold">{{ product.title | escape  }}</div>
+          <div class="product-compare-to-and-price">
+            <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
+            <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
+          </div>
+        </div>
+        <div class="product-colors flex-box justify-between light">
+          <div class="product-color">
+            <span>Kleur: </span>
+            <span>
+              Paars
+            </span>
+          </div>
+          <div class="other-available-colors">
+            <a class="featured-product-link" href="{{ product.url }}">Meer kleuren beschikbaar</a>
+          </div>
+        </div>
+
+      </div>
+      {% endfor %}
+    </div>
+    {%- if paginate.pages > 1 -%}
+    {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
+    {%- endif -%}
+  </div>
+  {%- endif -%}
+  {%- endpaginate -%}
+</div>
+
+
+</div>
+</div>
 </div>
 </div>
 
