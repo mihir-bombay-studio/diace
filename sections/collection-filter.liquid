@@ -176,58 +176,6 @@
         <collection-filters-form class="facets small-hide">
           <form id="CollectionFiltersForm" class="facets__form">
             {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
-             <details class="mobile-facets__details js-filter" data-index="mobile-{{ forloop.index }}">
-                      <summary class="mobile-facets__summary">
-                        <div>
-                          <span>{{ filter.label | escape }}</span>
-                          <span class="count-bubble">
-                            {%- if filter.active_values.size > 0 -%}{{ filter.active_values.size }}{%- endif -%}
-                          </span>
-                          <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-arrow' %}</span>
-                          <noscript>{% render 'icon-caret' %}</noscript>
-                        </div>
-                      </summary>
-                      <div class="mobile-facets__submenu">
-                        <button class="mobile-facets__close-button link link--text focus-inset" aria-expanded="true" type="button">
-                          {% render 'icon-arrow' %}
-                          {{ filter.label | escape }}
-                        </button>
-                        <ul class="mobile-facets__list list-unstyled" role="list">
-                          {%- for value in filter.values -%}
-                            <li class="mobile-facets__item list-menu__item">
-                              <label for="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}" class="mobile-facets__label{% if value.count == 0 and value.active == false %} mobile-facets__label--disabled{% endif %}">
-                                <input class="mobile-facets__checkbox"
-                                  type="checkbox"
-                                  name="{{ value.param_name }}"
-                                  value="{{ value.value }}"
-                                  id="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
-                                  {% if value.active %}checked{% endif %}
-                                  {% if value.count == 0 and value.active == false %}disabled{% endif %}
-                                >
-
-                                <span class="mobile-facets__highlight"></span>
-
-                                <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                                  <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
-                                </svg>
-
-                                <svg class="icon icon-checkmark" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9" fill="none" width="10px" height="10px">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.35.643a.5.5 0 01.006.707l-6.77 6.886a.5.5 0 01-.719-.006L.638 4.845a.5.5 0 11.724-.69l2.872 3.011 6.41-6.517a.5.5 0 01.707-.006h-.001z" fill="currentColor"/>
-                                </svg>
-
-                                {{ value.label | escape }} ({{ value.count }})
-                              </label>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
-
-                        <div class="no-js-hidden mobile-facets__footer">
-                          <a href="{{ collection.url }}" class="mobile-facets__clear button button--secondary js-facet-remove">{{ 'sections.collection_template.clear' | t }}</a>
-                          <button type="button" class="no-js-hidden button button--primary" onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">{{ 'sections.collection_template.apply' | t }}</button>
-                          <noscript><button class="button button--primary">{{ 'sections.collection_template.apply' | t }}</button></noscript>
-                        </div>
-                      </div>
-                    </details>
             <div class="active-facets active-facets-desktop">
               <a href="{{ collection.url }}?sort_by={{ sort_by }}" class="active-facets__button button button--secondary js-facet-remove">{{ 'sections.collection_template.clear_all' | t }}</a>
               {%- for filter in collection.filters -%}
@@ -290,58 +238,6 @@
             </summary>
             <collection-filters-form>
               <form id="CollectionFiltersFormMobile" class="mobile-facets">
-                 <details class="mobile-facets__details js-filter" data-index="mobile-{{ forloop.index }}">
-                      <summary class="mobile-facets__summary">
-                        <div>
-                          <span>{{ filter.label | escape }}</span>
-                          <span class="count-bubble">
-                            {%- if filter.active_values.size > 0 -%}{{ filter.active_values.size }}{%- endif -%}
-                          </span>
-                          <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-arrow' %}</span>
-                          <noscript>{% render 'icon-caret' %}</noscript>
-                        </div>
-                      </summary>
-                      <div class="mobile-facets__submenu">
-                        <button class="mobile-facets__close-button link link--text focus-inset" aria-expanded="true" type="button">
-                          {% render 'icon-arrow' %}
-                          {{ filter.label | escape }}
-                        </button>
-                        <ul class="mobile-facets__list list-unstyled" role="list">
-                          {%- for value in filter.values -%}
-                            <li class="mobile-facets__item list-menu__item">
-                              <label for="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}" class="mobile-facets__label{% if value.count == 0 and value.active == false %} mobile-facets__label--disabled{% endif %}">
-                                <input class="mobile-facets__checkbox"
-                                  type="checkbox"
-                                  name="{{ value.param_name }}"
-                                  value="{{ value.value }}"
-                                  id="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
-                                  {% if value.active %}checked{% endif %}
-                                  {% if value.count == 0 and value.active == false %}disabled{% endif %}
-                                >
-
-                                <span class="mobile-facets__highlight"></span>
-
-                                <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                                  <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
-                                </svg>
-
-                                <svg class="icon icon-checkmark" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9" fill="none" width="10px" height="10px">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.35.643a.5.5 0 01.006.707l-6.77 6.886a.5.5 0 01-.719-.006L.638 4.845a.5.5 0 11.724-.69l2.872 3.011 6.41-6.517a.5.5 0 01.707-.006h-.001z" fill="currentColor"/>
-                                </svg>
-
-                                {{ value.label | escape }} ({{ value.count }})
-                              </label>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
-
-                        <div class="no-js-hidden mobile-facets__footer">
-                          <a href="{{ collection.url }}" class="mobile-facets__clear button button--secondary js-facet-remove">{{ 'sections.collection_template.clear' | t }}</a>
-                          <button type="button" class="no-js-hidden button button--primary" onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">{{ 'sections.collection_template.apply' | t }}</button>
-                          <noscript><button class="button button--primary">{{ 'sections.collection_template.apply' | t }}</button></noscript>
-                        </div>
-                      </div>
-                    </details>
                 <div class="mobile-facets__inner">
                   <div class="mobile-facets__header">
                     <div class="mobile-facets__header-inner">
