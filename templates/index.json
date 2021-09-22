@@ -1,1 +1,462 @@
-{"sections":{"16316849519d264fc8":{"type":"hero-new","blocks":{"93197bf8-b0dc-4820-a802-ae34c0b23624":{"type":"hero_other_img","settings":{"hero_other_img":"shopify:\/\/shop_images\/hero_other.png","hero_other_img_text":"OPBERGEN","hero_text_link":"shopify:\/\/collections\/all"}},"0a33c5d5-af7a-418e-bb99-5f89208f9cf5":{"type":"hero_other_img","settings":{"hero_other_img":"shopify:\/\/shop_images\/hero_other_2.png","hero_other_img_text":"STICKERS","hero_text_link":"shopify:\/\/collections\/all"}},"41f809ed-9786-474b-8ce5-d4669afd3c86":{"type":"hero_other_img","settings":{"hero_other_img":"shopify:\/\/shop_images\/hero_other_3.png","hero_other_img_text":"VERSTEVIGING","hero_text_link":"shopify:\/\/collections\/all"}},"d4ee9ce7-7829-4e77-8802-22888832e073":{"type":"hero_other_img","settings":{"hero_other_img":"shopify:\/\/shop_images\/hero_other.png","hero_other_img_text":"BESCHERMING","hero_text_link":"shopify:\/\/collections\/all"}},"7beee7c4-03c3-44c2-9611-bfb6dc7825fd":{"type":"button","settings":{"button_label":"ALLE CATEGORIEËN","button_link":"shopify:\/\/collections","button-color":"yellow"}}},"block_order":["93197bf8-b0dc-4820-a802-ae34c0b23624","0a33c5d5-af7a-418e-bb99-5f89208f9cf5","41f809ed-9786-474b-8ce5-d4669afd3c86","d4ee9ce7-7829-4e77-8802-22888832e073","7beee7c4-03c3-44c2-9611-bfb6dc7825fd"],"settings":{"hero_main_img":"shopify:\/\/shop_images\/hero_img.png","text_over_hero":"HET ZOMER ACCESSOIRE - KOELTASSEN"}},"image_banner":{"type":"image-banner","disabled":true,"blocks":{"heading":{"type":"heading","settings":{"heading":"Talk about your brand"}},"button":{"type":"buttons","settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","button"],"settings":{"desktop_text_box_position":"flex-end","color_scheme":"background-1","stack_images_on_mobile":true,"adapt_height_first_image":false}},"image_with_text":{"type":"image-with-text-new","blocks":{"heading":{"type":"heading","settings":{"heading":"DE ONE-STOP-SHOP VOOR JOUW FAVORIETE DIABETES ACCESSOIRES."}},"text":{"type":"text","settings":{"text":"<p>Het leven met diabetes kan best ingewikkeld zijn. Met Diacé willen wij het leven met diavetes een stuk aangenamer maken. Diacé biedt een divers aanbod diabetes accessoires aan verzameld op één website.<\/p><p>Onze website is 24 op 24 beschikbaar en omdat wij met een eigen voorraad werken kunnen wij zorgen voor een snelle verzending van jouw materiaal. Je vind op onze website de meest hekende Premium merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<\/p>"}},"button":{"type":"button","settings":{"button_label":"LEES ONS VERHAAL","button_link":"","button-color":"grey"}}},"block_order":["heading","text","button"],"settings":{"image":"shopify:\/\/shop_images\/nick_and_stefanie.png","height":"adapt","color_scheme":"background-1","text_over_img":""}},"featured_products":{"type":"featured-collection","disabled":true,"settings":{"title":"Featured products","collection":"","products_to_show":4,"show_view_all":true,"swipe_on_mobile":false,"image_ratio":"adapt","show_secondary_image":false,"add_image_padding":false,"show_vendor":false}},"1631695632e79ff00a":{"type":"featured-collection-new","blocks":{"08778c1d-6b55-4513-ba50-a1b161c7ef0b":{"type":"button","settings":{"button_label":"ALLE CATEGORIEËN","button_link":"shopify:\/\/collections","button-color":"yellow"}}},"block_order":["08778c1d-6b55-4513-ba50-a1b161c7ef0b"],"settings":{"featured_collection_title":"NIEUWE PRODUCTEN","featured_collection_desc":"Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:","featured_collection":"new-collection"}},"1631611375b605aa08":{"type":"our-values","blocks":{"882f55f7-a0ce-40f8-a50c-0f5cf144127d":{"type":"value","settings":{"value_svg":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"60.717\" height=\"85\" viewbox=\"0 0 60.717 85\"><defs><style>.a-icon-location{fill:#fec23b;}<\/style><\/defs><g transform=\"translate(-96 -32)\"><path class=\"a-icon-location\" d=\"M126.358,32C109.619,32,96,45.026,96,61.03c0,7.622,3.474,17.758,10.326,30.127a222.616,222.616,0,0,0,15.179,23.38,6.024,6.024,0,0,0,9.718,0A223.544,223.544,0,0,0,146.4,91.157c6.84-12.365,10.314-22.5,10.314-30.127C156.717,45.026,143.1,32,126.358,32Zm0,42.5A12.143,12.143,0,1,1,138.5,62.358,12.143,12.143,0,0,1,126.358,74.5Z\"><\/path><\/g><\/svg>","value_title":"BELGISCH","value_desc":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"}},"824a40f1-31a8-4ae3-9c66-83fa7813111f":{"type":"value","settings":{"value_svg":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"93\" height=\"85\" viewbox=\"0 0 93 85\"><defs><style>.a-icon-heart{fill:#fec23b;}<\/style><\/defs><path class=\"a-icon-heart\" d=\"M46.5,85C21.5,68.028,8.384,52.589,3.006,39.667-11.4,5.037,29.75-11.524,46.5,8.919c16.75-20.443,57.9-3.882,43.494,30.748C84.616,52.589,71.5,68.028,46.5,85Z\"><\/path><\/svg>","value_title":"KLANTGERICHT","value_desc":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"}},"2342bf92-8e8c-4053-a411-8d16c6a5cccf":{"type":"value","settings":{"value_svg":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"84.997\" height=\"84.999\" viewbox=\"0 0 84.997 84.999\"><defs><style>.a-icon-rocket{fill:#fec23b;}<\/style><\/defs><g transform=\"translate(-32.016 -32.002)\"><path class=\"a-icon-rocket\" d=\"M116.527,35.428a.055.055,0,0,1,0-.017,3.871,3.871,0,0,0-2.871-2.9C108,31.129,99.108,32.6,89.251,36.546c-9.934,3.984-19.243,9.866-25.534,16.169a60.848,60.848,0,0,0-5.607,6.419A24.868,24.868,0,0,0,47,60.919C36.043,65.74,32.915,78.078,32.082,83.144a4.743,4.743,0,0,0,5.159,5.5h.025l12.2-1.332c.015.156.032.3.046.429a6.519,6.519,0,0,0,1.878,3.931l5.956,5.959a6.5,6.5,0,0,0,3.929,1.88l.408.044-1.328,12.188v.025a4.709,4.709,0,0,0,5.457,5.166c5.094-.82,17.427-3.91,22.235-14.924a25.091,25.091,0,0,0,1.793-11.069,59.725,59.725,0,0,0,6.441-5.607c6.343-6.31,12.243-15.543,16.186-25.333C116.394,50.26,117.872,41.3,116.527,35.428ZM96.215,68.609a11.061,11.061,0,1,1,3.3-7.88A11.151,11.151,0,0,1,96.215,68.609Z\"><\/path><path class=\"a-icon-rocket\" d=\"M69.612,345.554a3.036,3.036,0,0,0-2.087.507c-1.212.829-2.43,1.649-3.66,2.448a2.831,2.831,0,0,1-3.984-3.795l2.305-3.984A3.036,3.036,0,0,0,59.309,336a11.621,11.621,0,0,0-6.76,3.313c-.694.7-2.806,2.81-3.943,10.864A67.912,67.912,0,0,0,48,357.156a3.036,3.036,0,0,0,3.036,3.114h.076a68.28,68.28,0,0,0,6.982-.607c8.058-1.138,10.171-3.252,10.866-3.946a11.477,11.477,0,0,0,3.3-6.781A3.036,3.036,0,0,0,69.612,345.554Z\" transform=\"translate(-12.947 -246.304)\"><\/path><\/g><\/svg>","value_title":"INNOVATIE","value_desc":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"}}},"block_order":["882f55f7-a0ce-40f8-a50c-0f5cf144127d","824a40f1-31a8-4ae3-9c66-83fa7813111f","2342bf92-8e8c-4053-a411-8d16c6a5cccf"],"settings":{"our_value_heading":"ONZE WAARDEN"}},"16317046102c025894":{"type":"social-media","blocks":{"3014645e-e6ec-40a6-aa59-cc6842d3a1cb":{"type":"sm_other_imgs","settings":{"sm_other_img":"shopify:\/\/shop_images\/sm_img_2.png","sm_logo":"none","sm_link":""}},"5c3be662-fc05-4d10-b897-de7efd86b355":{"type":"sm_other_imgs","settings":{"sm_other_img":"shopify:\/\/shop_images\/sm_img_3.png","sm_logo":"facebook","sm_link":"https:\/\/www.facebook.com\/"}},"6d867367-ea97-458a-ab16-00529b551dc8":{"type":"sm_other_imgs","settings":{"sm_other_img":"shopify:\/\/shop_images\/sm_img_4.png","sm_logo":"instagram","sm_link":"https:\/\/www.instagram.com\/"}},"cc24d28c-bed1-4ec3-b081-a5b298590634":{"type":"sm_text","settings":{"sm_text":"We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!"}}},"block_order":["3014645e-e6ec-40a6-aa59-cc6842d3a1cb","5c3be662-fc05-4d10-b897-de7efd86b355","6d867367-ea97-458a-ab16-00529b551dc8","cc24d28c-bed1-4ec3-b081-a5b298590634"],"settings":{"sm_main_img":"shopify:\/\/shop_images\/sm_main.png","text_over_img":"DIACÉ, MEER DAN EEN WEBSHOP","subscription_heading":"WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF","subscription_desc":"We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community."}},"1631620069de812214":{"type":"latest-blogs","blocks":{"ce7f0ffe-b195-4f6b-a7fa-a3a5c9c372e1":{"type":"latest_blog","settings":{"blog_img":"shopify:\/\/shop_images\/Diace_Jaime_Korbee_21_2x_642c0f1c-5762-4826-b4e3-2c549a8fedd9.png","blog_date":"10\/08\/‘21","read_time":"5 min read","blog_topic":"ONDERWERP","blog_title":"Neem je Medtronic insulinepomp overal heen met een pomptas.","blog_desc":"Maak je gebruik van een Medtronic insulinepomp maar ben je daarnaast op zoek naar accessoires die jou voorzien van een combinatie van comfort en stijl?","blog_link":"shopify:\/\/blogs\/news"}},"687699ab-973f-4956-864d-50874a839f3a":{"type":"latest_blog","settings":{"blog_img":"shopify:\/\/shop_images\/Diace_Jaime_Korbee_47_2x_de519be1-5fce-4406-a4f8-8a5aba07ca81.png","blog_date":"10\/08\/‘21","read_time":"5 min read","blog_topic":"ONDERWERP","blog_title":"Waarom is er een opening in de freestyle libre sensor?","blog_desc":"Vraag jij je ook wel eens af waarom er een opening zit in het midden van de Freestyle Libre sensor?","blog_link":"shopify:\/\/blogs\/news"}},"b1d7e6e2-4553-482a-a1dd-d6be3c8406f3":{"type":"latest_blog","settings":{"blog_img":"shopify:\/\/shop_images\/Diace_Jaime_Korbee_71_2x_56b307da-e7de-476a-8389-d209e01b9d1b.png","blog_date":"10\/08\/‘21","read_time":"5 min read","blog_topic":"ONDERWERP","blog_title":"Waarom is er een opening in de freestyle libre sensor?","blog_desc":"Vraag jij je ook wel eens af waarom er een opening zit in het midden van de Freestyle Libre sensor?","blog_link":"shopify:\/\/blogs\/news"}},"b61e2f1e-9338-4657-ade3-2e3a662f8e79":{"type":"button","settings":{"button_label":"ALLE BLOGARTIKELS","button_link":"shopify:\/\/blogs\/news","button-color":"grey"}}},"block_order":["ce7f0ffe-b195-4f6b-a7fa-a3a5c9c372e1","687699ab-973f-4956-864d-50874a839f3a","b1d7e6e2-4553-482a-a1dd-d6be3c8406f3","b61e2f1e-9338-4657-ade3-2e3a662f8e79"],"settings":{"latest_blogs_heading":"ONZE LAATSTE BLOGARTIKELS"}},"image_with_text_2":{"type":"image-with-text-new","blocks":{"heading":{"type":"heading","settings":{"heading":"DE ONE-STOP-SHOP VOOR JOUW FAVORIETE DIABETES ACCESSOIRES."}},"text":{"type":"text","settings":{"text":"<p>Het leven met diabetes kan best ingewikkeld zijn. Met Diacé willen wij het leven met diavetes een stuk aangenamer maken. Diacé biedt een divers aanbod diabetes accessoires aan verzameld op één website.<\/p><p>Onze website is 24 op 24 beschikbaar en omdat wij met een eigen voorraad werken kunnen wij zorgen voor een snelle verzending van jouw materiaal. Je vind op onze website de meest hekende Premium merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<\/p>"}},"button":{"type":"button","settings":{"button_label":"LEES ONS VERHAAL","button_link":"","button-color":"grey"}}},"block_order":["heading","text","button"],"settings":{"image":"shopify:\/\/shop_images\/nick_and_stefanie.png","height":"adapt","color_scheme":"background-1","text_over_img":""}},"1631768996518add79":{"type":"review-section","blocks":{"ca69cb9e-8862-482b-b1b4-812f1094f94f":{"type":"review_text","settings":{"review_rating":"4","review_text":"“Super leuke stickers hebben jullie om de sensor op te vrolijken! Heel blij met jullie website. En ook leuk kwa prijzen.”","reviewer":"Naam voornaam"}},"792a30e1-5535-4053-840a-5e6e7d1de420":{"type":"review_text","settings":{"review_rating":"5","review_text":"“Onze zoon heeft sinds kort diabetes, via een tip kregen we jullie site door. Goede producten en een super snelle service, blij mee!”","reviewer":"Naam voornaam"}},"ba0c03b9-6e40-4cac-b2aa-99e2c269caeb":{"type":"review_text","settings":{"review_rating":"4","review_text":"“Mijn zending was niet op tijd aangekomen. Na contact is er snel een nieuwe zending gedaan en die is na enkele dagen keurig aangekomen. Top!”","reviewer":"Naam voornaam"}},"60131899-60ef-4d99-8a76-ffb9b01eb605":{"type":"review_text","settings":{"review_rating":"5","review_text":"“Onze zoon heeft sinds kort diabetes, via een tip kregen we jullie site door. Goede producten en een super snelle service, blij mee!”","reviewer":"Naam voornaam"}}},"block_order":["ca69cb9e-8862-482b-b1b4-812f1094f94f","792a30e1-5535-4053-840a-5e6e7d1de420","ba0c03b9-6e40-4cac-b2aa-99e2c269caeb","60131899-60ef-4d99-8a76-ffb9b01eb605"],"settings":{"review_main_img":"shopify:\/\/shop_images\/review_main.png","text_over_img":"WAT ZEGGEN ONZE KLANTEN?","btn_txt":"SCHRIJF REVIEW","btn_link":"#"}},"16316243304aadf5de":{"type":"faq","blocks":{"a90a1c8d-dff1-4016-a9e2-50ebc4748416":{"type":"faq","settings":{"question":"Question","answer":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"}},"29c1604e-6449-4fb5-85c5-c86d85ffe18e":{"type":"faq","settings":{"question":"Question","answer":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"}},"6308c7dd-e067-4d83-b9ce-998bc81c0a9c":{"type":"faq","settings":{"question":"Question","answer":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"}},"0717fd64-899b-4645-908e-e2dfa003dc10":{"type":"faq","settings":{"question":"Question","answer":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"}},"57030f3d-d17b-4c89-9495-22add3d117ec":{"type":"faq","settings":{"question":"Question","answer":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"}},"8db0535c-5ad7-45a5-8013-f609412d4161":{"type":"button","settings":{"button_label":"MEER VRAGEN","button_link":"shopify:\/\/blogs\/news","button-color":"grey"}}},"block_order":["a90a1c8d-dff1-4016-a9e2-50ebc4748416","29c1604e-6449-4fb5-85c5-c86d85ffe18e","6308c7dd-e067-4d83-b9ce-998bc81c0a9c","0717fd64-899b-4645-908e-e2dfa003dc10","57030f3d-d17b-4c89-9495-22add3d117ec","8db0535c-5ad7-45a5-8013-f609412d4161"],"settings":{"faq_heading":"WAT VRAGEN ONZE KLANTEN?"}}},"order":["16316849519d264fc8","image_banner","image_with_text","featured_products","1631695632e79ff00a","1631611375b605aa08","16317046102c025894","1631620069de812214","image_with_text_2","1631768996518add79","16316243304aadf5de"]}
+{
+  "sections": {
+    "16316849519d264fc8": {
+      "type": "hero-new",
+      "blocks": {
+        "93197bf8-b0dc-4820-a802-ae34c0b23624": {
+          "type": "hero_other_img",
+          "settings": {
+            "hero_other_img": "shopify:\/\/shop_images\/hero_other.png",
+            "hero_other_img_text": "OPBERGEN",
+            "hero_text_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "0a33c5d5-af7a-418e-bb99-5f89208f9cf5": {
+          "type": "hero_other_img",
+          "settings": {
+            "hero_other_img": "shopify:\/\/shop_images\/hero_other_2.png",
+            "hero_other_img_text": "STICKERS",
+            "hero_text_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "41f809ed-9786-474b-8ce5-d4669afd3c86": {
+          "type": "hero_other_img",
+          "settings": {
+            "hero_other_img": "shopify:\/\/shop_images\/hero_other_3.png",
+            "hero_other_img_text": "VERSTEVIGING",
+            "hero_text_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "d4ee9ce7-7829-4e77-8802-22888832e073": {
+          "type": "hero_other_img",
+          "settings": {
+            "hero_other_img": "shopify:\/\/shop_images\/hero_other.png",
+            "hero_other_img_text": "BESCHERMING",
+            "hero_text_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "7beee7c4-03c3-44c2-9611-bfb6dc7825fd": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections",
+            "button-color": "yellow"
+          }
+        }
+      },
+      "block_order": [
+        "93197bf8-b0dc-4820-a802-ae34c0b23624",
+        "0a33c5d5-af7a-418e-bb99-5f89208f9cf5",
+        "41f809ed-9786-474b-8ce5-d4669afd3c86",
+        "d4ee9ce7-7829-4e77-8802-22888832e073",
+        "7beee7c4-03c3-44c2-9611-bfb6dc7825fd"
+      ],
+      "settings": {
+        "hero_main_img": "shopify:\/\/shop_images\/hero_img.png",
+        "text_over_hero": "HET ZOMER ACCESSOIRE - KOELTASSEN"
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "desktop_text_box_position": "flex-end",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
+    },
+    "image_with_text": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "DE ONE-STOP-SHOP VOOR JOUW FAVORIETE DIABETES ACCESSOIRES."
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Het leven met diabetes kan best ingewikkeld zijn. Met Diacé willen wij het leven met diavetes een stuk aangenamer maken. Diacé biedt een divers aanbod diabetes accessoires aan verzameld op één website.<\/p><p>Onze website is 24 op 24 beschikbaar en omdat wij met een eigen voorraad werken kunnen wij zorgen voor een snelle verzending van jouw materiaal. Je vind op onze website de meest hekende Premium merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<\/p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEES ONS VERHAAL",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
+        "img_preference": "image second",
+        "text_over_img": ""
+      }
+    },
+    "featured_products": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
+    "1631695632e79ff00a": {
+      "type": "featured-collection-new",
+      "blocks": {
+        "08778c1d-6b55-4513-ba50-a1b161c7ef0b": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections",
+            "button-color": "yellow"
+          }
+        }
+      },
+      "block_order": [
+        "08778c1d-6b55-4513-ba50-a1b161c7ef0b"
+      ],
+      "settings": {
+        "featured_collection_title": "NIEUWE PRODUCTEN",
+        "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
+        "featured_collection": "new-collection"
+      }
+    },
+    "1631611375b605aa08": {
+      "type": "our-values",
+      "blocks": {
+        "882f55f7-a0ce-40f8-a50c-0f5cf144127d": {
+          "type": "value",
+          "settings": {
+            "value_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"60.717\" height=\"85\" viewbox=\"0 0 60.717 85\"><defs><style>.a-icon-location{fill:#fec23b;}<\/style><\/defs><g transform=\"translate(-96 -32)\"><path class=\"a-icon-location\" d=\"M126.358,32C109.619,32,96,45.026,96,61.03c0,7.622,3.474,17.758,10.326,30.127a222.616,222.616,0,0,0,15.179,23.38,6.024,6.024,0,0,0,9.718,0A223.544,223.544,0,0,0,146.4,91.157c6.84-12.365,10.314-22.5,10.314-30.127C156.717,45.026,143.1,32,126.358,32Zm0,42.5A12.143,12.143,0,1,1,138.5,62.358,12.143,12.143,0,0,1,126.358,74.5Z\"><\/path><\/g><\/svg>",
+            "value_title": "BELGISCH",
+            "value_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+          }
+        },
+        "824a40f1-31a8-4ae3-9c66-83fa7813111f": {
+          "type": "value",
+          "settings": {
+            "value_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"93\" height=\"85\" viewbox=\"0 0 93 85\"><defs><style>.a-icon-heart{fill:#fec23b;}<\/style><\/defs><path class=\"a-icon-heart\" d=\"M46.5,85C21.5,68.028,8.384,52.589,3.006,39.667-11.4,5.037,29.75-11.524,46.5,8.919c16.75-20.443,57.9-3.882,43.494,30.748C84.616,52.589,71.5,68.028,46.5,85Z\"><\/path><\/svg>",
+            "value_title": "KLANTGERICHT",
+            "value_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+          }
+        },
+        "2342bf92-8e8c-4053-a411-8d16c6a5cccf": {
+          "type": "value",
+          "settings": {
+            "value_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"84.997\" height=\"84.999\" viewbox=\"0 0 84.997 84.999\"><defs><style>.a-icon-rocket{fill:#fec23b;}<\/style><\/defs><g transform=\"translate(-32.016 -32.002)\"><path class=\"a-icon-rocket\" d=\"M116.527,35.428a.055.055,0,0,1,0-.017,3.871,3.871,0,0,0-2.871-2.9C108,31.129,99.108,32.6,89.251,36.546c-9.934,3.984-19.243,9.866-25.534,16.169a60.848,60.848,0,0,0-5.607,6.419A24.868,24.868,0,0,0,47,60.919C36.043,65.74,32.915,78.078,32.082,83.144a4.743,4.743,0,0,0,5.159,5.5h.025l12.2-1.332c.015.156.032.3.046.429a6.519,6.519,0,0,0,1.878,3.931l5.956,5.959a6.5,6.5,0,0,0,3.929,1.88l.408.044-1.328,12.188v.025a4.709,4.709,0,0,0,5.457,5.166c5.094-.82,17.427-3.91,22.235-14.924a25.091,25.091,0,0,0,1.793-11.069,59.725,59.725,0,0,0,6.441-5.607c6.343-6.31,12.243-15.543,16.186-25.333C116.394,50.26,117.872,41.3,116.527,35.428ZM96.215,68.609a11.061,11.061,0,1,1,3.3-7.88A11.151,11.151,0,0,1,96.215,68.609Z\"><\/path><path class=\"a-icon-rocket\" d=\"M69.612,345.554a3.036,3.036,0,0,0-2.087.507c-1.212.829-2.43,1.649-3.66,2.448a2.831,2.831,0,0,1-3.984-3.795l2.305-3.984A3.036,3.036,0,0,0,59.309,336a11.621,11.621,0,0,0-6.76,3.313c-.694.7-2.806,2.81-3.943,10.864A67.912,67.912,0,0,0,48,357.156a3.036,3.036,0,0,0,3.036,3.114h.076a68.28,68.28,0,0,0,6.982-.607c8.058-1.138,10.171-3.252,10.866-3.946a11.477,11.477,0,0,0,3.3-6.781A3.036,3.036,0,0,0,69.612,345.554Z\" transform=\"translate(-12.947 -246.304)\"><\/path><\/g><\/svg>",
+            "value_title": "INNOVATIE",
+            "value_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+          }
+        }
+      },
+      "block_order": [
+        "882f55f7-a0ce-40f8-a50c-0f5cf144127d",
+        "824a40f1-31a8-4ae3-9c66-83fa7813111f",
+        "2342bf92-8e8c-4053-a411-8d16c6a5cccf"
+      ],
+      "settings": {
+        "our_value_heading": "ONZE WAARDEN"
+      }
+    },
+    "16317046102c025894": {
+      "type": "social-media",
+      "blocks": {
+        "3014645e-e6ec-40a6-aa59-cc6842d3a1cb": {
+          "type": "sm_other_imgs",
+          "settings": {
+            "sm_other_img": "shopify:\/\/shop_images\/sm_img_2.png",
+            "sm_logo": "none",
+            "sm_link": ""
+          }
+        },
+        "5c3be662-fc05-4d10-b897-de7efd86b355": {
+          "type": "sm_other_imgs",
+          "settings": {
+            "sm_other_img": "shopify:\/\/shop_images\/sm_img_3.png",
+            "sm_logo": "facebook",
+            "sm_link": "https:\/\/www.facebook.com\/"
+          }
+        },
+        "6d867367-ea97-458a-ab16-00529b551dc8": {
+          "type": "sm_other_imgs",
+          "settings": {
+            "sm_other_img": "shopify:\/\/shop_images\/sm_img_4.png",
+            "sm_logo": "instagram",
+            "sm_link": "https:\/\/www.instagram.com\/"
+          }
+        },
+        "cc24d28c-bed1-4ec3-b081-a5b298590634": {
+          "type": "sm_text",
+          "settings": {
+            "sm_text": "We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!"
+          }
+        }
+      },
+      "block_order": [
+        "3014645e-e6ec-40a6-aa59-cc6842d3a1cb",
+        "5c3be662-fc05-4d10-b897-de7efd86b355",
+        "6d867367-ea97-458a-ab16-00529b551dc8",
+        "cc24d28c-bed1-4ec3-b081-a5b298590634"
+      ],
+      "settings": {
+        "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
+        "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
+        "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
+        "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community."
+      }
+    },
+    "1631620069de812214": {
+      "type": "latest-blogs",
+      "blocks": {
+        "ce7f0ffe-b195-4f6b-a7fa-a3a5c9c372e1": {
+          "type": "latest_blog",
+          "settings": {
+            "blog_img": "shopify:\/\/shop_images\/Diace_Jaime_Korbee_21_2x_642c0f1c-5762-4826-b4e3-2c549a8fedd9.png",
+            "blog_date": "10\/08\/‘21",
+            "read_time": "5 min read",
+            "blog_topic": "ONDERWERP",
+            "blog_title": "Neem je Medtronic insulinepomp overal heen met een pomptas.",
+            "blog_desc": "Maak je gebruik van een Medtronic insulinepomp maar ben je daarnaast op zoek naar accessoires die jou voorzien van een combinatie van comfort en stijl?",
+            "blog_link": "shopify:\/\/blogs\/news"
+          }
+        },
+        "687699ab-973f-4956-864d-50874a839f3a": {
+          "type": "latest_blog",
+          "settings": {
+            "blog_img": "shopify:\/\/shop_images\/Diace_Jaime_Korbee_47_2x_de519be1-5fce-4406-a4f8-8a5aba07ca81.png",
+            "blog_date": "10\/08\/‘21",
+            "read_time": "5 min read",
+            "blog_topic": "ONDERWERP",
+            "blog_title": "Waarom is er een opening in de freestyle libre sensor?",
+            "blog_desc": "Vraag jij je ook wel eens af waarom er een opening zit in het midden van de Freestyle Libre sensor?",
+            "blog_link": "shopify:\/\/blogs\/news"
+          }
+        },
+        "b1d7e6e2-4553-482a-a1dd-d6be3c8406f3": {
+          "type": "latest_blog",
+          "settings": {
+            "blog_img": "shopify:\/\/shop_images\/Diace_Jaime_Korbee_71_2x_56b307da-e7de-476a-8389-d209e01b9d1b.png",
+            "blog_date": "10\/08\/‘21",
+            "read_time": "5 min read",
+            "blog_topic": "ONDERWERP",
+            "blog_title": "Waarom is er een opening in de freestyle libre sensor?",
+            "blog_desc": "Vraag jij je ook wel eens af waarom er een opening zit in het midden van de Freestyle Libre sensor?",
+            "blog_link": "shopify:\/\/blogs\/news"
+          }
+        },
+        "b61e2f1e-9338-4657-ade3-2e3a662f8e79": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE BLOGARTIKELS",
+            "button_link": "shopify:\/\/blogs\/news",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "ce7f0ffe-b195-4f6b-a7fa-a3a5c9c372e1",
+        "687699ab-973f-4956-864d-50874a839f3a",
+        "b1d7e6e2-4553-482a-a1dd-d6be3c8406f3",
+        "b61e2f1e-9338-4657-ade3-2e3a662f8e79"
+      ],
+      "settings": {
+        "latest_blogs_heading": "ONZE LAATSTE BLOGARTIKELS"
+      }
+    },
+    "image_with_text_2": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "DE ONE-STOP-SHOP VOOR JOUW FAVORIETE DIABETES ACCESSOIRES."
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Het leven met diabetes kan best ingewikkeld zijn. Met Diacé willen wij het leven met diavetes een stuk aangenamer maken. Diacé biedt een divers aanbod diabetes accessoires aan verzameld op één website.<\/p><p>Onze website is 24 op 24 beschikbaar en omdat wij met een eigen voorraad werken kunnen wij zorgen voor een snelle verzending van jouw materiaal. Je vind op onze website de meest hekende Premium merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<\/p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEES ONS VERHAAL",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
+        "img_preference": "image second",
+        "text_over_img": ""
+      }
+    },
+    "1631768996518add79": {
+      "type": "review-section",
+      "blocks": {
+        "ca69cb9e-8862-482b-b1b4-812f1094f94f": {
+          "type": "review_text",
+          "settings": {
+            "review_rating": "4",
+            "review_text": "“Super leuke stickers hebben jullie om de sensor op te vrolijken! Heel blij met jullie website. En ook leuk kwa prijzen.”",
+            "reviewer": "Naam voornaam"
+          }
+        },
+        "792a30e1-5535-4053-840a-5e6e7d1de420": {
+          "type": "review_text",
+          "settings": {
+            "review_rating": "5",
+            "review_text": "“Onze zoon heeft sinds kort diabetes, via een tip kregen we jullie site door. Goede producten en een super snelle service, blij mee!”",
+            "reviewer": "Naam voornaam"
+          }
+        },
+        "ba0c03b9-6e40-4cac-b2aa-99e2c269caeb": {
+          "type": "review_text",
+          "settings": {
+            "review_rating": "4",
+            "review_text": "“Mijn zending was niet op tijd aangekomen. Na contact is er snel een nieuwe zending gedaan en die is na enkele dagen keurig aangekomen. Top!”",
+            "reviewer": "Naam voornaam"
+          }
+        },
+        "60131899-60ef-4d99-8a76-ffb9b01eb605": {
+          "type": "review_text",
+          "settings": {
+            "review_rating": "5",
+            "review_text": "“Onze zoon heeft sinds kort diabetes, via een tip kregen we jullie site door. Goede producten en een super snelle service, blij mee!”",
+            "reviewer": "Naam voornaam"
+          }
+        }
+      },
+      "block_order": [
+        "ca69cb9e-8862-482b-b1b4-812f1094f94f",
+        "792a30e1-5535-4053-840a-5e6e7d1de420",
+        "ba0c03b9-6e40-4cac-b2aa-99e2c269caeb",
+        "60131899-60ef-4d99-8a76-ffb9b01eb605"
+      ],
+      "settings": {
+        "review_main_img": "shopify:\/\/shop_images\/review_main.png",
+        "text_over_img": "WAT ZEGGEN ONZE KLANTEN?",
+        "btn_txt": "SCHRIJF REVIEW",
+        "btn_link": "#"
+      }
+    },
+    "16316243304aadf5de": {
+      "type": "faq",
+      "blocks": {
+        "a90a1c8d-dff1-4016-a9e2-50ebc4748416": {
+          "type": "faq",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "29c1604e-6449-4fb5-85c5-c86d85ffe18e": {
+          "type": "faq",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "6308c7dd-e067-4d83-b9ce-998bc81c0a9c": {
+          "type": "faq",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "0717fd64-899b-4645-908e-e2dfa003dc10": {
+          "type": "faq",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "57030f3d-d17b-4c89-9495-22add3d117ec": {
+          "type": "faq",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "8db0535c-5ad7-45a5-8013-f609412d4161": {
+          "type": "button",
+          "settings": {
+            "button_label": "MEER VRAGEN",
+            "button_link": "shopify:\/\/blogs\/news",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "a90a1c8d-dff1-4016-a9e2-50ebc4748416",
+        "29c1604e-6449-4fb5-85c5-c86d85ffe18e",
+        "6308c7dd-e067-4d83-b9ce-998bc81c0a9c",
+        "0717fd64-899b-4645-908e-e2dfa003dc10",
+        "57030f3d-d17b-4c89-9495-22add3d117ec",
+        "8db0535c-5ad7-45a5-8013-f609412d4161"
+      ],
+      "settings": {
+        "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
+      }
+    }
+  },
+  "order": [
+    "16316849519d264fc8",
+    "image_banner",
+    "image_with_text",
+    "featured_products",
+    "1631695632e79ff00a",
+    "1631611375b605aa08",
+    "16317046102c025894",
+    "1631620069de812214",
+    "image_with_text_2",
+    "1631768996518add79",
+    "16316243304aadf5de"
+  ]
+}

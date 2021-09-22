@@ -48,11 +48,47 @@
       "settings": {
         "our_value_heading": "ONZE WAARDEN"
       }
+    },
+    "1632296628d5bc229d": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "1632296628d5bc229d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "INFO OVER PRODUCT"
+          }
+        },
+        "1632296628d5bc229d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1632296628d5bc229d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "1632296628d5bc229d-0",
+        "1632296628d5bc229d-1",
+        "1632296628d5bc229d-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
+        "img_preference": "image second",
+        "text_over_img": "NICK & STEFANIE"
+      }
     }
   },
   "order": [
     "main",
     "1632117875e7ef7fbe",
-    "1632294615f908e16b"
+    "1632294615f908e16b",
+    "1632296628d5bc229d"
   ]
 }
