@@ -6,6 +6,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    infinite: true,
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
