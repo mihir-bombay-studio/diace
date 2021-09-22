@@ -214,6 +214,7 @@ input::-webkit-slider-thumb {
 .underline-selected{
   text-decoration: underline;
   color: #737373;
+  margin-left: 4px;
 }
 
 .underline-selected::before{
