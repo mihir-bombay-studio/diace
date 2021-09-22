@@ -25,6 +25,10 @@
 	border-bottom: none;
 }
 
+.product-details .accordion.question.active{
+	border-bottom: 2px solid #FEC23B;
+}
+
 .answer{
 	line-height: 24px;
 }
