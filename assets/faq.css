@@ -42,3 +42,20 @@
 	margin-top: 51px !important;
   padding: 20px 83px 16px;
 }
+
+.banner-link {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 45px;
+    width: fit-content;
+}
+
+.banner-link .right-black-chveron svg {
+    height: 12px;
+    transition: .4s ease;
+}
+
+.banner-link:hover .right-black-chveron svg {
+    margin-left: 2px;
+}
