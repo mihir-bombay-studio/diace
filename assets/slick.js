@@ -6,11 +6,10 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    infinite: true,
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: false,
