@@ -8,7 +8,7 @@
     background-image: url("{{ 'icon-checkmark.svg' | asset_url }}");
       background-size: 11px;
       background-position: center;
-  }
+      }
 </style>
 
 {% assign collection = section.settings.collection_type %}
@@ -17,15 +17,15 @@
   <div class="collection-filter flex-box justify-between">
     <div class="collection-filter-left">
       <div class="filter-tags">
-      {%- for coll in collections -%}
-      <div class="collection-types bold{% if coll.title == collection.title %} current{% endif %}">{{ coll.title }}</div>
-      <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}">
-        {% for tag in collection.tags %}
-        <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
-        {% endfor %}
+        {%- for coll in collections -%}
+        <div class="collection-types bold{% if coll.title == collection.title %} current{% endif %}">{{ coll.title }}</div>
+        <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}">
+          {% for tag in collection.tags %}
+          <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
+          {% endfor %}
         </div>
-      {% endfor %}
-        
+        {% endfor %}
+
       </div>
       {% for block in section.blocks %}
       {% if block.type == "checkboxes" %}
@@ -37,25 +37,25 @@
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
-          	<div class="range-slide">
-            <div class="slide">
-              <div class="line" id="line" style="left: 0%; right: 0%;"></div>
-              <span class="thumb" id="thumbMin" style="left: 0%;"></span>
-              <span class="thumb" id="thumbMax" style="left: 100%;"></span>
+            <div class="range-slide">
+              <div class="slide">
+                <div class="line" id="line" style="left: 0%; right: 0%;"></div>
+                <span class="thumb" id="thumbMin" style="left: 0%;"></span>
+                <span class="thumb" id="thumbMax" style="left: 100%;"></span>
+              </div>
+              <input id="rangeMin" type="range" max="100" min="0" step="5" value="0">
+              <input id="rangeMax" type="range" max="100" min="0" step="5" value="100">
             </div>
-            <input id="rangeMin" type="range" max="100" min="0" step="5" value="0">
-            <input id="rangeMax" type="range" max="100" min="0" step="5" value="100">
-          </div>
-          <div class="display light">
-            <span id="min">0</span>
-            <span id="max">100</span>
-          </div>
+            <div class="display light">
+              <span id="min">0</span>
+              <span id="max">100</span>
+            </div>
           </div>
           <div class="yellow-border-bottom"></div>
         </div>
         <div class="sex-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_gender_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-          	<div class="price-filter-title">GESLACHT</div>
+            <div class="price-filter-title">GESLACHT</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
@@ -72,7 +72,7 @@
         </div>
         <div class="size-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_size_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-          	<div class="price-filter-title">MATEN</div>
+            <div class="price-filter-title">MATEN</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
@@ -97,7 +97,7 @@
         </div>
         <div class="brand-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_brand_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-          	<div class="price-filter-title">MERK</div>
+            <div class="price-filter-title">MERK</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
@@ -143,11 +143,14 @@
         </div>
 
       </div>
-      
+
       <div class="sorting-wrapper light flex-box justify-between">
         <div class="sorting-part total-items flex-box border-bottom justify-between"><div>Toon 16 items</div><div>{% include 'icon-black-down-chevron' %}</div></div>
         <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
-        <div class="sorting-part sorting flex-box border-bottom justify-between"><div>Sorteer op</div><div>{% include 'icon-black-down-chevron' %}</div></div>
+        <div class="sorting-part sorting flex-box border-bottom justify-between">
+          <label for="SortBy">Sorteer op</label>
+          <div>{% include 'icon-black-down-chevron' %}</div>
+        </div>
       </div>
 
       <div class="product-collection flex-box">
@@ -189,8 +192,8 @@
 
 <script>
   $('.collection-tag').click(function() {
-   	$(this).toggleClass("underline-selected");
-  	var filter_tag = $(this).data('tfilter');
+    $(this).toggleClass("underline-selected");
+    var filter_tag = $(this).data('tfilter');
     $('.product-collection-card').toggleClass('no-disp');
     $('.product-collection-card').each(function() {
       var string = $(this).data('tag');
@@ -199,9 +202,9 @@
         $(this).removeClass('no-disp');
       }
     });
-    
+
   });
-  
+
   let min = 0;
   let max = 100;
 
@@ -248,7 +251,7 @@
       }
     });
   });
-  
+
   var acc = document.getElementsByClassName("accordion");
   var i;
 
@@ -266,82 +269,82 @@
       this.classList.toggle("active");
     });
   }
-  
+
   $('.check-box-wrapper').click(function() {
-  	$(this).toggleClass('selected');
+    $(this).toggleClass('selected');
   });
 </script>
 
 
 {% schema %}
-  {
-    "name": "Collection Filter",
-    "settings": [
-		{
-      "type": "collection",
-      "id": "collection_type",
-      "label": "Collection Banner"
-    }
-	],
-	"blocks": [
-		{
-          "type": "button",
-          "name": "Button",
-          "limit": 1,
-          "settings": [
-            {
-              "type": "text",
-              "id": "button_label",
-              "default": "Button label",
-              "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
-              "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
-            },
-            {
-              "type": "url",
-              "id": "button_link",
-              "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
-            }
-          ]
-        },
-		{
-          "type": "checkboxes",
-		  "name": "Filters",
-		  "settings": [
-			{
-              "type": "checkbox",
-              "id": "show_price_filter",
-              "label": "Show Price Filter",
-              "default": true
-            },
-		  	{
-              "type": "checkbox",
-              "id": "show_gender_filter",
-              "label": "Show Gender Filter",
-              "default": true
-            },
-		  	{
-              "type": "checkbox",
-              "id": "show_size_filter",
-              "label": "Show size Filter",
-              "default": true
-            },
-            {
-              "type": "checkbox",
-              "id": "show_brand_filter",
-              "label": "Show Brand Filter",
-              "default": true
-            }
-		  ]
-        }
-		
-	],
-	"presets": [
-    {
-      "name": "Collection Filter",
-		"category":"section"
-    }
-  ]
-  }
+{
+"name": "Collection Filter",
+"settings": [
+{
+"type": "collection",
+"id": "collection_type",
+"label": "Collection Banner"
+}
+],
+"blocks": [
+{
+"type": "button",
+"name": "Button",
+"limit": 1,
+"settings": [
+{
+"type": "text",
+"id": "button_label",
+"default": "Button label",
+"label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+"info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+}
+]
+},
+{
+"type": "checkboxes",
+"name": "Filters",
+"settings": [
+{
+"type": "checkbox",
+"id": "show_price_filter",
+"label": "Show Price Filter",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_gender_filter",
+"label": "Show Gender Filter",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_size_filter",
+"label": "Show size Filter",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_brand_filter",
+"label": "Show Brand Filter",
+"default": true
+}
+]
+}
+
+],
+"presets": [
+{
+"name": "Collection Filter",
+"category":"section"
+}
+]
+}
 {% endschema %}
 
 {% stylesheet %}
