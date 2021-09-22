@@ -1,3 +1,7 @@
+.social-media {
+    margin-bottom: 26px;
+}
+
 .social-logo {
     position: absolute;
     bottom: 16px;
@@ -24,6 +28,8 @@
     width: 100%;
     display: block;
     border-radius: 8px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .text-over-sm.bold {
@@ -74,7 +80,9 @@
 
 .sm-other-img img {
     width: 100%;
+    height: 100%;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .hover-text {
