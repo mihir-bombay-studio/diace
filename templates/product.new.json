@@ -147,6 +147,53 @@
         "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
         "featured_collection": "new-collection"
       }
+    },
+    "163231983925a321da": {
+      "type": "social-media",
+      "blocks": {
+        "f9bfa53c-9619-4849-b13f-46c287bed1b6": {
+          "type": "sm_other_imgs",
+          "settings": {
+            "sm_other_img": "shopify:\/\/shop_images\/sm_img_2.png",
+            "sm_logo": "none",
+            "sm_link": ""
+          }
+        },
+        "31206256-50b8-4162-a910-73020fc11163": {
+          "type": "sm_other_imgs",
+          "settings": {
+            "sm_other_img": "shopify:\/\/shop_images\/sm_img_3.png",
+            "sm_logo": "facebook",
+            "sm_link": ""
+          }
+        },
+        "3064974d-f114-47f4-9c3b-abc5f9e132c5": {
+          "type": "sm_other_imgs",
+          "settings": {
+            "sm_other_img": "shopify:\/\/shop_images\/sm_img_4.png",
+            "sm_logo": "instagram",
+            "sm_link": ""
+          }
+        },
+        "38d531e9-032e-4bd1-9853-a41a95982f0a": {
+          "type": "sm_text",
+          "settings": {
+            "sm_text": "We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!"
+          }
+        }
+      },
+      "block_order": [
+        "f9bfa53c-9619-4849-b13f-46c287bed1b6",
+        "31206256-50b8-4162-a910-73020fc11163",
+        "3064974d-f114-47f4-9c3b-abc5f9e132c5",
+        "38d531e9-032e-4bd1-9853-a41a95982f0a"
+      ],
+      "settings": {
+        "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
+        "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
+        "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
+        "subscription_desc": "We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!"
+      }
     }
   },
   "order": [
@@ -155,6 +202,7 @@
     "1632294615f908e16b",
     "1632296628d5bc229d",
     "163229690103dae5ee",
-    "16323185558f193575"
+    "16323185558f193575",
+    "163231983925a321da"
   ]
 }
