@@ -24,7 +24,7 @@
 <noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
-{% assign collection = section.settings.collection_type %}
+
 
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
@@ -168,7 +168,7 @@
       </div>
 
       <div class="product-collection flex-box">
-        {% for product in collections[collection].products %}
+        
         <div class="product-collection-card" data-price="{{ product.price }}" data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
           <div class="featured-product-img rel">
             <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
@@ -197,7 +197,7 @@
           </div>
 
         </div>
-        {% endfor %}
+    
       </div>
     </div>
   </div>
@@ -652,11 +652,6 @@
       "step": 4,
       "default": 16,
       "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
-    },
-	{
-      "type": "collection",
-      "id": "collection_type",
-      "label": "Collection Banner"
     },
     {
       "type": "header",
