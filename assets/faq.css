@@ -17,6 +17,10 @@
     border-bottom: 1px solid;
 }
 
+product-details .accordion.question {
+    border-bottom: 1px solid #FEC23B;
+}
+
 .accordion.question.active{
 /* 	border-bottom: none; */
 }
