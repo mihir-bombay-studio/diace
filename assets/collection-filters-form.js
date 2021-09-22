@@ -42,6 +42,7 @@ class CollectionFiltersForm extends HTMLElement {
 
   renderPage(searchParams, event, updateURLHash = true) {
     const sections = this.getSections();
+    console.log(sections)
     document.getElementById('CollectionProductGrid').querySelector('.collection').classList.add('loading');
 
     sections.forEach((section) => {
