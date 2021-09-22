@@ -17,9 +17,7 @@ class CollectionFiltersForm extends HTMLElement {
   onSubmitHandler(event) {
     event.preventDefault();
     const formData = new FormData(event.target.closest('form'));
-    console.log(formData);
     const searchParams = new URLSearchParams(formData).toString();
-    console.log(searchParams);
     this.renderPage(searchParams, event);
   }
 
@@ -42,7 +40,6 @@ class CollectionFiltersForm extends HTMLElement {
 
   renderPage(searchParams, event, updateURLHash = true) {
     const sections = this.getSections();
-    console.log(sections)
     document.getElementById('CollectionProductGrid').querySelector('.collection').classList.add('loading');
 
     sections.forEach((section) => {
