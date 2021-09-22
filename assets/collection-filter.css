@@ -229,3 +229,32 @@ input::-webkit-slider-thumb {
     background-color: #FEC23B;
     border: 1px solid #FEC23B;
 }
+
+.active-facets {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -1rem;
+    grid-column: 1/span 2;
+    grid-row: 2;
+}
+
+
+.active-facets__button:only-child {
+    display: none;
+}
+
+a.active-facets__button {
+    box-shadow: 0 0 0 .1rem var(--color-foreground);
+}
+
+a.active-facets__button {
+    color: var(--color-foreground);
+    box-shadow: 0 0 0 .1rem var(--color-foreground);
+    border-radius: 2.6rem;
+    font-size: 1.2rem;
+    min-height: 0;
+    min-width: 0;
+    padding: .5rem 1rem;
+    margin: 0 0 1rem 1rem;
+}
