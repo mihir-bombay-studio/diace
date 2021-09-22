@@ -18,7 +18,7 @@
 }
 
 .accordion.question.active{
-	border-bottom: none;
+/* 	border-bottom: none; */
 }
 
 .answer{
@@ -26,7 +26,7 @@
 }
 
 .panel-bottom-border{
-	padding-bottom: 16px;
+/* 	padding-bottom: 16px; */
   border-bottom: 1px solid;
 }
 

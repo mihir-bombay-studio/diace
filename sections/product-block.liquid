@@ -1,3 +1,4 @@
+{{ 'faq.css' | asset_url | stylesheet_tag }}
 {{ 'product-block.css' | asset_url | stylesheet_tag }}
 
 <div class="product-block-wrapper container">
@@ -33,6 +34,36 @@
       <div class="cont-shopping light">
         <a href="#">Verder winkelen</a>
       </div>
+      <div class="product-details">
+        <div class="accordion question semibold flex-box justify-between">
+          <div class="question-left">OMSCHRIJVING</div>
+          <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+        </div>
+        <div class="panel answer light"><p>{{ product.metafields.my_fields.omschrijving }}</p></div>
+        
+        
+        <div class="accordion question semibold flex-box justify-between">
+          <div class="question-left">MATERIAAL</div>
+          <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+        </div>
+        <div class="panel answer light"><p>{{ product.metafields.my_fields.materiaal }}</p></div>
+        
+        
+        <div class="accordion question semibold flex-box justify-between">
+          <div class="question-left">GEBRUIKSAANWIJZING</div>
+          <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+        </div>
+        <div class="panel answer light"><p>{{ product.metafields.my_fields.gebruiksaanwijzing }}</p></div>
+        
+        
+        <div class="accordion question semibold flex-box justify-between">
+          <div class="question-left">WASVOORSCHRIFT</div>
+          <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+        </div>
+        <div class="panel answer light"><p>{{ product.metafields.my_fields.wasvoorschrift }}</p></div>
+        
+        
+      </div>
     </div>
   </div>
 </div>
@@ -50,11 +81,31 @@
   });
   
   $('.qty-plus').click(function() {
-  	var data_qty = parseInt($(this).prev().data('qty'));
-    	data_qty = data_qty + 1;
-    	$(this).prev().data('qty', data_qty);
-      $(this).prev().html(data_qty);
+    var data_qty = parseInt($(this).prev().data('qty'));
+    data_qty = data_qty + 1;
+    $(this).prev().data('qty', data_qty);
+    $(this).prev().html(data_qty);
   });
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.classList.remove("panel-bottom-border");
+    } else {
+      var new_height = panel.scrollHeight + 16;
+      panel.style.maxHeight = new_height + "px";
+      panel.classList.add("panel-bottom-border");
+    } 
+    this.classList.toggle("active");
+  });
+}
 </script>
 
 {% schema %}

@@ -33,6 +33,7 @@
     height: 52px;
     border: 2px solid;
   	cursor: pointer;
+  	user-select: none;
 }
 
 .qty-minus{
@@ -52,8 +53,9 @@
 }
 
 .add-to-cart-btn {
-    padding-top: 20px;
-    padding-bottom: 16px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
     width: calc(100% - 176px);
     text-align: center;
     max-height: 54px;
