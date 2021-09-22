@@ -189,7 +189,7 @@
 
       <div class="product-collection flex-box">
         {% for product in collections[collection].products %}
-        <div class="product-collection-card" data-price="{{ product.price }}" data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
+        <div id="main-collection-product-grid" data-id="{{ section.id }}" class="product-collection-card" data-price="{{ product.price }}" data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
           <div class="featured-product-img rel">
             <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
             <div class="product-hover-text flex-box align-center">
