@@ -144,47 +144,50 @@
         </div>
 
       </div>
-
-      <div class="active-facets active-facets-desktop">
-        <a href="{{ collection.url }}?sort_by={{ sort_by }}" class="active-facets__button button button--secondary js-facet-remove">{{ 'sections.collection_template.clear_all' | t }}</a>
-        {%- for filter in collection.filters -%}
-        {%- for value in filter.active_values -%}
-        <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ value.url_to_remove }}">
-          {{ value.label | escape }}
-          {% render 'icon-close-small' %}
-        </a>
-        {%- endfor -%}
-        {% if filter.type == "price_range" %}
-        {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
-        <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ filter.url_to_remove }}">
-          {%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
-          {% render 'icon-close-small' %}
-        </a>
-        {%- endif -%}
-        {% endif %}
-        {%- endfor -%}
-      </div>
-
-
-      <div class="sorting-wrapper light flex-box justify-between">
-        <div class="sorting-part total-items flex-box border-bottom justify-between"><div>Toon 16 items</div><div>{% include 'icon-black-down-chevron' %}</div></div>
-        <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
-        <div class="sorting-part sorting flex-box border-bottom justify-between">
-          <label for="SortBy">Sorteer op</label>
-          <div class="select">
-            {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
-            <select name="sort_by" class="select__select collection-filters__sort" id="SortBy" aria-describedby="a11y-refresh-page-message">
-              {%- for option in collection.sort_options -%}
-              <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
-              {%- endfor -%}
-            </select>
-            <div>{% include 'icon-black-down-chevron' %}</div>
+      <collection-filters-form>
+        <form>
+          <div class="active-facets active-facets-desktop">
+            <a href="{{ collection.url }}?sort_by={{ sort_by }}" class="active-facets__button button button--secondary js-facet-remove">{{ 'sections.collection_template.clear_all' | t }}</a>
+            {%- for filter in collection.filters -%}
+            {%- for value in filter.active_values -%}
+            <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ value.url_to_remove }}">
+              {{ value.label | escape }}
+              {% render 'icon-close-small' %}
+            </a>
+            {%- endfor -%}
+            {% if filter.type == "price_range" %}
+            {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
+            <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ filter.url_to_remove }}">
+              {%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
+              {% render 'icon-close-small' %}
+            </a>
+            {%- endif -%}
+            {% endif %}
+            {%- endfor -%}
           </div>
-        </div>
-        <noscript>
-          <button type="submit" class="button button--small">submit</button>
-        </noscript>
-      </div>
+
+
+          <div class="sorting-wrapper light flex-box justify-between">
+            <div class="sorting-part total-items flex-box border-bottom justify-between"><div>Toon 16 items</div><div>{% include 'icon-black-down-chevron' %}</div></div>
+            <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
+            <div class="sorting-part sorting flex-box border-bottom justify-between">
+              <label for="SortBy">Sorteer op</label>
+              <div class="select">
+                {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+                <select name="sort_by" class="select__select collection-filters__sort" id="SortBy" aria-describedby="a11y-refresh-page-message">
+                  {%- for option in collection.sort_options -%}
+                  <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
+                  {%- endfor -%}
+                </select>
+                <div>{% include 'icon-black-down-chevron' %}</div>
+              </div>
+            </div>
+            <noscript>
+              <button type="submit" class="button button--small">submit</button>
+            </noscript>
+          </div>
+        </form>
+      </collection-filters-form>
 
       <div class="product-collection flex-box">
         {% for product in collections[collection].products %}
