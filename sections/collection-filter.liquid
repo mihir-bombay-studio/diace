@@ -24,9 +24,11 @@
 <noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
+{% assign collection = section.settings.collection_type %}
+
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
-{% assign collection = section.settings.collection_type %}
+
 
 <div class="collection-filter-wrapper container">
   <div class="collection-filter flex-box justify-between">
