@@ -108,12 +108,20 @@
             "button_link": "",
             "button-color": "grey"
           }
+        },
+        "8dc47c1d-6cce-4dc4-987d-7bc0fa185ac9": {
+          "type": "cta",
+          "settings": {
+            "cta_label": "CONTACTEER ONS",
+            "cta_link": ""
+          }
         }
       },
       "block_order": [
         "b7704465-49ce-46d3-8c81-f495d0cd4aea",
         "a286061a-a5bd-432f-9b1f-d25161512e59",
-        "d64872bc-8f16-45cc-9a88-5bbb849ce095"
+        "d64872bc-8f16-45cc-9a88-5bbb849ce095",
+        "8dc47c1d-6cce-4dc4-987d-7bc0fa185ac9"
       ],
       "settings": {
         "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
