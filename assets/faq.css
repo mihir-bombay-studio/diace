@@ -18,7 +18,7 @@
 }
 
 .product-details .accordion.question {
-    border-bottom: 1px solid #FEC23B;
+    border-bottom: 2px solid #FEC23B;
 }
 
 .accordion.question.active{
@@ -35,7 +35,7 @@
 }
 
 .product-details .panel-bottom-border {
-    border-bottom: 1px solid #FEC23B;
+    border-bottom: 2px solid #FEC23B;
 }
 
 .faq-wrapper .btn{
