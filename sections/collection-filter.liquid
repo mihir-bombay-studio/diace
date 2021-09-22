@@ -70,6 +70,31 @@
           </div>
           <div class="yellow-border-bottom"></div>
         </div>
+        <div class="size-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_size_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+          <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
+          	<div class="price-filter-title">MATEN</div>
+            <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
+          </div>
+          <div class="panel">
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">XS (47 - 55 cm)</span>
+            </div>
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">S (55 - 65 cm)</span>
+            </div>
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">M (65 - 85 cm)</span>
+            </div>
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">L (85 - 100 cm)</span>
+            </div>
+          </div>
+          <div class="yellow-border-bottom"></div>
+        </div>
         <div class="brand-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_brand_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
           	<div class="price-filter-title">MERK</div>
@@ -94,6 +119,7 @@
     <div class="collection-filter-right">
       <div class="collection-banner-wrapper">
         <div class="collection-banner flex-box justify-between">
+          <div class="bg-gray-dots">{% include "image-banner-gray-dots" %}</div>
           <div class="banner-right">
             <img 
                  src="{{ collection.image | img_url: '533x' }}"
@@ -163,6 +189,7 @@
 
 <script>
   $('.collection-tag').click(function() {
+    $(this).toggleClass("underline-selected");
   	var filter_tag = $(this).data('tfilter');
     $('.product-collection-card').addClass('no-disp');
     $('.product-collection-card').each(function() {
@@ -290,6 +317,12 @@
               "type": "checkbox",
               "id": "show_gender_filter",
               "label": "Show Gender Filter",
+              "default": true
+            },
+		  	{
+              "type": "checkbox",
+              "id": "show_size_filter",
+              "label": "Show size Filter",
               "default": true
             },
             {
