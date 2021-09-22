@@ -3,6 +3,12 @@
 {{ 'product-collection.css' | asset_url | stylesheet_tag }}
 {{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
 
+
+<noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
 <style>
   .selected .check-box{
     background-image: url("{{ 'icon-checkmark.svg' | asset_url }}");
