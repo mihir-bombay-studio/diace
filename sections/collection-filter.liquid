@@ -400,28 +400,6 @@
 
 <div id="CollectionProductGrid">
 
-    {%- if collection.products.size == 0 -%}
-      <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
-        <div class="loading-overlay">
-          <div class="loading-overlay__spinner">
-            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-            </svg>
-          </div>
-        </div>
-
-        <p class="collection-product-count light">
-          {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
-        </p>
-
-        <div class="title-wrapper center">
-          <h2 class="title title--primary">
-            {{ 'sections.collection_template.empty' | t }}<br>
-            {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
-          </h2>
-        </div>
-      </div>
-    {%- else -%}
       <div class="collection page-width">
         <div class="loading-overlay">
           <div class="loading-overlay__spinner">
@@ -452,12 +430,8 @@
             </li>
           {%- endfor -%}
         </ul>
-
-        {%- if paginate.pages > 1 -%}
-          {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
-        {%- endif -%}
       </div>
-    {%- endif -%}
+
 
 </div>
 
