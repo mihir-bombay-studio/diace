@@ -26,6 +26,8 @@
 
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
+{% assign collection = section.settings.collection_type %}
+
 <div class="collection-filter-wrapper container">
   <div class="collection-filter flex-box justify-between">
     <div class="collection-filter-left">
@@ -648,6 +650,11 @@
       "step": 4,
       "default": 16,
       "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
+    },
+	{
+      "type": "collection",
+      "id": "collection_type",
+      "label": "Collection Banner"
     },
     {
       "type": "header",
