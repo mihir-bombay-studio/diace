@@ -400,6 +400,180 @@
 
 <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
 
+
+<div class="collection-filter-wrapper container">
+  <div class="collection-filter flex-box justify-between">
+    <div class="collection-filter-left">
+      <div class="filter-tags">
+      {%- for coll in collections -%}
+      <div class="collection-types bold{% if coll.title == collection.title %} current{% endif %}">{{ coll.title }}</div>
+      <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}">
+        {% for tag in collection.tags %}
+        <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
+        {% endfor %}
+        </div>
+      {% endfor %}
+        
+      </div>
+      {% for block in section.blocks %}
+      {% if block.type == "checkboxes" %}
+      <div class="price-tag-filters {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_gender_filter == false and block.settings.show_price_filter == false and block.settings.show_brand_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+        <div class="filter-title semibold">Filter op:</div>
+        <div class="price-filter{% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_price_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+          <div class="price-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
+            <div class="price-filter-title">PRIJS</div>
+            <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
+          </div>
+          <div class="panel">
+          	<div class="range-slide">
+            <div class="slide">
+              <div class="line" id="line" style="left: 0%; right: 0%;"></div>
+              <span class="thumb" id="thumbMin" style="left: 0%;"></span>
+              <span class="thumb" id="thumbMax" style="left: 100%;"></span>
+            </div>
+            <input id="rangeMin" type="range" max="100" min="0" step="5" value="0">
+            <input id="rangeMax" type="range" max="100" min="0" step="5" value="100">
+          </div>
+          <div class="display light">
+            <span id="min">0</span>
+            <span id="max">100</span>
+          </div>
+          </div>
+          <div class="yellow-border-bottom"></div>
+        </div>
+        <div class="sex-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_gender_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+          <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
+          	<div class="price-filter-title">GESLACHT</div>
+            <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
+          </div>
+          <div class="panel">
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">Meisjes</span>
+            </div>
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">Jongens</span>
+            </div>
+          </div>
+          <div class="yellow-border-bottom"></div>
+        </div>
+        <div class="size-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_size_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+          <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
+          	<div class="price-filter-title">MATEN</div>
+            <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
+          </div>
+          <div class="panel">
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">XS (47 - 55 cm)</span>
+            </div>
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">S (55 - 65 cm)</span>
+            </div>
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">M (65 - 85 cm)</span>
+            </div>
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">L (85 - 100 cm)</span>
+            </div>
+          </div>
+          <div class="yellow-border-bottom"></div>
+        </div>
+        <div class="brand-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_brand_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+          <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
+          	<div class="price-filter-title">MERK</div>
+            <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
+          </div>
+          <div class="panel">
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">MERK 1</span>
+            </div>
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">MERK 2</span>
+            </div>
+          </div>
+          <div class="yellow-border-bottom"></div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="collection-filter-right">
+      <div class="collection-banner-wrapper">
+        <div class="collection-banner flex-box justify-between">
+          <div class="bg-gray-dots">{% include "image-banner-gray-dots" %}</div>
+          <div class="banner-right">
+            <img 
+                 src="{{ collection.image | img_url: '533x' }}"
+                 loading="lazy"
+                 >
+          </div>
+          <div class="banner-left">
+            <div class="banner-title bold">{{ collection.title }}</div>
+            <div class="banner-desc light">{{ collection.description }}</div>
+            {% for block in section.blocks %}
+            {% if block.type == "button" %}
+            {%- if block.settings.button_label != blank -%}
+            <div class="banner-link">
+              <a href="{{ block.settings.button_link }}" class="bold">{{ block.settings.button_label | escape }}</a>
+              <span class="right-black-chveron">{% include 'icon-black-right-chevron' %}</span>
+            </div>
+            {%- endif -%}
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="sorting-wrapper light flex-box justify-between">
+        <div class="sorting-part total-items flex-box border-bottom justify-between"><div>Toon 16 items</div><div>{% include 'icon-black-down-chevron' %}</div></div>
+        <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
+        <div class="sorting-part sorting flex-box border-bottom justify-between"><div>Sorteer op</div><div>{% include 'icon-black-down-chevron' %}</div></div>
+      </div>
+
+      <div class="product-collection flex-box">
+        {% for product in collections[collection].products %}
+        <div class="product-collection-card" data-price="{{ product.price }}" data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
+          <div class="featured-product-img rel">
+            <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+            <div class="product-hover-text flex-box align-center">
+              <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+              <a href="" class="hover-text bold">KOPEN</a>
+            </div>
+          </div>
+          <div class="product-title-price flex-box justify-between">
+            <div class="product-title semibold">{{ product.title | escape  }}</div>
+            <div class="product-compare-to-and-price">
+              <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
+              <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
+            </div>
+          </div>
+          <div class="product-colors flex-box justify-between light">
+            <div class="product-color">
+              <span>Kleur: </span>
+              <span>
+                Paars
+              </span>
+            </div>
+            <div class="other-available-colors">
+              <a class="featured-product-link" href="{{ product.url }}">Meer kleuren beschikbaar</a>
+            </div>
+          </div>
+
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="CollectionProductGrid">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {%- if collection.products.size == 0 -%}
