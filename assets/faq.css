@@ -46,7 +46,7 @@
 .banner-link {
     display: block;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: auto;
     margin-top: 45px;
     width: fit-content;
 }
