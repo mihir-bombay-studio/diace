@@ -12,6 +12,7 @@
 </style>
 
 {% assign collection = section.settings.collection_type %}
+{%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
 <div class="collection-filter-wrapper container">
   <div class="collection-filter flex-box justify-between">
