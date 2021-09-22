@@ -1,17 +1,5 @@
-{{ 'shop-by-category-banner.css' | asset_url | stylesheet_tag }}
-{{ 'collection-filter.css' | asset_url | stylesheet_tag }}
-{{ 'product-collection.css' | asset_url | stylesheet_tag }}
-{{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
-
-<style>
-  .selected .check-box{
-    background-image: url("{{ 'icon-checkmark.svg' | asset_url }}");
-      background-size: 11px;
-      background-position: center;
-  }
-</style>
-
-{% assign collection = section.settings.collection_type %}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
 <link rel="preload" href="{{ 'component-card.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="{{ 'component-price.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -397,9 +385,30 @@
 
 <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
 
-
 <div id="CollectionProductGrid">
+  {%- paginate collection.products by section.settings.products_per_page -%}
+    {%- if collection.products.size == 0 -%}
+      <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
+        <div class="loading-overlay">
+          <div class="loading-overlay__spinner">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+            </svg>
+          </div>
+        </div>
 
+        <p class="collection-product-count light">
+          {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
+        </p>
+
+        <div class="title-wrapper center">
+          <h2 class="title title--primary">
+            {{ 'sections.collection_template.empty' | t }}<br>
+            {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+          </h2>
+        </div>
+      </div>
+    {%- else -%}
       <div class="collection page-width">
         <div class="loading-overlay">
           <div class="loading-overlay__spinner">
@@ -430,277 +439,14 @@
             </li>
           {%- endfor -%}
         </ul>
+
+        {%- if paginate.pages > 1 -%}
+          {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
+        {%- endif -%}
       </div>
-
-
+    {%- endif -%}
+  {%- endpaginate -%}
 </div>
-
-
-
-
-{% comment %}
-<div class="collection-filter-wrapper container">
-  <div class="collection-filter flex-box justify-between">
-    <div class="collection-filter-left">
-      <div class="filter-tags">
-      {%- for coll in collections -%}
-      <div class="collection-types bold{% if coll.title == collection.title %} current{% endif %}">{{ coll.title }}</div>
-      <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}">
-        {% for tag in collection.tags %}
-        <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
-        {% endfor %}
-        </div>
-      {% endfor %}
-        
-      </div>
-      {% for block in section.blocks %}
-      {% if block.type == "checkboxes" %}
-      <div class="price-tag-filters {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_gender_filter == false and block.settings.show_price_filter == false and block.settings.show_brand_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
-        <div class="filter-title semibold">Filter op:</div>
-        <div class="price-filter{% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_price_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
-          <div class="price-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-            <div class="price-filter-title">PRIJS</div>
-            <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
-          </div>
-          <div class="panel">
-          	<div class="range-slide">
-            <div class="slide">
-              <div class="line" id="line" style="left: 0%; right: 0%;"></div>
-              <span class="thumb" id="thumbMin" style="left: 0%;"></span>
-              <span class="thumb" id="thumbMax" style="left: 100%;"></span>
-            </div>
-            <input id="rangeMin" type="range" max="100" min="0" step="5" value="0">
-            <input id="rangeMax" type="range" max="100" min="0" step="5" value="100">
-          </div>
-          <div class="display light">
-            <span id="min">0</span>
-            <span id="max">100</span>
-          </div>
-          </div>
-          <div class="yellow-border-bottom"></div>
-        </div>
-        <div class="sex-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_gender_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
-          <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-          	<div class="price-filter-title">GESLACHT</div>
-            <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
-          </div>
-          <div class="panel">
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">Meisjes</span>
-            </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">Jongens</span>
-            </div>
-          </div>
-          <div class="yellow-border-bottom"></div>
-        </div>
-        <div class="size-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_size_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
-          <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-          	<div class="price-filter-title">MATEN</div>
-            <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
-          </div>
-          <div class="panel">
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">XS (47 - 55 cm)</span>
-            </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">S (55 - 65 cm)</span>
-            </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">M (65 - 85 cm)</span>
-            </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">L (85 - 100 cm)</span>
-            </div>
-          </div>
-          <div class="yellow-border-bottom"></div>
-        </div>
-        <div class="brand-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_brand_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
-          <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-          	<div class="price-filter-title">MERK</div>
-            <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
-          </div>
-          <div class="panel">
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">MERK 1</span>
-            </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">MERK 2</span>
-            </div>
-          </div>
-          <div class="yellow-border-bottom"></div>
-        </div>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-    <div class="collection-filter-right">
-      <div class="collection-banner-wrapper">
-        <div class="collection-banner flex-box justify-between">
-          <div class="bg-gray-dots">{% include "image-banner-gray-dots" %}</div>
-          <div class="banner-right">
-            <img 
-                 src="{{ collection.image | img_url: '533x' }}"
-                 loading="lazy"
-                 >
-          </div>
-          <div class="banner-left">
-            <div class="banner-title bold">{{ collection.title }}</div>
-            <div class="banner-desc light">{{ collection.description }}</div>
-            {% for block in section.blocks %}
-            {% if block.type == "button" %}
-            {%- if block.settings.button_label != blank -%}
-            <div class="banner-link">
-              <a href="{{ block.settings.button_link }}" class="bold">{{ block.settings.button_label | escape }}</a>
-              <span class="right-black-chveron">{% include 'icon-black-right-chevron' %}</span>
-            </div>
-            {%- endif -%}
-            {% endif %}
-            {% endfor %}
-          </div>
-        </div>
-
-      </div>
-      
-      <div class="sorting-wrapper light flex-box justify-between">
-        <div class="sorting-part total-items flex-box border-bottom justify-between"><div>Toon 16 items</div><div>{% include 'icon-black-down-chevron' %}</div></div>
-        <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
-        <div class="sorting-part sorting flex-box border-bottom justify-between"><div>Sorteer op</div><div>{% include 'icon-black-down-chevron' %}</div></div>
-      </div>
-      
-      <div id="CollectionProductGrid">
-        <div class="product-collection flex-box">
-          {% for product in collections[collection].products %}
-          <div class="collection product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price }}" data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
-            <div class="featured-product-img rel">
-              <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
-              <div class="product-hover-text flex-box align-center">
-                <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-                <a href="" class="hover-text bold">KOPEN</a>
-              </div>
-            </div>
-            <div class="product-title-price flex-box justify-between">
-              <div class="product-title semibold">{{ product.title | escape  }}</div>
-              <div class="product-compare-to-and-price">
-                <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
-                <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
-              </div>
-            </div>
-            <div class="product-colors flex-box justify-between light">
-              <div class="product-color">
-                <span>Kleur: </span>
-                <span>
-                  Paars
-                </span>
-              </div>
-              <div class="other-available-colors">
-                <a class="featured-product-link" href="{{ product.url }}">Meer kleuren beschikbaar</a>
-              </div>
-            </div>
-
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-{% endcomment %}
-
-<script>
-  $('.collection-tag').click(function() {
-   	$(this).toggleClass("underline-selected");
-  	var filter_tag = $(this).data('tfilter');
-    $('.product-collection-card').toggleClass('no-disp');
-    $('.product-collection-card').each(function() {
-      var string = $(this).data('tag');
-      var tag = string.split(',');
-      if( $.inArray(filter_tag, tag) != -1 ) {
-        $(this).removeClass('no-disp');
-      }
-    });
-    
-  });
-  
-  let min = 0;
-  let max = 100;
-
-  const calcLeftPosition = value => 100 / (100 - 10) *  (value - 10);
-
-  $('#rangeMin').on('input', function(e) {
-    const newValue = parseInt(e.target.value);
-    if (newValue > max) return;
-    min = newValue;
-    $('#thumbMin').css('left', calcLeftPosition(newValue) + '%');
-    $('#min').html(newValue);
-    $('#line').css({
-      'left': calcLeftPosition(newValue) + '%',
-      'right': (100 - calcLeftPosition(max)) + '%'
-    });
-    $('.product-collection-card').each(function() {
-      var product_price = $(this).data('price');
-      var new_val = newValue * 100;
-      console.log(product_price);
-      $(this).addClass('out-of-range-min');
-      if( product_price >= new_val ) {
-        $(this).removeClass('out-of-range-min');
-      }
-    });
-  });
-
-  $('#rangeMax').on('input', function(e) {
-    const newValue = parseInt(e.target.value);
-    if (newValue < min) return;
-    max = newValue;
-    $('#thumbMax').css('left', calcLeftPosition(newValue) + '%');
-    $('#max').html(newValue);
-    $('#line').css({
-      'left': calcLeftPosition(min) + '%',
-      'right': (100 - calcLeftPosition(newValue)) + '%'
-    });
-    $('.product-collection-card').each(function() {
-      var product_price = $(this).data('price');
-      var new_val = newValue * 100;
-      console.log(product_price);
-      $(this).addClass('out-of-range-max');
-      if( product_price <= new_val ) {
-        $(this).removeClass('out-of-range-max');
-      }
-    });
-  });
-  
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-        panel.classList.remove("panel-bottom-border");
-      } else {
-        var new_height = panel.scrollHeight + 16;
-        panel.style.maxHeight = new_height + "px";
-        panel.classList.add("panel-bottom-border");
-      } 
-      this.classList.toggle("active");
-    });
-  }
-  
-  $('.check-box-wrapper').click(function() {
-  	$(this).toggleClass('selected');
-  });
-</script>
-
 
 {% schema %}
 {
