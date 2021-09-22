@@ -93,7 +93,7 @@ class CollectionFiltersForm extends HTMLElement {
     });
 
     this.renderActiveFacets(parsedHTML);
-    this.renderMobileElements(parsedHTML);
+   
 
     if (countsToRender) this.renderCounts(countsToRender, event.target.closest('.js-filter'));
   }
