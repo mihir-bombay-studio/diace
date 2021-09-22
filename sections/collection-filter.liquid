@@ -173,7 +173,7 @@
         {%- assign total_active_values = 0 -%}
         <collection-filters-form class="facets small-hide">
           <form id="CollectionFiltersForm" class="facets__form">
-            
+            {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
             
             <div class="active-facets active-facets-desktop">
               <a href="{{ collection.url }}?sort_by={{ sort_by }}" class="active-facets__button button button--secondary js-facet-remove">{{ 'sections.collection_template.clear_all' | t }}</a>
