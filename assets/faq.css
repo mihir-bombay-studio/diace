@@ -34,6 +34,10 @@ product-details .accordion.question {
   border-bottom: 1px solid;
 }
 
+.product-details .panel-bottom-border {
+    border-bottom: 1px solid #FEC23B;
+}
+
 .faq-wrapper .btn{
 	margin-top: 51px !important;
   padding: 20px 83px 16px;
