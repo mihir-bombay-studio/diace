@@ -6,6 +6,13 @@
 {{ 'product-collection.css' | asset_url | stylesheet_tag }}
 {{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .selected .check-box{
+    background-image: url("{{ 'icon-checkmark.svg' | asset_url }}");
+      background-size: 11px;
+      background-position: center;
+  }
+</style>
 
 <link rel="preload" href="{{ 'component-card.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="{{ 'component-price.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
