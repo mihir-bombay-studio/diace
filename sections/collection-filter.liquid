@@ -144,7 +144,7 @@
         </div>
 
       </div>
-      <collection-filters-form class="facets small-hide">
+      <collection-filters-form>
         <form id="CollectionFiltersForm" class="facets__form">
           <div class="active-facets active-facets-desktop">
             <a href="{{ collection.url }}?sort_by={{ sort_by }}" class="active-facets__button button button--secondary js-facet-remove">{{ 'sections.collection_template.clear_all' | t }}</a>
@@ -224,6 +224,7 @@
 </div>
 
 <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
+
 <script>
   $('.collection-tag').click(function() {
     $(this).toggleClass("underline-selected");
