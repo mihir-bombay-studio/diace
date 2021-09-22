@@ -59,3 +59,7 @@
 .banner-link:hover .right-black-chveron svg {
     margin-left: 2px;
 }
+
+.banner-link:hover .right-black-chveron .a-icon-black-right-chevron {
+    stroke: var(--background-yellow);
+}
