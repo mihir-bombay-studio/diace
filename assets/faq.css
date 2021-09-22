@@ -22,7 +22,7 @@
 }
 
 .accordion.question.active{
-/* 	border-bottom: none; */
+	border-bottom: none;
 }
 
 .answer{
