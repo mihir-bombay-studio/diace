@@ -1,43 +1,55 @@
 .collection-filter-right {
-    width: 79%;
+  width: 79%;
 }
 
 .collection-filter-left{
-	width: 19%;
+  width: 19%;
 }
 
 .collection-filter-wrapper .product-collection {
-    margin: 0 -.825%;
+  /*   margin: 0 -.825%; */
+  margin-bottom: 300px;
 }
 
 .collection-filter-wrapper .product-collection-card {
-    width: 31.68%;
-    margin: 0 .825% 16px;
+  width: 31.68%;
+  margin: 0 .825% 16px;
 }
 
 .collection-banner-wrapper{
-	margin-bottom: 52px;
+  margin-bottom: 52px;
+
+}
+
+
+
+.bg-gray-dots{
+  right: -28px;
+  top: 72px;
+  position: absolute;
+  z-index: -1;
 }
 
 .collection-banner {
-    border: 4px solid var(--background-yellow);
+  border: 4px solid var(--background-yellow);
     border-radius: 8px;
-}
+    position : relative;
+    }
 
 .border-bottom {
-	border-bottom: 1px solid;
+  border-bottom: 1px solid;
 }
 
 .sorting-wrapper{
-	margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .sorting-part {
-	width: 176px;
+  width: 176px;
 }
 
 .collection-types{
-	line-height: 24px;
+  line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.8px;
   margin-bottom: 16px;
@@ -45,32 +57,34 @@
 }
 
 .collection-tag {
-    line-height: 24px;
-    color: var(--background-grey);
-    margin-bottom: 8px;
-    margin-left: 16px;
-      cursor: pointer;
+  line-height: 24px;
+  color: var(--background-grey);
+  margin-bottom: 8px;
+  margin-left: 16px;
+  cursor: pointer;
+  user-select : none;  
 }
 
 .collection-tags {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 
 .range-slide {
   position: relative;
   height: 4px;
+  margin-top:5px;
 }
 
 .slide {
   position: absolute;
-    top: 0px;
-    height: 8px;
-    border-radius: 8px;
-    background: var(--background-grey);
+  top: 0px;
+  height: 8px;
+  border-radius: 8px;
+  background: var(--background-grey);
     left: 9px;
     right: 9px;
-}
+    }
 
 .line {
   position: absolute;
@@ -120,75 +134,97 @@ input::-webkit-slider-thumb {
 }
 
 .display {
-    margin-top: 12px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .out-of-range-min{
-	display: none !important;
+  display: none !important;
 }
 
 .out-of-range-max{
-	display: none !important;
+  display: none !important;
 }
 
 .filter-title.semibold {
-    padding-bottom: 16px;
-    border-bottom: 2px solid var(--background-yellow);
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--background-yellow);
     margin-bottom: 16px;
-}
+    }
 
 .price-filter-title-wrapper {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 
 .accordion.filter-accordion.active{
-	border-bottom: none;
+  border-bottom: none;
 }
 
 .down-chevron{
-	transition: .4s ease;
+  transition: .4s ease;
 }
 
 .accordion.filter-accordion.active .down-chevron {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .answer{
-	line-height: 24px;
+  line-height: 24px;
 }
 
 .panel-bottom-border{
-	padding-bottom: 16px;
-/*   border-bottom: 2px solid var(--background-yellow); */
+  padding-bottom: 16px;
+  /*   border-bottom: 2px solid var(--background-yellow); */
 }
 
 .yellow-border-bottom{
   display: block !important;
-	border-bottom: 2px solid var(--background-yellow);
-      margin-bottom: 16px;
-}
+  border-bottom: 2px solid var(--background-yellow);
+    margin-bottom: 16px;
+    }
 
 .sex-filter-title-wrapper {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .check-box {
-    width: 14px;
-    display: inline-block;
-    height: 14px;
-    border: 1.5px solid var(--background-yellow);
+  width: 14px;
+  display: inline-block;
+  height: 14px;
+  border: 1.5px solid var(--background-yellow);
     border-radius: 2px;
-}
+    }
 
 .check-box-option{
-	padding-left: 8px;
+  padding-left: 8px;
 }
 
 .check-box-wrapper {
-    cursor: pointer;
-    width: fit-content;
+  cursor: pointer;
+  width: fit-content;
 }
 
+.product-title-price.flex-box.justify-between{
+
+  flex-direction : column;
+}
+
+.underline-selected{
+  text-decoration: underline;
+  color: #737373;
+}
+
+.underline-selected::before{
+   content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    margin-right: 4px;
+    border-radius: 7.5px;
+    background-color: #FEC23B;
+    border: 1px solid #FEC23B;
+}
