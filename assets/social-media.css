@@ -71,11 +71,13 @@
 
 .sm-right {
     flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .sm-other-img {
     width: 48%;
-    margin-bottom: 16px;
+/*     margin-bottom: 16px; */
+  height: calc(50% - 10px);
 }
 
 .sm-other-img img {
