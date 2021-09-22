@@ -189,7 +189,7 @@
 
 <script>
   $('.collection-tag').click(function() {
-   	$("#tag-active").addClass("underline-selected");
+   	$("#tag-active").removeClass("active");
   	var filter_tag = $(this).data('tfilter');
     $('.product-collection-card').toggleClass('no-disp');
     $('.product-collection-card').each(function() {
