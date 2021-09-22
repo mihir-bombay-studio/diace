@@ -531,76 +531,78 @@
 {%- endif -%}
 </div>
 
-<script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
 
 
-<div id="CollectionProductGrid">
-  {%- paginate collection.products by section.settings.products_per_page -%}
-  {%- if collection.products.size == 0 -%}
-  <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
-    <div class="loading-overlay">
-      <div class="loading-overlay__spinner">
-        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-        </svg>
+      <div id="CollectionProductGrid">
+        {%- paginate collection.products by section.settings.products_per_page -%}
+        {%- if collection.products.size == 0 -%}
+        <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
+          <div class="loading-overlay">
+            <div class="loading-overlay__spinner">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </div>
+
+          <p class="collection-product-count light">
+            {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
+          </p>
+
+          <div class="title-wrapper center">
+            <h2 class="title title--primary">
+              {{ 'sections.collection_template.empty' | t }}<br>
+              {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+            </h2>
+          </div>
+        </div>
+        {%- else -%}
+        <div class="collection page-width">
+          <div class="loading-overlay">
+            <div class="loading-overlay__spinner">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </div>
+
+          <p class="collection-product-count light">
+            {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
+          </p>
+
+          <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="grid grid--2-col
+             {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
+             {% if collection.products_count == 4 %} grid--4-col-desktop{% else %}
+             grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
+             {% endif %} negative-margin">
+            {%- for product in collection.products -%}
+            <li class="grid__item">
+              {% render 'product-card',
+                      product_card_product: product,
+              media_size: section.settings.image_ratio,
+              show_secondary_image: section.settings.show_secondary_image,
+              add_image_padding: section.settings.add_image_padding,
+              show_vendor: section.settings.show_vendor
+              %}
+            </li>
+            {%- endfor -%}
+          </ul>
+
+          {%- if paginate.pages > 1 -%}
+          {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
+          {%- endif -%}
+        </div>
+        {%- endif -%}
+        {%- endpaginate -%}
       </div>
-    </div>
-
-    <p class="collection-product-count light">
-      {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
-    </p>
-
-    <div class="title-wrapper center">
-      <h2 class="title title--primary">
-        {{ 'sections.collection_template.empty' | t }}<br>
-        {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
-      </h2>
-    </div>
-  </div>
-  {%- else -%}
-  <div class="collection page-width">
-    <div class="loading-overlay">
-      <div class="loading-overlay__spinner">
-        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-        </svg>
-      </div>
-    </div>
-
-    <p class="collection-product-count light">
-      {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
-    </p>
-
-    <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="grid grid--2-col
-       {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
-       {% if collection.products_count == 4 %} grid--4-col-desktop{% else %}
-       grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
-       {% endif %} negative-margin">
-      {%- for product in collection.products -%}
-      <li class="grid__item">
-        {% render 'product-card',
-                product_card_product: product,
-        media_size: section.settings.image_ratio,
-        show_secondary_image: section.settings.show_secondary_image,
-        add_image_padding: section.settings.add_image_padding,
-        show_vendor: section.settings.show_vendor
-        %}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {%- if paginate.pages > 1 -%}
-    {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
-    {%- endif -%}
-  </div>
-  {%- endif -%}
-  {%- endpaginate -%}
-</div>
 
       
     </div>
   </div>
 </div>
+</div>
+
 
 
 
@@ -676,6 +678,64 @@
       "id": "enable_sorting",
       "default": true,
       "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
+    }
+  ],
+	"blocks": [
+		{
+          "type": "button",
+          "name": "Button",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "text",
+              "id": "button_label",
+              "default": "Button label",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+              "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+            },
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+            }
+          ]
+        },
+		{
+          "type": "checkboxes",
+		  "name": "Filters",
+		  "settings": [
+			{
+              "type": "checkbox",
+              "id": "show_price_filter",
+              "label": "Show Price Filter",
+              "default": true
+            },
+		  	{
+              "type": "checkbox",
+              "id": "show_gender_filter",
+              "label": "Show Gender Filter",
+              "default": true
+            },
+		  	{
+              "type": "checkbox",
+              "id": "show_size_filter",
+              "label": "Show size Filter",
+              "default": true
+            },
+            {
+              "type": "checkbox",
+              "id": "show_brand_filter",
+              "label": "Show Brand Filter",
+              "default": true
+            }
+		  ]
+        }
+		
+	],
+	"presets": [
+    {
+      "name": "Collection Filter",
+		"category":"section"
     }
   ]
 }
