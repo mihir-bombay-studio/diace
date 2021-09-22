@@ -21,7 +21,7 @@
       <div class="collection-types bold{% if coll.title == collection.title %} current{% endif %}">{{ coll.title }}</div>
       <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}">
         {% for tag in collection.tags %}
-        <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
+        <div class="collection-tag semibold" data-tfilter="{{ tag }}"><span id ="tag-active"></span>{{ tag }}</div>
         {% endfor %}
         </div>
       {% endfor %}
