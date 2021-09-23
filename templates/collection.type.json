@@ -91,7 +91,6 @@
         },
         "be79905d-e3ad-4ba2-8a40-b4b4296c2649": {
           "type": "brand_filter",
-          "disabled": true,
           "settings": {
             "brand": "MERK 4"
           }
