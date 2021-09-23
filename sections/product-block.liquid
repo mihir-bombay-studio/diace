@@ -75,7 +75,9 @@
       <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
         {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input">
-          {{ option.name }}
+          {%- if option.name == "Size" -%}
+          KIES JOUW MAAT
+          {%- endif -%}
           {%- for value in option.values -%}
           <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
                  class="no-disp"
