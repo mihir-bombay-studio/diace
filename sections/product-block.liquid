@@ -69,6 +69,7 @@
       </div>
       <div class="no-js-hidden" id="price-{{ section.id }}">
         {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
+        <span class="incl-tax light">incl. BTW</span>
       </div>
       <div class="product-desc light">{{ product.description }}</div>
       
