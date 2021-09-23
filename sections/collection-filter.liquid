@@ -93,45 +93,39 @@
         </div>
         
         
-        <div class="size-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_size_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+        <div class="size-filter">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-            <div class="price-filter-title">MATEN</div>
+            <div class="price-filter-title">{{section.settings.size_filter_title}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
+            {% for block in section.blocks %}
+        	{% if block.type == "size_filter" %}
             <div class="check-box-wrapper flex-box align-center">
               <span class="check-box"></span>
-              <span class="check-box-option semibold">XS (47 - 55 cm)</span>
+              <span class="check-box-option semibold">{{block.settings.size}}</span>
             </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">S (55 - 65 cm)</span>
-            </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">M (65 - 85 cm)</span>
-            </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">L (85 - 100 cm)</span>
-            </div>
+            {% endif %}
+        	{% endfor %}
           </div>
           <div class="yellow-border-bottom"></div>
         </div>
-        <div class="brand-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_brand_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+        
+        
+        <div class="brand-filter">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-            <div class="price-filter-title">MERK</div>
+            <div class="price-filter-title">{{section.settings.brand_filter_title}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
+            {% for block in section.blocks %}
+        	{% if block.type == "brand_filter" %}
             <div class="check-box-wrapper flex-box align-center">
               <span class="check-box"></span>
-              <span class="check-box-option semibold">MERK 1</span>
+              <span class="check-box-option semibold">{{block.settings.brand}}</span>
             </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">MERK 2</span>
-            </div>
+            {% endif %}
+        	{% endfor %}
           </div>
           <div class="yellow-border-bottom"></div>
         </div>
@@ -656,6 +650,16 @@
       "type": "text",
       "id": "gender_filter_title",
       "label": "Gender Filter Title"
+    },
+    {
+      "type": "text",
+      "id": "size_filter_title",
+      "label": "Size Filter Title"
+    },
+    {
+      "type": "text",
+      "id": "brand_filter_title",
+      "label": "Brand Filter Title"
     }
   ],
 	"blocks": [
@@ -681,6 +685,7 @@
 		{
           "type": "price_filter",
 		  "name": "Price Filter",
+		  "limit" : 1,
 		  "settings": [
 			{
               "type": "checkbox",
@@ -705,6 +710,30 @@
               "type": "text",
               "id": "gender",
               "label": "Gender"
+            }
+		  ]
+        },
+		{
+          "type": "size_filter",
+		  "name": "Size Filter",
+		  "settings": [
+			
+			{
+              "type": "text",
+              "id": "size",
+              "label": "Size"
+            }
+		  ]
+        },
+		{
+          "type": "brand_filter",
+		  "name": "Brand Filter",
+		  "settings": [
+			
+			{
+              "type": "text",
+              "id": "brand",
+              "label": "Brand Category"
             }
 		  ]
         }
