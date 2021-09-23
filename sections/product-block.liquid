@@ -67,6 +67,9 @@
         <span class="product-price semibold">{{ product.price | money }}</span>
         <span class="incl-tax light">incl. BTW</span>
       </div>
+      <div class="no-js-hidden" id="price-{{ section.id }}">
+              {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+      </div>
       <div class="product-desc light">{{ product.description }}</div>
       
 <!--       ----------------------------------------------------------------------- -->
