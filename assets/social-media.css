@@ -99,7 +99,14 @@
 }
 
 .social-media-wrapper .dots-left-down {
-    bottom: 80px;
+  bottom: 52px;
+  left: -48px;
+}
+
+
+.social-media-wrapper .dots-right-down {
+  bottom: -55px;
+  right: -25px;
 }
 
 .socila-media-lower {
@@ -167,8 +174,3 @@ h2.newsletter-subscription-heading {
 	max-width: unset;
 }
 
-
-.social-media-wrapper .dots-right-down {
-    bottom: -55px;
-    right: -25px;
-}
