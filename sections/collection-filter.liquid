@@ -156,8 +156,14 @@
             {% endfor %}
           </div>
         </div>
-
       </div>
+      
+      <div class="sorting-wrapper light flex-box justify-between">
+        <div class="sorting-part total-items flex-box border-bottom justify-between"><div>Toon 16 items</div><div>{% include 'icon-black-down-chevron' %}</div></div>
+        <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
+        <div class="sorting-part sorting flex-box border-bottom justify-between"><div>Sorteer op</div><div>{% include 'icon-black-down-chevron' %}</div></div>
+      </div>
+      
 
       <div class="page-width collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
         {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
