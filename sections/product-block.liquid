@@ -33,11 +33,12 @@
 </style>
 
 
-<div class="product-block-wrapper container">
-  <div class="product-block flex-box justify-between rel">
-    <div class="bg-yellow-dots dots-left-down">
+<div class="product-block-wrapper container rel">
+  <div class="bg-yellow-dots dots-left-down">
       	{% include 'bg-grey-dots' %}
       </div>
+  <div class="product-block flex-box justify-between">
+    
     <div class="product-block-left">
       <div class="slider-for">
         {% for image in product.images %}
