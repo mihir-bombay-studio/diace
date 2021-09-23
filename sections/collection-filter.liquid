@@ -158,6 +158,9 @@
         </div>
       </div>
       
+      
+      
+      
       <div class="sorting-wrapper light flex-box justify-between">
         <div class="sorting-part total-items flex-box border-bottom justify-between"><div>Toon 16 items</div><div>{% include 'icon-black-down-chevron' %}</div></div>
         <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
@@ -536,11 +539,7 @@
         </div>
       </div>
       
-
-    
-
       <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
-
 
       <div id="CollectionProductGrid">
         {%- paginate collection.products by section.settings.products_per_page -%}
