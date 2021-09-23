@@ -20,9 +20,23 @@
   {%- endif -%}
   {% endif %}
   {% endfor %}
+  
+  
+  {% for block in section.blocks %}
+  {% if block.type == "cta" %}
+  {%- if block.settings.cta_label != blank -%}
+  <div class="banner-link">
+    <a href="{{ block.settings.cta_link }}" class="bold">{{ block.settings.cta_label | escape }}</a>
+    <span class="right-black-chveron">{% include 'icon-black-right-chevron' %}</span>
+  </div>
+  {%- endif -%}
+  {% endif %}
+  {% endfor %}
+  
+  
 </div>
 
-<script>
+<!-- <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -40,7 +54,7 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
   });
 }
-</script>
+</script> -->
 
 {% schema %}
   {
@@ -104,6 +118,25 @@ for (i = 0; i < acc.length; i++) {
               ],
               "default": "grey",
               "label": "Grey"
+            }
+          ]
+        },
+		{
+          "type": "cta",
+          "name": "CTA",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "text",
+              "id": "cta_label",
+              "default": "CTA label",
+              "label": "CTA label",
+              "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+            },
+            {
+              "type": "url",
+              "id": "cta_link",
+              "label": "CTA link"
             }
           ]
         }

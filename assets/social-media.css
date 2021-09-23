@@ -1,3 +1,7 @@
+.social-media {
+    margin-bottom: 26px;
+}
+
 .social-logo {
     position: absolute;
     bottom: 16px;
@@ -24,6 +28,8 @@
     width: 100%;
     display: block;
     border-radius: 8px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .text-over-sm.bold {
@@ -65,16 +71,20 @@
 
 .sm-right {
     flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .sm-other-img {
     width: 48%;
-    margin-bottom: 16px;
+/*     margin-bottom: 16px; */
+  height: calc(50% - 10px);
 }
 
 .sm-other-img img {
     width: 100%;
+    height: 100%;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .hover-text {
@@ -83,8 +93,9 @@
     line-height: 24px;
     letter-spacing: .8px;
     max-width: 0;
-    -webkit-transition: .4s ease;
-    transition: .4s ease;
+    -webkit-transition: font-size .8s ease;
+    transition: font-size .8s ease;
+  font-size: 0;
 }
 
 .social-media-wrapper .dots-left-down {
@@ -149,6 +160,7 @@ h2.newsletter-subscription-heading {
 
 .sm-hover-text:hover .hover-text {
 	max-width: 100%;
+  font-size: inherit;
 }
 
 .sm-hover-text:hover {

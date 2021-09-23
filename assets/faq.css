@@ -17,8 +17,12 @@
     border-bottom: 1px solid;
 }
 
+.product-details .accordion.question {
+    border-bottom: 2px solid #FEC23B;
+}
+
 .accordion.question.active{
-/* 	border-bottom: none; */
+	border-bottom: none;
 }
 
 .answer{
@@ -30,7 +34,33 @@
   border-bottom: 1px solid;
 }
 
+.product-details .panel-bottom-border, .product-details .accordion.question.active {
+    border-bottom: 2px solid #FEC23B;
+}
+
 .faq-wrapper .btn{
 	margin-top: 51px !important;
   padding: 20px 83px 16px;
+}
+
+.banner-link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    width: fit-content;
+  padding-left: 10px;
+}
+
+.banner-link .right-black-chveron svg {
+    height: 12px;
+    transition: .4s ease;
+}
+
+.banner-link:hover .right-black-chveron svg {
+    margin-left: 2px;
+}
+
+.banner-link:hover .right-black-chveron .a-icon-black-right-chevron {
+    stroke: var(--background-yellow);
 }

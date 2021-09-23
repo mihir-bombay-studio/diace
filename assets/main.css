@@ -108,3 +108,7 @@ a {
 .raw-reverse{
 	flex-direction: row-reverse;
 }
+
+.fp-hover-text:hover .hover-text, .hero-hover-text:hover .hover-text{
+font-size: inherit;
+}
