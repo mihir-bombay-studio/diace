@@ -319,7 +319,9 @@
         {%- if section.settings.enable_sorting -%}
         <div class="collection-filters__item sorting">
           <div class="collection-filters__field">
+            {%comment%}
             <label class="collection-filters__label" for="SortBy">{{ 'sections.collection_template.sort_by_label' | t }}</label>
+            {%endcomment%}
             <div class="select">
               {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
               <select name="sort_by" class="select__select collection-filters__sort" id="SortBy" aria-describedby="a11y-refresh-page-message">
