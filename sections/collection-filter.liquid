@@ -42,13 +42,12 @@
         {% endfor %}
 
       </div>
-      {% for block in section.blocks %}
-      {% if block.type == "checkboxes" %}
-      <div class="price-tag-filters {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_gender_filter == false and block.settings.show_price_filter == false and block.settings.show_brand_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+
+      <div class="price-tag-filters">
         <div class="filter-title semibold">Filter op:</div>
-        <div class="price-filter{% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_price_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+        <div class="price-filter{% for block in section.blocks %}{% if block.type == "price_filter" %}{% if block.settings.show_price_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
           <div class="price-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-            <div class="price-filter-title">PRIJS</div>
+            <div class="price-filter-title">{{block.settings.show_price_filter_heading}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
@@ -62,8 +61,8 @@
               <input id="rangeMax" type="range" max="100" min="0" step="5" value="100">
             </div>
             <div class="display light">
-              <span id="min">0</span>
-              <span id="max">100</span>
+              <span id="min">{{block.settings.show_price_filter_startrange}}</span>
+              <span id="max">{{block.settings.show_price_filter_endrange}}</span>
             </div>
           </div>
           <div class="yellow-border-bottom"></div>
@@ -128,8 +127,7 @@
           <div class="yellow-border-bottom"></div>
         </div>
       </div>
-      {% endif %}
-      {% endfor %}
+
     </div>
     <div class="collection-filter-right">
       <div class="collection-banner-wrapper">
@@ -667,8 +665,8 @@
           ]
         },
 		{
-          "type": "checkboxes",
-		  "name": "Filters",
+          "type": "price_filter",
+		  "name": "Price Filter",
 		  "settings": [
 			{
               "type": "checkbox",
@@ -676,23 +674,23 @@
               "label": "Show Price Filter",
               "default": true
             },
-		  	{
-              "type": "checkbox",
-              "id": "show_gender_filter",
-              "label": "Show Gender Filter",
-              "default": true
+			{
+              "type": "text",
+              "id": "show_price_filter_heading",
+              "label": "Price Filter heading",
+			  "default" : "PRIJS"
             },
-		  	{
-              "type": "checkbox",
-              "id": "show_size_filter",
-              "label": "Show size Filter",
-              "default": true
+			{
+              "type": "text",
+              "id": "show_price_filter_startrange",
+              "label": "Price Filter start range",
+			  "default" : "0"
             },
-            {
-              "type": "checkbox",
-              "id": "show_brand_filter",
-              "label": "Show Brand Filter",
-              "default": true
+			{
+              "type": "text",
+              "id": "show_price_filter_endrange",
+              "label": "Price Filter end range",
+			  "default" : "100"
             }
 		  ]
         }
