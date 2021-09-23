@@ -258,3 +258,9 @@ a.active-facets__button {
     padding: .5rem 1rem;
     margin: 0 0 1rem 1rem;
 }
+
+
+.facets__wrapper , .mobile-facets__wrapper{
+	display : none;
+}
+
