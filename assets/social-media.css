@@ -93,8 +93,9 @@
     line-height: 24px;
     letter-spacing: .8px;
     max-width: 0;
-    -webkit-transition: .4s ease;
-    transition: .4s ease;
+    -webkit-transition: font-size .8s ease;
+    transition: font-size .8s ease;
+  font-size: 0;
 }
 
 .social-media-wrapper .dots-left-down {
@@ -159,6 +160,7 @@ h2.newsletter-subscription-heading {
 
 .sm-hover-text:hover .hover-text {
 	max-width: 100%;
+  font-size: inherit;
 }
 
 .sm-hover-text:hover {
