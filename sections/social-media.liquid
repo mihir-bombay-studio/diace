@@ -1,6 +1,9 @@
 {{ 'social-media.css' | asset_url | stylesheet_tag }}
 
-<div class="social-media-wrapper container">
+<div class="social-media-wrapper container rel">
+  <div class="bg-yellow-dots dots-right-down">
+      	{% include 'bg-yellow-dots' %}
+      </div>
   <div class="social-media flex-box justify-between">
     <div class="sm-left rel">
     	<img 
@@ -47,10 +50,8 @@
       {% endfor %}
     </div>
   </div>
-  <div class="socila-media-lower rel">
-    <div class="bg-yellow-dots dots-right-down">
-      	{% include 'bg-yellow-dots' %}
-      </div>
+  <div class="socila-media-lower">
+    
     <h2 class="text-center newsletter-subscription-heading bold">{{section.settings.subscription_heading}}</h2>
     <div class="text-center newsletter-subscription-desc light">{{section.settings.subscription_desc}}</div>
     <div class="subscription-form flex-box">
