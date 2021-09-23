@@ -94,7 +94,7 @@
     letter-spacing: .8px;
     max-width: 0;
     -webkit-transition: font-size .8s ease;
-    transition: font-size .8s ease;
+    transition: font-size .4s ease;
   font-size: 0;
 }
 
