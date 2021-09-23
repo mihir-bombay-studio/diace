@@ -1246,13 +1246,13 @@ deferred-media {
   color: var(--color-foreground-75);
 }
 
-.field__input:hover,
+/* .field__input:hover,
 .select__select:hover,
 .customer .field input:hover,
 .customer select:hover,
 .localization-form__select:hover {
   box-shadow: 0 0 0 0.2rem var(--color-foreground-55);
-}
+} */
 
 /* .field__input:focus-visible,
 .select__select:focus-visible,
