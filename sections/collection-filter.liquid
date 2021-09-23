@@ -74,9 +74,9 @@
         
         
         
-        <div class="sex-filter {% for block in section.blocks %}{% if block.type == "gender_filter" %}{% if block.settings.show_gender_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+        <div class="sex-filter">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-            <div class="price-filter-title">GESLACHT</div>
+            <div class="price-filter-title">{{section.settings.gender_filter_title}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
@@ -651,6 +651,11 @@
       "id": "enable_sorting",
       "default": true,
       "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
+    },
+    {
+      "type": "text",
+      "id": "gender_filter_title",
+      "label": "Gender Filter Title"
     }
   ],
 	"blocks": [
@@ -695,12 +700,7 @@
           "type": "gender_filter",
 		  "name": "Gender Filter",
 		  "settings": [
-			{
-              "type": "checkbox",
-              "id": "show_gender_filter",
-              "label": "Show Gender Filter",
-              "default": true
-            },
+			
 			{
               "type": "text",
               "id": "gender",
