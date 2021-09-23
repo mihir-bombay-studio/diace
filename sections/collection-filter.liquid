@@ -322,7 +322,6 @@
             <div class="select">
               {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
               <select name="sort_by" class="select__select collection-filters__sort" id="SortBy" aria-describedby="a11y-refresh-page-message">
-                <option value="Sorteer op" disabled>Sorteer op</option>
                 {%- for option in collection.sort_options -%}
                 <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
                 {%- endfor -%}
