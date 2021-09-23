@@ -1254,7 +1254,7 @@ deferred-media {
   box-shadow: 0 0 0 0.2rem var(--color-foreground-55);
 }
 
-.field__input:focus-visible,
+/* .field__input:focus-visible,
 .select__select:focus-visible,
 .field input:focus-visible {
   box-shadow: 0 0 0 0.1rem var(--color-foreground-55),
@@ -1268,7 +1268,7 @@ deferred-media {
   box-shadow: 0 0 0 0.1rem var(--color-foreground-55),
     0 0 0 0.3rem var(--color-background),
     0 0 0.5rem 0.4rem var(--color-foreground-30);
-}
+} */
 
 .text-area,
 .select {
