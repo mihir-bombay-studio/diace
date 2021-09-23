@@ -92,6 +92,8 @@ fieldset.product-form__input {
   margin-bottom: 16px;
 }
 
-.product-form__input input[type=radio]:checked+label{
-color: #FEC23B;
+.product-form__input input[type=radio]:checked+label {
+    color: var(--text-yellow);
+    font-weight: 600;
+    text-decoration: underline;
 }
