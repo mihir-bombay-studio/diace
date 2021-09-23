@@ -1292,6 +1292,7 @@ deferred-media {
 .customer select {
   cursor: pointer;
   padding: 0 4rem 0 ;
+  border-bottom: 1px solid;
 }
 
 /* Field */
