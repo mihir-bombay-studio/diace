@@ -71,23 +71,28 @@
         </div>
         {% endif %}
         {% endfor %}
-        <div class="sex-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_gender_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+        
+        
+        
+        <div class="sex-filter {% for block in section.blocks %}{% if block.type == "gender_filter" %}{% if block.settings.show_gender_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
             <div class="price-filter-title">GESLACHT</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
+            {% for block in section.blocks %}
+        	{% if block.type == "gender_filter" %}
             <div class="check-box-wrapper flex-box align-center">
               <span class="check-box"></span>
-              <span class="check-box-option semibold">Meisjes</span>
+              <span class="check-box-option semibold">{{block.settings.gender}}</span>
             </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">Jongens</span>
-            </div>
+            {% endif %}
+        	{% endfor %}
           </div>
           <div class="yellow-border-bottom"></div>
         </div>
+        
+        
         <div class="size-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_size_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
             <div class="price-filter-title">MATEN</div>
@@ -683,6 +688,23 @@
               "id": "show_price_filter_heading",
               "label": "Price Filter heading",
 			  "default" : "PRIJS"
+            }
+		  ]
+        },
+		{
+          "type": "gender_filter",
+		  "name": "Gender Filter",
+		  "settings": [
+			{
+              "type": "checkbox",
+              "id": "show_gender_filter",
+              "label": "Show Gender Filter",
+              "default": true
+            },
+			{
+              "type": "text",
+              "id": "gender",
+              "label": "Gender"
             }
 		  ]
         }
