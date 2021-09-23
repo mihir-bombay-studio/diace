@@ -63,13 +63,11 @@
     <div class="product-block-right">
       <h2 class="product-title bold">{{ product.title }}</h2>
       <div class="product-price-wrapper">
-        <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
-        <span class="product-price semibold">{{ product.price | money }}</span>
-        <span class="incl-tax light">incl. BTW</span>
-      </div>
-      <div class="no-js-hidden" id="price-{{ section.id }}">
+        <div class="no-js-hidden" id="price-{{ section.id }}">
         {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
       </div>
+      </div>
+      
       <div class="product-desc light">{{ product.description }}</div>
       
 <!--       ----------------------------------------------------------------------- -->
