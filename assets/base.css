@@ -1233,7 +1233,7 @@ deferred-media {
   font-size: 1.6rem;
   width: 100%;
 /*   box-shadow: 0 0 0 0.1rem var(--color-foreground-55); */
-  height: 4.5rem;
+/*   height: 4.5rem; */
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
 }
@@ -1291,7 +1291,7 @@ deferred-media {
 .select__select,
 .customer select {
   cursor: pointer;
-  padding: 0 4rem 0 1.5rem;
+  padding: 0 4rem 0 ;
 }
 
 /* Field */
