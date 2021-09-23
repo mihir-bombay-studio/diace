@@ -162,7 +162,7 @@
         <div class="sorting-part total-items flex-box border-bottom justify-between"><div>Toon 16 items</div><div>{% include 'icon-black-down-chevron' %}</div></div>
         <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
         <div class="sorting-part sorting flex-box border-bottom justify-between">
-          <div class="page-width collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
+          <div class="collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
             {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
             {%- assign total_active_values = 0 -%}
             <collection-filters-form class="facets">
@@ -545,7 +545,7 @@
       <div id="CollectionProductGrid">
         {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
-        <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
+        <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
           <div class="loading-overlay">
             <div class="loading-overlay__spinner">
               <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -566,7 +566,7 @@
           </div>
         </div>
         {%- else -%}
-        <div class="collection page-width">
+        <div class="collection">
           <div class="loading-overlay">
             <div class="loading-overlay__spinner">
               <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
