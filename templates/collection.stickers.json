@@ -2,17 +2,39 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false
       }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false,
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    },
+    "16324014168d24c379": {
+      "type": "collection-filter",
+      "settings": {
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "gender_filter_title": "GESLACHT",
+        "size_filter_title": "MATEN",
+        "brand_filter_title": "MERK"
       }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "16324014168d24c379"
   ]
 }
