@@ -59,12 +59,12 @@
                 <span class="thumb" id="thumbMin" style="left: 0%;"></span>
                 <span class="thumb" id="thumbMax" style="left: 100%;"></span>
               </div>
-              <input id="rangeMin" type="range" max="{{block.settings.show_price_filter_endrange}}" min="{{block.settings.show_price_filter_startrange}}" step="5" value="{{block.settings.show_price_filter_startrange}}">
-              <input id="rangeMax" type="range" max="{{block.settings.show_price_filter_endrange}}" min="{{block.settings.show_price_filter_startrange}}" step="5" value="{{block.settings.show_price_filter_endrange}}">
+              <input id="rangeMin" type="range" max="100" min="0" step="5" value="0">
+              <input id="rangeMax" type="range" max="100" min="0" step="5" value="100">
             </div>
             <div class="display light">
-              <span id="min">{{block.settings.show_price_filter_startrange}}</span>
-              <span id="max">{{block.settings.show_price_filter_endrange}}</span>
+              <span id="min">0</span>
+              <span id="max">100</span>
             </div>
           </div>
           <div class="yellow-border-bottom"></div>
@@ -683,18 +683,6 @@
               "id": "show_price_filter_heading",
               "label": "Price Filter heading",
 			  "default" : "PRIJS"
-            },
-			{
-              "type": "text",
-              "id": "show_price_filter_startrange",
-              "label": "Price Filter start range",
-			  "default" : "0"
-            },
-			{
-              "type": "text",
-              "id": "show_price_filter_endrange",
-              "label": "Price Filter end range",
-			  "default" : "100"
             }
 		  ]
         }
