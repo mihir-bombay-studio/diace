@@ -264,7 +264,7 @@ a.active-facets__button {
   display : none;
 }
 
-.select__select collection-filters__sort{
+.select__select.collection-filters__sort{
   font-family: 'Myriad Pro';
   font-size: 16px;
   color: #000000; 
