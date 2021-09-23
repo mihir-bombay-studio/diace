@@ -74,7 +74,7 @@
         
         
         
-        <div class="sex-filter {% for block in section.blocks %}{% if block.type == "gender_filter" %}{% if block.size < 0 %} no-disp{% endif %}{% endif %}{% endfor %}">
+        <div class="sex-filter {% for block in section.blocks %}{% if block.type == "gender_filter" %}{% if block.settings.show_gender_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
             <div class="price-filter-title">GESLACHT</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
