@@ -85,9 +85,10 @@ fieldset.product-form__input {
 
 .variant-option-name{
 
-  font: normal normal bold 16px/24px Myriad Pro;
+  font: normal normal bold 16px 'Myriad Pro';
   letter-spacing: 0.8px;
   color: #000000;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
