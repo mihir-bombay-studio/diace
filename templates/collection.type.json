@@ -1,1 +1,43 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"163186395157861a6d":{"type":"collection-filter","blocks":{"a7bbdb36-c5ea-454d-a533-0b06160858dc":{"type":"button","settings":{"button_label":"ALLE CATEGORIEËN","button_link":"shopify:\/\/collections"}},"7b380e1e-4e56-4a33-9f7a-afcacd88d22e":{"type":"checkboxes","settings":{"show_price_filter":true,"show_gender_filter":true,"show_brand_filter":true}}},"block_order":["a7bbdb36-c5ea-454d-a533-0b06160858dc","7b380e1e-4e56-4a33-9f7a-afcacd88d22e"],"settings":{"collection_type":"opbergen"}}},"order":["main","163186395157861a6d"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "163186395157861a6d": {
+      "type": "collection-filter",
+      "blocks": {
+        "a7bbdb36-c5ea-454d-a533-0b06160858dc": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "75c20508-6346-491f-b6a0-e6c8ecb61897": {
+          "type": "price_filter",
+          "settings": {
+            "show_price_filter": true,
+            "show_price_filter_heading": "PRIJS",
+            "show_price_filter_startrange": "0",
+            "show_price_filter_endrange": "200"
+          }
+        }
+      },
+      "block_order": [
+        "a7bbdb36-c5ea-454d-a533-0b06160858dc",
+        "75c20508-6346-491f-b6a0-e6c8ecb61897"
+      ],
+      "settings": {
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "163186395157861a6d"
+  ]
+}
