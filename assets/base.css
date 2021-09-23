@@ -719,20 +719,20 @@ summary::-webkit-details-marker {
   Focus ring - default (with offset)
 */
 
-*:focus-visible {
+/* *:focus-visible {
   outline: 0.2rem solid var(--color-foreground-50);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem var(--color-background),
     0 0 0.5rem 0.4rem var(--color-foreground-30);
-}
+} */
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
-*:focus {
+/* *:focus {
   outline: 0.2rem solid var(--color-foreground-50);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem var(--color-background),
     0 0 0.5rem 0.4rem var(--color-foreground-30);
-}
+} */
 
 /* Negate the fallback side-effect for browsers that support :focus-visible */
 *:focus:not(:focus-visible) {
@@ -1226,14 +1226,14 @@ deferred-media {
 .customer select {
   -webkit-appearance: none;
   appearance: none;
-  background-color: transparent;
+/*   background-color: transparent; */
   border: 0;
   border-radius: 0;
   color: var(--color-foreground);
   font-size: 1.6rem;
   width: 100%;
-  box-shadow: 0 0 0 0.1rem var(--color-foreground-55);
-  height: 4.5rem;
+/*   box-shadow: 0 0 0 0.1rem var(--color-foreground-55); */
+/*   height: 4.5rem; */
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
 }
@@ -1246,15 +1246,19 @@ deferred-media {
   color: var(--color-foreground-75);
 }
 
-.field__input:hover,
+.select__select:focus{
+	outline:none;
+}
+  
+/* .field__input:hover,
 .select__select:hover,
 .customer .field input:hover,
 .customer select:hover,
 .localization-form__select:hover {
   box-shadow: 0 0 0 0.2rem var(--color-foreground-55);
-}
+} */
 
-.field__input:focus-visible,
+/* .field__input:focus-visible,
 .select__select:focus-visible,
 .field input:focus-visible {
   box-shadow: 0 0 0 0.1rem var(--color-foreground-55),
@@ -1268,7 +1272,7 @@ deferred-media {
   box-shadow: 0 0 0 0.1rem var(--color-foreground-55),
     0 0 0 0.3rem var(--color-background),
     0 0 0.5rem 0.4rem var(--color-foreground-30);
-}
+} */
 
 .text-area,
 .select {
@@ -1291,7 +1295,8 @@ deferred-media {
 .select__select,
 .customer select {
   cursor: pointer;
-  padding: 0 4rem 0 1.5rem;
+/*   padding: 0 4rem 0 ; */
+
 }
 
 /* Field */
