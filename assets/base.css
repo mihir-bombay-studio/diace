@@ -1246,6 +1246,10 @@ deferred-media {
   color: var(--color-foreground-75);
 }
 
+.select__select:focus{
+	outline:none;
+}
+  
 /* .field__input:hover,
 .select__select:hover,
 .customer .field input:hover,
