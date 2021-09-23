@@ -1,4 +1,5 @@
 
+// Accordian 
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -17,6 +18,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// filter by tags and range script
 
   $('.collection-tag').click(function() {
    	$(this).toggleClass("underline-selected");
