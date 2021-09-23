@@ -264,7 +264,7 @@ a.active-facets__button {
 	display : none;
 }
 
-.collection-filters__item.sorting  .select__select{
+.select__select{
   -webkit-appearance: none;
   appearance: none;
   border: 0;
