@@ -44,9 +44,10 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       </dt>
       <dd {% if show_badges == false %}class="price__last"{% endif %}>
-        <span class="price-item price-item--regular">
+        <span class="price-item price-item--regular product-price semibold">
           {{ money_price }}
         </span>
+        <span class="incl-tax light">incl. BTW</span>
       </dd>
     </div>
     <div class="price__sale">
