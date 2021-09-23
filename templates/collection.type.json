@@ -26,19 +26,40 @@
         "cba9f0b4-f482-452a-b3c3-bdb5929eef1c": {
           "type": "gender_filter",
           "settings": {
-            "show_gender_filter": true,
             "gender": "Meisjes"
+          }
+        },
+        "c8eab9d0-d96d-4ec0-976f-aa6adea2c049": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Jongens"
+          }
+        },
+        "db91208a-ac5a-4543-854f-c0d484512aaa": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Vrouwen"
+          }
+        },
+        "3c5ae0ef-4f87-4652-b226-d91fa2e359da": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Mannen"
           }
         }
       },
       "block_order": [
         "a7bbdb36-c5ea-454d-a533-0b06160858dc",
         "75c20508-6346-491f-b6a0-e6c8ecb61897",
-        "cba9f0b4-f482-452a-b3c3-bdb5929eef1c"
+        "cba9f0b4-f482-452a-b3c3-bdb5929eef1c",
+        "c8eab9d0-d96d-4ec0-976f-aa6adea2c049",
+        "db91208a-ac5a-4543-854f-c0d484512aaa",
+        "3c5ae0ef-4f87-4652-b226-d91fa2e359da"
       ],
       "settings": {
         "enable_filtering": true,
-        "enable_sorting": true
+        "enable_sorting": true,
+        "gender_filter_title": "GESLACHT"
       }
     }
   },
