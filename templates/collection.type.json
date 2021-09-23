@@ -20,15 +20,21 @@
           "type": "price_filter",
           "settings": {
             "show_price_filter": true,
-            "show_price_filter_heading": "PRIJS",
-            "show_price_filter_startrange": "0",
-            "show_price_filter_endrange": "200"
+            "show_price_filter_heading": "PRIJS"
+          }
+        },
+        "cba9f0b4-f482-452a-b3c3-bdb5929eef1c": {
+          "type": "gender_filter",
+          "settings": {
+            "show_gender_filter": true,
+            "gender": "Meisjes"
           }
         }
       },
       "block_order": [
         "a7bbdb36-c5ea-454d-a533-0b06160858dc",
-        "75c20508-6346-491f-b6a0-e6c8ecb61897"
+        "75c20508-6346-491f-b6a0-e6c8ecb61897",
+        "cba9f0b4-f482-452a-b3c3-bdb5929eef1c"
       ],
       "settings": {
         "enable_filtering": true,
