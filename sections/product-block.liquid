@@ -87,7 +87,7 @@
                  {% if option.selected_value == value %}checked{% endif %}
                  >
           <label for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-            {{ value }} {%- if forloop.last != true  -%}&nbsp <b>-</b> &nbsp{%- endif -%}
+            {{ value }} {%- if forloop.last != true  -%}&nbsp - &nbsp{%- endif -%}
           </label>
           {%- endfor -%}
         </fieldset>
