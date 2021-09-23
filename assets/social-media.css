@@ -166,3 +166,9 @@ h2.newsletter-subscription-heading {
 .sm-hover-text:hover {
 	max-width: unset;
 }
+
+
+.social-media-wrapper .dots-right-down {
+    bottom: -55px;
+    right: -25px;
+}
