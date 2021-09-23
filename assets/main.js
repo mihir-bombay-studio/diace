@@ -16,3 +16,70 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
   });
 }
+
+
+  $('.collection-tag').click(function() {
+   	$(this).toggleClass("underline-selected");
+  	var filter_tag = $(this).data('tfilter');
+    $('.product-collection-card').toggleClass('no-disp');
+    $('.product-collection-card').each(function() {
+      var string = $(this).data('tag');
+      var tag = string.split(',');
+      if( $.inArray(filter_tag, tag) != -1 ) {
+        $(this).removeClass('no-disp');
+      }
+    });
+    
+  });
+  
+  let min = 0;
+  let max = 100;
+
+  const calcLeftPosition = value => 100 / (100 - 10) *  (value - 10);
+
+  $('#rangeMin').on('input', function(e) {
+    const newValue = parseInt(e.target.value);
+    if (newValue > max) return;
+    min = newValue;
+    $('#thumbMin').css('left', calcLeftPosition(newValue) + '%');
+    $('#min').html(newValue);
+    $('#line').css({
+      'left': calcLeftPosition(newValue) + '%',
+      'right': (100 - calcLeftPosition(max)) + '%'
+    });
+    $('.product-collection-card').each(function() {
+      var product_price = $(this).data('price');
+      var new_val = newValue * 100;
+      console.log(product_price);
+      $(this).addClass('out-of-range-min');
+      if( product_price >= new_val ) {
+        $(this).removeClass('out-of-range-min');
+      }
+    });
+  });
+
+  $('#rangeMax').on('input', function(e) {
+    const newValue = parseInt(e.target.value);
+    if (newValue < min) return;
+    max = newValue;
+    $('#thumbMax').css('left', calcLeftPosition(newValue) + '%');
+    $('#max').html(newValue);
+    $('#line').css({
+      'left': calcLeftPosition(min) + '%',
+      'right': (100 - calcLeftPosition(newValue)) + '%'
+    });
+    $('.product-collection-card').each(function() {
+      var product_price = $(this).data('price');
+      var new_val = newValue * 100;
+      console.log(product_price);
+      $(this).addClass('out-of-range-max');
+      if( product_price <= new_val ) {
+        $(this).removeClass('out-of-range-max');
+      }
+    });
+  });
+  
+  
+  $('.check-box-wrapper').click(function() {
+  	$(this).toggleClass('selected');
+  });
