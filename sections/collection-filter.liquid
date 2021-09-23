@@ -162,7 +162,7 @@
       <div class="page-width collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
         {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
         {%- assign total_active_values = 0 -%}
-        <collection-filters-form class="facets small-hide">
+        <collection-filters-form class="facets">
           <form id="CollectionFiltersForm" class="facets__form">
             {% if section.settings.enable_filtering %}
             <div class="facets__wrapper">
