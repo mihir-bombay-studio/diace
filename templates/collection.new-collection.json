@@ -1,0 +1,128 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "163186395157861a6d": {
+      "type": "collection-filter",
+      "blocks": {
+        "a7bbdb36-c5ea-454d-a533-0b06160858dc": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "75c20508-6346-491f-b6a0-e6c8ecb61897": {
+          "type": "price_filter",
+          "settings": {
+            "show_price_filter": true,
+            "show_price_filter_heading": "PRIJS"
+          }
+        },
+        "cba9f0b4-f482-452a-b3c3-bdb5929eef1c": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Meisjes"
+          }
+        },
+        "c8eab9d0-d96d-4ec0-976f-aa6adea2c049": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Jongens"
+          }
+        },
+        "db91208a-ac5a-4543-854f-c0d484512aaa": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Vrouwen"
+          }
+        },
+        "3c5ae0ef-4f87-4652-b226-d91fa2e359da": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Mannen"
+          }
+        },
+        "21829449-155e-4fbc-80e4-fdae64c9148f": {
+          "type": "size_filter",
+          "settings": {
+            "size": "XS (47 - 55 cm)"
+          }
+        },
+        "156113b9-a536-437e-931f-f67513075a0b": {
+          "type": "size_filter",
+          "settings": {
+            "size": "S (55 - 65 cm)"
+          }
+        },
+        "13780203-9166-4b30-bcc7-c2d516948f58": {
+          "type": "size_filter",
+          "settings": {
+            "size": "M (65 - 85 cm)"
+          }
+        },
+        "f5530f86-0f9c-4c04-a6c5-f5ecbd6c5d95": {
+          "type": "size_filter",
+          "settings": {
+            "size": "L (85 - 100 cm)"
+          }
+        },
+        "9612a930-755b-40dd-927f-4473fbbd3369": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "MERK 1"
+          }
+        },
+        "05c7ecf4-aa6e-473a-8f6a-c06ed121bc3e": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "MERK 2"
+          }
+        },
+        "f997a886-bac2-4a12-9faa-aa149b0dcc0b": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "MERK 3"
+          }
+        },
+        "be79905d-e3ad-4ba2-8a40-b4b4296c2649": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "MERK 4"
+          }
+        }
+      },
+      "block_order": [
+        "a7bbdb36-c5ea-454d-a533-0b06160858dc",
+        "75c20508-6346-491f-b6a0-e6c8ecb61897",
+        "cba9f0b4-f482-452a-b3c3-bdb5929eef1c",
+        "c8eab9d0-d96d-4ec0-976f-aa6adea2c049",
+        "db91208a-ac5a-4543-854f-c0d484512aaa",
+        "3c5ae0ef-4f87-4652-b226-d91fa2e359da",
+        "21829449-155e-4fbc-80e4-fdae64c9148f",
+        "156113b9-a536-437e-931f-f67513075a0b",
+        "13780203-9166-4b30-bcc7-c2d516948f58",
+        "f5530f86-0f9c-4c04-a6c5-f5ecbd6c5d95",
+        "9612a930-755b-40dd-927f-4473fbbd3369",
+        "05c7ecf4-aa6e-473a-8f6a-c06ed121bc3e",
+        "f997a886-bac2-4a12-9faa-aa149b0dcc0b",
+        "be79905d-e3ad-4ba2-8a40-b4b4296c2649"
+      ],
+      "settings": {
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "gender_filter_title": "GESLACHT",
+        "size_filter_title": "MATEN",
+        "brand_filter_title": "MERK"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "163186395157861a6d"
+  ]
+}
