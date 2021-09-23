@@ -24,6 +24,13 @@
     "16324014168d24c379": {
       "type": "collection-filter",
       "blocks": {
+        "32d5f29e-8429-4c96-93aa-9b614c68b766": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
         "a7d61824-1311-4cbe-b0ac-5c04f090d063": {
           "type": "price_filter",
           "settings": {
@@ -69,6 +76,7 @@
         }
       },
       "block_order": [
+        "32d5f29e-8429-4c96-93aa-9b614c68b766",
         "a7d61824-1311-4cbe-b0ac-5c04f090d063",
         "4065f80d-6c6a-47fb-ab28-7cb23a92ec28",
         "c6086071-aa1f-4ac0-83fc-75274faf1b5e",
