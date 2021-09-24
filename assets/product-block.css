@@ -168,26 +168,27 @@ fieldset.product-form__input {
   transition: 0.7s;
 }
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 300px;
-  margin-left: -200px;
-  margin-top: -150px;
-  background: #bdc3c7;
-  z-index: 100;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.5s ease-out;
-  transform: translateY(45px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 1160px;
+    width: 80%;
+    min-height: 646px;
+    border-radius: 8px;
+    padding: 82px;
+    background: #bdc3c7;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-out;
+    transform: translate(-50%,-45%);
 }
 .variant-options-wrapper .active {
   visibility: visible;
   opacity: 0.8;
 }
-.active + .modal {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
+.active+.modal {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%,-50%);
 }
