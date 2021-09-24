@@ -88,9 +88,11 @@
                  form="product-form-{{ section.id }}"
                  {% if option.selected_value == value %}checked{% endif %}
                  >
-          <label for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-            {{ value }} 
-          </label>{%- if forloop.last != true  -%}&nbsp - &nbsp{%- endif -%}
+            {%- if option.name == "Size" -%}
+                <label for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+                  {{ value }} 
+                </label>{%- if forloop.last != true  -%}&nbsp - &nbsp{%- endif -%}
+            {%- endif -%}
           {%- endfor -%}
         </fieldset>
         {%- endfor -%}
