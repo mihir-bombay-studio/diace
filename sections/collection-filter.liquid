@@ -554,7 +554,7 @@
       <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
 
       <div id="CollectionProductGrid">
-        {%- paginate collection.products by section.settings.products_per_page -%}
+        {%- paginate collection.products by 3 -%}
         {%- if collection.products.size == 0 -%}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
           <div class="loading-overlay">
