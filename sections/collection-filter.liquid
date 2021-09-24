@@ -163,7 +163,17 @@
       
       
       <div class="sorting-wrapper light flex-box justify-between">
-        <div class="sorting-part total-items flex-box border-bottom justify-between"><div>Toon 16 items</div><div>{% include 'icon-black-down-chevron' %}</div></div>
+        <div class="sorting-part total-items flex-box border-bottom justify-between">
+          <select>
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+          </select>
+          <div>
+            {% include 'icon-black-down-chevron' %}
+          </div>
+        </div>
         <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
         <div class = "sort__by_filter" >
           <div class=" collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
