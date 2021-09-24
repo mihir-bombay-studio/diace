@@ -92,6 +92,14 @@
                 <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
                   {{ value }} 
                 </label>{%- if forloop.last != true  -%}&nbsp - &nbsp{%- endif -%}
+          	{%-else if option.name == "Color" -%}
+          		<label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+                  {{ value }} 
+                </label>
+          	{%- else -%}
+          		<label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+                  {{ value }} 
+                </label>
             {%- endif -%}
           {%- endfor -%}
         </fieldset>
