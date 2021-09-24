@@ -78,7 +78,12 @@
           <div class="variant-option-name">
             {%- if option.name == "Size" -%}
             KIES JOUW MAAT
-            <a href="#modal" class="modal-btn">Maattabel</a>
+            <button class="show modal-btn" aria-haspopup="true">Maattabel</button>
+
+            <div class="mask" role="dialog"></div>
+            <div class="modal" role="alert">
+              <button class="close" role="button">X</button>
+            </div>
             {%- endif -%}
           </div>
           {%- for value in option.values -%}
