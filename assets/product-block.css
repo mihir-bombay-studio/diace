@@ -170,15 +170,17 @@ fieldset.product-form__input {
   transition: 0.7s;
 }
 .modal {
+    overflow: scroll;
     position: fixed;
     top: 50%;
     left: 50%;
     max-width: 1160px;
     width: 80%;
     min-height: 646px;
+    max-height: 85vh;
     border-radius: 8px;
     padding: 82px;
-    background: #FFF;
+    background: #fff;
     z-index: 100;
     visibility: hidden;
     opacity: 0;
