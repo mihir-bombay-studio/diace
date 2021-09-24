@@ -144,16 +144,18 @@ fieldset.product-form__input {
   transform: scale(0.9);
 } */
 .close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 35px;
-  height: 30px;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-  border: 0;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    /* width: 30px; */
+    /* height: 30px; */
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
 }
+
 .variant-options-wrapper .mask {
   display:block;
   position: fixed;
