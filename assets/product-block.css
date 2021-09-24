@@ -103,3 +103,11 @@ fieldset.product-form__input {
     font-weight: 600;
     text-decoration: underline;
 }
+
+.color-swatch {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: aqua;
+}
