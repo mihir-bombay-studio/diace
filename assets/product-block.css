@@ -182,7 +182,7 @@ fieldset.product-form__input {
   transition: 0.5s ease-out;
   transform: translateY(45px);
 }
-.active {
+.variant-options-wrapper .active {
   visibility: visible;
   opacity: 1;
 }
