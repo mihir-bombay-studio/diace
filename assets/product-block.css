@@ -63,6 +63,8 @@
     width: calc(100% - 176px);
     text-align: center;
     max-height: 54px;
+    cursor:pointer;
+
 }
 
 .cont-shopping {
@@ -84,7 +86,7 @@ fieldset.product-form__input {
 }
 
 .product-form__input label{
-cursor:pointer;
+  cursor:pointer;
 }
 
 .variant-option-name{
