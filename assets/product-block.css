@@ -110,4 +110,5 @@ fieldset.product-form__input {
     display: inline-block;
     border-radius: 50%;
     background-color: aqua;
+  border: 2px solid #000000;
 }
