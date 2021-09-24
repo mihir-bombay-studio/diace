@@ -120,7 +120,7 @@ fieldset.product-form__input {
   color: #737373;
 }
 
-.show {
+/* .show {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -134,13 +134,13 @@ fieldset.product-form__input {
   border: 0;
   border-bottom: 2px solid #c0392b;
   cursor: pointer;
-}
-.show:hover {
+} */
+/* .show:hover {
   background: #c0392b;
-}
-.show:active {
+} */
+/* .show:active {
   transform: scale(0.9);
-}
+} */
 .close {
   position: absolute;
   top: 0;
