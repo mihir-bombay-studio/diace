@@ -44,10 +44,10 @@
 
 <div class="product-block-wrapper container rel">
   <div class="bg-yellow-dots dots-left-down">
-      	{% include 'bg-grey-dots' %}
-      </div>
+    {% include 'bg-grey-dots' %}
+  </div>
   <div class="product-block flex-box justify-between">
-    
+
     <div class="product-block-left">
       <div class="slider-for">
         {% for image in product.images %}
@@ -64,62 +64,62 @@
       <h2 class="product-title bold">{{ product.title }}</h2>
       <div class="product-price-wrapper">
         <div class="no-js-hidden" id="price-{{ section.id }}">
-        {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
+          {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
+        </div>
       </div>
-      </div>
-      
-      <div class="product-desc light">{{ product.description }}</div>
-      
-<!--       ----------------------------------------------------------------------- -->
-      {%- unless product.has_only_default_variant -%}
-          <div class="variant-options-wrapper">
-              <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
-                {%- for option in product.options_with_values -%}
-                <fieldset class="js product-form__input">
-                  <div class="variant-option-name">
-                    {%- if option.name == "Size" -%}
-                    KIES JOUW MAAT
 
-                    <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
-                    <div class="mask" role="dialog"></div>
-                    <div class="modal" role="alert">
-                      <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"></div>
-                      <button class="close" role="button">{% render "icon-close-1" %}</button>
-                    </div>
-                    {%- endif -%}
-                  </div>
-                  {%- for value in option.values -%}
-                  <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
-                         class="no-disp"
-                         name="{{ option.name }}"
-                         value="{{ value | escape }}"
-                         form="product-form-{{ section.id }}"
-                         {% if option.selected_value == value %}checked{% endif %}
-                         >
-                  {%- if option.name == "Size"  -%}
-                  <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-                    {{ value }} 
-                  </label>{%- if forloop.last != true  -%}&nbsp - &nbsp{%- endif -%}
-                  {%-else if option.name == "Color" and product.variants[forloop.index0].metafields.my_fields.color -%}
-                  <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-                    <span class="color-swatch" style="background-color:{{ product.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
-                  </label>
-                  {%- else -%}
-                  <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-                    {{ value }} 
-                  </label>
-                  {%- endif -%}
-                  {%- endfor -%}
-                </fieldset>
-                {%- endfor -%}
-                <script type="application/json">
+      <div class="product-desc light">{{ product.description }}</div>
+
+      <!--       ----------------------------------------------------------------------- -->
+      {%- unless product.has_only_default_variant -%}
+      <div class="variant-options-wrapper">
+        <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
+          {%- for option in product.options_with_values -%}
+          <fieldset class="js product-form__input">
+            <div class="variant-option-name">
+              {%- if option.name == "Size" -%}
+              KIES JOUW MAAT
+
+              <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
+              <div class="mask" role="dialog"></div>
+              <div class="modal" role="alert">
+                <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"></div>
+                <button class="close" role="button">{% render "icon-close-1" %}</button>
+              </div>
+              {%- endif -%}
+            </div>
+            {%- for value in option.values -%}
+            <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+                   class="no-disp"
+                   name="{{ option.name }}"
+                   value="{{ value | escape }}"
+                   form="product-form-{{ section.id }}"
+                   {% if option.selected_value == value %}checked{% endif %}
+                   >
+            {%- if option.name == "Size"  -%}
+            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+              {{ value }} 
+            </label>{%- if forloop.last != true  -%}&nbsp - &nbsp{%- endif -%}
+            {%-else if option.name == "Color" and product.variants[forloop.index0].metafields.my_fields.color -%}
+            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+              <span class="color-swatch" style="background-color:{{ product.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
+            </label>
+            {%- else -%}
+            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+              {{ value }} 
+            </label>
+            {%- endif -%}
+            {%- endfor -%}
+          </fieldset>
+          {%- endfor -%}
+          <script type="application/json">
               {{ product.variants | json }}
-                </script>
-              </variant-radios>
-          </div>
+          </script>
+        </variant-radios>
+      </div>
       {%- endunless -%}
-<!--       ------------------------------------------------------------------------------- -->
-      
+      <!--       ------------------------------------------------------------------------------- -->
+
       <div class="product-qty-add-to-cart-wrapper flex-box justify-between">
         <div class="product-qty semibold flex-box">
           <span class="qty-minus qty-nav flex-box align-center justify-center"><span>-</span></span>
@@ -137,29 +137,29 @@
           <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
         </div>
         <div class="panel answer light"><p>{{ product.metafields.my_fields.omschrijving }}</p></div>
-        
-        
+
+
         <div class="accordion question semibold flex-box justify-between">
           <div class="question-left">MATERIAAL</div>
           <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
         </div>
         <div class="panel answer light"><p>{{ product.metafields.my_fields.materiaal }}</p></div>
-        
-        
+
+
         <div class="accordion question semibold flex-box justify-between">
           <div class="question-left">GEBRUIKSAANWIJZING</div>
           <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
         </div>
         <div class="panel answer light"><p>{{ product.metafields.my_fields.gebruiksaanwijzing }}</p></div>
-        
-        
+
+
         <div class="accordion question semibold flex-box justify-between">
           <div class="question-left">WASVOORSCHRIFT</div>
           <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
         </div>
         <div class="panel answer light"><p>{{ product.metafields.my_fields.wasvoorschrift }}</p></div>
-        
-        
+
+
       </div>
     </div>
   </div>
