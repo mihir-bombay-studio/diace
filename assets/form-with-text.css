@@ -22,6 +22,7 @@
 }
 
 .text_description p {
+  max-width : 572px;
   text-align: left;
   font-size: 16px;
   font-weight: 300;
