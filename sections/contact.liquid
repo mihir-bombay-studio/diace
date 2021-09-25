@@ -1,7 +1,78 @@
+{{ 'form-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="form-with-text">
+  <div class="container">
+    <div class="form_with_text_wrapper">
+      <div class="text_content">
+        <div class="text_heading">
+          <p>WAAR KAN JE ONS VINDEN</p>
+        </div>
+        <div class="text_description">
+          <p>
+            Heb je een vraag over één van onze diabetes accessoires en wens je snel een antwoord? Stel
+            ze via onze Live Chat van 9u00 tot 21u00 van maandag tot vrijdag. Of stuur ons een bericht
+            via het contactformulier.
+          </p>
+          <div class="address">
+            <span>{% include "map-pin" %}</span>
+            <span class="address_text">Diacé B.V. Duwijckstraat 17 2500 Lier, België BTW BE 0738.615.210</span>
+          </div>
+          <div class="address mail">
+            <span>{% include "mail-box" %}</span>
+            <span class="address_text">info@diace.be</span>
+          </div>
+          <div class="frequently_asked_q">
+            <button class="btn">VEELGESTELDE VRAGEN</button>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <form action="">
+          <div class="form_container">
+            <div class="input_form_control input-1">
+              <label for="name">Naam*</label>
+              <input placeholder="Vul je naam in" type="text" id="name" class="name">
+            </div>
+            <div class="input_form_control input-2">
+              <label for="name">E-MAIL*</label>
+              <input placeholder="youremail@mail.com" type="text" id="name" class="name">
+            </div>
+            <div class="input_form_control input-3">
+              <label for="name">TELEFOONNUMMER</label>
+              <input placeholder="Vul je telefoonnummer in, enkel cijfers" type="text" id="name" class="name">
+            </div>
+            <div class="input_form_control input-4">
+              <label for="name">ONDERWERP</label>
+              <input placeholder="Waarover gaat je bericht?" type="text" id="name" class="name">
+            </div>
+            <div class="input_form_control input-5">
+              <label for="name">ORDERNUMMER</label>
+              <input placeholder="Vul je ordernummer in, indien van toepassing" type="text" id="name" class="name">
+            </div>
+            <div class="input_form_control input-6">
+              <label for="name">UW BERICHT</label>
+              <textarea rows="8" cols="50" placeholder="Jouw bericht" id="name"
+                        class="name"></textarea>
+            </div>
+            <div class="submit_button">
+              <button type="submit">VERZENDEN</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "ContactForm-with-text",
+    "settings": [],
+	"presets": [
+    {
+      "name": "ContactForm with text"
+    }
+  ]
   }
 {% endschema %}
 
