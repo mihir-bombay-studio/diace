@@ -3,6 +3,14 @@
     padding: 136px 0;
 }
 
+.faq-section .faq-heading {
+    margin: 68px 0 26px 0;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 600;
+}
+
 .faq-wrapper {
     max-width: 760px;
   margin-bottom: 136px;
