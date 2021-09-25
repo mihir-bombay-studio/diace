@@ -1,7 +1,68 @@
+{{ 'form-with-text.css' | asset_url | stylesheet_tag }}
+
+
+    <div class="form-with-text">
+        <div class="container">
+            <div class="form_with_text_wrapper">
+                <div class="text_content">
+                    <div class="text_heading">
+                        <p>{{section.settings.contact_text}}</p>
+                    </div>
+                    <div class="text_description">
+                        <p>
+                            {{section.settings.contact_desc}}
+                        </p>
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <div class="form_container">
+                            <div class="input_form_control input-1">
+                                <label for="name">Naam*</label>
+                                <input placeholder="Vul je naam in" type="text" id="name" class="name">
+                            </div>
+                            <div class="input_form_control input-2">
+                                <label for="name">E-MAIL*</label>
+                                <input placeholder="youremail@mail.com" type="text" id="name" class="name">
+                            </div>
+                            <div class="input_form_control input-3">
+                                <label for="name">WACHTWOORD</label>
+                                <input placeholder="Kies je wachtwoord" type="text" id="name" class="name">
+                            </div>
+                            <div class="tip">
+                                8 characters, 1 capital letter, 1 symbol
+                            </div>
+                            <div class="submit_button">
+                                <button type="submit">VERZENDEN</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Register",
+    "settings": [
+		{
+          "id": "contact_text",
+          "type": "text",
+          "label": "Heading",
+		  "default" : "WELKOM!"
+        },
+		{
+          "id": "contact_desc",
+          "type": "html",
+          "label": "Description"
+        }
+	],
+	"presets": [
+    {
+      "name": "Register Form"
+    }
+  ]
   }
 {% endschema %}
 
