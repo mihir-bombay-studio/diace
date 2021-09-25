@@ -5,24 +5,20 @@
     <div class="form_with_text_wrapper">
       <div class="text_content">
         <div class="text_heading">
-          <p>WAAR KAN JE ONS VINDEN</p>
+          <p>{{section.settings.contact_text}}</p>
         </div>
         <div class="text_description">
-          <p>
-            Heb je een vraag over één van onze diabetes accessoires en wens je snel een antwoord? Stel
-            ze via onze Live Chat van 9u00 tot 21u00 van maandag tot vrijdag. Of stuur ons een bericht
-            via het contactformulier.
-          </p>
+          {{section.settings.contact_desc}}
           <div class="address">
             <span>{% include "map-pin" %}</span>
-            <span class="address_text">Diacé B.V. Duwijckstraat 17 2500 Lier, België BTW BE 0738.615.210</span>
+            <span class="address_text">{{section.settings.contact_address}}</span>
           </div>
           <div class="address mail">
             <span>{% include "mail-box" %}</span>
-            <span class="address_text">info@diace.be</span>
+            <span class="address_text">{{section.settings.contact_email}}</span>
           </div>
           <div class="frequently_asked_q">
-            <button class="btn">VEELGESTELDE VRAGEN</button>
+            <button class="btn">{{section.settings.btn}}</button>
           </div>
         </div>
       </div>
@@ -67,7 +63,34 @@
 {% schema %}
   {
     "name": "ContactForm-with-text",
-    "settings": [],
+    "settings": [
+		{
+          "id": "contact_text",
+          "type": "text",
+          "label": "Heading",
+		  "default" : "WAAR KAN JE ONS VINDEN"
+        },
+		{
+          "id": "contact_desc",
+          "type": "html",
+          "label": "Description"
+        },
+		{
+          "id": "contact_address",
+          "type": "textarea",
+          "label": "Address"
+        },
+		{
+          "id": "contact_email",
+          "type": "text",
+          "label": "Email"
+        },
+		{
+          "id": "btn",
+          "type": "text",
+          "label": "Button Text"
+        }
+	],
 	"presets": [
     {
       "name": "ContactForm with text"
