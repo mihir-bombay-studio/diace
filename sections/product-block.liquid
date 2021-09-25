@@ -71,53 +71,53 @@
       <div class="product-desc light">{{ product.description }}</div>
       
 <!--       ----------------------------------------------------------------------- -->
-       {%- unless product.has_only_default_variant -%}
+      {%- unless product.has_only_default_variant -%}
       <div class="variant-options-wrapper">
-      <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
-        {%- for option in product.options_with_values -%}
-        <fieldset class="js product-form__input">
-          <div class="variant-option-name">
-            {%- if option.name == "Size" -%}
-            KIES JOUW MAAT
-            
-            <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
-            <div class="mask" role="dialog"></div>
-            <div class="modal" role="alert">
-              <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"></div>
-              <button class="close" role="button">{% render "icon-close-1" %}</button>
+        <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
+          {%- for option in product.options_with_values -%}
+          <fieldset class="js product-form__input">
+            <div class="variant-option-name">
+              {%- if option.name == "Size" -%}
+              KIES JOUW MAAT
+
+              <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
+              <div class="mask" role="dialog"></div>
+              <div class="modal" role="alert">
+                <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"></div>
+                <button class="close" role="button">{% render "icon-close-1" %}</button>
+              </div>
+              {%- endif -%}
             </div>
-            {%- endif -%}
-          </div>
-          {%- for value in option.values -%}
-          <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
-                 class="no-disp"
-                 name="{{ option.name }}"
-                 value="{{ value | escape }}"
-                 form="product-form-{{ section.id }}"
-                 {% if option.selected_value == value %}checked{% endif %}
-                 >
+            {%- for value in option.values -%}
+            <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+                   class="no-disp"
+                   name="{{ option.name }}"
+                   value="{{ value | escape }}"
+                   form="product-form-{{ section.id }}"
+                   {% if option.selected_value == value %}checked{% endif %}
+                   >
             {%- if option.name == "Size"  -%}
-                <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-                  {{ value }} 
-                </label>{%- if forloop.last != true  -%}&nbsp - &nbsp{%- endif -%}
-          	{%-else if option.name == "Color" and product.variants[forloop.index0].metafields.my_fields.color -%}
-          		<label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-                  <span class="color-swatch" style="background-color:{{ product.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
-                </label>
-          	{%- else -%}
-          		<label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-                  {{ value }} 
-                </label>
+            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+              {{ value }} 
+            </label>{%- if forloop.last != true  -%}&nbsp - &nbsp{%- endif -%}
+            {%-else if option.name == "Color" and product.variants[forloop.index0].metafields.my_fields.color -%}
+            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+              <span class="color-swatch" style="background-color:{{ product.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
+            </label>
+            {%- else -%}
+            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+              {{ value }} 
+            </label>
             {%- endif -%}
+            {%- endfor -%}
+          </fieldset>
           {%- endfor -%}
-        </fieldset>
-        {%- endfor -%}
-        <script type="application/json">
+          <script type="application/json">
         {{ product.variants | json }}
-        </script>
-      </variant-radios>
+          </script>
+        </variant-radios>
       </div>
-         {%- endunless -%}
+      {%- endunless -%}
 <!--       ------------------------------------------------------------------------------- -->
       
       <div class="product-qty-add-to-cart-wrapper flex-box justify-between">
