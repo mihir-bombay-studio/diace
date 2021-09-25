@@ -1,48 +1,52 @@
 {{ 'faq.css' | asset_url | stylesheet_tag }}
-
 <section class="faq-section">
-  <div class="faq-wrapper container">
-      <h2 class="section-heading bold text-center">{{ section.settings.section_heading }}</h2>
-      <h2 class="faq-heading bold">{{ section.settings.faq_heading_1 }}</h2>
-      {% for block in section.blocks %}
-          {%- case block.type -%}
-              {%- when 'subject_1' -%}
-                  <div class="accordion question semibold flex-box justify-between">
-                      <div class="question-left">{{ block.settings.question }}</div>
-                      <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
-                  </div>
-                  <div class="panel answer light">
-                      <p>{{ block.settings.answer }}</p>
-                  </div>
-          {% endcase %}
-      {% endfor %}
-      <h2 class="faq-heading bold">{{ section.settings.faq_heading_2 }}</h2>
-      {% for block in section.blocks %}
-          {%- case block.type -%}
-              {%- when 'subject_2' -%}
-                  <div class="accordion question semibold flex-box justify-between">
-                      <div class="question-left">{{ block.settings.question }}</div>
-                      <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
-                  </div>
-                  <div class="panel answer light">
-                      <p>{{ block.settings.answer }}</p>
-                  </div>
-          {% endcase %}
-      {% endfor %}
-      <h2 class="faq-heading bold">{{ section.settings.faq_heading_3 }}</h2>
-      {% for block in section.blocks %}
-          {%- case block.type -%}
-              {%- when 'subject_3' -%}
-                  <div class="accordion question semibold flex-box justify-between">
-                      <div class="question-left">{{ block.settings.question }}</div>
-                      <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
-                  </div>
-                  <div class="panel answer light">
-                      <p>{{ block.settings.answer }}</p>
-                  </div>
-          {% endcase %}
-      {% endfor %}
-  </div>
+    <div class="faq-wrapper container">
+        <h2 class="section-heading bold text-center">{{ section.settings.section_heading }}</h2>
+        <div class="sub-headings">
+            <div class="pill">ONDERWERP 01</div>
+            <div class="pill">ONDERWERP 02</div>
+            <div class="pill">ONDERWERP 03</div>
+        </div>
+        <h2 class="faq-heading bold">{{ section.settings.faq_heading_1 }}</h2>
+        {% for block in section.blocks %}
+            {%- case block.type -%}
+                {%- when 'subject_1' -%}
+                    <div class="accordion question semibold flex-box justify-between">
+                        <div class="question-left">{{ block.settings.question }}</div>
+                        <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+                    </div>
+                    <div class="panel answer light">
+                        <p>{{ block.settings.answer }}</p>
+                    </div>
+            {% endcase %}
+        {% endfor %}
+        <h2 class="faq-heading bold">{{ section.settings.faq_heading_2 }}</h2>
+        {% for block in section.blocks %}
+            {%- case block.type -%}
+                {%- when 'subject_2' -%}
+                    <div class="accordion question semibold flex-box justify-between">
+                        <div class="question-left">{{ block.settings.question }}</div>
+                        <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+                    </div>
+                    <div class="panel answer light">
+                        <p>{{ block.settings.answer }}</p>
+                    </div>
+            {% endcase %}
+        {% endfor %}
+        <h2 class="faq-heading bold">{{ section.settings.faq_heading_3 }}</h2>
+        {% for block in section.blocks %}
+            {%- case block.type -%}
+                {%- when 'subject_3' -%}
+                    <div class="accordion question semibold flex-box justify-between">
+                        <div class="question-left">{{ block.settings.question }}</div>
+                        <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+                    </div>
+                    <div class="panel answer light">
+                        <p>{{ block.settings.answer }}</p>
+                    </div>
+            {% endcase %}
+        {% endfor %}
+    </div>
 </section>
 {% schema %}
 {
