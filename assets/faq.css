@@ -10,6 +10,10 @@
     text-align: left;
 }
 
+.faq-section .faq-wrapper {
+    margin-bottom: 0;
+}
+
 .faq-wrapper {
     max-width: 760px;
   margin-bottom: 136px;
