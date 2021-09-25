@@ -3,9 +3,9 @@
     <div class="faq-wrapper container">
         <h2 class="section-heading bold text-center">{{ section.settings.section_heading }}</h2>
         <div class="sub-headings">
-            <div class="pill">ONDERWERP 01</div>
-            <div class="pill">ONDERWERP 02</div>
-            <div class="pill">ONDERWERP 03</div>
+            <div class="pill">{{ section.settings.faq_heading_1 }}</div>
+            <div class="pill">{{ section.settings.faq_heading_2 }}</div>
+            <div class="pill">{{ section.settings.faq_heading_3 }}</div>
         </div>
         <h2 class="faq-heading bold">{{ section.settings.faq_heading_1 }}</h2>
         {% for block in section.blocks %}
