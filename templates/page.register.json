@@ -2,11 +2,20 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "1632564323abb38e34": {
+      "type": "register",
+      "settings": {
+        "contact_text": "WELKOM!",
+        "contact_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos\n<br><br>\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1632564323abb38e34"
   ]
 }
