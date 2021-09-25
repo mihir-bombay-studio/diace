@@ -4,11 +4,10 @@
 }
 
 .faq-section .faq-heading {
-    margin: 68px 0 26px 0;
+    margin: 68px 0 10px 0;
     font-size: 20px;
-    line-height: 30px;
+    line-height: normal;
     text-align: left;
-    font-weight: 600;
 }
 
 .faq-wrapper {
