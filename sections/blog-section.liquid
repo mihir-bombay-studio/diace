@@ -1,6 +1,7 @@
 {{ 'blog-section.css' | asset_url | stylesheet_tag }}
 
-
+{% for article in blog.articles %}
+{% if forloop.first %}
 <div class="featured-blog-post container">
   <div class="blog-text">
     <div class="welcomeheading">
@@ -11,15 +12,25 @@
       <span class="time">5 min read</span>
       <p class="topic">ONDERWERP</p>
     </div>
-    <div class="blogheading">NEEM JE MEDTRONIC INSULINEPOMP OVERAL HEEN MET EEN POMPTAS.</div>
-    <div class="blogdesc">Maak je gebruik van een Medtronic insulinepomp maar ben je daarnaast op zoek naar
-      accessoires die jou voorzien van een combinatie van comfort en stijl?</div>
-    <button class="btn">VERDER LEZEN</button>
+    <div class="blogheading">{{ article.title }}</div>
+    <div class="blogdesc">{{ article.excerpt_or_content | strip_html | truncatewords: 20 | escape }}</div>
+    <button class="btn"><a href="{{ article.url }}">VERDER LEZEN</a></button>
   </div>
   <div class="blog-image-with-overlay">
-    <img src="{{"blog.png" | asset_url }}" alt="featured-blog-post">
+    {% if article.image != blank %}
+        <img
+             srcset="{% if article.image.width >= 479 %}{{ article.image | img_url: '479x' }} 479w,{% endif %}
+                     {% if article.image.width >= 786 %}{{ article.image | img_url: '786x' }} 786w,{% endif %}
+                     {% if article.image.width >= 992 %}{{ article.image | img_url: '992x' }} 992w,{% endif %}
+                     {% if article.image.width >= 700 %}{{ article.image | img_url: '700x' }} 700w{% endif %}"
+             src="{{ article | img_url : "master"}}" loading="lazy" alt="Blog Image" class="article-image-full">
+        {% else %}
+        {{ 'lifestyle-2' | placeholder_svg_tag }}
+        {% endif %}
   </div>
 </div>
+{% endif %}
+{% endfor %}
 
 {% schema %}
   {
