@@ -63,6 +63,10 @@ img{
   object-fit: cover;
 }
 
+.blogs img{
+  height:278px;
+}
+
 .blog-image-with-overlay{
   max-width: 572px;
 }
