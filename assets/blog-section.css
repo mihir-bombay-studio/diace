@@ -68,14 +68,13 @@ img{
 }
 
 .blog-filter-container{
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .filtered-blog-container {
   display: flex;
-  width: 100%;
+  width: calc(100% - 16px);
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 .filter-pills {
@@ -118,24 +117,24 @@ img{
 }
 
 .load-more-btn{
-    margin-top: 50px;
-    text-align: center;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .load-more{
-    padding: 20px 89px 16px 89px;
-    border-radius: 8px;
-    border: none;
-    background-color: #D9D9D9;
-    cursor: pointer;
-    text-align: center;
-    color: #000000;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
+  padding: 20px 89px 16px 89px;
+  border-radius: 8px;
+  border: none;
+  background-color: #D9D9D9;
+  cursor: pointer;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
 }
 
 .load-more:hover{
-    color: #CCCCCC;
-    color: #000000;
+  color: #CCCCCC;
+  color: #000000;
 }
