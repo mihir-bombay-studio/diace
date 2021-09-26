@@ -92,6 +92,7 @@ img{
   border-radius: 26px;
   background-color: #fec23b33;
   margin: 0 10px;
+  cursor:pointer;
 }
 
 .filter-pills .active {
