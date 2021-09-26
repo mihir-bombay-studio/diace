@@ -1,7 +1,35 @@
+{{ 'blog-section.css' | asset_url | stylesheet_tag }}
+
+
+<div class="featured-blog-post">
+  <div class="blog-text">
+    <div class="welcomeheading">
+      WELKOM OP ONZE BLOG
+    </div>
+    <div class="date_and_time">
+      <span class="date">10/08/21</span> -
+      <span class="time">5 min read</span>
+      <p class="topic">ONDERWERP</p>
+    </div>
+    <div class="blogheading">NEEM JE MEDTRONIC INSULINEPOMP OVERAL HEEN MET EEN POMPTAS.</div>
+    <div class="blogdesc">Maak je gebruik van een Medtronic insulinepomp maar ben je daarnaast op zoek naar
+      accessoires die jou voorzien van een combinatie van comfort en stijl?</div>
+    <button class="btn">VERDER LEZEN</button>
+  </div>
+  <div class="blog-image-with-overlay">
+    <img src="blog.png" alt="featured-blog-post">
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Blog section",
+    "settings": [],
+	"presets": [
+    {
+      "name": "Blog Section"
+    }
+  ]
   }
 {% endschema %}
 
