@@ -1,0 +1,66 @@
+.welcomeheading{
+    font: normal normal bold 16px/24px Roboto;
+    letter-spacing: 0.8px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 52px auto 80px 0;
+}
+
+.blog-text {
+    width: 50%;
+}
+
+.date_and_time{
+    font-family: Myraid Pro;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #000000;
+}
+
+.topic{
+    color: #FEC23B;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.blogheading{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    margin: 16px 0;
+    max-width: 572px;
+    text-align: left;
+}
+
+.blogdesc{
+    font-weight: lighter;
+    color: #000000;
+    max-width: 572px;
+    margin: 16px auto 52px 0;
+}
+
+.btn{
+    color: #000000;
+    background-color: #D9D9D9;
+    padding: 20px 82px 16px 82px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+}
+
+.featured-blog-post{
+    display: flex;  
+    justify-content: space-around;
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.blog-image-with-overlay{
+    max-width: 572px;
+}
