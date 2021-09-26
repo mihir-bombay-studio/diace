@@ -64,7 +64,7 @@ img{
 }
 
 .blogs img{
-  height:278px;
+  max-height:278px;
 }
 
 .blog-image-with-overlay{
