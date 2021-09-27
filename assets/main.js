@@ -16,3 +16,7 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
   });
 }
+
+$("#account").click(function(){
+  $("#account .login-wrapper").addClass("header-nav-list-sub");
+});
