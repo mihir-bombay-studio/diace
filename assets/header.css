@@ -128,3 +128,11 @@ nav .dropdown:hover .header-nav-list-sub {
     cursor: pointer;
   bottom: 5px;
 }
+
+.forgot-password {
+    font-weight: normal;
+    text-align: right;
+    text-decoration: underline;
+    line-height: normal;
+    margin: 4px 0 6px 0;
+}
