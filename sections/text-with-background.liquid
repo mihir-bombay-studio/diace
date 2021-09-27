@@ -5,13 +5,13 @@
     <a href="#">Terug</a> 
   </div>
   <div class="heading-container">
-    ALGEMENE VOORWAARDEN
+    {{section.settings.text}}
   </div>
 </div>
 <div class="container content-container">
   <div class="text-content">
     <div class="text-description">
-      description
+      {{section.settings.description}}
     </div>
   </div>
 </div>
@@ -20,7 +20,19 @@
 {% schema %}
   {
     "name": "Text with Background",
-    "settings": [],
+    "settings": [
+		{
+          "id": "text",
+          "type": "text",
+          "label": "Heading"
+        },
+		{
+          "id": "description",
+          "type": "html",
+          "label": "Content"
+        }
+	
+	],
 	"presets": [
     {
       "name": "Text with Background"
