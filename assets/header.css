@@ -51,10 +51,6 @@ nav .dropdown {
   opacity: 0;
 }
 
-.login-wrapper.header-nav-list-sub {
-    right: 0;
-    left: auto;
-}
 
 .header-nav-list-sub li{
   display: block;
@@ -95,21 +91,23 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .right-nav-lower li:hover .yellow-down-chevron{
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .yellow-down-chevron svg{
-	height: 16px;
+  height: 16px;
   padding-top: 5px;
 }
 
 /* --------------------- header login form------------------------------ */
 .login-wrapper {
-    box-shadow: 0px 4px 16px #0000001a;
-    border-radius: 4px;
-    padding: 16px;
+  box-shadow: 0px 4px 16px #0000001a;
+  border-radius: 4px;
+  padding: 16px;
   font-size: 12px;
   min-width: 278px;
+  right: 0;
+  left: auto;
 }
 
 .login-form input {
