@@ -1,12 +1,11 @@
 {{ 'article.css' | asset_url | stylesheet_tag }}
-
+{{ template.name }}
 <div class="background-overlay">
   <div class="container article-container">
     <div class="content-wrapper">
       <a class="back-btn" href="#">Terug</a>
       <div class="time-and-date">
-        <span class="date">{% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>{% endcapture %}
-</span>
+        <span class="date">{{ article.published_at | date: '%b. %d, %Y' }}</span>
         
         <span>5min read</span>
       </div>
