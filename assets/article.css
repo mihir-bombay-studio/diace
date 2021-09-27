@@ -8,9 +8,8 @@
 
 .background-overlay{
   position: relative!important;
-   background-image: url(//cdn.shopify.com/s/files/1/0594/3604/0367/t/3/assets/article-bg.svg?v=3246859187231546785);
+  background-image: url(Liquid error: This liquid context does not allow includes.);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .back-btn{
@@ -25,46 +24,46 @@
   margin-bottom: 80px !important;
   display: flex;
   justify-content: center;
-  
+
 }
 
 .article-image img{
-    height: 512px;
-    margin-top: 13px;
+  height: 512px;
+  margin-top: 13px;
 }
 
 .time-and-date{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    color: #000000;
-    font-family: Myriad Pro;
-    font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #000000;
+  font-family: Myriad Pro;
+  font-weight: lighter;
 
 }
 
 .heading{
 
-    font-size: 32px;
-    font-weight: bold;
-    margin: 26px 0 16px 0;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 26px 0 16px 0;
 }
 
 .author{
-    display: flex;
-    align-items: center;
-    margin-top: 16px;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
 }
 
 .author-name{
-    margin-left: 8px;
-    font-family: Myriad Pro;
-    font-weight: lighter; 
+  margin-left: 8px;
+  font-family: Myriad Pro;
+  font-weight: lighter; 
 }
 .author img{
-    height: 52px;
-    width: 52px;
-    border-radius: 50%;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
 }
 
 img {
