@@ -32,7 +32,7 @@ $(document).mouseup(function(e) {
             && menu.has(e.target).length === 0)) // Nor a child element of the container
   {
     console.log("notclicked");
-     $(".login-wrapper").removeClass("active");
+    $(".login-wrapper").removeClass("active");
   }
 
 });
