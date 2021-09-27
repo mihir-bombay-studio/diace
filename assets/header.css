@@ -109,5 +109,22 @@ nav .dropdown:hover .header-nav-list-sub {
     border-radius: 4px;
     padding: 16px;
   font-size: 12px;
+  min-width: 278px;
 }
 
+.login-form input {
+    border: 1px solid #FEC23B;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+}
+
+.view-password {
+    position: absolute;
+    right: 10px;
+    text-decoration: underline;
+    font-weight: normal;
+    cursor: pointer;
+  bottom: 5px;
+}
