@@ -93,7 +93,7 @@ img {
 }
 
 .divider {
-  border: 1px solid #fec23b;
+  border: 1px solid #fec23b !important;
 }
 
 .next-previous-article {
