@@ -25,6 +25,7 @@ $(document).mouseup(function(e) {
   let menu = $('.login-wrapper');
   if (e.target.id === "account-btn" || $("#account-btn").has(e.target).length > 0) {
     console.log("clicked");
+    $("#account-btn").toggleClass("active");
     $(".login-wrapper").toggleClass("active");
   }
 
