@@ -150,6 +150,7 @@ nav .dropdown:hover .header-nav-list-sub {
     text-transform: uppercase;
     font: normal normal bold 16px/24px 'Roboto', sans-serif;
     letter-spacing: 0.8px;
+  cursor: pointer;
 }
 
 .register-btn {
