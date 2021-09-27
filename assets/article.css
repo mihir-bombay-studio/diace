@@ -102,7 +102,7 @@ img {
   margin-top: 16px;
 }
 
-.previous svg{
+.previous svg , .next svg{
   display: inline;
   height: 10px;
   width: 10px;
