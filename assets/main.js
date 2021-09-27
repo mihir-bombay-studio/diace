@@ -24,6 +24,7 @@ for (i = 0; i < acc.length; i++) {
 $(document).mouseup(function(e) {
   let menu = $('.login-wrapper');
   if (e.target.id === "account") {
+    console.log("clicked");
     $("#account .login-wrapper").toggleClass("active");
   }
 
