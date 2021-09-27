@@ -3,7 +3,7 @@
 <div class="background-overlay">
   <div class="container article-container">
     <div class="content-wrapper">
-      <a class="back-btn" href="/blogs/news">Terug</a>
+      <a class="back-btn" href="/blogs/news">{% include "back-icon" %} Terug</a>
       <div class="time-and-date">
         <span class="date">{{ article.published_at | date: '%b. %d, %Y' }}</span>
         
@@ -23,6 +23,20 @@
         <div class="description">
 			{{ article.content }}
         </div>
+      </div>
+      <div class="article-share">
+        <p class="share-heading">Deel dit artikel</p>
+        <div class="share-platforms">
+          <span>{% include "facebook" %}</span>
+          <span>{% include "instagram" %}</span>
+          <span>{% include "facebook" %}</span>
+          <span>{% include "instagram" %}</span>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="next-previous-article">
+        <span class="previous">{% include "back-icon" %} Vorig artikel</span>
+        <span class="next">Volgend artikel {% include "back-icon" %} </span>
       </div>
     </div>
   </div>
