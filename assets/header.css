@@ -137,7 +137,7 @@ nav .dropdown:hover .header-nav-list-sub {
     text-align: right;
     text-decoration: underline;
     line-height: normal;
-    margin: 4px 0 6px 0;
+    margin: 4px 0 16px 0;
   display: block;
 }
 
@@ -147,6 +147,6 @@ nav .dropdown:hover .header-nav-list-sub {
     padding: 10px;
     width: 100%;
     text-transform: uppercase;
-    font: normal normal bold 16px/24px Roboto;
+    font: normal normal bold 16px/24px 'Roboto', sans-serif;
     letter-spacing: 0.8px;
 }
