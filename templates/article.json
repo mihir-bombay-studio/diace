@@ -36,9 +36,15 @@
       ],
       "settings": {
       }
+    },
+    "1632725956fec75c3a": {
+      "type": "article",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1632725956fec75c3a"
   ]
 }
