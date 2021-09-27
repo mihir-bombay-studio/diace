@@ -25,13 +25,14 @@ $(document).mouseup(function(e) {
   let menu = $('.login-wrapper');
   if (e.target.id === "account") {
     console.log("clicked");
-    $("#account .login-wrapper").toggleClass("active");
+    $(".login-wrapper").toggleClass("active");
   }
 
   else if ((!menu.is(e.target) // The target of the click isn't the container.
             && menu.has(e.target).length === 0)) // Nor a child element of the container
   {
-     $("#account .login-wrapper").removeClass("active");
+    console.log("notclicked");
+     $(".login-wrapper").removeClass("active");
   }
 
 });
