@@ -2,11 +2,18 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1632751771ce0b8da7": {
+      "type": "text-with-background",
       "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1632751771ce0b8da7"
   ]
 }
