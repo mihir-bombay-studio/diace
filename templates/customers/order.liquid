@@ -1,6 +1,36 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 
+<div class="grid-wrapper container">
+        <div class="collage-grid flex-box justify-between">
+            <div class="grid-left rel">
+                <div class="grid-left-img">
+                    
+                </div>
+                <div class="text-over-grid bold">WELKOM TERUG {{ customer.first_name }}</div>
+            </div>
+            <div class="grid-right flex-box justify-between">
+                <div class="grid-part flex-box align-center text-center">
+                    <div class="grid-sub-block semibold">MIJN GEGEVENS</div>
+                </div>
+
+                <div class="grid-part flex-box align-center text-center">
+                    <div class="grid-sub-block semibold">VOLG MIJN LAATSTE BESTELLING</div>
+                </div>
+
+                <div class="grid-part flex-box align-center text-center">
+                    <div class="grid-sub-block semibold">MIJN BESTELLINGEN</div>
+                </div>
+
+                <div class="grid-part flex-box align-center text-center">
+                    <div class="grid-sub-block semibold">SCHRIJF EEN REVIEW</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 <div class="customer order">
   <svg style="display:none">
     <symbol id="icon-discount" viewBox="0 0 12 12">
