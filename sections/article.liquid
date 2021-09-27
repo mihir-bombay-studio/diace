@@ -12,7 +12,7 @@
         <img src="{{ article.image.src | img_url: 'master' }}" alt="">
       </div>
       <div class="author">
-        <img src="blog.png" alt="author">
+        <img src="{{ article.image.src | img_url: 'master' }}" alt="author">
         <span class="author-name">{{ article.author }}</span>
       </div>
       <div class="article-content">
