@@ -72,7 +72,7 @@ textarea {
   font-weight: lighter;
 }
 
-::placeholder , textarea::placeholder{
+::placeholder , textarea::placeholder, input{
     padding :18px 16px ;
 }
 
