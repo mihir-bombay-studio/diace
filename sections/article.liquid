@@ -6,6 +6,8 @@
       <a class="back-btn" href="#">Terug</a>
       <div class="time-and-date">
         <span class="date">{{ article.published_at | date: '%b. %d, %Y' }}</span>
+        {% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>{% endcapture %}
+
         <span>5min read</span>
       </div>
       <div class="article-image">
