@@ -119,6 +119,9 @@ nav .dropdown:hover .header-nav-list-sub {
     width: 100%;
     padding: 8px;
 }
+.input_form_control {
+    position: relative;
+}
 
 .view-password {
     position: absolute;
