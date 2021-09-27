@@ -139,6 +139,7 @@ nav .dropdown:hover .header-nav-list-sub {
     line-height: normal;
     margin: 4px 0 16px 0;
   display: block;
+  color: inherit;
 }
 
 .login-btn {
