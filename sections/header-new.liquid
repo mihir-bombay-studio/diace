@@ -5,7 +5,7 @@
 			{{ section.settings.announcement_text }}
 			<span id="header-anouncement-close" class="flex-box">{% include 'icon-close-circle' %}</span>
 		</span>
-  <div class="header-wrapper {% if template.name != 'page' %} mb {% endif %}">
+  <div class="header-wrapper {% if template.name != 'article' %} mb {% elsif template.name != "page" %} mb {% else%} {% endif %}">
     <div class="container flex-box justify-between">
     <nav class="left-wrap">
       <a href="/">
