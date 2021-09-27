@@ -20,3 +20,17 @@ for (i = 0; i < acc.length; i++) {
 // $("#account").click(function(){
 //   $("#account .login-wrapper").toggleClass("header-nav-list-sub");
 // });
+
+$(document).mouseup(function(e) {
+  let menu = $('.login-wrapper');
+  if (e.target.id === "account") {
+    $("#account .login-wrapper").toggleClass("active");
+  }
+
+  else if ((!menu.is(e.target) // The target of the click isn't the container.
+            && menu.has(e.target).length === 0)) // Nor a child element of the container
+  {
+     $("#account .login-wrapper").removeClass("active");
+  }
+
+});
