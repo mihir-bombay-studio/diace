@@ -151,3 +151,12 @@ nav .dropdown:hover .header-nav-list-sub {
     font: normal normal bold 16px/24px 'Roboto', sans-serif;
     letter-spacing: 0.8px;
 }
+
+.register-btn {
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: normal;
+    font-size: 12px;
+    margin-top: 8px;
+    display: block;
+}
