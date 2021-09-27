@@ -159,4 +159,5 @@ nav .dropdown:hover .header-nav-list-sub {
     font-size: 12px;
     margin-top: 8px;
     display: block;
+  color: inherit;
 }
