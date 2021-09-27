@@ -43,7 +43,12 @@
 			          	</ul>
 					</li>
 
-					<li><a href="/account">{% include 'icon-user' %}{% include 'icon-grey-down-chevron' %}</a></li>
+					<li>
+                      <a href="/account">
+                      	{% include 'icon-user' %}{% include 'icon-grey-down-chevron' %}
+                      </a>
+          
+          			</li>
 					<li class="no-t-m right-nav-list"><a class="cart-toggler" onClick="return false;">{% include 'icon-cart-new' %}<span class="cart-items {% if cart.item_count < 1 %}no-disp{% endif %}">{{ cart.item_count }}</span></a></li>
 				</ul>
       </div>
