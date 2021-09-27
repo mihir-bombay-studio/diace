@@ -51,6 +51,11 @@ nav .dropdown {
   opacity: 0;
 }
 
+.login-wrapper.header-nav-list-sub {
+    right: 0;
+    left: auto;
+}
+
 .header-nav-list-sub li{
   display: block;
 }
