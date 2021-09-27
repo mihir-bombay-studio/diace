@@ -1,3 +1,33 @@
+{{ 'article.css' | asset_url | stylesheet_tag }}
+
+<div class="background-overlay">
+  <div class="container article-container">
+    <div class="content-wrapper">
+      <a class="back-btn" href="#">Terug</a>
+      <div class="time-and-date">
+        <span class="date">{{ article.published_at | date: '%b. %d, %Y' }}</span>
+        <span>5min read</span>
+      </div>
+      <div class="article-image">
+        <img src="{{ article.image.src | img_url: 'master' }}" alt="">
+      </div>
+      <div class="author">
+        <img src="blog.png" alt="author">
+        <span class="author-name">{{ article.author }}</span>
+      </div>
+      <div class="article-content">
+        <div class="heading">
+          {{ article.title }}
+        </div>
+        <div class="description">
+			{{ article.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 {% schema %}
   {
     "name": "Section name",
