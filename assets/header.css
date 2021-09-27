@@ -63,6 +63,8 @@ nav .dropdown:hover .header-nav-list-sub {
 .right-wrap{
 	width: 100%;
   text-align: right;
+      z-index: 1;
+
 }
 
 .right-nav-lower{
