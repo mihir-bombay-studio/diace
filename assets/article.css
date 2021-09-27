@@ -8,7 +8,7 @@
 
 .background-overlay{
   position: relative!important;
-  background-image: url('Background.svg');
+   background-image: url({% include "article-bg" %});
   background-repeat: no-repeat;
   background-size: cover;
 }
