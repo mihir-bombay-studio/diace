@@ -1,7 +1,30 @@
+{{ 'text-with-background.css' | asset_url | stylesheet_tag }}
+
+<div class="text-background">
+  <div class="back-btn">
+    <a href="#">Terug</a> 
+  </div>
+  <div class="heading-container">
+    ALGEMENE VOORWAARDEN
+  </div>
+  <div class="container content-container">
+    <div class="text-content">
+      <div class="text-description">
+        description
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Text with Background",
+    "settings": [],
+	"presets": [
+    {
+      "name": "Text with Background"
+    }
+  ]
   }
 {% endschema %}
 
