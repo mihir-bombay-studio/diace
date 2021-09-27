@@ -17,6 +17,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-$("#account").click(function(){
-  $("#account .login-wrapper").toggleClass("header-nav-list-sub");
-});
+// $("#account").click(function(){
+//   $("#account .login-wrapper").toggleClass("header-nav-list-sub");
+// });
