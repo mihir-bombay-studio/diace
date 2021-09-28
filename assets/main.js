@@ -51,11 +51,11 @@ for (i = 0; i < acc.length; i++) {
   
   var slider = document.getElementById("myRange");
   var output = slider.value;
-
+ 
 
   slider.oninput = function() {
-    output.innerHTML = this.value * 100;
-    console.log(output);
+    var new_value = output * 100;
+    console.log(new_value)
   }
 
     $('.check-box-wrapper').click(function() {
