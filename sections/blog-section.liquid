@@ -1,6 +1,6 @@
 {{ 'blog-section.css' | asset_url | stylesheet_tag }}
 
-{% assign article_words = article.content | strip_html | strip_newlines | downcase | replace: 'and','' | replace: 'the','' | split:' ' %}
+{% assign article_words = article.content | size %}
 
 
 
@@ -13,7 +13,7 @@
     </div>
     <div class="date_and_time">
       <span class="date">10/08/21</span> -
-      <span class="time">{{ article_words | size }}</span>
+      <span class="time">{{ article_words}}</span>
       <p class="topic">ONDERWERP</p>
     </div>
     <div class="blogheading">{{ article.title }}</div>
