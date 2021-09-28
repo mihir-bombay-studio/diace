@@ -269,6 +269,7 @@ a.active-facets__button {
 
 .slidecontainer {
   width: 100%;
+  padding: 0 5px;
 }
 
 .slider {
