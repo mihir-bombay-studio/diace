@@ -1,7 +1,54 @@
+{{ 'artboard.css' | asset_url | stylesheet_tag }}
+
+<div class="container filtered-container">
+  {% for block in section.blocks %}
+  <div class="artboard">
+    <div class="art-image">
+      <a href="">
+        <img src="{{ block.settings.artphoto | img_url: 'master' }}" loading="lazy" alt="Art Image" class="artimage">
+      </a>
+    </div>
+    <div class="art-content">
+      <div class="post">{{block.settings.heading}}</div>
+      <div class="role">{{block.settings.Subtext}}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Artboard",
+    "settings": [],
+	"blocks": [
+		{
+          "type": "artboard",
+		  "name": "Artboard",
+		  "settings": [
+			
+			{
+              "type": "image_picker",
+              "id": "artphoto",
+              "label": "Image"
+            },
+			{
+              "type": "text",
+              "id": "heading",
+              "label": "Heading"
+            },
+			{
+              "type": "text",
+              "id": "Subtext",
+              "label": "Subtext"
+            }
+		  ]
+        }
+		
+	],
+	"presets": [
+    {
+      "name": "Artboard"
+    }
+  ]
   }
 {% endschema %}
 
