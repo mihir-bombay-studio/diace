@@ -51,7 +51,7 @@ for (i = 0; i < acc.length; i++) {
   
   var slider = document.getElementById("myRange");
   var output = slider.value;
- 
+ console.log(output)
 
   slider.oninput = function() {
     var new_value = output * 100;
