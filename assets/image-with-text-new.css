@@ -16,6 +16,10 @@
     right: -50px;
 }
 
+.pt{
+	padding-top : 32px;
+}
+
 .dots-left-down{
 	bottom: -60px;
     left: -50px;
