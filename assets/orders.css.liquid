@@ -135,3 +135,69 @@
     display: flex;
     justify-content: space-between;
 }
+
+/* ======================================== */
+
+.order-details {
+    border: 2px solid #FEC23B;
+    border-radius: 8px;
+    background-color: #FFF3D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.order-details .detail-header {
+    margin-bottom: 40px;
+}
+
+.product-list-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-list {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.product-img {
+    width: 82px;
+    height: 82px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.product-info {
+    width: calc(100% - 98px);
+    line-height: 24px;
+    font-size: 16px;
+    font-family: 'Myriad Pro';
+}
+
+.product-name, .discount-price, .product-variant .count {
+    font-weight: 600;
+}
+
+.product-variant {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+}
+
+.compare-at-price {
+    color: #737373;
+    text-decoration: line-through;
+    margin-right: 16px;
+}
