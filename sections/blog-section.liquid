@@ -68,7 +68,7 @@
       </a>
       </div>
       <div class="blog_date_and_time">
-        <span class="blog-date">10/08/21</span>
+        <span class="blog-date">{{ article.published_at | date: '%b %d, %Y' }}</span>
         <span class="blog-time">{{ readtime }}</span>
       </div>
       <p class="blog-topic">ONDERWERP</p>
