@@ -12,6 +12,10 @@
       <div class="post">{{block.settings.heading}}</div>
       <div class="role">{{block.settings.Subtext}}</div>
     </div>
+    <div class="hero-hover-text flex-box align-center">
+          <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+          <a href="{{ block.settings.hero_text_link }}" class="hover-text bold">{{ block.settings.hero_other_img_text }}</a>
+        </div>
   </div>
   {% endfor %}
 </div>
@@ -39,6 +43,17 @@
               "type": "text",
               "id": "Subtext",
               "label": "Subtext"
+            },
+            {
+              "id": "hero_text_link",
+              "type": "url",
+              "label": "Hero Link"
+            },
+            {
+              "id": "hero_other_img_text",
+              "type": "text",
+              "label": "Text Over Image"
+
             }
 		  ]
         }
