@@ -50,7 +50,9 @@
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/art-image.png",
             "heading": "DIGITAL MARKETEER",
-            "Subtext": "internship"
+            "Subtext": "internship",
+            "hero_text_link": "",
+            "hero_other_img_text": "intership"
           }
         },
         "865b076a-8a80-419d-b6a9-0b98c777bc5c": {
@@ -58,7 +60,9 @@
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/Image_2x_99f9033f-f4ad-42c9-8759-38adee431812.png",
             "heading": "DIGITAL MARKETEER",
-            "Subtext": "full-time"
+            "Subtext": "full-time",
+            "hero_text_link": "",
+            "hero_other_img_text": "internship"
           }
         },
         "415aa432-b8b8-45c5-bfed-7e374ac74870": {
@@ -66,7 +70,9 @@
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/Image_2x_9ed6b00b-b1de-4c5d-8a76-df75462c6527.png",
             "heading": "CONTENT MARKETEER",
-            "Subtext": "internship"
+            "Subtext": "internship",
+            "hero_text_link": "",
+            "hero_other_img_text": "internship"
           }
         },
         "4bc49469-1aba-4cbf-8f2a-f6508e4a11b1": {
@@ -74,7 +80,9 @@
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/Image_2x_91f667a0-f283-4972-8006-c2a0866992ec.png",
             "heading": "VIDEO MARKETEER",
-            "Subtext": "internship"
+            "Subtext": "internship",
+            "hero_text_link": "",
+            "hero_other_img_text": "internship"
           }
         },
         "a0579324-9279-4c08-a13b-775c024c681f": {
@@ -82,15 +90,19 @@
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/Image_2x_6abba74b-24e0-4416-bbcc-202e3aefb47c.png",
             "heading": "PRODUCT DESIGNER",
-            "Subtext": "internship"
+            "Subtext": "internship",
+            "hero_text_link": "",
+            "hero_other_img_text": "internship"
           }
         },
         "6495a0f1-21d6-463d-8233-4a00ecc60a06": {
           "type": "artboard",
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/Image_2x_5d1578ef-855e-4149-884e-d15e1a10bd35.png",
-            "heading": "open application",
-            "Subtext": ""
+            "heading": "OPEN APPLICATION",
+            "Subtext": "",
+            "hero_text_link": "",
+            "hero_other_img_text": "internship"
           }
         }
       },
