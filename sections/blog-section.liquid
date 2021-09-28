@@ -14,12 +14,12 @@
 <div class="featured-blog-post container">
   <div class="blog-text">
     <div class="welcomeheading">
-      WELKOM OP ONZE BLOG
+      {{section.settings.heading}}
     </div>
     <div class="date_and_time">
       <span class="date">{{ article.published_at | date: '%d/%m/%Y' }}</span> -
       <span class="time">{{ readtime }}</span>
-      <p class="topic">ONDERWERP</p>
+      <p class="topic">{{section.settings.topic}}</p>
     </div>
     <div class="blogheading">{{ article.title }}</div>
     <div class="blogdesc">{{ article.excerpt_or_content | strip_html | truncatewords: 20 | escape }}</div>
@@ -71,7 +71,7 @@
         <span class="blog-date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
         <span class="blog-time">{{ readtime }}</span>
       </div>
-      <p class="blog-topic">ONDERWERP</p>
+      <p class="blog-topic">{{section.settings.topic}}</p>
       <div class="blog-heading">{{article.title}}</div>
       <div class="blogdesc">{{desc | strip_html | truncatewords: 20 | escape}}</div>
       <div class="readmore"><a href="{{article.url}}">Verder lezen >></a></div>
@@ -92,7 +92,24 @@
 {% schema %}
   {
     "name": "Blog section",
-    "settings": [],
+    "settings": [
+		{
+          "id": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+		{
+          "id": "topic",
+          "type": "text",
+          "label": "Topic"
+        },
+		{
+          "id": "link_text",
+          "type": "text",
+          "label": "Link text",
+		  "info" : "Read more text"
+        }
+	],
 	"presets": [
     {
       "name": "Blog Section"
