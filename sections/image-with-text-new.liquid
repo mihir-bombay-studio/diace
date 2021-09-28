@@ -1,6 +1,6 @@
 {{ 'image-with-text-new.css' | asset_url | stylesheet_tag }}
 
-<div class="image-with-text container rel">
+<div class="image-with-text container rel {% if section.settings.padd-top %} pt {% endif %}">
   <div class="flex-box justify-between align-center grid grid--gapless grid--1-col grid--2-col-tablet {% if section.settings.img_preference == 'image first' %}raw-reverse{% endif %}">
     <div class="image-with-text-grid-item">
       <div class="image-with-text-content">
@@ -75,6 +75,12 @@
       "type": "text",
       "id": "text_over_img",
       "label": "Text Over Image"
+    },
+	{
+      "type": "checkbox",
+      "id": "padd-top",
+      "label": "top padding",
+	  "default" : false
     }
   ],
   "blocks": [
