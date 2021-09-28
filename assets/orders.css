@@ -1,28 +1,44 @@
-.grid-left, .grid-right {
+.text-over-grid.white-bg {
+    background-color: #ffffff;
+}
+
+.grid-left, .grid-right, .tabcontent {
     width: 50%;
 }
 
 .collage-grid {
     gap: 16px;
+    min-height: 572px;
 }
 
-.grid-left {
+.grid-left, .tabcontent {
     min-height: 572px;
-    border: 1px solid #FEC23B;
+    border: 2px solid #FEC23B;
     border-radius: 8px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.welcome-tab {
     background-color: #FEC23B;
 }
 
+.tabcontent {
+    display: none;
+}
+
 .text-over-grid {
+    width: 55%;
     text-transform: uppercase;
     line-height: 24px;
     position: absolute;
     top: 52px;
-    left: -1px;
-    background-color: #ffffff;
-    padding: 20.5px 26px 15.5px;
+    left: -2px;
+    background-color: #FEC23B;
+    padding: 20px 15.5px;
     letter-spacing: .8px;
     border-radius: 0 8px 8px 0;
+    text-align: center;
 }
 
 .grid-right {
@@ -36,6 +52,11 @@
     width: calc(50% - 8px);
     height: calc(50% - 8px);
     justify-content: center;
+    cursor: pointer;
+}
+
+.grid-part:hover, .tablinks.active {
+    background-color: #FEC23B33;
 }
 
 .grid-sub-block {
@@ -48,4 +69,69 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ================================================ */
+
+.details-wrapper, .tab-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.details-container, .tab-container {
+    min-height: 288px;
+    min-width: 70%;
+    padding-top: 52px;
+}
+
+.detail-block {
+    padding: 16px 0;
+    text-align: left;
+    font: normal normal 300 16px/24px Myriad Pro;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.detail-block p {
+    margin: 0;
+}
+
+.detail-block:nth-child(even) {
+    border-top: 1px solid #FEC23B;
+    border-bottom: 1px solid #FEC23B;
+}
+
+.order_list-tab .detail-block {
+    border-top: none;
+    border-bottom: 1px solid #FEC23B;
+}
+
+.detail-header {
+    font: normal normal bold 16px/24px Myriad Pro;
+    letter-spacing: 0.8px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.underline-link {
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal 300 16px/24px Myriad Pro;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.detail-header .underline-link {
+    margin-left: 18px;
+}
+
+/* =========================================== */
+
+.list-header {
+    font: normal normal 600 16px/24px Myriad Pro;
+    display: flex;
+    justify-content: space-between;
 }
