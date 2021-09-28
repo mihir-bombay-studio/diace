@@ -49,57 +49,17 @@ for (i = 0; i < acc.length; i++) {
     
   });
   
-  let min = 0;
-  let max = 100;
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
 
-  const calcLeftPosition = value => 100 / (100 - 10) *  (value - 10);
+  slider.oninput = function() {
+    output.innerHTML = this.value * 100;
+  }
 
-  $('#rangeMin').on('input', function(e) {
-    const newValue = parseInt(e.target.value);
-    if (newValue > max) return;
-    min = newValue;
-    $('#thumbMin').css('left', calcLeftPosition(newValue) + '%');
-    $('#min').html(newValue);
-    $('#line').css({
-      'left': calcLeftPosition(newValue) + '%',
-      'right': (100 - calcLeftPosition(max)) + '%'
+    $('.check-box-wrapper').click(function() {
+      $(this).toggleClass('selected');
     });
-    $('.product-collection-card').each(function() {
-      var product_price = $(this).data('price');
-      var new_val = newValue * 100;
-      console.log(product_price);
-      $(this).addClass('out-of-range-min');
-      if( product_price >= new_val ) {
-        $(this).removeClass('out-of-range-min');
-      }
-    });
-  });
-
-  $('#rangeMax').on('input', function(e) {
-    const newValue = parseInt(e.target.value);
-    if (newValue < min) return;
-    max = newValue;
-    $('#thumbMax').css('left', calcLeftPosition(newValue) + '%');
-    $('#max').html(newValue);
-    $('#line').css({
-      'left': calcLeftPosition(min) + '%',
-      'right': (100 - calcLeftPosition(newValue)) + '%'
-    });
-    $('.product-collection-card').each(function() {
-      var product_price = $(this).data('price');
-      var new_val = newValue * 100;
-      console.log(product_price);
-      $(this).addClass('out-of-range-max');
-      if( product_price <= new_val ) {
-        $(this).removeClass('out-of-range-max');
-      }
-    });
-  });
-  
-  
-  $('.check-box-wrapper').click(function() {
-  	$(this).toggleClass('selected');
-  });
 
 // $("#account").click(function(){
 //   $("#account .login-wrapper").toggleClass("header-nav-list-sub");
