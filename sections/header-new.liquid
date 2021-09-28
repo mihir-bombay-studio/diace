@@ -43,7 +43,31 @@
 			          	</ul>
 					</li>
 
-					<li><a href="/account">{% include 'icon-user' %}{% include 'icon-grey-down-chevron' %}</a></li>
+					<li class="right-nav-list dropdown bold">
+                      <div id="account-btn" class="account-btn">
+                      	{% include 'icon-user' %}{% include 'icon-grey-down-chevron' %}
+                      </div>
+                      <div class="login-wrapper">
+                        <form action="" class="login-form">
+                          <div class="form-container">
+                            <div class="input_form_control">
+                              <label for="login_email">E-MAIL</label>
+                              <input type="email" name="" id="login_email" placeholder="John@email.com">
+                            </div>
+                            <div class="input_form_control">
+                              <label for="login_password">WACHTWOORD</label>
+                              <input type="password" name="" id="login_password" placeholder="Your password">
+                              <span class="view-password">Tonen</span>
+                            </div>
+                            <a href="/" class="forgot-password">Wachtwoord vergeten?</a>
+                            <button type="submit" class="login-btn btn btn-yellow">
+                              log in
+                            </button>
+                            <a href="/" class="register-btn">Don’t have an account? Register</a>
+                          </div>
+                        </form>
+                      </div>
+          			</li>
 					<li class="no-t-m right-nav-list"><a class="cart-toggler" onClick="return false;">{% include 'icon-cart-new' %}<span class="cart-items {% if cart.item_count < 1 %}no-disp{% endif %}">{{ cart.item_count }}</span></a></li>
 				</ul>
       </div>

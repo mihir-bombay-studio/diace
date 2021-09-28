@@ -1,0 +1,106 @@
+{{ 'form-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="form-with-text">
+  <div class="container">
+    <div class="form_with_text_wrapper">
+      <div class="text_content">
+        <div class="text_heading">
+          <h2 class="section-heading">{{section.settings.contact_text}}</h2>
+        </div>
+        <div class="text_description">
+          <p>{{section.settings.contact_desc}}</p>
+          <div class="address">
+            <span>{% include "map-pin" %}</span>
+            <span class="address_text">{{section.settings.contact_address}}</span>
+          </div>
+          <div class="address mail">
+            <span>{% include "mail-box" %}</span>
+            <span class="address_text">{{section.settings.contact_email}}</span>
+          </div>
+          <div class="frequently_asked_q">
+            <button class="btn">{{section.settings.btn}}</button>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <form action="">
+          <div class="form_container">
+            <div class="input_form_control input-1">
+              <label for="name">Naam*</label>
+              <input placeholder="Vul je naam in" type="text" id="name" class="name">
+            </div>
+            <div class="input_form_control input-2">
+              <label for="name">E-MAIL*</label>
+              <input placeholder="youremail@mail.com" type="text" id="name" class="name">
+            </div>
+            <div class="input_form_control input-3">
+              <label for="name">TELEFOONNUMMER</label>
+              <input placeholder="Vul je telefoonnummer in, enkel cijfers" type="text" id="name" class="name">
+            </div>
+            <div class="input_form_control input-4">
+              <label for="name">ONDERWERP</label>
+              <input placeholder="Waarover gaat je bericht?" type="text" id="name" class="name">
+            </div>
+            <div class="input_form_control input-5">
+              <label for="name">ORDERNUMMER</label>
+              <input placeholder="Vul je ordernummer in, indien van toepassing" type="text" id="name" class="name">
+            </div>
+            <div class="input_form_control input-6">
+              <label for="name">UW BERICHT</label>
+              <textarea rows="8" cols="50" placeholder="Jouw bericht" id="name"
+                        class="name"></textarea>
+            </div>
+            <div class="submit_button">
+              <button type="submit">VERZENDEN</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "ContactForm-with-text",
+    "settings": [
+		{
+          "id": "contact_text",
+          "type": "text",
+          "label": "Heading",
+		  "default" : "WAAR KAN JE ONS VINDEN"
+        },
+		{
+          "id": "contact_desc",
+          "type": "html",
+          "label": "Description"
+        },
+		{
+          "id": "contact_address",
+          "type": "textarea",
+          "label": "Address"
+        },
+		{
+          "id": "contact_email",
+          "type": "text",
+          "label": "Email"
+        },
+		{
+          "id": "btn",
+          "type": "text",
+          "label": "Button Text"
+        }
+	],
+	"presets": [
+    {
+      "name": "ContactForm with text"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

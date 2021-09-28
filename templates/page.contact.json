@@ -1,1 +1,101 @@
-{"sections":{"main":{"type":"main-page","settings":{}},"form":{"type":"contact-form","settings":{}}},"order":["main","form"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1632563392c47d265d": {
+      "type": "contact",
+      "settings": {
+        "contact_text": "WAAR KAN JE ONS VINDEN",
+        "contact_desc": "Heb je een vraag over één van onze diabetes accessoires en wens je snel een antwoord?\nStel ze via onze Live Chat van 9u00 tot 21u00 van maandag tot vrijdag. Of stuur ons een bericht via het contactformulier.",
+        "contact_address": "Diacé B.V. Duwijckstraat 17 2500 Lier, België BTW BE 0738.615.210",
+        "contact_email": "info@diace.be",
+        "btn": "VEELGESTELDE VRAGEN"
+      }
+    },
+    "1632551429cb993baa": {
+      "type": "multiple-faqs",
+      "blocks": {
+        "901c3531-3ccd-4fe5-89c7-b28eb587dbbd": {
+          "type": "subject_1",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "4f43a51a-e07b-4f60-bffc-3324ea6da57e": {
+          "type": "subject_1",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "cbada998-11c8-4adc-ad4d-6de0dd29d56f": {
+          "type": "subject_1",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "fce729b0-1a3c-4d2d-b7db-54d785d786a2": {
+          "type": "subject_2",
+          "settings": {
+            "question": "Question",
+            "answer": "2Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "bac7dda9-5881-486f-a6be-501abb093bc8": {
+          "type": "subject_2",
+          "settings": {
+            "question": "Question",
+            "answer": "2.2Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "1fe5fe56-8794-4ffc-a8a3-be3615528e73": {
+          "type": "subject_3",
+          "settings": {
+            "question": "Question",
+            "answer": "3.1Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "9c9b21d4-2d24-4146-aba2-7563d4e709b6": {
+          "type": "subject_3",
+          "settings": {
+            "question": "Question",
+            "answer": "3.2Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        }
+      },
+      "block_order": [
+        "901c3531-3ccd-4fe5-89c7-b28eb587dbbd",
+        "4f43a51a-e07b-4f60-bffc-3324ea6da57e",
+        "cbada998-11c8-4adc-ad4d-6de0dd29d56f",
+        "fce729b0-1a3c-4d2d-b7db-54d785d786a2",
+        "bac7dda9-5881-486f-a6be-501abb093bc8",
+        "1fe5fe56-8794-4ffc-a8a3-be3615528e73",
+        "9c9b21d4-2d24-4146-aba2-7563d4e709b6"
+      ],
+      "settings": {
+        "section_heading": "VEELGESTELDE VRAGEN",
+        "faq_heading_1": "ONDERWERP 01",
+        "faq_heading_2": "ONDERWERP 02",
+        "faq_heading_3": "ONDERWERP 03"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "form",
+    "1632563392c47d265d",
+    "1632551429cb993baa"
+  ]
+}

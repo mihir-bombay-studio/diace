@@ -1,13 +1,159 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
+{{ 'orders.css' | asset_url | stylesheet_tag }}
+
+<div class="grid-wrapper container">
+  <div class="collage-grid flex-box justify-between">
+    <div id="welcome-tab" class="welcome-tab tabcontent" style="display: block">
+      <div class="grid-left-img"> {% render "order_text" %}</div>
+      <div class="text-over-grid bold white-bg">WELKOM TERUG {{ customer.first_name }}</div>
+    </div>
+    <div id="details-tab" class="details-tab tabcontent">
+      <div class="details-wrapper">
+        <div class="details-container">
+          <div class="detail-block">
+            <div class="detail-header">
+              CONTACTGEGEVENS <span class="underline-link">Wijzig</span>
+            </div>
+            <div>
+              <p class="">{{ customer.email }}</p>
+              <p class="">{{ customer.phone }}</p>
+            </div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-header">
+              LEVERINGSADRES <span class="underline-link">Wijzig</span>
+            </div>
+            <div>
+              <p class="address1">laura Touchant</p>
+              <p class="address2">Straatnaam nr toev. Bus</p>
+              <p>
+                <span class="zip"> Postcode,</span>
+                <span class="city">gemeente</span>
+              </p>
+            </div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-header">FACTUURADRES</div>
+            <label>
+              <input type="checkbox" name="" /> Zelfde als
+              leveringsadres</label>
+          </div>
+        </div>
+      </div>
+      <div class="text-over-grid bold">MIJN GEGEVENS</div>
+    </div>
+    <div id="order_list-tab" class="order_list-tab tabcontent">
+      <div class="tab-wrapper">
+        <div class="tab-container">
+          <div class="detail-block">
+            <div class="list-header">
+              <div class="date">Di 24 augustus 2021</div>
+              <div class="price">€ 24,00</div>
+            </div>
+            <p>BE 012 345 678</p>
+            <p class="flex-box justify-between">
+              In behandeling <span class="underline-link">Details >></span>
+            </p>
+          </div>
+          <div class="detail-block">
+            <div class="list-header">
+              <div class="date">Di 24 augustus 2021</div>
+              <div class="price">€ 24,00</div>
+            </div>
+            <p>BE 012 345 678</p>
+            <p class="flex-box justify-between">
+              In behandeling <span class="underline-link">Details >></span>
+            </p>
+          </div>
+          <div class="detail-block">
+            <div class="list-header">
+              <div class="date">Di 24 augustus 2021</div>
+              <div class="price">€ 24,00</div>
+            </div>
+            <p>BE 012 345 678</p>
+            <p class="flex-box justify-between">
+              In behandeling <span class="underline-link">Details >></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-over-grid bold">BESTELLINGEN</div>
+    </div>
+    <div class="grid-right flex-box justify-between ">
+      <div onclick="openTab(event, 'details-tab')"
+           class="grid-part flex-box align-center text-center tablinks">
+        <div class="grid-sub-block semibold">MIJN GEGEVENS</div>
+      </div>
+
+      <div id="defaultOpen" onclick="openTab(event, 'welcome-tab')"
+           class="grid-part flex-box align-center text-center tablinks">
+        <div class="grid-sub-block semibold">
+          VOLG MIJN LAATSTE BESTELLING
+        </div>
+      </div>
+
+      <div onclick="openTab(event, 'order_list-tab')"
+           class="grid-part flex-box align-center text-center tablinks">
+        <div class="grid-sub-block semibold">MIJN BESTELLINGEN</div>
+      </div>
+
+      <div class="grid-part flex-box align-center text-center tablinks">
+        <div class="grid-sub-block semibold">SCHRIJF EEN REVIEW</div>
+      </div>
+    </div>
+    <div class="grid-right single-order-details no-disp">
+      <div class="product-list-wrapper">
+        <div class="detail-header">BESTELLING: BE 012 345 678</div>
+        <div class="product-list">
+          <div class="product-block">
+            <div class="product-img"></div>
+            <div class="product-info">
+              <div class="product-name">Product name</div>
+              <div class="product-variant">Variant <span class="count">Aantal: 1</span></div>
+              <div class="product-price"> <span class="compare-at-price">€ 00,00</span> <span
+                                                                                              class="discount-price">€ 00,00</span></div>
+            </div>
+          </div>
+          <div class="product-block">
+            <div class="product-img"></div>
+            <div class="product-info">
+              <div class="product-name">Product name</div>
+              <div class="product-variant">Variant <span class="count">Aantal: 1</span></div>
+              <div class="product-price"> <span class="compare-at-price">€ 00,00</span> <span
+                                                                                              class="discount-price">€ 00,00</span></div>
+            </div>
+          </div>
+          <div class="product-block">
+            <div class="product-img"></div>
+            <div class="product-info">
+              <div class="product-name">Product name</div>
+              <div class="product-variant">Variant <span class="count">Aantal: 1</span></div>
+              <div class="product-price"> <span class="compare-at-price">€ 00,00</span> <span
+                                                                                              class="discount-price">€ 00,00</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <div class="customer order">
   <svg style="display:none">
     <symbol id="icon-discount" viewBox="0 0 12 12">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0h3a2 2 0 012 2v3a1 1 0 01-.3.7l-6 6a1 1 0 01-1.4 0l-4-4a1 1 0 010-1.4l6-6A1 1 0 017 0zm2 2a1 1 0 102 0 1 1 0 00-2 0z" fill="currentColor">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0h3a2 2 0 012 2v3a1 1 0 01-.3.7l-6 6a1 1 0 01-1.4 0l-4-4a1 1 0 010-1.4l6-6A1 1 0 017 0zm2 2a1 1 0 102 0 1 1 0 00-2 0z" fill="currentColor" />
     </symbol>
   </svg>
   <div>
-    <h1>{{ 'customer.account.title' | t }}</h1>
+    <h1>{{ 'customer.account.title' | t }}
+    {% if customer %}
+Hey, {{ customer.first_name }}. 
+I can see you! 
+I even know your email address: {{ customer.email }}.
+{% endif %}
+    </h1>
     <a href="{{ routes.account_url }}">{{ 'customer.account.return' | t }}</a>
   </div>
 
@@ -276,3 +422,23 @@
     </div>
   </div>
 </div>
+
+
+<script>
+  function openTab(evt, tabId) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabId).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  // document.getElementById("defaultOpen").click();
+</script>

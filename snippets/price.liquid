@@ -44,9 +44,10 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       </dt>
       <dd {% if show_badges == false %}class="price__last"{% endif %}>
-        <span class="price-item price-item--regular">
+        <span class="price-item price-item--regular product-price semibold">
           {{ money_price }}
         </span>
+        <span class="incl-tax light">incl. BTW</span>
       </dd>
     </div>
     <div class="price__sale">
@@ -54,7 +55,7 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       </dt>
       <dd class="price__compare">
-        <s class="price-item price-item--regular">
+        <s class="price-item price-item--regular compare-to-price light">
           {{ compare_at_price | money }}
         </s>
       </dd>
@@ -62,9 +63,10 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
       </dt>
       <dd {% if show_badges == false %}class="price__last"{% endif %}>
-        <span class="price-item price-item--sale">
+        <span class="price-item price-item--sale product-price semibold">
           {{ money_price }}
         </span>
+        <span class="incl-tax light">incl. BTW</span>
       </dd>
     </div>
     <small class="unit-price caption{% if available == false or product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">

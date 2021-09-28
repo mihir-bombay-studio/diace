@@ -1,0 +1,147 @@
+{{ 'faq.css' | asset_url | stylesheet_tag }}
+<section class="faq-section">
+    <div class="faq-wrapper container">
+        <h2 class="section-heading bold text-center">{{ section.settings.section_heading }}</h2>
+        <div class="pills flex-box justify-center">
+            <div class="pill">{{ section.settings.faq_heading_1 }}</div>
+            <div class="pill">{{ section.settings.faq_heading_2 }}</div>
+            <div class="pill">{{ section.settings.faq_heading_3 }}</div>
+        </div>
+        <h2 class="faq-heading bold">{{ section.settings.faq_heading_1 }}</h2>
+        {% for block in section.blocks %}
+            {%- case block.type -%}
+                {%- when 'subject_1' -%}
+                    <div class="accordion question semibold flex-box justify-between">
+                        <div class="question-left">{{ block.settings.question }}</div>
+                        <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+                    </div>
+                    <div class="panel answer light">
+                        <p>{{ block.settings.answer }}</p>
+                    </div>
+            {% endcase %}
+        {% endfor %}
+        <h2 class="faq-heading bold">{{ section.settings.faq_heading_2 }}</h2>
+        {% for block in section.blocks %}
+            {%- case block.type -%}
+                {%- when 'subject_2' -%}
+                    <div class="accordion question semibold flex-box justify-between">
+                        <div class="question-left">{{ block.settings.question }}</div>
+                        <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+                    </div>
+                    <div class="panel answer light">
+                        <p>{{ block.settings.answer }}</p>
+                    </div>
+            {% endcase %}
+        {% endfor %}
+        <h2 class="faq-heading bold">{{ section.settings.faq_heading_3 }}</h2>
+        {% for block in section.blocks %}
+            {%- case block.type -%}
+                {%- when 'subject_3' -%}
+                    <div class="accordion question semibold flex-box justify-between">
+                        <div class="question-left">{{ block.settings.question }}</div>
+                        <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+                    </div>
+                    <div class="panel answer light">
+                        <p>{{ block.settings.answer }}</p>
+                    </div>
+            {% endcase %}
+        {% endfor %}
+    </div>
+</section>
+{% schema %}
+{
+    "name": "FAQ",
+    "settings": [
+	{
+        "type": "text",
+        "id": "section_heading",
+        "label": "Section Heading"
+    },
+    {
+        "type": "text",
+        "id": "faq_heading_1",
+        "label": "FAQ Heading 1"
+    },
+    {
+        "type": "text",
+        "id": "faq_heading_2",
+        "label": "FAQ Heading 2"
+    },
+    {
+        "type": "text",
+        "id": "faq_heading_3",
+        "label": "FAQ Heading 3"
+    }
+    ],
+    "blocks": [
+    {
+        "type": "subject_1",
+        "name": "FAQ 1",
+        "limit": 5,
+        "settings": [
+        {
+            "id": "question",
+            "type": "text",
+            "label": "Question"
+
+        },
+        {
+            "id": "answer",
+            "type": "text",
+            "label": "Answer"
+
+        }
+        ]
+    },
+    {
+        "type": "subject_2",
+        "name": "FAQ 2",
+        "limit": 5,
+        "settings": [
+            {
+            "id": "question",
+            "type": "text",
+            "label": "Question"
+    
+            },
+            {
+            "id": "answer",
+            "type": "text",
+            "label": "Answer"
+    
+            }
+        ]
+        },
+        {
+        "type": "subject_3",
+        "name": "FAQ 3",
+        "limit": 5,
+        "settings": [
+            {
+            "id": "question",
+            "type": "text",
+            "label": "Question"
+    
+            },
+            {
+            "id": "answer",
+            "type": "text",
+            "label": "Answer"
+    
+            }
+        ]
+        }
+    
+    ],
+    "presets": [
+    {
+        "name": "Multiple FAQs",
+        "category":"section"
+    }
+    ]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

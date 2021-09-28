@@ -1,41 +1,35 @@
 {{ 'faq.css' | asset_url | stylesheet_tag }}
-
 <div class="faq-wrapper container">
-  <h2 class="faq-heading bold">{{section.settings.faq_heading}}</h2>
-  
-  {% for block in section.blocks %}
-  {% if block.type == "faq" %}
-  <div class="accordion question semibold flex-box justify-between">
-    <div class="question-left">{{ block.settings.question }}</div>
-    <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
-  </div>
-  <div class="panel answer light"><p>{{ block.settings.answer }}</p></div>
-  {% endif %}
-  {% endfor %}
-  
-  {% for block in section.blocks %}
-  {% if block.type == "button" %}
-  {%- if block.settings.button_label != blank -%}
-  <a href="{{ block.settings.button_link }}" class="btn center-it {% if block.settings.button-color == 'grey' %}btn-grey{% else %}btn-yellow{% endif %}">{{ block.settings.button_label | escape }}</a>
-  {%- endif -%}
-  {% endif %}
-  {% endfor %}
-  
-  
-  {% for block in section.blocks %}
-  {% if block.type == "cta" %}
-  {%- if block.settings.cta_label != blank -%}
-  <div class="banner-link">
-    <a href="{{ block.settings.cta_link }}" class="bold">{{ block.settings.cta_label | escape }}</a>
-    <span class="right-black-chveron">{% include 'icon-black-right-chevron' %}</span>
-  </div>
-  {%- endif -%}
-  {% endif %}
-  {% endfor %}
-  
-  
+    <h2 class="faq-heading bold">{{ section.settings.faq_heading }}</h2>
+    {% for block in section.blocks %}
+        {% if block.type == "faq" %}
+            <div class="accordion question semibold flex-box justify-between">
+                <div class="question-left">{{ block.settings.question }}</div>
+                <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+            </div>
+            <div class="panel answer light">
+                <p>{{ block.settings.answer }}</p>
+            </div>
+        {% endif %}
+    {% endfor %}
+    {% for block in section.blocks %}
+        {% if block.type == "button" %}
+            {%- if block.settings.button_label != blank -%}
+                <a href="{{ block.settings.button_link }}" class="btn center-it {% if block.settings.button-color == 'grey' %}btn-grey{% else %}btn-yellow{% endif %}">{{ block.settings.button_label | escape }}</a>
+            {%- endif -%}
+        {% endif %}
+    {% endfor %}
+    {% for block in section.blocks %}
+        {% if block.type == "cta" %}
+            {%- if block.settings.cta_label != blank -%}
+                <div class="banner-link">
+                    <a href="{{ block.settings.cta_link }}" class="bold">{{ block.settings.cta_label | escape }}</a>
+                    <span class="right-black-chveron">{% include 'icon-black-right-chevron' %}</span>
+                </div>
+            {%- endif -%}
+        {% endif %}
+    {% endfor %}
 </div>
-
 <!-- <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -55,9 +49,8 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script> -->
-
 {% schema %}
-  {
+{
   "name": "FAQ",
   "settings": [
     {
@@ -149,9 +142,7 @@ for (i = 0; i < acc.length; i++) {
   ]
 }
 {% endschema %}
-
 {% stylesheet %}
 {% endstylesheet %}
-
 {% javascript %}
 {% endjavascript %}

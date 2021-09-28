@@ -94,12 +94,19 @@
     letter-spacing: .8px;
     max-width: 0;
     -webkit-transition: font-size .8s ease;
-    transition: font-size .8s ease;
+    transition: font-size .4s ease;
   font-size: 0;
 }
 
 .social-media-wrapper .dots-left-down {
-    bottom: 80px;
+  bottom: 52px;
+  left: -48px;
+}
+
+
+.social-media-wrapper .dots-right-down {
+  bottom: -55px;
+  right: -25px;
 }
 
 .socila-media-lower {
@@ -166,3 +173,4 @@ h2.newsletter-subscription-heading {
 .sm-hover-text:hover {
 	max-width: unset;
 }
+

@@ -36,7 +36,7 @@ nav .dropdown {
   position: relative;
 }
 
-.header-nav-list-sub {
+.header-nav-list-sub, .login-wrapper {
   display: block;
   border: 0;
   position: absolute;
@@ -54,11 +54,12 @@ nav .dropdown {
   opacity: 0;
 }
 
+
 .header-nav-list-sub li{
   display: block;
 }
 
-nav .dropdown:hover .header-nav-list-sub {
+nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   max-height: 999px;
   opacity: 1;
 }
@@ -66,6 +67,8 @@ nav .dropdown:hover .header-nav-list-sub {
 .right-wrap{
 	width: 100%;
   text-align: right;
+      z-index: 1;
+
 }
 
 .right-nav-lower{
@@ -91,11 +94,84 @@ nav .dropdown:hover .header-nav-list-sub {
 }
 
 .right-nav-lower li:hover .yellow-down-chevron{
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .yellow-down-chevron svg{
-	height: 16px;
+  height: 16px;
   padding-top: 5px;
 }
 
+/* --------------------- header login form------------------------------ */
+.account-btn {
+    cursor: pointer;
+} 
+
+.icon-grey-down-chevron{
+transition: all .3s ease;
+}
+
+.account-btn.active .icon-grey-down-chevron{
+transform: rotate(180deg);
+}
+
+.login-wrapper {
+  box-shadow: 0px 4px 16px #0000001a;
+  border-radius: 4px;
+  padding: 16px;
+  font-size: 12px;
+  min-width: 278px;
+  right: 0;
+  left: auto;
+}
+
+.login-form input {
+    border: 1px solid #FEC23B;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+}
+.input_form_control {
+    position: relative;
+}
+
+.view-password {
+    position: absolute;
+    right: 10px;
+    text-decoration: underline;
+    font-weight: normal;
+    cursor: pointer;
+  bottom: 5px;
+}
+
+.forgot-password {
+    font-weight: normal;
+    text-align: right;
+    text-decoration: underline;
+    line-height: normal;
+    margin: 4px 0 16px 0;
+  display: block;
+  color: inherit;
+}
+
+.login-btn {
+    outline: none;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    font: normal normal bold 16px/24px 'Roboto', sans-serif;
+    letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.register-btn {
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: normal;
+    font-size: 12px;
+    margin-top: 8px;
+    display: block;
+  color: inherit;
+}

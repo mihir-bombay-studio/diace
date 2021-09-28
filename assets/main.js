@@ -18,6 +18,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+
 // filter by tags and range script
 
   $('.collection-tag').click(function() {
@@ -99,3 +100,24 @@ for (i = 0; i < acc.length; i++) {
   $('.check-box-wrapper').click(function() {
   	$(this).toggleClass('selected');
   });
+
+// $("#account").click(function(){
+//   $("#account .login-wrapper").toggleClass("header-nav-list-sub");
+// });
+
+$(document).mouseup(function(e) {
+  let menu = $('.login-wrapper');
+  if (e.target.id === "account-btn" || $("#account-btn").has(e.target).length > 0) {
+    console.log("clicked");
+    $("#account-btn").toggleClass("active");
+    $(".login-wrapper").toggleClass("active");
+  }
+
+  else if ((!menu.is(e.target) // The target of the click isn't the container.
+            && menu.has(e.target).length === 0)) // Nor a child element of the container
+  {
+    console.log("notclicked");
+    $(".login-wrapper").removeClass("active");
+  }
+
+});
