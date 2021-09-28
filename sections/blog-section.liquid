@@ -19,7 +19,7 @@
     <div class="date_and_time">
       <span class="date">{{ article.published_at | date: '%d/%m/%Y' }}</span> -
       <span class="time">{{ readtime }}</span>
-      <p class="topic">{{section.settings.topic}}</p>
+      <p class="topic">Topic</p>
     </div>
     <div class="blogheading">{{ article.title }}</div>
     <div class="blogdesc">{{ article.excerpt_or_content | strip_html | truncatewords: 20 | escape }}</div>
@@ -71,7 +71,7 @@
         <span class="blog-date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
         <span class="blog-time">{{ readtime }}</span>
       </div>
-      <p class="blog-topic">{{section.settings.topic}}</p>
+      <p class="blog-topic">Topic</p>
       <div class="blog-heading">{{article.title}}</div>
       <div class="blogdesc">{{desc | strip_html | truncatewords: 20 | escape}}</div>
       <div class="readmore"><a href="{{article.url}}">{{section.settings.link_text}} >></a></div>
@@ -97,11 +97,6 @@
           "id": "heading",
           "type": "text",
           "label": "Heading"
-        },
-		{
-          "id": "topic",
-          "type": "text",
-          "label": "Topic"
         },
 		{
           "id": "link_text",
