@@ -54,7 +54,8 @@ for (i = 0; i < acc.length; i++) {
   output.innerHTML = slider.value;
 
   slider.oninput = function() {
-    output.innerHTML = this.value * 100;
+    var range_op = output.innerHTML = this.value * 100;
+    console.log(range_op)
   }
 
     $('.check-box-wrapper').click(function() {
