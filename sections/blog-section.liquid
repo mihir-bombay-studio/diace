@@ -49,7 +49,7 @@
  	{% endfor %}
   </div>
   <div class="filtered-blog-container">
-    {% paginate blog.articles by 3 %}
+    {% paginate blog.articles by 6 %}
     {% for article in blogs.news.articles reversed  %}
     {% assign desc = article.content %}
     <div class="blogs" data-btag="{% for tag in article.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
