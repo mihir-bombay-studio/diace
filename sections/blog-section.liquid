@@ -17,7 +17,7 @@
       WELKOM OP ONZE BLOG
     </div>
     <div class="date_and_time">
-      <span class="date">{{ article.published_at | date: '%b %d, %Y' }}</span> -
+      <span class="date">{{ article.published_at | date: '%d/%m/%Y' }}</span> -
       <span class="time">{{ readtime }}</span>
       <p class="topic">ONDERWERP</p>
     </div>
@@ -68,7 +68,7 @@
       </a>
       </div>
       <div class="blog_date_and_time">
-        <span class="blog-date">{{ article.published_at | date: '%b %d, %Y' }}</span>
+        <span class="blog-date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
         <span class="blog-time">{{ readtime }}</span>
       </div>
       <p class="blog-topic">ONDERWERP</p>
