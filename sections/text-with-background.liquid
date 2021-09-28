@@ -1,8 +1,8 @@
 {{ 'text-with-background.css' | asset_url | stylesheet_tag }}
 
 <div class="text-background">
-  <div class="back-btn">
-    <a class="back-btn" href="#">{% include "back-icon"%} Terug</a> 
+  <div class="{% if section.settings.show_btn %} back-btn {% endif %} ">
+    <a class="back-btn" href="{{section.settings.link_url}}">{% include "back-icon"%} {{section.settings.link_text}}</a> 
   </div>
   <div class="heading-container">
     {{section.settings.text}}
@@ -30,6 +30,22 @@
           "id": "description",
           "type": "html",
           "label": "Content"
+        },
+		{
+          "id": "show_btn",
+          "type": "checkbox",
+          "label": "Show back Link"
+        },
+		{
+          "id": "link_text",
+          "type": "text",
+          "label": "Link Text",
+		  "default" : "Terug"
+        },
+		{
+          "id": "link_url",
+          "type": "url",
+          "label": "Link Url"
         }
 	
 	],
