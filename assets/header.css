@@ -65,32 +65,32 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .right-wrap{
-	width: 100%;
+  width: 100%;
   text-align: right;
-      z-index: 1;
+  z-index: 1;
 
 }
 
 .right-nav-lower{
-	width: 100%;
+  width: 100%;
 }
 
 .right-nav-lower li{
-	display: inline-block;
-  	letter-spacing: 0.8px;
-      font-size: 16px;
-  	line-height: 24px;
-  	padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.8px;
+  font-size: 16px;
+/*   line-height: 24px;
+  padding-bottom: 10px; */
 }
 
 .yellow-down-chevron {
-    display: inline-block;
+  display: inline-block;
   transition: .4s ease;
   margin-left: 4px;
 }
 
 .right-nav-lower li:hover{
-	border-bottom: 2px solid #FEC23B;
+  border-bottom: 2px solid #FEC23B;
 }
 
 .right-nav-lower li:hover .yellow-down-chevron{
@@ -104,15 +104,15 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 /* --------------------- header login form------------------------------ */
 .account-btn {
-    cursor: pointer;
+  cursor: pointer;
 } 
 
 .icon-grey-down-chevron{
-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .account-btn.active .icon-grey-down-chevron{
-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .login-wrapper {
@@ -126,52 +126,52 @@ transform: rotate(180deg);
 }
 
 .login-form input {
-    border: 1px solid #FEC23B;
-    border-radius: 4px;
-    display: block;
-    width: 100%;
-    padding: 8px;
+  border: 1px solid #FEC23B;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 8px;
 }
 .input_form_control {
-    position: relative;
+  position: relative;
 }
 
 .view-password {
-    position: absolute;
-    right: 10px;
-    text-decoration: underline;
-    font-weight: normal;
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  text-decoration: underline;
+  font-weight: normal;
+  cursor: pointer;
   bottom: 5px;
 }
 
 .forgot-password {
-    font-weight: normal;
-    text-align: right;
-    text-decoration: underline;
-    line-height: normal;
-    margin: 4px 0 16px 0;
+  font-weight: normal;
+  text-align: right;
+  text-decoration: underline;
+  line-height: normal;
+  margin: 4px 0 16px 0;
   display: block;
   color: inherit;
 }
 
 .login-btn {
-    outline: none;
-    border: 0;
-    padding: 10px;
-    width: 100%;
-    text-transform: uppercase;
-    font: normal normal bold 16px/24px 'Roboto', sans-serif;
-    letter-spacing: 0.8px;
+  outline: none;
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  font: normal normal bold 16px/24px 'Roboto', sans-serif;
+  letter-spacing: 0.8px;
   cursor: pointer;
 }
 
 .register-btn {
-    font-weight: 400;
-    text-decoration: underline;
-    line-height: normal;
-    font-size: 12px;
-    margin-top: 8px;
-    display: block;
+  font-weight: 400;
+  text-decoration: underline;
+  line-height: normal;
+  font-size: 12px;
+  margin-top: 8px;
+  display: block;
   color: inherit;
 }
