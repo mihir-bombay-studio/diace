@@ -26,3 +26,40 @@
   text-transform: uppercase;
   font-family:'Myraid Pro';
 }
+
+.hero-hover-text {
+  position: absolute;
+  bottom: 26px;
+  left: 16px;
+  background-color: #FFF;
+  border-radius: 50px;
+  transition: .4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.plus-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  transition: .4s ease;
+}
+
+.hero-hover-text:hover {
+  max-width: unset;
+}
+
+.hero-hover-text:hover .plus-icon{
+  transform: rotate(225deg);
+}
+
+.plus-icon svg{
+  width: 48px;
+  height: 48px;
+}
+
+.hero-hover-text:hover .hover-text {
+  max-width: 100%;
+}
