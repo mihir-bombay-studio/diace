@@ -61,7 +61,7 @@ for (i = 0; i < acc.length; i++) {
       var product_price = $(this).data('price');
       console.log(product_price);
       $(this).addClass('out-of-range-min');
-      if( product_price >= range_op ) {
+      if( product_price <= range_op ) {
         $(this).removeClass('out-of-range-min');
       }
     });
