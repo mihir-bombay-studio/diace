@@ -172,7 +172,7 @@
     gap: 16px;
 }
 
-.product-img {
+.product-block .product-img {
     width: 82px;
     height: 82px;
     border-radius: 8px;
