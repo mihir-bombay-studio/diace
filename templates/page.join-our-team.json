@@ -38,7 +38,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_2x_d0aeb7cd-e9ca-4927-8af5-37eb2920d9bb.png",
         "img_preference": "image second",
-        "text_over_img": ""
+        "text_over_img": "",
+        "padd-top": true
       }
     },
     "1632806201e2d1d8bf": {
@@ -136,7 +137,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
         "img_preference": "image second",
-        "text_over_img": "NICK & STEFANIE"
+        "text_over_img": "NICK & STEFANIE",
+        "padd-top": false
       }
     }
   },
