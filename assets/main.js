@@ -50,11 +50,12 @@ for (i = 0; i < acc.length; i++) {
   });
   
   var slider = document.getElementById("myRange");
-  var output = document.getElementById("demo");
-  output.innerHTML = slider.value;
+  var output = slider.value;
+
 
   slider.oninput = function() {
     output.innerHTML = this.value * 100;
+    console.log(output);
   }
 
     $('.check-box-wrapper').click(function() {
