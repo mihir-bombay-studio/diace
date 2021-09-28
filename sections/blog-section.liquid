@@ -49,8 +49,8 @@
  	{% endfor %}
   </div>
   <div class="filtered-blog-container">
+    {% paginate blog.articles by 3 %}
     {% for article in blogs.news.articles reversed  %}
-    {%- paginate article by 3 -%}
     {% assign desc = article.content %}
     <div class="blogs" data-btag="{% for tag in article.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
       <div class="blog-image">
@@ -76,9 +76,11 @@
       <div class="blogdesc">{{desc | strip_html | truncatewords: 20 | escape}}</div>
       <div class="readmore"><a href="{{article.url}}">Verder lezen >></a></div>
     </div>
-{%- endpaginate -%}
+{%- if paginate.pages > 1 -%}
+          {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
+          {%- endif -%}
     {% endfor %}
-	
+	{%- endpaginate -%}
   </div>
   <div class="load-more-btn">
     <button class="load-more">MEER LADEN</button>
