@@ -36,7 +36,7 @@ for (i = 0; i < acc.length; i++) {
 
 
   $('.article_filter_tag').click(function() {
-    console.log("filtering..")
+ 	$(this).toggleClass("active");
   	var bfilter_tag = $(this).data('bfilter');
     $('.blogs').toggleClass('no-disp');
     $('.blogs').each(function() {
