@@ -1,0 +1,55 @@
+.text-background {
+    position: relative !important;
+    background-image: url(//cdn.shopify.com/s/files/1/0594/3604/0367/t/3/assets/article-bg.svg?v=3246859187231546785);
+  	background-repeat: no-repeat;
+    background-size: cover;
+  	height: 220px;
+}
+
+.heading-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    text-align: left;
+    font: normal normal bold 32px/48px Myriad Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.text-content {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+    padding-bottom: 80px;
+    justify-content: space-around;
+}
+
+.content-container {
+    margin-bottom: 80px !important;
+    display: flex;
+    justify-content: center;
+}
+
+.text-description{
+    text-align: left;
+    font: normal normal 300 16px/24px Myriad Pro;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.back-btn a{
+    position: absolute;
+    left: 52px;
+    top: 23px;
+    text-decoration: none;
+    color: #000;
+}
+
+.back-btn svg{
+  transform: rotate(90deg);
+  color: #0d0d0d;
+  border: #0d0d0d;
+}

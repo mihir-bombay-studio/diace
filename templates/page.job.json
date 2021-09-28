@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16327568795ab9a08e": {
+      "type": "text-with-background",
+      "settings": {
+        "text": "DIGITAL MARKETING - STAGE",
+        "description": "Diacé is the online place-to-go voor alles wat met diabetes accessoires te maken heeft. Je kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 500 artikels brengen wij meer kleur in het leven met diabetes, op een leuke en aangename manier. Als jonge startup met internationale ambities zijn wij op zoek naar versterking. Ben jij klaar voor een nieuw avontuur? Dan ben jij misschien wel dé persoon die wij zoeken!\n<br><br>\n<strong>FUNCTIEOMSCHRIJVING<\/strong>\n<br><br>\nDiacé is the online place-to-go voor alles wat met diabetes accessoires te maken heeft. Je kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 500 artikels brengen wij meer kleur in het leven met diabetes, op een leuke en aangename manier. Als jonge startup met internationale ambities zijn wij op zoek naar versterking. Ben jij klaar voor een nieuw avontuur? Dan ben jij misschien wel dé persoon die wij zoeken!\n<br><br>\n<strong>FUNCTIEOMSCHRIJVING<\/strong>\n<br><br>\nDiacé is the online place-to-go voor alles wat met diabetes accessoires te maken heeft. Je kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 500 artikels brengen wij meer kleur in het leven met diabetes, op een leuke en aangename manier. Als jonge startup met internationale ambities zijn wij op zoek naar versterking. Ben jij klaar voor een nieuw avontuur? Dan ben jij misschien wel dé persoon die wij zoeken!\n<br><br>",
+        "show_btn": true,
+        "link_text": "Terug",
+        "link_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16327568795ab9a08e"
+  ]
+}

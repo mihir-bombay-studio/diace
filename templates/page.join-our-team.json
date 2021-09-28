@@ -1,0 +1,163 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1632806194415e12e9": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "1632806194415e12e9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "JOIN OUR TEAM"
+          }
+        },
+        "1632806194415e12e9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Diacé is the online place-to-go voor alles wat met diabetes accessoires te maken heeft. Het is onze missie om het leven van mensen met diabetes aangenamer te maken en met elkaar in contact te brengen via producten, media en evenementen.<\/p><p><\/p><p> Als jong bedrijf met internationale ambities zijn wij steeds op zoek naar versterking. Ben jij klaar voor een nieuw avontuur? Dan ben jij misschien wel dé persoon die wij zoeken! Denk jij dat jij ons team kan versterken, maar staat jouw profiel hier niet bij? Grijp dan snel je kans en stuur ons een e-mail naar info@diace.be met meer informatie over jezelf. Overtuig ons en wie weet maak jij binnenkort deel uit van het Diacé Kickass Team!<\/p>"
+          }
+        },
+        "1632806194415e12e9-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "BEKIJK VACATURES",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "1632806194415e12e9-0",
+        "1632806194415e12e9-1",
+        "1632806194415e12e9-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Image_2x_d0aeb7cd-e9ca-4927-8af5-37eb2920d9bb.png",
+        "img_preference": "image second",
+        "text_over_img": "",
+        "padd-top": true
+      }
+    },
+    "1632806201e2d1d8bf": {
+      "type": "artboard",
+      "blocks": {
+        "c6d65c6d-50d1-44e2-bf2e-97c430009955": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/art-image.png",
+            "heading": "DIGITAL MARKETEER",
+            "Subtext": "internship",
+            "hero_text_link": "",
+            "hero_other_img_text": "intership"
+          }
+        },
+        "865b076a-8a80-419d-b6a9-0b98c777bc5c": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Image_2x_99f9033f-f4ad-42c9-8759-38adee431812.png",
+            "heading": "DIGITAL MARKETEER",
+            "Subtext": "full-time",
+            "hero_text_link": "",
+            "hero_other_img_text": "internship"
+          }
+        },
+        "415aa432-b8b8-45c5-bfed-7e374ac74870": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Image_2x_9ed6b00b-b1de-4c5d-8a76-df75462c6527.png",
+            "heading": "CONTENT MARKETEER",
+            "Subtext": "internship",
+            "hero_text_link": "",
+            "hero_other_img_text": "internship"
+          }
+        },
+        "4bc49469-1aba-4cbf-8f2a-f6508e4a11b1": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Image_2x_91f667a0-f283-4972-8006-c2a0866992ec.png",
+            "heading": "VIDEO MARKETEER",
+            "Subtext": "internship",
+            "hero_text_link": "",
+            "hero_other_img_text": "internship"
+          }
+        },
+        "a0579324-9279-4c08-a13b-775c024c681f": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Image_2x_6abba74b-24e0-4416-bbcc-202e3aefb47c.png",
+            "heading": "PRODUCT DESIGNER",
+            "Subtext": "internship",
+            "hero_text_link": "",
+            "hero_other_img_text": "internship"
+          }
+        },
+        "6495a0f1-21d6-463d-8233-4a00ecc60a06": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Image_2x_5d1578ef-855e-4149-884e-d15e1a10bd35.png",
+            "heading": "OPEN APPLICATION",
+            "Subtext": "",
+            "hero_text_link": "",
+            "hero_other_img_text": "internship"
+          }
+        }
+      },
+      "block_order": [
+        "c6d65c6d-50d1-44e2-bf2e-97c430009955",
+        "865b076a-8a80-419d-b6a9-0b98c777bc5c",
+        "415aa432-b8b8-45c5-bfed-7e374ac74870",
+        "4bc49469-1aba-4cbf-8f2a-f6508e4a11b1",
+        "a0579324-9279-4c08-a13b-775c024c681f",
+        "6495a0f1-21d6-463d-8233-4a00ecc60a06"
+      ],
+      "settings": {
+      }
+    },
+    "1632806816259f14f2": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "1632806816259f14f2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DE ONE-STOP-SHOP VOOR JOUW FAVORIETE DIABETES ACCESSOIRES."
+          }
+        },
+        "1632806816259f14f2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Het leven met diabetes kan best ingewikkeld zijn. Met Diacé willen wij het leven met diavetes een stuk aangenamer maken. Diacé biedt een divers aanbod diabetes accessoires aan verzameld op één website.<\/p><p> Onze website is 24 op 24 beschikbaar en omdat wij met een eigen voorraad werken kunnen wij zorgen voor een snelle verzending van jouw materiaal. Je vind op onze website de meest hekende Premium merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<\/p>"
+          }
+        },
+        "1632806816259f14f2-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEES ONS VERHAAL",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "1632806816259f14f2-0",
+        "1632806816259f14f2-1",
+        "1632806816259f14f2-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
+        "img_preference": "image second",
+        "text_over_img": "NICK & STEFANIE",
+        "padd-top": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1632806194415e12e9",
+    "1632806201e2d1d8bf",
+    "1632806816259f14f2"
+  ]
+}

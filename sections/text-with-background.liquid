@@ -1,0 +1,65 @@
+{{ 'text-with-background.css' | asset_url | stylesheet_tag }}
+
+<div class="text-background">
+  <div class=" back-btn {% if section.settings.show_btn == false %} no-disp {% endif %} ">
+    <a class="back-btn" href="{{section.settings.link_url}}">{% include "back-icon"%} {{section.settings.link_text}}</a> 
+  </div>
+  <div class="heading-container">
+    {{section.settings.text}}
+  </div>
+</div>
+<div class="container content-container">
+  <div class="text-content">
+    <div class="text-description">
+      {{section.settings.description}}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Text with Background",
+    "settings": [
+		{
+          "id": "text",
+          "type": "text",
+          "label": "Heading"
+        },
+		{
+          "id": "description",
+          "type": "html",
+          "label": "Content"
+        },
+		{
+          "id": "show_btn",
+          "type": "checkbox",
+          "label": "Show back Link",
+		  "default" : false
+        },
+		{
+          "id": "link_text",
+          "type": "text",
+          "label": "Link Text",
+		  "default" : "Terug"
+        },
+		{
+          "id": "link_url",
+          "type": "url",
+          "label": "Link Url"
+        }
+	
+	],
+	"presets": [
+    {
+      "name": "Text with Background"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

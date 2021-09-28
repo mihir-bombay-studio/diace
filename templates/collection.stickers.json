@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false,
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    },
+    "16324014168d24c379": {
+      "type": "collection-filter",
+      "blocks": {
+        "32d5f29e-8429-4c96-93aa-9b614c68b766": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "a7d61824-1311-4cbe-b0ac-5c04f090d063": {
+          "type": "price_filter",
+          "settings": {
+            "show_price_filter": true,
+            "show_price_filter_heading": "PRIJS"
+          }
+        },
+        "4065f80d-6c6a-47fb-ab28-7cb23a92ec28": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Meisjes"
+          }
+        },
+        "c6086071-aa1f-4ac0-83fc-75274faf1b5e": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Meisjes"
+          }
+        },
+        "d988cf8b-dcdc-4f1a-9eac-b1e61e16f216": {
+          "type": "size_filter",
+          "settings": {
+            "size": "XS (47 - 55 cm)"
+          }
+        },
+        "895c95f2-1117-483b-93d8-d2d64529e52d": {
+          "type": "size_filter",
+          "settings": {
+            "size": "S (55 - 65 cm)"
+          }
+        },
+        "70060fc5-8738-4a10-bd78-d55b1c11c9bb": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "MERK 1"
+          }
+        },
+        "4d4628f3-1cc5-45f3-a07a-7a7bb73b37e4": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "MERK 2"
+          }
+        }
+      },
+      "block_order": [
+        "32d5f29e-8429-4c96-93aa-9b614c68b766",
+        "a7d61824-1311-4cbe-b0ac-5c04f090d063",
+        "4065f80d-6c6a-47fb-ab28-7cb23a92ec28",
+        "c6086071-aa1f-4ac0-83fc-75274faf1b5e",
+        "d988cf8b-dcdc-4f1a-9eac-b1e61e16f216",
+        "895c95f2-1117-483b-93d8-d2d64529e52d",
+        "70060fc5-8738-4a10-bd78-d55b1c11c9bb",
+        "4d4628f3-1cc5-45f3-a07a-7a7bb73b37e4"
+      ],
+      "settings": {
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "gender_filter_title": "GESLACHT",
+        "size_filter_title": "MATEN",
+        "brand_filter_title": "MERK"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "16324014168d24c379"
+  ]
+}

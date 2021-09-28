@@ -42,13 +42,14 @@
         {% endfor %}
 
       </div>
-      {% for block in section.blocks %}
-      {% if block.type == "checkboxes" %}
-      <div class="price-tag-filters {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_gender_filter == false and block.settings.show_price_filter == false and block.settings.show_brand_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+
+      <div class="price-tag-filters">
         <div class="filter-title semibold">Filter op:</div>
-        <div class="price-filter{% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_price_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+        {% for block in section.blocks %}
+        {% if block.type == "price_filter" %}
+        <div class="price-filter{% for block in section.blocks %}{% if block.type == "price_filter" %}{% if block.settings.show_price_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
           <div class="price-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-            <div class="price-filter-title">PRIJS</div>
+            <div class="price-filter-title">{{block.settings.show_price_filter_heading}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
@@ -68,68 +69,68 @@
           </div>
           <div class="yellow-border-bottom"></div>
         </div>
-        <div class="sex-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_gender_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+        {% endif %}
+        {% endfor %}
+        
+        
+        
+        <div class="sex-filter">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-            <div class="price-filter-title">GESLACHT</div>
+            <div class="price-filter-title">{{section.settings.gender_filter_title}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
+            {% for block in section.blocks %}
+        	{% if block.type == "gender_filter" %}
             <div class="check-box-wrapper flex-box align-center">
               <span class="check-box"></span>
-              <span class="check-box-option semibold">Meisjes</span>
+              <span class="check-box-option semibold">{{block.settings.gender}}</span>
             </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">Jongens</span>
-            </div>
+            {% endif %}
+        	{% endfor %}
           </div>
           <div class="yellow-border-bottom"></div>
         </div>
-        <div class="size-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_size_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+        
+        
+        <div class="size-filter">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-            <div class="price-filter-title">MATEN</div>
+            <div class="price-filter-title">{{section.settings.size_filter_title}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
+            {% for block in section.blocks %}
+        	{% if block.type == "size_filter" %}
             <div class="check-box-wrapper flex-box align-center">
               <span class="check-box"></span>
-              <span class="check-box-option semibold">XS (47 - 55 cm)</span>
+              <span class="check-box-option semibold">{{block.settings.size}}</span>
             </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">S (55 - 65 cm)</span>
-            </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">M (65 - 85 cm)</span>
-            </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">L (85 - 100 cm)</span>
-            </div>
+            {% endif %}
+        	{% endfor %}
           </div>
           <div class="yellow-border-bottom"></div>
         </div>
-        <div class="brand-filter {% for block in section.blocks %}{% if block.type == "checkboxes" %}{% if block.settings.show_brand_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
+        
+        
+        <div class="brand-filter">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
-            <div class="price-filter-title">MERK</div>
+            <div class="price-filter-title">{{section.settings.brand_filter_title}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
+            {% for block in section.blocks %}
+        	{% if block.type == "brand_filter" %}
             <div class="check-box-wrapper flex-box align-center">
               <span class="check-box"></span>
-              <span class="check-box-option semibold">MERK 1</span>
+              <span class="check-box-option semibold">{{block.settings.brand}}</span>
             </div>
-            <div class="check-box-wrapper flex-box align-center">
-              <span class="check-box"></span>
-              <span class="check-box-option semibold">MERK 2</span>
-            </div>
+            {% endif %}
+        	{% endfor %}
           </div>
           <div class="yellow-border-bottom"></div>
         </div>
       </div>
-      {% endif %}
-      {% endfor %}
+
     </div>
     <div class="collection-filter-right">
       <div class="collection-banner-wrapper">
@@ -158,8 +159,22 @@
         </div>
       </div>
       
+      
+      
+      
       <div class="sorting-wrapper light flex-box justify-between">
-        <div class="sorting-part total-items flex-box border-bottom justify-between"><div>Toon 16 items</div><div>{% include 'icon-black-down-chevron' %}</div></div>
+        <div class="sorting-part total-items flex-box border-bottom justify-between">
+          <select id="filter-count" class="select__select product_count_sort">
+            <option value="" disabled selected>Toon 16 items</option>
+            <option value="16">1-16</option>
+            <option value="32">32</option>
+            <option value="64">64</option>
+            <option value="all">all</option>
+          </select>
+          <div>
+            {% include 'icon-black-down-chevron' %}
+          </div>
+        </div>
         <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
         <div class = "sort__by_filter" >
           <div class=" collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
@@ -536,14 +551,10 @@
         </div>
       </div>
       
-
-    
-
       <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
 
-
       <div id="CollectionProductGrid">
-        {%- paginate collection.products by section.settings.products_per_page -%}
+        {%- paginate collection.products by 3 -%}
         {%- if collection.products.size == 0 -%}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
           <div class="loading-overlay">
@@ -634,61 +645,6 @@
   "class": "spaced-section collection-grid-section",
   "settings": [
     {
-      "type": "range",
-      "id": "products_per_page",
-      "min": 8,
-      "max": 24,
-      "step": 4,
-      "default": 16,
-      "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header__3.content"
-    },
-    {
-      "type": "select",
-      "id": "image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__3.label"
-        }
-      ],
-      "default": "adapt",
-      "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_secondary_image",
-      "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "add_image_padding",
-      "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.add_image_padding.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_vendor",
-      "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header__1.content"
-    },
-    {
       "type": "checkbox",
       "id": "enable_filtering",
       "default": true,
@@ -700,6 +656,21 @@
       "id": "enable_sorting",
       "default": true,
       "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
+    },
+    {
+      "type": "text",
+      "id": "gender_filter_title",
+      "label": "Gender Filter Title"
+    },
+    {
+      "type": "text",
+      "id": "size_filter_title",
+      "label": "Size Filter Title"
+    },
+    {
+      "type": "text",
+      "id": "brand_filter_title",
+      "label": "Brand Filter Title"
     }
   ],
 	"blocks": [
@@ -723,8 +694,9 @@
           ]
         },
 		{
-          "type": "checkboxes",
-		  "name": "Filters",
+          "type": "price_filter",
+		  "name": "Price Filter",
+		  "limit" : 1,
 		  "settings": [
 			{
               "type": "checkbox",
@@ -732,23 +704,47 @@
               "label": "Show Price Filter",
               "default": true
             },
-		  	{
-              "type": "checkbox",
-              "id": "show_gender_filter",
-              "label": "Show Gender Filter",
-              "default": true
-            },
-		  	{
-              "type": "checkbox",
-              "id": "show_size_filter",
-              "label": "Show size Filter",
-              "default": true
-            },
-            {
-              "type": "checkbox",
-              "id": "show_brand_filter",
-              "label": "Show Brand Filter",
-              "default": true
+			{
+              "type": "text",
+              "id": "show_price_filter_heading",
+              "label": "Price Filter heading",
+			  "default" : "PRIJS"
+            }
+		  ]
+        },
+		{
+          "type": "gender_filter",
+		  "name": "Gender Filter",
+		  "settings": [
+			
+			{
+              "type": "text",
+              "id": "gender",
+              "label": "Gender"
+            }
+		  ]
+        },
+		{
+          "type": "size_filter",
+		  "name": "Size Filter",
+		  "settings": [
+			
+			{
+              "type": "text",
+              "id": "size",
+              "label": "Size"
+            }
+		  ]
+        },
+		{
+          "type": "brand_filter",
+		  "name": "Brand Filter",
+		  "settings": [
+			
+			{
+              "type": "text",
+              "id": "brand",
+              "label": "Brand Category"
             }
 		  ]
         }
@@ -764,87 +760,4 @@
 {% endschema %}
 
 
-<script>
-  $('.collection-tag').click(function() {
-   	$(this).toggleClass("underline-selected");
-  	var filter_tag = $(this).data('tfilter');
-    $('.product-collection-card').toggleClass('no-disp');
-    $('.product-collection-card').each(function() {
-      var string = $(this).data('tag');
-      var tag = string.split(',');
-      if( $.inArray(filter_tag, tag) != -1 ) {
-        $(this).removeClass('no-disp');
-      }
-    });
-    
-  });
-  
-  let min = 0;
-  let max = 100;
-
-  const calcLeftPosition = value => 100 / (100 - 10) *  (value - 10);
-
-  $('#rangeMin').on('input', function(e) {
-    const newValue = parseInt(e.target.value);
-    if (newValue > max) return;
-    min = newValue;
-    $('#thumbMin').css('left', calcLeftPosition(newValue) + '%');
-    $('#min').html(newValue);
-    $('#line').css({
-      'left': calcLeftPosition(newValue) + '%',
-      'right': (100 - calcLeftPosition(max)) + '%'
-    });
-    $('.product-collection-card').each(function() {
-      var product_price = $(this).data('price');
-      var new_val = newValue * 100;
-      console.log(product_price);
-      $(this).addClass('out-of-range-min');
-      if( product_price >= new_val ) {
-        $(this).removeClass('out-of-range-min');
-      }
-    });
-  });
-
-  $('#rangeMax').on('input', function(e) {
-    const newValue = parseInt(e.target.value);
-    if (newValue < min) return;
-    max = newValue;
-    $('#thumbMax').css('left', calcLeftPosition(newValue) + '%');
-    $('#max').html(newValue);
-    $('#line').css({
-      'left': calcLeftPosition(min) + '%',
-      'right': (100 - calcLeftPosition(newValue)) + '%'
-    });
-    $('.product-collection-card').each(function() {
-      var product_price = $(this).data('price');
-      var new_val = newValue * 100;
-      console.log(product_price);
-      $(this).addClass('out-of-range-max');
-      if( product_price <= new_val ) {
-        $(this).removeClass('out-of-range-max');
-      }
-    });
-  });
-  
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-        panel.classList.remove("panel-bottom-border");
-      } else {
-        var new_height = panel.scrollHeight + 16;
-        panel.style.maxHeight = new_height + "px";
-        panel.classList.add("panel-bottom-border");
-      } 
-      this.classList.toggle("active");
-    });
-  }
-  
-  $('.check-box-wrapper').click(function() {
-  	$(this).toggleClass('selected');
-  });
-</script>
+ <script src="{{ "filter-by-count.js" | asset_url }}" defer="defer"></script>

@@ -1,1 +1,47 @@
-{"sections":{"main":{"type":"main-blog","blocks":{"title":{"type":"title","settings":{}},"summary":{"type":"summary","settings":{}},"link":{"type":"link","settings":{}}},"block_order":["title","summary","link"],"settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "disabled": true,
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_date": true,
+            "show_author": false
+          }
+        },
+        "summary": {
+          "type": "summary",
+          "settings": {
+          }
+        },
+        "link": {
+          "type": "link",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "summary",
+        "link"
+      ],
+      "settings": {
+        "show_image": true
+      }
+    },
+    "16326405238bea2bac": {
+      "type": "blog-section",
+      "settings": {
+        "heading": "WELKOM OP ONZE BLOG",
+        "topic": "",
+        "link_text": "Verder lezen"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16326405238bea2bac"
+  ]
+}
