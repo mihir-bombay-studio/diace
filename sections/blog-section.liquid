@@ -1,5 +1,9 @@
 {{ 'blog-section.css' | asset_url | stylesheet_tag }}
 
+{% assign article_words = article.content | strip_html | strip_newlines | downcase | replace: 'and','' | replace: 'the','' | split:' ' %}
+
+
+
 {% for article in blog.articles %}
 {% if forloop.first %}
 <div class="featured-blog-post container">
@@ -9,7 +13,7 @@
     </div>
     <div class="date_and_time">
       <span class="date">10/08/21</span> -
-      <span class="time">5 min read</span>
+      <span class="time">{{ article_words | size }}</span>
       <p class="topic">ONDERWERP</p>
     </div>
     <div class="blogheading">{{ article.title }}</div>
