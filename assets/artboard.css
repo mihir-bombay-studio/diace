@@ -1,0 +1,27 @@
+.filtered-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.artboard {
+  margin: 13px 0;
+  max-width: 376px;
+  width: calc(75% - 16px);
+}
+
+.artboard img{
+  max-height:278px;
+}
+
+.role{
+  font-weight: lighter;
+  font-family:'Myraid Pro';
+}
+
+.post{
+  margin: 16px 0 8px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family:'Myraid Pro';
+}
