@@ -6,42 +6,41 @@
       <a class="back-btn" href="/blogs/news">{% include "back-icon" %} Terug</a>
       <div class="time-and-date">
         <span class="date">{{ article.published_at | date: '%b. %d, %Y' }}</span>
-
+        
         <span>5min read</span>
       </div>
       <div class="article-image">
         <img src="{{ article.image.src | img_url: 'master' }}" alt="">
       </div>
-    </div>
-    <div class="author">
-      <img src="{{ article.image.src | img_url: 'master' }}" alt="author">
-      <span class="author-name">{{ article.author }}</span>
-    </div>
-    <div class="article-content">
-      <div class="heading">
-        {{ article.title }}
+      <div class="author">
+        <img src="{{ article.image.src | img_url: 'master' }}" alt="author">
+        <span class="author-name">{{ article.author }}</span>
       </div>
-      <div class="description">
-        {{ article.content }}
+      <div class="article-content">
+        <div class="heading">
+          {{ article.title }}
+        </div>
+        <div class="description">
+			{{ article.content }}
+        </div>
       </div>
-    </div>
-    <div class="article-share">
-      <p class="share-heading">Deel dit artikel</p>
-      <div class="share-platforms">
-        <span>{% include "facebook" %}</span>
-        <span>{% include "instagram" %}</span>
-        <span>{% include "facebook" %}</span>
-        <span>{% include "instagram" %}</span>
+      <div class="article-share">
+        <p class="share-heading">Deel dit artikel</p>
+        <div class="share-platforms">
+          <span>{% include "facebook" %}</span>
+          <span>{% include "instagram" %}</span>
+          <span>{% include "facebook" %}</span>
+          <span>{% include "instagram" %}</span>
+        </div>
       </div>
-    </div>
-    <div class="divider"></div>
-    <div class="next-previous-article">
-      <span class="previous">{% include "back-icon" %} Vorig artikel</span>
-      <span class="next">Volgend artikel {% include "back-icon" %} </span>
+      <div class="divider"></div>
+      <div class="next-previous-article">
+        <span class="previous">{% include "back-icon" %} Vorig artikel</span>
+        <span class="next">Volgend artikel {% include "back-icon" %} </span>
+      </div>
     </div>
   </div>
 </div>
-
 
 
 {% schema %}
