@@ -1,6 +1,13 @@
 {{ 'blog-section.css' | asset_url | stylesheet_tag }}
 
-{% assign article_words = article.content.size %}
+{%- assign article = article.content -%}{%- assign readtime = '' -%}
+
+{%- assign words = article | strip_html | split:' ' -%}
+
+{%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
+{%- capture readtime -%}Estimate {{ readtime }}-minute read{%- endcapture -%}
+
+{{ readtime }}
 
 
 
