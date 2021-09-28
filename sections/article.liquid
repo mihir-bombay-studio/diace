@@ -1,14 +1,5 @@
 {{ 'article.css' | asset_url | stylesheet_tag }}
 
-
-{%- assign article = article.content -%}{%- assign readtime = '' -%}
-
-{%- assign words = article | strip_html | split:' ' -%}
-
-{%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
-{%- capture readtime -%}{{ readtime }}- min read{%- endcapture -%}
-
-
 <div class="background-overlay">
   <div class="container article-container">
     <div class="content-wrapper">
