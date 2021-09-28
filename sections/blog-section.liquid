@@ -45,9 +45,9 @@
 <div class="blog-filter-container container">
   <div class="filter-pills">
     <span class="active">Alle</span>
-    <span>ONDERWERP 02</span>
-    <span>ONDERWERP 03</span>
-    <span>ONDERWERP 04</span>
+    {% for tag in blogs.news.all_tags %}
+    <span>{tag}</span>
+ 	{% endfor %}
   </div>
   <div class="filtered-blog-container">
     {% for article in blogs.news.articles reversed  %}
