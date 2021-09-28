@@ -588,7 +588,7 @@
                   </div>
                 </div>
                 <div class="product-title-price flex-box justify-between">
-                  <div class="product-title semibold">{{ product.title | escape  }}</div>
+                  <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  }}</a></div>
                   <div class="product-compare-to-and-price">
                     <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
                     <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
