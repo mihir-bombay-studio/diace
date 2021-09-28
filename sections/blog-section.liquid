@@ -76,11 +76,12 @@
       <div class="blogdesc">{{desc | strip_html | truncatewords: 20 | escape}}</div>
       <div class="readmore"><a href="{{article.url}}">Verder lezen >></a></div>
     </div>
-{%- if paginate.pages > 1 -%}
-          {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
-          {%- endif -%}
+
     {% endfor %}
-	{%- endpaginate -%}
+    {%- if paginate.pages > 1 -%}
+    {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
+    {%- endif -%}
+    {%- endpaginate -%}
   </div>
   <div class="load-more-btn">
     <button class="load-more">MEER LADEN</button>
