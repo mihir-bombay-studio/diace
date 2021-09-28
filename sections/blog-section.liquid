@@ -52,7 +52,7 @@
   <div class="filtered-blog-container">
     {% for article in blogs.news.articles reversed  %}
     {% assign desc = article.content %}
-    <div class="blogs">
+    <div class="blogs" data-btag="{% for tag in blogs.news.all_tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
       <div class="blog-image">
         <a href="{{article.url}}">
         {% if article.image != blank %}
