@@ -103,11 +103,47 @@
       ],
       "settings": {
       }
+    },
+    "1632806816259f14f2": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "1632806816259f14f2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DE ONE-STOP-SHOP VOOR JOUW FAVORIETE DIABETES ACCESSOIRES."
+          }
+        },
+        "1632806816259f14f2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Het leven met diabetes kan best ingewikkeld zijn. Met Diacé willen wij het leven met diavetes een stuk aangenamer maken. Diacé biedt een divers aanbod diabetes accessoires aan verzameld op één website.<\/p><p> Onze website is 24 op 24 beschikbaar en omdat wij met een eigen voorraad werken kunnen wij zorgen voor een snelle verzending van jouw materiaal. Je vind op onze website de meest hekende Premium merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<\/p>"
+          }
+        },
+        "1632806816259f14f2-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEES ONS VERHAAL",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "1632806816259f14f2-0",
+        "1632806816259f14f2-1",
+        "1632806816259f14f2-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
+        "img_preference": "image second",
+        "text_over_img": "NICK & STEFANIE"
+      }
     }
   },
   "order": [
     "main",
     "1632806194415e12e9",
-    "1632806201e2d1d8bf"
+    "1632806201e2d1d8bf",
+    "1632806816259f14f2"
   ]
 }
