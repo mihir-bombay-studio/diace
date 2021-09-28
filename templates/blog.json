@@ -34,6 +34,9 @@
     "16326405238bea2bac": {
       "type": "blog-section",
       "settings": {
+        "heading": "WELKOM OP ONZE BLOG",
+        "topic": "",
+        "link_text": "Verder lezen"
       }
     }
   },
