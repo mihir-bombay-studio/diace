@@ -1,5 +1,12 @@
 {{ 'article.css' | asset_url | stylesheet_tag }}
 
+{%- assign article_con = article.content -%}{%- assign readtime = '' -%}
+
+{%- assign words = article_con | strip_html | split:' ' -%}
+
+{%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
+{%- capture readtime -%}{{ readtime }}- min read{%- endcapture -%}
+
 <div class="background-overlay">
   <div class="container article-container">
     <div class="content-wrapper">
@@ -7,7 +14,7 @@
       <div class="time-and-date">
         <span class="date">{{ article.published_at | date: '%b. %d, %Y' }}</span>
         
-        <span>5min read</span>
+        <span>{{readtime}}</span>
       </div>
       <div class="article-image">
         <img src="{{ article.image.src | img_url: 'master' }}" alt="">
