@@ -71,7 +71,7 @@
         <span class="blog-date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
         <span class="blog-time">{{ readtime }}</span>
       </div>
-      <p class="blog-topic">ONDERWERP</p>
+      <p class="blog-topic">{% for tag in article.tags %}{{ tag[1] }}{% if forloop.index == false %},{% endif %}{% endfor %}</p>
       <div class="blog-heading">{{article.title}}</div>
       <div class="blogdesc">{{desc | strip_html | truncatewords: 20 | escape}}</div>
       <div class="readmore"><a href="{{article.url}}">Verder lezen >></a></div>
