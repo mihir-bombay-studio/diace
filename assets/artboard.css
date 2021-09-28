@@ -64,7 +64,7 @@
   height: 48px;
 }
 
-.hero-hover-text:hover .hover-text {
+.art-image .hero-hover-text:hover .hover-text {
   max-width: 100%;
   padding-right:20px;
 }
