@@ -5,7 +5,7 @@
 {%- assign words = article | strip_html | split:' ' -%}
 
 {%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
-{%- capture readtime -%}Estimate {{ readtime }}-min read{%- endcapture -%}
+{%- capture readtime -%}{{ readtime }}-min read{%- endcapture -%}
 
 {{ readtime }}
 
@@ -19,7 +19,7 @@
     </div>
     <div class="date_and_time">
       <span class="date">10/08/21</span> -
-      <span class="time">{{ article_words}}</span>
+      <span class="time">{{ readtime }}</span>
       <p class="topic">ONDERWERP</p>
     </div>
     <div class="blogheading">{{ article.title }}</div>
@@ -70,7 +70,7 @@
       </div>
       <div class="blog_date_and_time">
         <span class="blog-date">10/08/21</span>
-        <span class="blog-time">5 min read</span>
+        <span class="blog-time">{{ readtime }}</span>
       </div>
       <p class="blog-topic">ONDERWERP</p>
       <div class="blog-heading">{{article.title}}</div>
