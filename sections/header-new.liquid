@@ -5,7 +5,7 @@
 			{{ section.settings.announcement_text }}
 			<span id="header-anouncement-close" class="flex-box">{% include 'icon-close-circle' %}</span>
 		</span>
-  <div class="header-wrapper {% if template.name != "article" or template.name != "page" %} mb {% endif %}">
+  <div class="header-wrapper {% if section.settings.padd_btm %} mb {% endif %}">
     <div class="container flex-box justify-between">
     <nav class="left-wrap">
       <a href="/">
@@ -81,6 +81,13 @@
         "id": "brand_logo_svg",
         "type": "text",
         "label": "Brand Logo SVG"
+
+        },
+        {
+        "id": "padd_btm",
+        "type": "checkbox",
+        "label": "Padding bottom",
+		"default" : true
 
         }
 	],
