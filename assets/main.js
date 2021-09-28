@@ -36,7 +36,6 @@ for (i = 0; i < acc.length; i++) {
 
 
   $('.article_filter_tag').click(function() {
- 	$(this).addClass("active");
   	var bfilter_tag = $(this).data('bfilter');
     $('.blogs').toggleClass('no-disp');
     $('.blogs').each(function() {
@@ -44,7 +43,6 @@ for (i = 0; i < acc.length; i++) {
       var btag = bstring.split(',');
       if( $.inArray(bfilter_tag, btag) != -1 ) {
         $(this).removeClass('no-disp');
-        $('.article_filter_tag').removeClass("active");
       }
     });
     
