@@ -30,27 +30,27 @@
     padding: 20.5px 26px 15.5px;
     letter-spacing: 0.8px;
     border-radius: 0 8px 8px 0;
-}
+    }
 
 .hero-right {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .hero-other-img {
-    width: 48%;
+  width: 48%;
   margin-bottom: 16px;
 }
 
 .hero-other-img img{
-	width: 100%;
+  width: 100%;
   border-radius: 8px;
 }
 
 .hero-hover-text {
-    position: absolute;
-    bottom: 26px;
-    left: 16px;
-    background-color: #FFF;
+  position: absolute;
+  bottom: 26px;
+  left: 16px;
+  background-color: #FFF;
   border-radius: 50px;
   transition: .4s ease;
   cursor: pointer;
@@ -60,14 +60,14 @@
 }
 
 .plus-icon {
-    width: 48px;
-    height: 48px;
-    display: block;
+  width: 48px;
+  height: 48px;
+  display: block;
   transition: .4s ease;
 }
 
 .hero-hover-text:hover {
-	max-width: unset;
+  max-width: unset;
 }
 
 .hero-hover-text:hover .plus-icon{
@@ -75,26 +75,26 @@
 }
 
 .plus-icon svg{
-	width: 48px;
+  width: 48px;
   height: 48px;
 }
 
 .hover-text {
-  	padding: 2px 16px 0 0;
-    text-transform: uppercase;
-    line-height: 24px;
-    letter-spacing: 0.8px;
-  	max-width: 0;
+  padding: 2px 16px 0 0;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  max-width: 0;
   -webkit-transition: .4s ease;
-    transition: .4s ease;
+  transition: .4s ease;
 }
 
 .hero-hover-text:hover .hover-text {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .hero-new-wrapper .btn{
-	margin-right: 0;
-    margin-left: auto;
-    margin-top: 10px;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: 10px;
 }
