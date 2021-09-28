@@ -78,16 +78,16 @@
     </div>
 
     {% endfor %}
-    {%- if paginate.pages > 1 -%}
+ 
+  </div>
+  {%- if paginate.pages > 1 -%}
     {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
     {%- endif -%}
     {%- endpaginate -%}
-  </div>
-  
 <!--   <div class="load-more-btn">
     <button class="load-more">MEER LADEN</button>
-  </div>
-</div> -->
+  </div> -->
+</div>
 
 {% schema %}
   {
