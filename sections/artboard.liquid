@@ -7,18 +7,19 @@
       <a href="">
         <img src="{{ block.settings.artphoto | img_url: 'master' }}" loading="lazy" alt="Art Image" class="artimage">
       </a>
+      <div class="hero-hover-text flex-box align-center">
+        <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+        <a href="{{ block.settings.hero_text_link }}" class="hover-text bold">{{ block.settings.hero_other_img_text }}</a>
+      </div>
     </div>
     <div class="art-content">
       <div class="post">{{block.settings.heading}}</div>
       <div class="role">{{block.settings.Subtext}}</div>
     </div>
-    <div class="hero-hover-text flex-box align-center">
-          <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-          <a href="{{ block.settings.hero_text_link }}" class="hover-text bold">{{ block.settings.hero_other_img_text }}</a>
-        </div>
   </div>
   {% endfor %}
 </div>
+
 {% schema %}
   {
     "name": "Artboard",
