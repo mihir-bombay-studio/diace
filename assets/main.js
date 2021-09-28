@@ -33,6 +33,21 @@ for (i = 0; i < acc.length; i++) {
     });
     
   });
+
+
+  $('.article_filter_tag').click(function() {
+    console.log("filtering..")
+  	var bfilter_tag = $(this).data('bfilter');
+    $('.blogs').toggleClass('no-disp');
+    $('.blogs').each(function() {
+      var bstring = $(this).data('btag');
+      var btag = bstring.split(',');
+      if( $.inArray(bfilter_tag, btag) != -1 ) {
+        $(this).removeClass('no-disp');
+      }
+    });
+    
+  });
   
   let min = 0;
   let max = 100;
