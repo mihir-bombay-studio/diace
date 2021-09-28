@@ -11,6 +11,10 @@
   width: calc(75% - 16px);
 }
 
+.art-image{
+  position: relative;
+}
+
 .artboard img{
   max-height:278px;
 }
