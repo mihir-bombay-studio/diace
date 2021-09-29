@@ -178,6 +178,15 @@
   padding: 0;
 }
 
+.dustbin {
+    display: flex;
+}
+
+.dustbin svg {
+    width: 15px;
+    height: 15px;
+}
+
 .upsell-container {
     padding: 16px 42px 17px 42px;
     background-color: rgb(254, 194, 59, .2);
