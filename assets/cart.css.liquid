@@ -1,0 +1,232 @@
+
+/* width */
+
+.cart-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+
+.cart-list::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+
+.cart-list::-webkit-scrollbar-thumb {
+    background: lightgrey;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+.cart-list::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+.cart-mask {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 10;
+    inset: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 800ms ease;
+}
+.cart-mask.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cart-mask.active .cart-container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+.cart-container {
+    display: flex;
+    width: 100%;
+    max-width: 480px;
+    min-width: 320px;
+    flex-direction: column;
+    overflow: auto;
+    background-color: #ffffff;
+    border-radius: 8px 0px 0px 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(30px);
+    box-shadow: 0 5px 25px 0 #00000061;
+    transition: all .6s cubic-bezier(.25, .46, .45, .94) 0s;
+}
+
+.cart-header {
+    padding: 24px 34px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #FEC23B;
+}
+
+.cart-heading {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 48px;
+}
+
+.cart-body-wrapper {
+    padding: 26px 0 0 0;
+    overflow-y: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 1 0%;
+}
+
+.cart-list {
+    overflow-y: auto;
+    display: flex;
+    padding: 0 42px 0 42px;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 0 22px 0;
+    flex: 1 1 0%;
+}
+
+.list-item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    max-height: 82px;
+}
+
+.product-img {
+    width: 82px;
+    height: 82px;
+    border-radius: 8px;
+    border: 1px solid;
+    display: block;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    width: calc(100% - 98px);
+    line-height: 24px;
+    font-size: 16px;
+    font-family: 'Myriad Pro';
+}
+
+.compare-at-price {
+    color: #737373;
+    text-decoration: line-through;
+    margin-right: 16px;
+}
+
+.count {
+    font-weight: 600;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.minus-icon, .plus-icon {
+    cursor: pointer;
+}
+
+.remove-item {
+    border: none;
+    background: transparent;
+    color: #737373;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: underline;
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.upsell-container {
+    padding: 16px 42px 17px 42px;
+    background-color: rgb(254, 194, 59, .2);
+    margin-bottom: 26px;
+    flex: 0 0 auto;
+}
+
+.upsell-heading {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cart-footer {
+    padding: 0 42px 26px 42px;
+    flex: 0 0 auto;
+}
+
+.cart-calculation {
+    margin-bottom: 16px;
+}
+
+.checkout-btn {
+    display: block;
+    text-transform: uppercase;
+    background-color: #FEC23B;
+    border-radius: 8px;
+    text-align: center;
+    font: normal normal bold 16px/24px Roboto;
+    letter-spacing: 0.8px;
+    padding: 16px 0;
+    margin-bottom: 16px;
+}
+.add-upsell-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.add-upsell-btn-text:hover{
+    text-decoration: underline;
+}
+.add-upsell-btn .plus-circle {
+    width: 16px;
+    height: 16px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: #FEC23B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0 0 0;
+}
+
+.subtotal-label, .dispatch-label {
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.underline-link {
+    text-align: left;
+    text-decoration: underline .5px;
+    font: normal normal 300 16px/24px Myriad Pro;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.continue-shop.underline-link {
+    text-align: center;
+    display: block;
+}
+
