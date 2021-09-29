@@ -244,8 +244,17 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   padding:0;
   top: 60px;
   position : absolute;
+  opacity : 0;
+  visibility : hidden;
+  
 }
 
 .dropdown-ul ul{
   position : relative;
+}
+
+
+.hover-dropdown:hover .dropdown-container.container{
+  opacity : 1;
+  visibility : visible;
 }
