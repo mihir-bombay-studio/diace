@@ -76,7 +76,11 @@ nav .dropdown {
   display: block;
 }
 
-nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
+.header-nav-list-sub:hover {
+	display : block;
+}
+
+nav .dropdown:hover .login-wrapper.active {
   max-height: 999px;
   opacity: 1;
   display: block;
