@@ -26,7 +26,7 @@
               <div class="product-variant">{% if item.variant.title != "Default Title" %}{{ item.variant.title }}{% endif %}</div>
               <div class="count">
                 <span class="cart-minus-icon">-</span>
-                <span class="item-count-number">1</span>
+                <span class="item-count-number">{{ item.quantity }}</span>
                 <span class="cart-plus-icon ">+</span>
               </div>
             </div>
