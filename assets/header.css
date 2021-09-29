@@ -255,7 +255,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 
-#hover-container:hover{
+#hover-container:hover  #nav-sub-drop{
   opacity : 1;
   visibility : visible;
 }
