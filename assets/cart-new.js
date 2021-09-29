@@ -17,23 +17,17 @@ $(document).keyup(function (e) {
   }
 });
 
+$(".cart-toggler").click(function(){
+  toggleCart();
+})
 
 $(document).mouseup(function (e) {
   let cart = $('.cart-container');
-  let targetClassName = e.target.className;
-  console.log(targetClassName);
-  if (targetClassName.includes("cart-toggler")) {
-    toggleCart();
-  }
-
-  else if ((!cart.is(e.target) // The target of the click isn't the container.
-            && cart.has(e.target).length === 0) || e.target.id === "cart_close") // Nor a child element of the container
+  if ((!cart.is(e.target) // The target of the click isn't the container.
+       && cart.has(e.target).length === 0) || e.target.id === "cart_close") // Nor a child element of the container
   {
     closeCart();
   }
 
 });
-// $(".cart-toggler").click(function(){
 
-// toggleCart();
-// })
