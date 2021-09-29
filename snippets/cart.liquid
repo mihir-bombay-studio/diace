@@ -110,7 +110,8 @@
     let cart_close = document.getElementById("cart_close");
     cart_close.innerHTML = "";
       setTimeout(() => {
-          const html = new DOMParser().parseFromString(`{% render "icon-close-1" %}`, 'text/html');
+                 let text = {% render "icon-close-1" %};
+          const html = new DOMParser().parseFromString(text , 'text/html');
           cart_close.innerHTML = html;
       }, 5000);
       
