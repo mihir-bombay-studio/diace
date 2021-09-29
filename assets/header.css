@@ -258,5 +258,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 #hover-container:hover #nav-sub-drop{
   opacity : 1;
   visibility : visible;
+  transition: all .4s ease;
+  transition-delay: 0s;
 }
 
