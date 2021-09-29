@@ -111,8 +111,8 @@
     cart_close.innerHTML = "";
       setTimeout(() => {
                  let text = `{% render "icon-close-1" %}`;
-          const html = new DOMParser().parseFromString(text.textContent , 'text/html');
-          cart_close.innerHTML = html;
+          const html = new DOMParser().parseFromString(text , 'text/html');
+          cart_close.innerHTML = html.body.firstChild.textContent;
       }, 5000);
       
   </script>
