@@ -101,6 +101,9 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   height: 16px;
   padding-top: 5px;
 }
+.cart-toggler{
+cursor:pointer;
+}
 
 /* --------------------- header login form------------------------------ */
 .account-btn {
