@@ -178,3 +178,60 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   display: block;
   color: inherit;
 }
+
+.dropdown-container{
+    width: 100%;
+    /* height: 260px; */
+    background: #EBEBEB 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 16px #CCC2AF33;
+    border-radius: 16px;
+}
+
+.content-wrapper{
+    padding: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-list{
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.content-list li{
+    margin: 16px 0;
+    text-align: left;
+    font: normal normal bold 16px/24px Myriad Pro;
+    letter-spacing: 0.8px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.content-list li img{
+    transform: rotate(270deg);
+}
+
+.content-list li:nth-child(1){
+    margin-top: 0;
+}
+
+.text-block{
+    max-width: 278px;
+    text-align: left;
+    font: normal normal normal 16px/24px Myriad Pro;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.image-block img {
+    max-width: 278px;
+    object-fit: cover;
+    display: block;
+}
+
+.right-wrap{
+    display: flex;
+}
