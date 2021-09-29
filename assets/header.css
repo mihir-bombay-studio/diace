@@ -206,6 +206,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   color: #000000;
   text-transform: uppercase;
   opacity: 1;
+  gap:13px;
 }
 
 .content-list li img{
