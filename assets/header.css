@@ -200,7 +200,6 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .content-list li{
-  margin: 16px 0;
   text-align: left;
   font: normal normal bold 16px/24px Myriad Pro;
   letter-spacing: 0.8px;
