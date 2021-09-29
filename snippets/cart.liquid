@@ -10,7 +10,7 @@
       {% if cart.item_count > 0 %}
       <div class="cart-list">
         {% for item in cart.items %}
-        <div class="list-item {{ forloop.index }}">
+        <div id="{{item.variant_id}}" class="list-item {{ forloop.index }}">
           <a href="{{ item.product.url }}" class="product-img">
             <img class="cart-item__image"
                  src="{{ item.image | img_url: '150x' }}"
