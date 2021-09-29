@@ -58,7 +58,7 @@ var a = [];
 const btns=document.querySelectorAll('.product-collection-card[data-price]');
 var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
 const max_price = Math.max(...a);
-var ranger_max = document.getElementById("myRange").max ;
+var ranger_max = document.getElementById("myRange").max = max_price;
 if (max_price <= 100){
   document.getElementById("myRange").max = 100;
 }else if(max_price >= 100){
