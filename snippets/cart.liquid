@@ -1,69 +1,71 @@
 <div class="cart-mask">
-        <div id="cart_container" class="cart-container">
-            <div class="cart-header">
-                <button id="cart_close" class="cart-close">{% render "icon-close-1" %}</button>
-                <div class="cart-heading">
-                    JE WINKELMANDJE
-                </div>
-            </div>
-            <div class="cart-body-wrapper">
-                <div class="cart-list">
-                    <div class="list-item">
-                        <a href="/" class="product-img">.</a>
-                        <div class="product-info">
-                            <div class="product-name semibold"><a href="/">Product name</a></div>
-                            <div class="flex-box justify-between">
-                                <div class="product-variant">Variant</div>
-                                <div class="count">
-                                    <span class="minus-icon">-</span>
-                                    <span class="item-count-number">1</span>
-                                    <span class="plus-icon ">+</span>
-                                </div>
-                            </div>
-                            <div class="item-price">
-                                <span class="compare-at-price">€ 00,00</span>
-                                <span class="discount-price semibold">€ 00,00</span>
-                            </div>
-                            <button class="remove-item">verwijderen <span class="dustbin"></span></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="upsell-container">
-                    <div class="upsell-heading semibold">Mensen kochten ook:</div>
-                    <div class="list-item">
-                        <a href="/" class="product-img">.</a>
-                        <div class="product-info">
-                            <div class="product-name semibold"><a href="/">Product name</a></div>
-                            <div class="flex-box justify-between">
-                                <div class="product-variant">Variant</div>
-                            </div>
-                            <div class="item-price flex-box justify-between">
-                                <div class="">
-                                    <span class="compare-at-price">€ 00,00</span>
-                                    <span class="discount-price semibold">€ 00,00</span>
-                                </div>
-                                <button class="add-upsell-btn semibold"> <span class="plus-circle">+</span> <span
-                                        class="add-upsell-btn-text">Toevoegen</span> </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-footer">
-                    <div class="cart-calculation">
-                        <div class="flex-box justify-between">
-                            <div class="subtotal-label light">subtotal</div>
-                            <div class="subtotal-price semibold">€ 54,00</div>
-                        </div>
-                        <div class="flex-box justify-between">
-                            <div class="dispatch-label light">Verzending</div>
-                            <div class="dispatch-msg semibold">Berekend in volgende stap</div>
-                        </div>
-                    </div>
-                    <a href="/" class="checkout-btn">checkout</a>
-                    <div class="text-center">
-                        <a href="/" class="continue-shop underline-link">Verder winkelen</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div id="cart_container" class="cart-container">
+    <div class="cart-header">
+      <button id="cart_close" class="cart-close">{% render "icon-close-1" %}</button>
+      <div class="cart-heading">
+        JE WINKELMANDJE
+      </div>
     </div>
+    <div class="cart-body-wrapper">
+      <div class="cart-list">
+        <div class="list-item">
+          <a href="/" class="product-img">.</a>
+          <div class="product-info">
+            <div class="product-name semibold"><a href="/">Product name</a></div>
+            <div class="flex-box justify-between">
+              <div class="product-variant">Variant</div>
+              <div class="count">
+                <span class="minus-icon">-</span>
+                <span class="item-count-number">1</span>
+                <span class="plus-icon ">+</span>
+              </div>
+            </div>
+            <div class="item-price">
+              <span class="compare-at-price">€ 00,00</span>
+              <span class="discount-price semibold">€ 00,00</span>
+            </div>
+            <button class="remove-item">verwijderen <span class="dustbin"></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="upsell-container">
+        <div class="upsell-heading semibold">Mensen kochten ook:</div>
+        <div class="list-item">
+          <a href="/" class="product-img">.</a>
+          <div class="product-info">
+            <div class="product-name semibold"><a href="/">Product name</a></div>
+            <div class="flex-box justify-between">
+              <div class="product-variant">Variant</div>
+            </div>
+            <div class="item-price flex-box justify-between">
+              <div class="">
+                <span class="compare-at-price">€ 00,00</span>
+                <span class="discount-price semibold">€ 00,00</span>
+              </div>
+              <button class="add-upsell-btn semibold"> 
+                <span class="plus-circle">+</span> 
+                <span class="add-upsell-btn-text">Toevoegen</span> 
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-calculation">
+          <div class="flex-box justify-between">
+            <div class="subtotal-label light">subtotal</div>
+            <div class="subtotal-price semibold">€ 54,00</div>
+          </div>
+          <div class="flex-box justify-between">
+            <div class="dispatch-label light">Verzending</div>
+            <div class="dispatch-msg semibold">Berekend in volgende stap</div>
+          </div>
+        </div>
+        <a href="/" class="checkout-btn">checkout</a>
+        <div class="text-center">
+          <a href="/" class="continue-shop underline-link">Verder winkelen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
