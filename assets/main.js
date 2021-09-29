@@ -59,6 +59,7 @@ for (i = 0; i < acc.length; i++) {
   var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
   console.log(Math.max(...a));
   
+  var ranger_max = document.getElementById("myRange").max;
 
 
   slider.oninput = function() {
