@@ -148,6 +148,19 @@
 
 .minus-icon, .plus-icon {
     cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.minus-icon{
+
+font-size: 32px;
+    font-weight: 300;
 }
 
 .remove-item {
