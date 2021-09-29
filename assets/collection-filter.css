@@ -307,3 +307,8 @@ a.active-facets__button {
   cursor: pointer;
   border:1px solid white;
 }
+
+.display_range{
+  display: flex;
+  justify-content: space-between;
+}
