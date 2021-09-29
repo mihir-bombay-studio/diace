@@ -242,6 +242,10 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 .dropdown-container.container{
   padding:0;
+  display:none;
 }
 
+.header-nav-list:nth-child(1):hover .dropdown-container.container{
+    display:block;
+}
 
