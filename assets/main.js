@@ -59,8 +59,7 @@ const btns=document.querySelectorAll('.product-collection-card[data-price]');
 var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
 const max_price = Math.max(...a);
 
-var ranger_max = document.getElementById("myRange").max;
-ranger_max = max_price;
+var ranger_max = document.getElementById("myRange").max = max_price;
 
   slider.oninput = function() {
     var range_op = output.innerHTML = this.value * 100;
