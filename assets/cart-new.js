@@ -17,9 +17,9 @@ $(document).keyup(function (e) {
   }
 });
 
-// $(".cart-toggler, .cart-close").click(function(){
-//   toggleCart();
-// })
+$(".cart-toggler, .cart-close").click(function(){
+  toggleCart();
+})
 
 $(document).mouseup(function (e) {
   let cart = $('.cart-container');
