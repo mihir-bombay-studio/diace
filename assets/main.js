@@ -61,14 +61,16 @@ const max_price = Math.max(...a);
 
 const max_price_deci = max_price / 100.00;
 var ranger_max = document.getElementById("myRange").max;
-console.log($("#myRange").val());
+$("#myRange").val();
 
 if (max_price_deci < 100){
   document.getElementById("myRange").max = 100; 
+  $("#myRange").val() = 100
 }
 else
 {
   document.getElementById("myRange").max = 1000;
+  $("#myRange").val() = 1000
 }
 
 
