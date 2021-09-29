@@ -65,12 +65,10 @@ var ranger_max = document.getElementById("myRange").max;
 
 if (max_price_deci < 100){
   document.getElementById("myRange").max = 100; 
-  document.getElementById("max-count").innerHTML = 100; 
 }
 else
 {
   document.getElementById("myRange").max = 1000;
-  document.getElementById("max-count").innerHTML = 100; 
 }
 
 
