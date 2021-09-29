@@ -36,7 +36,7 @@ nav .dropdown {
   position: relative;
 }
 
-.login-wrapper {
+.header-nav-list-sub, .login-wrapper {
   display: block;
   border: 0;
   position: absolute;
@@ -54,42 +54,14 @@ nav .dropdown {
   opacity: 0;
 }
 
-.header-nav-list-sub{
-  display: none;
-  border: 0;
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  width: min-content;
-  min-width: 50px;
-  text-align: left;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-  transition-delay: 0s;
-  max-height: 0;
-  overflow: hidden;
-  background-color: #FFFFFF;
-}
-
 
 .header-nav-list-sub li{
   display: block;
 }
 
-nav .dropdown:hover .header-nav-list-sub {
-  display : block;
-  max-height: 999px;
-}
-
-nav .dropdown:hover .header-nav-list-sub li{
-  display : block;
-  max-height: 999px;
-}
-
-nav .dropdown:hover .login-wrapper.active {
+nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   max-height: 999px;
   opacity: 1;
-  display: block;
 }
 
 .right-wrap{
@@ -107,7 +79,7 @@ nav .dropdown:hover .login-wrapper.active {
   display: inline-block;
   letter-spacing: 0.8px;
   font-size: 16px;
-  /*   line-height: 24px;
+/*   line-height: 24px;
   padding-bottom: 10px; */
 }
 
