@@ -23,7 +23,7 @@
           <div class="product-info">
             <div class="product-name semibold"><a href="{{ item.product.url }}">{{ item.product.title | escape }}</a></div>
             <div class="flex-box justify-between">
-              <div class="product-variant">{% if item.variant.title != "Default Title" %}{{ item.variant.title }}{% endif %}</div>
+              <div class="product-variant">{% if item.variant.title  %}{{ item.variant.title }}{% endif %}</div>
               <div class="count">
                 <span class="cart-minus-icon">-</span>
                 <span class="item-count-number">{{ item.quantity }}</span>
