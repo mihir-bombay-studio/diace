@@ -254,7 +254,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 
-.hover-dropdown:hover .dropdown-container.container{
+.hover-dropdown:hover .dropdown-container{
   opacity : 1;
   visibility : visible;
 }
