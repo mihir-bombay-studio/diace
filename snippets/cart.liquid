@@ -9,6 +9,7 @@
     <div class="cart-body-wrapper">
       {% if cart.item_count > 0 %}
       <div class="cart-list">
+        {% for item in cart.items %}
         <div class="list-item">
           <a href="/" class="product-img">.</a>
           <div class="product-info">
@@ -28,6 +29,7 @@
             <button class="remove-item">verwijderen <span class="dustbin"></span></button>
           </div>
         </div>
+        {% endfor %}
       </div>
       <div class="upsell-container">
         <div class="upsell-heading semibold">Mensen kochten ook:</div>
