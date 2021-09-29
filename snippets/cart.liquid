@@ -23,7 +23,7 @@
           <div class="product-info">
             <div class="product-name semibold"><a href="{{ item.product.url }}">{{ item.product.title | escape }}</a></div>
             <div class="flex-box justify-between">
-              {% if item.variant.title %}<div class="product-variant">{{ item.variant.title }}</div>{% endif %}
+              <div class="product-variant">{% if item.variant.title %}{{ item.variant.title }}{% endif %}</div>
               <div class="count">
                 <span class="cart-minus-icon">-</span>
                 <span class="item-count-number">1</span>
@@ -31,7 +31,7 @@
               </div>
             </div>
             <div class="item-price">
-              <span class="compare-at-price">{% if item.variant.compare_at_price %}{{ item.variant.compare_at_price }}{% endif %}</span>
+              {% if item.variant.compare_at_price %}<span class="compare-at-price">{{ item.variant.compare_at_price }}</span>{% endif %}
               <span class="discount-price semibold">€ 00,00</span>
             </div>
             <button class="remove-item">verwijderen <span class="dustbin"></span></button>
