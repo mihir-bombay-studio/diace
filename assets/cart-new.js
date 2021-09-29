@@ -17,14 +17,14 @@ $(document).keyup(function (e) {
   }
 });
 
-$(".cart-toggler").click(function(){
+$(".cart-toggler, .cart-close").click(function(){
   toggleCart();
 })
 
 $(document).mouseup(function (e) {
   let cart = $('.cart-container');
   if ((!cart.is(e.target) // The target of the click isn't the container.
-       && cart.has(e.target).length === 0) || e.target.id === "cart_close") // Nor a child element of the container
+       && cart.has(e.target).length === 0)) // Nor a child element of the container
   {
     closeCart();
   }
