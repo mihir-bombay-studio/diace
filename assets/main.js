@@ -64,15 +64,11 @@ var ranger_max = document.getElementById("myRange").max;
 
 
 if (max_price_deci < 100){
-  ranger_max = 100; 
+  document.getElementById("myRange").max = 100; 
 }
-else if(max_price_deci > 100){
-  ranger_max = 1000;
-}
-
 else
 {
-  ranger_max = 10000;
+  document.getElementById("myRange").max = 1000;
 }
 
 
