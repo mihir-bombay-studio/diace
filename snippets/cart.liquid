@@ -1,7 +1,7 @@
 <div class="cart-mask">
   <div id="cart_container" class="cart-container">
     <div class="cart-header">
-      <button id="cart_close" class="cart-close">{% render "icon-close-1" %}</button>
+      <button id="cart_close" class="cart-close"></button>
       <div class="cart-heading">
         JE WINKELMANDJE
       </div>
@@ -105,3 +105,9 @@
     </div>
   </div>
 </div>
+<script>
+      setTimeout(() => {
+          let cart_close = document.getElementById("cart_close");
+          cart_close.innerHTML = "{% render "icon-close-1" %}";
+      }, 5000);
+  </script>
