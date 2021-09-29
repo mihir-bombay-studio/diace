@@ -20,7 +20,7 @@ $(document).keyup(function (e) {
 
 $(document).mouseup(function (e) {
   let cart = $('.cart-container');
-  console.log(e.target.className.has("cart-toggler").length > 0);
+  console.log(e.target.className.is("cart-toggler"));
   if (e.target.id === "cart_toggler") {
     toggleCart();
   }
