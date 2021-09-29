@@ -245,7 +245,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   display:none;
 }
 
- .dropdown-container{
+.header-nav-list:nth-child(1):hover .dropdown-container.container{
     display:block;
 }
 
