@@ -61,17 +61,17 @@ const max_price = Math.max(...a);
 
 const max_price_deci = max_price / 100.00;
 var ranger_max = document.getElementById("myRange").max;
-var range_value = document.getElementById("myRange").value;
+
 
 
 if (max_price_deci < 100){
   document.getElementById("myRange").max = 100; 
-  range_value = 100;
+
 }
 else
 {
   document.getElementById("myRange").max = 1000;
-  range_value = 1000
+
 }
 
 
@@ -83,7 +83,7 @@ else
       var product_price = $(this).data('price');
       console.log(product_price);
       $(this).addClass('out-of-range-min');
-      if( product_price <= range_op ) {
+      if( product_price <= ranger_max ) {
         $(this).removeClass('out-of-range-min');
       }
     });
