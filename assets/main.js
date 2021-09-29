@@ -63,27 +63,24 @@ const max_price_deci = max_price / 100.00;
 var ranger_max = document.getElementById("myRange").max;
 
 
-
 if (max_price_deci < 100){
   document.getElementById("myRange").max = 100; 
-
 }
 else
 {
   document.getElementById("myRange").max = 1000;
-
 }
 
 
   slider.oninput = function() {
     var range_op = output.innerHTML = this.value * 100;
-  
+    console.log(range_op)
     
      $('.product-collection-card').each(function() {
-      var product_price = $(this).data('price'); 
+      var product_price = $(this).data('price');
+      console.log(product_price);
       $(this).addClass('out-of-range-min');
-       var max_range = $("#myRange").max
-      if( product_price <= max_range ) {
+      if( product_price <= range_op ) {
         $(this).removeClass('out-of-range-min');
       }
     });
