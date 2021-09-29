@@ -18,7 +18,6 @@ $(document).keyup(function (e) {
 });
 
 $(".cart-toggler, .cart-close").click(function(){
-  console.log(``);
   toggleCart();
 })
 
