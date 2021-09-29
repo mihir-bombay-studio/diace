@@ -591,7 +591,7 @@
                   <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  }}</a></div>
                   <div class="product-compare-to-and-price">
                     <span class="compare-to-price light">{{ product.compare_at_price | money_with_currency | replace : ',' , '.' }}</span>
-                    <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money | divided_by : 100.00 }}</span>
+                    <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price |  money_with_currency | replace : ',' , '.' }}</span>
                   </div>
                 </div>
                 <div class="product-colors flex-box justify-between light">
