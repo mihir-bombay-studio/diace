@@ -112,7 +112,7 @@
       setTimeout(() => {
                  let text = `{% render "icon-close-1" %}`;
           const html = new DOMParser().parseFromString(text , 'text/html');
-          cart_close.innerHTML = html.textContent;
+          cart_close.innerHTML = html.body;
       }, 5000);
       
   </script>
