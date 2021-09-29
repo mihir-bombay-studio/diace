@@ -60,9 +60,13 @@ var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
 const max_price = Math.max(...a);
 var ranger_max = document.getElementById("myRange").max ;
 if (max_price <= 100){
+  console.log(ranger_price);
   ranger_max = 100;
 }else if(max_price >= 100){
+  console.log(ranger_price);
   ranger_max = 1000;
+}else{
+   ranger_max = 10000;
 }
 
 
