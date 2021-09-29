@@ -53,15 +53,12 @@ for (i = 0; i < acc.length; i++) {
   var output = document.getElementById("demo");
   output.innerHTML = slider.value;
 
-	
-    function max_price(){
-        $('.product-collection-card').each(function() {
-        var a = [];
-        var product_price = $(this).data('price');
-        a.push(product_price);
-        console.log(a);
-      });
-    }
+
+  var a = [];
+  const btns=document.querySelectorAll('.product-collection-card[data-price]');
+  var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
+  console.log(a);
+  console.log(Math.max(a));
 
 
   slider.oninput = function() {
