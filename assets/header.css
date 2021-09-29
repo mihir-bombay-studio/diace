@@ -226,6 +226,10 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   color: #000000;
 }
 
+.image-block{
+  padding-left: 16px;
+}
+
 .image-block img {
   max-width: 278px;
   object-fit: cover;
