@@ -21,7 +21,7 @@ $(document).keyup(function (e) {
 $(document).mouseup(function (e) {
   let cart = $('.cart-container');
 //   console.log((e.target.className).is("cart-toggler"));
-  if (e.target.className === "cart-toggler") {
+  if (e.target.className == "cart-toggler") {
     toggleCart();
   }
 
