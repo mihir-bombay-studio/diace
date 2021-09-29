@@ -57,12 +57,9 @@ for (i = 0; i < acc.length; i++) {
   var a = [];
   const btns=document.querySelectorAll('.product-collection-card[data-price]');
   var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
-  console.log(a);
-  
-
+  console.log(Math.max(...a));
   var numberArray = a.map(Number);
   console.log(numberArray);
-console.log(Math.max(numberArray));
 
 
   slider.oninput = function() {
