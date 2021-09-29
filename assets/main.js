@@ -77,13 +77,13 @@ else
 
   slider.oninput = function() {
     var range_op = output.innerHTML = this.value * 100;
-    console.log(range_op)
+  
     
      $('.product-collection-card').each(function() {
-      var product_price = $(this).data('price');
-      console.log(product_price);
+      var product_price = $(this).data('price'); 
       $(this).addClass('out-of-range-min');
-      if( product_price <= ranger_max ) {
+       var max_range = $("#myRange").max
+      if( product_price <= max_range ) {
         $(this).removeClass('out-of-range-min');
       }
     });
