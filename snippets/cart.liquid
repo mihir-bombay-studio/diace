@@ -38,6 +38,64 @@
           </div>
         </div>
         {% endfor %}
+        {% for item in cart.items %}
+        <div class="list-item {{ forloop.index }}">
+          <a href="{{ item.product.url }}" class="product-img">
+            <img class="cart-item__image"
+                 src="{{ item.image | img_url: '150x' }}"
+                 alt="{{ item.image.alt | escape }}"
+                 loading="lazy"
+                 width="75"
+                 height="{{ 75 | divided_by: item.image.aspect_ratio | ceil }}"
+                 >
+          </a>
+          <div class="product-info">
+            <div class="product-name semibold"><a href="{{ item.product.url }}">{{ item.product.title | escape }}</a></div>
+            <div class="flex-box justify-between">
+              <div class="product-variant">{% if item.variant.title != "Default Title" %}{{ item.variant.title }}{% endif %}</div>
+              <div class="count">
+                <span class="cart-minus-icon">-</span>
+                <span class="item-count-number">{{ item.quantity }}</span>
+                <span class="cart-plus-icon ">+</span>
+              </div>
+            </div>
+            <div class="item-price">
+              {% if item.variant.compare_at_price %}<span class="compare-at-price">{{ item.variant.compare_at_price | money }}</span>{% endif %}
+              <span class="discount-price semibold">{{ item.price | money }}</span>
+            </div>
+            <button class="remove-item">verwijderen <span class="dustbin">{% render 'icon-remove' %}</span></button>
+          </div>
+        </div>
+        {% endfor %}
+        {% for item in cart.items %}
+        <div class="list-item {{ forloop.index }}">
+          <a href="{{ item.product.url }}" class="product-img">
+            <img class="cart-item__image"
+                 src="{{ item.image | img_url: '150x' }}"
+                 alt="{{ item.image.alt | escape }}"
+                 loading="lazy"
+                 width="75"
+                 height="{{ 75 | divided_by: item.image.aspect_ratio | ceil }}"
+                 >
+          </a>
+          <div class="product-info">
+            <div class="product-name semibold"><a href="{{ item.product.url }}">{{ item.product.title | escape }}</a></div>
+            <div class="flex-box justify-between">
+              <div class="product-variant">{% if item.variant.title != "Default Title" %}{{ item.variant.title }}{% endif %}</div>
+              <div class="count">
+                <span class="cart-minus-icon">-</span>
+                <span class="item-count-number">{{ item.quantity }}</span>
+                <span class="cart-plus-icon ">+</span>
+              </div>
+            </div>
+            <div class="item-price">
+              {% if item.variant.compare_at_price %}<span class="compare-at-price">{{ item.variant.compare_at_price | money }}</span>{% endif %}
+              <span class="discount-price semibold">{{ item.price | money }}</span>
+            </div>
+            <button class="remove-item">verwijderen <span class="dustbin">{% render 'icon-remove' %}</span></button>
+          </div>
+        </div>
+        {% endfor %}
       </div>
       <div class="upsell-container">
         <div class="upsell-heading semibold">Mensen kochten ook:</div>
