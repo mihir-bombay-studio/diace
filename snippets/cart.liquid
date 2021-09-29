@@ -105,3 +105,13 @@
     </div>
   </div>
 </div>
+
+  <script>
+    let cart_close = document.getElementById("cart_close");
+    cart_close.innerHTML = "";
+      setTimeout(() => {
+          const html = new DOMParser().parseFromString({% render "icon-close-1" %}, 'text/html');
+          cart_close.innerHTML = html;
+      }, 5000);
+      
+  </script>
