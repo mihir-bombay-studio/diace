@@ -53,13 +53,16 @@ for (i = 0; i < acc.length; i++) {
   var output = document.getElementById("demo");
   output.innerHTML = slider.value;
 
-  $('.product-collection-card').each(function() {
-    var a = [];
-    var product_price = $(this).data('price');
-    console.log(Math.max(product_price));
-    a.push(product_price);
-    console.log(a);
-  });
+	
+    function max_price(){
+        $('.product-collection-card').each(function() {
+        var a = [];
+        var product_price = $(this).data('price');
+        a.push(product_price);
+        console.log(a);
+      });
+    }
+
 
   slider.oninput = function() {
     var range_op = output.innerHTML = this.value * 100;
