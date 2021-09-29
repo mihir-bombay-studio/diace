@@ -56,7 +56,7 @@ for (i = 0; i < acc.length; i++) {
   $('.product-collection-card').each(function() {
         var product_price = $(this).data('price');
     console.log(product_price);
-  }
+  });
 
   slider.oninput = function() {
     var range_op = output.innerHTML = this.value * 100;
