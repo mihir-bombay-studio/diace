@@ -62,6 +62,7 @@ for (i = 0; i < acc.length; i++) {
 
   var numberArray = a.map(Number);
   console.log(numberArray);
+console.log(Math.max(numberArray));
 
 
   slider.oninput = function() {
