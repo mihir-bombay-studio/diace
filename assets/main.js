@@ -60,6 +60,9 @@ for (i = 0; i < acc.length; i++) {
   console.log(a);
   console.log(Math.max(a));
 
+  var numberArray = a.map(Number);
+  console.log(numberArray);
+
 
   slider.oninput = function() {
     var range_op = output.innerHTML = this.value * 100;
