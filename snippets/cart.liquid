@@ -11,9 +11,17 @@
       <div class="cart-list">
         {% for item in cart.items %}
         <div class="list-item {{ forloop.index }}">
-          <a href="/" class="product-img">.</a>
+          <a href="{{ item.product.url }}" class="product-img">
+            <img class="cart-item__image"
+                 src="{{ item.image | img_url: '150x' }}"
+                 alt="{{ item.image.alt | escape }}"
+                 loading="lazy"
+                 width="75"
+                 height="{{ 75 | divided_by: item.image.aspect_ratio | ceil }}"
+                 >
+          </a>
           <div class="product-info">
-            <div class="product-name semibold"><a href="/">{{ item.product.title | escape }}</a></div>
+            <div class="product-name semibold"><a href="{{ item.product.url }}">{{ item.product.title | escape }}</a></div>
             <div class="flex-box justify-between">
               <div class="product-variant">{% if item.variant.title %}{{ item.variant.title }}{% endif %}</div>
               <div class="count">
