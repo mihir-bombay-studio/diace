@@ -18,6 +18,36 @@ $(document).keyup(function (e) {
 });
 
 $(".cart-toggler, .cart-close").click(function(){
+  let output ="";
+output += ` 
+    
+    <div class="cart-empty-state">
+      <div class="empty-msg">
+        <div class="empty-state-heading semibold">Er zit nog niets in je mandje</div>
+        <div class="empty-state-img">
+          Liquid error: This liquid context does not allow includes.
+        </div>
+      </div>
+      <div class="empty-state-links">
+        <a href="#" class="empty-state-link">
+          OPBERGEN
+          <span class="">
+            Liquid error: This liquid context does not allow includes.
+          </span>
+        </a>
+        <a href="#" class="empty-state-link">
+          STICKERS
+          <span class="">
+            Liquid error: This liquid context does not allow includes.
+          </span>
+        </a>
+        <a href="#" class="btn btn-yellow category-btn">BEKIJK ALLE CATEGORIEËN</a>
+      </div>
+    </div>
+    
+    `;
+
+    $('#cart_body_wrapper').html(output);
   toggleCart();
 })
 
