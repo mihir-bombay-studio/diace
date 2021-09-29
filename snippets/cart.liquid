@@ -31,7 +31,7 @@
               </div>
             </div>
             <div class="item-price">
-              <span class="compare-at-price">€ 00,00</span>
+              <span class="compare-at-price">{% if item.variant.compare_at_price %}{{ item.variant.compare_at_price }}{% endif %}</span>
               <span class="discount-price semibold">€ 00,00</span>
             </div>
             <button class="remove-item">verwijderen <span class="dustbin"></span></button>
