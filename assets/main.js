@@ -56,8 +56,9 @@ for (i = 0; i < acc.length; i++) {
   $('.product-collection-card').each(function() {
     var a = [];
     var product_price = $(this).data('price');
-    var max_price_array = a.push(product_price);
-    console.log(product_price);
+    console.log(Math.max(product_price));
+    a.push(product_price);
+    console.log(a);
   });
 
   slider.oninput = function() {
