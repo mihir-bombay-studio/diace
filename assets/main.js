@@ -60,6 +60,7 @@ var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
 const max_price = Math.max(...a);
 
 const max_price_deci = max_price / 100.00;
+console.log(max_price_deci);
 var ranger_max = document.getElementById("myRange").max;
 
 
@@ -78,7 +79,7 @@ else
     
      $('.product-collection-card').each(function() {
       var product_price = $(this).data('price');
-      console.log(product_price);
+
       $(this).addClass('out-of-range-min');
       if( product_price <= range_op ) {
         $(this).removeClass('out-of-range-min');
