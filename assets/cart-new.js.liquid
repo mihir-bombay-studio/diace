@@ -92,7 +92,7 @@ output += `
    
     `;
 
-    $('#cart_body_wrapper').html(output);
+    $('#cart_body_wrapper').html({{ cart.total_price | money }});
   toggleCart();
 })
 

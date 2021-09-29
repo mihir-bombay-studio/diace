@@ -64,7 +64,7 @@ output += `
    
     `;
 
-    $('#cart_body_wrapper').html(output);
+    $('#cart_body_wrapper').html();
   toggleCart();
 })
 
