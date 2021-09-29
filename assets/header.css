@@ -245,3 +245,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   display:none;
 }
 
+.header-nav-list:nth-child(1):hover .dropdown-container{
+    display:block;
+}
+
