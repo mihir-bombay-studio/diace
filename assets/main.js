@@ -60,7 +60,7 @@ var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
 const max_price = Math.max(...a);
 
 const max_price_deci = max_price;
-console.log(a);
+console.log(max_price_deci);
 var ranger_max = document.getElementById("myRange").max;
 
 
