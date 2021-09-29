@@ -276,6 +276,7 @@
 .empty-state-link {
     font-weight: 700;
     display: flex;
+  width: fit-content;
 }
 
 .empty-state-link svg {
