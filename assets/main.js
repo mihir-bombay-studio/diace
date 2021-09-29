@@ -61,7 +61,7 @@ const max_price = Math.max(...a);
 
 const max_price_deci = max_price / 100.00;
 var ranger_max = document.getElementById("myRange").max;
-var min-count = document.getElementById("max-count").innerHTML = ranger_max;
+var mincount = document.getElementById("max-count").innerHTML = ranger_max;
 
 if (max_price_deci < 100){
   document.getElementById("myRange").max = 100; 
