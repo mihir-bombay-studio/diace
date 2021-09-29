@@ -257,7 +257,6 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 #hover-container:hover{
   opacity : 1;
-  background : black;
   visibility : visible;
 }
 
