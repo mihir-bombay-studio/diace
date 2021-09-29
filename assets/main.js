@@ -74,7 +74,7 @@ else
 
   slider.oninput = function() {
     var range_op = output.innerHTML = this.value;
-    console.log(range_op)
+//     console.log(range_op)
     
      $('.product-collection-card').each(function() {
       var product_price = $(this).data('price');
