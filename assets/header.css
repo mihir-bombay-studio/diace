@@ -76,8 +76,9 @@ nav .dropdown {
   display: block;
 }
 
-.header-nav-list-sub:hover {
+nav .dropdown:hover .header-nav-list-sub {
 	display : block;
+  max-height: 999px;
 }
 
 nav .dropdown:hover .login-wrapper.active {
