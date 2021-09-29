@@ -34,7 +34,7 @@
               {% if item.variant.compare_at_price %}<span class="compare-at-price">{{ item.variant.compare_at_price | money }}</span>{% endif %}
               <span class="discount-price semibold">{{ item.price | money }}</span>
             </div>
-            <button class="remove-item">verwijderen <span class="dustbin"></span></button>
+            <button class="remove-item">verwijderen <span class="dustbin">{% render 'icon-remove' %}</span></button>
           </div>
         </div>
         {% endfor %}
