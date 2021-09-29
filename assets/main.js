@@ -73,7 +73,7 @@ else
 
 
   slider.oninput = function() {
-    var range_op = output.innerHTML = (this.value * 100) / 100.00;
+    var range_op = output.innerHTML = this.value * 100;
     console.log(range_op)
     
      $('.product-collection-card').each(function() {
