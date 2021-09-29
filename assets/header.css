@@ -54,6 +54,9 @@ nav .dropdown {
   opacity: 0;
 }
 
+.header-nav-list-sub{
+	z-index: 2;
+}
 
 .header-nav-list-sub li{
   display: block;
