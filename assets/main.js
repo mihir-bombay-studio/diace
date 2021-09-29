@@ -58,9 +58,13 @@ var a = [];
 const btns=document.querySelectorAll('.product-collection-card[data-price]');
 var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
 const max_price = Math.max(...a);
-var ranger_max = document.getElementById("myRange").max = max_price / 100.00;
-console.log(ranger_max);
-if (max_price <= 100){
+
+const max_price_deci = max_price / 100.00;
+var ranger_max = document.getElementById("myRange").max = max_price_deci;
+console.log(max_price_deci);
+
+
+if (max_price < 100){
   document.getElementById("myRange").max = 100;
 }else if(max_price >= 100){
   console.log(ranger_max);
