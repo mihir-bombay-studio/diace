@@ -236,7 +236,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   display: block;
 }
 
-.right-wrap{
+.drop-right-wrap{
   display: flex;
   justify-content: end;
 }
