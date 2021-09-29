@@ -71,7 +71,7 @@
 					<li class="no-t-m right-nav-list"><a class="cart-toggler" onClick="return false;">{% include 'icon-cart-new' %}<span class="cart-items {% if cart.item_count < 1 %}no-disp{% endif %}">{{ cart.item_count }}</span></a></li>
 				</ul>
       </div>
-      <div class="right-nav-lower">
+      <div class="dropdown-ul right-nav-lower">
         <ul class="header-nav-list flex-box justify-between bold">
                   {% for block in section.blocks %}
   			      {% for link in linklists[block.settings.nav_list_lower].links %}
