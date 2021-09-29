@@ -13,7 +13,7 @@
         <div class="list-item {{ forloop.index }}">
           <a href="/" class="product-img">.</a>
           <div class="product-info">
-            <div class="product-name semibold"><a href="/">Product name</a></div>
+            <div class="product-name semibold"><a href="/">{{ item.title | escape }}</a></div>
             <div class="flex-box justify-between">
               <div class="product-variant">Variant</div>
               <div class="count">
