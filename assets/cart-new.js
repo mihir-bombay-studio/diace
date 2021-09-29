@@ -20,8 +20,9 @@ $(document).keyup(function (e) {
 
 $(document).mouseup(function (e) {
   let cart = $('.cart-container');
+  let targetClassName = e.target.className;
 //   console.log((e.target.className).is("cart-toggler"));
-  if (e.target.className == "cart-toggler") {
+  if (targetClassName.includes("cart-toggler")) {
     toggleCart();
   }
 
