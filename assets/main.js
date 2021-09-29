@@ -60,7 +60,7 @@ for (i = 0; i < acc.length; i++) {
   console.log(Math.max(...a));
   
   var ranger_max = document.getElementById("myRange").max;
-
+	console.log(ranger_max)
 
   slider.oninput = function() {
     var range_op = output.innerHTML = this.value * 100;
