@@ -33,8 +33,14 @@
           <div class="product-block">
             <div class="product-img"></div>
             <div class="product-info">
-              <div class="product-name">Product name</div>
-              <div class="product-variant">Variant <span class="count">Aantal: 1</span></div>
+              <div class="product-name">{{ line_item.title }}</div>
+              <div class="product-variant">
+                {%- unless line_item.product.has_only_default_variant -%}
+                <span>
+                  {{ line_item.variant.title }}
+                </span>
+                {%- endunless -%} 
+                <span class="count">Aantal: {{ line_item.quantity }}</span></div>
               <div class="product-price"> <span class="compare-at-price">€ 00,00</span> <span class="discount-price">€ 00,00</span></div>
             </div>
           </div>
