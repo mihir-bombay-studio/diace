@@ -71,6 +71,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   width: 100%;
   text-align: right;
   z-index: 1;
+  position : relative;
 
 }
 
@@ -268,10 +269,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 
-#hover-container:hover #nav-sub-drop{
+.right-wrap ul li:hover #nav-sub-drop{
   opacity : 1;
-  visibility : visible;
-  transition: all .4s ease;
-  transition-delay: 0s;
+  visibility :visible;
 }
-
