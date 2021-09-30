@@ -98,9 +98,7 @@ function delete_item(variant_id){
   .done(function(data){
     console.log(data);
     $(`#cart_item_${variant_id}`).fadeOut('slow');
-    if(variant_id == upsell.id){
-      $("#cart_container").removeClass("hide-upsell");
-    }
+    variant_id == upsell.id ? $("#cart_container").removeClass("hide-upsell") : null;
   })
   .fail(function() {
     console.log( "failed to delete" );
