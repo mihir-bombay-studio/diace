@@ -62,7 +62,7 @@
       </div>
       
 <!--       ----------------- UPSELL ITEM ------------------------- -->
-      <div id="upsell_item_{{upsellProduct.variant_id}}" class="upsell-container">
+      <div id="upsell_item_{{upsellProduct.first_available_variant.id }}" class="upsell-container">
         <div class="upsell-heading semibold">Mensen kochten ook:</div>
         <div class="list-item">
           <a href="{{ upsellProduct.url | within: collections.all }}" class="product-img">
@@ -85,7 +85,7 @@
               </div>
               <button 
                       class="add-upsell-btn semibold AddToCart"
-                      data-variant-id = "{{upsellProduct.variant_id}}"
+                      data-variant-id = "{{upsellProduct.first_available_variant.id }}"
                       data-quantity = ""
                       > 
                 <span class="plus-circle">+</span> 
