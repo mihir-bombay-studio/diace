@@ -98,6 +98,8 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 .content-list li:hover .chevron-a{
   stroke : #FEC23B;
+}
+.content-list li:hover svg{
   margin-left: 3px;
 }
 
