@@ -70,6 +70,7 @@ if (max_price_deci < 100){
 else
 {
   document.getElementById("myRange").max = 1000;
+  document.getElementById("myRange").value = 1000;
 }
 
 
