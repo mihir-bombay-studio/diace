@@ -48,7 +48,7 @@
               <div class="product-variant">{% if item.variant.title != "Default Title" %}{{ item.variant.title }}{% endif %}</div>
               <div class="count">
                 <span class="qty-minus cart-minus-icon">-</span>
-                <input class="item-count-number" data-qty="{{ item.quantity }}" value="{{ item.quantity }}" />{{ item.quantity }}
+                <span class="item-count-number" data-qty="{{ item.quantity }}">{{ item.quantity }}</span>
                 <span class="qty-plus cart-plus-icon ">+</span>
               </div>
             </div>
