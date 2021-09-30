@@ -34,7 +34,7 @@
             <div class="product-img">
               <img class="cart-item__image"
                    src="{{ line_item.image | img_url: '150x' }}"
-                   alt="{{ item.image.alt | escape }}"
+                   alt="{{ line_item.title | escape }}"
                    loading="lazy"
                    width="75"
                    height="{{ 75 | divided_by: item.image.aspect_ratio | ceil }}"
