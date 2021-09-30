@@ -20,10 +20,44 @@
         "enable_filtering": true,
         "enable_sorting": true
       }
+    },
+    "1633025128f0081c44": {
+      "type": "collection-filter",
+      "blocks": {
+        "4a60b547-a6d2-4a89-9cb7-1deedeea76f7": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "18e20a8e-6d34-4cb6-a120-e906c38a6b94": {
+          "type": "price_filter",
+          "settings": {
+            "show_price_filter": true,
+            "show_price_filter_heading": "PRIJS"
+          }
+        }
+      },
+      "block_order": [
+        "4a60b547-a6d2-4a89-9cb7-1deedeea76f7",
+        "18e20a8e-6d34-4cb6-a120-e906c38a6b94"
+      ],
+      "settings": {
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "gender_show": false,
+        "size_show": false,
+        "brand_show": false,
+        "gender_filter_title": "",
+        "size_filter_title": "",
+        "brand_filter_title": ""
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "1633025128f0081c44"
   ]
 }
