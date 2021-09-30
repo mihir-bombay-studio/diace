@@ -126,8 +126,7 @@ function delete_item(variant_id){
 }
 
 
-
-$( "#cart_container" ).on( "change", ".item-count-number", function() {
+$( "#cart_container" ).on( "DOMSubtreeModified", ".item-count-number", function() {
 console.log($(this).data('qty'));
 
 });
