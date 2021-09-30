@@ -50,7 +50,6 @@ $("body").on('click', '.AddToCart', function () {
     data: formData,
   })
   .done(function (data) {
-    get_full_cart();
    
   })
   .fail(function (error) {
