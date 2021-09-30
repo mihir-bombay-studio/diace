@@ -60,10 +60,19 @@
         </div>
         {% endfor %}
       </div>
-      <div class="upsell-container">
+      
+<!--       ----------------- UPSELL ITEM ------------------------- -->
+      <div id="upsell_item_{{upsellProduct.variant_id}}" class="upsell-container">
         <div class="upsell-heading semibold">Mensen kochten ook:</div>
         <div class="list-item">
-          <a href="/" class="product-img">.</a>
+          <a href="{{ upsellProduct.url | within: collections.all }}" class="product-img">
+            <img 
+                 src="{{ upsellProduct.featured_image | img_url: 'medium' }}" 
+                 alt="{{ upsellProduct.title | escape }}" 
+                 class="commerce-cart-itemimage" 
+                 loading="lazy"
+                 >
+          </a>
           <div class="product-info">
             <div class="product-name semibold"><a href="/">Product name</a></div>
             <div class="flex-box justify-between">
@@ -82,6 +91,9 @@
           </div>
         </div>
       </div>
+      
+      <!--       ----------------- UPSELL ITEM ------------------------- -->
+
       <div class="cart-footer">
         <div class="cart-calculation">
           <div class="flex-box justify-between">
