@@ -92,7 +92,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   margin-left: 4px;
 }
 
-.right-nav-lower li:hover{
+.right-nav-lower .right-nav-list:hover{
   border-bottom: 2px solid #FEC23B;
 }
 
@@ -180,10 +180,11 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .hover-wrapper{
-  position : absolute;
-  padding-top : 50px;
+  top: 20px;
+  position: absolute;
+  padding-top: 20px;
   width: 100%;
-  cursor : pointer;
+  cursor: pointer;
 }
 
 .dropdown-container{
