@@ -66,6 +66,7 @@ var ranger_max = document.getElementById("myRange").max;
 
 if (max_price_deci < 100){
   document.getElementById("myRange").max = 100; 
+  document.getElementById("myRange").value = 100;
 }
 else
 {
