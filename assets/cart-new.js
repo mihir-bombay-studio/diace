@@ -49,6 +49,24 @@ function fullOpacity(element_id){
 
 }
 
+$('.qty-minus').click(function() {
+  var data_qty = parseInt($(this).next().data('qty'));
+  if( data_qty != 1 )
+  {
+    data_qty = data_qty - 1;
+    $(this).next().data('qty', data_qty);
+    $(this).next().html(data_qty);
+  }
+});
+
+$('.qty-plus').click(function() {
+  var data_qty = parseInt($(this).prev().data('qty'));
+  data_qty = data_qty + 1;
+  $(this).prev().data('qty', data_qty);
+  $(this).prev().html(data_qty);
+});
+
+
 
 
 
