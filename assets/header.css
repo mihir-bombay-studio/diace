@@ -180,8 +180,11 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .hover-wrapper{
-  position : absolute;
-  padding-top : 50px;
+	position : absolute;
+  	padding-top : 50px;
+}
+
+.dropdown-container{
   width: 100%;
   background: #EBEBEB 0% 0% no-repeat padding-box;
   box-shadow: 0px 8px 16px #CCC2AF33;
@@ -190,15 +193,12 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   z-index:3;
 }
 
-.dropdown-container{
-
-}
-
 .dropdown-container.container{
   padding:0;
+  top: 30px;
   opacity : 0;
   visibility : hidden;
-
+  
 }
 
 .content-wrapper{
