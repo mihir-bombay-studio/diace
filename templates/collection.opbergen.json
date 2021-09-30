@@ -20,98 +20,10 @@
         "enable_filtering": true,
         "enable_sorting": true
       }
-    },
-    "1633008602784b2f3e": {
-      "type": "collection-filter",
-      "disabled": true,
-      "blocks": {
-        "3a9025be-ec6e-4a0b-af46-00a2027540d5": {
-          "type": "price_filter",
-          "settings": {
-            "show_price_filter": true,
-            "show_price_filter_heading": "PRIJS"
-          }
-        },
-        "4f73c194-0fa2-4a1f-bb9a-2157f0c5ab2e": {
-          "type": "gender_filter",
-          "settings": {
-            "gender": "Meisjes"
-          }
-        },
-        "1b1afd4e-0971-42ab-b4e0-28da06cc89f4": {
-          "type": "gender_filter",
-          "settings": {
-            "gender": "Jongens"
-          }
-        },
-        "33ee4e98-5a17-4901-a194-207df2467327": {
-          "type": "gender_filter",
-          "settings": {
-            "gender": "Vrouwen"
-          }
-        },
-        "08b61a54-3652-4454-8395-03630dd7a7ea": {
-          "type": "gender_filter",
-          "settings": {
-            "gender": "Mannen"
-          }
-        },
-        "d42513c8-c942-4d9b-a073-10fec465b278": {
-          "type": "brand_filter",
-          "settings": {
-            "brand": "Merk 01"
-          }
-        },
-        "3fa8fd32-abba-4efc-b223-da00c675b2f8": {
-          "type": "brand_filter",
-          "settings": {
-            "brand": "Merk 01"
-          }
-        },
-        "6a084709-ba7a-4ae8-953f-ba16cd1035d6": {
-          "type": "brand_filter",
-          "settings": {
-            "brand": "Merk 01"
-          }
-        },
-        "0a2c8740-e11d-4aec-886b-c292d88402c9": {
-          "type": "brand_filter",
-          "settings": {
-            "brand": "Merk 01"
-          }
-        },
-        "b8eff258-a5fa-466e-b527-1d96f995ac8c": {
-          "type": "button",
-          "settings": {
-            "button_label": "ALLE CATEGORIEËN",
-            "button_link": "shopify:\/\/collections"
-          }
-        }
-      },
-      "block_order": [
-        "3a9025be-ec6e-4a0b-af46-00a2027540d5",
-        "4f73c194-0fa2-4a1f-bb9a-2157f0c5ab2e",
-        "1b1afd4e-0971-42ab-b4e0-28da06cc89f4",
-        "33ee4e98-5a17-4901-a194-207df2467327",
-        "08b61a54-3652-4454-8395-03630dd7a7ea",
-        "d42513c8-c942-4d9b-a073-10fec465b278",
-        "3fa8fd32-abba-4efc-b223-da00c675b2f8",
-        "6a084709-ba7a-4ae8-953f-ba16cd1035d6",
-        "0a2c8740-e11d-4aec-886b-c292d88402c9",
-        "b8eff258-a5fa-466e-b527-1d96f995ac8c"
-      ],
-      "settings": {
-        "enable_filtering": true,
-        "enable_sorting": true,
-        "gender_filter_title": "GESLACHT",
-        "size_filter_title": "",
-        "brand_filter_title": "MERK"
-      }
     }
   },
   "order": [
     "banner",
-    "product-grid",
-    "1633008602784b2f3e"
+    "product-grid"
   ]
 }
