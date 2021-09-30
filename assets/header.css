@@ -268,15 +268,12 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 
 
-/* .dropdown-ul{
+.dropdown-ul{
   position : relative;
 }
- */
+
 .dropdown-ul:hover #nav-sub-drop {
   opacity : 1;
   visibility : visible;
 }
 
-header{
-  position :relative; 
-}
