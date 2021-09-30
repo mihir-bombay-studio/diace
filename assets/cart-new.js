@@ -174,12 +174,6 @@ function delete_item(variant_id){
 }
 
 
-$( "#cart_container" ).on( "DOMSubtreeModified", ".item-count-number", function() {
-console.log($(this).data('qty'));
-
-});
-
-
 $("#cart_container").on( "click", ".remove-item", function() {
   let variant_id = parseInt($(this).data('variant-id'));
   delete_item(variant_id);
