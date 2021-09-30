@@ -101,6 +101,10 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   padding-left:13px;
 }
 
+.content-list li:hover svg {
+  padding-left:13px;
+}
+
 .right-nav-lower li:hover .yellow-down-chevron{
   transform: rotate(180deg);
 }
