@@ -51,19 +51,23 @@ function fullOpacity(element_id){
 
 $('.qty-minus').click(function() {
   var data_qty = parseInt($(this).next().data('qty'));
+  let variant_id = parseInt($(this).data('variant-id'));
   if( data_qty != 1 )
   {
     data_qty = data_qty - 1;
     $(this).next().data('qty', data_qty);
     $(this).next().html(data_qty);
+    UpdateCart(variant_id);
   }
 });
 
 $('.qty-plus').click(function() {
   var data_qty = parseInt($(this).prev().data('qty'));
+  let variant_id = parseInt($(this).data('variant-id'));
   data_qty = data_qty + 1;
   $(this).prev().data('qty', data_qty);
   $(this).prev().html(data_qty);
+  UpdateCart(variant_id);
 });
 
 
@@ -99,7 +103,7 @@ $("body").on('click', '.AddToCart', function () {
 
 
 
-function cartupdate(variant_id){
+function UpdateCart(variant_id){
 
   reduceOpacity(`cart_item_${variant_id}`);
   let update_quantity = $(`#item_count_${variant_id}`).data("qty");
@@ -136,7 +140,7 @@ function cartupdate(variant_id){
   }
   else{
 
-    delete_item(update_id);
+    delete_item(variant_id);
   }
 }
 
