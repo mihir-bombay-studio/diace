@@ -128,7 +128,7 @@ function delete_item(variant_id){
 
 
 $( "#cart_container" ).on( "change", ".item-count-number", function() {
-console.log(($(this).data('qty'));
+console.log($(this).data('qty'));
 
 });
 
