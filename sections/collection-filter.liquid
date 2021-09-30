@@ -69,7 +69,7 @@
         
         
         
-        <div class="sex-filter">
+        <div class="sex-filter {% if section.settings.gender_show == false %} no-disp {% endif %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
             <div class="price-filter-title">{{section.settings.gender_filter_title}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
@@ -88,7 +88,7 @@
         </div>
         
         
-        <div class="size-filter">
+        <div class="size-filter {% if section.settings.size_show == false %} no-disp {% endif %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
             <div class="price-filter-title">{{section.settings.size_filter_title}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
@@ -107,7 +107,7 @@
         </div>
         
         
-        <div class="brand-filter">
+        <div class="brand-filter {% if section.settings.brand_show == false %} no-disp {% endif %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
             <div class="price-filter-title">{{section.settings.brand_filter_title}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
@@ -644,6 +644,24 @@
       "id": "enable_sorting",
       "default": true,
       "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "gender_show",
+      "default": false,
+      "label": "Show Gender Filter"
+    },
+	{
+      "type": "checkbox",
+      "id": "size_show",
+      "default": false,
+      "label": "Show Size Filter"
+    },
+	{
+      "type": "checkbox",
+      "id": "brand_show",
+      "default": false,
+      "label": "Show Brand Filter"
     },
     {
       "type": "text",
