@@ -47,16 +47,18 @@
     <div id="order_list-tab" class="order_list-tab tabcontent">
       <div class="tab-wrapper">
         <div class="tab-container">
+          {%- for order in customer.orders -%}
           <div class="detail-block">
             <div class="list-header">
-              <div class="date">Di 24 augustus 2021</div>
-              <div class="price">€ 24,00</div>
+              <div class="date">{{ order.created_at | time_tag: format: 'date' }}</div>
+              <div class="price">{{ order.total_price | money_with_currency }}</div>
             </div>
             <p>BE 012 345 678</p>
             <p class="flex-box justify-between">
-              In behandeling <span class="underline-link">Details >></span>
+              In behandeling <a href="{{ order.customer_url }}" class="underline-link">Details >></a>
             </p>
           </div>
+          {%- endfor -%}
           <div class="detail-block">
             <div class="list-header">
               <div class="date">Di 24 augustus 2021</div>
