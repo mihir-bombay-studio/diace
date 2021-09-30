@@ -76,11 +76,11 @@ else
 
   slider.oninput = function() {
     var range_op = output.innerHTML = this.value;
-//     console.log(range_op)
+    console.log(range_op)
     
      $('.product-collection-card').each(function() {
       var product_price = $(this).data('price');
-		console.log(product_price)
+// 		console.log(product_price)
       $(this).addClass('out-of-range-min');
       if( product_price <= range_op ) {
         $(this).removeClass('out-of-range-min');
