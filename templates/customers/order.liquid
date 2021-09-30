@@ -42,7 +42,7 @@
                 {%- endunless -%} 
                 <span class="count">Aantal: {{ line_item.quantity }}</span></div>
               <div class="product-price"> 
-                <span class="compare-at-price">{{ line_item.compare_at_price | money }}</span> 
+                {%- if line_item.compare_at_price -%}<span class="compare-at-price">{{ line_item.compare_at_price | money }}</span>{%- endif -%} 
                 <span class="discount-price">{{ line_item.original_price | money}}</span>
               </div>
             </div>
