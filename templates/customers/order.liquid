@@ -2,6 +2,76 @@
 {{ 'orders.css' | asset_url | stylesheet_tag }}
 
 
+
+
+<div class="grid-wrapper container">
+  <div class="collage-grid flex-box justify-between">
+    <div id="order_list-tab" class="order_list-tab tabcontent">
+      <div class="tab-wrapper">
+        <div class="tab-container">
+          {%- for order in customer.orders -%}
+          <div class="detail-block">
+            <div class="list-header">
+              <div class="date">{{ order.created_at | time_tag: format: 'date' }}</div>
+              <div class="price">{{ order.total_price | money }}</div>
+            </div>
+            <p>BE 012 345 678</p>
+            <p class="flex-box justify-between">
+              In behandeling <a href="{{ order.customer_url }}" class="underline-link">Details >></a>
+            </p>
+          </div>
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="text-over-grid bold">BESTELLINGEN</div>
+    </div>
+    <div class="grid-right single-order-details ">
+      <div class="product-list-wrapper">
+        <div class="detail-header">BESTELLING: BE 012 345 678</div>
+        <div class="product-list">
+          <div class="product-block">
+            <div class="product-img"></div>
+            <div class="product-info">
+              <div class="product-name">Product name</div>
+              <div class="product-variant">Variant <span class="count">Aantal: 1</span></div>
+              <div class="product-price"> <span class="compare-at-price">€ 00,00</span> <span
+                                                                                              class="discount-price">€ 00,00</span></div>
+            </div>
+          </div>
+          <div class="product-block">
+            <div class="product-img"></div>
+            <div class="product-info">
+              <div class="product-name">Product name</div>
+              <div class="product-variant">Variant <span class="count">Aantal: 1</span></div>
+              <div class="product-price"> <span class="compare-at-price">€ 00,00</span> <span
+                                                                                              class="discount-price">€ 00,00</span></div>
+            </div>
+          </div>
+          <div class="product-block">
+            <div class="product-img"></div>
+            <div class="product-info">
+              <div class="product-name">Product name</div>
+              <div class="product-variant">Variant <span class="count">Aantal: 1</span></div>
+              <div class="product-price"> <span class="compare-at-price">€ 00,00</span> <span
+                                                                                              class="discount-price">€ 00,00</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <div class="customer order">
   <svg style="display:none">
     <symbol id="icon-discount" viewBox="0 0 12 12">
