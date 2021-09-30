@@ -83,7 +83,11 @@
                 {% if upsellProduct.variant.compare_at_price %}<span class="compare-at-price">{{ upsellProduct.variant.compare_at_price | money }}</span>{% endif %}
                 <span class="discount-price semibold">{{ upsellProduct.price | money}}</span>
               </div>
-              <button class="add-upsell-btn semibold AddToCart"> 
+              <button 
+                      class="add-upsell-btn semibold AddToCart"
+                      data-variant-id = "{{upsellProduct.variant_id}}"
+                      data-quantity = ""
+                      > 
                 <span class="plus-circle">+</span> 
                 <span class="add-upsell-btn-text">Toevoegen</span> 
               </button>
