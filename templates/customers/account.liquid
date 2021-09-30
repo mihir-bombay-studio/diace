@@ -51,7 +51,7 @@
           <div class="detail-block">
             <div class="list-header">
               <div class="date">{{ order.created_at | time_tag: format: 'date' }}</div>
-              <div class="price">{{ order.total_price | money_with_currency }}</div>
+              <div class="price">{{ order.total_price | money }}</div>
             </div>
             <p>BE 012 345 678</p>
             <p class="flex-box justify-between">
