@@ -227,7 +227,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   opacity: 1;
 }
 
-.content-list li img{
+.content-list li svg{
   transform: rotate(270deg);
 }
 
