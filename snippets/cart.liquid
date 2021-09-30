@@ -81,7 +81,7 @@
             <div class="item-price flex-box justify-between">
               <div class="">
                 {% if upsellProduct.variant.compare_at_price %}<span class="compare-at-price">{{ upsellProduct.variant.compare_at_price | money }}</span>{% endif %}
-                <span class="discount-price semibold">{{ upsellProduct.price }}</span>
+                <span class="discount-price semibold">{{ upsellProduct.price | money}}</span>
               </div>
               <button class="add-upsell-btn semibold"> 
                 <span class="plus-circle">+</span> 
