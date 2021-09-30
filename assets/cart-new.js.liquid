@@ -58,6 +58,8 @@ $('.qty-minus').click(function() {
     $(this).next().data('qty', data_qty);
     $(this).next().html(data_qty);
     UpdateCart(variant_id);
+  }else{
+  	delete_item(variant_id);
   }
 });
 
