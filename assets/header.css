@@ -184,6 +184,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   background: #EBEBEB 0% 0% no-repeat padding-box;
   box-shadow: 0px 8px 16px #CCC2AF33;
   border-radius: 16px;
+  max-height:260px;
 }
 
 .content-wrapper{
@@ -198,7 +199,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   flex-direction : column;
   margin: 0;
   padding: 0;
-  gap:13px;
+  gap:9px;
 }
 
 .content-list li{
@@ -222,8 +223,9 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   max-width: 278px;
   text-align: left;
   font: normal normal normal 16px/24px Myriad Pro;
-  letter-spacing: 0px;
-  color: #000000;
+  letter-spacing: 0;
+  color: #000;
+  max-height: 208px;
 }
 
 .image-block{
@@ -231,9 +233,10 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .image-block img {
-  max-width: 278px;
+  width: 278px;
   object-fit: cover;
   display: block;
+  height: 208px;
 }
 
 .drop-right-wrap{
@@ -247,7 +250,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   position : absolute;
   opacity : 0;
   visibility : hidden;
-  
+
 }
 
 .dropdown-ul ul{
@@ -261,4 +264,5 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   transition: all .4s ease;
   transition-delay: 0s;
 }
+
 
