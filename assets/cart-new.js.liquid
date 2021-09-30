@@ -55,7 +55,7 @@ $('.qty-minus').click(function() {
   {
     data_qty = data_qty - 1;
     $(this).next().data('qty', data_qty);
-    $(this).next().html(data_qty);
+    $(this).next().val(data_qty);
   }
 });
 
@@ -63,7 +63,7 @@ $('.qty-plus').click(function() {
   var data_qty = parseInt($(this).prev().data('qty'));
   data_qty = data_qty + 1;
   $(this).prev().data('qty', data_qty);
-  $(this).prev().html(data_qty);
+  $(this).prev().val(data_qty);
 });
 
 
@@ -128,7 +128,7 @@ function delete_item(variant_id){
 
 
 $( "#cart_container" ).on( "change", ".item-count-number", function() {
-console.log($(this).data('qty'));
+console.log($(this));
 
 });
 
