@@ -20,10 +20,79 @@
         "enable_filtering": true,
         "enable_sorting": true
       }
+    },
+    "16330120123ec83063": {
+      "type": "collection-filter",
+      "blocks": {
+        "0781f627-0692-472a-a08e-999c58dfd4b9": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "3675c6c1-a77c-40de-b03b-b8a9141401ba": {
+          "type": "price_filter",
+          "settings": {
+            "show_price_filter": true,
+            "show_price_filter_heading": "PRIJS"
+          }
+        },
+        "00dc8b86-2b94-453c-be9a-01c2add6fa45": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "Dexcom G6"
+          }
+        },
+        "3b48d427-127b-4bc3-916b-9d291261cc13": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "Dexcom G5"
+          }
+        },
+        "9ffd0c66-a160-402b-96da-bb8dd5ee1cef": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "Omnipod Pod"
+          }
+        },
+        "e6058d19-f32b-4d77-8630-932ad613567d": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "Medtronic Guardian"
+          }
+        },
+        "466dbc41-bca6-462f-8632-a56573d809a3": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "Freestyle Libre"
+          }
+        }
+      },
+      "block_order": [
+        "0781f627-0692-472a-a08e-999c58dfd4b9",
+        "3675c6c1-a77c-40de-b03b-b8a9141401ba",
+        "00dc8b86-2b94-453c-be9a-01c2add6fa45",
+        "3b48d427-127b-4bc3-916b-9d291261cc13",
+        "9ffd0c66-a160-402b-96da-bb8dd5ee1cef",
+        "e6058d19-f32b-4d77-8630-932ad613567d",
+        "466dbc41-bca6-462f-8632-a56573d809a3"
+      ],
+      "settings": {
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "gender_show": false,
+        "size_show": false,
+        "brand_show": true,
+        "gender_filter_title": "",
+        "size_filter_title": "",
+        "brand_filter_title": "TYPE"
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "16330120123ec83063"
   ]
 }
