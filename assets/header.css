@@ -98,7 +98,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 .content-list li:hover svg .chevron-a{
   stroke : #FEC23B;
-  padding-left:3px;
+  padding-left:13px;
 }
 
 .right-nav-lower li:hover .yellow-down-chevron{
