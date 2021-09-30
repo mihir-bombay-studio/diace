@@ -74,13 +74,13 @@
                  >
           </a>
           <div class="product-info">
-            <div class="product-name semibold"><a href="/">Product name</a></div>
+            <div class="product-name semibold"><a href="{{ upsellProduct.url | within: collections.all }}">{{ upsellProduct.title }}</a></div>
             <div class="flex-box justify-between">
               <div class="product-variant">Variant</div>
             </div>
             <div class="item-price flex-box justify-between">
               <div class="">
-                <span class="compare-at-price">€ 00,00</span>
+                {% if upsellProduct.variant.compare_at_price %}<span class="compare-at-price">{{ upsellProduct.variant.compare_at_price | money }}</span>{% endif %}
                 <span class="discount-price semibold">€ 00,00</span>
               </div>
               <button class="add-upsell-btn semibold"> 
