@@ -189,7 +189,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .hover-wrapper{
-  top: 20px;
+  top: 80px;
   position: absolute;
   padding-top: 20px;
   width: 100%;
@@ -266,8 +266,6 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   display: flex;
   justify-content: end;
 }
-
-
 
 
 #hover-container:hover #nav-sub-drop{
