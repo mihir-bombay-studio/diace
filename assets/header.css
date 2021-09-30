@@ -92,7 +92,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   margin-left: 4px;
 }
 
-.right-nav-lower .right-nav-list:hover{
+.right-nav-lower li:hover{
   border-bottom: 2px solid #FEC23B;
 }
 
