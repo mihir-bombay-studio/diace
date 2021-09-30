@@ -1,3 +1,24 @@
+{% assign selected_product = settings.upsell_product %}
+{% assign upsellProduct = all_products[selected_product] %}
+{% assign upsellProductHandle = upsellProduct.handle %}
+<script>
+  var upsell = {
+    id:"{{ upsellProduct.first_available_variant.id }}",
+    title:"{{ upsellProduct.title | escape }}",
+    url:"{{ upsellProduct.url | within: collections.all }}",
+    image:"{{ upsellProduct.featured_image | img_url: 'medium' }}",
+    price:"{{ upsellProduct.price | divided_by:100.0 }}"
+  };
+  
+</script>
+{% for item in cart.items %}
+{% if item.product.handle == upsellProductHandle %}
+{% assign upsell_present = true %}
+
+{% endif %}
+{% endfor %}
+
+
 <div class="cart-mask">
   <div id="cart_container" class="cart-container">
     <div class="cart-header">
