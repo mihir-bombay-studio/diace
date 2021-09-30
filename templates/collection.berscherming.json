@@ -31,33 +31,35 @@
             "button_link": "shopify:\/\/collections"
           }
         },
-        "5d1a7090-a48d-4317-a58c-fe243ac2cd6f": {
-          "type": "brand_filter",
+        "130f5c27-fb04-4faf-88fe-aa2fe08bc903": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Medtronic pomp"
+            "type": "Medtronic pomp"
           }
         },
-        "a92f509a-6961-41d7-8912-30ec9d713f62": {
-          "type": "brand_filter",
+        "b77ce676-6356-4da0-aeb2-e28f61842309": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Freestyle Libre reader"
+            "type": "Freestyle Libre reader"
           }
         }
       },
       "block_order": [
         "b5898956-67a5-4f73-861e-bb8c77f2334f",
-        "5d1a7090-a48d-4317-a58c-fe243ac2cd6f",
-        "a92f509a-6961-41d7-8912-30ec9d713f62"
+        "130f5c27-fb04-4faf-88fe-aa2fe08bc903",
+        "b77ce676-6356-4da0-aeb2-e28f61842309"
       ],
       "settings": {
         "enable_filtering": true,
         "enable_sorting": true,
         "gender_show": false,
         "size_show": false,
-        "brand_show": true,
+        "type_show": true,
+        "brand_show": false,
         "gender_filter_title": "",
         "size_filter_title": "",
-        "brand_filter_title": "TYPE"
+        "type_filter_title": "TYPE",
+        "brand_filter_title": ""
       }
     }
   },
