@@ -31,7 +31,7 @@
         <div class="product-list">
           {%- for line_item in order.line_items -%}
           <div class="product-block">
-            <div class="product-img">
+            <a href="{{ line_item.product.url }}" class="product-img">
               <img class="cart-item__image"
                    src="{{ line_item.image | img_url: '150x' }}"
                    alt="{{ line_item.title | escape }}"
@@ -39,9 +39,9 @@
                    width="75"
                    height="{{ 75 | divided_by: item.image.aspect_ratio | ceil }}"
                    >
-            </div>
+            </a>
             <div class="product-info">
-              <div class="product-name">{{ line_item.title }}</div>
+              <a href="{{ line_item.product.url }}" class="product-name">{{ line_item.title }}</a>
               <div class="product-variant">
                 {%- unless line_item.product.has_only_default_variant -%}
                 <span>
