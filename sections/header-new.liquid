@@ -68,7 +68,7 @@
                         </form>
                       </div>
           			</li>
-					<li class="no-t-m right-nav-list rel"><a id="cart_toggler" class="cart-toggler" onClick="return false;">{% include 'icon-cart-new' %}<span class="cart-items {% if cart.item_count < 1 %}no-disp{% endif %}">{{ cart.item_count }}</span></a></li>
+					<li class="no-t-m right-nav-list rel"><a id="cart_toggler" class="cart-toggler" onClick="return false;">{% include 'icon-cart-new' %}<span class="cart-item-count {% if cart.item_count < 1 %}no-disp{% endif %}">{{ cart.item_count }}</span></a></li>
 				</ul>
       </div>
       <div class="right-nav-lower">
