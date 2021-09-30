@@ -31,7 +31,15 @@
         <div class="product-list">
           {%- for line_item in order.line_items -%}
           <div class="product-block">
-            <div class="product-img"></div>
+            <div class="product-img">
+              <img class="cart-item__image"
+                   src="{{ line_item.image | img_url: '150x' }}"
+                   alt="{{ item.image.alt | escape }}"
+                   loading="lazy"
+                   width="75"
+                   height="{{ 75 | divided_by: item.image.aspect_ratio | ceil }}"
+                   >
+            </div>
             <div class="product-info">
               <div class="product-name">{{ line_item.title }}</div>
               <div class="product-variant">
