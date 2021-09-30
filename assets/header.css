@@ -101,7 +101,6 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 .content-list li:hover svg{
   margin-left: 3px;
-  transition: all .3s ease;
 }
 
 
@@ -207,6 +206,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 .dropdown-container.container{
   padding:0;
+  top: 30px;
   opacity : 0;
   visibility : hidden;
 
@@ -269,7 +269,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 
 
-.dropdown-ul {
+.dropdown-ul ul{
   position : relative;
 }
 
