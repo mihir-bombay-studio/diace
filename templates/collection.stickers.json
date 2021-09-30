@@ -89,6 +89,13 @@
           "settings": {
             "brand": "Omnipod PDM"
           }
+        },
+        "2ba1349a-b93d-49db-a1d8-402c9c9bc83d": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections"
+          }
         }
       },
       "block_order": [
@@ -102,7 +109,8 @@
         "7d9588a2-7286-4522-88d3-de305d1b8efb",
         "51461c71-6fa3-4612-83a7-143a6ae97af7",
         "715d50a0-2120-4de7-bad5-5271a6f63007",
-        "593386db-c839-433b-9aae-bfb21c5339c9"
+        "593386db-c839-433b-9aae-bfb21c5339c9",
+        "2ba1349a-b93d-49db-a1d8-402c9c9bc83d"
       ],
       "settings": {
         "enable_filtering": true,
