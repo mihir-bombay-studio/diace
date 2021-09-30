@@ -21,76 +21,76 @@
         "enable_sorting": true
       }
     },
-    "1633011247d2cf0e13": {
+    "16330268764c434e3c": {
       "type": "collection-filter",
       "blocks": {
-        "7a340cb5-7b45-4026-bb3d-ae5cad8d5968": {
-          "type": "brand_filter",
+        "021362b9-6d49-494f-94d6-11f67cc03515": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Accu check guide"
+            "type": "Accu check guide"
           }
         },
-        "26c2c560-3d5c-4eef-9d63-ac60fd4b687b": {
-          "type": "brand_filter",
+        "8c953991-51d0-49e6-a5d2-7ecd29e75cf3": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Bayer contour next"
+            "type": "Bayer contour next"
           }
         },
-        "3cc39c38-acb9-4329-9a01-4f8628f0e482": {
-          "type": "brand_filter",
+        "fd088983-7b93-4de8-850e-cebceac9ce6b": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Dexcom G5"
+            "type": "Dexcom G5"
           }
         },
-        "95a1b107-6a8f-4635-b076-4afe482c798a": {
-          "type": "brand_filter",
+        "1409ee08-d374-4089-88a6-198cf1e8e326": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Dexcom G6"
+            "type": "Dexcom G6"
           }
         },
-        "bbf91792-c4a9-4da1-ab3d-afae16d009cc": {
-          "type": "brand_filter",
+        "c3fd733a-decd-4ef6-a30a-bbd364655bb7": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Freestyle libre sensor"
+            "type": "Freestyle libre sensor"
           }
         },
-        "747962b0-d7ea-4fef-8304-55378fc0bfa2": {
-          "type": "brand_filter",
+        "8487da3d-6e7a-4a54-b274-eabf35e89532": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Freestyle libre reader"
+            "type": "Freestyle libre reader"
           }
         },
-        "44e5db14-bcda-4afb-b59f-bc2141f953bc": {
-          "type": "brand_filter",
+        "70415147-f5f0-45b2-987d-87183c3dc694": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Medtronic 780G 670G 640G"
+            "type": "Medtronic 780G 670G 640G"
           }
         },
-        "7d9588a2-7286-4522-88d3-de305d1b8efb": {
-          "type": "brand_filter",
+        "f231cd9d-93a0-4591-8e21-4d73e1a3b83e": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Medtronic Guardian"
+            "type": "Medtronic Guardian"
           }
         },
-        "51461c71-6fa3-4612-83a7-143a6ae97af7": {
-          "type": "brand_filter",
+        "1c9f80dc-5aaa-45d2-ab67-81b25e1d6116": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Tandem Slim x2"
+            "type": "Tandem Slim x2"
           }
         },
-        "715d50a0-2120-4de7-bad5-5271a6f63007": {
-          "type": "brand_filter",
+        "4cc4d3d1-d18e-4c1e-8afe-05d034e1ef06": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Omnipod Pod"
+            "type": "Omnipod Pod"
           }
         },
-        "593386db-c839-433b-9aae-bfb21c5339c9": {
-          "type": "brand_filter",
+        "b8121208-c5b3-4ed2-8fcc-57c1ea7d52f1": {
+          "type": "type_filter",
           "settings": {
-            "brand": "Omnipod PDM"
+            "type": "Omnipod PDM"
           }
         },
-        "2ba1349a-b93d-49db-a1d8-402c9c9bc83d": {
+        "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf": {
           "type": "button",
           "settings": {
             "button_label": "ALLE CATEGORIEËN",
@@ -99,34 +99,36 @@
         }
       },
       "block_order": [
-        "7a340cb5-7b45-4026-bb3d-ae5cad8d5968",
-        "26c2c560-3d5c-4eef-9d63-ac60fd4b687b",
-        "3cc39c38-acb9-4329-9a01-4f8628f0e482",
-        "95a1b107-6a8f-4635-b076-4afe482c798a",
-        "bbf91792-c4a9-4da1-ab3d-afae16d009cc",
-        "747962b0-d7ea-4fef-8304-55378fc0bfa2",
-        "44e5db14-bcda-4afb-b59f-bc2141f953bc",
-        "7d9588a2-7286-4522-88d3-de305d1b8efb",
-        "51461c71-6fa3-4612-83a7-143a6ae97af7",
-        "715d50a0-2120-4de7-bad5-5271a6f63007",
-        "593386db-c839-433b-9aae-bfb21c5339c9",
-        "2ba1349a-b93d-49db-a1d8-402c9c9bc83d"
+        "021362b9-6d49-494f-94d6-11f67cc03515",
+        "8c953991-51d0-49e6-a5d2-7ecd29e75cf3",
+        "fd088983-7b93-4de8-850e-cebceac9ce6b",
+        "1409ee08-d374-4089-88a6-198cf1e8e326",
+        "c3fd733a-decd-4ef6-a30a-bbd364655bb7",
+        "8487da3d-6e7a-4a54-b274-eabf35e89532",
+        "70415147-f5f0-45b2-987d-87183c3dc694",
+        "f231cd9d-93a0-4591-8e21-4d73e1a3b83e",
+        "1c9f80dc-5aaa-45d2-ab67-81b25e1d6116",
+        "4cc4d3d1-d18e-4c1e-8afe-05d034e1ef06",
+        "b8121208-c5b3-4ed2-8fcc-57c1ea7d52f1",
+        "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf"
       ],
       "settings": {
         "enable_filtering": true,
         "enable_sorting": true,
         "gender_show": false,
         "size_show": false,
-        "brand_show": true,
+        "type_show": true,
+        "brand_show": false,
         "gender_filter_title": "",
         "size_filter_title": "",
-        "brand_filter_title": "TYPE"
+        "type_filter_title": "TYPE",
+        "brand_filter_title": ""
       }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "1633011247d2cf0e13"
+    "16330268764c434e3c"
   ]
 }
