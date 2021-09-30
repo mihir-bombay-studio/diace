@@ -188,7 +188,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .hover-wrapper{
-  top: 20px;
+  top: 145px;
   position: absolute;
   padding-top: 20px;
   width: 100%;
@@ -206,7 +206,6 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 .dropdown-container.container{
   padding:0;
-  top: 30px;
   opacity : 0;
   visibility : hidden;
 
@@ -269,11 +268,15 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 
 
-.dropdown-ul{
+/* .dropdown-ul{
   position : relative;
 }
-
+ */
 .dropdown-ul:hover #nav-sub-drop {
   opacity : 1;
   visibility : visible;
+}
+
+header{
+  position :relative; 
 }
