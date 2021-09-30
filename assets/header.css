@@ -71,7 +71,6 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   width: 100%;
   text-align: right;
   z-index: 1;
-  position : relative;
 
 }
 
@@ -190,7 +189,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .hover-wrapper{
-  top: 80px;
+  top: 20px;
   position: absolute;
   padding-top: 20px;
   width: 100%;
@@ -208,6 +207,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 .dropdown-container.container{
   padding:0;
+  top: 30px;
   opacity : 0;
   visibility : hidden;
 
@@ -269,7 +269,16 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 
-.right-nav-lower .right-nav-list:hover .dropdown-container{
-  opacity : 1;
-  visibility :visible;
+
+.dropdown-ul ul{
+  position : relative;
 }
+
+
+#hover-container:hover #nav-sub-drop{
+  opacity : 1;
+  visibility : visible;
+  transition: all .4s ease;
+  transition-delay: 0s;
+}
+
