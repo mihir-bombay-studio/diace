@@ -81,7 +81,7 @@
 }
 
 .details-container, .tab-container {
-    min-height: 288px;
+/*     min-height: 288px; */
     min-width: 70%;
     padding-top: 52px;
 }
