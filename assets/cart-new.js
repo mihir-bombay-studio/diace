@@ -98,6 +98,50 @@ $("body").on('click', '.AddToCart', function () {
 
 
 
+
+function cartupdate(variant_id){
+
+  reduceOpacity(`cart_item_${variant_id}`);
+  let update_quantity = $(`#item_count_${variant_id}`).data("qty");
+//   let price = $(`#line_price_${update_id}`).data("price");
+
+  if(update_quantity > 0){
+    let update_data = {
+
+      'id': parseInt(`${variant_id}`),
+      'quantity': parseInt(`${update_quantity}`),
+
+    }
+
+    $.ajax({
+      url:`/cart/change.js`,
+      method: "POST",
+      dataType: "json",
+      data: update_data,
+
+    }).done(function(data){
+
+      console.log(data);
+      $(`#item_count_${variant_id}`).text(update_quantity);
+//       $('#sub_total').text(`€ ${data.total_price/100} EUR`);
+//       $(`#line_price_${update_id}`).text(`€ ${(price*update_quantity)/100} EUR`);
+//       cart_item_count(data);
+      fullOpacity(`cart_item_${variant_id}`);
+
+    }).fail(function() {
+      console.log( "failed to update" );
+
+    });
+
+  }
+  else{
+
+    delete_item(update_id);
+  }
+}
+
+
+
 function delete_item(variant_id){
   reduceOpacity(`cart_item_${variant_id}`);
 
