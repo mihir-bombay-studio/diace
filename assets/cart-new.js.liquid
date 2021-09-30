@@ -31,3 +31,8 @@ $(document).mouseup(function (e) {
 
 });
 
+
+
+$("body").on('click', '.AddToCart', function () {
+console.log($(this));
+});
