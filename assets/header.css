@@ -101,6 +101,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 .content-list li:hover svg{
   margin-left: 3px;
+  transition: all .3s ease;
 }
 
 
