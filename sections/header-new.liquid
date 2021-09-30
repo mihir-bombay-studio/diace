@@ -73,46 +73,45 @@
       </div>
       <div class="dropdown-ul right-nav-lower">
         <ul id="hover-container" class="header-nav-list flex-box justify-between bold">
-                  {% for block in section.blocks %}
-  			      {% for link in linklists[block.settings.nav_list_lower].links %}
+          {% for block in section.blocks %}
+          {% for link in linklists[block.settings.nav_list_lower].links %}
           <li class="hover-dropdown right-nav-list"><a href="{{link.url}}">{{link.title}}</a><span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span></li>
-				  {% endfor %}
-                  {% endfor %}
-          <div class="hover-wrapper">
-            <div id="nav-sub-drop" class="dropdown-container container">
-              <div class="wrapper">
-                <div class="content-wrapper">
-                  <div class="left-wrap content-sub-list">
-                    <ul class="content-list">
-                      <li>TASSEN {% render "back-icon" %} </li>
-                      <li>PENTASSEN {% render "back-icon" %} </li>
-                      <li>LEDEREN TASSEN {% render "back-icon" %}</li>
-                      <li>POMPTASSEN {% render "back-icon" %} </li>
-                      <li>KOELTASSEN {% render "back-icon" %}</li>
-                      <li>DRAAGBANDEN {% render "back-icon" %} </li>
-                      <li>TOTEBAGS {% render "back-icon" %} </li>
-                    </ul>
-                  </div>
+          {% endfor %}
+          {% endfor %}
+        </ul>
+        <div class="hover-wrapper">
+          <div id="nav-sub-drop" class="dropdown-container container">
+            <div class="wrapper">
+              <div class="content-wrapper">
+                <div class="left-wrap content-sub-list">
+                  <ul class="content-list">
+                    <li>TASSEN {% render "back-icon" %} </li>
+                    <li>PENTASSEN {% render "back-icon" %} </li>
+                    <li>LEDEREN TASSEN {% render "back-icon" %}</li>
+                    <li>POMPTASSEN {% render "back-icon" %} </li>
+                    <li>KOELTASSEN {% render "back-icon" %}</li>
+                    <li>DRAAGBANDEN {% render "back-icon" %} </li>
+                    <li>TOTEBAGS {% render "back-icon" %} </li>
+                  </ul>
+                </div>
 
-                  <div class="drop-right-wrap">
-                    <div class="text-block">
-                      Klaar voor vertrek? Alles bij je voor de volgende prik? Glucosemeter, pomp, druivensuiker? Er wordt
-                      wel eens wat vergeten als we de deur uit moeten. Een handige diabetes tasje kan hierin het verschil
+                <div class="drop-right-wrap">
+                  <div class="text-block">
+                    Klaar voor vertrek? Alles bij je voor de volgende prik? Glucosemeter, pomp, druivensuiker? Er wordt
+                    wel eens wat vergeten als we de deur uit moeten. Een handige diabetes tasje kan hierin het verschil
+                    maken.
+                    <p>Klaar voor vertrek? Alles bij je voor de volgende prik?Een handige diabetes tasje kan hierin het verschil
                       maken.
-                      <p>Klaar voor vertrek? Alles bij je voor de volgende prik?Een handige diabetes tasje kan hierin het verschil
-                        maken.
-                      </p>
-                    </div>
-                    <div class="image-block">
-                      <img src="{{"blog.png" | asset_url }}" alt="">
-                    </div>
+                    </p>
+                  </div>
+                  <div class="image-block">
+                    <img src="{{"blog.png" | asset_url }}" alt="">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-				</ul>
+        </div>
       </div>
     </nav>
     </div>
