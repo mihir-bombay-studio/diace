@@ -35,7 +35,7 @@ $(document).mouseup(function (e) {
 
 $("body").on('click', '.AddToCart', function () {
   let variant_id = parseInt($(this).data('variant-id'));
-   console.log(variant_id);
+   console.log($(this).data('variant-id'));
 //   let formData = {
 //     'items': [{
 //       'id': ,
