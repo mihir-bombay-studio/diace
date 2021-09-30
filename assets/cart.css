@@ -4,10 +4,6 @@
     width: 5px;
 }
 
-::-webkit-scrollbar{
-display:none;
-}
-
 /* Track */
 
 .cart-list::-webkit-scrollbar-track {
