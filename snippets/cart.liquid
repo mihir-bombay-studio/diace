@@ -1,5 +1,6 @@
 {% assign selected_product = settings.upsell_product %}
 {% assign upsellProduct = all_products[selected_product] %}
+{% assign current_variant = upsellProduct.selected_or_first_available_variant %}
 {% assign upsellProductHandle = upsellProduct.handle %}
 <script>
   var upsell = {
