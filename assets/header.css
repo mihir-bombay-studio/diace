@@ -207,8 +207,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 .dropdown-container.container{
   padding:0;
   top: 30px;
-  opacity : 0;
-  visibility : hidden;
+  display : none;
 
 }
 
@@ -274,6 +273,5 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .dropdown-ul:hover #nav-sub-drop {
-  opacity : 1;
-  visibility : visible;
+  display : block;
 }
