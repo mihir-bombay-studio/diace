@@ -23,6 +23,7 @@
     },
     "1633008602784b2f3e": {
       "type": "collection-filter",
+      "disabled": true,
       "blocks": {
         "3a9025be-ec6e-4a0b-af46-00a2027540d5": {
           "type": "price_filter",
