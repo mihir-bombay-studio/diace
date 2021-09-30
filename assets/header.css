@@ -269,7 +269,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 
-#hover-container:hover #nav-sub-drop{
+.right-nav-lower .right-nav-list:hover .dropdown-container{
   opacity : 1;
   visibility :visible;
 }
