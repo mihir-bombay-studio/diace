@@ -199,7 +199,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   flex-direction : column;
   margin: 0;
   padding: 0;
-  gap:9px;
+  gap:8px;
 }
 
 .content-list li{
