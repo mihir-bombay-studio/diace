@@ -550,6 +550,7 @@
 
       <div id="CollectionProductGrid">
         {%- if collection.products.size == 0 -%}
+        {% comment %}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
           <div class="loading-overlay">
             <div class="loading-overlay__spinner">
@@ -558,11 +559,11 @@
               </svg>
             </div>
           </div>
-
+			
           <p class="collection-product-count light">
             {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
           </p>
-
+		
           <div class="title-wrapper center">
             <h2 class="title title--primary">
               {{ 'sections.collection_template.empty' | t }}<br>
@@ -570,6 +571,7 @@
             </h2>
           </div>
         </div>
+        {% endcomment %}
         {%- else -%}
         <div class="collection ">
           <div class="loading-overlay">
