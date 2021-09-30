@@ -100,9 +100,6 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   stroke : #FEC23B;
 }
 
-.content-list li:hover svg {
-  padding-right:13px;
-}
 
 .right-nav-lower li:hover .yellow-down-chevron{
   transform: rotate(180deg);
