@@ -106,6 +106,24 @@
           <div class="yellow-border-bottom"></div>
         </div>
         
+        <div class="type-filter {% if section.settings.type_show == false %} no-disp {% endif %}">
+          <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
+            <div class="price-filter-title">{{section.settings.type_filter_title}}</div>
+            <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
+          </div>
+          <div class="panel">
+            {% for block in section.blocks %}
+        	{% if block.type == "type_filter" %}
+            <div class="check-box-wrapper flex-box align-center">
+              <span class="check-box"></span>
+              <span class="check-box-option semibold">{{block.settings.type}}</span>
+            </div>
+            {% endif %}
+        	{% endfor %}
+          </div>
+          <div class="yellow-border-bottom"></div>
+        </div>
+        
         
         <div class="brand-filter {% if section.settings.brand_show == false %} no-disp {% endif %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion accordion">
@@ -661,6 +679,12 @@
     },
 	{
       "type": "checkbox",
+      "id": "type_show",
+      "default": false,
+      "label": "Show Type Filter"
+    },
+	{
+      "type": "checkbox",
       "id": "brand_show",
       "default": false,
       "label": "Show Brand Filter"
@@ -674,6 +698,11 @@
       "type": "text",
       "id": "size_filter_title",
       "label": "Size Filter Title"
+    },
+    {
+      "type": "text",
+      "id": "type_filter_title",
+      "label": "Type Filter Title"
     },
     {
       "type": "text",
@@ -741,6 +770,18 @@
               "type": "text",
               "id": "size",
               "label": "Size"
+            }
+		  ]
+        },
+		{
+          "type": "type_filter",
+		  "name": "Type Filter",
+		  "settings": [
+			
+			{
+              "type": "text",
+              "id": "type",
+              "label": "Type"
             }
 		  ]
         },
