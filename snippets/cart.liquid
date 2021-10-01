@@ -13,7 +13,7 @@ console.log(obj);
     title:"{{ upsellProduct.title | escape }}",
     url:"{{ upsellProduct.url | within: collections.all }}",
     image:"{{ upsellProduct.featured_image | img_url: 'medium' }}",
-    price:"{{ upsellProduct.price | divided_by:100.0 }}"
+    price:"{{ current_variant.price | divided_by:100.0 }}"
   };
   
 </script>
