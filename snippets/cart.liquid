@@ -5,9 +5,9 @@
 
 <script>
   
-  var upsellProduct = JSON.parse('{{ upsellProduct | json }}');
+  var upsellProduct = JSON.parse(`{{ upsellProduct | json }}`);
                                  console.log(upsellProduct);
-  console.log(upsellProduct.variants[0].compare_at_price);
+  var current_variant = upsellProduct.variants[0];
   
 </script>
 {% for item in cart.items %}
