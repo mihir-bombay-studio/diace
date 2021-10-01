@@ -77,6 +77,128 @@ $('.qty-plus').click(function() {
 
 
 
+function refreshCart(cart) {
+  let items = cart.items;
+  let output = "";
+
+  if (cart.item_count > 0) {
+    output += `<div class="cart-list">`;
+    for (var i = 0; i < items.length; i++) {
+      let item = cart.items[i];
+      output += `
+        <div id="cart_item_${item.variant_id}" class="list-item ${i}">
+          <a href="${item.url}" class="product-img">
+            <img class="cart-item__image"
+                src="${item.image}"
+                alt="${item.product_title}"
+                loading="lazy"
+                width="75"
+                height="75"
+                >
+          </a>
+          <div class="product-info">
+            <div class="product-name semibold"><a href="${item.url}">${item.product_title}</a></div>
+            <div class="flex-box justify-between">
+              <div class="product-variant">${item.variant_title != "Default Title" ? item.variant_title : null}</div>
+              <div class="count">
+                <span data-variant-id="${item.variant_id}" class="cart-minus-icon">-</span>
+                <span id="item_count_${item.variant_id}" class="item-count-number">${item.quantity}</span>
+                <span data-variant-id="${item.variant_id}" class="cart-plus-icon ">+</span>
+              </div>
+            </div>
+            <div class="item-price">
+              
+              <span class="discount-price semibold">${item.price}</span>
+            </div>
+            <button data-variant-id="${item.variant_id}" class="remove-item">verwijderen <span class="dustbin">Liquid error: This liquid context does not allow includes.</span></button>
+          </div>
+        </div>`;
+    }
+
+    output += `</div >`;
+    output += `
+    <div id="upsell_item_${current_variant.id}" class="upsell-container">
+      <div class="upsell-heading semibold">Mensen kochten ook:</div>
+      <div class="list-item">
+        <a href="${upsell.url}" class="product-img">
+          <img 
+              src="${upsell.image}" 
+              alt="${upsell.title}" 
+              class="upsell-img" 
+              loading="lazy"
+              >
+        </a>
+        <div class="product-info">
+          <div class="product-name semibold"><a href="${upsell.url}">${upsell.title}</a></div>
+          <div class="flex-box justify-between">
+            <div class="product-variant">${current_variant.title != "Default Title" ? current_variant.title : null}</div>
+          </div>
+          <div class="item-price flex-box justify-between">
+            <div class="">
+              ${current_variant.compare_at_price ? output += `<span class="compare-at-price"> ${current_variant.compare_at_price} </span>` : null}
+              <span class="discount-price semibold">${current_variant.price}</span>
+            </div>
+            <button 
+                    class="add-upsell-btn semibold AddToCart"
+                    data-variant-id = "${current_variant.id}"
+                    data-quantity = ""
+                    > 
+              <span class="plus-circle">+</span> 
+              <span class="add-upsell-btn-text">Toevoegen</span> 
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cart-footer">
+      <div class="cart-calculation">
+        <div class="flex-box justify-between">
+          <div class="subtotal-label light">subtotal</div>
+          <div id="sub_total_price" class="subtotal-price semibold">${cart.total_price / 100}</div>
+        </div>
+        <div class="flex-box justify-between">
+          <div class="dispatch-label light">Verzending</div>
+          <div class="dispatch-msg semibold">Berekend in volgende stap</div>
+        </div>
+      </div>
+      <a href="/checkout" class="checkout-btn">checkout</a>
+      <div class="text-center">
+        <a href="/" class="continue-shop underline-link">Verder winkelen</a>
+      </div>
+    </div>`;
+  } else {
+    output += `
+      <div class="cart-empty-state">
+        <div class="empty-msg">
+          <div class="empty-state-heading semibold">Er zit nog niets in je mandje</div>
+          <div class="empty-state-img">
+            Liquid error: This liquid context does not allow includes.
+          </div>
+        </div>
+        <div class="empty-state-links">
+          <a href="#" class="empty-state-link">
+            OPBERGEN
+            <span class="">
+              Liquid error: This liquid context does not allow includes.
+            </span>
+          </a>
+          <a href="#" class="empty-state-link">
+            STICKERS
+            <span class="">
+              Liquid error: This liquid context does not allow includes.
+            </span>
+          </a>
+          <a href="#" class="btn btn-yellow category-btn">BEKIJK ALLE CATEGORIEËN</a>
+        </div>
+      </div>`;
+  }
+  $('#cart_container').html(output);
+}
+
+
+
 
 
 $("body").on('click', '.AddToCart', function () {
@@ -96,8 +218,9 @@ $("body").on('click', '.AddToCart', function () {
     dataType: "json",
     data: formData,
   })
-  .done(function (data) {
+  .done(function (cart) {
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
+    refreshCart(cart);
   })
   .fail(function (error) {
     console.log(error);
