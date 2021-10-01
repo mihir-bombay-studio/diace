@@ -5,10 +5,12 @@ const max_price = Math.max(...a);
 console.log(a);
 console.log(max_price);
 
+const max_price_deci = max_price;
+console.log(max_price_deci);
 var ranger_max = document.getElementById("max-range").max;
 
 
-if (max_price < 100){
+if (max_price_deci < 100){
   document.getElementById("max-range").max = 100; 
   document.getElementById("max-range").value = 100;
 }
@@ -18,7 +20,7 @@ else
   document.getElementById("max-range").value = 1000;
 //   document.getElementById("demo").innerHTML = 1000;
 }
-      
+   
 
 (function() {
 
