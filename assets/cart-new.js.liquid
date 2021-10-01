@@ -194,7 +194,7 @@ function refreshCart(cart) {
         </div>
       </div>`;
   }
-  $('#cart_container').html(output);
+  $('#cart_body_wrapper').html(output);
 }
 
 
