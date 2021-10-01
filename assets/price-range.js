@@ -16,7 +16,8 @@ if (max_price_deci < 100){
   document.getElementsByClassName("max-range-value")[1].max = 100;
   document.getElementsByClassName("max-range-value")[0].value = 100;
   document.getElementsByClassName("max-range-value")[1].value = 100;
-    document.getElementById("higher-value").innerHTML = 100;
+  document.getElementById("lower-value").innerHTML = 0;
+  document.getElementById("higher-value").innerHTML = 100;
 }
 else
 {
