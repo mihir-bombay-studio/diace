@@ -94,7 +94,7 @@ $("body").on('click', '.AddToCart', function () {
     data: formData,
   })
   .done(function (data) {
-   
+    variant_id == upsell.id ? $(".upsell-container").fadeOut('slow') : null;
   })
   .fail(function (error) {
     console.log(error);
