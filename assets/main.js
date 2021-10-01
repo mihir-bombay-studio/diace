@@ -54,26 +54,6 @@ for (i = 0; i < acc.length; i++) {
   output.innerHTML = slider.value;
 
 
-var a = [];
-const btns=document.querySelectorAll('.product-collection-card[data-price]');
-var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
-const max_price = Math.max(...a);
-
-const max_price_deci = max_price;
-console.log(max_price_deci);
-var ranger_max = document.getElementById("myRange").max;
-
-
-if (max_price_deci < 100){
-  document.getElementById("myRange").max = 100; 
-  document.getElementById("myRange").value = 100;
-}
-else
-{
-  document.getElementById("myRange").max = 1000;
-  document.getElementById("myRange").value = 1000;
-  document.getElementById("demo").innerHTML = 1000;
-}
 
 
   slider.oninput = function() {
