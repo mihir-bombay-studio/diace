@@ -5,18 +5,18 @@ const max_price = Math.max(...a);
 console.log(a);
 console.log(max_price);
 
-var ranger_max = document.getElementById("myRange").max;
+var ranger_max = document.getElementById("max-range").max;
 
 
 if (max_price_deci < 100){
-  document.getElementById("myRange").max = 100; 
-  document.getElementById("myRange").value = 100;
+  document.getElementById("max-range").max = 100; 
+  document.getElementById("max-range").value = 100;
 }
 else
 {
-  document.getElementById("myRange").max = 1000;
-  document.getElementById("myRange").value = 1000;
-  document.getElementById("demo").innerHTML = 1000;
+  document.getElementById("max-range").max = 1000;
+  document.getElementById("max-range").value = 1000;
+//   document.getElementById("demo").innerHTML = 1000;
 }
       
 
