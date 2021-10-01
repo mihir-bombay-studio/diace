@@ -3,10 +3,9 @@
 {% assign current_variant = upsellProduct.selected_or_first_available_variant %}
 {% assign upsellProductHandle = upsellProduct.handle %}
 <script type="application/json">
-{{ current_variant | json }}
+{{ upsellProduct | json }}
 </script>
 <script>
-  {{ upsellProduct | json }}
   
   var upsell = {
     id:"{{ upsellProduct.first_available_variant.id }}",
