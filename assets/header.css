@@ -65,6 +65,8 @@ nav .dropdown {
 nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   max-height: 999px;
   opacity: 1;
+  position : absolute;
+  left : -25px;
 }
 
 .right-wrap{
