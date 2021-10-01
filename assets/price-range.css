@@ -111,10 +111,11 @@
 }
 
 .no-disp{
-    display: none;
+  display: none;
 }
 
 .range-count{
   display: flex;
   justify-content: space-between;
+  padding-left: 5px;
 }
