@@ -2,7 +2,7 @@
 {% assign upsellProduct = all_products[selected_product] %}
 {% assign current_variant = upsellProduct.selected_or_first_available_variant %}
 {% assign upsellProductHandle = upsellProduct.handle %}
-<script type="application/json">
+<script type="">
 var obj = JSON.parse('{{ upsellProduct | json }}');
 
 </script>
