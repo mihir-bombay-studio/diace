@@ -1,5 +1,7 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'price-range.css' | asset_url | stylesheet_tag }}
+
 
 {{ 'shop-by-category-banner.css' | asset_url | stylesheet_tag }}
 {{ 'collection-filter.css' | asset_url | stylesheet_tag }}
@@ -53,13 +55,22 @@
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
-           <div class="slidecontainer">
-             <input type="range" min="0" max="100" value="100" class="slider" id="myRange">
-             <div class="display_range">
-               <span id="min-count" class="min_range_num">0</span>
-               <span id="demo" class="min_range_num">100</span>
-			  </div>
-             <span class="no-disp" id="demo">€</span>
+            <div class="slidecontainer">
+              <div class="price-slider">
+                <span class="no-disp">
+                  <input type="number" value="100" min="0" max="1000" /> to
+                  <input type="number" value="1000" min="0" max="1000" />
+                </span>
+                <div class="range-inputs">
+                  <input value="100" min="0" max="1000" step="2" type="range" />
+                  <input value="800" min="0" max="1000" step="2" type="range" />
+                  <div class="range-count">
+                    <div id="lower-value">0</div>
+                    <div id="higher-value">1000</div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
           <div class="yellow-border-bottom"></div>
@@ -809,4 +820,4 @@
 {% endschema %}
 
 
- <script src="{{ "filter-by-count.js" | asset_url }}" defer="defer"></script>
+ <script src="{{ "price-range.js" | asset_url }}" defer="defer"></script>
