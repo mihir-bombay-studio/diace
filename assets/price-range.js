@@ -8,7 +8,7 @@ console.log(max_price);
 var ranger_max = document.getElementById("max-range").max;
 
 
-if (max_price_deci < 100){
+if (max_price < 100){
   document.getElementById("max-range").max = 100; 
   document.getElementById("max-range").value = 100;
 }
