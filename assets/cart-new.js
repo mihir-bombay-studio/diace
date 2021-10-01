@@ -270,13 +270,14 @@ function UpdateCart(variant_id){
       dataType: "json",
       data: update_data,
 
-    }).done(function(data){
+    }).done(function(cart){
 
-      console.log(data);
+      console.log(cart);
       $(`#item_count_${variant_id}`).text(update_quantity);
 //       $('#sub_total').text(`€ ${data.total_price/100} EUR`);
 //       $(`#line_price_${update_id}`).text(`€ ${(price*update_quantity)/100} EUR`);
 //       cart_item_count(data);
+      cartItemCount(cart);
       fullOpacity(`cart_item_${variant_id}`);
       $("#cart_container").removeClass("block-cursor");
 
@@ -310,10 +311,11 @@ function delete_item(variant_id){
     dataType: "json",
     data: delete_data,
   })
-  .done(function(data){
-    console.log(data);
+  .done(function(cart){
+    console.log(cart);
     $(`#cart_item_${variant_id}`).fadeOut('slow');
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeIn('slow') : null;
+    cartItemCount(cart);
     $("#cart_container").removeClass("block-cursor");
   })
   .fail(function() {
