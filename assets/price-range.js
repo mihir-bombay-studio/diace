@@ -25,10 +25,8 @@
         var product_price = $(this).data('price');
         console.log(product_price)
         $(this).addClass('out-of-range-min');
-        if( product_price <= slide1 || product_price <= slide2) {
+        if( product_price >= slide1 || product_price <= slide2) {
           $(this).removeClass('out-of-range-min');
-        }else if(product_price <= slide1){
-          $(this).addClass('out-of-range-min');
         }
       });
 
