@@ -147,9 +147,9 @@ function refreshCart(cart) {
             <div class="product-variant">${current_variant.title != "Default Title" ? current_variant.title : null}</div>
           </div>
           <div class="item-price flex-box justify-between">
-            <div class="">
-              ${current_variant.compare_at_price ? output += `<span class="compare-at-price"> ${current_variant.compare_at_price} </span>` : null}
-              <span class="discount-price semibold">${current_variant.price}</span>
+            <div class="">`;
+              current_variant.compare_at_price ? output += `<span class="compare-at-price"> ${current_variant.compare_at_price} </span>` : null
+              output += `<span class="discount-price semibold">${current_variant.price}</span>
             </div>
             <button 
                     class="add-upsell-btn semibold AddToCart"
