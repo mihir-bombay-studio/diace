@@ -23,7 +23,7 @@ else
 {
   document.getElementsByClassName("max-range-value")[0].max = 1000; 
   document.getElementsByClassName("max-range-value")[1].max = 1000;
-  document.getElementsByClassName("max-range-value")[0].value = 1000;
+  document.getElementsByClassName("max-range-value")[0].value = 0;
   document.getElementsByClassName("max-range-value")[1].value = 1000;
 
 }
