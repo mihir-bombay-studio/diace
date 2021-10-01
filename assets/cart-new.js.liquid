@@ -278,6 +278,7 @@ function UpdateCart(variant_id){
 //       $(`#line_price_${update_id}`).text(`€ ${(price*update_quantity)/100} EUR`);
 //       cart_item_count(data);
       cartItemCount(cart);
+      $('#sub_total_price').text(`€ ${cart.total_price/100}`);
       fullOpacity(`cart_item_${variant_id}`);
       $("#cart_container").removeClass("block-cursor");
 
