@@ -75,18 +75,24 @@ $("#cart_container").on( "click", ".qty-plus", function() {
 });
 
 
-function get_full_cart(){
+// function to update the cart item quantity in navbar
+function cartItemCount(cart){
+  if (cart.item_count > 0){
+    $("#cart-quantity").addClass("cart-quantity");
+    $("#cart-quantity").text(`${cart.item_count}`);
+  }
+  else{
+    $("#cart-quantity").removeClass("cart-quantity");
+    $("#cart-quantity").text("");
+  }
+}
 
+function getCartDetails(){
   jQuery.getJSON('/cart.js', function(cart) {
-
-//     // update quantity of cart items
-//     cart_item_count(cart);
-
-    //after adding the product to cart update DOM elements
+     // update quantity of cart items
+    cartItemCount(cart);
     refreshCart(cart);
-
   });
-
 }
 
 
@@ -233,7 +239,7 @@ $("body").on('click', '.AddToCart', function () {
   })
   .done(function (cart) {
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
-    get_full_cart();
+    getCartDetails();
   })
   .fail(function (error) {
     console.log(error);
