@@ -5,16 +5,8 @@
 
 <script>
   
-  var obj = JSON.parse('{{ upsellProduct | json }}');
-console.log(obj);
-  
-  var upsell = {
-    id:"{{ upsellProduct.first_available_variant.id }}",
-    title:"{{ upsellProduct.title | escape }}",
-    url:"{{ upsellProduct.url | within: collections.all }}",
-    image:"{{ upsellProduct.featured_image | img_url: 'medium' }}",
-    price:"{{ current_variant.price | divided_by:100.0 }}"
-  };
+  var upsellProduct = JSON.parse('{{ upsellProduct | json }}');
+  console.log(upsellProduct);
   
 </script>
 {% for item in cart.items %}
