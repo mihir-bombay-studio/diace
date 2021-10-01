@@ -24,10 +24,10 @@
       $('.product-collection-card').each(function() {
         var product_price = $(this).data('price');
         console.log(product_price)
-              $(this).addClass('out-of-range-min');
-        //       if( product_price <= range_op ) {
-        //         $(this).removeClass('out-of-range-min');
-        //       }
+        $(this).addClass('out-of-range-min');
+        if( product_price <= slide1 || product_price <= slide2) {
+          $(this).removeClass('out-of-range-min');
+        }
       });
 
     }
