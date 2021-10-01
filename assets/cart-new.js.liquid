@@ -76,6 +76,20 @@ $('.qty-plus').click(function() {
 });
 
 
+function get_full_cart(){
+
+  jQuery.getJSON('/cart.js', function(cart) {
+
+//     // update quantity of cart items
+//     cart_item_count(cart);
+
+    //after adding the product to cart update DOM elements
+    refreshCart(cart);
+
+  });
+
+}
+
 
 function refreshCart(cart) {
   let items = cart.items;
@@ -220,7 +234,7 @@ $("body").on('click', '.AddToCart', function () {
   })
   .done(function (cart) {
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
-    refreshCart(cart);
+    get_full_cart();
   })
   .fail(function (error) {
     console.log(error);
