@@ -2,23 +2,29 @@ var a = [];
 const btns=document.querySelectorAll('.product-collection-card[data-price]');
 var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
 const max_price = Math.max(...a);
-console.log(a);
-console.log(max_price);
+
 
 const max_price_deci = max_price;
 console.log(max_price_deci);
-var ranger_max = document.getElementById("max-range").max;
-
+var max_range_1 = document.getElementByClassName("max-range-value")[0].max;
+var max_range_2 = document.getElementByClassName("max-range-value")[1].max;
+console.log(max_range_1);
+console.log(max_range_2);
 
 if (max_price_deci < 100){
-  document.getElementById("max-range").max = 100; 
-  document.getElementById("max-range").value = 100;
+  document.getElementByClassName("max-range-value")[0].max = 100; 
+  document.getElementByClassName("max-range-value")[1].max= = 100;
+  document.getElementByClassName("max-range-value")[0].value = 100;
+  document.getElementByClassName("max-range-value")[1].value = 100;
+    document.getElementById("higher-value").innerHTML = 100;
 }
 else
 {
-  document.getElementById("max-range").max = 1000;
-  document.getElementById("max-range").value = 1000;
-//   document.getElementById("demo").innerHTML = 1000;
+  document.getElementByClassName("max-range-value")[0].max = 1000; 
+  document.getElementByClassName("max-range-value")[1].max= = 1000;
+  document.getElementByClassName("max-range-value")[0].value = 1000;
+  document.getElementByClassName("max-range-value")[1].value = 1000;
+
 }
    
 
