@@ -8,10 +8,10 @@
 <script>
   
   var obj = JSON.parse('{{ upsellProduct | json }}');
-                       console.log(obj);
-
+console.log(obj);
+  
   var upsell = {
-    id:"{{ upsellProduct.id }}",
+    id:"{{ upsellProduct.first_available_variant.id }}",
     title:"{{ upsellProduct.title | escape }}",
     url:"{{ upsellProduct.url | within: collections.all }}",
     image:"{{ upsellProduct.featured_image | img_url: 'medium' }}",
@@ -88,8 +88,8 @@
             </div>
             <div class="item-price flex-box justify-between">
               <div class="">
-                {% if current_variant.compare_at_price %}<span class="compare-at-price">{{ upsellProduct.compare_at_price | money }}</span>{% endif %}
-                <span class="discount-price semibold">{{ upsellProduct.price | money}}</span>
+                {% if current_variant.compare_at_price %}<span class="compare-at-price">{{ current_variant.compare_at_price | money }}</span>{% endif %}
+                <span class="discount-price semibold">{{ current_variant.price | money}}</span>
               </div>
               <button 
                       class="add-upsell-btn semibold AddToCart"
