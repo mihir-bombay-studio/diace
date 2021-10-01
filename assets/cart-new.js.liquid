@@ -51,8 +51,7 @@ function fullOpacity(element_id){
   }, 300);
 
 }
-
-$('.qty-minus').click(function() {
+$("#cart_container").on( "click", ".qty-minus", function() {
   var data_qty = parseInt($(this).next().data('qty'));
   let variant_id = parseInt($(this).data('variant-id'));
   if( data_qty != 1 )
@@ -66,7 +65,7 @@ $('.qty-minus').click(function() {
   }
 });
 
-$('.qty-plus').click(function() {
+$("#cart_container").on( "click", ".qty-plus", function() {
   var data_qty = parseInt($(this).prev().data('qty'));
   let variant_id = parseInt($(this).data('variant-id'));
   data_qty = data_qty + 1;
