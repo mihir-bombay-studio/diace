@@ -106,7 +106,7 @@ $("body").on('click', '.AddToCart', function () {
 
 
 function UpdateCart(variant_id){
-
+  $("#cart_container").addClass("block-cursor");
   reduceOpacity(`cart_item_${variant_id}`);
   let update_quantity = $(`#item_count_${variant_id}`).data("qty");
 //   let price = $(`#line_price_${update_id}`).data("price");
@@ -133,6 +133,7 @@ function UpdateCart(variant_id){
 //       $(`#line_price_${update_id}`).text(`€ ${(price*update_quantity)/100} EUR`);
 //       cart_item_count(data);
       fullOpacity(`cart_item_${variant_id}`);
+      $("#cart_container").removeClass("block-cursor");
 
     }).fail(function() {
       console.log( "failed to update" );
