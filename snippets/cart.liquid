@@ -6,7 +6,7 @@
 <script>
   
   var upsellProduct = JSON.parse('{{ upsellProduct | json }}');
-  console.log(upsellProduct);
+  console.log(upsellProduct.selected_or_first_available_variant.compare_at_price);
   
 </script>
 {% for item in cart.items %}
