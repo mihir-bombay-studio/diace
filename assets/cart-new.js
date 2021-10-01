@@ -78,11 +78,11 @@ $("#cart_container").on( "click", ".qty-plus", function() {
 // function to update the cart item quantity in navbar
 function cartItemCount(cart){
   if (cart.item_count > 0){
-    $("#cart-quantity").addClass("cart-quantity");
+    $("#cart-quantity").addClass("cart-item-count ");
     $("#cart-quantity").text(`${cart.item_count}`);
   }
   else{
-    $("#cart-quantity").removeClass("cart-quantity");
+    $("#cart-quantity").removeClass("cart-item-count ");
     $("#cart-quantity").text("");
   }
 }
