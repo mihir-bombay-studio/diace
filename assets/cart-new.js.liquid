@@ -150,6 +150,7 @@ function UpdateCart(variant_id){
 
 
 function delete_item(variant_id){
+  $("#cart_container").addClass("block-cursor");
   reduceOpacity(`cart_item_${variant_id}`);
 
   let delete_data = {
@@ -168,6 +169,7 @@ function delete_item(variant_id){
     console.log(data);
     $(`#cart_item_${variant_id}`).fadeOut('slow');
     variant_id == upsell.id ? $(".upsell-container").fadeIn('slow') : null;
+    $("#cart_container").removeClass("block-cursor");
   })
   .fail(function() {
     console.log( "failed to delete" );
