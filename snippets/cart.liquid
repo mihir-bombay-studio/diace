@@ -11,7 +11,7 @@
                        console.log(obj);
 
   var upsell = {
-    id:"{{ upsellProduct.first_available_variant.id }}",
+    id:"{{ upsellProduct.id }}",
     title:"{{ upsellProduct.title | escape }}",
     url:"{{ upsellProduct.url | within: collections.all }}",
     image:"{{ upsellProduct.featured_image | img_url: 'medium' }}",
