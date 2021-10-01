@@ -1,9 +1,6 @@
 .price-slider {
-  width: 300px;
-  margin: auto;
   text-align: center;
   position: relative;
-  height: 6em;
 }
 .price-slider input[type="range"] {
   position: absolute;
@@ -118,6 +115,5 @@
 
 .range-count{
   display: flex;
-  width: 300px;
   justify-content: space-between;
 }
