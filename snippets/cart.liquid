@@ -3,11 +3,13 @@
 {% assign current_variant = upsellProduct.selected_or_first_available_variant %}
 {% assign upsellProductHandle = upsellProduct.handle %}
 <script type="">
-var obj = JSON.parse('{{ upsellProduct | json }}');
-console.log(obj);
+
 </script>
 <script>
   
+  var obj = JSON.parse('{{ upsellProduct | json }}');
+                       console.log(obj);
+
   var upsell = {
     id:"{{ upsellProduct.first_available_variant.id }}",
     title:"{{ upsellProduct.title | escape }}",
