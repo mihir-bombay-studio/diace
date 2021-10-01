@@ -21,7 +21,7 @@ if (max_price_deci < 100){
 else
 {
   document.getElementByClassName("max-range-value")[0].max = 1000; 
-  document.getElementByClassName("max-range-value")[1].max= = 1000;
+  document.getElementByClassName("max-range-value")[1].max = 1000;
   document.getElementByClassName("max-range-value")[0].value = 1000;
   document.getElementByClassName("max-range-value")[1].value = 1000;
 
