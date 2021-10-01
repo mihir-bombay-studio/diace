@@ -1,6 +1,7 @@
 .price-slider {
   text-align: center;
   position: relative;
+  margin-top : 20px;
 }
 .price-slider input[type="range"] {
   position: absolute;
