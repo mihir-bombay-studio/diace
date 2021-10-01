@@ -27,7 +27,7 @@
         $(this).addClass('out-of-range-min');
         if( product_price <= slide1 || product_price <= slide2) {
           $(this).removeClass('out-of-range-min');
-        }else if(product_price >= slide1 || product_price <= slide2){
+        }else if(product_price >= slide1 && product_price <= slide2){
           $(this).removeClass('out-of-range-min');
         }
       });
