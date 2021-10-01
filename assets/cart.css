@@ -37,10 +37,10 @@
     transition: opacity 800ms ease;
 }
 
-.cart-mask.active {
+/* .cart-mask.active {
     opacity: 1;
     visibility: visible;
-}
+} */
 
 .cart-mask.active .cart-container {
     opacity: 1;
