@@ -1,3 +1,11 @@
+var a = [];
+const btns=document.querySelectorAll('.product-collection-card[data-price]');
+var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
+const max_price = Math.max(...a);
+console.log(a);
+console.log(max_price);
+      
+
 (function() {
 
   var parent = document.querySelector(".price-slider");
@@ -22,12 +30,6 @@
       document.getElementById("lower-value").innerHTML = slide1;
       document.getElementById("higher-value").innerHTML = slide2;
       
-      var a = [];
-      const btns=document.querySelectorAll('.product-collection-card[data-price]');
-      var price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
-      const max_price = Math.max(...a);
-      console.log(a);
-      console.log(max_price);
       
       $('.product-collection-card').each(function() {
         var product_price = $(this).data('price');
