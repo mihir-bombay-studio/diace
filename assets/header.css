@@ -40,7 +40,7 @@ nav .dropdown {
   display: block;
   border: 0;
   position: absolute;
-  left: 0;
+  left: -25px;
   z-index: 1;
   width: min-content;
   min-width: 50px;
@@ -65,12 +65,6 @@ nav .dropdown {
 nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   max-height: 999px;
   opacity: 1;
-  position : absolute;
-  left : -25px;
-}
-
-nav .dropdown:hover .header-nav-list-sub ul li{
-	margin-right : 26px;
 }
 
 .right-wrap{
