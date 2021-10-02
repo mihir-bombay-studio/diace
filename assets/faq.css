@@ -94,3 +94,14 @@
 .banner-link:hover .right-black-chveron .a-icon-black-right-chevron {
     stroke: var(--background-yellow);
 }
+
+@media screen and (max-width: 768px) {
+  .pill{
+    padding: 3px 15px;
+    background : #fec23B33;
+  }
+  .faq-section{
+    background : #fff;
+  }
+  
+}
