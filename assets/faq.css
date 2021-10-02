@@ -103,5 +103,8 @@
   .faq-section{
     background : #fff;
   }
-  
+  .pills.flex-box{
+    flex-wrap:wrap;
+    justify-content : sp
+  }	
 }
