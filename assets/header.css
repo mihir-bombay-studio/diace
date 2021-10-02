@@ -211,7 +211,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 
 }
 
-.content-wrapper{
+.hover-content-wrapper{
   padding: 26px;
   display: flex;
   justify-content: space-between;
