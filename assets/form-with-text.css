@@ -145,7 +145,8 @@ button{
   border: none;
 }
 
-@media screen (max-width : 768px){
+
+@media screen and (max-width: 768px) {
   .form_with_text_wrapper{
   	flex-direction : column;
   }
