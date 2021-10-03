@@ -78,6 +78,9 @@ h2.image-with-text-heading {
  .bg-yellow-dots{
   	display : none;
   }
+  .image-with-text .flex-box{
+  	flex-direction : column-reverse;
+  }
  
 }
 
