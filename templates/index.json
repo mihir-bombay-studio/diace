@@ -125,21 +125,6 @@
         "padd-top": false
       }
     },
-    "featured_products": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Featured products",
-        "collection": "",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false
-      }
-    },
     "1631695632e79ff00a": {
       "type": "featured-collection-new",
       "blocks": {
@@ -240,9 +225,74 @@
       ],
       "settings": {
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
-        "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
+        "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP"
+      }
+    },
+    "1633285415946466ea": {
+      "type": "newsletter-new",
+      "settings": {
         "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
-        "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community."
+        "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.",
+        "submit_btn_text": "VERZENDEN"
+      }
+    },
+    "16316243304aadf5de": {
+      "type": "faq",
+      "blocks": {
+        "a90a1c8d-dff1-4016-a9e2-50ebc4748416": {
+          "type": "faq",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "29c1604e-6449-4fb5-85c5-c86d85ffe18e": {
+          "type": "faq",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "6308c7dd-e067-4d83-b9ce-998bc81c0a9c": {
+          "type": "faq",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "0717fd64-899b-4645-908e-e2dfa003dc10": {
+          "type": "faq",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "57030f3d-d17b-4c89-9495-22add3d117ec": {
+          "type": "faq",
+          "settings": {
+            "question": "Question",
+            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+          }
+        },
+        "8db0535c-5ad7-45a5-8013-f609412d4161": {
+          "type": "button",
+          "settings": {
+            "button_label": "MEER VRAGEN",
+            "button_link": "shopify:\/\/blogs\/news",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "a90a1c8d-dff1-4016-a9e2-50ebc4748416",
+        "29c1604e-6449-4fb5-85c5-c86d85ffe18e",
+        "6308c7dd-e067-4d83-b9ce-998bc81c0a9c",
+        "0717fd64-899b-4645-908e-e2dfa003dc10",
+        "57030f3d-d17b-4c89-9495-22add3d117ec",
+        "8db0535c-5ad7-45a5-8013-f609412d4161"
+      ],
+      "settings": {
+        "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
       }
     },
     "1631620069de812214": {
@@ -387,78 +437,19 @@
         "btn_txt": "SCHRIJF REVIEW",
         "btn_link": "#"
       }
-    },
-    "16316243304aadf5de": {
-      "type": "faq",
-      "blocks": {
-        "a90a1c8d-dff1-4016-a9e2-50ebc4748416": {
-          "type": "faq",
-          "settings": {
-            "question": "Question",
-            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
-          }
-        },
-        "29c1604e-6449-4fb5-85c5-c86d85ffe18e": {
-          "type": "faq",
-          "settings": {
-            "question": "Question",
-            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
-          }
-        },
-        "6308c7dd-e067-4d83-b9ce-998bc81c0a9c": {
-          "type": "faq",
-          "settings": {
-            "question": "Question",
-            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
-          }
-        },
-        "0717fd64-899b-4645-908e-e2dfa003dc10": {
-          "type": "faq",
-          "settings": {
-            "question": "Question",
-            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
-          }
-        },
-        "57030f3d-d17b-4c89-9495-22add3d117ec": {
-          "type": "faq",
-          "settings": {
-            "question": "Question",
-            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
-          }
-        },
-        "8db0535c-5ad7-45a5-8013-f609412d4161": {
-          "type": "button",
-          "settings": {
-            "button_label": "MEER VRAGEN",
-            "button_link": "shopify:\/\/blogs\/news",
-            "button-color": "grey"
-          }
-        }
-      },
-      "block_order": [
-        "a90a1c8d-dff1-4016-a9e2-50ebc4748416",
-        "29c1604e-6449-4fb5-85c5-c86d85ffe18e",
-        "6308c7dd-e067-4d83-b9ce-998bc81c0a9c",
-        "0717fd64-899b-4645-908e-e2dfa003dc10",
-        "57030f3d-d17b-4c89-9495-22add3d117ec",
-        "8db0535c-5ad7-45a5-8013-f609412d4161"
-      ],
-      "settings": {
-        "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
-      }
     }
   },
   "order": [
     "16316849519d264fc8",
     "image_banner",
     "image_with_text",
-    "featured_products",
     "1631695632e79ff00a",
     "1631611375b605aa08",
     "16317046102c025894",
+    "1633285415946466ea",
+    "16316243304aadf5de",
     "1631620069de812214",
     "image_with_text_2",
-    "1631768996518add79",
-    "16316243304aadf5de"
+    "1631768996518add79"
   ]
 }
