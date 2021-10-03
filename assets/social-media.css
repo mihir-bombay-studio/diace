@@ -193,4 +193,7 @@ h2.newsletter-subscription-heading {
   .social-media.flex-box{
     flex-wrap: wrap;
   }
+  .sm-left, .sm-right{
+    width : 100%;
+  }
 }
