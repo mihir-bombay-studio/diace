@@ -39,3 +39,10 @@
 .review-wrapper .dots-left-down {
     bottom: -60px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .review-wrapper .bg-yellow-dots{
+  	display :none;
+  }
+}
