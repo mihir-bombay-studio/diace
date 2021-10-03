@@ -187,3 +187,10 @@ h2.newsletter-subscription-heading {
     margin-bottom : 82px;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .social-media.flex-box{
+    flex-wrap: wrap;
+  }
+}
