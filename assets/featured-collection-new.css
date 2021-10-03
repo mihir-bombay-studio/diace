@@ -110,4 +110,8 @@ h2.featured-collection-heading {
   h2.featured-collection-heading{
   	font-size : 24px;
   }
+  .featured-collection-desc.semibold{
+    font-size : 16px;
+    font-weight : 300;
+  }
 }
