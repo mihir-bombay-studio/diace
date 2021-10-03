@@ -158,6 +158,25 @@
           {% endfor %}
         </ul>
     </div>
+    
+    
+    <div class="accordion question semibold flex-box justify-between">
+      <div class="question-left">OVER DIACÉ</div>
+      <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+    </div>
+    <div class="panel answer light">
+      <ul class="footer-nav">
+          {% for block in section.blocks %}
+          {% if block.type == "Footer_menu" %}
+          {% for link in linklists[block.settings.Menu2].links %}
+          <li class="footer-nav-item">
+            <a href="{{ link.url }}" class="btn-footer">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+          {% endif %}
+          {% endfor %}
+        </ul>
+    </div>
   </div>
 </footer>
 
