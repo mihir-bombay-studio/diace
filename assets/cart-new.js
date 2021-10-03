@@ -97,7 +97,6 @@ function getCartDetails(){
 
 
 function refreshCart(cart) {
-  let upsellHandle = $("#cart_container").data("handle");
   let items = cart.items;
   let output = "";
 
@@ -138,7 +137,7 @@ function refreshCart(cart) {
 
     output += `</div >`;
     if(upsellHandle != item.handle){
-//       console.log(upsell.available);
+      console.log(upsell.available);
     output += `<div id="upsell_item_${current_variant.id}" class="upsell-container">
       <div class="upsell-heading semibold">Mensen kochten ook:</div>
       <div class="list-item">
