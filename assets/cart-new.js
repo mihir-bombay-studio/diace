@@ -200,7 +200,7 @@ output += `
         </div>
       </div>
       <a href="/checkout" class="checkout-btn">checkout</a>
-      <div class="text-center">
+      <div class="text-center no-mobile">
         <a href="/" class="continue-shop underline-link">Verder winkelen</a>
       </div>
     </div>`;
