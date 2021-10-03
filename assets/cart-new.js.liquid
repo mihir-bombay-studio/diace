@@ -314,7 +314,11 @@ function delete_item(variant_id){
   .done(function(cart){
     console.log(cart);
     $(`#cart_item_${variant_id}`).fadeOut('slow');
-    variant_id == upsell.id ? $("#cart_container .upsell-container").fadeIn('slow') $("#cart_container").removeClass("hide-upsell") : null;
+    
+    if(variant_id == upsell.id){ 
+      $("#cart_container .upsell-container").fadeIn('slow'); 
+      $("#cart_container").removeClass("hide-upsell");
+    }
     cartItemCount(cart);
     refreshCart(cart);
     $("#cart_container").removeClass("block-cursor");
