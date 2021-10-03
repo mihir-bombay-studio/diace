@@ -104,7 +104,7 @@ function refreshCart(cart) {
     output += `<div class="cart-list">`;
     for (var i = 0; i < items.length; i++) {
       let item = cart.items[i];
-      item.variant_id == upsell.id ? upsell.available = true : null;
+      item.variant_id == upsell.id ? upsell.available = true : upsell.available = false;
       output += `
         <div id="cart_item_${item.variant_id}" class="list-item ${i}">
           <a href="${item.url}" class="product-img">
