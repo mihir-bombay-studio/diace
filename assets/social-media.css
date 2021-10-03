@@ -217,7 +217,7 @@ h2.newsletter-subscription-heading {
   	height : 51px;
     margin-bottom:16px;
     width :100%;
-    padding-left : 0;
+    margin-right : 0;
   }
   .newsletter-container .submit-btn{
     width : 100%;
