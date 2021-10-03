@@ -9,12 +9,15 @@
     title:"{{ upsellProduct.title | escape }}",
     url:"{{ upsellProduct.url | within: collections.all }}",
     image:"{{ upsellProduct.featured_image | img_url: 'medium' }}",
-    price:"{{ upsellProduct.price | divided_by:100.0 }}",
-    available:false
+    price:"{{ upsellProduct.price | divided_by:100.0 }}"
   };
   var upsellProduct = JSON.parse(`{{ upsellProduct | json }}`);
   console.log(upsellProduct);
   var current_variant = upsellProduct.variants[0];
+  
+  var renderSvg = {
+    icon_remove:"{% render 'icon-remove' %}"
+  }
 </script>
 {% for item in cart.items %}
 {% if item.product.handle == upsellProductHandle %}
