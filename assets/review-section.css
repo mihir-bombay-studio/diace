@@ -40,9 +40,13 @@
     bottom: -60px;
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .review-wrapper .bg-yellow-dots{
   	display :none;
   }
+}
+
+
+@media screen and (max-width: 768px) {
+  
 }
