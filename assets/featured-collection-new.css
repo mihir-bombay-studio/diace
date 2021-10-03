@@ -107,4 +107,7 @@ h2.featured-collection-heading {
   .featured-collection-wrapper{
     margin-bottom : 82px;
   }
+  h2.featured-collection-heading{
+  	font-size : 24px;
+  }
 }
