@@ -321,7 +321,6 @@
     bottom: 0%;
   }
 
-
   .cart-container {
     position: absolute;
     height: 100%;
@@ -330,13 +329,26 @@
     border-radius: 8px 8px 0 0;
     border: 2px solid #FEC23B;
   }
+  
+  .cart-body-wrapper {
+    padding: 20px 0 0 0;
+  }
+  
+  .cart-list{
+    margin-bottom: 0;
+    padding: 0 20px;
+  }
+
+  .upsell-container {
+    padding: 20px;
+    line-height: normal;
+  }
 
   .cart-footer {
     padding: 0;
   }
-  
+
   .cart-calculation {
-    margin-bottom: 16px;
     padding: 0 20px;
   }
   
