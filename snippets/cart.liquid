@@ -88,12 +88,20 @@
                 <span class="discount-price semibold">{{ current_variant.price | money}}</span>
               </div>
               <button 
-                      class="add-upsell-btn semibold AddToCart"
+                      class="add-upsell-btn semibold AddToCart no-mobile"
                       data-variant-id = "{{upsellProduct.first_available_variant.id }}"
                       data-quantity = ""
                       > 
                 <span class="plus-circle">+</span> 
                 <span class="add-upsell-btn-text">Toevoegen</span> 
+              </button>
+              <button 
+                      class="add-upsell-btn AddToCart btn btn-yellow no-desktop"
+                      data-variant-id = "{{upsellProduct.first_available_variant.id }}"
+                      data-quantity = ""
+                      > 
+                <span class="plus-circle">+</span> 
+                <span class="">{% render 'icon-cart-new' %}</span> 
               </button>
             </div>
           </div>
