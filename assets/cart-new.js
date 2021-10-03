@@ -160,7 +160,7 @@ function refreshCart(cart) {
           <div class="item-price flex-box justify-between">
             <div class="">`;
               current_variant.compare_at_price ? output += `<span class="compare-at-price"> ${current_variant.compare_at_price} </span>` : null
-              output += `<span class="discount-price semibold">${current_variant.price}</span>
+              output += `<span class="discount-price semibold">${convertNumber(current_variant.price)}</span>
             </div>
             <button 
                     class="add-upsell-btn semibold AddToCart"
