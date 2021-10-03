@@ -46,7 +46,7 @@
     display :none;
   }
   .review-part{
-    padding: 25px 14px 0;
+    padding: 52px 14px 0;
   }
 }
 
@@ -64,5 +64,8 @@
   }	
   .review-wrapper{
     margin-bottom: 82px;
+  }
+  .review-part{
+    padding: 25px 14px 0;
   }
 }
