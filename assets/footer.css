@@ -54,7 +54,8 @@ footer{
 
 
 @media screen and (max-width: 768px) {
-  .footer-lower-nav-item{
+  .footer-lower-nav-item , .footer-wrapper{
     display : none;
   }
+
 }
