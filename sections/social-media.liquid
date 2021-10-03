@@ -50,23 +50,7 @@
       {% endfor %}
     </div>
   </div>
-  <div class="socila-media-lower">
-    
-    <h2 class="text-center newsletter-subscription-heading bold">{{section.settings.subscription_heading}}</h2>
-    <div class="text-center newsletter-subscription-desc light">{{section.settings.subscription_desc}}</div>
-    <div class="subscription-form flex-box">
-      {% form 'contact' %}
-      {%- if form.errors -%}
-      {{ form.errors | default_errors  }}
-      {%- endif -%}
-      {%- if form.posted_successfully? -%}
-
-      {%- endif -%}
-      {% endform %}
-      <input class="subscription-form-input" type="email" name="contact[email]" placeholder="youremail@mail.com" required>
-      <button class="submit-btn btn bold" type="submit" form="contact_form" value="Submit">VERZENDEN</button>
-    </div>
-  </div>
+  
 </div>
 
 {% schema %}
@@ -82,17 +66,8 @@
       "type": "text",
       "id": "text_over_img",
       "label": "Text Over Image"
-    },
-	{
-		"type": "text",
-      "id": "subscription_heading",
-      "label": "Subscription Heading"
-	},
-	{
-		"type": "text",
-      "id": "subscription_desc",
-      "label": "Subscription Desc"
-	}
+    }
+	
   ],
   "blocks": [
     {

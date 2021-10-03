@@ -1,7 +1,42 @@
+{{ 'social-media.css' | asset_url | stylesheet_tag }}
+<div class="socila-media-lower">
+
+  <h2 class="text-center newsletter-subscription-heading bold">{{section.settings.subscription_heading}}</h2>
+  <div class="text-center newsletter-subscription-desc light">{{section.settings.subscription_desc}}</div>
+  <div class="subscription-form flex-box">
+    {% form 'contact' %}
+    {%- if form.errors -%}
+    {{ form.errors | default_errors  }}
+    {%- endif -%}
+    {%- if form.posted_successfully? -%}
+
+    {%- endif -%}
+    {% endform %}
+    <input class="subscription-form-input" type="email" name="contact[email]" placeholder="youremail@mail.com" required>
+    <button class="submit-btn btn bold" type="submit" form="contact_form" value="Submit">{{section.settings.submit_btn_text}}</button>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Newsletter Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "subscription_heading",
+        "label": "Subscription Heading"
+      },
+      {
+        "type": "text",
+        "id": "subscription_desc",
+        "label": "Subscription Desc"
+      },
+      {
+        "type": "text",
+        "id": "submit_btn_text",
+        "label": "Submit Button Text"
+      }
+	]
   }
 {% endschema %}
 
