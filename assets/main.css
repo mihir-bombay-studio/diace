@@ -120,3 +120,17 @@ font-size: inherit;
   color: #000000;
   text-transform: uppercase;
 }
+
+
+
+@media screen and (min-width: 479px) {
+  .no-desktop{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .no-mobile{
+    display:none;
+  }
+}
