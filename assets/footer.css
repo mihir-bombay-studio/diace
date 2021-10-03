@@ -52,6 +52,10 @@ footer{
 	width: 25%;
 }
 
+.disp-none{
+  display :none;
+}
+
 
 @media screen and (max-width: 768px) {
   .footer-lower-nav-item , .footer-wrapper{
