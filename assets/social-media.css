@@ -199,4 +199,7 @@ h2.newsletter-subscription-heading {
   .sm-right.flex-box{
     margin-top: 26px;
   }
+  .sm-other-img.rel{
+    margin: 10px auto;
+  }
 }
