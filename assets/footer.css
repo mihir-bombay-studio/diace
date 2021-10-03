@@ -66,9 +66,12 @@ footer{
 }
 
 .accordion.question.footer {
-  border-bottom : 2px solid #FEC23B;
+  border-top : 2px solid #FEC23B;
 }
 
+.footer.panel.panel-bottom-border{
+  border : none;
+}
 
 .footer.yellow-down-chevron svg{
   width :15px;
