@@ -141,6 +141,7 @@
            src="{{ section.settings.footer_brand_img | img_url : "medium" }}" loading="lazy" alt="">
       {% else %}{{ section.settings.footer_brand_svg }}{% endif %}
     </a>
+    
     <div class="accordion question semibold flex-box justify-between">
       <div class="question-left">PRODUCTEN</div>
       <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
@@ -176,6 +177,20 @@
           {% endif %}
           {% endfor %}
         </ul>
+    </div>
+    
+    <div class="accordion question semibold flex-box justify-between">
+      <div class="question-left">HULP NODIG?</div>
+      <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+    </div>
+    <div class="panel answer light">
+      {% for block in section.blocks %}
+        {% if block.type == "Footer_help" %}
+        <div>{{ block.settings.help_para1 }}</div>
+        <br>
+        <div>{{ block.settings.help_para2 }}</div>
+        {% endif %}
+        {% endfor %}
     </div>
   </div>
 </footer>
