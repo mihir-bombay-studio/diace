@@ -79,8 +79,8 @@
           </a>
           <div class="product-info">
             <div class="product-name semibold"><a href="{{ upsellProduct.url | within: collections.all }}">{{ upsellProduct.title }}</a></div>
-            <div>
-              <div>
+            <div class="flex-box justify-between">
+              <div class="w-100">
                 <div class="flex-box justify-between">
                   <div class="product-variant">{% if current_variant.title != "Default Title" %}{{ current_variant.title }}{% endif %}</div>
                 </div>
