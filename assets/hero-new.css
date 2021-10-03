@@ -103,4 +103,7 @@
   .hero.flex-box{
   	flex-wrap : wrap;
   }
+  .hero-new-wrapper .btn{
+  	margin : 0 auto;
+  }
 }
