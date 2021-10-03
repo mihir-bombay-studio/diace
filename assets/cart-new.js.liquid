@@ -176,7 +176,7 @@ output += `
       <div class="cart-calculation">
         <div class="flex-box justify-between">
           <div class="subtotal-label light">subtotal</div>
-          <div id="sub_total_price" class="subtotal-price semibold">${cart.total_price / 100}</div>
+          <div id="sub_total_price" class="subtotal-price semibold">${(cart.total_price / 100).toFixed(2)}</div>
         </div>
         <div class="flex-box justify-between">
           <div class="dispatch-label light">Verzending</div>
