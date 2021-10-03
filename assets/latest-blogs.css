@@ -1,62 +1,63 @@
 h2.latest-blogs-heading.bold {
-    text-align: center;
-    color: var(--background-yellow);
+  text-align: center;
+  color: var(--background-yellow);
     margin-bottom: 52px;
-}
+    }
 
 .latest-blog {
-    width: 30%;
+  width: 30%;
 }
 
 .blog-img {
-    width: 100%;
-    height: 278px;
-    margin-bottom: 16px;
+  width: 100%;
+  height: 278px;
+  margin-bottom: 16px;
 }
 
 .blog-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit : cover;
+  border-radius: 8px;
 }
 
 .blog-date-read-time {
-    line-height: 24px;
-    margin-bottom: 8px;
+  line-height: 24px;
+  margin-bottom: 8px;
 }
 
 .blog-topic {
-    line-height: 24px;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .blog-title {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 16px;
 }
 
 .blog-desc {
-    line-height: 24px;
-    margin-bottom: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
 }
 
 .blog-link {
-    line-height: 24px;
-    display: block;
-    text-decoration: underline;
+  line-height: 24px;
+  display: block;
+  text-decoration: underline;
 }
 
 .latest-blogs {
-    margin-bottom: 52px;
+  margin-bottom: 52px;
 }
 
 .latest-blogs-wrapper{
-	margin-bottom: 220px;
+  margin-bottom: 220px;
 }
 
 .latest-blogs-wrapper .btn{
-	padding: 20px 108px 16px;
+  padding: 20px 108px 16px;
 }
