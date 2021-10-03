@@ -78,6 +78,10 @@ footer{
   height : 15px;
 }
 
+.social-icons.flex-box{
+  display: flex;
+  justify-content : center;
+}
 
 @media screen and (max-width: 768px) {
   .footer-lower-nav-item , .footer-wrapper{
