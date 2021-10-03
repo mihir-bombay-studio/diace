@@ -170,7 +170,7 @@ function refreshCart(cart) {
         </div>
       </div>
     </div>`;
-}
+
 output += `
     <div class="cart-footer">
       <div class="cart-calculation">
