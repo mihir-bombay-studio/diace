@@ -97,6 +97,7 @@ function getCartDetails(){
 
 
 function refreshCart(cart) {
+  let upsellHandle = $("#cart_container").data("handle");
   let items = cart.items;
   let output = "";
 
@@ -104,7 +105,7 @@ function refreshCart(cart) {
     output += `<div class="cart-list">`;
     for (var i = 0; i < items.length; i++) {
       let item = cart.items[i];
-//       item.variant_id == upsell.id ? upsell.available = true : upsell.available = false;
+      upsellHandle === item.handle ? $("#cart_container").addClass("hide-upsell") : null;
       output += `
         <div id="cart_item_${item.variant_id}" class="list-item ${i}">
           <a href="${item.url}" class="product-img">
@@ -136,8 +137,6 @@ function refreshCart(cart) {
     }
 
     output += `</div >`;
-    if(upsellHandle != item.handle){
-      console.log(upsell.available);
     output += `<div id="upsell_item_${current_variant.id}" class="upsell-container">
       <div class="upsell-heading semibold">Mensen kochten ook:</div>
       <div class="list-item">
@@ -240,7 +239,7 @@ $("body").on('click', '.AddToCart', function () {
     data: formData,
   })
   .done(function (cart) {
-//     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
+    variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
     getCartDetails();
   })
   .fail(function (error) {
@@ -315,7 +314,7 @@ function delete_item(variant_id){
   .done(function(cart){
     console.log(cart);
     $(`#cart_item_${variant_id}`).fadeOut('slow');
-//     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeIn('slow') : null;
+    variant_id == upsell.id ? $("#cart_container .upsell-container").fadeIn('slow') : null;
     cartItemCount(cart);
     refreshCart(cart);
     $("#cart_container").removeClass("block-cursor");
