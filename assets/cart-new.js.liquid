@@ -104,6 +104,7 @@ function refreshCart(cart) {
     output += `<div class="cart-list">`;
     for (var i = 0; i < items.length; i++) {
       let item = cart.items[i];
+      item.variant_id == upsell.id ? upsell.available = true : null;
       output += `
         <div id="cart_item_${item.variant_id}" class="list-item ${i}">
           <a href="${item.url}" class="product-img">
@@ -135,6 +136,7 @@ function refreshCart(cart) {
     }
 
     output += `</div >`;
+    if(upsell.available){
     output += `
     <div id="upsell_item_${current_variant.id}" class="upsell-container">
       <div class="upsell-heading semibold">Mensen kochten ook:</div>
@@ -168,9 +170,9 @@ function refreshCart(cart) {
           </div>
         </div>
       </div>
-    </div>
-
-
+    </div>`;
+}
+output += `
     <div class="cart-footer">
       <div class="cart-calculation">
         <div class="flex-box justify-between">
