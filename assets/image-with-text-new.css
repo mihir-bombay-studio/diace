@@ -93,6 +93,7 @@ h2.image-with-text-heading {
   }
   h2.image-with-text-heading{
   	font-size : 20px;
+    line-height: 0;
   }
 }
 
