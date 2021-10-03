@@ -322,6 +322,7 @@ function delete_item(variant_id){
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeIn('slow') : null;
     cartItemCount(cart);
     $("#cart_container").removeClass("block-cursor");
+     getCartDetails();
   })
   .fail(function() {
     console.log( "failed to delete" );
