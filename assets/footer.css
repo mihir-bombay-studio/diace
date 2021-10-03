@@ -90,4 +90,7 @@ footer{
   .footer-wrapper-small{
     display : block !important;
   }
+  .social-icon:first-child {
+    margin-right: 85px;
+	}
 }
