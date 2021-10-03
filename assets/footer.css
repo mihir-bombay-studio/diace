@@ -60,6 +60,10 @@ footer{
 	text-align : center;
 }
 
+.pay{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 @media screen and (max-width: 768px) {
   .footer-lower-nav-item , .footer-wrapper{
