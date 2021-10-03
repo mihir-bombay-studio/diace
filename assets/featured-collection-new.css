@@ -95,6 +95,13 @@ h2.featured-collection-heading {
   max-width: unset;
 }
 
+@media screen and (max-width: 992px) {
+  .featured-collection-wrapper{
+    margin-bottom : 82px;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .featured-products.flex-box{
     flex-wrap : wrap;
@@ -117,8 +124,3 @@ h2.featured-collection-heading {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .featured-collection-wrapper{
-    margin-bottom : 82px;
-  }
-}
