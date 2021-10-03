@@ -256,7 +256,7 @@
 </div>
  		
     
-    <div class="social-icons flex-box">
+    	<div class="social-icons flex-box">
       {% for block in section.blocks %}
       {% if block.type == "Social_Icons" %}
       <div class="social-icon">
@@ -269,6 +269,13 @@
           {% else %}{{ 'lifestyle-2' | placeholder_svg_tag }}{% endif %}
         </a>
       </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="copyright-text text-center">
+      {% for block in section.blocks %}
+      {% if block.type == "copyright" %}
+      {{ block.settings.copyright_text }}
       {% endif %}
       {% endfor %}
     </div>
