@@ -69,7 +69,7 @@ footer{
   border-top : 2px solid #FEC23B;
 }
 
-.footer.panel.panel-bottom-border , .footer .accordion.question{
+.footer.panel.panel-bottom-border , footer .accordion.question{
   border : none;
 }
 
