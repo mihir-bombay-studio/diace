@@ -175,11 +175,12 @@ h2.newsletter-subscription-heading {
 }
 
 .remove-padd{
-	margin-bottom : 0;
+  margin-bottom : 0;
 }
 
 .newsletter-container{
- margin-bottom : 82px; 
+  margin-bottom : 82px; 
+  padding: 26px 16px;
 }
 
 @media screen and (max-width: 992px) {
@@ -206,6 +207,6 @@ h2.newsletter-subscription-heading {
     font-size : 24px;
   }
   .newsletter-subscription-desc{
-  	font-size : 16px;
+    font-size : 16px;
   }
 }
