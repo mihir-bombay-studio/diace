@@ -1,6 +1,6 @@
 {{ 'social-media.css' | asset_url | stylesheet_tag }}
 
-<div class="social-media-wrapper container rel">
+<div class="social-media-wrapper container rel {% if section.settings.remove_padd %} remove-padd {% endif %}">
   <div class="bg-yellow-dots dots-right-down">
       	{% include 'bg-yellow-dots-sm' %}
       </div>
@@ -66,6 +66,12 @@
       "type": "text",
       "id": "text_over_img",
       "label": "Text Over Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_padd",
+      "label": "Remove Bottom Padding",
+      "default" : true
     }
 	
   ],

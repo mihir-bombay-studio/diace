@@ -1,5 +1,5 @@
 {{ 'social-media.css' | asset_url | stylesheet_tag }}
-<div class="social-media container socila-media-lower {% if section.settings.remove_padd %} remove-padd {% endif %}">
+<div class="social-media container socila-media-lower ">
   <h2 class="text-center newsletter-subscription-heading bold">{{section.settings.subscription_heading}}</h2>
   <div class="text-center newsletter-subscription-desc light">{{section.settings.subscription_desc}}</div>
   <div class="subscription-form flex-box">
@@ -34,12 +34,6 @@
         "type": "text",
         "id": "submit_btn_text",
         "label": "Submit Button Text"
-      },
-      {
-        "type": "checkbox",
-        "id": "remove_padd",
-        "label": "Remove Bottom Padding",
-		"default" : true
       }
 	],
   "presets": [
