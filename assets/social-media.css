@@ -219,4 +219,7 @@ h2.newsletter-subscription-heading {
     width :100%;
     padding-left : 0;
   }
+  .newsletter-container .submit-btn{
+    width : 100%'
+  }
 }
