@@ -73,4 +73,7 @@ h2.latest-blogs-heading.bold {
   .latest-blogs-wrapper{
     margin-bottom : 82px;
   }
+  .latest-blogs{
+    margin-bottom : 0px;
+  }
 }
