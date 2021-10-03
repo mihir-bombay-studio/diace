@@ -62,6 +62,12 @@ h2.latest-blogs-heading.bold {
   padding: 20px 108px 16px;
 }
 
+@media screen and (max-width: 992px) {
+  .latest-blogs-wrapper{
+    margin-bottom : 82px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .latest-blogs.flex-box{
     flex-wrap : wrap;
@@ -71,8 +77,6 @@ h2.latest-blogs-heading.bold {
     width : 100%;
     margin-bottom: 52px;
   }
-  .latest-blogs-wrapper{
-    margin-bottom : 82px;
-  }
+
 
 }
