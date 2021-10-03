@@ -141,13 +141,13 @@
            src="{{ section.settings.footer_brand_img | img_url : "medium" }}" loading="lazy" alt="">
       {% else %}{{ section.settings.footer_brand_svg }}{% endif %}
     </a>
-    
-    <div class="accordion question footer semibold flex-box justify-between">
-      <div class="question-left">PRODUCTEN</div>
-      <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
-    </div>
-    <div class="footer panel answer light">
-      <ul class="footer-nav">
+    <div class="footer-accordians">
+      <div class="accordion question footer semibold flex-box justify-between">
+        <div class="question-left">PRODUCTEN</div>
+        <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+      </div>
+      <div class="footer panel answer light">
+        <ul class="footer-nav">
           {% for block in section.blocks %}
           {% if block.type == "Footer_menu" %}
           {% for link in linklists[block.settings.Menu1].links %}
@@ -158,15 +158,15 @@
           {% endif %}
           {% endfor %}
         </ul>
-    </div>
-    
-    
-    <div class="accordion question footer semibold flex-box justify-between">
-      <div class="question-left">OVER DIACÉ</div>
-      <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
-    </div>
-    <div class="footer panel answer light">
-      <ul class="footer-nav">
+      </div>
+
+
+      <div class="accordion question footer semibold flex-box justify-between">
+        <div class="question-left">OVER DIACÉ</div>
+        <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+      </div>
+      <div class="footer panel answer light">
+        <ul class="footer-nav">
           {% for block in section.blocks %}
           {% if block.type == "Footer_menu" %}
           {% for link in linklists[block.settings.Menu2].links %}
@@ -177,28 +177,28 @@
           {% endif %}
           {% endfor %}
         </ul>
-    </div>
-    
-    <div class="accordion question footer semibold flex-box justify-between">
-      <div class="question-left">HULP NODIG?</div>
-      <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
-    </div>
-    <div class="footer panel answer light">
-      {% for block in section.blocks %}
+      </div>
+
+      <div class="accordion question footer semibold flex-box justify-between">
+        <div class="question-left">HULP NODIG?</div>
+        <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+      </div>
+      <div class="footer panel answer light">
+        {% for block in section.blocks %}
         {% if block.type == "Footer_help" %}
         <div>{{ block.settings.help_para1 }}</div>
         <br>
         <div>{{ block.settings.help_para2 }}</div>
         {% endif %}
         {% endfor %}
-    </div>
-    
-    <div class="accordion question footer semibold flex-box justify-between">
-      <div class="question-left">ALGEMEEN</div>
-      <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
-    </div>
-    <div class="footer panel answer light">
-      <div class="footer-address">
+      </div>
+
+      <div class="accordion question footer semibold flex-box justify-between">
+        <div class="question-left">ALGEMEEN</div>
+        <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+      </div>
+      <div class="footer panel answer light">
+        <div class="footer-address">
           {% for block in section.blocks %}
           {% if block.type == "Footer_address" %}
           <div>{{ block.settings.address_line1 }}</div>
@@ -220,31 +220,31 @@
           <a href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
           {% endif %}
           {% endfor %}
-      </div>
-      <div class="pay">
-        {% for block in section.blocks %}
-        {% if block.type == "Payment_icons" %}
+        </div>
+        <div class="pay">
+          {% for block in section.blocks %}
+          {% if block.type == "Payment_icons" %}
 
-        <div class="payment-method"> 
-          {% if block.settings.payment_icons != blank %}
-          <img
-               srcset="{% if block.settings.payment_icons.width >= 32 %}{{ block.settings.payment_icons | img_url: '32x' }} {% endif %}"
-               src="{{ block.settings.payment_icons | img_url : "icon" }}" loading="lazy" alt="">
-          {% else %}{{ 'lifestyle-2' | placeholder_svg_tag }}{% endif %}
+          <div class="payment-method"> 
+            {% if block.settings.payment_icons != blank %}
+            <img
+                 srcset="{% if block.settings.payment_icons.width >= 32 %}{{ block.settings.payment_icons | img_url: '32x' }} {% endif %}"
+                 src="{{ block.settings.payment_icons | img_url : "icon" }}" loading="lazy" alt="">
+            {% else %}{{ 'lifestyle-2' | placeholder_svg_tag }}{% endif %}
+          </div>
+
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="copyright-text">
+          {% for block in section.blocks %}
+          {% if block.type == "copyright" %}
+          {{ block.settings.copyright_text }}
+          {% endif %}
+          {% endfor %}
         </div>
 
-        {% endif %}
-        {% endfor %}
-      </div>
-      <div class="copyright-text">
         {% for block in section.blocks %}
-        {% if block.type == "copyright" %}
-        {{ block.settings.copyright_text }}
-        {% endif %}
-        {% endfor %}
-      </div>
-      
-      {% for block in section.blocks %}
         {% if block.type == "Footer_menu" %}
         {% for link in linklists[block.settings.Menu3].links %}
         <div class="footer-lower-nav-item">
@@ -253,6 +253,7 @@
         {% endfor %}
         {% endif %}
         {% endfor %}
+      </div>
     </div>
   </div>
 </footer>
