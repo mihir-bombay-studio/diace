@@ -95,6 +95,10 @@ function getCartDetails(){
   });
 }
 
+function convertNumber(num){
+  return (num / 100).toFixed(2);
+}
+
 
 function refreshCart(cart) {
   let upsellHandle = $("#cart_container").data("handle");
@@ -176,7 +180,7 @@ output += `
       <div class="cart-calculation">
         <div class="flex-box justify-between">
           <div class="subtotal-label light">subtotal</div>
-          <div id="sub_total_price" class="subtotal-price semibold">${(cart.total_price / 100).toFixed(2)}</div>
+          <div id="sub_total_price" class="subtotal-price semibold">${convertNumber(cart.total_price)}</div>
         </div>
         <div class="flex-box justify-between">
           <div class="dispatch-label light">Verzending</div>
