@@ -65,13 +65,16 @@ footer{
   justify-content: space-evenly;
 }
 
-.accordion.question.footer{
+.accordion.question.footer , .footer.panel.panel-bottom-border{
   border-bottom : 2px solid #FEC23B;
 }
 
-.footer.panel.panel-bottom-border{
-  border-bottom : 2px solid #FEC23B;
+
+.footer.yellow-down-chevron svg{
+  width :15px;
+  height : 15px;
 }
+
 
 @media screen and (max-width: 768px) {
   .footer-lower-nav-item , .footer-wrapper{
