@@ -40,6 +40,9 @@
 .review-wrapper .dots-left-down {
   bottom: -60px;
 }
+.disp-no{
+  display : none;
+}
 
 @media screen and (max-width: 992px) {
   .review-wrapper .bg-yellow-dots{
