@@ -314,3 +314,21 @@
 .block-cursor {
   cursor:not-allowed;
 }
+
+@media screen and (max-width: 479px) {
+  .cart-mask.active .cart-container {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    bottom: 0%;
+  }
+
+  .cart-container {
+    position: absolute;
+    height: 100%;
+    transform: none;
+    bottom: -100%;
+    border: 2px solid #FEC23B;
+  }
+
+}
