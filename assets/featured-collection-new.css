@@ -94,3 +94,12 @@ h2.featured-collection-heading {
 .fp-hover-text:hover {
 	max-width: unset;
 }
+
+@media screen and (max-width: 768px) {
+  .featured-products.flex-box{
+  	flex-wrap : wrap;
+  }
+  .featured-product-card{
+  	width : 100%;
+  }
+}
