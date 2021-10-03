@@ -138,8 +138,7 @@ function refreshCart(cart) {
     output += `</div >`;
     if(!upsell.available){
       console.log(upsell.available);
-    output += `
-    <div id="upsell_item_${current_variant.id}" class="upsell-container">
+    output += `<div id="upsell_item_${current_variant.id}" class="upsell-container">
       <div class="upsell-heading semibold">Mensen kochten ook:</div>
       <div class="list-item">
         <a href="${upsell.url}" class="product-img">
