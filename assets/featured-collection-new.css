@@ -103,4 +103,7 @@ h2.featured-collection-heading {
   	width : 100%;
     margin-bottom : 52px;
   }
+  .featured-collection-wrapper{
+    margin-bottom : 82px;
+  }
 }
