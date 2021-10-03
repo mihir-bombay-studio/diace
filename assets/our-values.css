@@ -30,7 +30,7 @@ h2.our-values-heading {
   line-height: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .our-values-wrapper{
     margin-bottom: 82px;
   }
