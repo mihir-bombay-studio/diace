@@ -63,6 +63,9 @@ h2.latest-blogs-heading.bold {
 }
 
 @media screen and (max-width: 768px) {
+  .latest-blogs.flex-box{
+  	flex-wrap : wrap;
+  }
   .latest-blog{
   	width : 100%;
   }
