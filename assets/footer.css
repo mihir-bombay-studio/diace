@@ -57,5 +57,7 @@ footer{
   .footer-lower-nav-item , .footer-wrapper{
     display : none;
   }
-
+  .footer-wrapper-small{
+    display : block;
+  }
 }
