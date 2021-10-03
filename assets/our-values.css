@@ -1,33 +1,33 @@
 .our-values-wrapper{
-	margin-bottom: 220px;
+  margin-bottom: 220px;
 }
 
 h2.our-values-heading {
-    margin: 0;
-    text-align: center;
-    font-size: 32px;
-    line-height: 48px;
-    text-transform: uppercase;
-    margin-bottom: 52px;
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-bottom: 52px;
 }
 
 .value {
-    flex-direction: column;
-    width: 30%;
-    align-items: center;
-    text-align: center;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  text-align: center;
 }
 
 .value-title {
-    margin-top: 26px;
-    margin-bottom: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
+  margin-top: 26px;
+  margin-bottom: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
 }
 
 .value-desc {
-    line-height: 24px;
+  line-height: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -36,10 +36,13 @@ h2.our-values-heading {
     margin-bottom : 0px;
   }
   .our-values.flex-box{
-  	flex-wrap : wrap;
+    flex-wrap : wrap;
   }
   .our-values .value{
-  	width : 100%;
+    width : 100%;
     margin-top: 52px;
+  }
+  .our-values-wrapper{
+    margin-bottom: 82px;
   }
 }
