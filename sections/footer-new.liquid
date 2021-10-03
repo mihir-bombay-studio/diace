@@ -20,8 +20,6 @@
           <div>{{ block.settings.address_line3 }}</div>
           {% endif %}
           {% endfor %}
-
-
         </div>
         <div class="btw">
           {% for block in section.blocks %}
@@ -135,12 +133,30 @@
   
   
   <div class="container footer-wrapper-small disp-none">
+    <a href="/" class="brand-logo-footer">
+      {% if section.settings.footer_brand_img != blank %}
+      <img
+           srcset="{% if section.settings.footer_brand_img.width >= 160 %}{{ section.settings.footer_brand_img | img_url: '160x' }} 160w,{% endif %}
+                   {% if section.settings.footer_brand_img.width >= 210 %}{{ section.settings.footer_brand_img | img_url: '210x' }} 210w{% endif %}"
+           src="{{ section.settings.footer_brand_img | img_url : "medium" }}" loading="lazy" alt="">
+      {% else %}{{ section.settings.footer_brand_svg }}{% endif %}
+    </a>
     <div class="accordion question semibold flex-box justify-between">
-      <div class="question-left">heading</div>
+      <div class="question-left">PRODUCTEN</div>
       <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
     </div>
     <div class="panel answer light">
-      <p>accordian</p>
+      <ul class="footer-nav">
+          {% for block in section.blocks %}
+          {% if block.type == "Footer_menu" %}
+          {% for link in linklists[block.settings.Menu1].links %}
+          <li class="footer-nav-item">
+            <a href="{{ link.url }}" class="btn-footer">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+          {% endif %}
+          {% endfor %}
+        </ul>
     </div>
   </div>
 </footer>
