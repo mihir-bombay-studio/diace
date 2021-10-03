@@ -224,12 +224,14 @@
       
       {% for block in section.blocks %}
       {% if block.type == "Payment_icons" %}
+      <div class="pay">
       <div class="payment-method"> 
         {% if block.settings.payment_icons != blank %}
         <img
              srcset="{% if block.settings.payment_icons.width >= 32 %}{{ block.settings.payment_icons | img_url: '32x' }} {% endif %}"
              src="{{ block.settings.payment_icons | img_url : "icon" }}" loading="lazy" alt="">
         {% else %}{{ 'lifestyle-2' | placeholder_svg_tag }}{% endif %}
+        </div>
       </div>
       {% endif %}
       {% endfor %}
