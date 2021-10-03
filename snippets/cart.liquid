@@ -79,26 +79,28 @@
           </a>
           <div class="product-info">
             <div class="product-name semibold"><a href="{{ upsellProduct.url | within: collections.all }}">{{ upsellProduct.title }}</a></div>
-            <div class="flex-box justify-between">
-              <div class="product-variant">{% if current_variant.title != "Default Title" %}{{ current_variant.title }}{% endif %}</div>
-            </div>
-            <div class="item-price flex-box justify-between">
-              <div class="">
-                {% if current_variant.compare_at_price %}<span class="compare-at-price">{{ current_variant.compare_at_price | money }}</span>{% endif %}
-                <span class="discount-price semibold">{{ current_variant.price | money}}</span>
+            <div>
+              <div>
+                <div class="flex-box justify-between">
+                  <div class="product-variant">{% if current_variant.title != "Default Title" %}{{ current_variant.title }}{% endif %}</div>
+                </div>
+                <div class="item-price flex-box justify-between">
+                  <div class="">
+                    {% if current_variant.compare_at_price %}<span class="compare-at-price">{{ current_variant.compare_at_price | money }}</span>{% endif %}
+                    <span class="discount-price semibold">{{ current_variant.price | money}}</span>
+                  </div>
+                  <button 
+                          class="add-upsell-btn semibold AddToCart no-mobile"
+                          data-variant-id = "{{upsellProduct.first_available_variant.id }}"
+                          data-quantity = ""
+                          > 
+                    <span class="plus-circle">+</span> 
+                    <span class="add-upsell-btn-text">Toevoegen</span> 
+                  </button>
+
+                </div>
               </div>
               <button 
-                      class="add-upsell-btn semibold AddToCart no-mobile"
-                      data-variant-id = "{{upsellProduct.first_available_variant.id }}"
-                      data-quantity = ""
-                      > 
-                <span class="plus-circle">+</span> 
-                <span class="add-upsell-btn-text">Toevoegen</span> 
-              </button>
-              
-            </div>
-          </div>
-          <button 
                       class="add-upsell-btn AddToCart btn btn-yellow no-desktop"
                       data-variant-id = "{{upsellProduct.first_available_variant.id }}"
                       data-quantity = ""
@@ -106,6 +108,9 @@
                 <span class="plus-circle">+</span> 
                 <span class="">{% render 'icon-cart-new-black' %}</span> 
               </button>
+            </div>
+          </div>
+
         </div>
       </div>
       
