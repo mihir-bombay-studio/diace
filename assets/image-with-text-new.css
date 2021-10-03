@@ -103,4 +103,7 @@ h2.image-with-text-heading {
     width: 100%;
     text-align : center;
   }
+  .img-with-text-img{
+    height : 100%;
+  }
 }
