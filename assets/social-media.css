@@ -196,4 +196,7 @@ h2.newsletter-subscription-heading {
   .sm-left, .sm-right{
     width : 100%;
   }
+  .sm-right.flex-box{
+    margin-top: 26px;
+  }
 }
