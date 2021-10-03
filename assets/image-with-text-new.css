@@ -81,6 +81,12 @@ h2.image-with-text-heading {
   .image-with-text .flex-box{
   	flex-direction : column-reverse;
   }
+  .image-with-text-grid-item{
+  	width :100%
+  }
+  .img-with-text-img{
+    height : 100%;
+  }
  
 }
 
