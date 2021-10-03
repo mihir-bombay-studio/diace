@@ -33,6 +33,7 @@ h2.our-values-heading {
 @media screen and (max-width: 768px) {
   h2.our-values-heading{
     font-size: 16px;
+    margin-bottom : 0px;
   }
   .our-values.flex-box{
   	flex-wrap : wrap;
