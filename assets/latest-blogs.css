@@ -77,6 +77,7 @@ h2.latest-blogs-heading.bold {
     width : 100%;
     margin-bottom: 52px;
   }
-
-
+  .latest-blogs-wrapper .btn{
+    padding: 20px 75px 16px;
+  }
 }
