@@ -55,4 +55,10 @@
   .review.flex-box{
   	flex-direction : column;
   }
+  .review .hero-left{
+  	height : 100%;
+  }
+  .hero-left, .hero-right {
+    width: 100%;
+	}	
 }
