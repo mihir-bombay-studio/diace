@@ -113,4 +113,12 @@
   .hero-new-wrapper .btn{
     margin : 0 auto;
   }
+  .text-over-hero.bold{
+    padding: 9.5px 0px 8.5px;
+    position :relative;
+    width : 100%;
+    background-color:white;
+    border-radius: 0 0 8px 8px;
+    box-shadow:0px 3px  #33270C1A; 
+  }
 }
