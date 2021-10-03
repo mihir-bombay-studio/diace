@@ -178,6 +178,10 @@ h2.newsletter-subscription-heading {
 	margin-bottom : 0;
 }
 
+.newsletter-container{
+ margin-bottom : 82px; 
+}
+
 @media screen and (max-width: 992px) {
   .social-media-wrapper{
     margin-bottom : 82px;
