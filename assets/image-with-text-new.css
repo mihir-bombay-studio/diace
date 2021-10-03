@@ -85,7 +85,12 @@ h2.image-with-text-heading {
   .image-with-text-grid-item{
   	width :100%
   }
- 
+  .image-with-text{
+  	margin-bottom : 82px;
+  }
+  .image-with-text-content{
+    margin-top: 26px;
+  }
 }
 
 
