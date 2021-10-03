@@ -9,7 +9,8 @@
     title:"{{ upsellProduct.title | escape }}",
     url:"{{ upsellProduct.url | within: collections.all }}",
     image:"{{ upsellProduct.featured_image | img_url: 'medium' }}",
-    price:"{{ upsellProduct.price | divided_by:100.0 }}"
+    price:"{{ upsellProduct.price | divided_by:100.0 }}",
+    available:false
   };
   var upsellProduct = JSON.parse(`{{ upsellProduct | json }}`);
   console.log(upsellProduct);
