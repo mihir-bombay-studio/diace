@@ -136,7 +136,7 @@ function refreshCart(cart) {
     }
 
     output += `</div >`;
-    if(upsell.available){
+    if(!upsell.available){
       console.log(upsell.available);
     output += `
     <div id="upsell_item_${current_variant.id}" class="upsell-container">
