@@ -142,11 +142,11 @@
       {% else %}{{ section.settings.footer_brand_svg }}{% endif %}
     </a>
     
-    <div class="accordion question semibold flex-box justify-between">
+    <div class="accordion question footer semibold flex-box justify-between">
       <div class="question-left">PRODUCTEN</div>
       <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
     </div>
-    <div class="panel answer light">
+    <div class="footer panel answer light">
       <ul class="footer-nav">
           {% for block in section.blocks %}
           {% if block.type == "Footer_menu" %}
@@ -161,11 +161,11 @@
     </div>
     
     
-    <div class="accordion question semibold flex-box justify-between">
+    <div class="accordion question footer semibold flex-box justify-between">
       <div class="question-left">OVER DIACÉ</div>
       <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
     </div>
-    <div class="panel answer light">
+    <div class="footer panel answer light">
       <ul class="footer-nav">
           {% for block in section.blocks %}
           {% if block.type == "Footer_menu" %}
@@ -179,11 +179,11 @@
         </ul>
     </div>
     
-    <div class="accordion question semibold flex-box justify-between">
+    <div class="accordion question footer semibold flex-box justify-between">
       <div class="question-left">HULP NODIG?</div>
       <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
     </div>
-    <div class="panel answer light">
+    <div class="footer panel answer light">
       {% for block in section.blocks %}
         {% if block.type == "Footer_help" %}
         <div>{{ block.settings.help_para1 }}</div>
@@ -193,11 +193,11 @@
         {% endfor %}
     </div>
     
-    <div class="accordion question semibold flex-box justify-between">
+    <div class="accordion question footer semibold flex-box justify-between">
       <div class="question-left">ALGEMEEN</div>
       <div class="question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
     </div>
-    <div class="panel answer light">
+    <div class="footer panel answer light">
       <div class="footer-address">
           {% for block in section.blocks %}
           {% if block.type == "Footer_address" %}
