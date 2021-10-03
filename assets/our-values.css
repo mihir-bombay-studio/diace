@@ -40,5 +40,6 @@ h2.our-values-heading {
   }
   .our-values .value{
   	width : 100%;
+    margin-top: 52px;
   }
 }
