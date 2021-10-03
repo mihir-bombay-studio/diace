@@ -98,3 +98,9 @@
   margin-left: auto;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .hero.flex-box{
+  	flex-wrap : wrap;
+  }
+}
