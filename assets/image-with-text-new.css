@@ -91,6 +91,9 @@ h2.image-with-text-heading {
   .image-with-text-content{
     margin-top: 26px;
   }
+  h2.image-with-text-heading{
+  	font-size : 20px;
+  }
 }
 
 
