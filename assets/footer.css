@@ -65,7 +65,7 @@ footer{
   justify-content: space-evenly;
 }
 
-.accordion.question.footer , .footer.panel.panel-bottom-border{
+.accordion.question.footer {
   border-bottom : 2px solid #FEC23B;
 }
 
