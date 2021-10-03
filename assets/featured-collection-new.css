@@ -101,5 +101,6 @@ h2.featured-collection-heading {
   }
   .featured-product-card{
   	width : 100%;
+    margin-bottom : 52px;
   }
 }
