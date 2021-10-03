@@ -174,6 +174,9 @@ h2.newsletter-subscription-heading {
   max-width: unset;
 }
 
+.remove-padd{
+	margin-bottom : 0;
+}
 
 @media screen and (max-width: 992px) {
   .social-media-wrapper{
