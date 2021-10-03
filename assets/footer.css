@@ -58,6 +58,6 @@ footer{
     display : none;
   }
   .footer-wrapper-small{
-    display : block;
+    display : block !important;
   }
 }
