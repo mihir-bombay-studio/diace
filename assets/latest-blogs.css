@@ -61,3 +61,9 @@ h2.latest-blogs-heading.bold {
 .latest-blogs-wrapper .btn{
   padding: 20px 108px 16px;
 }
+
+@media screen and (max-width: 768px) {
+  .latest-blog{
+  	width : 100%;
+  }
+}
