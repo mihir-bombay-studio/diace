@@ -316,6 +316,15 @@
 }
 
 @media screen and (max-width: 479px) {
+  .cart-close {
+    order: 2;
+    padding: 0;
+}
+  .cart-close svg {
+    width: 18px;
+    height: 18px;
+}
+  
   .cart-mask.active .cart-container {
     transform: none;
     bottom: 0%;
