@@ -121,7 +121,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
         "img_preference": "image second",
-        "text_over_img": ""
+        "text_over_img": "",
+        "padd-top": false
       }
     },
     "featured_products": {
@@ -157,7 +158,7 @@
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
         "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
-        "featured_collection": "new-collection"
+        "featured_collection": "stickers"
       }
     },
     "1631611375b605aa08": {
@@ -334,7 +335,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
         "img_preference": "image second",
-        "text_over_img": ""
+        "text_over_img": "",
+        "padd-top": false
       }
     },
     "1631768996518add79": {
