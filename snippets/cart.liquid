@@ -16,7 +16,10 @@
   var current_variant = upsellProduct.variants[0];
   
   var renderSvg = {
-    icon_remove:`{% render 'icon-remove' %}`
+    icon_remove:`{% render 'icon-remove' %}`,
+    icon_cart_new_black:`{% render 'icon-cart-new-black' %}`,
+    icon_sad_outline:`{% render "icon-sad-outline" %}`,
+    icon_yellow_down_chevron:`{% render "icon-yellow-down-chevron" %}`
   }
 </script>
 {% for item in cart.items %}

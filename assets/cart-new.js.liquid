@@ -154,26 +154,38 @@ function refreshCart(cart) {
         </a>
         <div class="product-info">
           <div class="product-name semibold"><a href="${upsell.url}">${upsell.title}</a></div>
-          <div class="flex-box justify-between">
-            <div class="product-variant">${current_variant.title != "Default Title" ? current_variant.title : null}</div>
-          </div>
-          <div class="item-price flex-box justify-between">
-            <div class="">`;
-              current_variant.compare_at_price ? output += `<span class="compare-at-price"> ${convertNumber(current_variant.compare_at_price)} </span>` : null
-              output += `<span class="discount-price semibold">${convertNumber(current_variant.price)}</span>
+           <div class="flex-box justify-between">
+             <div class="w-100">
+                <div class="flex-box justify-between">
+                  <div class="product-variant">${current_variant.title != "Default Title" ? current_variant.title : null}</div>
+                </div>
+                <div class="item-price flex-box justify-between">
+                  <div class="">`;
+                    current_variant.compare_at_price ? output += `<span class="compare-at-price"> ${convertNumber(current_variant.compare_at_price)} </span>` : null
+                    output += `<span class="discount-price semibold">${convertNumber(current_variant.price)}</span>
+                  </div>
+                  <button 
+                          class="add-upsell-btn semibold AddToCart no-mobile"
+                          data-variant-id = "${current_variant.id}"
+                          data-quantity = ""
+                          > 
+                    <span class="plus-circle">+</span> 
+                    <span class="add-upsell-btn-text">Toevoegen</span> 
+                  </button>
+				</div>
+              </div>
+              <button 
+                      class="add-upsell-btn AddToCart btn btn-yellow no-desktop"
+                      data-variant-id = "${current_variant.id}"
+                      data-quantity = ""
+                      > 
+                <span class="plus-circle">+</span> 
+                <span class="">${renderSvg.icon_cart_new_black}</span> 
+              </button>
+             </div>
             </div>
-            <button 
-                    class="add-upsell-btn semibold AddToCart"
-                    data-variant-id = "${current_variant.id}"
-                    data-quantity = ""
-                    > 
-              <span class="plus-circle">+</span> 
-              <span class="add-upsell-btn-text">Toevoegen</span> 
-            </button>
           </div>
-        </div>
-      </div>
-    </div>`;
+        </div>`;
 
 output += `
     <div class="cart-footer">
@@ -198,20 +210,20 @@ output += `
         <div class="empty-msg">
           <div class="empty-state-heading semibold">Er zit nog niets in je mandje</div>
           <div class="empty-state-img">
-            
+			${renderSvg.icon_sad_outline}
           </div>
         </div>
         <div class="empty-state-links">
           <a href="#" class="empty-state-link">
             OPBERGEN
             <span class="">
-              
+              ${renderSvg.icon_yellow_down_chevron}
             </span>
           </a>
           <a href="#" class="empty-state-link">
             STICKERS
             <span class="">
-              
+              ${renderSvg.icon_yellow_down_chevron}
             </span>
           </a>
           <a href="#" class="btn btn-yellow category-btn">BEKIJK ALLE CATEGORIEËN</a>
