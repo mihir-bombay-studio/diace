@@ -135,7 +135,7 @@ function refreshCart(cart) {
               
               <span class="discount-price semibold">${convertNumber(item.price)}</span>
             </div>
-            <button data-variant-id="${item.variant_id}" class="remove-item">verwijderen <span class="dustbin"></span></button>
+            <button data-variant-id="${item.variant_id}" class="remove-item">verwijderen <span class="dustbin">${renderSvg.icon_remove}</span></button>
           </div>
         </div>`;
     }
