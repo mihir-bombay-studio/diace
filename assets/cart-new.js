@@ -133,7 +133,7 @@ function refreshCart(cart) {
             </div>
             <div class="item-price">
               
-              <span class="discount-price semibold">${item.price}</span>
+              <span class="discount-price semibold">${convertNumber(item.price)}</span>
             </div>
             <button data-variant-id="${item.variant_id}" class="remove-item">verwijderen <span class="dustbin"></span></button>
           </div>
@@ -159,7 +159,7 @@ function refreshCart(cart) {
           </div>
           <div class="item-price flex-box justify-between">
             <div class="">`;
-              current_variant.compare_at_price ? output += `<span class="compare-at-price"> ${current_variant.compare_at_price} </span>` : null
+              current_variant.compare_at_price ? output += `<span class="compare-at-price"> ${convertNumber(current_variant.compare_at_price)} </span>` : null
               output += `<span class="discount-price semibold">${convertNumber(current_variant.price)}</span>
             </div>
             <button 
