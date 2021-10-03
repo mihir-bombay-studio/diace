@@ -202,4 +202,10 @@ h2.newsletter-subscription-heading {
   .sm-other-img.rel{
     margin: 26px auto;
   }
+  h2.newsletter-subscription-heading{
+    font-size : 32px;
+  }
+  .newsletter-subscription-desc{
+  	font-size : 16px;
+  }
 }
