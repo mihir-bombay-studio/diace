@@ -120,5 +120,7 @@
     background-color:white;
     border-radius: 0 0 8px 8px;
     box-shadow:0px 3px  #33270C1A; 
+    text-align : center;
+    top : 0;
   }
 }
