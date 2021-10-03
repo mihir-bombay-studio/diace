@@ -216,5 +216,7 @@ h2.newsletter-subscription-heading {
   .subscription-form input{
   	height : 51px;
     margin-bottom:16px;
+    width :100%;
+    padding-left : 0;
   }
 }
