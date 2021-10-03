@@ -29,3 +29,15 @@ h2.our-values-heading {
 .value-desc {
     line-height: 24px;
 }
+
+@media screen and (max-width: 768px) {
+  h2.our-values-heading{
+    font-size: 16px;
+  }
+  .our-values.flex-box{
+  	flex-wrap : wrap;
+  }
+  .our-values .value{
+  	width : 100%;
+  }
+}
