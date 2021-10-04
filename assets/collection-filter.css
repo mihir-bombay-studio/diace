@@ -318,7 +318,7 @@ a.active-facets__button {
 }
 
 @media screen and (max-width: 992px) {
-  .collection-filter-left , .collection-filter-right{
+  .collection-filter-left , .collection-filter-right, .filter-mask{
     width : 100%;
   }
   .collection-filter.flex-box{
