@@ -7,6 +7,13 @@
 		</span>
   <div class="header-wrapper {% if template.name != "article" %} mb {% endif %}">
     <div class="container flex-box justify-between">
+      <nav>
+        <div id="menu-btn" class="menu-btn no-desktop" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     <nav class="left-wrap">
       <a href="/">
         {% if section.settings.brand_logo != blank %}
@@ -114,6 +121,7 @@
         </div>
       </div>
     </nav>
+      
     </div>
   </div>
 </header>
