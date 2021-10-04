@@ -77,8 +77,9 @@
   .artboard img {
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
   }
   .filtered-container{
-  	margin-bottom : 0;
+    padding-bottom : 0;
   }
 }
