@@ -357,6 +357,10 @@ cursor:pointer;
     gap: 16px;
 }
   
+  .header-nav-list-sub li {
+    padding: 0 16px;
+}
+  
   .right-nav-upper li {
     margin-left: 0;
   }
