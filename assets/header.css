@@ -378,7 +378,7 @@ cursor:pointer;
     z-index: 10;
     background-color: #ffffff;
     width: 100%;
-    max-width: 480px;
+/*     max-width: 480px; */
     height:calc(100vh - 77px);
     left: 0;
     bottom: 0;
