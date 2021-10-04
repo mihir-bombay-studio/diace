@@ -552,7 +552,7 @@ h5:empty,
 h6:empty {
   display: none;
 }
-
+/* 
 .link,
 .customer a {
   cursor: pointer;
@@ -565,7 +565,7 @@ h6:empty {
   background-color: transparent;
   font-size: 1.4rem;
 }
-
+ */
 .link--text {
   color: var(--color-foreground);
 }
