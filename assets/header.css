@@ -334,6 +334,7 @@ cursor:pointer;
   .header-wrapper.mb{
     padding-top: 0;
     margin-bottom: 16px;
+    line-height: normal;
   }
 
   .left-wrap {
