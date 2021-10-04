@@ -34,6 +34,7 @@
   <div class="collection-filter flex-box justify-between">
     <div class="filter-mask">
     <div class="collection-filter-left">
+      
       <div class="filter-tags">
         {%- for coll in collections -%}
         <div class="collection-types bold{% if coll.title == collection.title %} current{% endif %}">{{ coll.title }}</div>
@@ -43,7 +44,20 @@
           {% endfor %}
         </div>
         {% endfor %}
+      </div>
 
+      <div class="filter-tags small disp-no">
+        <div class = "all-collection-title">
+          {%- for coll in collections -%}
+          <div class="collection-types {% if coll.title == collection.title %} current{% endif %}">{{ coll.title }}</div>
+          <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}"></div>
+          {% endfor %}
+        </div>
+        <div class="active-collection-tags">
+          {% for tag in collection.tags %}
+          <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
+          {% endfor %}
+        </div>
       </div>
 
       <div class="price-tag-filters">
@@ -156,7 +170,7 @@
     </div>
     </div>
     
-    <div class="filter-toggler">Filter Button</div>
+<!--     <div class="filter-toggler">Filter Button</div> -->
     
     
     <div class="collection-filter-right">
@@ -843,7 +857,7 @@
   }
 
 
-  $(".filter-toggler, .filter-close").click(function(){
+  $(".filter-toggler").click(function(){
     openFilter();
   });
   
