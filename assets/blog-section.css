@@ -145,3 +145,7 @@ img{
   color: #CCCCCC;
   color: #000000;
 }
+
+.disp-no{
+ display : none; 
+}
