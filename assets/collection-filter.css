@@ -314,7 +314,7 @@ a.active-facets__button {
 }
 
 .disp-no{
-	display : none;
+  display : none;
 }
 
 @media screen and (max-width: 992px) {
@@ -322,11 +322,16 @@ a.active-facets__button {
     width : 100%;
   }
   .collection-filter.flex-box{
-  	flex-direction : column;
+    flex-direction : column;
   }
-  
- 
-  
+  .collection-filter.flex-box .panel{
+    max-height : 100%;
+  }
+  .collection-filter.flex-box .down-chevron{
+    display : none;
+  }
+
+
 }
 
 @media screen and (max-width: 768px) {
