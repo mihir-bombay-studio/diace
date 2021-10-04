@@ -154,7 +154,7 @@
 
     </div>
     
-    <div class="collection-filter-left small">
+    <div class="collection-filter-left small disp-no">
       {% for block in section.blocks %}
       {% if block.type == "price_filter" %}
       <div class="price-filter{% for block in section.blocks %}{% if block.type == "price_filter" %}{% if block.settings.show_price_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
