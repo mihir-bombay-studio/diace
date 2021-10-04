@@ -1120,7 +1120,7 @@ deferred-media {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  font: inherit;
+/*   font: inherit; */
   padding: 0.9rem 3rem 1.1rem;
   text-decoration: none;
 /*   border: 0;
