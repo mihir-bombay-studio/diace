@@ -163,9 +163,12 @@ img{
   .featured-blog-post{
     flex-wrap : wrap;
   }
-  .welcomingheadig{
+  .welcomeheading{
     text-align : center;
     margin: 52px auto 26px 0; 
+  }
+  .blog-text{
+    width : 100%;
   }
 
 }
