@@ -312,3 +312,13 @@ a.active-facets__button {
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 992px) {
+  .collection-filter-left , .collection-filter-right{
+    width : 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
