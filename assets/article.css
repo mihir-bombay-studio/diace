@@ -134,6 +134,9 @@ img {
   .heading{
   	font-size : 24px;
   }
+  .article-content img{
+    height : auto;
+  }
 
 }
 
