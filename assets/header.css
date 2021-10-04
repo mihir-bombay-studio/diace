@@ -190,11 +190,6 @@ cursor:pointer;
 }
 
 
-.login-page{
-  
-}
-
-
 .login-form input, .login-page input{
   border: 1px solid #FEC23B;
   border-radius: 4px;
@@ -202,6 +197,7 @@ cursor:pointer;
   width: 100%;
   padding: 8px;
 }
+
 .input_form_control {
   position: relative;
 }
@@ -244,6 +240,23 @@ cursor:pointer;
   margin-top: 8px;
   display: block;
   color: inherit;
+}
+
+.customer-login-form-wrapper {
+    color: #737373;
+}
+
+.login-page label {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    display: block;
+}
+
+.login-page input {
+    border-width: 2px;
+    margin: 8px 0 16px 0;
 }
 
 .hover-wrapper{
