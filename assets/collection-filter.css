@@ -324,6 +324,9 @@ a.active-facets__button {
   .collection-filter.flex-box{
   	flex-direction : column;
   }
+  .collection-filter-left .panel {
+  	max-height : 100%;
+  }
   
 }
 
