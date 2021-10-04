@@ -121,6 +121,10 @@ img {
   .back-btn{
   	display : none;
   }
+  .article-image img{
+   	height : auto;
+    border-radius : 8px;
+  }
 
 }
 
