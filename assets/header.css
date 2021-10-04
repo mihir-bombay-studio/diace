@@ -347,4 +347,9 @@ cursor:pointer;
   .right-nav-upper{
     margin-bottom: 0;
   }
+  
+  .right-nav-upper li {
+    margin-left: 16px;
+  }
+  
 }
