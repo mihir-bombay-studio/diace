@@ -171,12 +171,15 @@ img{
     width : 100%;
   }
   .filtered-blog-container{
-  	margin-top : 26px;
+    margin-top : 26px;
   }
   .blogs{
-  	margin-bottom : 52px;
+    margin-bottom : 52px;
     max-width:100%;
     width : 100%;
+  }
+  .featured-blog-post .btn{
+    padding: 16px 75px 16px 75px;
   }
 
 }
