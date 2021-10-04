@@ -339,7 +339,9 @@ a.active-facets__button {
     padding-top: 26px;
     border-top: 2px solid #FEC23B;
   }
-
+  .current{
+    font-weight: 700;
+  }
 }
 
 @media screen and (max-width: 768px) {
