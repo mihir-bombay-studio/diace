@@ -317,6 +317,7 @@ a.active-facets__button {
   display : none;
 }
 
+
 @media screen and (max-width: 992px) {
   .collection-filter-left , .collection-filter-right{
     width : 100%;
@@ -339,10 +340,13 @@ a.active-facets__button {
     position: fixed;
     height: 100%;
     background: white;
-    bottom: 0;
+    bottom: -100%;
     transition: all 300ms ease;
     left: 0;
     width: 100%;
     z-index: 5;
+  }
+  .collection-filter-left.active{
+  	bottom : 0;
   }
 }
