@@ -324,11 +324,14 @@ a.active-facets__button {
   .collection-filter.flex-box{
   	flex-direction : column;
   }
-  .collection-filter-left .panel {
-  	max-height : 100%;
+  .collection-filter-left{
+   	display : none; 
   }
-  .collection-filter-left .down-chevron{
-  	display : none;
+  .collection-filter-left.small{
+   	display : block; 
+  }
+  .collection-filter-left.small .panel{
+   	max-height : 100%; 
   }
 }
 
