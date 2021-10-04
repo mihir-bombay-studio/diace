@@ -46,7 +46,7 @@
         {% endfor %}
       </div>
 
-      <div class="filter-tags small">
+      <div class="filter-tags small disp-no">
         <div class = "all-collection-title">
           {%- for coll in collections -%}
           <div class="collection-types {% if coll.title == collection.title %} current{% endif %}">{{ coll.title }}</div>
