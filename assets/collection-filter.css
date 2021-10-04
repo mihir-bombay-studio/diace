@@ -331,8 +331,12 @@ a.active-facets__button {
   .collection-filter.flex-box .down-chevron{
     display : none;
   }
-
-
+  .filter-tags{
+  	display : none;
+  }
+  .filter-tags.small{
+  	display : block;
+  }
 }
 
 @media screen and (max-width: 768px) {
