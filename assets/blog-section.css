@@ -188,6 +188,9 @@ img{
   .filter-pills{
     flex-wrap : wrap;
   }
+  .blog-filter-container{
+  	padding-bottom: 0px;
+  }
 
 }
 
