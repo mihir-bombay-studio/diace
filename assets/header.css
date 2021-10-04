@@ -396,13 +396,13 @@ cursor:pointer;
     padding: 16px 36px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
   }
 
   .mobile-nav-list, .mobile-nav-list-2, .mobile-nav-footer {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
   }
   
   .customer-account, .mobile-nav-langs, .mobile-nav-social-icons {
