@@ -51,3 +51,46 @@ footer{
 .footer-lower-right{
 	width: 25%;
 }
+
+.disp-none{
+  display :none;
+}
+
+.text-center {
+	text-align : center;
+}
+
+.pay{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.accordion.question.footer {
+  border-top : 2px solid #FEC23B;
+}
+
+.footer.panel.panel-bottom-border , footer .accordion.question{
+  border : none;
+}
+
+.footer.yellow-down-chevron svg{
+  width :15px;
+  height : 15px;
+}
+
+.social-icons.flex-box{
+  display: flex;
+  justify-content : center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-lower-nav-item , .footer-wrapper{
+    display : none;
+  }
+  .footer-wrapper-small{
+    display : block !important;
+  }
+  .social-icon:first-child {
+    margin-right: 85px;
+	}
+}

@@ -3,8 +3,8 @@
 <footer>
   <div class="container footer-wrapper">
     <div class="footer-upper flex-box justify-between">
-  <div class="footer-left footer-part">
-  	<a href="/" class="brand-logo-footer">
+      <div class="footer-left footer-part">
+        <a href="/" class="brand-logo-footer">
           {% if section.settings.footer_brand_img != blank %}
           <img
                srcset="{% if section.settings.footer_brand_img.width >= 160 %}{{ section.settings.footer_brand_img | img_url: '160x' }} 160w,{% endif %}
@@ -12,34 +12,32 @@
                src="{{ section.settings.footer_brand_img | img_url : "medium" }}" loading="lazy" alt="">
           {% else %}{{ section.settings.footer_brand_svg }}{% endif %}
         </a>
-    <div class="footer-address">
-      {% for block in section.blocks %}
-      {% if block.type == "Footer_address" %}
-      <div>{{ block.settings.address_line1 }}</div>
-      <div>{{ block.settings.address_line2 }}</div>
-      <div>{{ block.settings.address_line3 }}</div>
-      {% endif %}
-      {% endfor %}
-      
-      
-    </div>
-    <div class="btw">
-      {% for block in section.blocks %}
-      {% if block.type == "btw" %}
-      {{ block.settings.btw_text }}
-      {% endif %}
-      {% endfor %}
-    </div>
-    <div class="mailto-email">
-      {% for block in section.blocks %}
-      {% if block.type == "mailto" %}
-      <a href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
-      {% endif %}
-      {% endfor %}
-    </div>
-    <div class="social-icons flex-box">
-    	{% for block in section.blocks %}
-      {% if block.type == "Social_Icons" %}
+        <div class="footer-address">
+          {% for block in section.blocks %}
+          {% if block.type == "Footer_address" %}
+          <div>{{ block.settings.address_line1 }}</div>
+          <div>{{ block.settings.address_line2 }}</div>
+          <div>{{ block.settings.address_line3 }}</div>
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="btw">
+          {% for block in section.blocks %}
+          {% if block.type == "btw" %}
+          {{ block.settings.btw_text }}
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="mailto-email">
+          {% for block in section.blocks %}
+          {% if block.type == "mailto" %}
+          <a href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="social-icons flex-box">
+          {% for block in section.blocks %}
+          {% if block.type == "Social_Icons" %}
           <div class="social-icon">
             <a href="#" class="btn-footer-icons">
               {% if block.settings.social_icons != blank %}
@@ -50,48 +48,48 @@
               {% else %}{{ 'lifestyle-2' | placeholder_svg_tag }}{% endif %}
             </a>
           </div>
-       {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-    <div class="footer-mid-left footer-part">
-      <div class="footer-nav-title footer-title bold">PRODUCTEN</div>
-     	 <ul class="footer-nav">
-      {% for block in section.blocks %}
-      {% if block.type == "Footer_menu" %}
-      {% for link in linklists[block.settings.Menu1].links %}
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="footer-mid-left footer-part">
+        <div class="footer-nav-title footer-title bold">PRODUCTEN</div>
+        <ul class="footer-nav">
+          {% for block in section.blocks %}
+          {% if block.type == "Footer_menu" %}
+          {% for link in linklists[block.settings.Menu1].links %}
           <li class="footer-nav-item">
             <a href="{{ link.url }}" class="btn-footer">{{ link.title }}</a>
           </li>
-      {% endfor %}
-      {% endif %}
-      {% endfor %}
+          {% endfor %}
+          {% endif %}
+          {% endfor %}
         </ul>
       </div>
-    <div class="footer-mid-right footer-part">
-      	<div class="footer-nav-title footer-title bold">OVER DIACÉ</div>
-     	 <ul class="footer-nav">
-      {% for block in section.blocks %}
-      {% if block.type == "Footer_menu" %}
-      {% for link in linklists[block.settings.Menu2].links %}
+      <div class="footer-mid-right footer-part">
+        <div class="footer-nav-title footer-title bold">OVER DIACÉ</div>
+        <ul class="footer-nav">
+          {% for block in section.blocks %}
+          {% if block.type == "Footer_menu" %}
+          {% for link in linklists[block.settings.Menu2].links %}
           <li class="footer-nav-item">
             <a href="{{ link.url }}" class="btn-footer">{{ link.title }}</a>
           </li>
-      {% endfor %}
-      {% endif %}
-      {% endfor %}
+          {% endfor %}
+          {% endif %}
+          {% endfor %}
         </ul>
       </div>
-    <div class="footer-right footer-part">
-      <div class="footer-help-title footer-title bold">HULP NODIG?</div>
-    	{% for block in section.blocks %}
-      {% if block.type == "Footer_help" %}
-      <div>{{ block.settings.help_para1 }}</div>
-      <br>
-      <div>{{ block.settings.help_para2 }}</div>
-      {% endif %}
-      {% endfor %}  
-    </div>
+      <div class="footer-right footer-part">
+        <div class="footer-help-title footer-title bold">HULP NODIG?</div>
+        {% for block in section.blocks %}
+        {% if block.type == "Footer_help" %}
+        <div>{{ block.settings.help_para1 }}</div>
+        <br>
+        <div>{{ block.settings.help_para2 }}</div>
+        {% endif %}
+        {% endfor %}  
+      </div>
     </div>
     <div class="footer-lower flex-box justify-between">
       <div class="footer-lower-left flex-box justify-between">
@@ -102,18 +100,18 @@
           {% endif %}
           {% endfor %}
         </div>
-      {% for block in section.blocks %}
-      {% if block.type == "Footer_menu" %}
-      {% for link in linklists[block.settings.Menu3].links %}
-          <div class="footer-lower-nav-item">
-            <a href="{{ link.url }}" class="btn-footer">{{ link.title }}</a>
-          </div>
-      {% endfor %}
-      {% endif %}
-      {% endfor %}
+        {% for block in section.blocks %}
+        {% if block.type == "Footer_menu" %}
+        {% for link in linklists[block.settings.Menu3].links %}
+        <div class="footer-lower-nav-item">
+          <a href="{{ link.url }}" class="btn-footer">{{ link.title }}</a>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
       </div>
       <div class="footer-lower-right flex-box justify-between">
-      	
+
         {% for block in section.blocks %}
 
         {% if block.type == "Payment_icons" %}
@@ -128,8 +126,158 @@
         {% endif %}
 
         {% endfor %}
-          
+
       </div>
+    </div>
+  </div>
+  
+  
+  <div class="container footer-wrapper-small disp-none">
+    <a href="/" class="brand-logo-footer text-center">
+      {% if section.settings.footer_brand_img != blank %}
+      <img
+           srcset="{% if section.settings.footer_brand_img.width >= 160 %}{{ section.settings.footer_brand_img | img_url: '160x' }} 160w,{% endif %}
+                   {% if section.settings.footer_brand_img.width >= 210 %}{{ section.settings.footer_brand_img | img_url: '210x' }} 210w{% endif %}"
+           src="{{ section.settings.footer_brand_img | img_url : "medium" }}" loading="lazy" alt="">
+      {% else %}{{ section.settings.footer_brand_svg }}{% endif %}
+    </a>
+    
+      <div class="accordion question footer semibold flex-box justify-between">
+        <div class="question-left">PRODUCTEN</div>
+        <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+      </div>
+      <div class="footer panel answer light">
+        <ul class="footer-nav">
+          {% for block in section.blocks %}
+          {% if block.type == "Footer_menu" %}
+          {% for link in linklists[block.settings.Menu1].links %}
+          <li class="footer-nav-item">
+            <a href="{{ link.url }}" class="btn-footer">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+          {% endif %}
+          {% endfor %}
+        </ul>
+</div>
+
+
+      <div class="accordion question footer semibold flex-box justify-between">
+        <div class="question-left">OVER DIACÉ</div>
+        <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+      </div>
+      <div class="footer panel answer light">
+        <ul class="footer-nav">
+          {% for block in section.blocks %}
+          {% if block.type == "Footer_menu" %}
+          {% for link in linklists[block.settings.Menu2].links %}
+          <li class="footer-nav-item">
+            <a href="{{ link.url }}" class="btn-footer">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+          {% endif %}
+          {% endfor %}
+        </ul>
+</div>
+
+      <div class="accordion question footer semibold flex-box justify-between">
+        <div class="question-left">HULP NODIG?</div>
+        <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+      </div>
+      <div class="footer panel answer light">
+        {% for block in section.blocks %}
+        {% if block.type == "Footer_help" %}
+        <div>{{ block.settings.help_para1 }}</div>
+        <br>
+        <div>{{ block.settings.help_para2 }}</div>
+        {% endif %}
+        {% endfor %}
+</div>
+
+      <div class="accordion question footer semibold flex-box justify-between">
+        <div class="question-left">ALGEMEEN</div>
+        <div class="footer question-chevron yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</div>
+      </div>
+      <div class="footer panel answer light">
+        <div class="footer-address">
+          {% for block in section.blocks %}
+          {% if block.type == "Footer_address" %}
+          <div>{{ block.settings.address_line1 }}</div>
+          <div>{{ block.settings.address_line2 }}</div>
+          <div>{{ block.settings.address_line3 }}</div>
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="btw">
+          {% for block in section.blocks %}
+          {% if block.type == "btw" %}
+          {{ block.settings.btw_text }}
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="mailto-email">
+          {% for block in section.blocks %}
+          {% if block.type == "mailto" %}
+          <a href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="pay">
+          {% for block in section.blocks %}
+          {% if block.type == "Payment_icons" %}
+
+          <div class="payment-method"> 
+            {% if block.settings.payment_icons != blank %}
+            <img
+                 srcset="{% if block.settings.payment_icons.width >= 32 %}{{ block.settings.payment_icons | img_url: '32x' }} {% endif %}"
+                 src="{{ block.settings.payment_icons | img_url : "icon" }}" loading="lazy" alt="">
+            {% else %}{{ 'lifestyle-2' | placeholder_svg_tag }}{% endif %}
+          </div>
+
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="copyright-text">
+          {% for block in section.blocks %}
+          {% if block.type == "copyright" %}
+          {{ block.settings.copyright_text }}
+          {% endif %}
+          {% endfor %}
+        </div>
+
+        {% for block in section.blocks %}
+        {% if block.type == "Footer_menu" %}
+        {% for link in linklists[block.settings.Menu3].links %}
+        <div class="footer-lower-nav-item">
+          <a href="{{ link.url }}" class="btn-footer">{{ link.title }}</a>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+</div>
+ 		
+    
+    	<div class="social-icons flex-box">
+      {% for block in section.blocks %}
+      {% if block.type == "Social_Icons" %}
+      <div class="social-icon">
+        <a href="#" class="btn-footer-icons">
+          {% if block.settings.social_icons != blank %}
+          <img
+               srcset="{% if block.settings.social_icons.width >= 24 %}{{ block.settings.social_icons | img_url: '24x' }} {% endif %}"
+               src="{{ block.settings.social_icons | img_url : "icon" }}" loading="lazy" alt="">
+          {% elsif block.settings.social_icons_svg != blank %}{{ block.settings.social_icons_svg }}
+          {% else %}{{ 'lifestyle-2' | placeholder_svg_tag }}{% endif %}
+        </a>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="copyright-text text-center">
+      {% for block in section.blocks %}
+      {% if block.type == "copyright" %}
+      {{ block.settings.copyright_text }}
+      {% endif %}
+      {% endfor %}
     </div>
   </div>
 </footer>

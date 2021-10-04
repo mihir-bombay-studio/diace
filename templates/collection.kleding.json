@@ -1,0 +1,126 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false,
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    },
+    "16330241653fe30fdc": {
+      "type": "collection-filter",
+      "blocks": {
+        "ea6fde98-efe0-45fb-95a4-dad3f06bbfba": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "2667486f-e2b9-4d0b-832b-a26eebb5a2b2": {
+          "type": "price_filter",
+          "settings": {
+            "show_price_filter": true,
+            "show_price_filter_heading": "PRIJS"
+          }
+        },
+        "b0ec6a2f-24ee-4bc5-83a4-fa6cbd89dcec": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Meisjes"
+          }
+        },
+        "43d8fa84-811a-4d61-b4e0-cd9da83d520e": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Jongens"
+          }
+        },
+        "2fec1f1f-aa37-4427-a446-e19f79e83a8a": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Vrouwen"
+          }
+        },
+        "82f79c8e-c9ba-4d73-a4c7-3d8c487cca7f": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Mannen"
+          }
+        },
+        "59425ec7-deb0-45dc-9a24-d71f0a9fd3b3": {
+          "type": "size_filter",
+          "settings": {
+            "size": "XS"
+          }
+        },
+        "222ccfb8-9872-455a-b454-f1a744463fb3": {
+          "type": "size_filter",
+          "settings": {
+            "size": "S"
+          }
+        },
+        "381203d6-4c39-4572-a77e-62b6bfa12cc4": {
+          "type": "size_filter",
+          "settings": {
+            "size": "M"
+          }
+        },
+        "a093f287-4c7b-4605-93ed-b5947c808994": {
+          "type": "size_filter",
+          "settings": {
+            "size": "L"
+          }
+        },
+        "7c14de47-2872-4cec-af5e-c3523ecdaf93": {
+          "type": "size_filter",
+          "settings": {
+            "size": "XL"
+          }
+        }
+      },
+      "block_order": [
+        "ea6fde98-efe0-45fb-95a4-dad3f06bbfba",
+        "2667486f-e2b9-4d0b-832b-a26eebb5a2b2",
+        "b0ec6a2f-24ee-4bc5-83a4-fa6cbd89dcec",
+        "43d8fa84-811a-4d61-b4e0-cd9da83d520e",
+        "2fec1f1f-aa37-4427-a446-e19f79e83a8a",
+        "82f79c8e-c9ba-4d73-a4c7-3d8c487cca7f",
+        "59425ec7-deb0-45dc-9a24-d71f0a9fd3b3",
+        "222ccfb8-9872-455a-b454-f1a744463fb3",
+        "381203d6-4c39-4572-a77e-62b6bfa12cc4",
+        "a093f287-4c7b-4605-93ed-b5947c808994",
+        "7c14de47-2872-4cec-af5e-c3523ecdaf93"
+      ],
+      "settings": {
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "gender_show": true,
+        "size_show": true,
+        "brand_show": false,
+        "gender_filter_title": "GESLACHT",
+        "size_filter_title": "MATEN",
+        "brand_filter_title": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "16330241653fe30fdc"
+  ]
+}

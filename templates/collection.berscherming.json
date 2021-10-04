@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false,
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    },
+    "1633013221ada81d9a": {
+      "type": "collection-filter",
+      "blocks": {
+        "b5898956-67a5-4f73-861e-bb8c77f2334f": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "130f5c27-fb04-4faf-88fe-aa2fe08bc903": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Medtronic pomp"
+          }
+        },
+        "b77ce676-6356-4da0-aeb2-e28f61842309": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Freestyle Libre reader"
+          }
+        }
+      },
+      "block_order": [
+        "b5898956-67a5-4f73-861e-bb8c77f2334f",
+        "130f5c27-fb04-4faf-88fe-aa2fe08bc903",
+        "b77ce676-6356-4da0-aeb2-e28f61842309"
+      ],
+      "settings": {
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "gender_show": false,
+        "size_show": false,
+        "type_show": true,
+        "brand_show": false,
+        "gender_filter_title": "",
+        "size_filter_title": "",
+        "type_filter_title": "TYPE",
+        "brand_filter_title": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "1633013221ada81d9a"
+  ]
+}

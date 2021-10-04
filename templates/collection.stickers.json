@@ -21,82 +21,114 @@
         "enable_sorting": true
       }
     },
-    "16324014168d24c379": {
+    "16330268764c434e3c": {
       "type": "collection-filter",
       "blocks": {
-        "32d5f29e-8429-4c96-93aa-9b614c68b766": {
+        "021362b9-6d49-494f-94d6-11f67cc03515": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Accu check guide"
+          }
+        },
+        "8c953991-51d0-49e6-a5d2-7ecd29e75cf3": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Bayer contour next"
+          }
+        },
+        "fd088983-7b93-4de8-850e-cebceac9ce6b": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Dexcom G5"
+          }
+        },
+        "1409ee08-d374-4089-88a6-198cf1e8e326": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Dexcom G6"
+          }
+        },
+        "c3fd733a-decd-4ef6-a30a-bbd364655bb7": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Freestyle libre sensor"
+          }
+        },
+        "8487da3d-6e7a-4a54-b274-eabf35e89532": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Freestyle libre reader"
+          }
+        },
+        "70415147-f5f0-45b2-987d-87183c3dc694": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Medtronic 780G 670G 640G"
+          }
+        },
+        "f231cd9d-93a0-4591-8e21-4d73e1a3b83e": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Medtronic Guardian"
+          }
+        },
+        "1c9f80dc-5aaa-45d2-ab67-81b25e1d6116": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Tandem Slim x2"
+          }
+        },
+        "4cc4d3d1-d18e-4c1e-8afe-05d034e1ef06": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Omnipod Pod"
+          }
+        },
+        "b8121208-c5b3-4ed2-8fcc-57c1ea7d52f1": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Omnipod PDM"
+          }
+        },
+        "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "a7d61824-1311-4cbe-b0ac-5c04f090d063": {
-          "type": "price_filter",
-          "settings": {
-            "show_price_filter": true,
-            "show_price_filter_heading": "PRIJS"
-          }
-        },
-        "4065f80d-6c6a-47fb-ab28-7cb23a92ec28": {
-          "type": "gender_filter",
-          "settings": {
-            "gender": "Meisjes"
-          }
-        },
-        "c6086071-aa1f-4ac0-83fc-75274faf1b5e": {
-          "type": "gender_filter",
-          "settings": {
-            "gender": "Meisjes"
-          }
-        },
-        "d988cf8b-dcdc-4f1a-9eac-b1e61e16f216": {
-          "type": "size_filter",
-          "settings": {
-            "size": "XS (47 - 55 cm)"
-          }
-        },
-        "895c95f2-1117-483b-93d8-d2d64529e52d": {
-          "type": "size_filter",
-          "settings": {
-            "size": "S (55 - 65 cm)"
-          }
-        },
-        "70060fc5-8738-4a10-bd78-d55b1c11c9bb": {
-          "type": "brand_filter",
-          "settings": {
-            "brand": "MERK 1"
-          }
-        },
-        "4d4628f3-1cc5-45f3-a07a-7a7bb73b37e4": {
-          "type": "brand_filter",
-          "settings": {
-            "brand": "MERK 2"
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections"
           }
         }
       },
       "block_order": [
-        "32d5f29e-8429-4c96-93aa-9b614c68b766",
-        "a7d61824-1311-4cbe-b0ac-5c04f090d063",
-        "4065f80d-6c6a-47fb-ab28-7cb23a92ec28",
-        "c6086071-aa1f-4ac0-83fc-75274faf1b5e",
-        "d988cf8b-dcdc-4f1a-9eac-b1e61e16f216",
-        "895c95f2-1117-483b-93d8-d2d64529e52d",
-        "70060fc5-8738-4a10-bd78-d55b1c11c9bb",
-        "4d4628f3-1cc5-45f3-a07a-7a7bb73b37e4"
+        "021362b9-6d49-494f-94d6-11f67cc03515",
+        "8c953991-51d0-49e6-a5d2-7ecd29e75cf3",
+        "fd088983-7b93-4de8-850e-cebceac9ce6b",
+        "1409ee08-d374-4089-88a6-198cf1e8e326",
+        "c3fd733a-decd-4ef6-a30a-bbd364655bb7",
+        "8487da3d-6e7a-4a54-b274-eabf35e89532",
+        "70415147-f5f0-45b2-987d-87183c3dc694",
+        "f231cd9d-93a0-4591-8e21-4d73e1a3b83e",
+        "1c9f80dc-5aaa-45d2-ab67-81b25e1d6116",
+        "4cc4d3d1-d18e-4c1e-8afe-05d034e1ef06",
+        "b8121208-c5b3-4ed2-8fcc-57c1ea7d52f1",
+        "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf"
       ],
       "settings": {
         "enable_filtering": true,
         "enable_sorting": true,
-        "gender_filter_title": "GESLACHT",
-        "size_filter_title": "MATEN",
-        "brand_filter_title": "MERK"
+        "gender_show": false,
+        "size_show": false,
+        "type_show": true,
+        "brand_show": false,
+        "gender_filter_title": "",
+        "size_filter_title": "",
+        "type_filter_title": "TYPE",
+        "brand_filter_title": ""
       }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "16324014168d24c379"
+    "16330268764c434e3c"
   ]
 }

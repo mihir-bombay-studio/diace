@@ -4,16 +4,18 @@
 
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
-  	{% for product in collections[product_handle].products %}
+    {% for product in collections[product_handle].products %}
+
     <div class="product-collection-card">
       <div class="featured-product-img rel">
-    	<img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+        <a href="{{product.url}}"> <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
         <div class="product-hover-text flex-box align-center">
           <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-          <a href="" class="hover-text bold">KOPEN</a>
+          <a href="#" class="hover-text bold">KOPEN</a>
         </div>
       </div>
     </div>
+
     {% endfor %}
   </div>
 </div>

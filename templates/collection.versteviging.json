@@ -1,0 +1,100 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false,
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    },
+    "16330120123ec83063": {
+      "type": "collection-filter",
+      "blocks": {
+        "0781f627-0692-472a-a08e-999c58dfd4b9": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "3675c6c1-a77c-40de-b03b-b8a9141401ba": {
+          "type": "price_filter",
+          "settings": {
+            "show_price_filter": true,
+            "show_price_filter_heading": "PRIJS"
+          }
+        },
+        "302a453d-7891-4c4f-995b-29f15f7ce2f2": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Dexcom G6"
+          }
+        },
+        "694460e7-0c68-48b9-becc-5f145abb07bf": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Dexcom G5"
+          }
+        },
+        "79870a55-0eca-4d9f-b40a-6f0d0aaf9797": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Omnipod Pod"
+          }
+        },
+        "d4fc4c44-baee-4b73-804b-dfea8206f8fc": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Medtronic Guardian"
+          }
+        },
+        "a1e6a804-948c-49c5-9ad5-48da1e6b509b": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Freestyle Libre"
+          }
+        }
+      },
+      "block_order": [
+        "0781f627-0692-472a-a08e-999c58dfd4b9",
+        "3675c6c1-a77c-40de-b03b-b8a9141401ba",
+        "302a453d-7891-4c4f-995b-29f15f7ce2f2",
+        "694460e7-0c68-48b9-becc-5f145abb07bf",
+        "79870a55-0eca-4d9f-b40a-6f0d0aaf9797",
+        "d4fc4c44-baee-4b73-804b-dfea8206f8fc",
+        "a1e6a804-948c-49c5-9ad5-48da1e6b509b"
+      ],
+      "settings": {
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "gender_show": false,
+        "size_show": false,
+        "type_show": true,
+        "brand_show": false,
+        "gender_filter_title": "",
+        "size_filter_title": "",
+        "type_filter_title": "TYPE",
+        "brand_filter_title": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "16330120123ec83063"
+  ]
+}

@@ -23,7 +23,7 @@
     </div>
     <div class="blogheading">{{ article.title }}</div>
     <div class="blogdesc">{{ article.excerpt_or_content | strip_html | truncatewords: 20 | escape }}</div>
-    <button class="btn"><a href="{{ article.url }}">{{section.settings.link_text}}</a></button>
+    <a href="{{ article.url }}"><button class="btn">{{section.settings.link_text}}</button></a>
   </div>
   <div class="blog-image-with-overlay">
     {% if article.image != blank %}
