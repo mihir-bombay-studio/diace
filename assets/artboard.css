@@ -72,6 +72,7 @@
 @media screen and (max-width: 992px) {
   .artboard{
     max-width : 100%;
+    width: 100%;
   }
   .artboard img {
     width: 100%;
