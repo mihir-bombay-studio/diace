@@ -255,10 +255,17 @@ cursor:pointer;
 }
 
 .login-page input {
-    border-width: 2px;
-    margin: 8px 0 16px 0;
+  border-width: 2px;
+  margin: 8px 0 16px 0;
 }
 
+.login-page .view-password{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+}
 
 .forgot-password {
     font-size: 12px;
