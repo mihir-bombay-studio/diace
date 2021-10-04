@@ -2,27 +2,25 @@
         <div class="mobile-nav-wrapper">
             <ul class="mobile-nav-list bold">
               {% for block in section.blocks %}
-            {% for link in linklists[block.settings.nav_list_lower].links %}
-                <li class="mobile-nav-link">
-                    <a href="{{link.url}}">{{link.title}}</a>
-                    <span class="yellow-down-chevron">
-                        {% render 'icon-yellow-down-chevron' %}
-                    </span>
-                </li>
-{% endfor %}
-            {% endfor %}
-               
+              {% for link in linklists[block.settings.nav_list_lower].links %}
+              <li class="mobile-nav-link">
+                <a href="{{link.url}}">{{link.title}}</a>
+                <span class="yellow-down-chevron">
+                  {% render 'icon-yellow-down-chevron' %}
+                </span>
+              </li>
+              {% endfor %}
+              {% endfor %}
+
             </ul>
-            <ul class="mobile-nav-list-2">
-                <li class="">
-                    <a href="/pages/about-us">Ons verhaal</a>
-                </li>
-                <li class="">
-                    <a href="/blogs/news">Blog</a>
-                </li>
-                <li class="">
-                    <a href="/pages/contact-and-faq">Contact &amp; FAQ</a>
-                </li>
+            <ul class="mobile-nav-list-2 light">
+              {% for block in section.blocks %}
+              {% for link in linklists[block.settings.nav_list].links %}
+              <li class="">
+                <a href="{{link.url}}">{{link.title}}</a>
+              </li>
+              {% endfor %}
+              {% endfor %}
             </ul>
             <ul class="mobile-nav-footer">
                 <li class="customer-account">
