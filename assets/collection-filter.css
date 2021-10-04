@@ -349,5 +349,6 @@ a.active-facets__button {
   .filter-mask.active .collection-filter-left{
   	bottom : 0;
   }
- 
+  .filter-toggler{
+  }
 }
