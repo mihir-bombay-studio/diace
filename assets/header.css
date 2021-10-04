@@ -331,7 +331,7 @@ cursor:pointer;
 
 
 @media screen and (max-width: 768px) {
-  .header-wrapper{
+  .header-wrapper.mb{
     padding-top: 0;
     margin-bottom: 16px;
   }
