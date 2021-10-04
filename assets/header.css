@@ -405,7 +405,7 @@ cursor:pointer;
     gap: 16px;
   }
   
-  .customer-account, .mobile-nav-langs {
+  .customer-account, .mobile-nav-langs, .mobile-nav-social-icons {
     display: flex;
     gap: 16px;
   }
