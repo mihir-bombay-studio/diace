@@ -74,7 +74,7 @@
       </div>
       
 <!--       ----------------- UPSELL ITEM ------------------------- -->
-      {% if upsellProduct.first_available_variant.id != "" %}
+      {% if upsellProduct.first_available_variant.id != " " %}
       <div id="upsell_item_{{upsellProduct.first_available_variant.id }}" class="upsell-container">
         <div class="upsell-heading semibold">Mensen kochten ook:</div>
         <div class="list-item">
