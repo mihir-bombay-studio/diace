@@ -1,0 +1,351 @@
+<script>
+  //card addtocart
+  $(".card-add-cart, .add-cart-drawer").click(function(){
+    var formData = {
+      'items': [{
+        'id': parseInt($(this).data('value')),
+        'quantity': 1
+      }]
+    };
+
+    $.ajax({
+      url: "/cart/add.js",
+      method: "POST",
+      dataType: "json",
+      data: formData,
+    })
+    .done(function( data ) {
+      console.log(data);
+      getCart();
+      $('.cart-toggler').addClass("show");
+      $(".drawer-cart").addClass("drawn");
+      $(".background-drawer-cart").addClass("drawn");
+    })
+    .fail(function(error) {
+      console.log( error );
+    });
+  });
+
+  function clearCart() {
+    $.ajax({
+      url: "/cart/clear.js",
+      method: "POST",
+      dataType: "json"
+    })
+    .done(function( data ) {
+      console.log("cart cleared");
+    })
+    .fail(function(error) {
+      console.log( error );
+    });
+  }
+
+  function getCart() {
+    $.ajax({
+      url: "/cart.js",
+      method: "GET",
+      dataType: "json",
+      async: false
+    })
+    .done(function( data ) {
+      $( ".cart-products-block" ).remove();
+      window.data = data;
+      var looping = data.items;
+      var only_sample = true;
+      $(looping).each(function(index){
+        var type = "- Supplies";
+        var variant_title = "10";
+        var is_s = "";
+        var minus_opacity = 'style="opacity: 0.5"';
+        var multiplier = 1;          
+        if(this.product_type == "paint" && (this.variant_title.indexOf("liter") != -1 || this.variant_title.indexOf("litre") != -1) ) {
+          multiplier = 2.5;
+        }
+        variant_title = (parseInt(variant_title) * multiplier * this.quantity).toString().replace(/\.0+$/,'');
+        if(this.product_type == "paint") {
+          type = "";
+        }
+        if(this.product_type == "trim-paint") {
+          type = "";
+        }
+        if(this.variant_title == "sample") {
+          variant_title = "0.2";
+        }
+        if(this.quantity > 1) {
+          is_s = "s";
+          minus_opacity = '';
+        }      
+        if(this.product_type == "supplies" && this.handle != "colour-sample-chart") {
+          only_sample = false;
+        }     
+        if(this.product_type == "paint" || this.product_type == "trim-paint") {
+          if(this.variant_title.indexOf("liter") != -1 || this.variant_title.indexOf("litre") != -1) {
+            only_sample = false;
+          }
+        }
+        {% comment %}
+        <span class="dot">&centerdot;</span><span class="cart-product-info">{% if cart.attributes.lang contains "nl" %}Dekt{% elsif cart.attributes.lang contains "fr" %}Couvertures{% else %}Covers{% endif %} '+ variant_title +' m<sup>2</sup></span>
+          {% endcomment %}              
+          var for_default_title = this.variant_title+is_s+'</span>';
+        if(this.variant_title == null) {
+          for_default_title = 'Product'+is_s+'</span>';
+        }
+        if(this.handle == "blisspaint-t-shirt") {
+          for_default_title = '{% if cart.attributes.lang contains "nl" %}Maat:{% elsif cart.attributes.lang contains "fr" %}Taille:{% else %}Size:{% endif %} '+this.variant_title+'</span>';
+        }
+        $(".cart-products-wrapper").append('<div class="cart-products-block"><div class="cart-product">          <div class="cart-product-thumb">            <a href="'+this.url+'" class="">              <img src="'+this.image+'" class="">            </a>          </div>          <div class="cart-product-content">            <div class="cart-product-row">              <div class="cart-product-col">                <h5>                  <a href="'+this.url+'" class="">'+this.product_title+'  '+type+'</a>                </h5>                <p class="cart-product-price">€'+(this.final_line_price / 100)+'</p>                                </div>                              <div class="cart-product-col">                <button class="cart-product-remove" data-variant="'+ this.variant_id +'">                  <svg class="bin" width="11px" height="12px" viewBox="0 0 11 12" version="1.1"><path d="M8.015625,2.59765625 L10.015625,2.59765625 C10.2917674,2.59765625 10.515625,2.82151388 10.515625,3.09765625 C10.515625,3.37379862 10.2917674,3.59765625 10.015625,3.59765625 L9.515625,3.59765625 L9.515625,10.0976562 C9.515625,10.9260834 8.84405212,11.5976562 8.015625,11.5976562 L3.015625,11.5976562 C2.18719788,11.5976562 1.515625,10.9260834 1.515625,10.0976562 L1.515625,3.59765625 L1.015625,3.59765625 C0.739482625,3.59765625 0.515625,3.37379862 0.515625,3.09765625 C0.515625,2.82151388 0.739482625,2.59765625 1.015625,2.59765625 L3.015625,2.59765625 L3.015625,2.09765625 C3.015625,1.26922913 3.68719788,0.59765625 4.515625,0.59765625 L6.515625,0.59765625 C7.34405212,0.59765625 8.015625,1.26922913 8.015625,2.09765625 L8.015625,2.59765625 Z M7.015625,2.59765625 L7.015625,2.09765625 C7.015625,1.82151388 6.79176737,1.59765625 6.515625,1.59765625 L4.515625,1.59765625 C4.23948263,1.59765625 4.015625,1.82151388 4.015625,2.09765625 L4.015625,2.59765625 L7.015625,2.59765625 Z M8.515625,3.59765625 L2.515625,3.59765625 L2.515625,10.0976562 C2.515625,10.3737986 2.73948263,10.5976562 3.015625,10.5976562 L8.015625,10.5976562 C8.29176737,10.5976562 8.515625,10.3737986 8.515625,10.0976562 L8.515625,3.59765625 Z M4.015625,5.59765625 C4.015625,5.32151388 4.23948263,5.09765625 4.515625,5.09765625 C4.79176737,5.09765625 5.015625,5.32151388 5.015625,5.59765625 L5.015625,8.59765625 C5.015625,8.87379862 4.79176737,9.09765625 4.515625,9.09765625 C4.23948263,9.09765625 4.015625,8.87379862 4.015625,8.59765625 L4.015625,5.59765625 Z M6.015625,5.59765625 C6.015625,5.32151388 6.23948263,5.09765625 6.515625,5.09765625 C6.79176737,5.09765625 7.015625,5.32151388 7.015625,5.59765625 L7.015625,8.59765625 C7.015625,8.87379862 6.79176737,9.09765625 6.515625,9.09765625 C6.23948263,9.09765625 6.015625,8.87379862 6.015625,8.59765625 L6.015625,5.59765625 Z" id="Combined-Shape" fill="currentColor" fill-rule="nonzero"></path></svg>                </button>              </div>                            </div>            <div class="cart-product-row">              <div class="cart-product-col">                <span class="cart-product-amount" data-value="'+this.quantity+'" data-adder="'+ multiplier +'">'+(this.quantity*multiplier).toString().replace(/\.0+$/,'')+' '+ for_default_title +'       </div>              <div class="cart-product-col rel">                <span class="symbol symbol-minus" '+ minus_opacity +'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentcolor" stroke-width="2" style="display: inline-block; vertical-align: middle; overflow: visible;"><path d="M0 8 L16 8"></path></svg></span>                <span class="symbol symbol-plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentcolor" stroke-width="2" style="display: inline-block; vertical-align: middle; overflow: visible;"><path d="M0 8 L16 8"></path><path d="M8 0 L8 16"></path></svg></span>              </div>            </div>                      </div>        </div>      </div>                                                           ');
+        //$(".upsell-product."+this.product_id).addClass("no-disp");
+        var p_id = this.product_id;
+        $('.upsell').slick('slickRemove', $(".upsell-product."+p_id).index());
+      });
+      $(".total-price").text('€'+(data.total_price/100));
+      if(data.item_count > 0) {
+        $(".cart-no-wrapper").removeClass('hide-cart-no');
+        if(data.item_count < 10) {
+          $("#cart-text").text('0'+data.item_count);     
+        } else {          
+          $("#cart-text").text(data.item_count); 
+        }
+        $(".cart-products-parent").removeClass('no-disp');
+        $(".cart-empty").addClass('no-disp');
+        if(data.total_price/100 > 99.99) {
+          $('.cart-sub-head').removeClass('no-vis');
+          $('.total-text').last().text('Free');
+        } else {
+          $('.cart-sub-head').addClass('no-vis');
+          $('.total-text').last().text('Calculated at next step');
+        }
+      } else {
+        $(".cart-no-wrapper").addClass('hide-cart-no');
+        $(".cart-products-parent").addClass('no-disp');
+        $(".cart-empty").removeClass('no-disp');
+        $('.cart-sub-head').addClass('no-vis');
+        $('.total-text').last().text('Calculated at next step');
+      }
+      if(data.total_price/100 > 99.99) {
+        $('.cart-sub-head').removeClass('no-vis');
+        $('.total-text').last().text('Free');
+      } else {
+        $('.cart-sub-head').addClass('no-vis');
+        $('.total-text').last().text('Calculated at next step');
+      }
+      removeProductBtn();
+      plusProductBtn();
+      minusProductBtn();
+    })
+    .fail(function(error) {
+      console.log( error );
+    });
+  }
+
+
+  //remove from cart
+  function removeProductBtn() {
+    $(".cart-product-remove:not(.added)").click(function(){        
+      var holder = parseInt($(this).data("variant"));
+      var clicked = $(this);
+      var variant = {
+        'id': holder,
+        'quantity': 0
+      };
+      $.ajax({
+        url: "/cart/change.js",
+        method: "POST",
+        dataType: "json",
+        data: variant,
+        async: false
+      })
+      .done(function( data ) {  
+        var looping = data.items;
+        var only_sample = true;
+        $(looping).each(function(index){
+          if(this.product_type == "supplies" && this.handle != "colour-sample-chart") {
+            only_sample = false;
+          }     
+          if(this.product_type == "paint" || this.product_type == "trim-paint") {
+            if(this.variant_title.indexOf("liter") != -1 || this.variant_title.indexOf("litre") != -1) {
+              only_sample = false;
+            }
+          }
+        });
+        $(clicked).closest( ".cart-products-block" ).append('<span class="varnish">{% include "icon-paintbrush2" %}</span>');
+                                                            setTimeout(function(){ $(clicked).closest( ".cart-products-block" ).remove(); }, 3000);
+        window.data = data;
+        $(".total-price").text('€'+(data.total_price/100));
+        if(data.item_count > 0) {
+          $(".cart-no-wrapper").removeClass('hide-cart-no');
+          if(data.item_count < 10) {
+            $("#cart-text").text('0'+data.item_count);     
+          } else {          
+            $("#cart-text").text(data.item_count); 
+          }
+        } else {
+          $(".cart-no-wrapper").addClass('hide-cart-no');
+          $(".cart-products-parent").addClass('no-disp');
+          $(".cart-empty").removeClass('no-disp');
+        }
+        if(data.total_price/100 > 99.99) {
+          $('.cart-sub-head').removeClass('no-vis');
+          $('.total-text').last().text('Free');
+        } else {
+          $('.cart-sub-head').addClass('no-vis');
+          $('.total-text').last().text('Calculated at next step');
+        }
+      })
+      .fail(function(error) {
+        console.log( error );
+      });
+    });
+    $(".cart-product-remove:not(.added)").addClass("added");
+  }   
+  removeProductBtn()
+
+  //add more cart
+  function plusProductBtn() {
+    $(".cart-product-content .symbol-plus:not(.added)").click(function(){     
+      var holder = parseInt($(this).closest('.cart-product-content').find('.cart-product-remove').data("variant"));
+      var qty = parseInt($(this).closest('.cart-product-row').find('.cart-product-amount').data("value"))+1;
+      var clicked = $(this);
+      var variant = {
+        'id': holder,
+        'quantity': qty
+      };
+      $.ajax({
+        url: "/cart/change.js",
+        method: "POST",
+        dataType: "json",
+        data: variant,
+        async: false
+      })
+      .done(function( data ) {
+        window.data = data;
+        var looping = data.items;            
+        var only_sample = true;
+        $(looping).each(function(index){
+          if(this.product_type == "supplies" && this.handle != "colour-sample-chart") {
+            only_sample = false;
+          }     
+          if(this.product_type == "paint" || this.product_type == "trim-paint") {
+            if(this.variant_title.indexOf("liter") != -1 || this.variant_title.indexOf("litre") != -1) {
+              only_sample = false;
+            }
+          }
+          if(this.variant_id == holder){
+            var oldTxt = (qty-1) * parseFloat($(clicked).closest( ".cart-product-row" ).find(".cart-product-amount").data("adder")).toFixed(1);
+            var newTxt = this.quantity * parseFloat($(clicked).closest( ".cart-product-row" ).find(".cart-product-amount").data("adder")).toFixed(1);
+            $(clicked).closest( ".cart-product-row" ).find(".cart-product-amount").text($(clicked).closest( ".cart-product-row" ).find(".cart-product-amount").text().replace(oldTxt.toString().replace(/\.0+$/,''), newTxt.toString().replace(/\.0+$/,'')));
+            $(clicked).closest( ".cart-product-row" ).find(".cart-product-amount").data("value",this.quantity);
+            if((this.product_type == "paint" || this.product_type == "trim-paint") && (this.variant_title.indexOf("liter") != -1 || this.variant_title.indexOf("litre") != -1) ) {          	
+              $(clicked).closest( ".cart-product-row" ).find(".cart-product-info").html("{% if cart.attributes.lang contains "nl" %}Dekt{% elsif cart.attributes.lang contains "fr" %}Couvertures{% else %}Covers{% endif %} " + parseInt(newTxt*10) + " m<sup>2</sup>")
+                                                                                        }
+                                                                                        $(clicked).closest( ".cart-product-content" ).find(".cart-product-price").text('€'+(this.final_line_price/100));
+              if(this.quantity > 1) {
+                $(clicked).closest(".cart-product-row").find(".symbol-minus").css('opacity','1');
+              }
+            }
+          });
+          $(".total-price").text('€'+(data.total_price/100));
+          if(data.item_count > 0) {
+            $(".cart-no-wrapper").removeClass('hide-cart-no');
+            if(data.item_count < 10) {
+              $("#cart-text").text('0'+data.item_count);     
+            } else {          
+              $("#cart-text").text(data.item_count); 
+            }
+          } else {
+            $(".cart-no-wrapper").addClass('hide-cart-no');
+            $(".cart-products-parent").addClass('no-disp');
+            $(".cart-empty").removeClass('no-disp');
+          }
+          if(data.total_price/100 > 99.99) {
+            $('.cart-sub-head').removeClass('no-vis');
+            $('.total-text').last().text('Free');
+          } else {
+            $('.cart-sub-head').addClass('no-vis');
+            $('.total-text').last().text('Calculated at next step');
+          }
+        })
+        .fail(function(error) {
+          console.log( error );
+        });
+      });
+      $(".cart-product-content .symbol-plus:not(.added)").addClass("added");
+    } 
+                                                              plusProductBtn()
+
+    //subtract from cart
+    function minusProductBtn() {
+      $(".cart-product-content .symbol-minus:not(.added)").click(function(){     
+        var holder = parseInt($(this).closest('.cart-product-content').find('.cart-product-remove').data("variant"));
+        var qty = parseInt($(this).closest('.cart-product-row').find('.cart-product-amount').data("value"))-1;
+        if(qty > 0) {
+          var clicked = $(this);
+          var variant = {
+            'id': holder,
+            'quantity': qty
+          };
+          $.ajax({
+            url: "/cart/change.js",
+            method: "POST",
+            dataType: "json",
+            data: variant,
+            async: false
+          })
+          .done(function( data ) {
+            window.data = data;
+            var looping = data.items;           
+            var only_sample = true;
+            $(looping).each(function(index){
+              if(this.product_type == "supplies" && this.handle != "colour-sample-chart") {
+                only_sample = false;
+              }     
+              if(this.product_type == "paint" || this.product_type == "trim-paint") {
+                if(this.variant_title.indexOf("liter") != -1 || this.variant_title.indexOf("litre") != -1) {
+                  only_sample = false;
+                }
+              }
+              if(this.variant_id == holder){
+                var oldTxt = (qty+1) * parseFloat($(clicked).closest( ".cart-product-row" ).find(".cart-product-amount").data("adder")).toFixed(1);
+                var newTxt = this.quantity * parseFloat($(clicked).closest( ".cart-product-row" ).find(".cart-product-amount").data("adder")).toFixed(1);
+                $(clicked).closest( ".cart-product-row" ).find(".cart-product-amount").text($(clicked).closest( ".cart-product-row" ).find(".cart-product-amount").text().replace(oldTxt.toString().replace(/\.0+$/,''), newTxt.toString().replace(/\.0+$/,'')));
+                $(clicked).closest( ".cart-product-row" ).find(".cart-product-amount").data("value",this.quantity);
+                if((this.product_type == "paint" || this.product_type == "trim-paint") && (this.variant_title.indexOf("liter") != -1 || this.variant_title.indexOf("litre") != -1) ) {          	
+                  $(clicked).closest( ".cart-product-row" ).find(".cart-product-info").html("{% if cart.attributes.lang contains "nl" %}Dekt{% elsif cart.attributes.lang contains "fr" %}Couvertures{% else %}Covers{% endif %} " + parseInt(newTxt*10) + " m<sup>2</sup>")
+                                                                                            }
+                                                                                            $(clicked).closest( ".cart-product-content" ).find(".cart-product-price").text('€'+(this.final_line_price/100));
+                  if(this.quantity == 1) {
+                    $(clicked).closest(".cart-product-row").find(".symbol-minus").css('opacity','0.5');
+                  }
+                }
+              });
+              $(".total-price").text('€'+(data.total_price/100));
+              if(data.item_count > 0) {
+                $(".cart-no-wrapper").removeClass('hide-cart-no');
+                if(data.item_count < 10) {
+                  $("#cart-text").text('0'+data.item_count);     
+                } else {          
+                  $("#cart-text").text(data.item_count); 
+                }
+              } else {
+                $(".cart-no-wrapper").addClass('hide-cart-no');
+                $(".cart-products-parent").addClass('no-disp');
+                $(".cart-empty").removeClass('no-disp');
+              }
+              if(data.total_price/100 > 99.99) {
+                $('.cart-sub-head').removeClass('no-vis');
+                $('.total-text').last().text('Free');
+              } else {
+                $('.cart-sub-head').addClass('no-vis');
+                $('.total-text').last().text('Calculated at next step');
+              }
+            })
+            .fail(function(error) {
+              console.log( error );
+            });
+          }        
+                });
+          $(".cart-product-content .symbol-minus:not(.added)").addClass("added");
+        } 
+        minusProductBtn()
+
+</script>
