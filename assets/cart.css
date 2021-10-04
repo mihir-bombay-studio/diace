@@ -315,7 +315,7 @@
   cursor:not-allowed;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 768px) {
   .cart-close {
     order: 2;
     padding: 0;
