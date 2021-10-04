@@ -125,15 +125,17 @@ font-size: inherit;
   width:100%;
 }
 
-.content_for_layout-wrapper {
-    padding-top: 96px;
-}
+
 
 
 @media screen and (min-width: 768px) {
   .no-desktop, div.no-desktop{
     display:none;
   }
+  
+  .content_for_layout-wrapper {
+    padding-top: 96px;
+}
 }
 
 @media screen and (max-width: 768px) {
