@@ -11,7 +11,7 @@
     image:"{{ upsellProduct.featured_image | img_url: 'medium' }}",
     price:"{{ upsellProduct.price | divided_by:100.0 }}"
   };
-  var upsellProduct = JSON.parse(`{{ upsellProduct | json }}`);
+  var upsellProduct = JSON.parse(`{{ selected_product | json }}`);
   console.log(upsellProduct);
   var current_variant = upsellProduct.variants[0];
   
