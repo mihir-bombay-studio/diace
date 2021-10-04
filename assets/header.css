@@ -348,8 +348,14 @@ cursor:pointer;
     margin-bottom: 0;
   }
   
+  .header-nav-list {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+}
+  
   .right-nav-upper li {
-    margin-left: 16px;
+    margin-left: 0;
   }
   
 }
