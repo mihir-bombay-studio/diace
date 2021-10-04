@@ -12,6 +12,7 @@
   width: 100%;
   height: 18.615vw;
   display: block;
+  object-fit : cover;
 }
 
 .product-hover-text {
