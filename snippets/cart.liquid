@@ -31,12 +31,12 @@
 
 
 <div class="cart-mask" style="display: none;">
-  {{ selected_product }} {{ upsell_present }}
+  
   <div id="cart_container" class="cart-container  {% if upsell_present %} hide-upsell{% endif %}" data-handle="{{ upsellProductHandle }}">
     <div class="cart-header">
       <button id="cart_close" class="cart-close">{% render "icon-close-1" %}</button>
       <div class="cart-heading">
-        JE WINKELMANDJE
+        JE WINKELMANDJE{{ selected_product }} {{ upsell_present }}{{ upsellProduct }}
       </div>
     </div>
     <div id="cart_body_wrapper" class="cart-body-wrapper">
