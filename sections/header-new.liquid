@@ -57,6 +57,8 @@
               <div class="login-wrapper">
                 {% if customer %}
                 WELCOME BACK {{ customer.first_name }}
+                <a href="/account">Ga naar mijn account</a>
+                <a href="/account/logout">LOG OUT</a>
                 {% else %}
                 <form action="" class="login-form">
                   <div class="form-container">
