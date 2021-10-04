@@ -161,6 +161,9 @@ img{
   .featured-blog-post{
     flex-wrap : wrap;
   }
+  .welcomingheadig{
+   	    margin: 52px auto 26px 0; 
+  }
 }
 
 @media screen and (max-width: 768px) {
