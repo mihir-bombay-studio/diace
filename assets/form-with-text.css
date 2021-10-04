@@ -153,4 +153,7 @@ button{
   .frequently_asked_q button {
     display : none;
   }
+  form{
+  	padding-top : 26px;	
+  }
 }
