@@ -132,14 +132,17 @@ font-size: inherit;
   .no-desktop, div.no-desktop{
     display:none;
   }
-  
-  .content_for_layout-wrapper {
-    padding-top: 96px;
-}
+
 }
 
 @media screen and (max-width: 768px) {
   .no-mobile,div li.no-mobile, div .no-mobile{
     display:none;
   }
+  
+    
+  .content_for_layout-wrapper {
+    padding-top: 96px;
+}
+  
 }
