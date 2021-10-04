@@ -150,3 +150,19 @@ img{
 .disp-no{
  display : none; 
 }
+
+
+@media screen and (max-width: 992px) {
+  .blog-image-with-overlay.small{
+  	display : block !important;
+  }
+  .blog-image-with-overlay{
+  	display : none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+
+}
+

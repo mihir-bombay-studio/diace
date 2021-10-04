@@ -17,7 +17,7 @@
       {{section.settings.heading}}
     </div>
     
-    <div class="disp-no blog-image-with-overlay">
+    <div class="disp-no blog-image-with-overlay small">
     {% if article.image != blank %}
         <img
              srcset="{% if article.image.width >= 479 %}{{ article.image | img_url: '479x' }} 479w,{% endif %}
