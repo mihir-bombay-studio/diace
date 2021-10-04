@@ -308,7 +308,7 @@
 }
 
 /* Login */
-.login a {
+/* .login a {
   display: block;
   margin: 0 auto;
   width: fit-content;
@@ -318,7 +318,7 @@
   margin-left: 0;
   margin-right: 0;
 }
-
+ */
 .login .field + a {
   margin-top: 1rem;
 }
