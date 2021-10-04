@@ -181,6 +181,13 @@ img{
   .featured-blog-post .btn{
     padding: 16px 75px 16px 75px;
   }
+  .filter-pills span{
+    margin: 10px 10px;
+    margin-left: 0;
+  }
+  .filter-pills{
+    flex-wrap : wrap;
+  }
 
 }
 
