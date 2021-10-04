@@ -346,7 +346,8 @@ a.active-facets__button {
     width: 100%;
     z-index: 5;
   }
-  .collection-filter-left.active{
+  .filter-mask.active .collection-filter-left{
   	bottom : 0;
   }
+ 
 }
