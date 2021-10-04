@@ -189,7 +189,13 @@ cursor:pointer;
   left: auto;
 }
 
-.login-form input {
+
+.login-page{
+  
+}
+
+
+.login-form input, .login-page input{
   border: 1px solid #FEC23B;
   border-radius: 4px;
   display: block;
