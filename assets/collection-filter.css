@@ -2,10 +2,6 @@
   width: 79%;
 }
 
-.collection-filter-left{
-  width: 19%;
-}
-
 .collection-filter-wrapper .product-collection {
   /*   margin: 0 -.825%; */
   margin-bottom: 300px;
@@ -317,6 +313,9 @@ a.active-facets__button {
   display : none;
 }
 
+.filter-mask{
+	width : 19%;
+}
 
 @media screen and (max-width: 992px) {
   .collection-filter-left , .collection-filter-right{
