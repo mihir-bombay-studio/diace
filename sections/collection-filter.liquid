@@ -155,39 +155,6 @@
     </div>
     
     <div class="collection-filter-left small disp-no">
-      {% for block in section.blocks %}
-      {% if block.type == "price_filter" %}
-      <div class="price-filter{% for block in section.blocks %}{% if block.type == "price_filter" %}{% if block.settings.show_price_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
-        <div class="price-filter-title-wrapper bold flex-box justify-between filter-accordion">
-          <div class="price-filter-title">{{block.settings.show_price_filter_heading}}</div>
-          <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
-        </div>
-        <div class="panel">
-          <div class="slidecontainer">
-            <div class="price-slider">
-              <span class="no-disp">
-                <input type="number" value="0" min="0" max="1000" /> to
-                <input type="number" value="1000" min="0" max="1000" />
-              </span>
-              <div class="range-inputs">
-                <input class="max-range-value" id="min-range" value="0" min="0" max="1000" step="2" type="range" />
-                <input class="max-range-value" id="max-range" value="1000" min="0" max="1000" step="2" type="range" />
-
-              </div>
-
-            </div>
-            <div class="range-count">
-              <div id="lower-value">0</div>
-              <div id="higher-value">1000</div>
-            </div>
-          </div>
-        </div>
-        <div class="yellow-border-bottom"></div>
-      </div>
-      {% endif %}
-      {% endfor %}
-
-
       <div class="sex-filter {% if section.settings.gender_show == false %} no-disp {% endif %}">
         <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion">
           <div class="price-filter-title">{{section.settings.gender_filter_title}}</div>
