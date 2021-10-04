@@ -335,12 +335,16 @@ cursor:pointer;
     padding-top: 0;
     margin-bottom: 16px;
   }
-  
+
   .left-wrap {
     transform: scale(.6);
   }
 
-  .right-wrap.no-desktop {
+  .right-wrap {
     width: auto;
-}
+  }
+  
+  .right-nav-upper{
+    margin-bottom: 0;
+  }
 }
