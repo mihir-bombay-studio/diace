@@ -344,6 +344,9 @@ a.active-facets__button {
     text-decoration: underline;
     text-decoration-color: #FEC23B;
   }
+  .active-collection-tags{
+  	    margin-left: 40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
