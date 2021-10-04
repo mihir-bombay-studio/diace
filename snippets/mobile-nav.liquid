@@ -25,7 +25,13 @@
             <ul class="mobile-nav-footer light">
                 <li class="customer-account">
                     <div class="user-icon">{% render 'icon-user' %}</div>
-                    <div class="user-login-status">Aanmelden/registreren/Account</div>
+                    <div class="user-login-status">
+                      {% if customer.first_name %}
+                      {{ customer.first_name }}
+                      {% else %}
+                      Aanmelden/registreren/Account
+                      {% endif %}
+                  </div>
                 </li>
                 <li class="mobile-nav-langs">
                     <span class="active">NL</span>
