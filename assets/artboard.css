@@ -78,4 +78,7 @@
     width: 100%;
     object-fit: cover;
   }
+  .filtered-container{
+  	margin-bottom : 0;
+  }
 }
