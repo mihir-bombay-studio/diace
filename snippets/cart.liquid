@@ -4,6 +4,7 @@
 {% assign upsellProductHandle = upsellProduct.handle %}
 
 <script>
+   {% if upsellProduct != blank %}
   var upsell = {
     id:"{{ upsellProduct.first_available_variant.id }}",
     title:"{{ upsellProduct.title | escape }}",
@@ -14,7 +15,7 @@
   var upsellProduct = JSON.parse(`{{ upsellProduct | json }}`);
   console.log(upsellProduct);
   var current_variant = upsellProduct.variants[0];
-  
+  {% endif %}
   var renderSvg = {
     icon_remove:`{% render 'icon-remove' %}`,
     icon_cart_new_black:`{% render 'icon-cart-new-black' %}`,
