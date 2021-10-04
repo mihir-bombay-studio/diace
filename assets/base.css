@@ -1123,11 +1123,11 @@ deferred-media {
   font: inherit;
   padding: 0.9rem 3rem 1.1rem;
   text-decoration: none;
-  border: 0;
+/*   border: 0;
   border-radius: 0;
   background-color: var(--color-button-background);
-  box-shadow: 0 0 0 0.1rem var(--color-button-border);
-  color: var(--color-button-text);
+  box-shadow: 0 0 0 0.1rem var(--color-button-border); */
+/*   color: var(--color-button-text); */
   min-width: 12rem;
   min-height: 4.5rem;
   transition: box-shadow var(--duration-short) ease;
