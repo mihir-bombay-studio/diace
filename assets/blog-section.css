@@ -162,7 +162,8 @@ img{
     flex-wrap : wrap;
   }
   .welcomingheadig{
-   	    margin: 52px auto 26px 0; 
+    text-align : center;
+    margin: 52px auto 26px 0; 
   }
 }
 
