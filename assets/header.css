@@ -242,6 +242,10 @@ cursor:pointer;
   color: inherit;
 }
 /* --------------------- LOGIN PAGE FORM ------------------------------ */
+
+.customer-login-wrapper {
+    margin: 5rem auto 10rem auto;
+}
 .login-header {
     text-transform: uppercase;
     font-size: 20px;
@@ -279,6 +283,7 @@ cursor:pointer;
     font-weight: 100;
     text-align: right;
 }
+
 
 .hover-wrapper{
   top: 20px;
