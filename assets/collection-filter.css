@@ -332,11 +332,14 @@ a.active-facets__button {
     display : none;
   }
   .filter-tags{
-  	display : none;
+    display : none;
   }
   .filter-tags.small{
-  	display : block;
+    display: flex;
+    padding-top: 26px;
+    border-top: 2px solid #FEC23B;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -351,7 +354,7 @@ a.active-facets__button {
     z-index: 5;
   }
   .filter-mask.active .collection-filter-left{
-  	bottom : 0;
+    bottom : 0;
   }
   .filter-toggler{
   }
