@@ -1,3 +1,11 @@
+// Mobile navigation
+$(".menu-btn").click(function () {
+  $(this).toggleClass("active");
+  $("#mobile_nav_container").toggleClass("open-nav");
+});
+
+
+
 
 // Accordian 
 var acc = document.getElementsByClassName("accordion");
