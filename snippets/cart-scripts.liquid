@@ -15,11 +15,8 @@
       data: formData,
     })
     .done(function( data ) {
-      console.log(data);
       getCart();
-      $('.cart-toggler').addClass("show");
-      $(".drawer-cart").addClass("drawn");
-      $(".background-drawer-cart").addClass("drawn");
+      toggleCart();
     })
     .fail(function(error) {
       console.log( error );
