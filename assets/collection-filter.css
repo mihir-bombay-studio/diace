@@ -341,7 +341,7 @@ a.active-facets__button {
     height: 100%;
     background: white;
     bottom: -100%;
-    transition: all 300ms ease;
+    transition: bottom 300ms ease;
     left: 0;
     width: 100%;
     z-index: 5;
