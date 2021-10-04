@@ -5,6 +5,22 @@ $(".menu-btn").click(function () {
 });
 
 
+// toggle navbar if navlinks are clicked
+var links = document.querySelectorAll('.mobile-nav-list li a');
+var linksLength = links.length
+
+for (var i = 0; i < linksLength; i++) {
+  links[i].addEventListener('click', function () {
+    closeMobileNav();
+  });
+}
+
+function closeMobileNav(){
+  $(".menu-btn").removeClass("active");
+  $("#mobile_nav_container").removeClass("open-nav");
+}
+
+
 
 
 // Accordian 
