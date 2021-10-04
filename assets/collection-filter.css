@@ -355,8 +355,11 @@ a.active-facets__button {
     height: 10px;
 
   }
+  .collection-types svg .chevron-a{
+    stroke : #000000;
+  }
 
-  .all-collection-title svg .chevron-a{
+  .collection-types.current svg .chevron-a{
     stroke : #FEC23B;
   }
 }
