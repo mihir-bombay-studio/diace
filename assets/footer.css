@@ -83,6 +83,10 @@ footer{
   justify-content : center;
 }
 
+footer .accordian.question{
+  padding : 16px 0;
+}
+
 @media screen and (max-width: 768px) {
   .footer-lower-nav-item , .footer-wrapper{
     display : none;
