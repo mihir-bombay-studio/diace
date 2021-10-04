@@ -114,6 +114,7 @@
     {% endstyle %}
     <link href="http://fonts.cdnfonts.com/css/myriad-pro?styles=947,20533,946,952" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    {{ 'cart.css' | asset_url | stylesheet_tag }}
     {{ 'main.css' | asset_url | stylesheet_tag }}
     {{ 'slick.css' | asset_url | stylesheet_tag }}
 
@@ -132,9 +133,10 @@
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
-    {% comment %}
-    {% section 'header-new' %}
- 	{% endcomment %}
+    
+    {% section 'header-new' %}{% render 'cart' %}
+
+
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
@@ -168,5 +170,6 @@
     <script src="{{ 'variants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ "slick.js" | asset_url }}" async></script>
     <script src="{{ "main.js" | asset_url }}" defer="defer"></script>
+    <script src="{{ "cart-new.js" | asset_url }}" defer="defer"></script>
   </body>
 </html>

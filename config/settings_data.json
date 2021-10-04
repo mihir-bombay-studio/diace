@@ -4,6 +4,7 @@
     "breakpoint_tablet": 992,
     "container_width": "1246px",
     "container_padding_tablet": "40px",
+    "upsell_product": "comfort-armband-light",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",

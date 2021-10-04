@@ -112,7 +112,24 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   height: 16px;
   padding-top: 5px;
 }
+.cart-toggler{
+cursor:pointer;
+}
 
+.cart-item-count{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -2px;
+    right: -4px;
+    background-color: #FEC23B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+}
 /* --------------------- header login form------------------------------ */
 .account-btn {
   cursor: pointer;

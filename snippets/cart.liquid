@@ -1,0 +1,169 @@
+{% assign selected_product = settings.upsell_product %}
+{% assign upsellProduct = all_products[selected_product] %}
+{% assign current_variant = upsellProduct.selected_or_first_available_variant %}
+{% assign upsellProductHandle = upsellProduct.handle %}
+
+<script>
+  var upsell = {
+    id:"{{ upsellProduct.first_available_variant.id }}",
+    title:"{{ upsellProduct.title | escape }}",
+    url:"{{ upsellProduct.url | within: collections.all }}",
+    image:"{{ upsellProduct.featured_image | img_url: 'medium' }}",
+    price:"{{ upsellProduct.price | divided_by:100.0 }}"
+  };
+  var upsellProduct = JSON.parse(`{{ upsellProduct | json }}`);
+  console.log(upsellProduct);
+  var current_variant = upsellProduct.variants[0];
+  
+  var renderSvg = {
+    icon_remove:`{% render 'icon-remove' %}`,
+    icon_cart_new_black:`{% render 'icon-cart-new-black' %}`,
+    icon_sad_outline:`{% render "icon-sad-outline" %}`,
+    icon_yellow_down_chevron:`{% render "icon-yellow-down-chevron" %}`
+  }
+</script>
+{% for item in cart.items %}
+{% if item.product.handle == upsellProductHandle %}
+{% assign upsell_present = true %}
+
+{% endif %}
+{% endfor %}
+
+
+<div class="cart-mask" style="display: none;">
+  <div id="cart_container" class="cart-container  {% if upsell_present %} hide-upsell{% endif %}" data-handle="{{ upsellProductHandle }}">
+    <div class="cart-header">
+      <button id="cart_close" class="cart-close">{% render "icon-close-1" %}</button>
+      <div class="cart-heading">
+        JE WINKELMANDJE
+      </div>
+    </div>
+    <div id="cart_body_wrapper" class="cart-body-wrapper">
+      {% if cart.item_count > 0 %}
+      <div class="cart-list">
+        {% for item in cart.items %}
+        <div id="cart_item_{{item.variant_id}}" class="list-item {{ forloop.index }}">
+          <a href="{{ item.product.url }}" class="product-img">
+            <img class="cart-item__image"
+                 src="{{ item.image | img_url: '150x' }}"
+                 alt="{{ item.image.alt | escape }}"
+                 loading="lazy"
+                 width="75"
+                 height="{{ 75 | divided_by: item.image.aspect_ratio | ceil }}"
+                 >
+          </a>
+          <div class="product-info">
+            <div class="product-name semibold"><a href="{{ item.product.url }}">{{ item.product.title | escape }}</a></div>
+            <div class="flex-box justify-between">
+              <div class="product-variant">{% if item.variant.title != "Default Title" %}{{ item.variant.title }}{% endif %}</div>
+              <div class="count">
+                <span data-variant-id="{{item.variant_id}}" class="qty-minus cart-minus-icon">-</span>
+                <span id="item_count_{{item.variant_id}}" class="item-count-number" data-qty="{{ item.quantity }}">{{ item.quantity }}</span>
+                <span data-variant-id="{{item.variant_id}}" class="qty-plus cart-plus-icon ">+</span>
+              </div>
+            </div>
+            <div class="item-price">
+              {% if item.variant.compare_at_price %}<span class="compare-at-price">{{ item.variant.compare_at_price | money }}</span>{% endif %}
+              <span class="discount-price semibold">{{ item.price | money }}</span>
+            </div>
+            <button data-variant-id="{{item.variant_id}}" class="remove-item">verwijderen <span class="dustbin">{% render 'icon-remove' %}</span></button>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      
+<!--       ----------------- UPSELL ITEM ------------------------- -->
+      <div id="upsell_item_{{upsellProduct.first_available_variant.id }}" class="upsell-container">
+        <div class="upsell-heading semibold">Mensen kochten ook:</div>
+        <div class="list-item">
+          <a href="{{ upsellProduct.url | within: collections.all }}" class="product-img">
+            <img 
+                 src="{{ upsellProduct.featured_image | img_url: 'medium' }}" 
+                 alt="{{ upsellProduct.title | escape }}" 
+                 class="upsell-img" 
+                 loading="lazy"
+                 >
+          </a>
+          <div class="product-info">
+            <div class="product-name semibold"><a href="{{ upsellProduct.url | within: collections.all }}">{{ upsellProduct.title }}</a></div>
+            <div class="flex-box justify-between">
+              <div class="w-100">
+                <div class="flex-box justify-between">
+                  <div class="product-variant">{% if current_variant.title != "Default Title" %}{{ current_variant.title }}{% endif %}</div>
+                </div>
+                <div class="item-price flex-box justify-between">
+                  <div class="">
+                    {% if current_variant.compare_at_price %}<span class="compare-at-price">{{ current_variant.compare_at_price | money }}</span>{% endif %}
+                    <span class="discount-price semibold">{{ current_variant.price | money}}</span>
+                  </div>
+                  <button 
+                          class="add-upsell-btn semibold AddToCart no-mobile"
+                          data-variant-id = "{{upsellProduct.first_available_variant.id }}"
+                          data-quantity = ""
+                          > 
+                    <span class="plus-circle">+</span> 
+                    <span class="add-upsell-btn-text">Toevoegen</span> 
+                  </button>
+
+                </div>
+              </div>
+              <button 
+                      class="add-upsell-btn AddToCart btn btn-yellow no-desktop"
+                      data-variant-id = "{{upsellProduct.first_available_variant.id }}"
+                      data-quantity = ""
+                      > 
+                <span class="plus-circle">+</span> 
+                <span class="">{% render 'icon-cart-new-black' %}</span> 
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!--     /  ----------------- UPSELL ITEM ------------------------- -->
+
+      <div class="cart-footer">
+        <div class="cart-calculation">
+          <div class="flex-box justify-between">
+            <div class="subtotal-label light">subtotal</div>
+            <div id="sub_total_price" class="subtotal-price semibold">{{ cart.total_price | money }}</div>
+          </div>
+          <div class="flex-box justify-between">
+            <div class="dispatch-label light">Verzending</div>
+            <div class="dispatch-msg semibold">Berekend in volgende stap</div>
+          </div>
+        </div>
+        <a href="/checkout" class="checkout-btn">checkout</a>
+        <div class="text-center no-mobile">
+          <a href="/" class="continue-shop underline-link">Verder winkelen</a>
+        </div>
+      </div>
+      {% else %}
+      <div class="cart-empty-state">
+        <div class="empty-msg">
+          <div class="empty-state-heading semibold">Er zit nog niets in je mandje</div>
+          <div class="empty-state-img">
+            {% render "icon-sad-outline" %}
+          </div>
+        </div>
+        <div class="empty-state-links">
+          <a href="#" class="empty-state-link">
+            OPBERGEN
+            <span class="">
+              {% render "icon-yellow-down-chevron" %}
+            </span>
+          </a>
+          <a href="#" class="empty-state-link">
+            STICKERS
+            <span class="">
+              {% render "icon-yellow-down-chevron" %}
+            </span>
+          </a>
+          <a href="#" class="btn btn-yellow category-btn ">BEKIJK ALLE CATEGORIEËN</a>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
