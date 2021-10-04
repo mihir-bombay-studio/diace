@@ -3,7 +3,7 @@
 {% assign current_variant = upsellProduct.selected_or_first_available_variant %}
 {% assign upsellProductHandle = upsellProduct.handle %}
 
-<script>
+<!-- <script>
   var upsell = {
     id:"{{ upsellProduct.first_available_variant.id }}",
     title:"{{ upsellProduct.title | escape }}",
@@ -21,7 +21,7 @@
     icon_sad_outline:`{% render "icon-sad-outline" %}`,
     icon_yellow_down_chevron:`{% render "icon-yellow-down-chevron" %}`
   }
-</script>
+</script> -->
 {% for item in cart.items %}
 {% if item.product.handle == upsellProductHandle %}
 {% assign upsell_present = true %}
