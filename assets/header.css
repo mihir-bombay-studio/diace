@@ -393,7 +393,7 @@ cursor:pointer;
 }
 
 .mobile-nav-wrapper {
-    padding: 36px;
+    padding: 16px 36px;
     display: flex;
     flex-direction: column;
     gap: 40px;
