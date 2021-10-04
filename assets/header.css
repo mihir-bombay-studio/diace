@@ -340,4 +340,7 @@ cursor:pointer;
     transform: scale(.6);
   }
 
+  .right-wrap.no-desktop {
+    width: auto;
+}
 }
