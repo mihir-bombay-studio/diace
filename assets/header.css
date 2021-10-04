@@ -241,7 +241,7 @@ cursor:pointer;
   display: block;
   color: inherit;
 }
-
+/* --------------------- LOGIN PAGE FORM ------------------------------ */
 .customer-login-form-wrapper {
     color: #737373;
 }
@@ -257,6 +257,14 @@ cursor:pointer;
 .login-page input {
     border-width: 2px;
     margin: 8px 0 16px 0;
+}
+
+
+.forgot-password {
+    font-size: 12px;
+    display: block;
+    font-weight: 100;
+    text-align: right;
 }
 
 .hover-wrapper{
