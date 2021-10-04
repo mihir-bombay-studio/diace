@@ -335,6 +335,8 @@ cursor:pointer;
     padding-top: 0;
     margin-bottom: 16px;
     line-height: normal;
+    position: fixed;
+    width: 100%;
   }
 
   .left-wrap {
