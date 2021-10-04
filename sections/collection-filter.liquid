@@ -32,7 +32,7 @@
 
 <div class="collection-filter-wrapper container">
   <div class="collection-filter flex-box justify-between">
-    <div class="filter-mask" style="display : none;">
+    <div class="filter-mask">
     <div class="collection-filter-left">
       <div class="filter-tags">
         {%- for coll in collections -%}
@@ -843,7 +843,11 @@
   }
 
 
-  $(".filter-toggler, .filter-close").click(function(){
-    toggleFilter();
+  $(".filter-toggler").click(function(){
+    openFilter();
+  });
+  
+  $(".filter-close").click(function(){
+    closeFilter();
   });
 </script>
