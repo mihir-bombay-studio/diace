@@ -314,7 +314,7 @@ a.active-facets__button {
 }
 
 .filter-mask{
-	width : 19%;
+  width : 19%;
 }
 
 @media screen and (max-width: 992px) {
@@ -345,6 +345,17 @@ a.active-facets__button {
   }
   .active-collection-tags{
     margin-left: 40px;
+  }
+  .all-collection-title svg{
+    transform: rotate(
+      270deg);
+    width: 15px;
+    height: 10px;
+
+  }
+
+  .all-collection-title svg .chevron-a{
+    stroke : #FEC23B;
   }
 }
 
