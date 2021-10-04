@@ -175,6 +175,8 @@ img{
   }
   .blogs{
   	margin-bottom : 52px;
+    max-width:100%;
+    width : 100%;
   }
 
 }
