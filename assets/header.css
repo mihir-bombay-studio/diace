@@ -404,19 +404,27 @@ cursor:pointer;
     flex-direction: column;
     gap: 14px;
   }
-  
+
   .mobile-nav-link .yellow-down-chevron{
-  
-  margin:0;
+    margin:0;
   }
-  
+
   .mobile-nav-link svg {
     transform: rotate(270deg);
     width: 12px;
     height: 12px;
     padding: 0;
-}
+  }
   
+  .mobile-nav-langs .active {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  .user-icon .a-icon-user {
+    stroke: #000000;
+  }
+
   .customer-account, .mobile-nav-langs, .mobile-nav-social-icons {
     display: flex;
     gap: 16px;
