@@ -337,6 +337,8 @@ cursor:pointer;
     line-height: normal;
     position: fixed;
     width: 100%;
+    display: block;
+    z-index: 10;
   }
 
   .left-wrap {
@@ -346,20 +348,20 @@ cursor:pointer;
   .right-wrap {
     width: auto;
   }
-  
+
   .right-nav-upper{
     margin-bottom: 0;
   }
-  
+
   .header-nav-list {
     display: flex;
     align-items: flex-end;
     gap: 16px;
-}
-  
+  }
+
   .header-nav-list-sub li {
     padding: 0 16px;
-}
+  }
   
   .right-nav-upper li {
     margin-left: 0;
