@@ -4,7 +4,7 @@
     var formData = {
       'items': [{
         'id': parseInt($(this).data('value')),
-        'quantity': 1
+        'quantity': parseInt($(".product-qty .qty").data("qty"))
       }]
     };
 
