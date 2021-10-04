@@ -73,6 +73,7 @@
       </div>
       
 <!--       ----------------- UPSELL ITEM ------------------------- -->
+      {% if selected_product != "blank" %}
       <div id="upsell_item_{{upsellProduct.first_available_variant.id }}" class="upsell-container">
         <div class="upsell-heading semibold">Mensen kochten ook:</div>
         <div class="list-item">
@@ -120,7 +121,7 @@
 
         </div>
       </div>
-      
+      {% endif %}
       <!--     /  ----------------- UPSELL ITEM ------------------------- -->
 
       <div class="cart-footer">
