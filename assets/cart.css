@@ -166,18 +166,19 @@
 }
 
 .remove-item {
-    border: none;
-    background: transparent;
-    color: #737373;
-    font-size: 12px;
-    font-weight: normal;
-    text-decoration: underline;
-    display: block;
-    margin-left: auto;
-    cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #737373;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: underline;
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
   padding: 0;
   display: flex;
   gap: 2.2px;
+  text-transform: lowercase;
 }
 
 .dustbin {
