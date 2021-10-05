@@ -3,7 +3,7 @@
 
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
-    {% for product in collections.all_products %}
+    {% for product in collections['all'].products %}
     <div class="product-collection-card">
       <div class="featured-product-img rel">
         <a href="{{product.url}}"> <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
