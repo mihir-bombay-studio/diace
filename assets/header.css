@@ -289,10 +289,10 @@ cursor:pointer;
   position : relative;
 }
 
-#nav-sub-drop{
+.hover-wrapper{
 	display : none;
 }
 
-.dropdown-ul:hover + #nav-sub-drop {
+.dropdown-ul:hover + .hover-wrapper{
   display : block;
 }
