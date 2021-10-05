@@ -222,5 +222,10 @@ h2.newsletter-subscription-heading {
   .newsletter-container .submit-btn{
     width : 100%;
   }
-  
+  .text-over-sm.bold{
+    display : none;
+  }
+  .text-over-sm.new.bold{
+    display : block;
+  }
 }
