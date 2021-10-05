@@ -101,31 +101,33 @@ $(document).mouseup(function(e) {
 });
 
 
-// function togglePassword() {
-//   let x = $(".CustomerPassword");
-//   console.log(x[0]);
-//   if (x.type === "password") {
-//     x.type = "text";
-//   } else {
-//     x.type = "password";
-//   }
-// }
-
-
-// $('.view-password').click(function() {
-//   togglePassword();
-// });
-var links = document.querySelectorAll('.view-password');
-var linksLength = links.length
-
-for (var i = 0; i < linksLength; i++) {
-  links[i].addEventListener('click', function () {
-    let x = document.querySelectorAll('#CustomerPassword');
-    console.log(x[i]);
-    if (x[i].type === "password") {
-      x[i].type = "text";
-    } else {
-      x[i].type = "password";
-    }
-  });
+function togglePassword(prevSiblings) {
+  let x = prevSiblings;
+  console.log(x[0]);
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
 }
+
+
+$('.view-password').click(function() {
+  let current =$(this);
+  let prevSiblings = current.previousElementSibling;
+  togglePassword(prevSiblings);
+});
+// var links = document.querySelectorAll('.view-password');
+// var linksLength = links.length
+
+// for (var i = 0; i < linksLength; i++) {
+//   links[i].addEventListener('click', function () {
+//     let x = document.querySelectorAll('#CustomerPassword');
+//     console.log(x[i]);
+//     if (x[i].type === "password") {
+//       x[i].type = "text";
+//     } else {
+//       x[i].type = "password";
+//     }
+//   });
+// }
