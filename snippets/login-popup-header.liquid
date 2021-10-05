@@ -30,7 +30,7 @@
            type="email"
            name="customer[email]"
            id="CustomerEmail"
-           class="CustomerPassword"
+           
            autocomplete="email"
            autocorrect="off"
            autocapitalize="off"
@@ -51,6 +51,7 @@
            value=""
            name="customer[password]"
            id="CustomerPassword"
+           class="CustomerPassword"
            autocomplete="current-password"
            {% if form.errors contains 'form' %}
            aria-invalid="true"
