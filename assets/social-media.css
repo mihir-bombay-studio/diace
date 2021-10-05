@@ -222,14 +222,5 @@ h2.newsletter-subscription-heading {
   .newsletter-container .submit-btn{
     width : 100%;
   }
-  .text-over-sm.bold{
-    padding: 9.5px 0 8.5px;
-    position: relative;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0 3px #33270c1a;
-    text-align: center;
-    top: 0;
-  }
+  
 }
