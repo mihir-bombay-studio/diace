@@ -123,7 +123,17 @@ h2.featured-collection-heading {
     padding: 20px 99px 16px;
   }
   .product-title-price.flex-box{
-  	flex-direction: column;
+    flex-direction: column;
+  }
+  .text-over-sm.bold{
+    padding: 9.5px 0 8.5px;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 3px #33270c1a;
+    text-align: center;
+    top: 0;
   }
 }
 
