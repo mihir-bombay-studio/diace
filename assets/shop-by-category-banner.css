@@ -56,15 +56,18 @@
     }
 
 .shop-by-category-banner.small{
-	display : none;
+  display : none;
 }
 
 @media screen and (max-width: 768px) {
   .shop-by-category-banner{
-  	display : none;
+    display : none;
   }
   .shop-by-category-banner-new.small{
-	display : block;
-}
+    display : block;
+  }
+  .banner-link-new{
+    margin-top : 45px;
+  }
 
 }
