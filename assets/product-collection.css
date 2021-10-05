@@ -82,4 +82,8 @@
     font-weight : bold;
     text-transform : uppercase;
   }
+  .product-img{
+    border-radius: 8px 8px 0 0;
+
+  }
 }
