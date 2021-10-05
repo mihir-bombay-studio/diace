@@ -74,7 +74,7 @@
     object-fit : cover;
   }
   .product-collection-card{
-    width : 31.68%;
+    width : 31.68% !important;
   }
   .product-collection-card img{
   	height : 170px !important;
@@ -82,8 +82,8 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 479px) {
   .product-collection-card{
-    width : 48.68%;
+    width : 48.68% !important;
   }
 }
