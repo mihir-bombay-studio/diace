@@ -112,5 +112,5 @@ function togglePassword() {
 
 
 $('.view-password').click(function() {
-  $(this).togglePassword();
+  togglePassword();
 });
