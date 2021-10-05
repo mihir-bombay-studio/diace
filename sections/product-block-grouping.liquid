@@ -90,15 +90,15 @@
               {%- endif -%}
             </div>
             {% paginate collections[section.settings.grouping_collection].products by 1000 %}
-            {%- for product in collections[section.settings.grouping_collection].products -%}a
-            {%- for option in product.options_with_values -%}
-            {%- for value in option.values -%}
-            <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+            {%- for productx in collections[section.settings.grouping_collection].products -%}a
+            {%- for optionx in productx.options_with_values -%}
+            {%- for value in optionx.values -%}
+            <input type="radio" id="{{ section.id }}-{{ optionx.name }}-{{ forloop.index0 }}"
                    class="no-disp"
-                   name="{{ option.name }}"
+                   name="{{ optionx.name }}"
                    value="{{ value | escape }}"
                    form="product-form-{{ section.id }}"
-                   {% if option.selected_value == value %}checked{% endif %}
+                   {% if product.id == productx.id %}checked{% endif %}
                    >
             {%- if option.name == "Size"  -%}
             <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
