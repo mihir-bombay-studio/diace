@@ -183,6 +183,10 @@ h2.newsletter-subscription-heading {
   padding: 26px 16px;
 }
 
+.newsletter{
+  padding: 0 25px;
+}
+
 @media screen and (max-width: 992px) {
   .social-media-wrapper{
     margin-bottom : 82px;
@@ -239,4 +243,5 @@ h2.newsletter-subscription-heading {
   .sm-left img{
     border-radius : 0; 
   }
+
 }
