@@ -382,4 +382,7 @@ a.active-facets__button {
   }
   .filter-toggler{
   }
+  .collection-banner-wapper{
+  	display : none;
+  }
 }
