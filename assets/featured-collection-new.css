@@ -122,5 +122,8 @@ h2.featured-collection-heading {
   .featured-collection-wrapper .btn{
     padding: 20px 99px 16px;
   }
+  .product-title-price.flex-box{
+  	flex-direction: column;
+  }
 }
 
