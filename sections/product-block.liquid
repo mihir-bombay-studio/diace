@@ -172,9 +172,9 @@
     </div>
   </div>
 </div>
-
+{% comment %}
 {% include "cart-scripts" %}
-
+{% endcomment %}
 <script>
   $('.qty-minus').click(function() {
   	var data_qty = parseInt($(this).next().data('qty'));
