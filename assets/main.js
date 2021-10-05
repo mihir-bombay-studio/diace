@@ -45,39 +45,39 @@ for (i = 0; i < acc.length; i++) {
 
 // filter by tags and range script
 
-  $('.collection-tag').click(function() {
-   	$(this).toggleClass("underline-selected");
-  	var filter_tag = $(this).data('tfilter');
-    $('.product-collection-card').toggleClass('no-disp');
-    $('.product-collection-card').each(function() {
-      var string = $(this).data('tag');
-      var tag = string.split(',');
-      if( $.inArray(filter_tag, tag) != -1 ) {
-        $(this).removeClass('no-disp');
-      }
-    });
-    
+$('.collection-tag').click(function() {
+  $(this).toggleClass("underline-selected");
+  var filter_tag = $(this).data('tfilter');
+  $('.product-collection-card').toggleClass('no-disp');
+  $('.product-collection-card').each(function() {
+    var string = $(this).data('tag');
+    var tag = string.split(',');
+    if( $.inArray(filter_tag, tag) != -1 ) {
+      $(this).removeClass('no-disp');
+    }
   });
 
+});
 
-  $('.article_filter_tag').click(function() {
-  	var bfilter_tag = $(this).data('bfilter');
-    $('.blogs').toggleClass('no-disp');
-    $('.blogs').each(function() {
-      var bstring = $(this).data('btag');
-      var btag = bstring.split(',');
-      if( $.inArray(bfilter_tag, btag) != -1 ) {
-        $(this).removeClass('no-disp');
-      }
-    });
-    
+
+$('.article_filter_tag').click(function() {
+  var bfilter_tag = $(this).data('bfilter');
+  $('.blogs').toggleClass('no-disp');
+  $('.blogs').each(function() {
+    var bstring = $(this).data('btag');
+    var btag = bstring.split(',');
+    if( $.inArray(bfilter_tag, btag) != -1 ) {
+      $(this).removeClass('no-disp');
+    }
   });
-  
+
+});
 
 
-    $('.check-box-wrapper').click(function() {
-      $(this).toggleClass('selected');
-    });
+
+$('.check-box-wrapper').click(function() {
+  $(this).toggleClass('selected');
+});
 
 // $("#account").click(function(){
 //   $("#account .login-wrapper").toggleClass("header-nav-list-sub");
@@ -99,21 +99,6 @@ $(document).mouseup(function(e) {
   }
 
 });
-
-
-// function togglePassword() {
-//   let x = document.getElementById("CustomerPassword");
-//   if (x.type === "password") {
-//     x.type = "text";
-//   } else {
-//     x.type = "password";
-//   }
-// }
-
-
-// $('.view-password').click(function() {
-//   togglePassword();
-// });
 
 
 $(".view-password").click(function() {
