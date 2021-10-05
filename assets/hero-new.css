@@ -125,6 +125,7 @@
   }
   .text-over-hero.bold.new{
   	background-color : #fff;
+    font-size: 16px;
   }
   .hero-left img{
     border-radius: 8px 8px 0 0;
