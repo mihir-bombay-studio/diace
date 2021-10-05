@@ -120,7 +120,6 @@ var linksLength = links.length
 
 for (var i = 0; i < linksLength; i++) {
   links[i].addEventListener('click', function () {
-    closeMobileNav();
     let x = $(".CustomerPassword");
     console.log(x[i]);
     if (x[i].type === "password") {
