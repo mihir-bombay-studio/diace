@@ -196,3 +196,7 @@ fieldset.product-form__input {
     opacity: 1;
     transform: translate(-50%,-50%);
 }
+
+fieldset.product-form__input input:checked + label {
+  font-weight: 600;
+}
