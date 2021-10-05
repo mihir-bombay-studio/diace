@@ -365,10 +365,12 @@ a.active-facets__button {
     stroke : #FEC23B;
   }
   .filter-title.semibold{
-  	padding-left : 25px;
+    padding-left : 25px;
   }
   .sex-filter-title-wrapper , .collection-filter.flex-box .panel , .price-filter-title-wrapper{
     padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
