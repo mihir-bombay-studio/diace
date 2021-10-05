@@ -439,5 +439,14 @@ a.active-facets__button {
     width : 100%;
     object-fit : cover;
   }
+  .collection-filter-wrapper .product-collection-card{
+    width : 47.5%;
+  }
 
+}
+
+@media screen and (max-width: 479px) {
+  .collection-filter-wrapper .product-collection-card{
+    width : 100%;
+  }
 }
