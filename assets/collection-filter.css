@@ -309,7 +309,7 @@ a.active-facets__button {
   justify-content: space-between;
 }
 
-.disp-no{
+.disp-no , .filter-toggler{
   display : none;
 }
 
@@ -384,5 +384,8 @@ a.active-facets__button {
   }
   .collection-banner-wrapper{
   	display : none;
+  }
+  .filter-toggler{
+   	display : block; 
   }
 }
