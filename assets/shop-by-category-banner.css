@@ -9,7 +9,7 @@
 
 .banner-right {
   max-width: 278px;
-/*   max-height: 278px; */
+  /*   max-height: 278px; */
 }
 
 .banner-right img{
@@ -22,7 +22,7 @@
   padding: 52px 52px 26px;
   width: 80%;
   background-color: var(--color-background);
-}
+    }
 
 .banner-title.bold {
   margin-bottom: 26px;
@@ -54,3 +54,9 @@
 .banner-link:hover .right-black-chveron .a-icon-black-right-chevron{
   stroke: var(--background-yellow);
     }
+
+@media screen and (max-width: 768px) {
+  .shop-by-category-banner{
+  	display : none;
+  }
+}
