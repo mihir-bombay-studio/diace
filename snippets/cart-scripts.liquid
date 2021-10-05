@@ -1,6 +1,26 @@
 <script>
   //card addtocart
   $(".card-add-cart, #add-to-cart").click(function(){
+    $(function() {
+      var string = "";
+      $(".product-form__input").each(function(index){
+        if(index == 0) {
+          string += $(this).find("input:checked").val();
+        } else {
+          string += " / " + $(this).find("input:checked").val();
+        }
+
+      });
+      console.log(string);
+      var x = JSON.parse($('#product-json').html());
+      //console.log(x);
+
+      var w = x.find(item => {
+        return item.public_title === string;
+      });
+      console.log(w.id);
+    });
+    
     var formData = {
       'items': [{
         'id': parseInt($(this).data('value')),
