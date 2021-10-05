@@ -274,3 +274,13 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+@media screen and (max-width: 768px) {
+ 
+
+  .grid-wrapper {
+    margin-bottom: 10.5rem;
+  }
+  
+
+}
