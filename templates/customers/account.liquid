@@ -137,7 +137,7 @@
       </div>
       <div class="accordion-wrapper">
         <button class="accordion">MIJN BESTELLINGEN</button>
-        <div class="panel order_list">
+        <div class="panel {% if customer.orders_count > 1 %} order_list{% endif %}">
           <div class="tab-wrapper">
             <div class="tab-container">
               {%- for order in customer.orders -%}
