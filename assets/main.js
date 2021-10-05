@@ -115,6 +115,7 @@ function togglePassword(prevSiblings) {
 $('.view-password').click(function() {
   let current =$(this);
   let prevSiblings = current.previousElementSibling;
+  console.log(prevSiblings);
   togglePassword(prevSiblings);
 });
 // var links = document.querySelectorAll('.view-password');
