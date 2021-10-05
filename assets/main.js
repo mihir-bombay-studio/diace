@@ -102,7 +102,7 @@ $(document).mouseup(function(e) {
 
 
 function togglePassword() {
-  let x = document.getElementById("CustomerPassword");
+  let x = $(".CustomerPassword");
   if (x.type === "password") {
     x.type = "text";
   } else {
