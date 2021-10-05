@@ -76,6 +76,9 @@
   .product-collection-card{
     width : 31.68%;
   }
+  .product-collection-card img{
+  	height : 170px;
+  }
 
 }
 
