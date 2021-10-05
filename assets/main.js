@@ -120,7 +120,7 @@ var linksLength = links.length
 
 for (var i = 0; i < linksLength; i++) {
   links[i].addEventListener('click', function () {
-    let x = document.querySelectorAll('.CustomerPassword');
+    let x = document.querySelectorAll('#CustomerPassword');
     console.log(x[i]);
     if (x[i].type === "password") {
       x[i].type = "text";
