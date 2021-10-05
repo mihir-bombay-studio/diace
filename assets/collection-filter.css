@@ -341,7 +341,7 @@ a.active-facets__button {
   .current{
     font-weight: 700;
     text-decoration: underline;
-    color : #000000;
+    color : #000000 !important;
     text-decoration-color: #FEC23B;
   }
   .active-collection-tags{
