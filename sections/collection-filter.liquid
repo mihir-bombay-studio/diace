@@ -207,13 +207,13 @@
                loading="lazy"
                >
         </div>
-        <div class="banner-left">
+        <div class="">
             <div class="banner-title bold">{{ collection.title }}</div>
             <div class="banner-desc light">{{ collection.description }}</div>
             {% for block in section.blocks %}
             {% if block.type == "button" %}
             {%- if block.settings.button_label != blank -%}
-            <div class="banner-link">
+            <div class="banner-btn-link">
               <a href="{{ block.settings.button_link }}" class="bold">{{ block.settings.button_label | escape }}</a>
               <span class="right-black-chveron">{% include 'icon-black-right-chevron' %}</span>
             </div>
