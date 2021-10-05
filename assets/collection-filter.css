@@ -364,6 +364,9 @@ a.active-facets__button {
   .collection-types.current svg .chevron-a{
     stroke : #FEC23B;
   }
+  .filter-title.semibold{
+  	padding-left : 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
