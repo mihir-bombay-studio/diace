@@ -206,6 +206,15 @@
 /* =============================== 
 ==================================MOBILE GRID ================
 ===================================== */
+.mobile-grid .welcome-tab {
+    border-radius: 8px;
+}
+
+.mobile-grid .grid-left-img {
+    min-height: 230px;
+    padding: 4rem 3rem;
+}
+
 .mobile-grid .accordion {
   background-color: transparent;
   color: #000000;
