@@ -88,7 +88,8 @@
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div>
               {%- endif -%}
-            </div>{{section.settings.grouping_collection}}
+            </div>
+            {% paginate collections[section.settings.grouping_collection].products by 1000 %}
             {%- for product in collections[section.settings.grouping_collection].products -%}a
             {%- for option in product.options_with_values -%}
             {%- for value in option.values -%}
@@ -115,6 +116,7 @@
             {%- endfor -%}
             {%- endfor -%}
             {%- endfor -%}
+            {% endpaginate %}
           </fieldset>
           {%- endfor -%}
           <script id="product-json" type="application/json">
