@@ -77,7 +77,5 @@
   .review-btn{
   	display : none;
   }
-  .review-btn.small{
-  	display : block;
-  }
+  
 }
