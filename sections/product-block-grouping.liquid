@@ -104,7 +104,7 @@
             <label class="{{ optionx.name }}" for="{{ section.id }}-{{ optionx.name }}-{{ forloop.index0 }}">
               {{ value }} 
             </label>{%- if forloop.last != true  -%}&nbsp - &nbsp{%- endif -%}
-            {%-else if optionx.name == "Color" and productx.variants[forloop.index0].metafields.my_fields.color -%}
+            {%-elsif optionx.name == "Color" and productx.variants[forloop.index0].metafields.my_fields.color -%}
             <label class="{{ optionx.name }}" for="{{ section.id }}-{{ optionx.name }}-{{ forloop.index0 }}">
               <span class="color-swatch" style="background-color:{{ productx.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
             </label>
