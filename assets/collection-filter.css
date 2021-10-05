@@ -401,5 +401,8 @@ a.active-facets__button {
     z-index : 6;
     border-radius: 8px 8px 0 0;
   }
+  .filter-mask{
+  	display : none;
+  }
 
 }
