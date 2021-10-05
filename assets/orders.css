@@ -275,10 +275,7 @@
   transition: max-height 0.2s ease-out;
 }
 
-.mobile-grid .details-container {
-  padding-top: 0;
-  width: 100%;
-}
+
 
 @media screen and (max-width: 768px) {
  
@@ -287,5 +284,9 @@
     margin-bottom: 10.5rem;
   }
   
+  .details-container, .tab-container {
+  padding-top: 0;
+  width: 100%;
+}
 
 }
