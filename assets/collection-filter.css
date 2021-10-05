@@ -335,7 +335,7 @@ a.active-facets__button {
   }
   .filter-tags.small{
     display: flex;
-    padding-top: 26px;
+    padding: 25px;
     border-top: 2px solid #FEC23B;
   }
   .current{
