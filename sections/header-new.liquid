@@ -56,9 +56,11 @@
               </div>
               <div class="login-wrapper">
                 {% if customer %}
-                <div> WELCOME BACK {{ customer.first_name }} </div>
-                <a href="/account">Ga naar mijn account</a>
-                <a href="/account/logout">LOG OUT</a>
+                <div class="loggedin-user">
+                  <div class="user-name"> WELCOME BACK {{ customer.first_name }} </div>
+                  <a href="/account" class="underline-link">Ga naar mijn account</a>
+                  <a href="/account/logout" class="logout-btn">LOG OUT</a>
+                </div>
                 {% else %}
                 <form action="" class="login-form">
                   <div class="form-container">
