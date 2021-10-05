@@ -200,6 +200,29 @@
         </div>
       </div>
       
+      <div class="collection-banner-wrapper small">
+        <div class="">
+          <img 
+               src="{{ collection.image | img_url: '533x' }}"
+               loading="lazy"
+               >
+        </div>
+        <div class="banner-left">
+            <div class="banner-title bold">{{ collection.title }}</div>
+            <div class="banner-desc light">{{ collection.description }}</div>
+            {% for block in section.blocks %}
+            {% if block.type == "button" %}
+            {%- if block.settings.button_label != blank -%}
+            <div class="banner-link">
+              <a href="{{ block.settings.button_link }}" class="bold">{{ block.settings.button_label | escape }}</a>
+              <span class="right-black-chveron">{% include 'icon-black-right-chevron' %}</span>
+            </div>
+            {%- endif -%}
+            {% endif %}
+            {% endfor %}
+          </div>
+      </div>
+      
  
       <div class="sorting-wrapper light flex-box justify-between">
         <div class="sorting-part total-items flex-box border-bottom justify-between">
