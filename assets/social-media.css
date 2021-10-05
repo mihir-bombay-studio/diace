@@ -205,6 +205,7 @@ h2.newsletter-subscription-heading {
   }
   h2.newsletter-subscription-heading{
     font-size : 24px;
+    line-height : normal;
   }
   .newsletter-subscription-desc{
     font-size : 16px;
