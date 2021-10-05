@@ -88,7 +88,7 @@
         <input
           type="email"
           name="customer[email]"
-          id="CustomerEmail"
+          id="CustomerEmail1"
           autocomplete="email"
           autocorrect="off"
           autocapitalize="off"
@@ -109,15 +109,14 @@
             type="password"
             value=""
             name="customer[password]"
-            id="CustomerPassword"
-            class="CustomerPassword"
+            id="CustomerPassword1"
             autocomplete="current-password"
             {% if form.errors contains 'form' %}
               aria-invalid="true"
             {% endif %}
             placeholder="{{ 'customer.login_page.password' | t }}"
           >
-          <span class="view-password">Tonen</span>
+          <span toggle="#CustomerPassword1" class="view-password">Tonen</span>
           
         </div>
 

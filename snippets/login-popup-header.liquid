@@ -51,14 +51,13 @@
            value=""
            name="customer[password]"
            id="CustomerPassword"
-           class="CustomerPassword"
            autocomplete="current-password"
            {% if form.errors contains 'form' %}
            aria-invalid="true"
            {% endif %}
            placeholder="{{ 'customer.login_page.password' | t }}"
            >
-    <span class="view-password">Tonen</span>
+    <span toggle="#CustomerPassword" class="view-password">Tonen</span>
 
   </div>
   <a href="/account/login#recover" class="forgot-password">
