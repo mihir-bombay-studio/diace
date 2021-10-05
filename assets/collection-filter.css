@@ -309,7 +309,7 @@ a.active-facets__button {
   justify-content: space-between;
 }
 
-.disp-no , .filter-toggler{
+.disp-no , .filter-toggler , .collection-banner-wrapper.small{
   display : none;
 }
 
