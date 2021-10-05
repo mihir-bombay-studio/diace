@@ -18,7 +18,7 @@
       var w = x.find(item => {
         return item.public_title === string;
       });
-      console.log(w.id);
+      $(this).data('value',w.id);
     });
     
     var formData = {
