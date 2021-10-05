@@ -124,7 +124,7 @@
           {%- capture stringer -%}
           {{ product.variants | json }}
           {%- endcapture -%}
-          {{ stringer | replace_first: "[", "" }}{% unless forloop.last %},{% endunless %}
+          {{ stringer | replace_first: "[", "" | reverse  }}{% unless forloop.last %},{% endunless %}
           {%- endfor -%}]
           </script>
         </variant-radios>
