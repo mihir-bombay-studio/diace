@@ -68,6 +68,9 @@
   }
   .banner-link-new{
     margin-top : 45px;
+  }.shop-by-category-banner-new.small img{
+   	width : 100%;
+    object-fit : cover;
   }
 
 }
