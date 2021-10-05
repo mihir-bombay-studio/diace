@@ -221,7 +221,7 @@
     gap: 16px;
 }
 
-.mobile-grid .accordion {
+.mobile-grid .accordion, .blank-accordion {
   background-color: transparent;
   color: #000000;
   cursor: pointer;
