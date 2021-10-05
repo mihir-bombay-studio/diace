@@ -293,6 +293,6 @@ cursor:pointer;
 	display : none;
 }
 
-.dropdown-ul:hover + .hover-wrapper{
+.hover-dropdown:hover + .hover-wrapper{
   display : block;
 }
