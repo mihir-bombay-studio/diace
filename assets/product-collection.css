@@ -65,3 +65,11 @@
 .porduct-collection-wrapper {
   margin-bottom: 36px;
 }
+
+@media screen and (max-width: 992px) {
+  .collection-btn{
+    padding : 16px 48px;
+    box-shadow: 0 3px #33270c1a;
+    border : 0 0 8px 8px;
+  }
+}
