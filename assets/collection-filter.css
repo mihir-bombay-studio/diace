@@ -330,7 +330,7 @@ a.active-facets__button {
   .collection-filter.flex-box .down-chevron{
     display : none;
   }
-  .filter-tags{
+  .filter-tags , .sorting-wrapper{
     display : none;
   }
   .filter-tags.small{
@@ -401,7 +401,7 @@ a.active-facets__button {
 
 .filter-toggler{
 }
-.collection-banner-wrapper , .sorting-wrapper{
+.collection-banner-wrapper {
   display : none;
 }
 .filter-toggler{
