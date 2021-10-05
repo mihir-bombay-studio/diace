@@ -374,6 +374,9 @@ a.active-facets__button {
     display: flex;
     justify-content: space-between;
   }
+  .collection-tag{
+    color : #000;
+  }
 }
 
 @media screen and (max-width: 768px) {
