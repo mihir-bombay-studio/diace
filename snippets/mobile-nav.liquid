@@ -1,47 +1,50 @@
-    <div id="mobile_nav_container" class="mobile-nav-container no-desktop">
-        <div class="mobile-nav-wrapper">
-            <ul class="mobile-nav-list bold">
-              {% for block in section.blocks %}
-              {% for link in linklists[block.settings.nav_list_lower].links %}
-              <li class="mobile-nav-link">
-                <a href="{{link.url}}">{{link.title}}</a>
-                <span class="yellow-down-chevron">
-                  {% render 'icon-yellow-down-chevron' %}
-                </span>
-              </li>
-              {% endfor %}
-              {% endfor %}
+<div id="mobile_nav_container" class="mobile-nav-container no-desktop">
+  <div class="mobile-nav-wrapper">
+    <ul class="mobile-nav-list bold">
+      {% for block in section.blocks %}
+      {% for link in linklists[block.settings.nav_list_lower].links %}
+      <li class="mobile-nav-link">
+        <a href="{{link.url}}">{{link.title}}</a>
+        <span class="yellow-down-chevron">
+          {% render 'icon-yellow-down-chevron' %}
+        </span>
+      </li>
+      {% endfor %}
+      {% endfor %}
 
-            </ul>
-            <ul class="mobile-nav-list-2 light">
-              {% for block in section.blocks %}
-              {% for link in linklists[block.settings.nav_list].links %}
-              <li class="">
-                <a href="{{link.url}}">{{link.title}}</a>
-              </li>
-              {% endfor %}
-              {% endfor %}
-            </ul>
-            <ul class="mobile-nav-footer light">
-                <li class="customer-account">
-                    <div class="user-icon">{% render 'icon-user' %}</div>
-                    <div class="user-login-status">
-                      {% if customer.first_name %}
-                      {{ customer.first_name }}
-                      {% else %}
-                      Aanmelden/registreren/Account
-                      {% endif %}
-                  </div>
-                </li>
-                <li class="mobile-nav-langs">
-                    <span class="active">NL</span>
-                    <span>FR</span>
-                    <span>EN</span>
-                </li>
-                <li class="mobile-nav-social-icons">
-                    <span>{% render 'facebook' %}</span>
-                    <span>{% render 'instagram' %}</span>
-                </li>
-            </ul>
+    </ul>
+    <ul class="mobile-nav-list-2 light">
+      {% for block in section.blocks %}
+      {% for link in linklists[block.settings.nav_list].links %}
+      <li class="">
+        <a href="{{link.url}}">{{link.title}}</a>
+      </li>
+      {% endfor %}
+      {% endfor %}
+    </ul>
+    <ul class="mobile-nav-footer light">
+      <li class="customer-account">
+        {% if customer %}
+        <a href="/account" class="user-icon">{% render 'icon-user' %}</a>
+        <div class="user-login-status">
+          <a href="/account">{{ customer.first_name }}</a>
         </div>
-    </div>
+        {% else %}
+        <a href="/account/login" class="user-icon">{% render 'icon-user' %}</a>
+        <div class="user-login-status">
+          <a href="/account/login">Aanmelden/registreren/Account</a>
+        </div>
+        {% endif %}
+      </li>
+      <li class="mobile-nav-langs">
+        <span class="active">NL</span>
+        <span>FR</span>
+        <span>EN</span>
+      </li>
+      <li class="mobile-nav-social-icons">
+        <span>{% render 'facebook' %}</span>
+        <span>{% render 'instagram' %}</span>
+      </li>
+    </ul>
+  </div>
+</div>
