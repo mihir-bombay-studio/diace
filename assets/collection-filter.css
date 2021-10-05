@@ -435,7 +435,7 @@ a.active-facets__button {
     height: 12px;
     width: 14px; 
   }
-  .banner-small {
+  .banner-small img{
     width : 100%;
     object-fit : cover;
   }
