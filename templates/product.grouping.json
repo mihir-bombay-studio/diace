@@ -6,10 +6,11 @@
       "settings": {
       }
     },
-    "1632117875e7ef7fbe": {
-      "type": "product-block",
+    "1633426090f2e2900d": {
+      "type": "product-block-grouping",
       "settings": {
-        "featured_collection_title": ""
+        "featured_collection_title": "",
+        "grouping_collection": "grouping-collection"
       }
     },
     "1632294615f908e16b": {
@@ -81,7 +82,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
         "img_preference": "image second",
-        "text_over_img": "NICK & STEFANIE"
+        "text_over_img": "NICK & STEFANIE",
+        "padd-top": false
       }
     },
     "163229690103dae5ee": {
@@ -190,13 +192,14 @@
       ],
       "settings": {
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
-        "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP"
+        "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
+        "remove_padd": true
       }
     }
   },
   "order": [
     "main",
-    "1632117875e7ef7fbe",
+    "1633426090f2e2900d",
     "1632294615f908e16b",
     "1632296628d5bc229d",
     "163229690103dae5ee",
