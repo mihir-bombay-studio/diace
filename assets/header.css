@@ -293,6 +293,6 @@ cursor:pointer;
 	display : none;
 }
 
-#hover-ul:hover + #nav-sub-drop {
+.dropdown-ul:hover + #nav-sub-drop {
   display : block;
 }
