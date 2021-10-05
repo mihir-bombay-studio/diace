@@ -369,6 +369,8 @@ a.active-facets__button {
   }
   .sex-filter-title-wrapper , .collection-filter.flex-box .panel , .price-filter-title-wrapper{
     padding: 0 25px;
+  }
+  .sex-filter .panel{
     display: flex;
     justify-content: space-between;
   }
