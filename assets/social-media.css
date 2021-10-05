@@ -225,7 +225,14 @@ h2.newsletter-subscription-heading {
   .text-over-sm.bold{
     display : none;
   }
-  .text-over-sm.new.bold{
+  .text-new-btn.bold{
     display : block;
+  	text-transform: uppercase;
+    line-height: 24px;
+    background-color: #FEC23B;
+    padding: 14px 47px 14px;
+    letter-spacing: .8px;
+    text-align: center;
+    border-radius: 8px 8px 0px 0;
   }
 }
