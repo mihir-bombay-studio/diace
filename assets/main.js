@@ -101,16 +101,27 @@ $(document).mouseup(function(e) {
 });
 
 
-function togglePassword() {
-  let x = document.getElementById("CustomerPassword");
-  if (x.type === "password") {
-    x.type = "text";
+// function togglePassword() {
+//   let x = document.getElementById("CustomerPassword");
+//   if (x.type === "password") {
+//     x.type = "text";
+//   } else {
+//     x.type = "password";
+//   }
+// }
+
+
+// $('.view-password').click(function() {
+//   togglePassword();
+// });
+
+
+$(".view-password").click(function() {
+
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
   } else {
-    x.type = "password";
+    input.attr("type", "password");
   }
-}
-
-
-$('.view-password').click(function() {
-  togglePassword();
 });
