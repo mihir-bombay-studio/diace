@@ -105,14 +105,40 @@
       <div class="accordion-wrapper">
         <button class="accordion">MIJN GEGEVENS</button>
         <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore
-            et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip
-            ex ea commodo consequat.
-          </p>
+ <div class="details-wrapper">
+        <div class="details-container">
+          <div class="detail-block">
+            <div class="detail-header">
+              CONTACTGEGEVENS <span class="underline-link">Wijzig</span>
+            </div>
+            <div>
+              <p class="">{{ customer.email }}</p>
+              <p class="">{{ customer.phone }}</p>
+            </div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-header">
+              LEVERINGSADRES <span class="underline-link">Wijzig</span>
+            </div>
+            <div>
+              {{ order.shipping_address | format_address }}
+              {{ customer.default_address | format_address }}
+<!--               <p class="address1">laura Touchant</p>
+              <p class="address2">Straatnaam nr toev. Bus</p>
+              <p>
+                <span class="zip"> Postcode,</span>
+                <span class="city">gemeente</span>
+              </p> -->
+            </div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-header">FACTUURADRES</div>
+            <label>
+              <input type="checkbox" name="" /> Zelfde als
+              leveringsadres</label>
+          </div>
+        </div>
+      </div>
         </div>
       </div>
       <div class="accordion-wrapper">
