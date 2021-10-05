@@ -98,8 +98,9 @@
                    name="{{ optionx.name }}"
                    value="{{ value | escape }}"
                    form="product-form-{{ section.id }}"
-                   {% if product.id == productx.id %}checked{% endif %}
+                   
                    >
+            {% if product.id == productx.id %}checked{% endif %}
             {%- if optionx.name == "Size"  -%}
             <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               {{ value }} 
