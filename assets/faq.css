@@ -106,4 +106,7 @@
   .pills.flex-box{
     flex-wrap:wrap;
   }	
+  .faq-heading{
+  	font-size : 24px;
+  }
 }
