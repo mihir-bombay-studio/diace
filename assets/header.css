@@ -288,6 +288,9 @@ cursor:pointer;
 .dropdown-ul{
   position : relative;
 }
+#nav-sub-drop{
+	display : none;
+}
 
 .hover-ul:hover + #nav-sub-drop {
   display : block;
