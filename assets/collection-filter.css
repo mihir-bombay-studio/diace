@@ -369,17 +369,22 @@ a.active-facets__button {
 @media screen and (max-width: 768px) {
   .collection-filter-left{
     position: fixed;
-    height: 100%;
-    background: white;
-    bottom: -100%;
-    transition: bottom 300ms ease;
+    max-height: calc(100% - 90.8px);
+    background: #fff;
+    top: 100%;
+    transition: top .3s ease;
     left: 0;
     width: 100%;
     z-index: 5;
   }
   .filter-mask.active .collection-filter-left{
-    bottom : 0;
+    top: 0;
+    overflow-y: scroll;
   }
+  .filter-mask.active .collection-filter-left::-webkit-scrollbar {
+    display: none;
+  }
+
   .filter-toggler{
   }
   .collection-banner-wrapper{
@@ -402,7 +407,7 @@ a.active-facets__button {
     border-radius: 8px 8px 0 0;
   }
   .filter-mask{
-  	display : none;
+    display : none;
   }
 
 }
