@@ -289,6 +289,6 @@ cursor:pointer;
   position : relative;
 }
 
-#hover-ul > :first-child:hover + #nav-sub-drop {
+#hover-ul:hover + #nav-sub-drop {
   display : block;
 }
