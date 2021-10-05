@@ -68,9 +68,19 @@
   }
   .banner-link-new{
     margin-top : 45px;
-  }.shop-by-category-banner-new.small img{
-   	width : 100%;
+  }
+  .shop-by-category-banner-new.small img{
+    width : 100%;
     object-fit : cover;
   }
+  .product-collection-card{
+    width : 31.68%;
+  }
 
+}
+
+@media screen and (max-width: 768px) {
+  .product-collection-card{
+    width : 48.68;
+  }
 }
