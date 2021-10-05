@@ -89,7 +89,7 @@
               </div>
               {%- endif -%}
             </div>
-            {%- for product in section.settings.collection[grouping_collection].products -%}
+            {%- for product in section.settings.collection[grouping_collection].products -%}a
             {%- for option in product.options_with_values -%}
             {%- for value in option.values -%}
             <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
