@@ -431,5 +431,9 @@ a.active-facets__button {
   .banner-btn-link{
     margin-top: 45px;
   }
+  .banner-small {
+  	width : 100%;
+    object-fit : cover;
+  }
 
 }
