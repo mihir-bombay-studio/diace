@@ -39,7 +39,7 @@
       {% for block in section.blocks %}
       {% if block.type == "button" %}
       {%- if block.settings.button_label != blank -%}
-      <div class="banner-link">
+      <div class="banner-link-new">
       <a href="{{ block.settings.button_link }}" class="bold">{{ block.settings.button_label | escape }}</a>
       <span class="right-black-chveron">{% include 'icon-black-right-chevron' %}</span>
       </div>
