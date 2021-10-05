@@ -40,13 +40,13 @@
   	user-select: none;
 }
 
-/* .qty-minus{
+.qty-minus{
 	border-radius: 4px 0 0 4px;
 }
 
 .qty-plus{
 	border-radius: 0 4px 4px 0;
-} */
+}
 
 .qty{
 	font-size: 32px;
