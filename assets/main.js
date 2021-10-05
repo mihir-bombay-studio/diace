@@ -103,7 +103,7 @@ $(document).mouseup(function(e) {
 
 function togglePassword() {
   let x = $(".CustomerPassword");
-  console.log(x);
+  console.log(x[0]);
   if (x.type === "password") {
     x.type = "text";
   } else {
@@ -115,3 +115,11 @@ function togglePassword() {
 $('.view-password').click(function() {
   togglePassword();
 });
+// var links = document.querySelectorAll('.view-password');
+// var linksLength = links.length
+
+// for (var i = 0; i < linksLength; i++) {
+//   links[i].addEventListener('click', function () {
+//     closeMobileNav();
+//   });
+// }
