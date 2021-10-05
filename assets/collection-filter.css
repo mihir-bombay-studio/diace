@@ -431,8 +431,12 @@ a.active-facets__button {
   .banner-btn-link{
     margin-top: 45px;
   }
+  .banner-btn-link svg{
+    height: 12px;
+    width: 14px; 
+  }
   .banner-small {
-  	width : 100%;
+    width : 100%;
     object-fit : cover;
   }
 
