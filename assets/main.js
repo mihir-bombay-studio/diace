@@ -103,7 +103,7 @@ $(document).mouseup(function(e) {
 
 function togglePassword(prevSiblings) {
   let x = prevSiblings;
-  console.log(x[0]);
+  console.log(x);
   if (x.type === "password") {
     x.type = "text";
   } else {
