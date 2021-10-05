@@ -125,6 +125,8 @@ h2.featured-collection-heading {
   .product-title-price.flex-box{
     flex-direction: column;
   }
-  
+  .featured-product-img{
+    height : auto;
+  }
 }
 
