@@ -55,8 +55,16 @@
   stroke: var(--background-yellow);
     }
 
+.shop-by-category-banner.small{
+	display : none;
+}
+
 @media screen and (max-width: 768px) {
   .shop-by-category-banner{
   	display : none;
   }
+  .shop-by-category-banner.small{
+	display : block;
+}
+
 }
