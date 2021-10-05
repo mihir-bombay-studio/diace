@@ -288,5 +288,9 @@
   padding-top: 0;
   width: 100%;
 }
+  .order_list .detail-block {
+    border-top: none;
+    border-bottom: 1px solid #fec23b;
+}
 
 }
