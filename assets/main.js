@@ -99,3 +99,18 @@ $(document).mouseup(function(e) {
   }
 
 });
+
+
+function togglePassword() {
+  let x = $(".view-password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+
+$('.view-password').click(function() {
+  $(this).togglePassword();
+});
