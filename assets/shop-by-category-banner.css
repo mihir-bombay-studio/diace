@@ -56,7 +56,7 @@
     }
 
 @media screen and (max-width: 768px) {
-  .shop-by-category-banner-wrapper{
+  .shop-by-category-banner{
   	display : none;
   }
 }
