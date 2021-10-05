@@ -231,6 +231,7 @@ output += `
       </div>`;
   }
   $('#cart_body_wrapper').html(output);
+  openCart();
 }
 
 
