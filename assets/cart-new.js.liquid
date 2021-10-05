@@ -239,12 +239,12 @@ output += `
 
 $("body").on('click', '.AddToCart', function () {
   let variant_id = parseInt($(this).data('variant-id'));
-  let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $("#product_quantity");
+  let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
   console.log(variant_id);
   let formData = {
     'items': [{
       'id': variant_id,
-      'quantity': 1
+      'quantity': parseInt(variant_quantity)
     }]
   };
 
