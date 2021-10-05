@@ -401,7 +401,7 @@ a.active-facets__button {
 
 .filter-toggler{
 }
-.collection-banner-wrapper{
+.collection-banner-wrapper , .sorting-wrapper{
   display : none;
 }
 .filter-toggler{
