@@ -21,7 +21,7 @@
     border-radius: 8px;
     padding: 0 14px;
     line-height: 24px;
-    max-height: 282px;
+/*     max-height: 282px; */
     }
 
 .sm-left img {
@@ -207,7 +207,7 @@ h2.newsletter-subscription-heading {
     margin-top: 26px;
   }
   .sm-other-img.rel{
-    margin: 26px auto;
+/*     margin: 26px auto; */
   }
   h2.newsletter-subscription-heading{
     font-size : 24px;
