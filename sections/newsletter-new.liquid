@@ -1,5 +1,8 @@
 {{ 'social-media.css' | asset_url | stylesheet_tag }}
 <div class="social-media container socila-media-lower newsletter-container">
+  <div class="bg-yellow-dots dots-right-down">
+    {% include 'bg-yellow-dots-sm' %}
+  </div>
   <h2 class="text-center newsletter-subscription-heading bold">{{section.settings.subscription_heading}}</h2>
   <div class="text-center newsletter-subscription-desc light">{{section.settings.subscription_desc}}</div>
   <div class="subscription-form flex-box">
