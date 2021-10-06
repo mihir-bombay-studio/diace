@@ -73,6 +73,14 @@
   padding: 20px 83px 16px;
 }
 
+.accordion.question .yellow-down-chevron svg {
+    transition: .3s ease;
+  margin-right: 5px;
+}
+.accordion.question.active .yellow-down-chevron svg {
+    transform: rotate(-180deg);
+}
+
 .banner-link {
     display: block;
     margin-left: auto;
