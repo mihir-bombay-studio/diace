@@ -45,7 +45,7 @@
         </div>
         {% endfor %}
         {% for size_obj in resource.metafields.filter_size %}
-        {{ field | metafield_tag }}
+        {{ size_obj | metafield_tag }}
         {% endfor %}
 
       </div>
