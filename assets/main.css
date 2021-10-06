@@ -8,6 +8,7 @@ html {
 body{
   font-family: 'Myriad Pro', sans-serif;
   color: var(--font-main-color);
+    overflow-x: hidden;
     }
 .container {
   display: block;
