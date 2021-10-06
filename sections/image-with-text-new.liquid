@@ -5,9 +5,9 @@
     <div class="image-with-text-grid-item">
       <div class="image-with-text-content">
         {%- if section.settings.text_over_img != blank -%}
-        <div class="text-img-new bold">
+        <span class="text-img-new bold">
         	{{ section.settings.text_over_img | escape }}
-        </div>
+        </span>
         {%- endif -%}
         {%- for block in section.blocks -%}
           {% case block.type %}
