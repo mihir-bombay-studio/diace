@@ -67,7 +67,7 @@
                         <ul class="hover-ul header-nav-list flex-box justify-between bold">
                             {% for block in section.blocks %}
                                 {% for link in linklists[block.settings.nav_list_lower].links %}
-                                    <li class="hover-dropdown right-nav-list">
+                                    <li class=" {% if link.links != blank %}hover-dropdown{% endif %} right-nav-list">
                                         <a href="{{ link.url }}">{{ link.title }}</a>
                                         <span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>
                                         {% if link.links != blank %}
