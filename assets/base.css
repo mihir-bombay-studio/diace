@@ -769,6 +769,7 @@ summary::-webkit-details-marker {
 .focus-none {
   box-shadow: none !important;
   outline: 0 !important;
+  overflow-x: hidden;
 }
 
 /* component-title */
