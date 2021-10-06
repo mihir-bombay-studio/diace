@@ -33,8 +33,8 @@
         <div class="blog-read-time">{{ readtime }}</div>
       </div>
       <div class="blog-topic bold">
-        {% for tag in blogs.news.all_tags reversed limit:1  %}
-        {{tag}}
+        {% for tag in blogs.news.all_tags reversed limit:2  %}
+        {{tag}}-
         {% endfor %}
       </div>
       <div class="blog-title semibold">
