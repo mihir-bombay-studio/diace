@@ -207,7 +207,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 .hover-wrapper{
   position: absolute;
   padding-top: 20px;
-
+  width :100%;
 }
 
 .dropdown-container{
