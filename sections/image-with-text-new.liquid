@@ -4,6 +4,11 @@
   <div class="flex-box justify-between align-center grid grid--gapless grid--1-col grid--2-col-tablet {% if section.settings.img_preference == 'image first' %}raw-reverse{% endif %}">
     <div class="image-with-text-grid-item">
       <div class="image-with-text-content">
+        {%- if section.settings.text_over_img != blank -%}
+        <div class="text-img-new bold">
+        	{{ section.settings.text_over_img | escape }}
+        </div>
+        {%- endif -%}
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
