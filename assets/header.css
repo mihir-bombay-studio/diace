@@ -141,7 +141,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 
-.right-nav-lower li:hover .yellow-down-chevron{
+.hover-dropdown:hover .yellow-down-chevron{
   transform: rotate(180deg);
 }
 
