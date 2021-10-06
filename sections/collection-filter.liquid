@@ -44,7 +44,7 @@
           {% endfor %}
         </div>
         {% endfor %}
-        {% for size_obj in product.metafields.my_fields %}
+        {% for size_obj in product.metafields.my_fields.filter_size %}
         {{ size_obj | metafield_tag }}
         {% endfor %}
 
