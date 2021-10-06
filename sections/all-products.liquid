@@ -4,22 +4,25 @@
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
     {% for product in collections['all'].products %}
-    <div class="product-collection-card">
-      <div class="featured-product-img rel">
-        <a href="{{product.url}}">
-          {% if product.images.size == 0 %} 
-          {{ 'collection-2' | placeholder_svg_tag }}
-          {% else %}
-          <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
+    <a href="{{product.url}}">
+      <div class="product-collection-card">
+        <div class="featured-product-img rel">
+          <a href="{{product.url}}">
+            {% if product.images.size == 0 %} 
+            {{ 'collection-2' | placeholder_svg_tag }}
+            {% else %}
+            <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
           {% endif %}
-        <div class="product-hover-text flex-box align-center">
-          <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-          <a href="#" class="hover-text bold">KOPEN</a>
+          <a href="{{product.url}}">
+            <div class="product-hover-text flex-box align-center">
+              <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+              <a href="#" class="hover-text bold">KOPEN</a>
+            </div>
+          </a>
         </div>
+        <a href="" class="collection-btn">MERK</a>
       </div>
-      <a href="" class="collection-btn">MERK</a>
-    </div>
-
+    </a>
     {% endfor %}
   </div>
 </div>
