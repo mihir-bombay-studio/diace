@@ -116,6 +116,7 @@
     margin : 0 auto;
   }
   .text-over-hero.bold{
+    max-width : 100%;
     padding: 9.5px 0px 8.5px;
     position :relative;
     width : 100%;
