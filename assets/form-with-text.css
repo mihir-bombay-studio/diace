@@ -161,9 +161,7 @@ button{
     border-radius:0;
     height:100vh;
   }
-  footer{
-    display : none;
-  }
+  
 }
 
 @media screen and (max-width: 768px) {
