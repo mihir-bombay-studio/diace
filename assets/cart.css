@@ -32,15 +32,15 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: stretch;
-/*     opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    transition: opacity 800ms ease; */
+    transition: opacity 800ms ease;
 }
 
-/* .cart-mask.active {
+.cart-mask.active {
     opacity: 1;
     visibility: visible;
-} */
+}
 
 .cart-mask.active .cart-container {
     opacity: 1;
