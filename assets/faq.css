@@ -82,7 +82,7 @@ border-bottom: 1px solid;
   margin-right: 5px;
 }
 .accordion.question.active .yellow-down-chevron svg {
-    transform: rotate(-180deg);
+    transform: rotate(180deg);
 }
 
 .banner-link {
