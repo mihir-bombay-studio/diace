@@ -120,6 +120,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   font-size: 16px;
   /*   line-height: 24px;
   padding-bottom: 10px; */
+  border-bottom: 2px solid transparent;
 }
 
 .yellow-down-chevron {
