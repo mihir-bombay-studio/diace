@@ -45,7 +45,7 @@
         {% endfor %}
           {% assign someHandle = "test-product" %}
     {% assign someProduct = all_products[someHandle] %}
-    {{ someProduct.metafields.filter_size }}
+    {{ someProduct.metafields.my_fields.filter_size }}
       </div>
 
       <div class="filter-tags small disp-no">
