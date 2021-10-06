@@ -101,4 +101,7 @@ footer .accordion.question{
   .social-icon:first-child {
     margin-right: 85px;
 	}
+  .social-icons.flex-box{
+  	justify-content : center;
+  }
 }
