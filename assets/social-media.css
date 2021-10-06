@@ -188,6 +188,10 @@ h2.newsletter-subscription-heading {
   padding: 0 25px;
 }
 
+.text-new-btn.bold{
+  display : none; 
+}
+
 @media screen and (max-width: 992px) {
   .social-media-wrapper{
     margin-bottom : 82px;
