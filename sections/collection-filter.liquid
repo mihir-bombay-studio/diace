@@ -30,7 +30,7 @@
 
 {%- assign collection_title = collection.title -%}
 
-{{collection.title}}
+
 <div class="collection-filter-wrapper container">
   <div class="collection-filter flex-box justify-between">
     <div class="filter-mask">
@@ -47,7 +47,7 @@
         {% endfor %}
        
         
-        {% for sproduct in collections.opbergen.products %} 
+        {% for sproduct in collections.collection.title.products %} 
         {{ sproduct.metafields.my_fields.filter_size }}
         {% endfor %}
         
