@@ -33,6 +33,10 @@
   margin-bottom: 136px;
 }
 
+.faq-wrapper .panel{
+border-bottom: 1px solid;
+}
+
 .faq-heading {
     margin: 0;
     font-size: 32px;
@@ -45,7 +49,7 @@
 
 .accordion.question {
     padding: 16px 0;
-    border-bottom: 1px solid;
+/*     border-bottom: 1px solid; */
 }
 
 .product-details .accordion.question {
@@ -62,7 +66,7 @@
 
 .panel-bottom-border{
 /* 	padding-bottom: 16px; */
-  border-bottom: 1px solid;
+/*   border-bottom: 1px solid; */
 }
 
 .product-details .panel-bottom-border, .product-details .accordion.question.active {
@@ -72,6 +76,14 @@
 .faq-wrapper .btn{
 	margin-top: 51px !important;
   padding: 20px 83px 16px;
+}
+
+.accordion.question .yellow-down-chevron svg {
+    transition: .3s ease;
+  margin-right: 5px;
+}
+.accordion.question.active .yellow-down-chevron svg {
+    transform: rotate(180deg);
 }
 
 .banner-link {

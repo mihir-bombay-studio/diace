@@ -352,7 +352,7 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: var(--font-heading-family);
+      font-family: 'Myriad Pro', sans-serif;
   font-style: var(--font-heading-style);
   font-weight: normal;
   letter-spacing: 0.06rem;
@@ -552,7 +552,7 @@ h5:empty,
 h6:empty {
   display: none;
 }
-
+/* 
 .link,
 .customer a {
   cursor: pointer;
@@ -565,7 +565,7 @@ h6:empty {
   background-color: transparent;
   font-size: 1.4rem;
 }
-
+ */
 .link--text {
   color: var(--color-foreground);
 }
@@ -1120,14 +1120,14 @@ deferred-media {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  font: inherit;
+/*   font: inherit; */
   padding: 0.9rem 3rem 1.1rem;
   text-decoration: none;
-  border: 0;
+/*   border: 0;
   border-radius: 0;
   background-color: var(--color-button-background);
-  box-shadow: 0 0 0 0.1rem var(--color-button-border);
-  color: var(--color-button-text);
+  box-shadow: 0 0 0 0.1rem var(--color-button-border); */
+/*   color: var(--color-button-text); */
   min-width: 12rem;
   min-height: 4.5rem;
   transition: box-shadow var(--duration-short) ease;
@@ -1172,7 +1172,7 @@ deferred-media {
 .button:not([disabled]):hover,
 .shopify-challenge__button:hover,
 .customer button:hover {
-  box-shadow: 0 0 0 0.2rem var(--color-button-border);
+  box-shadow: 0 0 0 0.2rem #feb029;
 }
 
 /* Button - other */

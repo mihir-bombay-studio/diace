@@ -50,6 +50,8 @@ class VariantSelects extends HTMLElement {
   }
 
   updateVariantInput() {
+
+        $(".product-qty-add-to-cart-wrapper #add-to-cart").attr("data-variant-id",`${this.currentVariant.id}`);
     const productForms = document.querySelectorAll(`#product-form-${this.dataset.section}, #product-form-installment`);
     productForms.forEach((productForm) => {
       const input = productForm.querySelector('input[name="id"]');

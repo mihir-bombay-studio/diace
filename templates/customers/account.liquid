@@ -3,8 +3,8 @@
 
 
 
-<div class="grid-wrapper container">
-  <div class="collage-grid flex-box justify-between">
+<div class="grid-wrapper container mobile-top-margin ">
+  <div class="collage-grid flex-box justify-between no-mobile">
     <div id="welcome-tab" class="welcome-tab tabcontent" style="display: block">
       <div class="grid-left-img"> {% render "order_text" %}</div>
       <div class="text-over-grid bold white-bg">WELKOM TERUG {{ customer.first_name }}</div>
@@ -88,6 +88,80 @@
       </div>
     </div>
   </div>
+  <!--   =================== MOBILE GRID ========================== -->
+  <div class="mobile-grid no-desktop">
+    <div>
+      <div class="welcome-tab">
+        <div class="grid-left-img"> {% render "order_text" %}</div>
+      </div>
+      <h2 class="customer-header">WELKOM TERUG {{ customer.first_name }}</h2>
+    </div>
+
+    <div class="customer-details-wrapper">
+      <div class="accordion-wrapper">
+        <button class="blank-accordion">VOLG MIJN LAATSTE BESTELLING</button>
+        
+      </div>
+      <div class="accordion-wrapper">
+        <button class="accordion">MIJN GEGEVENS</button>
+        <div class="panel">
+          <div class="details-wrapper">
+            <div class="details-container">
+              <div class="detail-block">
+                <div class="detail-header">
+                  CONTACTGEGEVENS <span class="underline-link">Wijzig</span>
+                </div>
+                <div>
+                  <p class="">{{ customer.email }}</p>
+                  <p class="">{{ customer.phone }}</p>
+                </div>
+              </div>
+              <div class="detail-block">
+                <div class="detail-header">
+                  LEVERINGSADRES <span class="underline-link">Wijzig</span>
+                </div>
+                <div>
+                  {{ order.shipping_address | format_address }}
+                  {{ customer.default_address | format_address }}
+                </div>
+              </div>
+              <div class="detail-block">
+                <div class="detail-header">FACTUURADRES</div>
+                <label>
+                  <input type="checkbox" name="" /> Zelfde als
+                  leveringsadres</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-wrapper">
+        <button class="accordion">MIJN BESTELLINGEN</button>
+        <div class="panel {% if customer.orders_count > 1 %} order_list{% endif %}">
+          <div class="tab-wrapper">
+            <div class="tab-container">
+              {%- for order in customer.orders -%}
+              <div class="detail-block">
+                <div class="list-header">
+                  <div class="date">{{ order.created_at | time_tag: format: 'date' }}</div>
+                  <div class="price">{{ order.total_price | money }}</div>
+                </div>
+                <p>BE 012 345 678</p>
+                <p class="flex-box justify-between">
+                  In behandeling <a href="{{ order.customer_url }}" class="underline-link">Details >></a>
+                </p>
+              </div>
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-wrapper">
+        <button class="blank-accordion">SCHRIJF EEN REVIEW</button>
+        
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -99,7 +173,7 @@
 
 
 
-
+{% comment %}
 
 <div class="customer account">
   <div>
@@ -217,7 +291,7 @@
 
   </div>
 </div>
-
+{% endcomment %}
   
   <script>
   function openTab(evt, tabId) {

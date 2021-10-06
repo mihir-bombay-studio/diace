@@ -21,7 +21,9 @@
     border-radius: 8px;
     padding: 0 14px;
     line-height: 24px;
-    margin-top : 13px;
+
+/*     max-height: 282px; */
+
     }
 
 .sm-left img {
@@ -122,11 +124,13 @@ h2.newsletter-subscription-heading {
   line-height: 48px;
   text-transform: uppercase;
   margin-bottom: 14px;
+  font-family: 'Myriad Pro', sans-serif;
 }
 
 .newsletter-subscription-desc {
   line-height: 24px;
   margin-bottom: 43px;
+  letter-spacing: 0;
 }
 
 .subscription-form{
@@ -140,6 +144,7 @@ h2.newsletter-subscription-heading {
     padding-left: 16px;
     border-radius: 8px;
     margin-right: 16px;
+    font-family: 'Myriad Pro', sans-serif;
     }
 
 ::placeholder {
@@ -154,6 +159,8 @@ h2.newsletter-subscription-heading {
   border: none;
   background-color: var(--background-yellow);
     text-transform: uppercase;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 16px;
     /*     width: calc(30% - 16px); */
 
     }
@@ -182,6 +189,7 @@ h2.newsletter-subscription-heading {
 .newsletter-container{
   margin-bottom : 82px; 
   padding: 26px 16px;
+  position: relative;
 }
 
 .newsletter{
@@ -210,7 +218,9 @@ h2.newsletter-subscription-heading {
     margin-top: 26px;
   }
   .sm-other-img.rel{
-    margin: 13px auto;
+
+/*     margin: 26px auto; */
+
   }
   h2.newsletter-subscription-heading{
     font-size : 24px;

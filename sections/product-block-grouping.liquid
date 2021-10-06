@@ -89,32 +89,45 @@
               </div>
               {%- endif -%}
             </div>
-            {%- for value in option.values -%}
-            <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+            {% paginate collections[section.settings.grouping_collection].products by 1000 %}
+            {%- for productx in collections[section.settings.grouping_collection].products -%}
+            {%- for optionx in productx.options_with_values -%}
+            {%- for value in optionx.values -%}
+            <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
                    class="no-disp"
-                   name="{{ option.name }}"
+                   name="{% if optionx.name == "Kleur" or optionx.name == "Title" %}Title{% else %}{{optionx.name}}{% endif %}"
                    value="{{ value | escape }}"
                    form="product-form-{{ section.id }}"
-                   {% if option.selected_value == value %}checked{% endif %}
+                   {% if product.id == productx.id %}checked{% endif %}
                    >
-            {%- if option.name == "Size"  -%}
-            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+            {%- if optionx.name == "Size"  -%}
+            <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               {{ value }} 
-            </label>{%- if forloop.last != true  -%}&nbsp - &nbsp{%- endif -%}
-            {%-else if option.name == "Color" and product.variants[forloop.index0].metafields.my_fields.color -%}
-            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-              <span class="color-swatch" style="background-color:{{ product.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
+            </label>&nbsp - &nbsp
+            {%-elsif optionx.name == "Color" and productx.variants[forloop.index0].metafields.my_fields.color -%}
+            <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+              <span class="color-swatch" style="background-color:{{ productx.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
             </label>
             {%- else -%}
-            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+            <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               {{ value }} 
             </label>
             {%- endif -%}
             {%- endfor -%}
+            {%- endfor -%}
+            {%- endfor -%}
+            {% endpaginate %}
           </fieldset>
           {%- endfor -%}
           <script id="product-json" type="application/json">
-              {{ product.variants | json }}
+          {% paginate collections[section.settings.grouping_collection].products by 1000 %}
+          [{%- for productx in collections[section.settings.grouping_collection].products -%}
+          {%- capture stringer -%}
+          {{ productx.variants | json }}
+          {%- endcapture -%}
+          {{ stringer | replace_first: "[", "" | split: "" | reverse | join: "" | replace_first: "]", "" | split: "" | reverse | join: "" }}{% unless forloop.last %},{% endunless %}
+          {%- endfor -%}]
+          {% endpaginate %}
           </script>
         </variant-radios>
       </div>
@@ -127,7 +140,6 @@
           <span class="qty flex-box align-center justify-center" data-qty="1">1</span>
           <span class="qty-plus qty-nav flex-box align-center justify-center"><span>+</span></span>
         </div>
-        
         <div id="add-to-cart" 
              class="AddToCart add-to-cart-btn btn btn-yellow bold flex-box justify-center align-center" 
              data-value="{{ product.selected_or_first_available_variant.id }}"
@@ -173,9 +185,11 @@
     </div>
   </div>
 </div>
+
 {% comment %}
 {% include "cart-scripts" %}
 {% endcomment %}
+
 <script>
   $('.qty-minus').click(function() {
   	var data_qty = parseInt($(this).next().data('qty'));
@@ -225,17 +239,22 @@ $(document).keyup(function(e) {
 
 {% schema %}
   {
-    "name": "Product-Block",
+    "name": "Product-Block-Grouping",
     "settings": [
 		{
             "type": "text",
             "id": "featured_collection_title",
             "label": "Featured Collection Title"
+		},
+		{
+            "type": "collection",
+            "id": "grouping_collection",
+            "label": "Add collection having all the similar variants"
 		}
 	],
 	"presets": [
     {
-      "name": "Product-Block",
+      "name": "Product-Block-Grouping",
 		"category":"section"
     }
   ]

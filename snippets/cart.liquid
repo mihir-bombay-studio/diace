@@ -4,6 +4,7 @@
 {% assign upsellProductHandle = upsellProduct.handle %}
 
 <script>
+   {% if upsellProduct != blank %}
   var upsell = {
     id:"{{ upsellProduct.first_available_variant.id }}",
     title:"{{ upsellProduct.title | escape }}",
@@ -14,7 +15,7 @@
   var upsellProduct = JSON.parse(`{{ upsellProduct | json }}`);
   console.log(upsellProduct);
   var current_variant = upsellProduct.variants[0];
-  
+  {% endif %}
   var renderSvg = {
     icon_remove:`{% render 'icon-remove' %}`,
     icon_cart_new_black:`{% render 'icon-cart-new-black' %}`,
@@ -30,7 +31,8 @@
 {% endfor %}
 
 
-<div class="cart-mask" style="display: none;">
+<div class="cart-mask">
+  
   <div id="cart_container" class="cart-container  {% if upsell_present %} hide-upsell{% endif %}" data-handle="{{ upsellProductHandle }}">
     <div class="cart-header">
       <button id="cart_close" class="cart-close">{% render "icon-close-1" %}</button>
@@ -73,6 +75,7 @@
       </div>
       
 <!--       ----------------- UPSELL ITEM ------------------------- -->
+      {% if upsellProduct != blank %}
       <div id="upsell_item_{{upsellProduct.first_available_variant.id }}" class="upsell-container">
         <div class="upsell-heading semibold">Mensen kochten ook:</div>
         <div class="list-item">
@@ -120,7 +123,7 @@
 
         </div>
       </div>
-      
+      {% endif %}
       <!--     /  ----------------- UPSELL ITEM ------------------------- -->
 
       <div class="cart-footer">

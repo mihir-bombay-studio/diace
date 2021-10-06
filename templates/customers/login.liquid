@@ -1,6 +1,6 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
-
-<div class="customer login">
+<div class="customer-login-wrapper">
+<div class="customer login login-page container">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
   </h1>
@@ -42,7 +42,7 @@
         </small>
       {%- endif -%}
 
-      <button>
+      <button class="login-btn btn btn-yellow bold">
         {{ 'customer.login_page.submit' | t }}
       </button>
 
@@ -52,10 +52,10 @@
     {%- endform -%}
   </div>
 
-  <h1 id="login" tabindex="-1">
+  <h1 id="login" class="login-header" tabindex="-1">
     {{ 'customer.login_page.title' | t }}
   </h1>
-  <div>
+  <div class="customer-login-form-wrapper">
     {%- if recover_success == true -%}
       <h3 class="form__message" tabindex="-1" autofocus>
         <svg aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 13 13">
@@ -81,53 +81,56 @@
         {{ form.errors | default_errors }}
       {%- endif -%}
 
-      <div class="field">        
+      <div class="input_form_control"> 
+        <label for="CustomerEmail">
+          E-MAIL*
+        </label>
         <input
           type="email"
           name="customer[email]"
-          id="CustomerEmail"
+          id="CustomerEmail1"
           autocomplete="email"
           autocorrect="off"
           autocapitalize="off"
           {% if form.errors contains 'form' %}
             aria-invalid="true"
           {% endif %}
-          placeholder="{{ 'customer.login_page.email' | t }}"
+          placeholder="John@email.com"
         >
-        <label for="CustomerEmail">
-          {{ 'customer.login_page.email' | t }}
-        </label>
+        
       </div>
 
       {%- if form.password_needed -%}
-        <div class="field">          
+        <div class="input_form_control"> 
+          <label for="CustomerPassword">
+            WACHTWOORD
+          </label>
           <input
             type="password"
             value=""
             name="customer[password]"
-            id="CustomerPassword"
+            id="CustomerPassword1"
             autocomplete="current-password"
             {% if form.errors contains 'form' %}
               aria-invalid="true"
             {% endif %}
             placeholder="{{ 'customer.login_page.password' | t }}"
           >
-          <label for="CustomerPassword">
-            {{ 'customer.login_page.password' | t }}
-          </label>
+          <span toggle="#CustomerPassword1" class="view-password">Tonen</span>
+          
         </div>
 
-        <a href="#recover">
-          {{ 'customer.login_page.forgot_password' | t }}
+        <a href="#recover" class="forgot-password">
+          Wachtwoord vergeten?
         </a>
       {%- endif -%}
 
-      <button>
-        {{ 'customer.login_page.sign_in' | t }}
+      <button class="login-btn btn btn-yellow bold">
+        VERZENDEN
       </button>
 
-      <a href="{{ routes.account_register_url }}">
-        {{ 'customer.login_page.create_account' | t }}
+      <a href="{{ routes.account_register_url }}" class="register-btn">
+        Heb je nog geen account? Registreer je nu
       </a>
       
     {%- endform -%}
@@ -145,4 +148,5 @@
       {%- endform -%}
     </div>
   {%- endif -%}
+</div>
 </div>

@@ -40,11 +40,11 @@
   	user-select: none;
 }
 
-.qty-minus{
+.qty-nav.qty-minus{
 	border-radius: 4px 0 0 4px;
 }
 
-.qty-plus{
+.qty-nav.qty-plus{
 	border-radius: 0 4px 4px 0;
 }
 
@@ -195,4 +195,8 @@ fieldset.product-form__input {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%,-50%);
+}
+
+fieldset.product-form__input input:checked + label {
+  font-weight: 600;
 }
