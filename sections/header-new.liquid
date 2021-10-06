@@ -83,13 +83,10 @@
                   <div class="hover-content-wrapper">
                     <div class="left-wrap content-sub-list">
                       <ul class="content-list">
-                        <li>TASSEN {% render "back-icon" %} </li>
-                        <li>PENTASSEN {% render "back-icon" %} </li>
-                        <li>LEDEREN TASSEN {% render "back-icon" %}</li>
-                        <li>POMPTASSEN {% render "back-icon" %} </li>
-                        <li>KOELTASSEN {% render "back-icon" %}</li>
-                        <li>DRAAGBANDEN {% render "back-icon" %} </li>
-                        <li>TOTEBAGS {% render "back-icon" %} </li>
+                        {%- for child_link in link.links -%} 
+                        <li><a href="{{child_link.url}}">{{child_link.title}} {% render "back-icon" %}</a></li>
+                     
+                        {% endfor %}
                       </ul>
                     </div>
 
