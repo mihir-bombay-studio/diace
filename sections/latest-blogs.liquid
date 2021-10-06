@@ -33,7 +33,9 @@
         <div class="blog-read-time">{{ readtime }}</div>
       </div>
       <div class="blog-topic bold">
-        Topic
+        {% for tag in blogs.news.all_tags %}
+        {{tag[1]}}
+        {% endfor %}
       </div>
       <div class="blog-title semibold">
         {{ article.title }}
