@@ -769,7 +769,6 @@ summary::-webkit-details-marker {
 .focus-none {
   box-shadow: none !important;
   outline: 0 !important;
-  overflow-x: hidden;
 }
 
 /* component-title */
@@ -2077,3 +2076,9 @@ details-disclosure > details {
     transform: translateY(0);
   }
 }
+
+ 
+  .content-for-layout{
+  
+  overflow-x: hidden;
+  }
