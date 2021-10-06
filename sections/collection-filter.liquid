@@ -44,7 +44,15 @@
           {% endfor %}
         </div>
         {% endfor %}
+      {% for product in collections.opbergen.products %} 
 
+      {% if product.metafields.namespace != blank %}
+
+      {{ product.metafields.namespace.key }}
+
+      {% endif %}
+
+      {% endfor %}
       </div>
 
       <div class="filter-tags small disp-no">
