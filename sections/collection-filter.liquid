@@ -28,7 +28,6 @@
 
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
-{% assign meta = product.metafields.my_fields %}
 
 <div class="collection-filter-wrapper container">
   <div class="collection-filter flex-box justify-between">
@@ -44,15 +43,9 @@
           {% endfor %}
         </div>
         {% endfor %}
-      {% for product in collections.opbergen.products %} 
-
-      {% if product.metafields.namespace != blank %}
-
-      {{ product.metafields.namespace.key }}
-
-      {% endif %}
-
-      {% endfor %}
+          {% assign someHandle = "test-product" %}
+    {% assign someProduct = all_products[someHandle] %}
+    {{ someProduct.metafields.filter_size }}
       </div>
 
       <div class="filter-tags small disp-no">
