@@ -80,7 +80,7 @@ footer{
 
 .social-icons.flex-box{
   display: flex;
-  justify-content : center;
+/*   justify-content : center; */
 }
 
 footer .accordion.question{
