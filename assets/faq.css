@@ -33,6 +33,10 @@
   margin-bottom: 136px;
 }
 
+.faq-wrapper .panel{
+border-bottom: 1px solid;
+}
+
 .faq-heading {
     margin: 0;
     font-size: 32px;
