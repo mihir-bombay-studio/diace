@@ -146,7 +146,7 @@ button{
 }
 
 @media screen and (max-width: 992px) {
-  .text_description.register{
+  .text_content.register{
   	display : none;
   }
 }
