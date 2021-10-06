@@ -293,7 +293,7 @@ cursor:pointer;
   display : block;
 }
 
-#nav-sub-drop:hover .yellow-down-chevron {
+.hover-content-wrapper:hover .yellow-down-chevron {
     transform: rotate(
 180deg);
 }
