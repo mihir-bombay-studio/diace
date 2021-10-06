@@ -21,9 +21,11 @@
 }
 
 .text-over-hero.bold {
+  max-width : 355px;
   text-transform: uppercase;
   line-height: 24px;
   position: absolute;
+  overflow-x: hidden;
   top: 52px;
   left: 0;
   background-color: var(--background-yellow);
