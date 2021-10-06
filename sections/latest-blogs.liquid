@@ -11,7 +11,7 @@
 <div class="latest-blogs-wrapper container">
   <h2 class="latest-blogs-heading bold">{{section.settings.latest_blogs_heading}}</h2>
   <div class="latest-blogs flex-box justify-between">
-    {% for article in blogs.news.articles reversed  %}
+    {% for article in blogs.news.articles limit:3 %}
     {% assign desc = article.content %}
     <div class="latest-blog">
       <div class="blog-img">
