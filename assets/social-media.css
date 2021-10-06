@@ -181,6 +181,7 @@ h2.newsletter-subscription-heading {
 .newsletter-container{
   margin-bottom : 82px; 
   padding: 26px 16px;
+  position: relative;
 }
 
 @media screen and (max-width: 992px) {
