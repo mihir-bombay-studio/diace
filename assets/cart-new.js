@@ -1,16 +1,16 @@
 // Function for close the Cart
 function openCart() {
-  $(".cart-mask").fadeIn("slow");
+//   $(".cart-mask").fadeIn("slow");
   $(".cart-mask").addClass("active");
 }
 function toggleCart() {
-  $(".cart-mask").fadeToggle("slow");
+//   $(".cart-mask").fadeToggle("slow");
   $(".cart-mask").toggleClass("active");
 }
 
 // Function for close the Cart
 function closeCart() {
-  $(".cart-mask").fadeOut("slow");
+//   $(".cart-mask").fadeOut("slow");
   $(".cart-mask").removeClass("active");
 }
 
