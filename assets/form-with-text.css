@@ -161,7 +161,7 @@ button{
     border-radius:0;
     height:100vh;
   }
-  footer{
+  .form-with-text.register footer{
     display : none;
   }
 }
