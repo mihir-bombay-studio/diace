@@ -148,6 +148,19 @@ button{
   .text_content.register{
   	display : none;
   }
+  .form-with-text.register{
+   	padding-bottom : 0;
+  }
+  .form-with-text.register .container{
+  	padding : 0;
+  }
+  .form{
+    max-width:100%;
+    margin:0;
+    border : none;
+    border-radius:0;
+    height:100vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
