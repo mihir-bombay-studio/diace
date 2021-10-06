@@ -77,7 +77,12 @@
   .review-btn{
   	display : none;
   }
-  .review-btn.small{
-  	display : block;
+  .review-btn-new.small{
+    display: block;
+    background: #D9D9D9;
+    margin: 0 auto;
+    margin-top: 26px;
+    padding: 20px 90px 16px;
+
   }
 }

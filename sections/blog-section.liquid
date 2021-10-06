@@ -16,6 +16,20 @@
     <div class="welcomeheading">
       {{section.settings.heading}}
     </div>
+    
+    <div class="disp-no blog-image-with-overlay small">
+    {% if article.image != blank %}
+        <img
+             srcset="{% if article.image.width >= 479 %}{{ article.image | img_url: '479x' }} 479w,{% endif %}
+                     {% if article.image.width >= 786 %}{{ article.image | img_url: '786x' }} 786w,{% endif %}
+                     {% if article.image.width >= 992 %}{{ article.image | img_url: '992x' }} 992w,{% endif %}
+                     {% if article.image.width >= 700 %}{{ article.image | img_url: '700x' }} 700w{% endif %}"
+             src="{{ article | img_url : "master"}}" loading="lazy" alt="Blog Image" class="article-image-full">
+        {% else %}
+        {{ 'lifestyle-2' | placeholder_svg_tag }}
+        {% endif %}
+  </div>
+    
     <div class="date_and_time">
       <span class="date">{{ article.published_at | date: '%d/%m/%Y' }}</span> -
       <span class="time">{{ readtime }}</span>

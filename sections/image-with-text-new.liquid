@@ -3,6 +3,11 @@
 <div class="image-with-text container rel {% if section.settings.padd-top %} pt {% endif %}">
   <div class="flex-box justify-between align-center grid grid--gapless grid--1-col grid--2-col-tablet {% if section.settings.img_preference == 'image first' %}raw-reverse{% endif %}">
     <div class="image-with-text-grid-item">
+      {%- if section.settings.text_over_img != blank -%}
+        <span class="text-img-new bold">
+        	{{ section.settings.text_over_img | escape }}
+        </span>
+        {%- endif -%}
       <div class="image-with-text-content">
         {%- for block in section.blocks -%}
           {% case block.type %}

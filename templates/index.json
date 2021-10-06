@@ -121,7 +121,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
         "img_preference": "image second",
-        "text_over_img": "",
+        "text_over_img": "NICK & STEFANIE",
         "padd-top": false
       }
     },
@@ -225,7 +225,8 @@
       ],
       "settings": {
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
-        "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP"
+        "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
+        "remove_padd": true
       }
     },
     "1633285415946466ea": {
@@ -298,42 +299,6 @@
     "1631620069de812214": {
       "type": "latest-blogs",
       "blocks": {
-        "ce7f0ffe-b195-4f6b-a7fa-a3a5c9c372e1": {
-          "type": "latest_blog",
-          "settings": {
-            "blog_img": "shopify:\/\/shop_images\/Diace_Jaime_Korbee_21_2x_642c0f1c-5762-4826-b4e3-2c549a8fedd9.png",
-            "blog_date": "10\/08\/‘21",
-            "read_time": "5 min read",
-            "blog_topic": "ONDERWERP",
-            "blog_title": "Neem je Medtronic insulinepomp overal heen met een pomptas.",
-            "blog_desc": "Maak je gebruik van een Medtronic insulinepomp maar ben je daarnaast op zoek naar accessoires die jou voorzien van een combinatie van comfort en stijl?",
-            "blog_link": "shopify:\/\/blogs\/news"
-          }
-        },
-        "687699ab-973f-4956-864d-50874a839f3a": {
-          "type": "latest_blog",
-          "settings": {
-            "blog_img": "shopify:\/\/shop_images\/Diace_Jaime_Korbee_47_2x_de519be1-5fce-4406-a4f8-8a5aba07ca81.png",
-            "blog_date": "10\/08\/‘21",
-            "read_time": "5 min read",
-            "blog_topic": "ONDERWERP",
-            "blog_title": "Waarom is er een opening in de freestyle libre sensor?",
-            "blog_desc": "Vraag jij je ook wel eens af waarom er een opening zit in het midden van de Freestyle Libre sensor?",
-            "blog_link": "shopify:\/\/blogs\/news"
-          }
-        },
-        "b1d7e6e2-4553-482a-a1dd-d6be3c8406f3": {
-          "type": "latest_blog",
-          "settings": {
-            "blog_img": "shopify:\/\/shop_images\/Diace_Jaime_Korbee_71_2x_56b307da-e7de-476a-8389-d209e01b9d1b.png",
-            "blog_date": "10\/08\/‘21",
-            "read_time": "5 min read",
-            "blog_topic": "ONDERWERP",
-            "blog_title": "Waarom is er een opening in de freestyle libre sensor?",
-            "blog_desc": "Vraag jij je ook wel eens af waarom er een opening zit in het midden van de Freestyle Libre sensor?",
-            "blog_link": "shopify:\/\/blogs\/news"
-          }
-        },
         "b61e2f1e-9338-4657-ade3-2e3a662f8e79": {
           "type": "button",
           "settings": {
@@ -344,13 +309,11 @@
         }
       },
       "block_order": [
-        "ce7f0ffe-b195-4f6b-a7fa-a3a5c9c372e1",
-        "687699ab-973f-4956-864d-50874a839f3a",
-        "b1d7e6e2-4553-482a-a1dd-d6be3c8406f3",
         "b61e2f1e-9338-4657-ade3-2e3a662f8e79"
       ],
       "settings": {
-        "latest_blogs_heading": "ONZE LAATSTE BLOGARTIKELS"
+        "latest_blogs_heading": "ONZE LAATSTE BLOGARTIKELS",
+        "link_text": "Verder lezen"
       }
     },
     "image_with_text_2": {
@@ -373,7 +336,7 @@
           "settings": {
             "button_label": "LEES ONS VERHAAL",
             "button_link": "",
-            "button-color": "grey"
+            "button-color": "yellow"
           }
         }
       },
@@ -383,7 +346,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
+        "image": "shopify:\/\/shop_images\/Image_2x_d0aeb7cd-e9ca-4927-8af5-37eb2920d9bb.png",
         "img_preference": "image second",
         "text_over_img": "",
         "padd-top": false

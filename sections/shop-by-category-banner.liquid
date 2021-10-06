@@ -25,6 +25,30 @@
   </div>
   </div>
   
+  <div class="shop-by-category-banner-new small">
+    <div class="banner-small">
+      <img 
+         src="{{ section.settings.banner_img | img_url: '533x' }}"
+         alt="{{ section.settings.banner_img.alt | escape }}"
+         loading="lazy"
+         >
+    </div>
+    <div class="">
+      <div class="banner-title bold">{{ section.settings.banner_title }}</div>
+      <div class="banner-desc light">{{ section.settings.banner_desc }}</div>
+      {% for block in section.blocks %}
+      {% if block.type == "button" %}
+      {%- if block.settings.button_label != blank -%}
+      <div class="banner-link-new">
+      <a href="{{ block.settings.button_link }}" class="bold">{{ block.settings.button_label | escape }}</a>
+      <span class="right-black-chveron">{% include 'icon-black-right-chevron' %}</span>
+      </div>
+      {%- endif -%}
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  
 </div>
 
 {% schema %}

@@ -150,22 +150,22 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   padding-top: 5px;
 }
 .cart-toggler{
-cursor:pointer;
+  cursor:pointer;
 }
 
 .cart-item-count{
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: -2px;
-    right: -4px;
-    background-color: #FEC23B;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 700;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -2px;
+  right: -4px;
+  background-color: #FEC23B;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
 }
 /* --------------------- header login form------------------------------ */
 .user-name {
@@ -301,11 +301,9 @@ cursor:pointer;
 
 
 .hover-wrapper{
-  top: 20px;
   position: absolute;
   padding-top: 20px;
-  width: 100%;
-  cursor: pointer;
+  width :100%;
 }
 
 .dropdown-container{
@@ -327,6 +325,7 @@ cursor:pointer;
 .hover-content-wrapper{
   padding: 26px;
   display: flex;
+  gap: 35px;
   justify-content: space-between;
 }
 
@@ -385,12 +384,9 @@ cursor:pointer;
   position : relative;
 }
 
-.dropdown-ul:hover #nav-sub-drop {
+.hover-dropdown:hover .dropdown-container {
   display : block;
 }
-
-
-
 
 
 @media screen and (max-width: 768px) {
@@ -491,3 +487,4 @@ cursor:pointer;
   }
 
 }
+

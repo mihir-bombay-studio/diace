@@ -39,7 +39,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
         "img_preference": "image second",
-        "text_over_img": "NICK & STEFANIE"
+        "text_over_img": "NICK & STEFANIE",
+        "padd-top": true
       }
     },
     "16317918671ad5134d": {
@@ -74,7 +75,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_2x_d0aeb7cd-e9ca-4927-8af5-37eb2920d9bb.png",
         "img_preference": "image first",
-        "text_over_img": ""
+        "text_over_img": "",
+        "padd-top": false
       }
     },
     "1631791875b20c08ed": {
@@ -109,7 +111,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_2x_d0aeb7cd-e9ca-4927-8af5-37eb2920d9bb.png",
         "img_preference": "image second",
-        "text_over_img": ""
+        "text_over_img": "",
+        "padd-top": false
       }
     },
     "1631792126f68d761a": {
@@ -181,7 +184,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_2x_d0aeb7cd-e9ca-4927-8af5-37eb2920d9bb.png",
         "img_preference": "image second",
-        "text_over_img": ""
+        "text_over_img": "",
+        "padd-top": false
       }
     },
     "16317924694dffb230": {
@@ -227,8 +231,15 @@
       "settings": {
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
         "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
+        "remove_padd": true
+      }
+    },
+    "16335248292a6d3173": {
+      "type": "newsletter-new",
+      "settings": {
         "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
-        "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community."
+        "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.",
+        "submit_btn_text": "VERZENDEN"
       }
     },
     "16317936215fa18fef": {
@@ -249,7 +260,7 @@
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
         "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
-        "featured_collection": "new-collection"
+        "featured_collection": "opbergen"
       }
     }
   },
@@ -261,6 +272,7 @@
     "1631792126f68d761a",
     "163179214797432711",
     "16317924694dffb230",
+    "16335248292a6d3173",
     "16317936215fa18fef"
   ]
 }

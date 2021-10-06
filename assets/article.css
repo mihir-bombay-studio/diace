@@ -8,13 +8,15 @@
 
 .background-overlay{
   position: relative!important;
-  background-image: url(//cdn.shopify.com/s/files/1/0594/3604/0367/t/3/assets/article-bg.svg?v=3246859187231546785);
+  background-image: url(//cdn.shopify.com/s/files/1/0594/3604/0367/t/4/assets/article-bg.svg?v=3246859187231546785);
   background-repeat: no-repeat;
+  background-size: contain;
 }
+
 
 .back-btn{
   position: absolute;
-  left: 52px;
+  left: 40px;
   top: 23px;
   text-decoration: none;
   color: #000000;
@@ -115,3 +117,28 @@ img {
 .next svg{
   transform: rotate(270deg);
 }
+
+
+@media screen and (max-width: 992px) {
+  .back-btn{
+    display : none;
+  }
+  .article-image img{
+    height : auto;
+    border-radius : 8px;
+  }
+
+  .background-overlay{
+    background-size: 190%;
+    overflow: hidden; 
+  }
+  
+  .heading{
+  	font-size : 24px;
+  }
+  .article-content img{
+    height : auto;
+  }
+
+}
+

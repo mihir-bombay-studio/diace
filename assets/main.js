@@ -74,10 +74,10 @@ $('.article_filter_tag').click(function() {
 });
 
 
-
 $('.check-box-wrapper').click(function() {
   $(this).toggleClass('selected');
 });
+
 
 // $("#account").click(function(){
 //   $("#account .login-wrapper").toggleClass("header-nav-list-sub");

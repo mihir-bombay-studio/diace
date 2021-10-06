@@ -8,7 +8,7 @@
             alt="{{ section.settings.hero_main_img.alt | escape }}"
             loading="lazy"
           >
-      <div class="text-over-hero bold">{{section.settings.text_over_hero}}</div>
+      <div class="text-over-hero bold new">{{section.settings.text_over_hero}}</div>
       <div class="bg-yellow-dots dots-left-down">
       	{% include 'bg-grey-dots' %}
       </div>
@@ -23,7 +23,7 @@
             loading="lazy"
           >
         <div class="hero-hover-text flex-box align-center">
-          <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+          <a href="{{ block.settings.hero_text_link }}"><span class="plus-icon">{% include 'icon-yellow-plus' %}</span></a>
           <a href="{{ block.settings.hero_text_link }}" class="hover-text bold">{{ block.settings.hero_other_img_text }}</a>
         </div>
       </div>

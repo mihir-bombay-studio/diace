@@ -80,7 +80,15 @@ footer{
 
 .social-icons.flex-box{
   display: flex;
-  justify-content : center;
+/*   justify-content : center; */
+}
+
+footer .accordion.question{
+  padding : 16px 0;
+}
+
+.footer-lower-nav-item{
+	text-decoration : underline;
 }
 
 @media screen and (max-width: 768px) {

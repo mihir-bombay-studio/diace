@@ -1,172 +1,171 @@
 {{ 'header.css' | asset_url | stylesheet_tag }}
-
 <header>
-  <span class="header-anouncement flex-box semibold justify-center align-center no-mobile">
-			{{ section.settings.announcement_text }}
-			<span id="header-anouncement-close" class="flex-box">{% include 'icon-close-circle' %}</span>
-  </span>
-  <div class="header-wrapper {% if template.name != "article" %} mb {% endif %}">
-    <div class="container flex-box justify-between align-center">
-      <nav>
-        <div id="menu-btn" class="menu-btn no-desktop" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-      <nav class="left-wrap">
-        <a href="/">
-          {% if section.settings.brand_logo != blank %}
-          <img
-               srcset="{% if section.settings.brand_logo.width >= 174 %}{{ section.settings.brand_logo | img_url: '174x' }} 174w{% endif %}"
-               class="brand-logo-size" src="{{ section.settings.brand_logo  | img_url: '150x150', scale: 2 }}"
-               loading="lazy" alt = "brand-logo">
-          {% else %}{{ section.settings.brand_logo_svg }}{% endif %}
-        </a>
-      </nav>
-      <nav class="right-wrap ">
-        <div class="right-nav-upper light">
-          <ul class="header-nav-list">
-            {% for block in section.blocks %}
-            {% for link in linklists[block.settings.nav_list].links %}
-            <li class="right-nav-list no-mobile"><a href="{{link.url}}">{{link.title}}</a></li>
-            {% endfor %}
-            {% endfor %}
-            <li class="right-nav-list dropdown bold">
-              <a href="#">
-                NL
-                {% include 'icon-grey-down-chevron' %}
-              </a>
-              <ul class="header-nav-list-sub">   
-                <li>
-                  <a href="#">EN</a>
-                </li>
-                <li>
-                  <a href="#">FR</a>
-                </li>
-                <li>
-                  <a href="#">DE</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="right-nav-list dropdown bold no-mobile">
-              <div id="account-btn" class="account-btn">
-                {% include 'icon-user' %}{% include 'icon-grey-down-chevron' %}
-              </div>
-              <div class="login-wrapper">
-                {% render "login-popup-header" %}
-              </div>
-            </li>
-            <li class="no-t-m right-nav-list rel"><a id="cart_toggler" class="cart-toggler" onClick="return false;">{% include 'icon-cart-new' %}<span id="cart-quantity" class="cart-item-count {% if cart.item_count < 1 %}no-disp{% endif %}">{{ cart.item_count }}</span></a></li>
-          </ul>
-        </div>
-        <div class="dropdown-ul right-nav-lower no-mobile">
-          <ul class="header-nav-list flex-box justify-between bold">
-            {% for block in section.blocks %}
-            {% for link in linklists[block.settings.nav_list_lower].links %}
-            <li class="hover-dropdown right-nav-list"><a href="{{link.url}}">{{link.title}}</a><span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span></li>
-            {% endfor %}
-            {% endfor %}
-          </ul>
-          <div class="hover-wrapper">
-            <div id="nav-sub-drop" class="dropdown-container container">
-              <div class="wrapper">
-                <div class="hover-content-wrapper">
-                  <div class="left-wrap content-sub-list">
-                    <ul class="content-list">
-                      <li>TASSEN {% render "back-icon" %} </li>
-                      <li>PENTASSEN {% render "back-icon" %} </li>
-                      <li>LEDEREN TASSEN {% render "back-icon" %}</li>
-                      <li>POMPTASSEN {% render "back-icon" %} </li>
-                      <li>KOELTASSEN {% render "back-icon" %}</li>
-                      <li>DRAAGBANDEN {% render "back-icon" %} </li>
-                      <li>TOTEBAGS {% render "back-icon" %} </li>
-                    </ul>
-                  </div>
-
-                  <div class="drop-right-wrap">
-                    <div class="text-block">
-                      Klaar voor vertrek? Alles bij je voor de volgende prik? Glucosemeter, pomp, druivensuiker? Er wordt
-                      wel eens wat vergeten als we de deur uit moeten. Een handige diabetes tasje kan hierin het verschil
-                      maken.
-                      <p>Klaar voor vertrek? Alles bij je voor de volgende prik?Een handige diabetes tasje kan hierin het verschil
-                        maken.
-                      </p>
-                    </div>
-                    <div class="image-block">
-                      <img src="{{"blog.png" | asset_url }}" alt="">
-                    </div>
-                  </div>
+    <span class="header-anouncement flex-box semibold justify-center align-center no-mobile">
+        {{ section.settings.announcement_text }}
+        <span id="header-anouncement-close" class="flex-box">{% include 'icon-close-circle' %}</span>
+    </span>
+    <div class="header-wrapper {% if template.name != " article" %} mb {% endif %}">
+        <div class="container flex-box justify-between align-center">
+            <nav>
+                <div id="menu-btn" class="menu-btn no-desktop" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-              </div>
+            </nav>
+            <nav class="left-wrap">
+                <a href="/">
+                    {% if section.settings.brand_logo != blank %}
+                        <img srcset="{% if section.settings.brand_logo.width >= 174 %}{{ section.settings.brand_logo | img_url: '174x' }} 174w{% endif %}" class="brand-logo-size" src="{{ section.settings.brand_logo | img_url: '150x150', scale: 2 }}" loading="lazy" alt="brand-logo">
+                        {% else %}
+                            {{ section.settings.brand_logo_svg }}
+                        {% endif %}
+                    </a>
+                </nav>
+                <nav class="right-wrap ">
+                    <div class="right-nav-upper light">
+                        <ul class="header-nav-list">
+                            {% for block in section.blocks %}
+                                {% for link in linklists[block.settings.nav_list].links %}
+                                    <li class="right-nav-list no-mobile">
+                                        <a href="{{ link.url }}">{{ link.title }}</a>
+                                    </li>
+                                {% endfor %}
+                            {% endfor %}
+                            <li class="right-nav-list dropdown bold">
+                                <a href="#">
+                                    NL
+                                    {% include 'icon-grey-down-chevron' %}
+                                </a>
+                                <ul class="header-nav-list-sub">
+                                    <li>
+                                        <a href="#">EN</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FR</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DE</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="right-nav-list dropdown bold no-mobile">
+                                <div id="account-btn" class="account-btn">
+                                    {% include 'icon-user' %}{% include 'icon-grey-down-chevron' %}
+                                </div>
+                                <div class="login-wrapper">
+                                    {% render "login-popup-header" %}
+                                </div>
+                            </li>
+                            <li class="no-t-m right-nav-list rel">
+                                <a id="cart_toggler" class="cart-toggler" onClick="return false;">{% include 'icon-cart-new' %}<span id="cart-quantity" class="cart-item-count {% if cart.item_count < 1 %}no-disp{% endif %}">{{ cart.item_count }}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-ul right-nav-lower no-mobile">
+                        <ul class="hover-ul header-nav-list flex-box justify-between bold">
+                            {% for block in section.blocks %}
+                                {% for link in linklists[block.settings.nav_list_lower].links %}
+                                    <li class="hover-dropdown right-nav-list">
+                                        <a href="{{ link.url }}">{{ link.title }}</a>
+                                        <span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>
+                                        {% if link.links != blank %}
+                                            <div class="hover-wrapper">
+                                                <div id="nav-sub-drop" class="dropdown-container container">
+                                                    <div class="wrapper">
+                                                        <div class="hover-content-wrapper">
+                                                            <div class="left-wrap content-sub-list">
+                                                                <ul class="content-list">
+                                                                    {%- for child_link in link.links -%}
+                                                                        <li>
+                                                                            <a href="{{ child_link.url }}">{{ child_link.title }}
+                                                                                {% render "back-icon" %}</a>
+                                                                        </li>
+                                                                    {% endfor %}
+                                                                </ul>
+                                                            </div>
+                                                            <div class="drop-right-wrap">
+                                                                <div class="text-block">
+                                                                    Klaar voor vertrek? Alles bij je voor de volgende prik? Glucosemeter, pomp, druivensuiker? Er wordt
+                                                                                                  wel eens wat vergeten als we de deur uit moeten. Een handige diabetes tasje kan hierin het verschil
+                                                                                                  maken.
+                                                                    <p>Klaar voor vertrek? Alles bij je voor de volgende prik?Een handige diabetes tasje kan hierin het verschil
+                                                                                                        maken.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="image-block">
+                                                                    <img src="{{ "blog.png" | asset_url }}" alt=""></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
-  {% render "mobile-nav" %}
-</header>
-
-
-
-{% schema %}
-  {
-    "name": "header",
-    "settings": [
-		{
-          "id": "announcement_text",
-          "type": "text",
-          "label": "Announcement"
-
-        },
+            {% render "mobile-nav" %}
+        </header>
+        {% schema %}
         {
-        "id": "brand_logo",
-        "type": "image_picker",
-        "label": "Select Brand Logo"
-
-        },
-        {
-        "id": "brand_logo_svg",
-        "type": "text",
-        "label": "Brand Logo SVG"
-
-        }
-	],
-	"blocks": [
-        {
-        "type": "select",
-        "name": "Header Upper Menu",
-        "settings": [
-
-        {
-        "id": "nav_list",
-        "type": "link_list",
-        "label": "Menu"
-
-        }
-      ]
-    },
-	{
-        "type": "add",
-        "name": "Header Lower Menu",
-        "settings": [
-
-        {
-        "id": "nav_list_lower",
-        "type": "link_list",
-        "label": "Menu"
-
-        }
-      ]
-    }
-]
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+            "name": "header",
+            "settings": [
+        		{
+                  "id": "announcement_text",
+                  "type": "text",
+                  "label": "Announcement"
+        
+                },
+                {
+                "id": "brand_logo",
+                "type": "image_picker",
+                "label": "Select Brand Logo"
+        
+                },
+                {
+                "id": "brand_logo_svg",
+                "type": "text",
+                "label": "Brand Logo SVG"
+        
+                }
+        	],
+        	"blocks": [
+                {
+                "type": "select",
+                "name": "Header Upper Menu",
+                "settings": [
+        
+                {
+                "id": "nav_list",
+                "type": "link_list",
+                "label": "Menu"
+        
+                }
+              ]
+            },
+        	{
+                "type": "add",
+                "name": "Header Lower Menu",
+                "settings": [
+        
+                {
+                "id": "nav_list_lower",
+                "type": "link_list",
+                "label": "Menu"
+        
+                }
+              ]
+            }
+        ]
+          }
+        {% endschema %}
+        {% stylesheet %}
+        {% endstylesheet %}
+        {% javascript %}
+        {% endjavascript %}

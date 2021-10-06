@@ -68,3 +68,18 @@
   max-width: 100%;
   padding-right:20px;
 }
+
+@media screen and (max-width: 992px) {
+  .artboard{
+    max-width : 100%;
+    width: 100%;
+  }
+  .artboard img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .filtered-container{
+    padding-bottom : 0;
+  }
+}

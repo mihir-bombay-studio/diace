@@ -47,8 +47,14 @@
     },
     "1631784153d7326a6e": {
       "type": "product-collection",
+      "disabled": true,
       "settings": {
         "featured_collection": "opbergen"
+      }
+    },
+    "16334453279bfbda31": {
+      "type": "all-products",
+      "settings": {
       }
     }
   },
@@ -57,6 +63,7 @@
     "1631776536a5ea9130",
     "1631780572363b3a2f",
     "1631784094158f4108",
-    "1631784153d7326a6e"
+    "1631784153d7326a6e",
+    "16334453279bfbda31"
   ]
 }

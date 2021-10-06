@@ -2,6 +2,8 @@ h2.latest-blogs-heading.bold {
   text-align: center;
   color: var(--background-yellow);
     margin-bottom: 52px;
+    font-size: 24px;
+    font-family: 'Myriad Pro';
     }
 
 .latest-blog {
