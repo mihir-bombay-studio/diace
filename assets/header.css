@@ -292,3 +292,8 @@ cursor:pointer;
 .dropdown-ul:hover  #nav-sub-drop {
   display : block;
 }
+
+#nav-sub-drop:hover .yellow-down-chevron {
+    transform: rotate(
+180deg);
+}
