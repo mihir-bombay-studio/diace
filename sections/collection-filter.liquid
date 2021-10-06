@@ -28,7 +28,7 @@
 
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
-
+{% assign prod_desc = product.metafields.my_fields %}
 
 <div class="collection-filter-wrapper container">
   <div class="collection-filter flex-box justify-between">
@@ -44,7 +44,7 @@
           {% endfor %}
         </div>
         {% endfor %}
-        {% for size_obj in resource.metafields.filter_size %}
+        {% for size_obj in product.metafields.my_fields %}
         {{ size_obj | metafield_tag }}
         {% endfor %}
 
