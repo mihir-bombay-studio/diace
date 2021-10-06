@@ -44,7 +44,7 @@
 
 .accordion.question {
     padding: 16px 0;
-    border-bottom: 1px solid;
+/*     border-bottom: 1px solid; */
 }
 
 .product-details .accordion.question {
@@ -61,7 +61,7 @@
 
 .panel-bottom-border{
 /* 	padding-bottom: 16px; */
-  border-bottom: 1px solid;
+/*   border-bottom: 1px solid; */
 }
 
 .product-details .panel-bottom-border, .product-details .accordion.question.active {
