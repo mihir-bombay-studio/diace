@@ -1,5 +1,6 @@
 {{ 'social-media.css' | asset_url | stylesheet_tag }}
-<div class="social-media container socila-media-lower newsletter-container">
+<div class="container">
+<div class="social-media  socila-media-lower newsletter-container">
   <div class="bg-yellow-dots dots-right-down">
     {% include 'bg-yellow-dots-sm' %}
   </div>
@@ -17,6 +18,7 @@
     <input class="subscription-form-input" type="email" name="contact[email]" placeholder="youremail@mail.com" required>
     <button class="submit-btn btn bold" type="submit" form="contact_form" value="Submit">{{section.settings.submit_btn_text}}</button>
   </div>
+</div>
 </div>
 
 {% schema %}
