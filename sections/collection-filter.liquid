@@ -28,7 +28,7 @@
 
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
-{%- assign collection_title = collection.title -%}
+{% assign collection_title = collection.title %}
 
 
 <div class="collection-filter-wrapper container">
@@ -47,7 +47,7 @@
         {% endfor %}
        
         
-        {% for sproduct in collections.collection.title.products %} 
+        {% for sproduct in collections[collection_title].products %} 
         {{ sproduct.metafields.my_fields.filter_size }}
         {% endfor %}
         
