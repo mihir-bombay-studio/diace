@@ -76,8 +76,16 @@ h2.image-with-text-heading {
   border-radius: 8px;
 }
 
+.text-img-new.bold{
+  display : none;
+  font-size : 12px;
+  color : #737373;
+  text-transform: uppercase;
+  text-align : left;
+}
+
 @media screen and (max-width: 992px) {
-  .bg-yellow-dots{
+  .bg-yellow-dots , .text-over-img.bold{
     display : none;
   }
   .image-with-text .flex-box{
@@ -95,6 +103,9 @@ h2.image-with-text-heading {
   h2.image-with-text-heading{
     font-size : 20px;
     line-height: normal;
+  }
+  .text-img-new.bold{
+  	display : block;
   }
 }
 
