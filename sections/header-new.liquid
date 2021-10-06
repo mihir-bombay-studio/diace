@@ -76,6 +76,7 @@
           {% for block in section.blocks %}
           {% for link in linklists[block.settings.nav_list_lower].links %}
           <li class="hover-dropdown right-nav-list"><a href="{{link.url}}">{{link.title}}</a><span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>
+            {% if link.links != blank %}
             <div class="hover-wrapper">
               <div id="nav-sub-drop" class="dropdown-container container">
                 <div class="wrapper">
@@ -109,6 +110,7 @@
                 </div>
               </div>
             </div>
+            {% endif %}
           </li>
 
           {% endfor %}
