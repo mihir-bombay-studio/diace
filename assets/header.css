@@ -129,7 +129,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   margin-left: 4px;
 }
 
-.hover-dropdown .right-nav-list:hover{
+.hover-dropdown.right-nav-list:hover{
   border-bottom: 2px solid #FEC23B;
 }
 
