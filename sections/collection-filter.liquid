@@ -44,6 +44,10 @@
           {% endfor %}
         </div>
         {% endfor %}
+        {% for size_obj in resource.metafields.filter_size %}
+        {{ field | metafield_tag }}
+        {% endfor %}
+
       </div>
 
       <div class="filter-tags small disp-no">
