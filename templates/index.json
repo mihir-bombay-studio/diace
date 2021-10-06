@@ -121,7 +121,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
         "img_preference": "image second",
-        "text_over_img": "",
+        "text_over_img": "NICK & STEFANIE",
         "padd-top": false
       }
     },
@@ -225,7 +225,8 @@
       ],
       "settings": {
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
-        "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP"
+        "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
+        "remove_padd": true
       }
     },
     "1633285415946466ea": {
