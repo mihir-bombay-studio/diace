@@ -2,6 +2,12 @@
     margin: 3rem auto 10rem auto;
 }
 
+
+.product-block-wrapper .dots-left-down svg {
+    width: initial;
+    height: initial;
+}
+
 .product-block-left, .product-block-right {
 	width: 49%;
 }
