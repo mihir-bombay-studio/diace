@@ -681,19 +681,21 @@
                   {% if product.has_only_default_variant %}
                   {% for variant in product.variants %}
                   <div class="product-color">
-                    <span>{{variant.title}}: </span>
+                    <span>Kleur: </span>
                     <span>
                       Paars
                     </span>
                   </div>
                   {% endfor %}
                   {% else %}
+                  {% for variant in product.variants %}
                   <div class="product-color">
-                    <span>Kleur: </span>
+                    <span>{{variant.title}}: </span>
                     <span>
                       Paars
                     </span>
                   </div>
+                  {% endfor %}
                   <div class="other-available-colors">
                     <a class="featured-product-link" href="#">Meer kleuren beschikbaar</a>
                   </div>
