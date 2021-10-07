@@ -98,7 +98,7 @@ img{
   cursor:pointer;
 }
 
-.filter-pills span .active-pill{
+.filter-pills span.active-pill{
   background-color: #fec23b;
 }
 
