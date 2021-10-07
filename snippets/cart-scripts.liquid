@@ -238,32 +238,33 @@ output += `
 
 
 
-$("body").on('click', '.AddToCart, #add-to-cart', function () {
-  let variant_id = parseInt($(this).data('variant-id'));
-  let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
-  console.log(variant_id);
-  let formData = {
-    'items': [{
-      'id': variant_id,
-      'quantity': parseInt(variant_quantity)
-    }]
-  };
+  $("body").on('click', '.AddToCart, #add-to-cart', function () {
+    setTimeout(function(){  
+      let variant_id = parseInt($(this).data('variant-id'));
+      let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
+      console.log(variant_id);
+      let formData = {
+        'items': [{
+          'id': variant_id,
+          'quantity': parseInt(variant_quantity)
+        }]
+      };
 
-  $.ajax({
-    url: "/cart/add.js",
-    method: "POST",
-    dataType: "json",
-    data: formData,
-  })
-  .done(function (cart) {
-    variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
-    getCartDetails();
-  })
-  .fail(function (error) {
-    console.log(error);
+      $.ajax({
+        url: "/cart/add.js",
+        method: "POST",
+        dataType: "json",
+        data: formData,
+      })
+      .done(function (cart) {
+        variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
+        getCartDetails();
+      })
+      .fail(function (error) {
+        console.log(error);
+      });
+    }, 200);
   });
-  
-});
 
 
 
