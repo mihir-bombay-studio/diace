@@ -161,9 +161,21 @@ h2.newsletter-subscription-heading {
     text-transform: uppercase;
     font-family: 'Myriad Pro', sans-serif;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /*     width: calc(30% - 16px); */
 
     }
+.icon-send{
+  margin-top: 5px;
+  transform-origin: left;
+  transition: .4s ease;
+}
+
+.submit-btn:hover .icon-send{
+  transform: rotate(336deg);
+}
 
 .social-media-wrapper{
   margin-bottom: 270px;
@@ -199,6 +211,8 @@ h2.newsletter-subscription-heading {
 .text-new-btn.bold{
   display : none; 
 }
+
+
 
 @media screen and (max-width: 992px) {
   .social-media-wrapper{
