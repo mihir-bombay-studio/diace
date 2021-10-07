@@ -26,6 +26,10 @@
   z-index: -1;
 }
 
+.bg-gray-dots svg{
+  width : 100%;
+  height : 100%;
+}
 .collection-banner {
   border: 4px solid var(--background-yellow);
     border-radius: 8px;
