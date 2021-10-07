@@ -319,7 +319,7 @@ a.active-facets__button {
 #filter-count{
   position : relative;
 }
-#filter-count > svg{
+#filter-count svg{
   right: 0px;
   position: absolute;
   top: 12px;
