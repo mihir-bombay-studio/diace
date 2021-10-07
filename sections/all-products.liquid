@@ -4,6 +4,7 @@
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
     {% for vendor in shop.vendors %}
+    {% for product  in vendor %}
       <div class="product-collection-card">
         <div class="featured-product-img rel">
           <a href="{{product.url}}">
@@ -21,6 +22,7 @@
         </div>
         <a href="" class="collection-btn">MERK</a>
       </div>
+    {% endfor %}
     {% endfor %}
   </div>
 </div>
