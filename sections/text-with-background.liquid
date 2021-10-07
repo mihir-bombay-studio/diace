@@ -1,5 +1,5 @@
 {{ 'text-with-background.css' | asset_url | stylesheet_tag }}
-
+{{template.name}}
 <div class="text-background">
   <div class=" back-btn {% if section.settings.show_btn == false %} no-disp {% endif %} ">
     <a class="back-btn" href="{{section.settings.link_url}}">{% include "back-icon"%} {{section.settings.link_text}}</a> 
