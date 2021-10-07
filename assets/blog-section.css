@@ -96,6 +96,7 @@ img{
   background-color: #fec23b33;
   margin: 0 10px;
   cursor:pointer;
+  font-weight : bold;
 }
 
 .filter-pills span.active-pill{
