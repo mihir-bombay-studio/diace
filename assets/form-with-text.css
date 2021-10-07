@@ -102,6 +102,9 @@ label{
   border-radius: 8px;
   margin-top: 26px;
   box-shadow: none;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button{
