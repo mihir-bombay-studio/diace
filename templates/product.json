@@ -78,7 +78,7 @@
         "163362115027b57f6f-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button-color": "grey"
           }
