@@ -102,7 +102,7 @@ img{
   background-color: #fec23b;
 }
 
-.filter-pills:first-child{
+.filter-pills .article_filter_tag:first-child{
 	background-color :   #fec23b;
 }
 
