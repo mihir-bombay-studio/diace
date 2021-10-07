@@ -90,8 +90,9 @@
         "163362115027b57f6f-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
         "img_preference": "image second",
-        "text_over_img": "",
+        "text_over_img": "NICK & STEFANIE",
         "padd-top": false
       }
     },
