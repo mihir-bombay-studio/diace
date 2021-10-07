@@ -1,3 +1,7 @@
+.slick-arrow.slick-disabled{
+display:none;
+}
+
 .product-block-wrapper {
     margin: 3rem auto 10rem auto;
 }
