@@ -4,7 +4,7 @@
         {{ section.settings.announcement_text }}
         <span id="header-anouncement-close" class="flex-box">{% include 'icon-close-circle' %}</span>
     </span>
-    <div class="header-wrapper {% if template.name != " article" %} mb {% endif %}">
+    <div class="header-wrapper {% if template.name != " article" and template.name != "page"  %} mb {% endif %}">
         <div class="container flex-box justify-between align-center">
             <nav>
                 <div id="menu-btn" class="menu-btn no-desktop" aria-expanded="false">
