@@ -97,8 +97,9 @@ function getCartDetails(){
 }
 
 function convertNumber(num){
+  
 //   return ((num / 100).toFixed(2)).replace(".", ",");
-  return {{ num | money}}
+  return `{{ num | money}}`;
 }
 
 
