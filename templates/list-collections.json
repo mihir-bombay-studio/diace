@@ -36,12 +36,6 @@
       "settings": {
       }
     },
-    "1631780572363b3a2f": {
-      "type": "product-collection",
-      "settings": {
-        "featured_collection": "stickers"
-      }
-    },
     "1631784094158f4108": {
       "type": "shop-by-category-banner",
       "settings": {
@@ -67,7 +61,6 @@
     "main",
     "1631776536a5ea9130",
     "1633587959e856023f",
-    "1631780572363b3a2f",
     "1631784094158f4108",
     "1631784153d7326a6e",
     "16334453279bfbda31"
