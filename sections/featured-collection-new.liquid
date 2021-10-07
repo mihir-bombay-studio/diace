@@ -1,24 +1,19 @@
 {{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
 
 {% assign product_handle = section.settings.featured_collection %}
-{% assign current_variant = product.selected_or_first_available_variant %}
+
 <div class="featured-collection-wrapper container">
   <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
   
   <div class="featured-products flex-box justify-between">
-          {% assign products_by_price = collections[product_handle].products | sort: "price" %}
-          {% assign current_id = product.id %}
-          {% assign products_shown = 0 %}
-          {% for product in products_by_price limit:6 %}
-          {% if products_shown < 3 %}
-          {% unless product.id == current_id %}
+  	{% for product in collections[product_handle].products limit: 3 %}
     <div class="featured-product-card">
       <div class="featured-product-img rel">
     	<img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
         <div class="fp-hover-text flex-box align-center">
-          <a href="{{product.url}}"><span class="plus-icon">{% include 'icon-yellow-plus' %}</span></a>
-          <a href="{{product.url}}" class="hover-text bold">KOPEN</a>
+          <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+          <a href="" class="hover-text bold">KOPEN</a>
         </div>
       </div>
       <div class="product-title-price flex-box justify-between">
@@ -41,10 +36,7 @@
         </div>
         
     </div>
-     {% assign products_shown = products_shown | plus: 1 %}
-          {% endunless %}
-          {% endif %}
-          {% endfor %}
+    {% endfor %}
   </div>
   
   {% for block in section.blocks %}
