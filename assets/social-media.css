@@ -167,14 +167,6 @@ h2.newsletter-subscription-heading {
     /*     width: calc(30% - 16px); */
 
     }
-.icon-send{
-  margin-top: 5px;
-  transition: .3s ease;
-}
-
-button:hover .icon-send{
-  transform: rotate(-26deg) translateX(5px);
-}
 
 .social-media-wrapper{
   margin-bottom: 270px;
