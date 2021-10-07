@@ -105,6 +105,7 @@ label{
   display: flex;
     align-items: center;
     justify-content: center;
+  font-family: 'Myriad Pro',sans-serif;
 }
 
 button{
