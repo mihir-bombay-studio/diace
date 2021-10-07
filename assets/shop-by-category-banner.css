@@ -48,7 +48,9 @@
 }
 
 .banner-link:hover .right-black-chveron svg{
-  margin-left: 2px;
+/*   margin-left: 2px; */
+  transform: rotate(
+270deg) translateY(3px);
 }
 
 .banner-link:hover .right-black-chveron .a-icon-black-right-chevron{
