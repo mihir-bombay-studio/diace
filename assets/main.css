@@ -143,7 +143,7 @@ a {
     font-size: inherit;
 }
 
-.hero-hover-text:hover .hover-text {
+.hero-hover-text:hover .hover-text , .product-hover-text:hover .hover-text{
     max-width: 100%;
 }
 
