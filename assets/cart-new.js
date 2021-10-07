@@ -157,7 +157,7 @@ function refreshCart(cart) {
            <div class="flex-box justify-between">
              <div class="w-100">
                 <div class="flex-box justify-between">
-                  <div class="product-variant">${current_variant.title != "Default Title" ? current_variant.title : null}</div>
+                  <div class="product-variant light">${current_variant.title != "Default Title" ? current_variant.title : null}</div>
                 </div>
                 <div class="item-price flex-box justify-between">
                   <div class="">`;
