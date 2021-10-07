@@ -27,6 +27,10 @@
   </div>
 </div>
 
+{% for vendor in shop.vendors %}
+{{vendor}}
+{% endfor %}
+
 {% schema %}
   {
     "name": "All products",
