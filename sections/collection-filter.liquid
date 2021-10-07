@@ -679,12 +679,14 @@
 
                 <div class="product-colors flex-box justify-between light">
                   {% if product.has_only_default_variant %}
+                  {% for variant in product.variants %}
                 <div class="product-color">
                     <span>Kleur: </span>
                     <span>
-                      Paars
+                      {{variant.title}}
                     </span>
                   </div>
+                  {% endfor %}
                 {% else %}
                 <div class="product-color">
                     <span>Kleur: </span>
