@@ -238,9 +238,9 @@ output += `
 
 
 
-$("body").on('click', '.AddToCart, #add-to-cart', function () {
+$("body").on('click', '.AddToCart, #add-to-cart', function (e) {
   let variant_id = parseInt($(this).data('variant-id'));
-  console.log($(this).dataset.variantId);
+  console.log(e);
   let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
   console.log(variant_id);
   let formData = {
