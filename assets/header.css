@@ -137,7 +137,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   stroke : #FEC23B;
 }
 .content-list li:hover svg{
-  margin-left: 3px;
+ transform: translateX(3px);
 }
 
 
