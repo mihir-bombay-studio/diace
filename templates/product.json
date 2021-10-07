@@ -66,13 +66,13 @@
         "163362115027b57f6f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "INFO OVER PRODUCT"
           }
         },
         "163362115027b57f6f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <\/p><p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat<\/p>"
           }
         },
         "163362115027b57f6f-2": {
@@ -97,6 +97,43 @@
     },
     "1633621187288eeba0": {
       "type": "faq",
+      "blocks": {
+        "d58d451f-e2fb-40fc-9e38-efbfd783a326": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "670e8e10-5817-46be-b4b9-5ead25305b9a": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "5eda3cf8-59fa-4b21-9320-c1480662916b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        },
+        "dbd78463-70dd-4750-b572-742fa2ad443d": {
+          "type": "cta",
+          "settings": {
+            "cta_label": "CTA label",
+            "cta_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "d58d451f-e2fb-40fc-9e38-efbfd783a326",
+        "670e8e10-5817-46be-b4b9-5ead25305b9a",
+        "5eda3cf8-59fa-4b21-9320-c1480662916b",
+        "dbd78463-70dd-4750-b572-742fa2ad443d"
+      ],
       "settings": {
         "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
       }
@@ -121,6 +158,56 @@
         "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
         "featured_collection": ""
       }
+    },
+    "1633621996c72e5409": {
+      "type": "social-media",
+      "blocks": {
+        "230cfd30-0352-45d0-89f6-abf233c45930": {
+          "type": "sm_other_imgs",
+          "settings": {
+            "sm_logo": "none",
+            "sm_link": ""
+          }
+        },
+        "28c6f779-1134-4b1f-b857-ca181173684c": {
+          "type": "sm_other_imgs",
+          "settings": {
+            "sm_logo": "none",
+            "sm_link": ""
+          }
+        },
+        "abd2a411-acae-4a92-8719-fb8c7ca1208e": {
+          "type": "sm_other_imgs",
+          "settings": {
+            "sm_logo": "none",
+            "sm_link": ""
+          }
+        },
+        "128efefd-c97b-424e-b598-1cc1f2383956": {
+          "type": "sm_text",
+          "settings": {
+            "sm_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "230cfd30-0352-45d0-89f6-abf233c45930",
+        "28c6f779-1134-4b1f-b857-ca181173684c",
+        "abd2a411-acae-4a92-8719-fb8c7ca1208e",
+        "128efefd-c97b-424e-b598-1cc1f2383956"
+      ],
+      "settings": {
+        "text_over_img": "",
+        "remove_padd": true
+      }
+    },
+    "16336220533f137fd8": {
+      "type": "newsletter-new",
+      "settings": {
+        "subscription_heading": "",
+        "subscription_desc": "",
+        "submit_btn_text": ""
+      }
     }
   },
   "order": [
@@ -130,6 +217,8 @@
     "16336209926af228d4",
     "163362115027b57f6f",
     "1633621187288eeba0",
-    "1633621467157b4204"
+    "1633621467157b4204",
+    "1633621996c72e5409",
+    "16336220533f137fd8"
   ]
 }
