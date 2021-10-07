@@ -332,10 +332,11 @@
     flex-direction: column;
     margin-top: 10px;
     cursor:pointer;
+    transition: 300ms ease;
   }
   
   .double-down-arrow:hover{
-  margin-top: 15px;
+  transform: translateY(10px);
   }
   
   .product-list-wrapper .close-btn {
