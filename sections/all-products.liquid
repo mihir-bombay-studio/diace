@@ -3,8 +3,7 @@
 
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
-    {% for product in collections['all'].products %}
-    <a href="{{product.url}}">
+    {% for vendor in shop.vendors %}
       <div class="product-collection-card">
         <div class="featured-product-img rel">
           <a href="{{product.url}}">
@@ -16,20 +15,19 @@
           <a href="/collections/all?filter.p.vendor={{product.vendor}}">
             <div class="product-hover-text flex-box align-center">
               <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-              <a href="/collections/all?filter.p.vendor={{product.vendor}}" class="hover-text bold">KOPEN</a>
+              <a href="/collections/all?filter.p.vendor={{product.vendor}}" class="hover-text bold">{{vendor}}</a>
             </div>
           </a>
         </div>
         <a href="" class="collection-btn">MERK</a>
       </div>
-    </a>
     {% endfor %}
   </div>
 </div>
 
-{% for vendor in shop.vendors %}
-{{vendor}}
-{% endfor %}
+
+
+
 
 {% schema %}
   {
