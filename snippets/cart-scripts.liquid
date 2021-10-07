@@ -213,25 +213,22 @@ output += `
         <div class="empty-msg">
           <div class="empty-state-heading semibold">Er zit nog niets in je mandje</div>
           <div class="empty-state-img">
-			{% render "icon-sad-outline" %}
+            {% render "icon-sad-outline" %}
           </div>
         </div>
         <div class="empty-state-links">
-          <a href="#" class="empty-state-link">
-            OPBERGEN
+          {% for link in linklists[settings.empty_cart_links].links %}
+          <a href="{{ link.url }}" class="empty-state-link">
+            {{ link.title }}
             <span class="">
-               {% render "icon-yellow-down-chevron" %}
+              {% render "icon-yellow-down-chevron" %}
             </span>
           </a>
-          <a href="#" class="empty-state-link">
-            STICKERS
-            <span class="">
-               {% render "icon-yellow-down-chevron" %}
-            </span>
-          </a>
-          <a href="#" class="btn btn-yellow category-btn">BEKIJK ALLE CATEGORIEËN</a>
+          {% endfor %}
+          <a href="#" class="btn btn-yellow category-btn ">BEKIJK ALLE CATEGORIEËN</a>
         </div>
-      </div>`;
+      </div>
+`;
   }
   $('#cart_body_wrapper').html(output);
   openCart();
