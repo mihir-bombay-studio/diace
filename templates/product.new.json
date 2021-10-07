@@ -81,7 +81,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
         "img_preference": "image second",
-        "text_over_img": "NICK & STEFANIE"
+        "text_over_img": "NICK & STEFANIE",
+        "padd-top": false
       }
     },
     "163229690103dae5ee": {
@@ -191,8 +192,15 @@
       "settings": {
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
         "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
+        "remove_padd": true
+      }
+    },
+    "1633620719d73fe2db": {
+      "type": "newsletter-new",
+      "settings": {
         "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
-        "subscription_desc": "We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!"
+        "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.",
+        "submit_btn_text": "VERZENDEN"
       }
     }
   },
@@ -203,6 +211,7 @@
     "1632296628d5bc229d",
     "163229690103dae5ee",
     "16323185558f193575",
-    "163231983925a321da"
+    "163231983925a321da",
+    "1633620719d73fe2db"
   ]
 }
