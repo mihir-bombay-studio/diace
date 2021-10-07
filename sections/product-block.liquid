@@ -13,7 +13,9 @@
     opacity: 0.8;
     top: 40.5px;
     background-image: url('{{ 'next-arrow.png' | asset_img_url: '300x' }}');
-}
+      background-repeat: no-repeat;
+      background-position: 50%;
+      }
   
   .slick-next svg{
   width: 16px;
@@ -31,6 +33,9 @@
     opacity: 0.8;
     top: 40.5px;
     z-index: 1;
+        background-image: url('{{ 'next-arrow.png' | asset_img_url: '300x' }}');
+      background-repeat: no-repeat;
+      background-position: 50%;
 }
   
   .product-block-wrapper .dots-left-down {
