@@ -58,6 +58,7 @@
 
 <div class="blog-filter-container container">
   <div class="filter-pills">
+    <span class="article_filter_tag">ALLE</span>
     {% for tag in blogs.news.all_tags %}
     <span class="article_filter_tag" data-bfilter="{{ tag }}">{{tag}}</span>
  	{% endfor %}
