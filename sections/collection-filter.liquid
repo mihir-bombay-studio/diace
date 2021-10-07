@@ -680,21 +680,18 @@
                 <div class="product-colors flex-box justify-between light">
                   {% if product.has_only_default_variant %}   
                   <div class="product-color">
-                    <span>Kleur: </span>
-                    <span>
-                      Paars
-                    </span>
+                    
                   </div>          
                   {% else %}
                   {% for variant in product.variants limit:1%}
-                 
+                  {%- for option in product.options_with_values -%}
                   <div class="product-color">
                     <span>{{option.name}}: </span>
                     <span>
                       {{variant.title}}
                     </span>
                   </div>
-                 
+                 {% endfor %}
                   {% endfor %}
                   <div class="other-available-colors">
                     <a class="featured-product-link" href="#">Meer kleuren beschikbaar</a>
