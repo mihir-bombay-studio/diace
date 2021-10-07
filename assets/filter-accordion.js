@@ -1,4 +1,4 @@
-var acc = document.getElementsByClassName("fiter-accordion");
+var acc = document.getElementsByClassName("filter-accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
