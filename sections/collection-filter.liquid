@@ -674,8 +674,19 @@
                     <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money  }}</span>
                   </div>
                 </div>
+                
+                
+
                 <div class="product-colors flex-box justify-between light">
-                  <div class="product-color">
+                  {% if product.has_only_default_variant %}
+                <div class="product-color">
+                    <span>Kleur: </span>
+                    <span>
+                      Paars
+                    </span>
+                  </div>
+                {% else %}
+                <div class="product-color">
                     <span>Kleur: </span>
                     <span>
                       Paars
@@ -684,6 +695,7 @@
                   <div class="other-available-colors">
                     <a class="featured-product-link" href="#">Meer kleuren beschikbaar</a>
                   </div>
+                {% endif %}
                 </div>
 
               </div>
