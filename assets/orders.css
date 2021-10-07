@@ -325,5 +325,10 @@
     max-height: 70vh;
     width: 100%;
   }
+  
+  .double-down-arrow {
+    display: flex;
+    flex-direction: column;
+}
 
 }
