@@ -72,11 +72,11 @@
         {% for block in section.blocks %}
         {% if block.type == "price_filter" %}
         <div class="price-filter{% for block in section.blocks %}{% if block.type == "price_filter" %}{% if block.settings.show_price_filter == false %} no-disp{% endif %}{% endif %}{% endfor %}">
-          <div class="price-filter-title-wrapper bold flex-box justify-between filter-accordion ">
+          <div class="price-filter-title-wrapper bold flex-box justify-between filter-accordion active">
             <div class="price-filter-title">{{block.settings.show_price_filter_heading}}</div>
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
-          <div class="panel">
+          <div class="panel panel-bottom-border">
             <div class="slidecontainer">
               <div class="price-slider">
                 <span class="no-disp">
