@@ -240,6 +240,7 @@ output += `
 
 $("body").on('click', '.AddToCart, #add-to-cart', function () {
   let variant_id = parseInt($(this).data('variant-id'));
+  console.log(variant_id);
   let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
   console.log(variant_id);
   let formData = {
