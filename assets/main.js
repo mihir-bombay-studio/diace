@@ -62,6 +62,7 @@ $('.collection-tag').click(function() {
 
 $('.article_filter_tag').click(function() {
   $(".article_filter_tag").removeClass("active-pill");
+  $(".active-pill").removeClass("active-pill");
   $(this).addClass("active-pill")
   var bfilter_tag = $(this).data('bfilter');
   $('.blogs').toggleClass('no-disp');
