@@ -55,11 +55,11 @@
 .collection-tag {
   line-height: 24px;
   color: #737373;
-    margin-bottom: 8px;
-    margin-left: 16px;
-    cursor: pointer;
-    user-select : none;  
-    }
+  margin-bottom: 8px;
+  margin-left: 16px;
+  cursor: pointer;
+  user-select : none;  
+}
 
 .collection-tags {
   margin-bottom: 16px;
@@ -315,6 +315,14 @@ a.active-facets__button {
 
 .filter-mask{
   width : 19%;
+}
+#filter-count{
+  position : relative;
+}
+#filter-count svg{
+  right: 0px;
+  position: absolute;
+  top: 12px;
 }
 
 @media screen and (max-width: 992px) {
