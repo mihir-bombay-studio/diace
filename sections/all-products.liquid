@@ -12,10 +12,10 @@
             {% else %}
             <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
           {% endif %}
-          <a href="/collections/all?filter.p.vendor={{product.vendor}}">
+          <a href="/collections/all?filter.p.vendor={{vendor}}">
             <div class="product-hover-text flex-box align-center">
               <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-              <a href="/collections/all?filter.p.vendor={{product.vendor}}" class="hover-text bold">{{vendor}}</a>
+              <a href="/collections/all?filter.p.vendor={{vendor}}" class="hover-text bold">{{vendor}}</a>
             </div>
           </a>
         </div>
