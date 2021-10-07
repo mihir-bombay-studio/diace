@@ -148,7 +148,7 @@ a {
 }
 
 
-.hero-hover-text:hover {
+.hero-hover-text:hover , .product-hover-text:hover {
     max-width: unset;
 }
 
