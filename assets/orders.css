@@ -166,8 +166,8 @@
   flex-direction: column;
   gap: 16px;
   overflow-y: auto;
-    max-height: 39vh;
-    padding: 0px 20px;
+  max-height: 39vh;
+  padding: 0px 20px;
 }
 
 .product-block {
@@ -211,23 +211,23 @@
 ==================================MOBILE GRID ================
 ===================================== */
 .mobile-grid {
-    max-width: 540px;
-    margin: 0 auto;
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 .mobile-grid .welcome-tab {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .mobile-grid .grid-left-img {
-    min-height: 230px;
-    padding: 4rem 3rem;
+  min-height: 230px;
+  padding: 4rem 3rem;
 }
 
 .mobile-grid .customer-details-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .mobile-grid .accordion, .blank-accordion {
@@ -250,17 +250,17 @@
   align-items: center;
   gap: 6px;
   font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.75px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
 }
 
 .customer-header {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.75px;
-    text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  text-align: center;
   text-transform: uppercase;
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .accordion-wrapper {
@@ -279,9 +279,9 @@
 
 .mobile-grid .accordion:after {
   content: "";
-    font-size: 10px;
-    line-height: normal;
-    margin-bottom: 4px;
+  font-size: 10px;
+  line-height: normal;
+  margin-bottom: 4px;
 }
 
 .mobile-grid .accordion.active:after {
@@ -299,20 +299,20 @@
 
 
 @media screen and (max-width: 768px) {
- 
+
 
   .grid-wrapper {
     margin-bottom: 10.5rem;
   }
-  
+
   .details-container, .tab-container {
-  padding-top: 0;
-  width: 100%;
-}
+    padding-top: 0;
+    width: 100%;
+  }
   .order_list .detail-block {
     border-top: none;
     border-bottom: 1px solid #fec23b;
-}
+  }
   .single-order-details {
     position: fixed;
     z-index: 10;
@@ -320,15 +320,21 @@
     height: 100%;
     left: 0;
     top: 0;
-}
+  }
+  
   .product-list{
     max-height: 70vh;
     width: 100%;
   }
-  
+
   .double-down-arrow {
     display: flex;
     flex-direction: column;
-}
+    margin-top: 10px;
+  }
+  
+  .product-list-wrapper .close-btn {
+    margin-top: 4rem;
+  }
 
 }
