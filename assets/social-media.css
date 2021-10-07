@@ -172,7 +172,7 @@ h2.newsletter-subscription-heading {
   transition: .3s ease;
 }
 
-.submit-btn:hover .icon-send{
+button:hover .icon-send{
   transform: rotate(-26deg) translateX(5px);
 }
 
