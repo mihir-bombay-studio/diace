@@ -323,6 +323,7 @@ a.active-facets__button {
   right: 0px;
   position: absolute;
   top: 12px;
+  cursor : pointer;
 }
 
 @media screen and (max-width: 992px) {
