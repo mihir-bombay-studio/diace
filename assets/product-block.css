@@ -6,6 +6,7 @@
 .product-block-wrapper .dots-left-down svg {
     width: initial;
     height: initial;
+  max-width: 100%;
 }
 
 .product-block-left, .product-block-right {
