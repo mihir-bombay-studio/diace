@@ -1,11 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "1632117875e7ef7fbe": {
       "type": "product-block",
       "settings": {
@@ -205,7 +199,6 @@
     }
   },
   "order": [
-    "main",
     "1632117875e7ef7fbe",
     "16336209926af228d4",
     "163362115027b57f6f",
