@@ -8,7 +8,7 @@
 
 .background-overlay{
   position: relative!important;
-  background-image: url(//cdn.shopify.com/s/files/1/0594/3604/0367/t/4/assets/article-bg.svg?v=3246859187231546785);
+  background-image: url(//cdn.shopify.com/s/files/1/0594/3604/0367/t/6/assets/article-bg.svg?v=3246859187231546785);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -20,6 +20,8 @@
   top: 23px;
   text-decoration: none;
   color: #000000;
+  font-family : Myriad Pro;
+  font-weight: lighter;
 }
 
 .article-container {
