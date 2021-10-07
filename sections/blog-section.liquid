@@ -60,7 +60,7 @@
   <div class="filter-pills">
     <span class="article_filter_tag_active">ALLE</span>
     {% for tag in blogs.news.all_tags %}
-    <span class="article_filter_tag" data-bfilter="{{ tag }}">{{tag}}</span>
+    <span class="active-pill" data-bfilter="{{ tag }}">{{tag}}</span>
  	{% endfor %}
   </div>
   <div class="filtered-blog-container">
