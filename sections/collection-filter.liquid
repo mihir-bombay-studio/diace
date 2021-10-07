@@ -38,7 +38,7 @@
       
       <div class="filter-tags">
         {%- for coll in collections -%}
-        <div class="collection-types bold{% if coll.title == collection.title %} current {% endif %}"><a href="{{coll.url}}">{{ coll.title }}</a></div>
+        <div class="collection-types bold{% if coll.title == collection.title %} current {% elsif collection.title == "grouping-collection" %} no-disp {% else %} {% endif %}"><a href="{{coll.url}}">{{ coll.title }}</a></div>
         <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}">
           {% for tag in collection.tags %}
           <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
