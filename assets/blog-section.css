@@ -102,9 +102,8 @@ img{
   background-color: #fec23b;
 }
 
-.first_active{
-  background-color: #fec23b;
-
+.filter-pills:first-child{
+	background-color :   #fec23b;
 }
 
 .filter-pills span:nth-child(1) {
