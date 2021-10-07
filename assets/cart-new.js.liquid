@@ -124,7 +124,7 @@ function refreshCart(cart) {
           <div class="product-info">
             <div class="product-name semibold"><a href="${item.url}">${item.product_title}</a></div>
             <div class="flex-box justify-between">
-              <div class="product-variant light">${item.variant_title != "Default Title" && item.variant_title != "null" ? item.variant_title : null}</div>
+              <div class="product-variant light">${item.variant_title != "Default Title" && item.variant_title != "" ? item.variant_title : null}</div>
               <div class="count">
                 <span data-variant-id="${item.variant_id}" class="qty-minus cart-minus-icon">-</span>
                 <span id="item_count_${item.variant_id}" class="item-count-number" data-qty="${item.quantity}">${item.quantity}</span>
