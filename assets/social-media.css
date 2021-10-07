@@ -169,12 +169,11 @@ h2.newsletter-subscription-heading {
     }
 .icon-send{
   margin-top: 5px;
-  transform-origin: left;
   transition: .4s ease;
 }
 
 .submit-btn:hover .icon-send{
-  transform: rotate(336deg);
+  transform: rotate(-22deg) translateX(5px);
 }
 
 .social-media-wrapper{
