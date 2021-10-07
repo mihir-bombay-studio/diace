@@ -67,6 +67,7 @@ img{
 
 .blogs img{
   height:278px;
+  border-radius: 8px;
 }
 
 .blog-image-with-overlay{
