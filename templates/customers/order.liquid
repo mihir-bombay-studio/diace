@@ -68,14 +68,14 @@
 
 
 
-<script>
-  $(".double-down-arrow").click(function(){
+// <script>
+//   $(".double-down-arrow").click(function(){
   
-    $( ".product-list" ).scrollBottom( 300 );
-  });
+//     $( ".product-list" ).scrollBottom( 300 );
+//   });
   
   $('.double-down-arrow').bind("click", function () {
-                $('html, body').animate({ scrollTop: $(document).height() }, 1200);
+                $('.product-list').animate({ scrollTop: $(document).height() }, 1200);
                 return false;
             });
 </script>
