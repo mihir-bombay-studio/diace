@@ -678,15 +678,13 @@
                 
 
                 <div class="product-colors flex-box justify-between light">
-                  {% if product.has_only_default_variant %}
-                  {% for variant in product.variants %}
+                  {% if product.has_only_default_variant %}   
                   <div class="product-color">
                     <span>Kleur: </span>
                     <span>
                       Paars
                     </span>
-                  </div>
-                  {% endfor %}
+                  </div>          
                   {% else %}
                   {% for variant in product.variants limit:1%}
                   <div class="product-color">
