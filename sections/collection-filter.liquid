@@ -688,7 +688,7 @@
                   {% else %}
                   {% for variant in product.variants limit:1%}
                   <div class="product-color">
-                    <span>color: </span>
+                    <span>{{variant.options}}: </span>
                     <span>
                       {{variant.title}}
                     </span>
