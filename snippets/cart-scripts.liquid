@@ -112,8 +112,8 @@ function refreshCart(cart) {
       let item = cart.items[i];
       upsellHandle === item.handle ? $("#cart_container").addClass("hide-upsell") : null;
       const variantTitle = ['Default Title', 'null', ""];
-      let item_variant_title = " tsrtt";
-      if(!variantTitle.includes(item.variant_title)){
+      let item_variant_title = "";
+      if(!(variantTitle.includes(item.variant_title))){
         item_variant_title = item.variant_title;
       }
       output += `
