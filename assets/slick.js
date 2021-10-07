@@ -9,13 +9,13 @@ $(document).ready(function(){
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: false,
     arrows: true,
     focusOnSelect: true,
-    infinite: true,
+    infinite: false,
     responsive: [
       {
         breakpoint: 992,
