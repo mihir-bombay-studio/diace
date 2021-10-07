@@ -177,7 +177,7 @@
 {% include "cart-scripts" %}
 {% endcomment %}
 <script>
-  $('.qty-minus').click(function() {
+    $(".product-qty-add-to-cart-wrapper").on( "click", ".qty-minus", function() {
   	var data_qty = parseInt($(this).next().data('qty'));
     if( data_qty != 1 )
     {
@@ -187,7 +187,7 @@
     }
   });
   
-  $('.qty-plus').click(function() {
+  $(".product-qty-add-to-cart-wrapper").on( "click", ".qty-plus", function() {
     var data_qty = parseInt($(this).prev().data('qty'));
     data_qty = data_qty + 1;
     $(this).prev().data('qty', data_qty);
