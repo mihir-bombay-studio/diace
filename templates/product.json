@@ -12,17 +12,6 @@
         "featured_collection_title": ""
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "disabled": true,
-      "settings": {
-        "heading": "You may also like",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false
-      }
-    },
     "16336209926af228d4": {
       "type": "our-values",
       "blocks": {
@@ -218,7 +207,6 @@
   "order": [
     "main",
     "1632117875e7ef7fbe",
-    "product-recommendations",
     "16336209926af228d4",
     "163362115027b57f6f",
     "1633621187288eeba0",
