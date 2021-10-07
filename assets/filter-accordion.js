@@ -12,8 +12,8 @@ for (i = 0; i < acc.length; i++) {
     } 
   }
   if(acc.length > 0) {
-  acc[i].classList.add("active");
-  acc[i].nextElementSibling.style.maxHeight  = acc[i].nextElementSibling.scrollHeight + "px";
-}
+    acc[i].classList.add("active");
+    acc[i].nextElementSibling.style.maxHeight  = acc[i].nextElementSibling.scrollHeight + "px";
+  }
 }
 
