@@ -40,7 +40,7 @@
   height: 48px;
 }
 
-.hover-text {
+/* .hover-text {
   padding: 2px 16px 0 0;
   text-transform: uppercase;
   line-height: 24px;
@@ -49,18 +49,18 @@
   -webkit-transition: .4s ease;
   transition: .4s ease;
 }
-
+ */
 .product-hover-text:hover .plus-icon{
-  transform: rotate(225deg);
+  transform: rotate(180deg);
 }
 
-.product-hover-text:hover .hover-text {
+/* .product-hover-text:hover .hover-text {
   max-width: 100%;
-}
+} */
 
-.product-hover-text:hover {
+/* .product-hover-text:hover {
   max-width: unset;
-}
+} */
 
 .porduct-collection-wrapper {
   margin-bottom: 36px;
