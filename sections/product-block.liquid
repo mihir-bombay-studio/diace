@@ -141,7 +141,7 @@
         <a href="https://diace-store.myshopify.com/collections">Verder winkelen</a>
       </div>
       <div class="product-details">
-        <div class="accordion question semibold flex-box justify-between">
+        <div id="openAccordion" class="accordion question semibold flex-box justify-between">
           <div class="question-left">OMSCHRIJVING</div>
           <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
         </div>
@@ -220,7 +220,7 @@ $(document).keyup(function(e) {
   }
 });
   
-  $( ".product-details .accordion" ).trigger( "click" );
+  $( "#openAccordion" ).trigger( "click" );
 </script>
 
 
