@@ -116,13 +116,16 @@ function refreshCart(cart) {
       output += `
         <div id="cart_item_${item.variant_id}" class="list-item ${i}">
           <a href="${item.url}" class="product-img">
-            <img class="cart-item__image"
-                src="${item.image}"
-                alt="${item.product_title}"
-                loading="lazy"
-                width="75"
-                height="75"
-                >
+			${item.image ?
+              `<img class="cart-item__image"
+                  src="${item.image}"
+                  alt="${item.product_title}"
+                  loading="lazy"
+                  width="75"
+                  height="75"
+                  >` :
+      			`<div class="cart-placeholder">{{ 'image' | placeholder_svg_tag }}</div>`
+    		}
           </a>
           <div class="product-info">
             <div class="product-name semibold"><a href="${item.url}">${item.product_title}</a></div>
