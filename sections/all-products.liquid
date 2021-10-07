@@ -4,7 +4,7 @@
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
     {% for vendor in shop.vendors %}
-    {% for product  in vendor %}
+    
       <div class="product-collection-card">
         <div class="featured-product-img rel">
           <a href="{{product.url}}">
@@ -23,69 +23,9 @@
         <a href="" class="collection-btn">MERK</a>
       </div>
     {% endfor %}
-    {% endfor %}
+
   </div>
 </div>
-
-
-{% assign counter = 0 %}
-{% for vendor in shop.vendors %}
-{% assign counter = counter | plus: 1 %}
-{% endfor %}
-
-{% assign counter_divided_by_3 = counter | divided_by: 3 | floor %}
-
-<div class="page-width">
-
-  <header class="section-header text-center">
-    <h1>{{ page.title }}</h1>
-  </header>
-
-  <ul class="grid grid--uniform">
-
-
-    {% for product_vendor in shop.vendors %}
-    {% assign its_a_match = false %}
-    {% capture my_collection_handle %} {{ product_vendor | handleize | strip | escape  }} {% endcapture %}
-    {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
-
-    {% for collection in collections %}
-    {% if my_collection_handle_stripped == collection.handle %}
-    {% assign its_a_match = true %}
-    {% endif %}
-    {% endfor %}
-
-    <!-- If collection exists for vendor -->
-    {% if its_a_match %}  
-    <li class="vendor-list-item"><a href="/collections/{{ product_vendor | handleize }}">{{ product_vendor }}</a></li>
-
-    <!-- Default no collection -->
-    {% else %}
-    <li class="grid__item small--one-half medium-up--one-third">
-      <div class="collection-grid-item">
-        <a href="/collections/vendors?q={{ product_vendor }}" class="collection-grid-item__link">
-
-          <div class="collection-grid-item__overlay box ratio-container lazyload js"
-               data-bgset="{% include 'bgset', image: product_featured_image %}"
-               data-sizes="auto"
-               data-parent-fit="cover"
-               data-image-loading-animation>
-          </div>
-
-          <div class="collection-grid-item__title-wrapper">
-            <div class="collection-grid-item__title h3">
-              {{ product_vendor }}
-            </div>
-          </div>
-
-        </a>
-      </div>
-    </li>
-
-    {% endif %}
-    {% endfor %}
-
-  </ul>
 
 
 
