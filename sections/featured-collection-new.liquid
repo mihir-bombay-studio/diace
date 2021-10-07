@@ -7,7 +7,13 @@
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
   
   <div class="featured-products flex-box justify-between">
-  	{% for product in collections[product_handle].products limit: 3 %}
+  	{% assign product_handle = section.settings.feature_collection %}
+          {% assign products_by_price = collections[product_handle].products | sort: "price" %}
+          {% assign current_id = product.id %}
+          {% assign products_shown = 0 %}
+          {% for product in products_by_price limit:6 %}
+          {% if products_shown < 3 %}
+          {% unless product.id == current_id %}
     <div class="featured-product-card">
       <div class="featured-product-img rel">
     	<img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
@@ -36,7 +42,10 @@
         </div>
         
     </div>
-    {% endfor %}
+     {% assign products_shown = products_shown | plus: 1 %}
+          {% endunless %}
+          {% endif %}
+          {% endfor %}
   </div>
   
   {% for block in section.blocks %}
