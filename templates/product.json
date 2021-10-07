@@ -14,6 +14,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "image_ratio": "adapt",
@@ -21,11 +22,114 @@
         "add_image_padding": false,
         "show_vendor": false
       }
+    },
+    "16336209926af228d4": {
+      "type": "our-values",
+      "blocks": {
+        "66a802a9-8f8e-4677-adbc-e83bedf9cc1a": {
+          "type": "value",
+          "settings": {
+            "value_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"60.717\" height=\"85\" viewbox=\"0 0 60.717 85\"><defs><style>.a-icon-location{fill:#fec23b;}<\/style><\/defs><g transform=\"translate(-96 -32)\"><path class=\"a-icon-location\" d=\"M126.358,32C109.619,32,96,45.026,96,61.03c0,7.622,3.474,17.758,10.326,30.127a222.616,222.616,0,0,0,15.179,23.38,6.024,6.024,0,0,0,9.718,0A223.544,223.544,0,0,0,146.4,91.157c6.84-12.365,10.314-22.5,10.314-30.127C156.717,45.026,143.1,32,126.358,32Zm0,42.5A12.143,12.143,0,1,1,138.5,62.358,12.143,12.143,0,0,1,126.358,74.5Z\"><\/path><\/g><\/svg>",
+            "value_title": "",
+            "value_desc": ""
+          }
+        },
+        "bcb7ac6e-5e48-4c48-aa64-a47ecf1d60f6": {
+          "type": "value",
+          "settings": {
+            "value_svg": "",
+            "value_title": "",
+            "value_desc": ""
+          }
+        },
+        "d263c21d-b8a1-4f14-9bec-463dcfc14cf6": {
+          "type": "value",
+          "settings": {
+            "value_svg": "",
+            "value_title": "",
+            "value_desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "66a802a9-8f8e-4677-adbc-e83bedf9cc1a",
+        "bcb7ac6e-5e48-4c48-aa64-a47ecf1d60f6",
+        "d263c21d-b8a1-4f14-9bec-463dcfc14cf6"
+      ],
+      "settings": {
+        "our_value_heading": "ONZE WAARDEN"
+      }
+    },
+    "163362115027b57f6f": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "163362115027b57f6f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "163362115027b57f6f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "163362115027b57f6f-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "163362115027b57f6f-0",
+        "163362115027b57f6f-1",
+        "163362115027b57f6f-2"
+      ],
+      "settings": {
+        "img_preference": "image second",
+        "text_over_img": "",
+        "padd-top": false
+      }
+    },
+    "1633621187288eeba0": {
+      "type": "faq",
+      "settings": {
+        "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
+      }
+    },
+    "1633621467157b4204": {
+      "type": "featured-collection-new",
+      "blocks": {
+        "447ca38c-9411-48cc-a824-4397be54c255": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections",
+            "button-color": "yellow"
+          }
+        }
+      },
+      "block_order": [
+        "447ca38c-9411-48cc-a824-4397be54c255"
+      ],
+      "settings": {
+        "featured_collection_title": "NIEUWE PRODUCTEN",
+        "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
+        "featured_collection": ""
+      }
     }
   },
   "order": [
     "main",
     "1632117875e7ef7fbe",
-    "product-recommendations"
+    "product-recommendations",
+    "16336209926af228d4",
+    "163362115027b57f6f",
+    "1633621187288eeba0",
+    "1633621467157b4204"
   ]
 }
