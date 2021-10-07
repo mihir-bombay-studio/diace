@@ -316,10 +316,10 @@ a.active-facets__button {
 .filter-mask{
   width : 19%;
 }
-#filter-count{
+.sorting-part.total-items{
   position : relative;
 }
-#filter-count svg{
+.sorting-part.total-items svg{
   right: 0px;
   position: absolute;
   top: 12px;
