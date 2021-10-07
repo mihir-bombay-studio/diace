@@ -252,6 +252,7 @@ a.active-facets__button {
   font-family: 'Myriad Pro';
   font-size: 16px;
   color: #000000; 
+  font-weight: lighter;
   opacity:.7;
 }
 
