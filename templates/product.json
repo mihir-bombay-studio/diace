@@ -165,6 +165,7 @@
         "230cfd30-0352-45d0-89f6-abf233c45930": {
           "type": "sm_other_imgs",
           "settings": {
+            "sm_other_img": "shopify:\/\/shop_images\/sm_img_2.png",
             "sm_logo": "none",
             "sm_link": ""
           }
@@ -172,21 +173,23 @@
         "28c6f779-1134-4b1f-b857-ca181173684c": {
           "type": "sm_other_imgs",
           "settings": {
-            "sm_logo": "none",
+            "sm_other_img": "shopify:\/\/shop_images\/sm_img_3.png",
+            "sm_logo": "facebook",
             "sm_link": ""
           }
         },
         "abd2a411-acae-4a92-8719-fb8c7ca1208e": {
           "type": "sm_other_imgs",
           "settings": {
-            "sm_logo": "none",
+            "sm_other_img": "shopify:\/\/shop_images\/sm_img_4.png",
+            "sm_logo": "instagram",
             "sm_link": ""
           }
         },
         "128efefd-c97b-424e-b598-1cc1f2383956": {
           "type": "sm_text",
           "settings": {
-            "sm_text": ""
+            "sm_text": "We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!"
           }
         }
       },
@@ -197,16 +200,17 @@
         "128efefd-c97b-424e-b598-1cc1f2383956"
       ],
       "settings": {
-        "text_over_img": "",
+        "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
+        "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
         "remove_padd": true
       }
     },
     "16336220533f137fd8": {
       "type": "newsletter-new",
       "settings": {
-        "subscription_heading": "",
-        "subscription_desc": "",
-        "submit_btn_text": ""
+        "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
+        "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.",
+        "submit_btn_text": "VERZENDEN"
       }
     }
   },
