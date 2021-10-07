@@ -66,7 +66,7 @@ img{
 }
 
 .blogs img{
-  max-height:278px;
+  height:278px;
 }
 
 .blog-image-with-overlay{
@@ -106,9 +106,8 @@ img{
 }
 
 .blogs {
-  margin: 13px 10px;
-  max-width: 376px;
-  width: calc(75% - 16px);
+  width: 31.68%;
+  margin: 0 .825% 16px;
 }
 
 .blog_date_and_time {
@@ -190,7 +189,7 @@ img{
     flex-wrap : wrap;
   }
   .blog-filter-container{
-  	padding-bottom: 0px;
+    padding-bottom: 0px;
   }
 
 }
