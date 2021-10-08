@@ -7,7 +7,7 @@
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
   
   <div class="featured-products flex-box justify-between">
-  	{% for product in collections[product_handle].products limit: 3 %}
+  	{% for product in collections[product.handle].products limit: 3 %}
     <div class="featured-product-card">
       <div class="featured-product-img rel">
     	<img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
