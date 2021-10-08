@@ -45,11 +45,6 @@
           {% endfor %}
         </div>
         {% endfor %}
-       
-        
-        {% for sproduct in collections[collection_title].products %} 
-        {{ sproduct.metafields.my_fields.filter_size }}
-        {% endfor %}
         
       </div>
 
@@ -67,7 +62,7 @@
         </div>
       </div>
 
-      <div class="price-tag-filters">
+      <div class="filter-by-tags price-tag-filters">
         <div class="filter-title semibold">Filter op:</div>
         {% for block in section.blocks %}
         {% if block.type == "price_filter" %}
