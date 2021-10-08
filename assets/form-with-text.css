@@ -11,6 +11,17 @@
     margin: 0 auto;
 }
 
+.plain-form .text_heading {
+    width: 100%;
+}
+
+
+.plain-form .section-heading {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  margin-top: 0;
+}
+
 .text_content {
   width: 100%;
   text-align: left;
