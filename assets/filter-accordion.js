@@ -24,3 +24,33 @@ $('.filter-by-tags .gender').click(function () {
  
 });
 
+
+function runFilter() {
+  var gender = [];
+  var classString = "";
+  $(".gender.filteredselected").each(function (index) {
+    gender.push($(this).data('value'));
+  });
+  
+  var i;
+  
+  
+  $('.product-collection-card').addClass('no-disp');
+  
+  
+  
+  if (gender.length > 0) {
+    for (i = 0; i < gender.length; i++) {
+      $('.product-collection-card.' + gender[i]).addClass('tp');
+    }
+  } else {
+    $('.card-product').addClass('tp');
+  }
+  
+  
+  $('.card-product.fp.sp.tp').removeClass('no-disp');
+  $('.fp').removeClass('fp');
+  $('.sp').removeClass('sp');
+  $('.tp').removeClass('tp');
+}
+runFilter();
