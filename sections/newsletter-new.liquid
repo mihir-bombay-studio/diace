@@ -7,9 +7,9 @@
     </div>
     <h2 class="text-center newsletter-subscription-heading bold">{{section.settings.subscription_heading}}</h2>
     <div class="text-center newsletter-subscription-desc light">{{section.settings.subscription_desc}}</div>
-  
-      {% form 'customer', class: 'newsletter-form' %}
-      <div class="subscription-form flex-box">
+
+    {% form 'customer', class: 'newsletter-form' %}
+    <div class="subscription-form flex-box">
       <input type="hidden" name="contact[tags]" value="newsletter">
       <input
              id="NewsletterForm--{{ section.id }}"
@@ -32,9 +32,15 @@
              required
              >
       <button class="submit-btn btn btn-yellow bold" type="submit" form="contact_form" value="Submit">{{section.settings.submit_btn_text}} <span class="icon-send">{% render "icon-send" %}</span></button>
-</div>
-        {% endform %}
-    
+    </div>
+        {%- if form.errors -%}
+    <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+    {%- endif -%}
+    {%- if form.posted_successfully? -%}
+    <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+    {%- endif -%}
+    {% endform %}
+
   </div>
 </div>
 
