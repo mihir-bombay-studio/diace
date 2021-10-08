@@ -20,30 +20,43 @@
     {% if product.id != current_id %}
     <div class="featured-product-card">
       <div class="featured-product-img rel">
-        <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
-        <div class="fp-hover-text flex-box align-center">
-          <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-          <a href="" class="hover-text bold">KOPEN</a>
-        </div>
-      </div>
-      <div class="product-title-price flex-box justify-between">
-        <div class="product-title semibold">{{ product.title | escape  }}</div>
-        <div class="product-compare-to-and-price">
-          <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
-          <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
-        </div>
-      </div>
-      <div class="product-colors flex-box justify-between light">
-        <div class="product-color">
-          <span>Kleur: </span>
-          <span>
-            Paars
-          </span>
-        </div>
-        <div class="other-available-colors">
-          <a class="featured-product-link" href="{{ product.url }}">Meer kleuren beschikbaar</a>
-        </div>
-      </div>
+                  <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+                  <div class="product-hover-text flex-box align-center">
+                    <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+                    <a href="" class="hover-text bold">KOPEN</a>
+                  </div>
+                </div>
+                <div class="product-title-price flex-box justify-between">
+                  <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  | capitalize}}</a></div>
+                  <div class="product-compare-to-and-price">
+                    <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
+                    <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money  }}</span>
+                  </div>
+                </div>
+                
+                
+
+                <div class="product-colors flex-box justify-between light">
+                  {% if product.has_only_default_variant %}   
+                  <div class="product-color">
+                    
+                  </div>          
+                  {% else %}
+                  {% for variant in product.variants limit:1%}
+                  {%- for option in product.options_with_values -%}
+                  <div class="product-color">
+                    <span>{{option.name}}: </span>
+                    <span>
+                      {{variant.title}}
+                    </span>
+                  </div>
+                 {% endfor %}
+                  {% endfor %}
+                  <div class="other-available-colors">
+                    <a class="featured-product-link" href="{{product.url}}">Meer kleuren beschikbaar</a>
+                  </div>
+                  {% endif %}
+                </div>
 
     </div>
     {% assign products_shown = products_shown | plus: 1 %}
