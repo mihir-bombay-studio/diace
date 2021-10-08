@@ -187,6 +187,7 @@ input::-webkit-slider-thumb {
 
 .check-box-option{
   padding-left: 8px;
+  font-weight : 700;
 }
 
 .check-box-wrapper {
