@@ -4,7 +4,7 @@
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
     {% for vendor in shop.vendors %}
-   	{% for product in collections['all'].products %}
+   	{% for product in collections[vendor].products %}
       <div class="product-collection-card">
         <div class="featured-product-img rel">
           <a href="{{product.url}}">
