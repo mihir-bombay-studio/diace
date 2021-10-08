@@ -196,6 +196,13 @@
         "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.",
         "submit_btn_text": "VERZENDEN"
       }
+    },
+    "1633697152682d40c7": {
+      "type": "related-products",
+      "settings": {
+        "show_product_recommendations": true,
+        "heading": "You might also like"
+      }
     }
   },
   "order": [
@@ -205,6 +212,7 @@
     "1633621187288eeba0",
     "1633621467157b4204",
     "1633621996c72e5409",
-    "16336220533f137fd8"
+    "16336220533f137fd8",
+    "1633697152682d40c7"
   ]
 }
