@@ -660,7 +660,7 @@
           <div class="product-collection flex-box">
             {% for product in collection.products %}
             <a href="{{product.url}}">
-              <div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price | divided_by : 100.00 }}" data-gender = "{% for tag in products.tags %} {{ tag | downcase}} {% endfor %}" title="{{products.title}}" href="{{ products.url }}">
+              <div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price | divided_by : 100.00 }}" data-gender = "{% for tag in product.tags %} {{ tag | downcase}} {% endfor %}" title="{{product.title}}" href="{{ product.url }}">
                 <div class="featured-product-img rel">
                   <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
                   <div class="product-hover-text flex-box align-center">
