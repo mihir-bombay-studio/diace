@@ -4,8 +4,6 @@
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
     {% for vendor in shop.vendors %}
-    {% for product in collections['all'].products limit:1%}
-    {% if product.vendor == vendor %}
     <div class="product-collection-card">
       <div class="featured-product-img rel">
         <a href="{{product.url}}">
@@ -23,27 +21,9 @@
       </div>
       <a href="" class="collection-btn">MERK</a>
     </div>
-    {% endif %}
-    {% endfor %}
     {% endfor %}
   </div>
 </div>
-<ul>
-  {% for product_vendor in shop.vendors %}
-  {% assign vendor_handle = product_vendor | handleize %}
-  {% assign vendor_collection = collections[vendor_handle].products %}
-  {{vendor_collection}}
-  
-  <li class="{% if product.vendor == product_vendor %}current{% endif %}">
-    {% if vendor_collection == empty %}
-    {{ product_vendor | link_to_vendor  }}
-    {% else %}
-    {{ vendor_collection.title | link_to: vendor_collection.url }}
-    {% endif %}
-  </li>
-  {% endfor %}
-</ul>
-
 
 
 {% schema %}
