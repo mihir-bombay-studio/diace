@@ -4,6 +4,7 @@
 
 <div class="featured-collection-wrapper container" data-product-id="{{ product.handle }}">
   <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
+  {{product.collections}}
   {% for collection in product.collections %}
     
 {{ collection.title }}{{ collection.handle }}
