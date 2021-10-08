@@ -760,3 +760,7 @@ input.mobile-facets__checkbox {
 .mobile-facets__sort .select__select {
   box-shadow: none;
 }
+
+#main-collection-filters{
+ display : none; 
+}
