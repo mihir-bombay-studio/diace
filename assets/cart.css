@@ -170,7 +170,8 @@
 .cart-plus-icon {
 }
 
-.cart-minus-icon {
+.cart-minus-icon .straight-line{
+  display:none;
 }
 
 .remove-item {
