@@ -27,9 +27,12 @@
 }
 
 .content-container {
-    margin-bottom: 80px !important;
     display: flex;
     justify-content: center;
+}
+
+.btm-padding{
+	padding-bottom:80px;
 }
 
 .text-description{
