@@ -1,5 +1,5 @@
 {{ 'product-collection.css' | asset_url | stylesheet_tag }}
-
+var product = {{product.selected_or_first_available_variant.title}};  
 
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
