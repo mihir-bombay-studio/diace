@@ -1460,6 +1460,7 @@ input[type='checkbox'] {
 .form-status-list {
   padding: 0;
   margin: 2rem 0 4rem;
+  justify-content: center;
 }
 
 .form-status-list li {
