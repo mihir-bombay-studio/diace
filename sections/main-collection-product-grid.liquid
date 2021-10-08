@@ -396,7 +396,6 @@
   {%- else -%}
   <div class="collection container">
     <div class="product-collection flex-box">
-      {% for product in collection.products %}
       <a href="{{product.url}}">
         <div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price | divided_by : 100.00 }}" data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
           <div class="featured-product-img rel">
@@ -415,7 +414,6 @@
           </div>
         </div>
       </a>
-      {% endfor %}
     </div>
   </div>
   {%- endif -%}
