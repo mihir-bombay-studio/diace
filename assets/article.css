@@ -82,6 +82,11 @@ img {
   height: 24px;
 }
 
+.share-platforms img {
+  height: 24px;
+  width : auto;
+}
+
 .share-platforms {
   display: flex;
   max-width: 269px;
