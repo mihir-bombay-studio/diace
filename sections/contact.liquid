@@ -41,7 +41,12 @@
           <div class="form_container">
             <div class="input_form_control input-1">
               <label for="first-name">Naam*</label>
-              <input placeholder="Vul je naam in" type="text" name="contact[first_name]" id="first-name" class="name" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+              <input placeholder="Vul je naam in" 
+                     type="text" 
+                     name="contact[first_name]" id="first-name" class="name" 
+                     value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                     required
+                     >
             </div>
             <div class="input_form_control input-2">
               <label for="ContactForm-email">E-MAIL*</label>
@@ -59,6 +64,7 @@
                      aria-describedby="ContactForm-email-error"
                      {% endif %}
                      placeholder="youremail@mail.com"
+                     required
                      >
               {%- if form.errors contains 'email' -%}
               <small class="contact__field-error" id="ContactForm-email-error">
@@ -77,7 +83,7 @@
                      pattern="[0-9\-]*" 
                      value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" 
                      placeholder="Vul je telefoonnummer in, enkel cijfers"
-                     required
+                     
                      >
             </div>
             <div class="input_form_control input-4">
@@ -99,7 +105,7 @@
                      >
             </div>
             <div class="input_form_control input-6">
-              <label for="message">UW BERICHT</label>
+              <label for="message">UW BERICHT*</label>
               <textarea 
                         rows="8" cols="50" 
                         placeholder="Jouw bericht" 
