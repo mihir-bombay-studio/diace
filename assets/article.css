@@ -47,7 +47,7 @@
 }
 
 .heading{
-
+  font-family : Myriad Pro;
   font-size: 32px;
   font-weight: bold;
   margin: 26px 0 16px 0;
@@ -138,9 +138,9 @@ img {
     background-size: 190%;
     overflow: hidden; 
   }
-  
+
   .heading{
-  	font-size : 24px;
+    font-size : 24px;
   }
   .article-content img{
     height : auto;
