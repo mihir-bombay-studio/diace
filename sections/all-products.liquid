@@ -28,7 +28,17 @@
     {% endfor %}
   </div>
 </div>
-
+<ul>
+  {% for product_vendor in shop.vendors %}
+  {% assign vendor_handle = product_vendor | handleize %}
+  {% assign vendor_collection = collections[vendor_handle] %}
+  <li class="{% if product.vendor == product_vendor %}current{% endif %}">
+    {% if vendor_collection == empty %}{{ product_vendor | link_to_vendor  }}
+    {% else %}{{ vendor_collection.title | link_to: vendor_collection.url }}
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
 
 
 
