@@ -5,8 +5,8 @@
   <div class="product-collection flex-box">
     
     {% for product in collections['all'].products limit:1%}
-    {% for vendor in shop.vendors %}
-    {% if product.vendor == vendor %}
+
+    {% if product.vendor == "test" %}
     <div class="product-collection-card">
       <div class="featured-product-img rel">
         <a href="{{product.url}}">
@@ -25,7 +25,7 @@
       <a href="" class="collection-btn">MERK</a>
     </div>
     {% endif %}
-    {% endfor %}
+
     {% endfor %}
   </div>
 </div>
