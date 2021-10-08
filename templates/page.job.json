@@ -19,7 +19,9 @@
     "1633675664df953849": {
       "type": "contact-form-plain",
       "settings": {
-        "contact_text": "IS DEZE JOB OP JOUW LIJF GESCHREVEN? SOLLICITEER NU!"
+        "contact_text": "IS DEZE JOB OP JOUW LIJF GESCHREVEN? SOLLICITEER NU!",
+        "section_padding": "padding-y-0",
+        "section_margin": "margin-y-0"
       }
     }
   },
