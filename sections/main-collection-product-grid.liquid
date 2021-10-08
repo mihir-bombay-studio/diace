@@ -400,7 +400,11 @@
       <a href="{{product.url}}">
         <div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}">
           <div class="featured-product-img rel">
+            {% if product.featured_image != blank %}
             <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+            {% else %}
+            {{ 'product-1' | placeholder_svg_tag: 'my-custom-class' }}
+            {% endif %}
             <div class="product-hover-text flex-box align-center">
               <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
               <a href="" class="hover-text bold">KOPEN</a>
