@@ -177,7 +177,15 @@ button:hover .icon-send{
   /*   margin-bottom: 75px; */
 }
 
+.bg-yellow-dots {
+    position: absolute;
+    z-index: -1;
+}
 
+.dots-right-down {
+    bottom: -56px;
+    right: -50px;
+}
 
 @media screen and (min-width: 769px) {
   .no-desktop, div.no-desktop{
