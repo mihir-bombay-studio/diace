@@ -21,10 +21,11 @@ for (i = 0; i < acc.length; i++) {
 $('.filter-by-tags .gender').click(function () {
   console.log("gender clicked");
   $(this).toggleClass('filtered');
+  $(this).toggleClass('selected');
   
 });
 
 
 $('.check-box-wrapper').click(function() {
-  $(this).toggleClass('selected');
+  
 });
