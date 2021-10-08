@@ -339,6 +339,10 @@ a.active-facets__button {
   font-weight: lighter;
 }
 
+.disp_no{
+  display : none; 
+}
+
 @media screen and (max-width: 992px) {
   .collection-filter-left , .collection-filter-right, .filter-mask{
     width : 100%;
