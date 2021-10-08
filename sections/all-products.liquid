@@ -31,12 +31,14 @@
 <ul>
   {% for product_vendor in shop.vendors %}
   {% assign vendor_handle = product_vendor | handleize %}
-  {% assign vendor_collection = collections[vendor_handle] %}
+  {% assign vendor_collection = collections[vendor_handle].products %}
   {{vendor_collection}}
-  <img class="product-img" src="{{ vendor_collection.image.src | img_url: 'x282' }}"></a>
+  
   <li class="{% if product.vendor == product_vendor %}current{% endif %}">
-    {% if vendor_collection == empty %}{{ product_vendor | link_to_vendor  }}
-    {% else %}{{ vendor_collection.title | link_to: vendor_collection.url }}
+    {% if vendor_collection == empty %}
+    {{ product_vendor | link_to_vendor  }}
+    {% else %}
+    {{ vendor_collection.title | link_to: vendor_collection.url }}
     {% endif %}
   </li>
   {% endfor %}
