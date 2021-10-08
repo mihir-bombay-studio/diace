@@ -140,9 +140,14 @@ button{
   margin-left: 16px;
 }
 
-.mail{
-  text-decoration: underline;
-  cursor: pointer;
+.mail {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 26px;
+    display: flex;
+    font-weight: 300;
+    gap: 16px;
+    align-items: center;
 }
 
 .frequently_asked_q button{
