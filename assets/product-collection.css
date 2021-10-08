@@ -79,6 +79,10 @@ max-width: unset;
   font-weight : bold;
 }
 
+.product-price{
+  color : #FEC23B;
+}
+
 @media screen and (max-width: 768px) {
   .collection-btn{
     display : block;
