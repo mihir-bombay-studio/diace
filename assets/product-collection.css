@@ -70,6 +70,9 @@
   display : none;
 }
 
+.flex-direction{
+ flex-direction : column; 
+}
 
 @media screen and (max-width: 768px) {
   .collection-btn{
