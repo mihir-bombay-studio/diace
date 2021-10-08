@@ -35,7 +35,7 @@ function runFilter() {
   var i;
   
   
-  $('.product-collection-card').addClass('no-disp');
+  $('.product-collection-card').addClass('disp_no');
   
   
   
@@ -47,7 +47,8 @@ function runFilter() {
     $('.product-collection-card').addClass('tp');
   }
   
-  $('.product-collection-card.tp').removeClass('no-disp');
+  
+  $('.product-collection-card.tp').removeClass('disp_no');
   $('.tp').removeClass('tp');
   console.log(gender);
 }
