@@ -1,3 +1,7 @@
+.grid-wrapper {
+    margin-bottom: 16px;
+}
+
 .text-over-grid.white-bg {
   background-color: #ffffff;
 }
