@@ -32,8 +32,9 @@
 }
 
 .btm-padding{
-	padding-bottom:80px;
+	padding-bottom:80px !important;
 }
+
 
 .text-description{
     text-align: left;
