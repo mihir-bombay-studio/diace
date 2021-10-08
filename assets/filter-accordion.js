@@ -44,13 +44,11 @@ function runFilter() {
       $('.product-collection-card.' + gender[i]).addClass('tp');
     }
   } else {
-    $('.card-product').addClass('tp');
+    $('.product-collection-card').addClass('tp');
   }
   
-  
-  $('.card-product.fp.sp.tp').removeClass('no-disp');
-  $('.fp').removeClass('fp');
-  $('.sp').removeClass('sp');
+  $('.product-collection-card.tp').removeClass('no-disp');
   $('.tp').removeClass('tp');
+  console.log(gender);
 }
-
+runFilter();
