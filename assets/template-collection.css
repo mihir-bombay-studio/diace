@@ -761,6 +761,6 @@ input.mobile-facets__checkbox {
   box-shadow: none;
 }
 
-#main-collection-filters{
+.collection-product-grid{
  display : none; 
 }
