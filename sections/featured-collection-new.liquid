@@ -15,7 +15,7 @@
     {% assign products_by_price = collections[product_handle].products | sort: "price" %}
     {% assign current_id = product.id %}
     {% assign products_shown = 0 %}
-    {% for product in products_by_price limit:3 %}
+    {% for product in products_by_price limit:6 %}
     {% if products_shown < 3 %}
     {% if product.id != current_id %}
     <div class="featured-product-card">
