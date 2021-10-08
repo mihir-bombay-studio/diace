@@ -4,10 +4,14 @@
 
 <div class="featured-collection-wrapper container" data-product-id="{{ product.handle }}">
   <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
+  {% for collection in product.collections %}
+    
+{{ collection.title }}
+{% endfor %}
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
   
   <div class="featured-products flex-box justify-between">
-    {{ product.collections }}
+    
   	{% for product in collections[product_handle].products limit: 3 %}
     <div class="featured-product-card">
       <div class="featured-product-img rel">
