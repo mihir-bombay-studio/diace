@@ -2,49 +2,56 @@
 
 <!-- {% assign product_handle = section.settings.featured_collection %} -->
 
-<div class="featured-collection-wrapper container" data-product-id="{{ product.handle }}">
+<div class="featured-collection-wrapper container" >
   <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
-  {{product.collections}}
   {% for collection in product.collections %}
-    {% assign product_handle =  collection.handle %}
-{{ collection.title }}{{ collection.handle }}
-{% endfor %}
+  {% assign product_handle =  collection.handle %}
+  {{ collection.title }}{{ collection.handle }}
+  {% endfor %}
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
-  
+
   <div class="featured-products flex-box justify-between">
-    
-  	{% for product in collections[product_handle].products limit: 3 %}
+
+    {% assign products_by_price = collections[product_handle].products | sort: "price" %}
+    {% assign current_id = product.id %}
+    {% assign products_shown = 0 %}
+    {% for product in products_by_price limit:3 %}
+    {% if products_shown < 3 %}
+    {% unless product.id == current_id %}
     <div class="featured-product-card">
       <div class="featured-product-img rel">
-    	<img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+        <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
         <div class="fp-hover-text flex-box align-center">
           <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
           <a href="" class="hover-text bold">KOPEN</a>
         </div>
       </div>
       <div class="product-title-price flex-box justify-between">
-      	<div class="product-title semibold">{{ product.title | escape  }}</div>
+        <div class="product-title semibold">{{ product.title | escape  }}</div>
         <div class="product-compare-to-and-price">
           <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
           <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
         </div>
       </div>
       <div class="product-colors flex-box justify-between light">
-          <div class="product-color">
-            <span>Kleur: </span>
-            <span>
-               Paars
-            </span>
-          </div>
-          <div class="other-available-colors">
-            <a class="featured-product-link" href="{{ product.url }}">Meer kleuren beschikbaar</a>
-          </div>
+        <div class="product-color">
+          <span>Kleur: </span>
+          <span>
+            Paars
+          </span>
         </div>
-        
+        <div class="other-available-colors">
+          <a class="featured-product-link" href="{{ product.url }}">Meer kleuren beschikbaar</a>
+        </div>
+      </div>
+
     </div>
+    {% assign products_shown = products_shown | plus: 1 %}
+    {% endunless %}
+    {% endif %}
     {% endfor %}
   </div>
-  
+
   {% for block in section.blocks %}
   {% if block.type == "button" %}
   {%- if block.settings.button_label != blank -%}
