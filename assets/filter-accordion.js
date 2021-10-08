@@ -53,4 +53,4 @@ function runFilter() {
   $('.sp').removeClass('sp');
   $('.tp').removeClass('tp');
 }
-runFilter();
+
