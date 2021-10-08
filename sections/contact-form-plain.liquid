@@ -1,7 +1,121 @@
+{{ 'form-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="form-with-text">
+  <div class="container">
+    <div class="form_with_text_wrapper">
+
+      <div class="form">
+        {%- form 'contact', id: 'ContactForm' -%}
+        {%- if form.posted_successfully? -%}
+        <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
+        {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="form-status caption-large" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+        </div>
+        <ul class="form-status-list caption-large" role="list">
+          <li>
+            <a href="#ContactForm-email" class="link">
+              {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+            </a>
+          </li>
+        </ul>
+        {%- endif -%}
+          <div class="form_container">
+            <div class="input_form_control ">
+              <label for="first-name">Naam*</label>
+              <input placeholder="Vul je naam in" 
+                     type="text" 
+                     name="contact[first_name]" id="first-name" class="name" 
+                     value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                     required
+                     >
+            </div>
+            <div class="input_form_control ">
+              <label for="ContactForm-email">E-MAIL*</label>
+              <input
+                     autocomplete="email"
+                     type="email"
+                     id="ContactForm-email"
+                     name="contact[email]"
+                     spellcheck="false"
+                     autocapitalize="off"
+                     value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                     aria-required="true"
+                     {% if form.errors contains 'email' %}
+                     aria-invalid="true"
+                     aria-describedby="ContactForm-email-error"
+                     {% endif %}
+                     placeholder="youremail@mail.com"
+                     required
+                     >
+              {%- if form.errors contains 'email' -%}
+              <small class="contact__field-error" id="ContactForm-email-error">
+                <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
+              </small>
+              {%- endif -%}
+            </div>
+            <div class="input_form_control ">
+              <label for="ContactForm-phone">TELEFOONNUMMER</label>
+              <input 
+                     type="tel" 
+                     id="ContactForm-phone" 
+                     autocomplete="tel" 
+                     name="contact[phone-number]" 
+                     pattern="[0-9\-]*" 
+                     value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" 
+                     placeholder="Vul je telefoonnummer in, enkel cijfers"
+                     
+                     >
+            </div>
+            <div class="input_form_control ">
+              <label for="cv-motivate">CV - MOTIVATIE</label>
+              <input 
+                     placeholder="Klik om uw bestand te updloaden" 
+                     type="text" 
+                     id="cv-motivate" 
+                     name="contact[cv_motivate]"
+                     >
+            </div>
+            <div class="input_form_control ">
+              <label for="message">UW BERICHT*</label>
+              <textarea 
+                        rows="8" cols="50" 
+                        placeholder="Jouw bericht" 
+                        id="message"
+                        name="contact[body]"
+                        class="name"
+                        required
+                        >
+                {{- form.body -}}
+              </textarea>
+            </div>
+            <div class="submit_button">
+              <button type="submit" class="btn-yellow">VERZENDEN <span class="icon-send">{% render "icon-send" %}</span></button>
+            </div>
+          </div>
+       {%- endform -%}
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Contact form plain",
+    "settings": [
+		{
+          "id": "contact_text",
+          "type": "text",
+          "label": "Heading",
+		  "default" : "WAAR KAN JE ONS VINDEN"
+        }
+	],
+	"presets": [
+    {
+      "name": "Contact form plain"
+    }
+  ]
   }
 {% endschema %}
 
