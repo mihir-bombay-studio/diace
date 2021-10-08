@@ -7,8 +7,9 @@
   {% for collection in product.collections limit:1%}
   {% assign product_handle = collection.handle %}
   {{ collection.handle }}
-  {% if product_handle %} yes{% else %}no{% endif %}
+
   {% endfor %}
+    {% if product_handle %} yes{% else %}no{% endif %}
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
 
   <div class="featured-products flex-box justify-between">
