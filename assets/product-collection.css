@@ -41,25 +41,25 @@
 }
 
 /* .hover-text {
-  padding: 2px 16px 0 0;
-  text-transform: uppercase;
-  line-height: 24px;
-  letter-spacing: .8px;
-  max-width: 0;
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+padding: 2px 16px 0 0;
+text-transform: uppercase;
+line-height: 24px;
+letter-spacing: .8px;
+max-width: 0;
+-webkit-transition: .4s ease;
+transition: .4s ease;
 }
- */
+*/
 .product-hover-text:hover .plus-icon{
   transform: rotate(180deg);
 }
 
 /* .product-hover-text:hover .hover-text {
-  max-width: 100%;
+max-width: 100%;
 } */
 
 /* .product-hover-text:hover {
-  max-width: unset;
+max-width: unset;
 } */
 
 .porduct-collection-wrapper {
@@ -71,7 +71,12 @@
 }
 
 .flex-direction{
- flex-direction : column; 
+  flex-direction : column; 
+}
+
+.product-title{
+  font-family : Myriad Pro;
+  font-weight : bold;
 }
 
 @media screen and (max-width: 768px) {
