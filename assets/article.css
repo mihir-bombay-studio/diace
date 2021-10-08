@@ -78,19 +78,22 @@ img {
   font-weight: 600;
 }
 
-.share-platforms img {
-  width : auto;
-  height : 24px;
+.share-platforms svg {
+  height: 24px;
 }
 
 .share-platforms {
   display: flex;
   max-width: 269px;
   height: 24px;
-  gap: 15px;
+  gap : 15px;
   margin-bottom: 26px;
 }
 
+
+.share-platforms span:nth-child(1) {
+  margin-left: 0;
+}
 
 .divider {
   border: 1px solid #fec23b !important;
