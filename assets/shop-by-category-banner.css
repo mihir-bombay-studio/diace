@@ -80,6 +80,9 @@
   .product-collection-card img{
   	height : 170px !important;
   }
+  .banner-link-new svg{
+  	height: 11px;
+  }
 
 }
 
