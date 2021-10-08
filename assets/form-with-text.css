@@ -75,7 +75,7 @@ textarea {
   font-weight: 300;
 }
 
-textarea::placeholder,.form_container input{
+textarea,.form_container input{
   padding :18px 16px ;
 }
 
