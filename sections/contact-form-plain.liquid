@@ -1,6 +1,6 @@
 {{ 'form-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="form-with-text">
+<div class="form-with-text {{ section.settings.section_padding }} {{ section.settings.section_margin }}">
   <div class="container">
     <div class="form_with_text_wrapper plain-form">
       <div class="text_heading">
@@ -112,7 +112,55 @@
           "type": "text",
           "label": "Heading",
 		  "default" : "WAAR KAN JE ONS VINDEN"
-        }
+        },
+{
+                    "type": "select",
+                    "id": "section_padding",
+                    "options": [
+                        {
+                            "value": "padding-y-0",
+                            "label": "None"
+                        },
+                        {
+                            "value": "padding-y-25",
+                            "label": "Small"
+                        },
+                        {
+                            "value": "padding-y-50",
+                            "label": "Medium"
+                        },
+                        {
+                            "value": "padding-y-75",
+                            "label": "Large"
+                        }
+                    ],
+                    "default": "padding-y-25",
+                    "label": "Section Padding(top-bottom)"
+                },
+                {
+                    "type": "select",
+                    "id": "section_margin",
+                    "options": [
+                        {
+                            "value": "margin-y-0",
+                            "label": "None"
+                        },
+                        {
+                            "value": "margin-y-25",
+                            "label": "Small"
+                        },
+                        {
+                            "value": "margin-y-50",
+                            "label": "Medium"
+                        },
+                        {
+                            "value": "margin-y-75",
+                            "label": "Large"
+                        }
+                    ],
+                    "default": "margin-y-25",
+                    "label": "Section Margin(top)"
+                }
 	],
 	"presets": [
     {
