@@ -154,12 +154,10 @@
         </div>
         
         
-        {% for sproduct in collections[collection_title].products %} 
-        {% assign brands = sproduct.metafields.my_fields.filter_size | split: ',' %}
-        {% for brand in brands %}
-        {{brand}}
-        {% endfor %}
-        {% endfor %}
+        
+        
+
+       
         
         <div class="brand-filter {% if section.settings.brand_show == false %} no-disp {% endif %}">
           <div class="sex-filter-title-wrapper bold flex-box justify-between filter-accordion ">
@@ -167,12 +165,15 @@
             <div class="down-chevron">{% include 'icon-black-down-chevron' %}</div>
           </div>
           <div class="panel">
-           
+            {% for sproduct in collections[collection_title].products %} 
+            {% assign brands = sproduct.metafields.my_fields.filter_size | split: ',' %}
+            {% for brand in brands %}
             <div class="check-box-wrapper flex-box align-center">
               <span class="check-box"></span>
-              <span class="check-box-option semibold">{{block.settings.brand}}</span>
+              <span class="check-box-option semibold">{{brand}}</span>
             </div>
-            
+            {% endfor %}
+            {% endfor %}
           </div>
           <div class="yellow-border-bottom"></div>
         </div>
