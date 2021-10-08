@@ -386,33 +386,37 @@
 <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
 
 <div id="CollectionProductGrid">
-    {%- if collection.products.size == 0 -%}
-      <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
-       
-      
-      </div>
-    {%- else -%}
-      <div class="collection page-width">
-        <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
-          grid grid--2-col
-          {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
-            {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
-          {% endif %} negative-margin">
-          {%- for product in collection.products -%}
-            <li class="grid__item">
-              {% render 'product-card',
-                product_card_product: product,
-                media_size: section.settings.image_ratio,
-                show_secondary_image: section.settings.show_secondary_image,
-                add_image_padding: section.settings.add_image_padding,
-                show_vendor: section.settings.show_vendor
-              %}
-            </li>
-          {%- endfor -%}
-        </ul>
+  {%- if collection.products.size == 0 -%}
+  <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
 
-      </div>
-    {%- endif -%}
+
+  </div>
+  {%- else -%}
+  <div class="collection page-width">
+    <div class="product-collection flex-box">
+      {% for product in collection.products %}
+      <a href="{{product.url}}">
+        <div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price | divided_by : 100.00 }}" data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
+          <div class="featured-product-img rel">
+            <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+            <div class="product-hover-text flex-box align-center">
+              <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+              <a href="" class="hover-text bold">KOPEN</a>
+            </div>
+          </div>
+          <div class="product-title-price flex-box justify-between">
+            <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  | capitalize}}</a></div>
+            <div class="product-compare-to-and-price">
+              <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
+              <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money  }}</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {%- endif -%}
 </div>
 
 {% schema %}
