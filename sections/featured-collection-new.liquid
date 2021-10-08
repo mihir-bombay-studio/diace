@@ -16,7 +16,7 @@
     {% assign current_id = product.id %}
     {% assign products_shown = 0 %}
     {% for product in products_by_price limit:6 %}
-    {% if products_shown < 3 %}
+    {% if products_shown < 6 %}
     {% unless product.id == current_id %}
     <div class="featured-product-card">
       <div class="featured-product-img rel">
