@@ -6,7 +6,7 @@
   <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
   {% for collection in product.collections %}
   {% assign product_handle =  collection.handle %}
-  {{ collection.title }}{{ collection.handle }}
+  {{ collection.handle }}
   {% endfor %}
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
 
