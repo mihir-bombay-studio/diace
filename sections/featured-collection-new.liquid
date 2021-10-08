@@ -17,7 +17,7 @@
     {% assign products_shown = 0 %}
     {% for product in products_by_price limit:3 %}
     {% if products_shown < 3 %}
-    {% unless product.id == current_id %}
+    {% if product.id != current_id %}
     <div class="featured-product-card">
       <div class="featured-product-img rel">
         <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
@@ -47,7 +47,7 @@
 
     </div>
     {% assign products_shown = products_shown | plus: 1 %}
-    {% endunless %}
+    {% endif %}
     {% endif %}
     {% endfor %}
   </div>
