@@ -5,6 +5,12 @@
   margin: 6rem 0 0 0;
 }
 
+.form_with_text_wrapper.plain-form {
+    flex-direction: column;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
 .text_content {
   width: 100%;
   text-align: left;
