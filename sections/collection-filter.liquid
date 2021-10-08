@@ -109,10 +109,10 @@
           <div class="panel">
             {% for block in section.blocks %}
         	{% if block.type == "gender_filter" %}
-            <div class="check-box-wrapper flex-box align-center">
+            <a onClick="return false;" data-value="{{block.settings.gender | downcase }}" class="gender check-box-wrapper flex-box align-center">
               <span class="check-box"></span>
-              <span class="check-box-option semibold">{{block.settings.gender}}</span>
-            </div>
+              <span class="check-box-option semibold" >{{block.settings.gender}}</span>
+            </a>
             {% endif %}
         	{% endfor %}
           </div>
