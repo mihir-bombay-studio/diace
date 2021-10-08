@@ -58,9 +58,9 @@
             <div class="flex-box justify-between">
               <div class="product-variant light">{% if item.variant.title != "Default Title" and item.variant.title != blank %}{{ item.variant.title }}{% endif %}</div>
               <div class="count">
-                <span data-variant-id="{{item.variant_id}}" class="qty-minus cart-minus-icon">-</span>
+                <span data-variant-id="{{item.variant_id}}" class="qty-minus cart-minus-icon">{% render 'icon-close-circle' %}</span>
                 <span id="item_count_{{item.variant_id}}" class="item-count-number" data-qty="{{ item.quantity }}">{{ item.quantity }}</span>
-                <span data-variant-id="{{item.variant_id}}" class="qty-plus cart-plus-icon ">+</span>
+                <span data-variant-id="{{item.variant_id}}" class="qty-plus cart-plus-icon ">{% render 'icon-close-circle' %}</span>
               </div>
             </div>
             <div class="item-price">
