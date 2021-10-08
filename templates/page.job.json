@@ -24,11 +24,31 @@
         "section_padding": "padding-y-0",
         "section_margin": "margin-y-0"
       }
+    },
+    "163368746876cc4524": {
+      "type": "section-with-divider",
+      "blocks": {
+        "e0aa5ea5-8405-43e9-90bf-fdbb9ea66798": {
+          "type": "social",
+          "settings": {
+            "social_icon": "shopify:\/\/shop_images\/instagram.png"
+          }
+        }
+      },
+      "block_order": [
+        "e0aa5ea5-8405-43e9-90bf-fdbb9ea66798"
+      ],
+      "settings": {
+        "share_heading": "Deel dit artikel",
+        "previous_heading": "Vorig artikel",
+        "next_heading": "Volgend artikel"
+      }
     }
   },
   "order": [
     "main",
     "16327568795ab9a08e",
-    "1633675664df953849"
+    "1633675664df953849",
+    "163368746876cc4524"
   ]
 }
