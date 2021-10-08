@@ -133,9 +133,9 @@ function refreshCart(cart) {
             <div class="flex-box justify-between">
               <div class="product-variant light">${!(variantTitle.includes(item.variant_title)) ? item.variant_title : "<span></span>"}</div>
               <div class="count">
-                <span data-variant-id="${item.variant_id}" class="qty-minus cart-minus-icon">-</span>
+                <span data-variant-id="${item.variant_id}" class="qty-minus cart-minus-icon">{% render 'icon-close-circle' %}</span>
                 <span id="item_count_${item.variant_id}" class="item-count-number" data-qty="${item.quantity}">${item.quantity}</span>
-                <span data-variant-id="${item.variant_id}" class="qty-plus cart-plus-icon ">+</span>
+                <span data-variant-id="${item.variant_id}" class="qty-plus cart-plus-icon ">{% render 'icon-close-circle' %}</span>
               </div>
             </div>
             <div class="item-price">
@@ -176,7 +176,7 @@ function refreshCart(cart) {
                           data-variant-id = "${current_variant.id}"
                           data-quantity = ""
                           > 
-                    <span class="plus-circle">+</span> 
+                    <span class="plus-circle">{% render 'icon-close-circle' %}</span> 
                     <span class="add-upsell-btn-text">Toevoegen</span> 
                   </button>
 				</div>
