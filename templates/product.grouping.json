@@ -195,13 +195,6 @@
         "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
         "remove_padd": true
       }
-    },
-    "163369733399012b34": {
-      "type": "related-products",
-      "settings": {
-        "show_product_recommendations": true,
-        "heading": "You might also like"
-      }
     }
   },
   "order": [
@@ -211,7 +204,6 @@
     "1632296628d5bc229d",
     "163229690103dae5ee",
     "16323185558f193575",
-    "163231983925a321da",
-    "163369733399012b34"
+    "163231983925a321da"
   ]
 }
