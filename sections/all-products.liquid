@@ -3,8 +3,9 @@
 
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
-    {% for vendor in shop.vendors %}
+    
     {% for product in collections['all'].products limit:1%}
+    {% for vendor in shop.vendors %}
     {% if product.vendor == vendor %}
     <div class="product-collection-card">
       <div class="featured-product-img rel">
