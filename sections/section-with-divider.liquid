@@ -1,18 +1,21 @@
 {{ 'article.css' | asset_url | stylesheet_tag }}
 
-
-<div class="article-share">
-  <p class="share-heading">{{section.settings.share_heading}}</p>
-  <div class="share-platforms">
-    {% for block in section.blocks %}
-    <img src="{{ block.settings.social_icon | img_url : "icon" }}" alt="social-icon" loading="lazy">
-    {% endfor %}
+<div class="container article-container">
+  <div class="content-wrapper">
+    <div class="article-share">
+      <p class="share-heading">{{section.settings.share_heading}}</p>
+      <div class="share-platforms">
+        {% for block in section.blocks %}
+        <img src="{{ block.settings.social_icon | img_url : "icon" }}" alt="social-icon" loading="lazy">
+        {% endfor %}
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="next-previous-article">
+      <span class="previous">{% include "back-icon" %} {{section.settings.previous_heading}}</span>
+      <span class="next">{{section.settings.next_heading}} {% include "back-icon" %} </span>
+    </div>
   </div>
-</div>
-<div class="divider"></div>
-<div class="next-previous-article">
-  <span class="previous">{% include "back-icon" %} {{section.settings.previous_heading}}</span>
-  <span class="next">{{section.settings.next_heading}} {% include "back-icon" %} </span>
 </div>
 
 {% schema %}
@@ -38,7 +41,7 @@
 	"blocks": [
 	{
           "type": "social",
-          "name": "social",
+          "name": "Section with divider",
           "limit": 4,
           "settings": [
             {
@@ -51,7 +54,7 @@
   ],
   "presets": [
     {
-      "name": "social"
+      "name": "Section with divider"
     }
   ]
   }
