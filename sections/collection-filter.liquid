@@ -140,7 +140,7 @@
           <div class="panel">
             {% for block in section.blocks %}
         	{% if block.type == "type_filter" %}
-            <a onClick="return false;" data-value="{{block.settings.type | downcase }}" class="type check-box-wrapper flex-box align-center">
+            <a onClick="return false;" data-value="{{block.settings.type | downcase }}" class="type check-box-wrapper flex-box align-center filter-option">
               <span class="check-box"></span>
               <span class="check-box-option semibold">{{block.settings.type}}</span>
             </a>
@@ -158,7 +158,7 @@
           <div class="panel">
             {% for block in section.blocks %}
         	{% if block.type == "brand_filter" %}
-            <a onClick="return false;" data-value="{{block.settings.brand | downcase }}" class="brand check-box-wrapper flex-box align-center">
+            <a onClick="return false;" data-value="{{block.settings.brand | downcase }}" class="brand check-box-wrapper flex-box align-center filter-option">
               <span class="check-box"></span>
               <span class="check-box-option semibold">{{block.settings.brand}}</span>
             </a>
