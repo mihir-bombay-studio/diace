@@ -1422,7 +1422,13 @@ input[type='checkbox'] {
   font-size: 1.4rem;
   line-height: 1;
   margin-top: 1rem;
+  gap: 16px;
 }
+  
+  .form__message svg{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 
 .form__message--large {
   font-size: 1.6rem;
