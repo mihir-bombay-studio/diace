@@ -174,7 +174,21 @@ button{
   font-family: 'Myriad Pro',sans-serif;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
+  
+  
+    .form_with_text_wrapper{
+    flex-direction : column;
+  }
+  .frequently_asked_q button {
+    display : none;
+  }
+  .form{
+  	margin-top : 26px;	
+  }
+  
+  
+  
   .text_content.register{
   	display : none;
   }
@@ -203,14 +217,6 @@ button{
   
 }
 
-@media screen and (max-width: 768px) {
-  .form_with_text_wrapper{
-    flex-direction : column;
-  }
-  .frequently_asked_q button {
-    display : none;
-  }
-  .form{
-  	margin-top : 26px;	
-  }
+@media screen and (max-width: 991px) {
+
 }
