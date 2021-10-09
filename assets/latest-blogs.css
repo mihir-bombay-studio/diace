@@ -32,23 +32,27 @@ h2.latest-blogs-heading.bold {
   line-height: 24px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+  color: #FEC23B;
   margin-bottom: 16px;
 }
 
 .blog-title {
   font-size: 20px;
   line-height: 30px;
+  font-weight : bold;
   margin-bottom: 16px;
 }
 
 .blog-desc {
   line-height: 24px;
   margin-bottom: 16px;
+  font-weight : lighter;
 }
 
 .blog-link {
   line-height: 24px;
   display: block;
+  font-weight: lighter;
   text-decoration: underline;
 }
 
