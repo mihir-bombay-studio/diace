@@ -134,7 +134,7 @@ img {
 }
 .share{
   max-width : 768px; 
-  padding: 26px 0 52px 0;
+  padding: 26px 25px 52px 25px;
 }
 
 .previous , .next{
