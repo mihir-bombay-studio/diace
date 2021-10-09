@@ -453,6 +453,7 @@ a.active-facets__button {
   }
   .filter-mask{
     visibility : hidden;
+    transition: visibility 0.3s ease;
   }
   .filter-mask.active {
     visibility: visible;
