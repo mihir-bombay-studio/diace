@@ -41,6 +41,7 @@ function runFilter() {
   if (gender.length > 0) {
     for (i = 0; i < gender.length; i++) {
 //       $('.product-collection-card.' + gender[i]).addClass('tp');
+      console.log($('.product-collection-card').data('gender'));
       if ($('.product-collection-card').data('gender') == " meisjes "){
         console.log("array value matched")
       }
