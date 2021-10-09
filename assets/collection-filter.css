@@ -434,7 +434,7 @@ a.active-facets__button {
     border: 3px solid #FEC23B;
     border-bottom: none;
     left: 0;
-    z-index : 6;
+    z-index : 12;
     border-radius: 8px 8px 0 0;
     cursor : pointer;
   }
@@ -446,7 +446,7 @@ a.active-facets__button {
     transition: top .3s ease;
     left: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 11;
     height: 100%;
   }
   
