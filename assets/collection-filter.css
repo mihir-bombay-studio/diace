@@ -420,22 +420,24 @@ a.active-facets__button {
     display: none;
   }
   .filter-toggler{
-    display : block; 
+    display: flex;
     position: fixed;
-    bottom: 0;
-    background-color: #FFFFFF;
+    bottom: -1px;
+    background-color: #fff;
     text-align: center;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     width: 100%;
     text-transform: uppercase;
-    padding: 14px 108px;
-    border: 3px solid #FEC23B;
+    border: 3px solid #fec23b;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
     border-bottom: none;
     left: 0;
-    z-index : 12;
+    z-index: 12;
     border-radius: 8px 8px 0 0;
-    cursor : pointer;
+    cursor: pointer;
   }
   .collection-filter-left{
     position: fixed;
