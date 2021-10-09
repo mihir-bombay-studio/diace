@@ -143,6 +143,7 @@ input::-webkit-slider-thumb {
 
 .price-filter-title-wrapper {
   padding-bottom: 16px;
+  cursor : pointer;
 }
 
 
