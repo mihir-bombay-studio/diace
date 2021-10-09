@@ -2091,7 +2091,7 @@ details-disclosure > details {
     overflow-x: hidden;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 991px) {
     .content-for-layout{
       padding-top:80px;
     }
