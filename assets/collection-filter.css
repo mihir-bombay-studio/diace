@@ -436,10 +436,6 @@ a.active-facets__button {
     border-radius: 8px 8px 0 0;
     cursor : pointer;
   }
-  
-}
-
-@media screen and (max-width: 768px) {
   .collection-filter-left{
     position: fixed;
     max-height: calc(100vh - 54.8px);
@@ -451,6 +447,11 @@ a.active-facets__button {
     z-index: 5;
     height: 100%;
   }
+  
+}
+
+@media screen and (max-width: 768px) {
+  
   .collection-banner-wrapper {
     display : none;
   }
