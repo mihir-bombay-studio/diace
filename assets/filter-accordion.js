@@ -31,7 +31,7 @@ function runFilter() {
   $(".gender.filteredselected").each(function (index) {
     gender.push($(this).data('value'));
   });
-  $(".gender.filteredselected").each(function (index) {
+  $(".size.filteredselected").each(function (index) {
     size.push($(this).data('value'));
   });
   
