@@ -122,10 +122,10 @@
           <div class="panel">
             {% for block in section.blocks %}
         	{% if block.type == "size_filter" %}
-            <div class="check-box-wrapper flex-box align-center">
+            <a onClick="return false;" data-value="{{block.settings.size | downcase }}" class="size check-box-wrapper flex-box align-center">
               <span class="check-box"></span>
               <span class="check-box-option semibold">{{block.settings.size}}</span>
-            </div>
+            </a>
             {% endif %}
         	{% endfor %}
           </div>
