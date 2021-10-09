@@ -892,6 +892,12 @@
     $(".filter-mask").toggleClass("active");
     $(".filter-toggler").toggleClass("background-change");
     
+    $('.filter-toggler').toggle(function() {
+      $(this).text("PRODUCTEN FILTEREN");
+    }, function() {
+      $(this).text('TOEPASSEN');
+    });
+    
   }
 
   // Function for close the Cart
