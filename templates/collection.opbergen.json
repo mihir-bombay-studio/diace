@@ -65,7 +65,7 @@
         "6f0cd511-fcf7-4de5-9779-11fccff6d3d6": {
           "type": "brand_filter",
           "settings": {
-            "brand": "Merk 01"
+            "brand": "Merk01"
           }
         },
         "dbd2c05d-59c4-433a-98bb-62775eba7570": {
@@ -104,9 +104,11 @@
         "enable_sorting": true,
         "gender_show": true,
         "size_show": false,
+        "type_show": false,
         "brand_show": true,
         "gender_filter_title": "GESLACHT",
         "size_filter_title": "",
+        "type_filter_title": "",
         "brand_filter_title": "MERK"
       }
     }
