@@ -192,6 +192,14 @@ button{
     height:100vh;
   }
   
+  .form-with-text{
+    background-color: #fec23b33;
+  }
+  
+  .form{
+    background-color: transparent;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
