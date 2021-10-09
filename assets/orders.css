@@ -2,6 +2,12 @@
     margin-bottom: 16px;
 }
 
+.grid-wrapper .logout-btn{
+  font-size: 14px;
+  text-decoration: underline;
+  letter-spacing: 0.7px;
+}
+
 .text-over-grid.white-bg {
   background-color: #ffffff;
 }
