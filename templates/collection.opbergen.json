@@ -71,19 +71,19 @@
         "dbd2c05d-59c4-433a-98bb-62775eba7570": {
           "type": "brand_filter",
           "settings": {
-            "brand": "Merk 02"
+            "brand": "Merk02"
           }
         },
         "e2e41fd0-d008-4820-a95c-db2869a91081": {
           "type": "brand_filter",
           "settings": {
-            "brand": "Merk 03"
+            "brand": "Merk03"
           }
         },
         "2395cb24-5dd2-4934-969b-889e37fcadcb": {
           "type": "brand_filter",
           "settings": {
-            "brand": "Merk 04"
+            "brand": "Merk04"
           }
         }
       },
