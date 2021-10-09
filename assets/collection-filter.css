@@ -467,6 +467,9 @@ a.active-facets__button {
     border-bottom: 0;
     border-radius: 8px 8px 0 0;
   }
+  .product-filter-close{
+    margin-top: 9px;
+  }
 
 }
 
