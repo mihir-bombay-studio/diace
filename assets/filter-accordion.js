@@ -89,5 +89,6 @@ function runFilter() {
   $('.tp').removeClass('tp');
   $('.bp').removeClass('bp');
   console.log(size);
+  console.log(brand);
 }
 runFilter();
