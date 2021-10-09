@@ -452,7 +452,10 @@ a.active-facets__button {
     cursor : pointer;
   }
   .filter-mask{
-    display : none;
+    visibility : hidden;
+  }
+  .filter-mask.active {
+    visibility: visible;
   }
   .banner-btn-link{
     margin-top: 45px;
