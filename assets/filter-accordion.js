@@ -26,9 +26,13 @@ $('.filter-by-tags .filter-option').click(function () {
 
 function runFilter() {
   var gender = [];
+  var size = [];
   var classString = "";
   $(".gender.filteredselected").each(function (index) {
     gender.push($(this).data('value'));
+  });
+  $(".gender.filteredselected").each(function (index) {
+    size.push($(this).data('value'));
   });
   
   var i;
@@ -46,9 +50,18 @@ function runFilter() {
     $('.product-collection-card').addClass('tp');
   }
   
+  if (size.length > 0) {
+    for (i = 0; i < size.length; i++) {
+      $('.product-collection-card.' + size[i]).addClass('sp');
+    }
+  } else {
+    $('.product-collection-card').addClass('sp');
+  }
+
   
-  $('.product-collection-card.tp').removeClass('disp_no');
+  $('.product-collection-card.tp.sp').removeClass('disp_no');
   $('.tp').removeClass('tp');
-  console.log(gender);
+  $('.sp').removeClass('sp');
+  console.log(size);
 }
 runFilter();
