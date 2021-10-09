@@ -40,7 +40,7 @@ function runFilter() {
 
   if (gender.length > 0) {
     for (i = 0; i < gender.length; i++) {
-      $('.product-collection-card.' + gender[i]).addClass('tp');
+//       $('.product-collection-card.' + gender[i]).addClass('tp');
       if ($('.product-collection-card').data('gender') == gender[i]){
         console.log("array value matched")
       }
