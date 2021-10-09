@@ -19,7 +19,6 @@ for (i = 0; i < acc.length; i++) {
 
 
 $('.filter-by-tags .gender').click(function () {
-  console.log("gender clicked");
   $(this).toggleClass('filteredselected');
   runFilter();
 });
