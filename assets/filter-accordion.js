@@ -18,8 +18,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-$('.filter-by-tags .gender').click(function () {
-  console.log("gender clicked");
+$('.filter-by-tags .filter-option').click(function () {
   $(this).toggleClass('filteredselected');
  runFilter();
 });
