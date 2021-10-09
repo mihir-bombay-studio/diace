@@ -365,6 +365,7 @@ a.active-facets__button {
     display: flex;
     padding: 25px;
     border-top: 2px solid #FEC23B;
+    border-top: 0;
   }
   .current{
     font-weight: 700;
@@ -414,7 +415,7 @@ a.active-facets__button {
   }
   .filter-mask.active .collection-filter-left{
     top: 0;
-/*     overflow-y: scroll; */
+    /*     overflow-y: scroll; */
   }
   .filter-mask.active .collection-filter-left::-webkit-scrollbar {
     display: none;
@@ -466,7 +467,6 @@ a.active-facets__button {
     align-items: center;
     height: 80px;
     border: 2px solid #FEC23B;
-    border-bottom: 0;
     border-radius: 8px 8px 0 0;
   }
   .product-filter-close{
