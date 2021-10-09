@@ -449,18 +449,25 @@ a.active-facets__button {
     z-index: 11;
     height: 100%;
   }
-  
+  .product-filter-heading{
+    text-align: center;
+    font-family: 'Myriad Pro';
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
-  
+
   .collection-banner-wrapper {
     display : none;
   }
   .collection-banner-wrapper.small {
     display : block;
   }
-  
+
   .banner-btn-link{
     margin-top: 45px;
   }
@@ -476,7 +483,7 @@ a.active-facets__button {
     width : 47.5%;
   }
   .sex-filter .panel{
-  	flex-direction : column;
+    flex-direction : column;
   }
 }
 
