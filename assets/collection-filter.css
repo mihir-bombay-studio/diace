@@ -418,30 +418,6 @@ a.active-facets__button {
   .filter-mask.active .collection-filter-left::-webkit-scrollbar {
     display: none;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .collection-filter-left{
-    position: fixed;
-    max-height: calc(100vh - 54.8px);
-    background: #fff;
-    top: 100%;
-    transition: top .3s ease;
-    left: 0;
-    width: 100%;
-    z-index: 5;
-    height: 100%;
-  }
-  
-
-  .filter-toggler{
-  }
-  .collection-banner-wrapper {
-    display : none;
-  }
-  .collection-banner-wrapper.small {
-    display : block;
-  }
   .filter-toggler{
     display : block; 
     position: fixed;
@@ -459,6 +435,27 @@ a.active-facets__button {
     z-index : 6;
     border-radius: 8px 8px 0 0;
     cursor : pointer;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .collection-filter-left{
+    position: fixed;
+    max-height: calc(100vh - 54.8px);
+    background: #fff;
+    top: 100%;
+    transition: top .3s ease;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    height: 100%;
+  }
+  .collection-banner-wrapper {
+    display : none;
+  }
+  .collection-banner-wrapper.small {
+    display : block;
   }
   
   .banner-btn-link{
