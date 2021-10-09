@@ -192,11 +192,11 @@ button{
     height:100vh;
   }
   
-  .form-with-text{
+  .form-with-text.mobile-bg{
     background-color: #fec23b33;
   }
   
-  .form{
+  .form-with-text.mobile-bg .form{
     background-color: transparent;
   }
   
