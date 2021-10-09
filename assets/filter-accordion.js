@@ -21,7 +21,7 @@ for (i = 0; i < acc.length; i++) {
 $('.filter-by-tags .gender').click(function () {
   console.log("gender clicked");
   $(this).toggleClass('filteredselected');
- runFilter();
+  runFilter();
 });
 
 
@@ -31,23 +31,27 @@ function runFilter() {
   $(".gender.filteredselected").each(function (index) {
     gender.push($(this).data('value'));
   });
-  
+
   var i;
-  
-  
+
+
   $('.product-collection-card').addClass('disp_no');
-  
-  
-  
+
+
+
   if (gender.length > 0) {
     for (i = 0; i < gender.length; i++) {
       $('.product-collection-card.' + gender[i]).addClass('tp');
+      if ($('.product-collection-card').data('gender') == gender[i]){
+        console.log("array value matched")
+      }
+
     }
   } else {
     $('.product-collection-card').addClass('tp');
   }
-  
-  
+
+
   $('.product-collection-card.tp').removeClass('disp_no');
   $('.tp').removeClass('tp');
   console.log(gender);
