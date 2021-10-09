@@ -2087,6 +2087,12 @@ details-disclosure > details {
 
  
   .content-for-layout{
+	height:100%;
+    overflow-x: hidden;
+  }
   
-  overflow-x: hidden;
+  @media screen and (max-width: 768px) {
+    .content-for-layout{
+      padding-top:80px;
+    }
   }
