@@ -434,6 +434,10 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   .header-nav-list-sub li {
     padding: 0 16px;
   }
+  
+  .header-nav-list-sub{
+  left: -16px;
+  }
 
   .right-nav-upper li {
     margin-left: 0;
