@@ -48,7 +48,8 @@
 }
 
 .banner-link:hover .right-black-chveron svg{
-  margin-left: 2px;
+/*   margin-left: 2px; */
+  transform:  translateX(3px);
 }
 
 .banner-link:hover .right-black-chveron .a-icon-black-right-chevron{
@@ -79,11 +80,14 @@
   .product-collection-card img{
   	height : 170px !important;
   }
+  .banner-link-new svg{
+  	height: 11px;
+  }
 
 }
 
 @media screen and (max-width: 479px) {
   .product-collection-card{
-    width : 48.68% !important;
+    width : 47.68% !important;
   }
 }

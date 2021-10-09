@@ -1,26 +1,5 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "disabled": true,
-      "settings": {
-        "show_collection_description": false,
-        "show_collection_image": false
-      }
-    },
-    "product-grid": {
-      "type": "main-collection-product-grid",
-      "disabled": true,
-      "settings": {
-        "products_per_page": 16,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false,
-        "enable_filtering": true,
-        "enable_sorting": true
-      }
-    },
     "163308392054992eb6": {
       "type": "shop-by-category-banner",
       "blocks": {
@@ -41,32 +20,37 @@
         "banner_desc": "Het leven met diabetes kan best ingewikkeld zijn. Het is altijd opletten en vooruit denken. Diabetes hebben is zeker geen pretje. Met onze webshop willen wij het je zo prettig mogelijk maken. Diacé.be is een online webshop gespecialiseerd in leuke en handige accessoires voor kinderen en volwassenen met diabetes type 1 en type 2."
       }
     },
-    "1633084033bb375a54": {
-      "type": "product-collection",
+    "product-grid": {
+      "type": "main-collection-product-grid",
       "settings": {
-        "featured_collection": "opbergen"
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false,
+        "enable_filtering": true,
+        "enable_sorting": true
       }
     },
-    "1633084062ecde530d": {
-      "type": "shop-by-category-banner",
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
-        "banner_img": "shopify:\/\/shop_images\/hero_other_3.png",
-        "banner_title": "SHOP VOLGENS MERK",
-        "banner_desc": "Het leven met diabetes kan best ingewikkeld zijn. Het is altijd opletten en vooruit denken. Diabetes hebben is zeker geen pretje. Met onze webshop willen wij het je zo prettig mogelijk maken. Diacé.be is een online webshop gespecialiseerd in leuke en handige accessoires voor kinderen en volwassenen met diabetes type 1 en type 2."
+        "show_collection_description": false,
+        "show_collection_image": false
       }
     },
     "1633446134b464e25c": {
       "type": "all-products",
+      "disabled": true,
       "settings": {
       }
     }
   },
   "order": [
-    "banner",
-    "product-grid",
     "163308392054992eb6",
-    "1633084033bb375a54",
-    "1633084062ecde530d",
+    "product-grid",
+    "banner",
     "1633446134b464e25c"
   ]
 }

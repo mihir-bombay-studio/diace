@@ -21,10 +21,10 @@
 }
 
 .text-over-hero.bold {
-  max-width : 355px;
   text-transform: uppercase;
   line-height: 24px;
   position: absolute;
+  overflow-x: hidden;
   top: 52px;
   left: 0;
   background-color: var(--background-yellow);
@@ -115,6 +115,7 @@
     margin : 0 auto;
   }
   .text-over-hero.bold{
+    max-width : 100%;
     padding: 9.5px 0px 8.5px;
     position :relative;
     width : 100%;
@@ -127,6 +128,7 @@
   .text-over-hero.bold.new{
   	background-color : #fff;
     font-size: 16px;
+    max-width : 100%;
   }
   .hero-left img{
     border-radius: 8px 8px 0 0;

@@ -101,7 +101,7 @@ border-bottom: 1px solid;
 }
 
 .banner-link:hover .right-black-chveron svg {
-    margin-left: 2px;
+    transform:  translateX(3px);
 }
 
 .banner-link:hover .right-black-chveron .a-icon-black-right-chevron {

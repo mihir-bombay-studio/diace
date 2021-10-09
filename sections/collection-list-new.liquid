@@ -1,0 +1,44 @@
+{{ 'product-collection.css' | asset_url | stylesheet_tag }}
+
+<div class="porduct-collection-wrapper container">
+  <div class="product-collection flex-box">
+    {% for collection in collections %}
+    {% if collection.image %}
+    <a href = "{{collection.url}}">
+      <div class="product-collection-card">
+        <div class="featured-product-img rel">
+          <a href="{{collection.url}}"> 
+            <img class="product-img" src="{{ collection.image | img_url: 'x282' }}"></a>
+          <a href="{{collection.url}}">
+          <div class="product-hover-text flex-box align-center">
+            <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+            <a href="{{collection.url}}" class="hover-text bold">{{collection.title}}</a>
+          </div>
+          </a>
+        </div>
+        <a href="" class="collection-btn">{{collection.title}}</a>
+      </div>
+    </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Collection List",
+    "settings": [],
+  "presets": [
+    {
+      "name": "Collection List",
+		"category":"section"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

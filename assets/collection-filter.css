@@ -26,6 +26,10 @@
   z-index: -1;
 }
 
+.bg-gray-dots svg{
+  width : 100%;
+  height : 100%;
+}
 .collection-banner {
   border: 4px solid var(--background-yellow);
     border-radius: 8px;
@@ -54,12 +58,12 @@
 
 .collection-tag {
   line-height: 24px;
-  color: var(--background-grey);
-    margin-bottom: 8px;
-    margin-left: 16px;
-    cursor: pointer;
-    user-select : none;  
-    }
+  color: #737373;
+  margin-bottom: 8px;
+  margin-left: 16px;
+  cursor: pointer;
+  user-select : none;  
+}
 
 .collection-tags {
   margin-bottom: 16px;
@@ -139,6 +143,7 @@ input::-webkit-slider-thumb {
 
 .price-filter-title-wrapper {
   padding-bottom: 16px;
+  cursor : pointer;
 }
 
 
@@ -171,6 +176,7 @@ input::-webkit-slider-thumb {
 
 .sex-filter-title-wrapper {
   padding-bottom: 16px;
+  cursor : pointer;
 }
 
 .check-box {
@@ -183,6 +189,9 @@ input::-webkit-slider-thumb {
 
 .check-box-option{
   padding-left: 8px;
+  font-weight : 700;
+  text-transform: capitalize;
+
 }
 
 .check-box-wrapper {
@@ -252,6 +261,7 @@ a.active-facets__button {
   font-family: 'Myriad Pro';
   font-size: 16px;
   color: #000000; 
+  font-weight: lighter;
   opacity:.7;
 }
 
@@ -260,6 +270,7 @@ a.active-facets__button {
   font-size: 16px;
   color: #000;
   opacity: .7;
+  font-weight: lighter;
 }
 
 
@@ -316,6 +327,23 @@ a.active-facets__button {
 .filter-mask{
   width : 19%;
 }
+.sorting-part.total-items{
+  position : relative;
+}
+.sorting-part.total-items svg{
+  right: 0px;
+  position: absolute;
+  top: 12px;
+  cursor : pointer;
+}
+
+.range-count{
+  font-weight: lighter;
+}
+
+.disp_no{
+  display : none; 
+}
 
 @media screen and (max-width: 992px) {
   .collection-filter-left , .collection-filter-right, .filter-mask{
@@ -337,6 +365,7 @@ a.active-facets__button {
     display: flex;
     padding: 25px;
     border-top: 2px solid #FEC23B;
+    border-top: 0;
   }
   .current{
     font-weight: 700;
@@ -377,9 +406,40 @@ a.active-facets__button {
   .collection-tag{
     color : #000;
   }
-}
-
-@media screen and (max-width: 768px) {
+  .filter-mask{
+    visibility : hidden;
+    transition: visibility 0.3s ease;
+  }
+  .filter-mask.active {
+    visibility: visible;
+  }
+  .filter-mask.active .collection-filter-left{
+    top: 0;
+    /*     overflow-y: scroll; */
+  }
+  .filter-mask.active .collection-filter-left::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-toggler{
+    display: flex;
+    position: fixed;
+    bottom: -1px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    text-transform: uppercase;
+    border: 3px solid #fec23b;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+    left: 0;
+    z-index: 12;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+  }
   .collection-filter-left{
     position: fixed;
     max-height: calc(100vh - 54.8px);
@@ -388,46 +448,48 @@ a.active-facets__button {
     transition: top .3s ease;
     left: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 11;
     height: 100%;
   }
-  .filter-mask.active .collection-filter-left{
-    top: 0;
-    overflow-y: scroll;
+  .product-filter-heading{
+    text-align: center;
+    font-family: 'Myriad Pro';
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    width: 85%;
   }
-  .filter-mask.active .collection-filter-left::-webkit-scrollbar {
-    display: none;
+  .product-filter-mask{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    border: 2px solid #FEC23B;
+    border-radius: 8px 8px 0 0;
   }
+  .product-filter-close{
+    margin-top: 9px;
+  }
+  .background-change{
+    background-color : #fec23b; 
+  }
+  .overflow{
+    overflow-y : auto;
+    height: 80vh;
+  }
+}
 
-  .filter-toggler{
-  }
+@media screen and (max-width: 768px) {
+
   .collection-banner-wrapper {
     display : none;
   }
   .collection-banner-wrapper.small {
     display : block;
   }
-  .filter-toggler{
-    display : block; 
-    position: fixed;
-    bottom: 0;
-    background-color: #FFFFFF;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    width: 100%;
-    text-transform: uppercase;
-    padding: 14px 108px;
-    border: 3px solid #FEC23B;
-    border-bottom: none;
-    left: 0;
-    z-index : 6;
-    border-radius: 8px 8px 0 0;
-    cursor : pointer;
-  }
-  .filter-mask{
-    display : none;
-  }
+
   .banner-btn-link{
     margin-top: 45px;
   }
@@ -442,7 +504,9 @@ a.active-facets__button {
   .collection-filter-wrapper .product-collection-card{
     width : 47.5%;
   }
-
+  .sex-filter .panel{
+    flex-direction : column;
+  }
 }
 
 @media screen and (max-width: 479px) {

@@ -59,7 +59,7 @@
 <div class="blog-filter-container container">
   <div class="filter-pills">
     {% for tag in blogs.news.all_tags %}
-    <span class="article_filter_tag" data-bfilter="{{ tag }}">{{tag}}</span>
+    <span class="first_active article_filter_tag {% if tag == "alle" %} active-pill {% endif %}" data-bfilter="{{ tag }}">{{tag | upcase }}</span>
  	{% endfor %}
   </div>
   <div class="filtered-blog-container">

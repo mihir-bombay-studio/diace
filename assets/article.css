@@ -20,6 +20,8 @@
   top: 23px;
   text-decoration: none;
   color: #000000;
+  font-family : Myriad Pro;
+  font-weight: lighter;
 }
 
 .article-container {
@@ -45,7 +47,7 @@
 }
 
 .heading{
-
+  font-family : Myriad Pro;
   font-size: 32px;
   font-weight: bold;
   margin: 26px 0 16px 0;
@@ -126,6 +128,10 @@ img {
   transform: rotate(270deg);
 }
 
+
+.article-content{
+  font-family : Myriad Pro;
+}
 .share{
   max-width : 768px; 
   padding: 26px 0 52px 0;
@@ -133,6 +139,7 @@ img {
 
 .previous , .next{
   cursor : pointer;
+
 }
 
 

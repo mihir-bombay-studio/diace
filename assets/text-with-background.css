@@ -7,23 +7,23 @@
 }
 
 .heading-container{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-    text-align: left;
-    font: normal normal bold 32px/48px Myriad Pro;
-    letter-spacing: 0px;
-    color: #000000;
-    text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  text-align: left;
+  font: normal normal bold 32px/48px Myriad Pro;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .text-content {
-    max-width: 768px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 52px;
-    justify-content: space-around;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 52px;
+  justify-content: space-around;
 }
 
 .content-container {
@@ -37,30 +37,33 @@
 
 
 .text-description{
-    text-align: left;
-    font: normal normal 300 16px/24px Myriad Pro;
-    letter-spacing: 0px;
-    color: #000000;
+  text-align: left;
+  font: normal normal 300 16px/24px Myriad Pro;
+  letter-spacing: 0px;
+  color: #000000;
 }
 
 .back-btn a{
-    position: absolute;
-    left: 52px;
-    top: 23px;
-    text-decoration: none;
-    color: #000;
+  position: absolute;
+  left: 52px;
+  top: 23px;
+  text-decoration: none;
+  color: #000;
+  font-family : Myriad Pro;
+  font-weight: lighter;
 }
 
 .back-btn svg{
   transform: rotate(90deg);
   color: #0d0d0d;
   border: #0d0d0d;
+  margin-bottom: 2px;
 }
 
 
 
 @media screen and (max-width: 768px) {
   .back-btn{
-  	display :none;
+    display :none;
   }
 }

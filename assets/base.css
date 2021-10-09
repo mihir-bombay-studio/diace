@@ -1284,11 +1284,11 @@ deferred-media {
 
 .select .icon-caret,
 .customer select + svg {
-  height: 0.6rem;
+  height: 0.7rem;
   pointer-events: none;
   position: absolute;
   top: calc(50% - 0.35rem);
-  right: 1.5rem;
+  right: 0.5rem;
 }
 
 .select__select,
