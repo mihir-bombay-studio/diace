@@ -475,6 +475,9 @@ a.active-facets__button {
   .background-change{
    	background-color : #fec23b; 
   }
+  .overflow{
+   overflow-y : auto; 
+  }
 }
 
 @media screen and (max-width: 768px) {
