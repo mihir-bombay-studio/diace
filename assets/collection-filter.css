@@ -414,7 +414,7 @@ a.active-facets__button {
   }
   .filter-mask.active .collection-filter-left{
     top: 0;
-    overflow-y: scroll;
+/*     overflow-y: scroll; */
   }
   .filter-mask.active .collection-filter-left::-webkit-scrollbar {
     display: none;
@@ -473,10 +473,11 @@ a.active-facets__button {
     margin-top: 9px;
   }
   .background-change{
-   	background-color : #fec23b; 
+    background-color : #fec23b; 
   }
   .overflow{
-   overflow-y : auto; 
+    overflow-y : auto;
+    height: 80vh;
   }
 }
 
