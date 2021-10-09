@@ -903,6 +903,9 @@
 
 
   $(".filter-toggler").click(function(){
+    $(this).text(function(i, text){
+      return text === "PRODUCTEN FILTEREN" ? "TOEPASSEN" : "PRODUCTEN FILTEREN";
+    })
     toggleFilter();
   });
   
