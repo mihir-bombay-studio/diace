@@ -86,7 +86,7 @@ max-width: unset;
 @media screen and (max-width: 768px) {
   .collection-btn{
     display : block;
-    padding : 16px 48px;
+    padding : 16px 0;
     box-shadow: 0 3px #33270c1a;
     border-radius: 0 0 8px 8px;
     text-align : center;
