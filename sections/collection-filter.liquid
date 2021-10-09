@@ -899,6 +899,9 @@
   function closeFilter() {
 //     $(".filter-mask").fadeOut("fast");
     $(".filter-toggler").removeClass("background-change");
+    $(".filter-toggler").text(function(i, text){
+      return text === "PRODUCTEN FILTEREN" ? "TOEPASSEN" : "PRODUCTEN FILTEREN";
+    })
     $(".filter-mask").removeClass("active");
   }
 
