@@ -175,6 +175,7 @@ input::-webkit-slider-thumb {
 
 .sex-filter-title-wrapper {
   padding-bottom: 16px;
+  cursor : pointer;
 }
 
 .check-box {
