@@ -404,6 +404,20 @@ a.active-facets__button {
   .collection-tag{
     color : #000;
   }
+  .filter-mask{
+    visibility : hidden;
+    transition: visibility 0.3s ease;
+  }
+  .filter-mask.active {
+    visibility: visible;
+  }
+  .filter-mask.active .collection-filter-left{
+    top: 0;
+    overflow-y: scroll;
+  }
+  .filter-mask.active .collection-filter-left::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -418,13 +432,7 @@ a.active-facets__button {
     z-index: 5;
     height: 100%;
   }
-  .filter-mask.active .collection-filter-left{
-    top: 0;
-    overflow-y: scroll;
-  }
-  .filter-mask.active .collection-filter-left::-webkit-scrollbar {
-    display: none;
-  }
+  
 
   .filter-toggler{
   }
@@ -452,13 +460,7 @@ a.active-facets__button {
     border-radius: 8px 8px 0 0;
     cursor : pointer;
   }
-  .filter-mask{
-    visibility : hidden;
-    transition: visibility 0.3s ease;
-  }
-  .filter-mask.active {
-    visibility: visible;
-  }
+  
   .banner-btn-link{
     margin-top: 45px;
   }
