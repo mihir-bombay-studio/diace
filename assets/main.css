@@ -187,14 +187,14 @@ button:hover .icon-send{
     right: -50px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   .no-desktop, div.no-desktop{
     display:none;
   }
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .no-mobile,div li.no-mobile, div .no-mobile{
     display:none;
   }
