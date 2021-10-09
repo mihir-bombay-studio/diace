@@ -1,45 +1,16 @@
 {{ 'form-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="form-with-text">
+<div class="form-with-text {{ section.settings.section_padding }} {{ section.settings.section_margin }}">
   <div class="container">
-    <div class="form_with_text_wrapper">
-      <div class="text_content">
-        <div class="text_heading">
-          <h2 class="section-heading">{{section.settings.contact_text}}</h2>
-        </div>
-        <div class="text_description">
-          <p>{{section.settings.contact_desc}}</p>
-          <div class="address">
-            <span class="flex-box">{% include "map-pin" %}</span>
-            <span class="address_text">{{section.settings.contact_address}}</span>
-          </div>
-          <div class="mail">
-            <span class="flex-box">{% include "mail-box" %}</span>
-            <span class="address_text">{{section.settings.contact_email}}</span>
-          </div>
-          <div class="frequently_asked_q">
-            <button class="btn">{{section.settings.btn}}</button>
-          </div>
-        </div>
+    <div class="form_with_text_wrapper plain-form">
+      <div class="text_heading">
+        <h2 class="section-heading">{{section.settings.contact_text}}</h2>
       </div>
       <div class="form">
         {%- form 'contact', id: 'ContactForm' -%}
-        {%- if form.posted_successfully? -%}
-        <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
-        {%- elsif form.errors -%}
-        <div class="form__message">
-          <h2 class="form-status caption-large" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
-        </div>
-        <ul class="form-status-list caption-large" role="list">
-          <li>
-            <a href="#ContactForm-email" class="link">
-              {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
-            </a>
-          </li>
-        </ul>
-        {%- endif -%}
+
           <div class="form_container">
-            <div class="input_form_control input-1">
+            <div class="input_form_control ">
               <label for="first-name">Naam*</label>
               <input placeholder="Vul je naam in" 
                      type="text" 
@@ -48,7 +19,7 @@
                      required
                      >
             </div>
-            <div class="input_form_control input-2">
+            <div class="input_form_control ">
               <label for="ContactForm-email">E-MAIL*</label>
               <input
                      autocomplete="email"
@@ -73,7 +44,7 @@
               </small>
               {%- endif -%}
             </div>
-            <div class="input_form_control input-3">
+            <div class="input_form_control ">
               <label for="ContactForm-phone">TELEFOONNUMMER</label>
               <input 
                      type="tel" 
@@ -86,25 +57,16 @@
                      
                      >
             </div>
-            <div class="input_form_control input-4">
-              <label for="topic">ONDERWERP</label>
+            <div class="input_form_control ">
+              <label for="cv-motivate">CV - MOTIVATIE</label>
               <input 
-                     placeholder="Waarover gaat je bericht?" 
+                     placeholder="Klik om uw bestand te updloaden" 
                      type="text" 
-                     id="topic" 
-                     name="contact[topic]"
+                     id="cv-motivate" 
+                     name="contact[cv_motivate]"
                      >
             </div>
-            <div class="input_form_control input-5">
-              <label for="order-number">ORDERNUMMER</label>
-              <input 
-                     placeholder="Vul je ordernummer in, indien van toepassing" 
-                     type="text" 
-                     id="order-number" 
-                     name="contact[order_number]"
-                     >
-            </div>
-            <div class="input_form_control input-6">
+            <div class="input_form_control ">
               <label for="message">UW BERICHT*</label>
               <textarea 
                         rows="8" cols="50" 
@@ -121,6 +83,20 @@
               <button type="submit" class="btn-yellow">VERZENDEN <span class="icon-send">{% render "icon-send" %}</span></button>
             </div>
           </div>
+                {%- if form.posted_successfully? -%}
+        <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
+        {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="form-status caption-large" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+        </div>
+        <ul class="form-status-list caption-large" role="list">
+          <li>
+            <a href="#ContactForm-email" class="link">
+              {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+            </a>
+          </li>
+        </ul>
+        {%- endif -%}
        {%- endform -%}
       </div>
     </div>
@@ -129,7 +105,7 @@
 
 {% schema %}
   {
-    "name": "ContactForm-with-text",
+    "name": "Contact form plain",
     "settings": [
 		{
           "id": "contact_text",
@@ -137,30 +113,58 @@
           "label": "Heading",
 		  "default" : "WAAR KAN JE ONS VINDEN"
         },
-		{
-          "id": "contact_desc",
-          "type": "html",
-          "label": "Description"
-        },
-		{
-          "id": "contact_address",
-          "type": "textarea",
-          "label": "Address"
-        },
-		{
-          "id": "contact_email",
-          "type": "text",
-          "label": "Email"
-        },
-		{
-          "id": "btn",
-          "type": "text",
-          "label": "Button Text"
-        }
+{
+                    "type": "select",
+                    "id": "section_padding",
+                    "options": [
+                        {
+                            "value": "padding-y-0",
+                            "label": "None"
+                        },
+                        {
+                            "value": "padding-y-25",
+                            "label": "Small"
+                        },
+                        {
+                            "value": "padding-y-50",
+                            "label": "Medium"
+                        },
+                        {
+                            "value": "padding-y-75",
+                            "label": "Large"
+                        }
+                    ],
+                    "default": "padding-y-25",
+                    "label": "Section Padding(top-bottom)"
+                },
+                {
+                    "type": "select",
+                    "id": "section_margin",
+                    "options": [
+                        {
+                            "value": "margin-y-0",
+                            "label": "None"
+                        },
+                        {
+                            "value": "margin-y-25",
+                            "label": "Small"
+                        },
+                        {
+                            "value": "margin-y-50",
+                            "label": "Medium"
+                        },
+                        {
+                            "value": "margin-y-75",
+                            "label": "Large"
+                        }
+                    ],
+                    "default": "margin-y-25",
+                    "label": "Section Margin(top)"
+                }
 	],
 	"presets": [
     {
-      "name": "ContactForm with text"
+      "name": "Contact form plain"
     }
   ]
   }

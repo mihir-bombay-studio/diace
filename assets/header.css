@@ -15,7 +15,7 @@
 }
 
 .header-wrapper.mb{
-  margin-bottom: 52px;
+    margin-bottom: 52px;
 }
 
 .menu-btn {
@@ -129,7 +129,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   margin-left: 4px;
 }
 
-.right-nav-lower .right-nav-list:hover{
+.hover-dropdown.right-nav-list:hover{
   border-bottom: 2px solid #FEC23B;
 }
 
@@ -142,7 +142,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 
-.right-nav-lower li:hover .yellow-down-chevron{
+.hover-dropdown:hover .yellow-down-chevron{
   transform: rotate(180deg);
 }
 
@@ -178,9 +178,9 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .logout-btn {
-    display: block;
-    text-align: right;
-    color: #737373;
+  display: block;
+  text-align: right;
+  color: #737373;
 }
 
 .account-btn {
@@ -258,26 +258,35 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   color: inherit;
 }
 /* --------------------- LOGIN PAGE FORM ------------------------------ */
-
 .customer-login-wrapper {
-    margin: 5rem auto 10rem auto;
+  padding: 5rem 0 10rem 0;
+  background-color: #FEC23B33;
+  height: 75vh;
+  display: flex;
+  align-items: center;
 }
+
+.customer-login-wrapper > .container{
+  max-width:540px;
+}
+
 .login-header {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .customer-login-form-wrapper {
-    color: #737373;
+  color: #737373;
 }
 
 .login-page label {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: left;
-    display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  display: block;
 }
 
 .login-page input {
@@ -294,16 +303,16 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
 }
 
 .forgot-password {
-    font-size: 12px;
-    display: block;
-    font-weight: 100;
-    text-align: right;
+  font-size: 12px;
+  display: block;
+  font-weight: 100;
+  text-align: right;
 }
 
 
 .hover-wrapper{
   position: absolute;
-  padding-top: 20px;
+
   width :100%;
 }
 
@@ -385,13 +394,17 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   position : relative;
 }
 
+.hover-dropdown:hover .hover-wrapper{
+  padding-top: 20px;
+}
+
 .hover-dropdown:hover .dropdown-container {
   display : block;
 }
 
 
-@media screen and (max-width: 768px) {
-  .header-wrapper.mb{
+@media screen and (max-width: 991px) {
+  .header-wrapper{
     padding-top: 0;
     margin-bottom: 16px;
     line-height: normal;
@@ -423,11 +436,15 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
     padding: 0 16px;
   }
   
+  .header-nav-list-sub{
+  left: -16px;
+  }
+
   .right-nav-upper li {
     margin-left: 0;
   }
-  
-  
+
+
   /* ======================= MOBILE NAV=============================== */
 
   .mobile-nav-container {
@@ -435,7 +452,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
     z-index: 10;
     background-color: #ffffff;
     width: 100%;
-/*     max-width: 480px; */
+    /*     max-width: 480px; */
     height:calc(100vh - 77px);
     left: 0;
     bottom: 0;
@@ -472,12 +489,12 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
     height: 12px;
     padding: 0;
   }
-  
+
   .mobile-nav-langs .active {
     font-weight: 700;
     text-decoration: underline;
   }
-  
+
   .user-icon .a-icon-user {
     stroke: #000000;
   }

@@ -312,5 +312,16 @@
         "info": "Select a product for upsell"
       }
     ]
+  },
+  {
+    "name": "Empty Cart links",
+    "settings": [
+      {
+        "id": "empty_cart_links",
+        "type": "link_list",
+        "label": "Menu",
+        "info": "This menu will be displayed when the cart is empty"
+      }
+    ]
   }
 ]

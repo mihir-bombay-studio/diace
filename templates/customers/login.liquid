@@ -1,10 +1,10 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 <div class="customer-login-wrapper">
-<div class="customer login login-page container">
+<div class="login login-page container">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
   </h1>
-  <div>
+  <div class="customer">
     <p>
       {{ 'customer.recover_password.subtext' | t }}
     </p>
@@ -53,7 +53,7 @@
   </div>
 
   <h1 id="login" class="login-header" tabindex="-1">
-    {{ 'customer.login_page.title' | t }}
+    INLOGGEN
   </h1>
   <div class="customer-login-form-wrapper">
     {%- if recover_success == true -%}

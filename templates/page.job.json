@@ -13,12 +13,63 @@
         "description": "Diacé is the online place-to-go voor alles wat met diabetes accessoires te maken heeft. Je kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 500 artikels brengen wij meer kleur in het leven met diabetes, op een leuke en aangename manier. Als jonge startup met internationale ambities zijn wij op zoek naar versterking. Ben jij klaar voor een nieuw avontuur? Dan ben jij misschien wel dé persoon die wij zoeken!\n<br><br>\n<strong>FUNCTIEOMSCHRIJVING<\/strong>\n<br><br>\nDiacé is the online place-to-go voor alles wat met diabetes accessoires te maken heeft. Je kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 500 artikels brengen wij meer kleur in het leven met diabetes, op een leuke en aangename manier. Als jonge startup met internationale ambities zijn wij op zoek naar versterking. Ben jij klaar voor een nieuw avontuur? Dan ben jij misschien wel dé persoon die wij zoeken!\n<br><br>\n<strong>FUNCTIEOMSCHRIJVING<\/strong>\n<br><br>\nDiacé is the online place-to-go voor alles wat met diabetes accessoires te maken heeft. Je kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 500 artikels brengen wij meer kleur in het leven met diabetes, op een leuke en aangename manier. Als jonge startup met internationale ambities zijn wij op zoek naar versterking. Ben jij klaar voor een nieuw avontuur? Dan ben jij misschien wel dé persoon die wij zoeken!\n<br><br>",
         "show_btn": true,
         "link_text": "Terug",
-        "link_url": ""
+        "link_url": "",
+        "btm_padding": false
+      }
+    },
+    "1633675664df953849": {
+      "type": "contact-form-plain",
+      "settings": {
+        "contact_text": "IS DEZE JOB OP JOUW LIJF GESCHREVEN? SOLLICITEER NU!",
+        "section_padding": "padding-y-0",
+        "section_margin": "margin-y-0"
+      }
+    },
+    "163368746876cc4524": {
+      "type": "section-with-divider",
+      "blocks": {
+        "e0aa5ea5-8405-43e9-90bf-fdbb9ea66798": {
+          "type": "social",
+          "settings": {
+            "social_icon": "shopify:\/\/shop_images\/instagram.png"
+          }
+        },
+        "2d7c74ba-c04f-4650-a2fb-99e1477359b5": {
+          "type": "social",
+          "settings": {
+            "social_icon": "shopify:\/\/shop_images\/facebook.png"
+          }
+        },
+        "48384eee-f2d3-4717-9498-c45c27016f94": {
+          "type": "social",
+          "settings": {
+            "social_icon": "shopify:\/\/shop_images\/instagram.png"
+          }
+        },
+        "2050f2ee-5627-46ec-8730-1c8fa48c7409": {
+          "type": "social",
+          "settings": {
+            "social_icon": "shopify:\/\/shop_images\/facebook.png"
+          }
+        }
+      },
+      "block_order": [
+        "e0aa5ea5-8405-43e9-90bf-fdbb9ea66798",
+        "2d7c74ba-c04f-4650-a2fb-99e1477359b5",
+        "48384eee-f2d3-4717-9498-c45c27016f94",
+        "2050f2ee-5627-46ec-8730-1c8fa48c7409"
+      ],
+      "settings": {
+        "share_heading": "Deel deze vacature",
+        "previous_heading": "Vorige vacature",
+        "next_heading": "Volgende vacature"
       }
     }
   },
   "order": [
     "main",
-    "16327568795ab9a08e"
+    "16327568795ab9a08e",
+    "1633675664df953849",
+    "163368746876cc4524"
   ]
 }

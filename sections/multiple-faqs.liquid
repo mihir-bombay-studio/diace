@@ -3,11 +3,11 @@
     <div class="faq-wrapper container">
         <h2 class="section-heading bold text-center">{{ section.settings.section_heading }}</h2>
         <div class="pills flex-box justify-center">
-            <div class="pill">{{ section.settings.faq_heading_1 }}</div>
-            <div class="pill">{{ section.settings.faq_heading_2 }}</div>
-            <div class="pill">{{ section.settings.faq_heading_3 }}</div>
+            <a href="#subject_1" class="pill">{{ section.settings.faq_heading_1 }}</a>
+            <a href="#subject_2" class="pill">{{ section.settings.faq_heading_2 }}</a>
+            <a href="#subject_3" class="pill">{{ section.settings.faq_heading_3 }}</a>
         </div>
-        <h2 class="faq-heading bold">{{ section.settings.faq_heading_1 }}</h2>
+        <h2 id="subject_1" class="faq-heading bold">{{ section.settings.faq_heading_1 }}</h2>
         {% for block in section.blocks %}
             {%- case block.type -%}
                 {%- when 'subject_1' -%}
@@ -20,7 +20,7 @@
                     </div>
             {% endcase %}
         {% endfor %}
-        <h2 class="faq-heading bold">{{ section.settings.faq_heading_2 }}</h2>
+        <h2 id="subject_2" class="faq-heading bold">{{ section.settings.faq_heading_2 }}</h2>
         {% for block in section.blocks %}
             {%- case block.type -%}
                 {%- when 'subject_2' -%}
@@ -33,7 +33,7 @@
                     </div>
             {% endcase %}
         {% endfor %}
-        <h2 class="faq-heading bold">{{ section.settings.faq_heading_3 }}</h2>
+        <h2 id="subject_3" class="faq-heading bold">{{ section.settings.faq_heading_3 }}</h2>
         {% for block in section.blocks %}
             {%- case block.type -%}
                 {%- when 'subject_3' -%}

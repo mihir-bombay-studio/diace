@@ -77,6 +77,7 @@ a {
   display: block;
   width: fit-content;
   cursor: pointer;
+  font-family: 'Myriad Pro',sans-serif;
 }
 
 .btn-grey{
@@ -127,6 +128,7 @@ a {
   width:100%;
 }
 
+
 .hover-text {
     padding: 2px 16px 0 0;
     text-transform: uppercase;
@@ -166,19 +168,81 @@ a {
 }
 
 @media screen and (min-width: 769px) {
+
+.icon-send{
+  margin-top: 5px;
+  transition: .3s ease;
+}
+
+button:hover .icon-send{
+  transform: rotate(-26deg) translateX(5px);
+}
+
+.padding-y-0{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.padding-y-25{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.padding-y-50{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.padding-y-75{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.margin-y-0{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.margin-y-25{
+  margin-top: 25px;
+  /*   margin-bottom: 25px; */
+}
+
+.margin-y-50{
+  margin-top: 50px;
+  /*   margin-bottom: 50px; */
+}
+
+.margin-y-75{
+  margin-top: 75px;
+  /*   margin-bottom: 75px; */
+}
+
+.bg-yellow-dots {
+    position: absolute;
+    z-index: -1;
+}
+
+.dots-right-down {
+    bottom: -56px;
+    right: -50px;
+}
+
+@media screen and (min-width: 991px) {
+
   .no-desktop, div.no-desktop{
     display:none;
   }
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .no-mobile,div li.no-mobile, div .no-mobile{
     display:none;
   }
 
-  .mobile-top-margin {
+/*   .mobile-top-margin {
     margin-top: 10.5rem;
-  }
+  } */
 
 }

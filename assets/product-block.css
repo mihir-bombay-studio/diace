@@ -1,5 +1,16 @@
+.slick-arrow.slick-disabled{
+display:none !important;
+}
+
 .product-block-wrapper {
-    margin-bottom: 136px;
+    margin: 3rem auto 10rem auto;
+}
+
+
+.product-block-wrapper .dots-left-down svg {
+    width: initial;
+    height: initial;
+  max-width: 100%;
 }
 
 .product-block-left, .product-block-right {
@@ -38,6 +49,7 @@
     border: 2px solid;
   	cursor: pointer;
   	user-select: none;
+  padding-bottom: 5px;
 }
 
 .qty-nav.qty-minus{

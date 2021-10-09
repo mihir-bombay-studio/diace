@@ -1422,7 +1422,14 @@ input[type='checkbox'] {
   font-size: 1.4rem;
   line-height: 1;
   margin-top: 1rem;
+  gap: 16px;
+  justify-content: center;
 }
+  
+  .form__message svg{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 
 .form__message--large {
   font-size: 1.6rem;
@@ -1460,6 +1467,7 @@ input[type='checkbox'] {
 .form-status-list {
   padding: 0;
   margin: 2rem 0 4rem;
+  justify-content: center;
 }
 
 .form-status-list li {
@@ -2076,3 +2084,15 @@ details-disclosure > details {
     transform: translateY(0);
   }
 }
+
+ 
+  .content-for-layout{
+	height:100%;
+    overflow-x: hidden;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .content-for-layout{
+      padding-top:80px;
+    }
+  }

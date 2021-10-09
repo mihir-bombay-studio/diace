@@ -15,7 +15,7 @@ $(document).ready(function(){
     dots: false,
     arrows: true,
     focusOnSelect: true,
-    infinite: true,
+    infinite: false,
     responsive: [
       {
         breakpoint: 992,

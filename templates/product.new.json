@@ -1,11 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "1632117875e7ef7fbe": {
       "type": "product-block",
       "settings": {
@@ -61,7 +55,7 @@
         "1632296628d5bc229d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <\/p><p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat<\/p>"
           }
         },
         "1632296628d5bc229d-2": {
@@ -81,7 +75,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
         "img_preference": "image second",
-        "text_over_img": "NICK & STEFANIE"
+        "text_over_img": "NICK & STEFANIE",
+        "padd-top": false
       }
     },
     "163229690103dae5ee": {
@@ -191,18 +186,25 @@
       "settings": {
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
         "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
+        "remove_padd": true
+      }
+    },
+    "1633620719d73fe2db": {
+      "type": "newsletter-new",
+      "settings": {
         "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
-        "subscription_desc": "We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!"
+        "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.",
+        "submit_btn_text": "VERZENDEN"
       }
     }
   },
   "order": [
-    "main",
     "1632117875e7ef7fbe",
     "1632294615f908e16b",
     "1632296628d5bc229d",
     "163229690103dae5ee",
     "16323185558f193575",
-    "163231983925a321da"
+    "163231983925a321da",
+    "1633620719d73fe2db"
   ]
 }

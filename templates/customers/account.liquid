@@ -1,10 +1,13 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 {{ 'orders.css' | asset_url | stylesheet_tag }}
+{{ 'social-media.css' | asset_url | stylesheet_tag }}
 
 
 
 <div class="grid-wrapper container mobile-top-margin ">
+  <a href="/account/logout" class="logout-btn bold">LOG UIT</a>
   <div class="collage-grid flex-box justify-between no-mobile">
+    
     <div id="welcome-tab" class="welcome-tab tabcontent" style="display: block">
       <div class="grid-left-img"> {% render "order_text" %}</div>
       <div class="text-over-grid bold white-bg">WELKOM TERUG {{ customer.first_name }}</div>
@@ -23,7 +26,7 @@
           </div>
           <div class="detail-block">
             <div class="detail-header">
-              LEVERINGSADRES <span class="underline-link">Wijzig</span>
+              LEVERINGSADRES <a href="{{ routes.account_addresses_url }}" class="underline-link">Wijzig</a>
             </div>
             <div>
               {{ order.shipping_address | format_address }}
@@ -118,7 +121,7 @@
               </div>
               <div class="detail-block">
                 <div class="detail-header">
-                  LEVERINGSADRES <span class="underline-link">Wijzig</span>
+                  LEVERINGSADRES <a href="{{ routes.account_addresses_url }}" class="underline-link">Wijzig</a>
                 </div>
                 <div>
                   {{ order.shipping_address | format_address }}
@@ -164,6 +167,51 @@
   </div>
 </div>
 
+<!-- newsletter -->
+
+<div class="container">
+  <div class="social-media  socila-media-lower newsletter-container">
+    <div class="bg-yellow-dots dots-right-down">
+      {% include 'bg-yellow-dots-sm' %}
+    </div>
+    <h2 class="text-center newsletter-subscription-heading bold">WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF</h2>
+    <div class="text-center newsletter-subscription-desc light">We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.</div>
+
+    {% form 'customer', class: 'newsletter-form' %}
+    <div class="subscription-form flex-box">
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <input
+             id="NewsletterForm--{{ section.id }}"
+             type="email"
+             name="contact[email]"
+             class="subscription-form-input"
+             value="{{ form.email }}"
+             aria-required="true"
+             autocorrect="off"
+             autocapitalize="off"
+             autocomplete="email"
+             {% if form.errors %}
+             autofocus
+             aria-invalid="true"
+             aria-describedby="Newsletter-error--{{ section.id }}"
+             {% elsif form.posted_successfully? %}
+             aria-describedby="Newsletter-success--{{ section.id }}"
+             {% endif %}
+             placeholder="youremail@mail.com"
+             required
+             >
+      <button class="submit-btn btn btn-yellow bold" type="submit" form="contact_form" value="Submit">VERZENDEN <span class="icon-send">{% render "icon-send" %}</span></button>
+    </div>
+        {%- if form.errors -%}
+    <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+    {%- endif -%}
+    {%- if form.posted_successfully? -%}
+    <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+    {%- endif -%}
+    {% endform %}
+
+  </div>
+</div>
 
 
 
@@ -175,6 +223,7 @@
 
 {% comment %}
 
+{% endcomment %}
 <div class="customer account">
   <div>
     <h1>{{ 'customer.account.title' | t }}</h1>
@@ -291,7 +340,6 @@
 
   </div>
 </div>
-{% endcomment %}
   
   <script>
   function openTab(evt, tabId) {

@@ -1,0 +1,67 @@
+{{ 'article.css' | asset_url | stylesheet_tag }}
+
+<div class="container share">
+  <div class="content-wrapper">
+    <div class="article-share">
+      <p class="share-heading">{{section.settings.share_heading}}</p>
+      <div class="share-platforms">
+        {% for block in section.blocks %}
+        <img src="{{ block.settings.social_icon | img_url : "icon" }}" alt="social-icon" loading="lazy">
+        {% endfor %}
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="next-previous-article">
+      <span class="previous">{% include "back-icon" %} {{section.settings.previous_heading}}</span>
+      <span class="next">{{section.settings.next_heading}} {% include "back-icon" %} </span>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Section with divider",
+    "settings": [
+		{
+          "id": "share_heading",
+          "type": "text",
+          "label": "Heading"
+        },
+		{
+          "id": "previous_heading",
+          "type": "text",
+          "label": "Previous Text"
+        },
+		{
+          "id": "next_heading",
+          "type": "text",
+          "label": "Next Text"
+        }
+	],
+	"blocks": [
+	{
+          "type": "social",
+          "name": "Social Icon",
+          "limit": 4,
+          "settings": [
+            {
+              "id": "social_icon",
+              "type": "image_picker",
+              "label": "Social icon"
+            }
+          ]
+        }
+  ],
+  "presets": [
+    {
+      "name": "Social Icon"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

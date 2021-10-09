@@ -108,9 +108,8 @@ border-bottom: 1px solid;
     stroke: var(--background-yellow);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .pill{
-    padding: 3px 15px;
     background : #fec23B33;
   }
   .faq-section{

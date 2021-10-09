@@ -161,6 +161,9 @@ h2.newsletter-subscription-heading {
     text-transform: uppercase;
     font-family: 'Myriad Pro', sans-serif;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /*     width: calc(30% - 16px); */
 
     }
@@ -199,6 +202,8 @@ h2.newsletter-subscription-heading {
 .text-new-btn.bold{
   display : none; 
 }
+
+
 
 @media screen and (max-width: 992px) {
   .social-media-wrapper{

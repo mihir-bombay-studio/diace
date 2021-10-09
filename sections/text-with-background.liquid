@@ -8,7 +8,7 @@
     {{section.settings.text}}
   </div>
 </div>
-<div class="container content-container">
+<div class="container content-container {% if section.settings.btm_padding %} btm_padding {% endif %}">
   <div class="text-content">
     <div class="text-description">
       {{section.settings.description}}
@@ -47,6 +47,12 @@
           "id": "link_url",
           "type": "url",
           "label": "Link Url"
+        },
+		{
+          "id": "btm_padding",
+          "type": "checkbox",
+          "label": "Add Bottom Padding",
+		  "default" : true
         }
 	
 	],

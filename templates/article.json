@@ -41,10 +41,51 @@
       "type": "article",
       "settings": {
       }
+    },
+    "1633690490a978ff8a": {
+      "type": "section-with-divider",
+      "blocks": {
+        "54a1ff4b-ada3-4b40-ace7-e62f17e5d006": {
+          "type": "social",
+          "settings": {
+            "social_icon": "shopify:\/\/shop_images\/instagram.png"
+          }
+        },
+        "6ac79c46-7615-492a-bc4b-200d90fba1a8": {
+          "type": "social",
+          "settings": {
+            "social_icon": "shopify:\/\/shop_images\/facebook.png"
+          }
+        },
+        "0d8cac31-057b-453f-8616-28019c6ad7ae": {
+          "type": "social",
+          "settings": {
+            "social_icon": "shopify:\/\/shop_images\/instagram.png"
+          }
+        },
+        "722bb71b-b78d-4d93-8a72-516d3120dcc9": {
+          "type": "social",
+          "settings": {
+            "social_icon": "shopify:\/\/shop_images\/facebook.png"
+          }
+        }
+      },
+      "block_order": [
+        "54a1ff4b-ada3-4b40-ace7-e62f17e5d006",
+        "6ac79c46-7615-492a-bc4b-200d90fba1a8",
+        "0d8cac31-057b-453f-8616-28019c6ad7ae",
+        "722bb71b-b78d-4d93-8a72-516d3120dcc9"
+      ],
+      "settings": {
+        "share_heading": "Deel dit artikel",
+        "previous_heading": "Vorig artikel",
+        "next_heading": "Volgend artikel"
+      }
     }
   },
   "order": [
     "main",
-    "1632725956fec75c3a"
+    "1632725956fec75c3a",
+    "1633690490a978ff8a"
   ]
 }

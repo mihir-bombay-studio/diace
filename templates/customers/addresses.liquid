@@ -2,7 +2,7 @@
 <script src="{{ 'customer.js' | asset_url }}" defer></script>
 
 {%- paginate customer.addresses by 5 -%}
-  <div class="customer addresses" data-customer-addresses>
+  <div class="customer addresses container" data-customer-addresses>
     <svg style="display: none">
       <symbol id="icon-caret" viewBox="0 0 10 6">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
@@ -15,6 +15,7 @@
   
     <div data-address>
       <button
+              class="btn btn-yellow"
         type="button"
         aria-expanded="false"
         aria-controls="AddAddress"
@@ -92,8 +93,8 @@
             <label for="address_default_address_new">{{ 'customer.addresses.set_default' | t }}</label>
           </div>
           <div>
-            <button>{{ 'customer.addresses.add' | t }}</button>
-            <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
+            <button class="btn btn-yellow">{{ 'customer.addresses.add' | t }}</button>
+            <button class="btn btn-yellow" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
           </div>
         {%- endform -%}
       </div>
@@ -107,6 +108,7 @@
           {%- endif -%}
           {{ address | format_address }}
           <button
+                  class="btn btn-yellow"
             type="button"
             id="EditFormButton_{{ address.id }}"
             aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
@@ -117,6 +119,7 @@
             {{ 'customer.addresses.edit' | t }}
           </button>
           <button
+                  class="btn btn-yellow"
             type="button"
             aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
             data-target="{{ address.url }}"
@@ -203,8 +206,8 @@
                 </label>
               </div>
               <div>
-                <button>{{ 'customer.addresses.update' | t }}</button>
-                <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
+                <button class="btn btn-yellow">{{ 'customer.addresses.update' | t }}</button>
+                <button class="btn btn-yellow" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
               </div>
             {%- endform -%}
           </div>
