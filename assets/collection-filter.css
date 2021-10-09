@@ -362,6 +362,7 @@ a.active-facets__button {
   .filter-tags.small{
     display: flex;
     padding: 25px;
+    margin-top: 80px;
     border-top: 2px solid #FEC23B;
   }
   .current{
