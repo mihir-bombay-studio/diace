@@ -472,7 +472,9 @@ a.active-facets__button {
   .product-filter-close{
     margin-top: 9px;
   }
-
+  .background-change{
+   	background-color : #fec23b; 
+  }
 }
 
 @media screen and (max-width: 768px) {
