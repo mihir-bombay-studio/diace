@@ -183,6 +183,7 @@ button{
   }
   .form-with-text.register .container{
   	padding : 0;
+    max-width: 540px;
   }
   .form.customer.register{
     max-width:100%;
