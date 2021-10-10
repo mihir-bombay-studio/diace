@@ -228,7 +228,7 @@ fieldset.product-form__input input:checked + label {
 
 @media screen and (max-width: 560px) {
   .slick-next{
-  right: 5px;
+    right: 5px;
     width: calc(25% - 18.5px);
   }
 }
