@@ -222,4 +222,13 @@ fieldset.product-form__input input:checked + label {
   .product-block-left, .product-block-right {
     width: 100%;
   }
+  
+
+}
+
+@media screen and (max-width: 560px) {
+  .slick-next{
+  right: 5px;
+    width: calc(25% - 18.5px);
+  }
 }
