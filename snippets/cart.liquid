@@ -34,7 +34,7 @@
       <button id="cart_close" class="cart-close">{% render "icon-close-1" %}</button>
       <div class="cart-heading">
         JE WINKELMANDJE  {% for currency in shop.enabled_currencies  %}
-  {{ currency }}
+  {{ currency.symbol }}
   {% endfor %}{{ shop.currency }}
       </div>
     </div>
