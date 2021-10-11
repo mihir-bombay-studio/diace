@@ -100,11 +100,7 @@
                    form="product-form-{{ section.id }}"
                    {% if product.id == productx.id %}checked{% endif %}
                    >
-            {%- if optionx.name == "Size"  -%}
-            <label class="{{ optionx.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
-              {{ value }} 
-            </label>&nbsp - &nbsp
-            {%-elsif optionx.name == "Kleur" or optionx.name == "Color" -%}
+            {%-if optionx.name == "Kleur" or optionx.name == "Color" -%}
             <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               <span class="color-swatch" style="background-color:{{ productx.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
             </label>
