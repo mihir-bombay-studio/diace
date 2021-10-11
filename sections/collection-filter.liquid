@@ -663,7 +663,11 @@
            
               <div class="product-collection-card {% for tag in product.tags %} {{ tag | downcase | remove : " " }} {% endfor %}" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price | divided_by : 100.00 }}"  data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}" title="{{product.title}}" href="{{ product.url }}">
                 <div class="featured-product-img rel">
-                  <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+                  {% if product.featured_image != blank %}
+                  <a href="{{product.url}}" ><img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
+                  {% else %}
+                  {{ 'product-1' | placeholder_svg_tag }}
+                  {% endif %}
                   <div class="AddToCart product-hover-text flex-box align-center" data-variant-id="{{product.first_available_variant.id}}" data-quantity = "1">
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <span class="hover-text bold">KOPEN</span>
