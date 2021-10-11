@@ -10,10 +10,10 @@
     <div class="product-collection-card">
       <div class="featured-product-img rel">
         <a href="{{product.url}}">
-          {% if product.images.size == 0 %} 
-          {{ 'collection-2' | placeholder_svg_tag }}
-          {% else %}
+          {% if product.featured_image.src != blank %} 
           <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
+          {% else %}
+        {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
         <a href="/collections/all?filter.p.vendor={{vendor}}">
           <div class="product-hover-text flex-box align-center">
