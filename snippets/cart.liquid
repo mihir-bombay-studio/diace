@@ -20,9 +20,6 @@
   {% endif %}
 
 </script>
-<script type="application/json">
-                    {{ shop.currency | json }}
-                  </script>
 {% for item in cart.items %}
 {% if item.product.handle == upsellProductHandle %}
 {% assign upsell_present = true %}
