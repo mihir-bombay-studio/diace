@@ -95,7 +95,7 @@
             {%- for value in optionx.values -%}
             <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
                    class="no-disp"
-                   name="{% if optionx.name == "Kleur" or optionx.name == "Title" %}Title{% else %}{{optionx.name}}{% endif %}"
+                   name="{% if optionx.name == "Title" %}Title{% else %}{{optionx.name}}{% endif %}"
                    value="{{ value | escape }}"
                    form="product-form-{{ section.id }}"
                    {% if product.id == productx.id %}checked{% endif %}
@@ -104,7 +104,7 @@
             <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               {{ value }} 
             </label>&nbsp - &nbsp
-            {%-elsif optionx.name == "Color" and productx.variants[forloop.index0].metafields.my_fields.color -%}
+            {%-elsif optionx.name == "Kleur" or optionx.name == "Color" -%}
             <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               <span class="color-swatch" style="background-color:{{ productx.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
             </label>
