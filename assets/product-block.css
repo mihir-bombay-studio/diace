@@ -95,6 +95,8 @@ fieldset.product-form__input {
   letter-spacing: 0px;
   color: #000000;
   text-transform: uppercase;
+  max-height: 24rem;
+    overflow-y: auto;
 }
 
 .product-form__input label{
