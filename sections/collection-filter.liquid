@@ -664,7 +664,7 @@
               <div class="product-collection-card {% for tag in product.tags %} {{ tag | downcase | remove : " " }} {% endfor %}" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price | divided_by : 100.00 }}"  data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}" title="{{product.title}}" href="{{ product.url }}">
                 <div class="featured-product-img rel">
                   <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
-                  <div class="product-hover-text flex-box align-center">
+                  <div class="AddToCart product-hover-text flex-box align-center" data-variant-id="" data-quantity = "1">
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <a href="" class="hover-text bold">KOPEN</a>
                   </div>
