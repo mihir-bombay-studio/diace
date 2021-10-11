@@ -103,7 +103,12 @@ fieldset.product-form__input {
 }
 
 .product-form__input label{
-  cursor:pointer;
+cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 8px;
 }
 
 .variant-option-name{
