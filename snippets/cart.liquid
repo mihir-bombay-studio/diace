@@ -4,9 +4,7 @@
 {% assign upsellProductHandle = upsellProduct.handle %}
 
 <script>
-  {% for currency in shop.currency %}
-  {{ currency.symbol }}
-  {% endfor %}
+
    {% if upsellProduct != blank %}
   var upsell = {
     id:"{{ upsellProduct.first_available_variant.id }}",
@@ -35,7 +33,9 @@
     <div class="cart-header">
       <button id="cart_close" class="cart-close">{% render "icon-close-1" %}</button>
       <div class="cart-heading">
-        JE WINKELMANDJE
+        JE WINKELMANDJE  {% for currency in shop.currency %}
+  {{ currency.symbol }}
+  {% endfor %}
       </div>
     </div>
     <div id="cart_body_wrapper" class="cart-body-wrapper">
