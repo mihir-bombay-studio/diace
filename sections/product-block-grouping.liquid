@@ -101,7 +101,7 @@
                    {% if product.id == productx.id %}checked{% endif %}
                    >
             {%- if optionx.name == "Size"  -%}
-            <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+            <label class="{{ optionx.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               {{ value }} 
             </label>&nbsp - &nbsp
             {%-elsif optionx.name == "Kleur" or optionx.name == "Color" -%}
