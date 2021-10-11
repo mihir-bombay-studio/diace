@@ -4,6 +4,9 @@
 {% assign upsellProductHandle = upsellProduct.handle %}
 
 <script>
+  {% for currency in shop.currency %}
+  {{ currency.symbol }}
+  {% endfor %}
    {% if upsellProduct != blank %}
   var upsell = {
     id:"{{ upsellProduct.first_available_variant.id }}",
@@ -13,7 +16,6 @@
     price:"{{ upsellProduct.price | divided_by:100.0 }}"
   };
   var upsellProduct = JSON.parse(`{{ upsellProduct | json }}`);
-  {{ shop.enabled_currencies | json}}
   console.log(upsellProduct);
   var current_variant = upsellProduct.variants[0];
   {% endif %}
