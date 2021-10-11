@@ -39,7 +39,7 @@
     </div>
     <div id="cart_body_wrapper" class="cart-body-wrapper">
       {% if cart.item_count > 0 %}
-      <div class="cart-list">
+      <div class="cart-list style-scrollbar">
         {% for item in cart.items %}
         <div id="cart_item_{{item.variant_id}}" class="list-item {{ forloop.index }}">
           <a href="{{ item.product.url }}" class="product-img">
