@@ -100,9 +100,9 @@
       {%- unless product.has_only_default_variant -%}
       <div class="variant-options-wrapper">
         <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
-          <fieldset class="js product-form__input style-scrollbar">
-          {%- for option in product.options_with_values -%}
           
+          {%- for option in product.options_with_values -%}
+          <fieldset class="js product-form__input style-scrollbar">
             <div class="variant-option-name">
               {%- if option.name == "Size" or option.name == "Maat"  -%}
               KIES JOUW MAAT
@@ -138,9 +138,9 @@
             </label>&nbsp - &nbsp
             {%- endif -%}
             {%- endfor -%}
-          
+           </fieldset>
           {%- endfor -%}
-            </fieldset>
+           
           <script id="product-json" type="application/json">
               {{ product.variants | json }}
           </script>
