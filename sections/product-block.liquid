@@ -135,7 +135,7 @@
             {%- else -%}
             <label class="{{ option.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               {{ value }} 
-            </label>&nbsp - &nbsp
+            </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
             {%- endif -%}
             {%- endfor -%}
            </fieldset>
