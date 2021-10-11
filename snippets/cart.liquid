@@ -13,6 +13,7 @@
     price:"{{ upsellProduct.price | divided_by:100.0 }}"
   };
   var upsellProduct = JSON.parse(`{{ upsellProduct | json }}`);
+  {{ shop.enabled_currencies | json}}
   console.log(upsellProduct);
   var current_variant = upsellProduct.variants[0];
   {% endif %}
@@ -65,7 +66,7 @@
             </div>
             <div class="item-price">
               {% if item.variant.compare_at_price %}<span class="compare-at-price">{{ item.variant.compare_at_price | money }}</span>{% endif %}
-              <span class="discount-price semibold">{{ shop.enabled_currencies }}{{ item.price | money }}</span>
+              <span class="discount-price semibold">{{ item.price | money }}</span>
             </div>
             <button data-variant-id="{{item.variant_id}}" class="remove-item">verwijderen <span class="dustbin">{% render 'icon-remove' %}</span></button>
           </div>
