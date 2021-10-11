@@ -4,7 +4,7 @@
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
     {% for vendor in shop.vendors %}
-    {% for product in collections['all'].products %}
+    {% for product in collections.all_products %}
     {% if vendor == product.vendor and product.featured_image != blank %}
     
 
