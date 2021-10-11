@@ -6,7 +6,8 @@
     {% for vendor in shop.vendors %}
     {% for product in collections['all'].products %}
     {% if vendor == product.vendor and product.featured_image != blank %}
-    
+        {{vendor}}
+
     <div class="product-collection-card">
       <div class="featured-product-img rel">
         <a href="{{product.url}}">
