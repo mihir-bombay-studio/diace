@@ -20,7 +20,7 @@
 
 </script>
 <script type="application/json">
-                    {{ shop.enabled_currencies | json }}
+                    {{ shop.currency | json }}
                   </script>
 {% for item in cart.items %}
 {% if item.product.handle == upsellProductHandle %}
