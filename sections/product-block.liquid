@@ -102,7 +102,7 @@
           {%- for option in product.options_with_values -%}
           <fieldset class="js product-form__input">
             <div class="variant-option-name">
-              {%- if option.name == "Size" -%}
+              {%- if option.name == "Size" or option.name == "Maat"  -%}
               KIES JOUW MAAT
 
               <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
@@ -121,18 +121,14 @@
                    form="product-form-{{ section.id }}"
                    {% if option.selected_value == value %}checked{% endif %}
                    >
-            {%- if option.name == "Size"  -%}
-            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-              {{ value }} 
-            </label>{%- if forloop.last != true  -%}&nbsp - &nbsp{%- endif -%}
-            {%-else if option.name == "Color" and product.variants[forloop.index0].metafields.my_fields.color -%}
-            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-              <span class="color-swatch" style="background-color:{{ product.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
+            {%-if optionx.name == "Kleur" or optionx.name == "Color" -%}
+            <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+              <span class="color-swatch" style="background-color:{{ productx.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
             </label>
             {%- else -%}
-            <label class="{{ option.name }}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+            <label class="{{ optionx.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               {{ value }} 
-            </label>
+            </label>&nbsp - &nbsp
             {%- endif -%}
             {%- endfor -%}
           </fieldset>
