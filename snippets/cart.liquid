@@ -65,7 +65,7 @@
             </div>
             <div class="item-price">
               {% if item.variant.compare_at_price %}<span class="compare-at-price">{{ item.variant.compare_at_price | money }}</span>{% endif %}
-              <span class="discount-price semibold">{{ item.price | money }}</span>
+              <span class="discount-price semibold">{{ currency.symbol }}{{ item.price | money }}</span>
             </div>
             <button data-variant-id="{{item.variant_id}}" class="remove-item">verwijderen <span class="dustbin">{% render 'icon-remove' %}</span></button>
           </div>
