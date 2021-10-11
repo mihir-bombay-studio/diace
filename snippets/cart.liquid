@@ -35,7 +35,7 @@
       <div class="cart-heading">
         JE WINKELMANDJE  {% for currency in shop.currency %}
   {{ currency.symbol }}
-  {% endfor %}
+  {% endfor %}{{ shop.currency }}
       </div>
     </div>
     <div id="cart_body_wrapper" class="cart-body-wrapper">
