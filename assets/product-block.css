@@ -40,6 +40,9 @@
 .product-desc {
   line-height: 24px;
   margin-bottom: 26px;
+      max-height: 25rem;
+    overflow-y: auto;
+}
 }
 
 .qty-nav {
