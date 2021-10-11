@@ -114,7 +114,7 @@
               {%- endif -%}
             </div>
             {%- for value in option.values -%}
-            <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+            <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
                    class="no-disp"
                    name="{%- if option.name == "Title" or option.name == "Maat" or option.name == "Size" -%}
                          Title
