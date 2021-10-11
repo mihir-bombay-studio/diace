@@ -98,7 +98,7 @@ function getCartDetails(){
 
 function convertNumber(num){
   
-  return `{{ shop.currency.symbol }}${((num / 100).toFixed(2)).replace(".", ",")}`;
+  return `{{ currency_symbol }}${((num / 100).toFixed(2)).replace(".", ",")}`;
 }
 
 
