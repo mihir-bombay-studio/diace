@@ -82,12 +82,12 @@
  
 /* Handle */
 .collection-tags::-webkit-scrollbar-thumb {
-  background: #FEC23B; 
+  background: #000; 
 }
 
 /* Handle on hover */
 .collection-tags::-webkit-scrollbar-thumb:hover {
-  background: #FEC23B; 
+  background: #000; 
 }
 
 .range-slide {
