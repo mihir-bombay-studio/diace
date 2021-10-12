@@ -22,7 +22,7 @@ $(function() {
         
 	  }
 	});
-  $( "#amount" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+  $( "#lower-value" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) +
                       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
   $("#lower-value").text($( "#slider-range" ).slider( "values", 0 ));
