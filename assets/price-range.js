@@ -9,13 +9,9 @@ $(function() {
 		$( "#amount" ).text( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
         console.log(ui.values[ 0 ]);
         console.log(ui.values[ 1 ]);
-	  }
-	});
-	$( "#amount" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-	  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-  
-  
-  $('.product-collection-card').each(function() {
+        
+        
+        $('.product-collection-card').each(function() {
         var product_price = $(this).data('price');
 //         console.log(product_price);
         $(this).addClass('out-of-range-min');
@@ -23,4 +19,13 @@ $(function() {
           $(this).removeClass('out-of-range-min');
         }
       });
+        
+        
+	  }
+	});
+	$( "#amount" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+	  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  
+  
+  
 });
