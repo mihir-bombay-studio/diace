@@ -136,6 +136,8 @@
                          Title
                          {%- else if option.name == "Kleur" or option.name == "Color" or option.name == "Colour" -%}
                          Color
+                         {% else %}
+                         {{ option.name }}
                          {%- endif -%}"
                    value="{{ value | escape }}"
                    form="product-form-{{ section.id }}"
