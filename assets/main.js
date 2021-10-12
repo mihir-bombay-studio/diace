@@ -142,6 +142,6 @@ if (anouncement == "") {
   $('.header-anouncement').css('display','flex');
 }
 $('#header-anouncement-close').click(function(){
-  $('.header-anouncement').css('display','none');
+  $('.header-anouncement').css({'display': 'none' , transition : "all 1s ease"});
   setCookie("header-anouncement", "close", 1);
 });
