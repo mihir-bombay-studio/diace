@@ -9,9 +9,11 @@
   {% assign product_handle = collection.handle %}
   {% endfor %}
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
-
+  
+  
+ {% assign products_by_price = collections[product_handle].products | sort: "price" %}
+  {% if product_by_price >= 0 %}
   <div class="featured-products flex-box justify-between">
-    {% assign products_by_price = collections[product_handle].products | sort: "price" %}
     {% assign current_id = product.id %}
     {% assign products_shown = 0 %}
     {% for product in products_by_price limit:4 %}
@@ -35,7 +37,7 @@
           <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
         </div>
       </div>
-      
+
       <div class="product-colors flex-box justify-between light">
         {% if product.has_only_default_variant %}   
         <div class="product-color">
@@ -63,6 +65,9 @@
     {% endif %}
     {% endfor %}
   </div>
+  {% else %}
+  suchit 
+  {% endif %}
 
   {% for block in section.blocks %}
   {% if block.type == "button" %}
