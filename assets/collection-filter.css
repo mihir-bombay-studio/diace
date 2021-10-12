@@ -301,7 +301,8 @@ a.active-facets__button {
 
 .slidecontainer {
   width: 100%;
-  margin-top: 10px;
+  margin: 10px 0;
+  padding-left : 5px;
   padding-right: 15px;
 }
 
