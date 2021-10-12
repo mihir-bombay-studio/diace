@@ -2,24 +2,18 @@
 {% comment %}
  {% assign product_handle = section.settings.featured_collection %} 
 {% endcomment %}
-
 <div class="featured-collection-wrapper container" >
   <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
   {% for collection in product.collections limit:1%}
   {% assign product_handle = collection.handle %}
   {% endfor %}
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
-  
-  
- {% assign products_by_price = collections[product_handle].products | sort: "price" %}
-  {% if collections[product_handle].products > 1 %}
+
   <div class="featured-products flex-box justify-between">
+    {% assign products_by_price = collections[product_handle].products | sort: "price" %}
     {% assign current_id = product.id %}
     {% assign products_shown = 0 %}
     {% for product in products_by_price limit:4 %}
-    {% if forloop.last == 1 %}
-    abcd
-    {% endif %}
     {% if products_shown < 3 %}
     {% if product.id != current_id %}
     <div class="featured-product-card">
@@ -37,7 +31,7 @@
           <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
         </div>
       </div>
-
+      
       <div class="product-colors flex-box justify-between light">
         {% if product.has_only_default_variant %}   
         <div class="product-color">
@@ -65,9 +59,6 @@
     {% endif %}
     {% endfor %}
   </div>
-  {% else %}
-  suchit 
-  {% endif %}
 
   {% for block in section.blocks %}
   {% if block.type == "button" %}
