@@ -115,12 +115,6 @@
               </div>
               {%- endif -%}
             </div>
-            <div style="
-    display: flex;
-    justify-content: space-between;
-    max-width: 352px;
-    flex-wrap: wrap;
-">
             {%- for value in option.values -%}
             <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
                    class="no-disp"
@@ -145,7 +139,6 @@
             </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
             {%- endif -%}
             {%- endfor -%}
-            </div>
            </fieldset>
           {%- endfor -%}
           </div>
