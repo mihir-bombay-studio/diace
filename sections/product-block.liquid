@@ -144,12 +144,12 @@
             {%-if option.name == "Kleur" or option.name == "Color" or option.name == "Colour" -%}
             
             <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
-              <span class="" >
+              <span class="color-swatch" >
                 {% assign imgsrc = value | append: ".PNG" %}
                 {% if variantImg != blank %}
                 <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
                 {% else %}
-                <span class="color-swatch" style="background-color:{{ variantColorCode }};"></span>
+                <span class="colors-color" style="background-color:{{ variantColorCode }};"></span>
                 {% endif %}
               </span>
               <span> {{ value }}</span> 
