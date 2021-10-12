@@ -365,6 +365,8 @@ a.active-facets__button {
 
 .range-count{
   font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
 }
 
 .disp_no{
