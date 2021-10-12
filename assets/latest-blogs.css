@@ -61,7 +61,8 @@ h2.latest-blogs-heading.bold {
 }
 
 .latest-blogs-wrapper{
-  margin: 220px 0;
+  margin-top: 220px;
+  margin-bottom: 220px;
 }
 
 .latest-blogs-wrapper .btn{
