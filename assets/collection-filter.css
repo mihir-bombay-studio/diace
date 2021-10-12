@@ -83,7 +83,7 @@
 .collection-tags::-webkit-scrollbar-track  , .active-collection-tags::-webkit-scrollbar-track {
   background: #fff; 
 }
- 
+
 /* Handle */
 .collection-tags::-webkit-scrollbar-thumb , .active-collection-tags::-webkit-scrollbar-thumb {
   background: #737373; 
@@ -302,6 +302,7 @@ a.active-facets__button {
 .slidecontainer {
   width: 100%;
   padding:0 15px;
+  padding-left: 0;
 }
 
 .slider {
