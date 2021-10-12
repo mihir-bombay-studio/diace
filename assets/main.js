@@ -113,3 +113,47 @@ $(".view-password").click(function() {
     input.attr("type", "password");
   }
 });
+
+
+// cookie
+
+if(!check_cookie_name("header-anouncement")){ 
+  $(".header-anouncement").fadeIn("slow");
+}else{
+  $(".header-anouncement").fadeOut("slow");
+//   $(".hero-block").css({"margin-top" : "80px", "height" : "calc(100vh - 80px)"});
+}
+$("#header-anouncement-close").click(function() {
+  console.log("header-anouncement")
+  setCookie("header-anouncement", "banner closed", 1);
+  $(".header-anouncement").fadeOut("slow");
+//   $(".hero-block").css({"margin-top" : "80px", "height" : "calc(100vh - 80px)"});
+  return false;
+});
+
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function check_cookie_name(announcement_name) 
+{
+  var match = document.cookie.match(new RegExp('(^| )' + announcement_name + '=([^;]+)'));
+  if (match) {
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
+function delete_cookie(announcement_name) {
+  document.cookie = announcement_name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  if(!check_cookie_name("extra_banner")){ 
+    $(".extra_banner").fadeIn("slow");
+  }else{
+    $(".extra_banner").fadeOut("slow");
+  }
+}
