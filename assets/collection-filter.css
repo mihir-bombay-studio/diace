@@ -495,6 +495,7 @@ a.active-facets__button {
   }
   .product-filter-close{
     margin-top: 9px;
+    cursor : pointer;
   }
   .background-change{
     background-color : #fec23b; 
