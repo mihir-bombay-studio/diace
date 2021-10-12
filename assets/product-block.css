@@ -96,6 +96,9 @@
   max-height: 24rem;
   overflow-y: auto;
   padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 
 fieldset.product-form__input {
