@@ -1,6 +1,7 @@
 {{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
-
-<!-- {% assign product_handle = section.settings.featured_collection %} -->
+{% comment %}
+{% assign product_handle = section.settings.featured_collection %} 
+{% endcomment %}
 
 <div class="featured-collection-wrapper container" >
   <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
@@ -54,6 +55,8 @@
         {% endif %}
       </div>
     </div>
+
+    
     {% assign products_shown = products_shown | plus: 1 %}
     {% endif %}
     {% endif %}
