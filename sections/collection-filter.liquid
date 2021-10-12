@@ -79,18 +79,15 @@
               </div>
               <div class="panel">
                 <div class="slidecontainer">
-                  <div class="price-slider">
-                    <span class="no-disp">
-                      <input type="number" value="0" min="0" max="1000" /> to
-                      <input type="number" value="1000" min="0" max="1000" />
-                    </span>
-                    <div class="range-inputs">
-                      <input class="max-range-value" id="min-range" value="0" min="0" max="1000" step="2" type="range" />
-                      <input class="max-range-value" id="max-range" value="1000" min="0" max="1000" step="2" type="range" />
-
+                  
+                  <div class="price-range-slider">
+                    <p class="range-value">
+                    <div type="text" id="amount" readonly>
                     </div>
-
-                  </div>
+                    </p>
+                  <div id="slider-range" class="range-bar"></div>
+                </div>
+                  
                   <div class="range-count">
                     <div id="lower-value">0</div>
                     <div id="higher-value">1000</div>
