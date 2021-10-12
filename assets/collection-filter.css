@@ -395,6 +395,8 @@ a.active-facets__button {
   }
   .active-collection-tags{
     margin-left: 40px;
+    max-height: 250px;
+    overflow-y: auto;
   }
   .all-collection-title svg{
     transform: rotate(
