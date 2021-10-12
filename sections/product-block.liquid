@@ -134,14 +134,14 @@
                    class="no-disp"
                    name="{%- if option.name == "Title" or option.name == "Maat" or option.name == "Size" -%}
                          Title
-                         {%- else if option.name == "Kleur" or option.name == "Color" -%}
+                         {%- else if option.name == "Kleur" or option.name == "Color" or option.name == "Colour" -%}
                          Color
                          {%- endif -%}"
                    value="{{ value | escape }}"
                    form="product-form-{{ section.id }}"
                    {% if option.selected_value == value %}checked{% endif %}
                    >
-            {%-if option.name == "Kleur" or option.name == "Color" -%}
+            {%-if option.name == "Kleur" or option.name == "Color" or option.name == "Colour" -%}
             
             <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               <span class="color-swatch" style="background-color:{{ variantColorCode }}"></span>
