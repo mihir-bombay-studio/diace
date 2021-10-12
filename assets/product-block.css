@@ -152,6 +152,16 @@ cursor: pointer;
   color: #737373;
 }
 
+
+.color-change-btn {
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin: 0 0 0 5px;
+    color: #737373;
+}
+
+
 /* .show {
 position: absolute;
 top: 50%;
