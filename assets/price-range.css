@@ -1,7 +1,7 @@
 .price-range-slider {
   width: 100%;
 }
-.price-range-slider .range-value {
+/* .price-range-slider .range-value {
   margin: 0;
 }
 .price-range-slider .range-value div {
@@ -13,7 +13,7 @@
   box-shadow: none;
   border: none;
   margin: 20px 0 20px 0;
-}
+} */
 .price-range-slider .range-bar {
   border: none;
   background: #D9D9D9;
