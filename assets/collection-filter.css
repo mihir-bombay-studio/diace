@@ -82,12 +82,13 @@
  
 /* Handle */
 .collection-tags::-webkit-scrollbar-thumb , .active-collection-tags::-webkit-scrollbar-thumb {
-  background: #000; 
+  background: #737373; 
+  border-radius : 10px;
 }
 
 /* Handle on hover */
 .collection-tags::-webkit-scrollbar-thumb:hover  , .active-collection-tags::-webkit-scrollbar-thumb:hover {
-  background: #000; 
+  background: #737373; 
 }
 
 .range-slide {
