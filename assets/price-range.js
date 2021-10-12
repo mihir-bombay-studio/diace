@@ -7,9 +7,9 @@ $(function() {
 	  values: [ 0, 1000 ],
 	  slide: function( event, ui ) {
 		$( "#amount" ).text( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-//         console.log(ui.values[ 0 ]);
-//         console.log(ui.values[ 1 ]);
-        
+        $( "#lower-value" ).text( ui.values[ 0 ] );
+        $( "#higher-value" ).text( ui.values[ 1 ] );
+
         
         $('.product-collection-card').each(function() {
         var product_price = $(this).data('price');
@@ -22,7 +22,7 @@ $(function() {
         
 	  }
 	});
-  $( "#lower-value" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+  $( "#amount" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) +
                       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
   $("#lower-value").text($( "#slider-range" ).slider( "values", 0 ));
