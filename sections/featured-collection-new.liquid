@@ -12,7 +12,7 @@
   
   
  {% assign products_by_price = collections[product_handle].products | sort: "price" %}
-  {% if product_by_price >= 1 %}
+  {% if product_by_price > 1 %}
   <div class="featured-products flex-box justify-between">
     {% assign current_id = product.id %}
     {% assign products_shown = 0 %}
