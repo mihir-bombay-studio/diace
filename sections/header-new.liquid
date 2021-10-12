@@ -70,8 +70,9 @@
                             {% for block in section.blocks %}
                                 {% for link in linklists[block.settings.nav_list_lower].links %}
                                     <li class=" {% if link.links != blank %}hover-dropdown{% endif %} right-nav-list">
-                                        <a href="{{ link.url }}">{{ link.title }}</a>
-                                        <span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>
+                                        <a href="{{ link.url }}">{{ link.title }}
+                                          <span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>
+                                        </a>
                                         {% if link.links != blank %}
                                             <div class="hover-wrapper">
                                                 <div id="nav-sub-drop" class="dropdown-container container">
