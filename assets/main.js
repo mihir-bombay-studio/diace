@@ -115,45 +115,33 @@ $(".view-password").click(function() {
 });
 
 
-// cookie
-
-if(!check_cookie_name("header-anouncement")){ 
-  $(".header-anouncement").fadeIn("slow");
-}else{
-  $(".header-anouncement").fadeOut("slow");
-//   $(".hero-block").css({"margin-top" : "80px", "height" : "calc(100vh - 80px)"});
-}
-$("#header-anouncement-close").click(function() {
-  console.log("header-anouncement")
-  setCookie("header-anouncement", "banner closed", 1);
-  $(".header-anouncement").fadeOut("slow");
-//   $(".hero-block").css({"margin-top" : "80px", "height" : "calc(100vh - 80px)"});
-  return false;
-});
-
+//cookie code start
 function setCookie(cname, cvalue, exdays) {
-  const d = new Date();
+  var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  let expires = "expires="+ d.toUTCString();
+  var expires = "expires="+ d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
-function check_cookie_name(announcement_name) 
-{
-  var match = document.cookie.match(new RegExp('(^| )' + announcement_name + '=([^;]+)'));
-  if (match) {
-    return true;
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
   }
-  else{
-    return false;
-  }
+  return "";
 }
-
-function delete_cookie(announcement_name) {
-  document.cookie = announcement_name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-  if(!check_cookie_name("extra_banner")){ 
-    $(".extra_banner").fadeIn("slow");
-  }else{
-    $(".extra_banner").fadeOut("slow");
-  }
+var anouncement=getCookie("header-anouncement");
+if (anouncement == "") {
+  $('.header-anouncement').css('display','flex');
 }
+$('#header-anouncement-close').click(function(){
+  $('.header-anouncement').css('display','none');
+  setCookie("header-anouncement", "close", 1);
+});
