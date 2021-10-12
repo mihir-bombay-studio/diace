@@ -132,13 +132,7 @@
             {% endfor %}
             <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
                    class="no-disp"
-                   name="{%- if option.name == "Title" or option.name == "Maat" or option.name == "Size" -%}
-                         Title
-                         {%- else if option.name == "Kleur" or option.name == "Color"  -%}
-                         Color
-                         {%- else if option.name == "Colour" -%}
-                         Colour
-                         {%- endif -%}"
+                   name="{{ option.name }}"
                    value="{{ value | escape }}"
                    form="product-form-{{ section.id }}"
                    {% if option.selected_value == value %}checked{% endif %}
