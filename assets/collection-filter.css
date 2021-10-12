@@ -71,11 +71,11 @@
   overflow-y : auto;
 }
 
-.collection-tags::-webkit-scrollbar , .active-collection-tags::-webkit-scrollbar {
+.collection-tags::-webkit-scrollbar  {
   width: 5px;
 }
 
-.overflow::-webkit-scrollbar {
+.overflow::-webkit-scrollbar , .active-collection-tags::-webkit-scrollbar{
   display : none;
 }
 
