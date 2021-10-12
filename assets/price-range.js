@@ -7,13 +7,12 @@ $(function() {
 	  values: [ 0, 1000 ],
 	  slide: function( event, ui ) {
 		$( "#amount" ).text( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-        console.log(ui.values[ 0 ]);
-        console.log(ui.values[ 1 ]);
+//         console.log(ui.values[ 0 ]);
+//         console.log(ui.values[ 1 ]);
         
         
         $('.product-collection-card').each(function() {
         var product_price = $(this).data('price');
-//         console.log(product_price);
         $(this).addClass('out-of-range-min');
         if( product_price >= ui.values[ 0 ] && product_price <= ui.values[ 1 ]) {
           $(this).removeClass('out-of-range-min');
