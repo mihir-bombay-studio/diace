@@ -22,9 +22,11 @@ $(function() {
         
 	  }
 	});
-	$( "#amount" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-	  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-  
-  
+  $( "#amount" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+                      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+
+  $("#lower-value").html($( "#slider-range" ).slider( "values", 0 ));
+  $("#higher-value").html($( "#slider-range" ).slider( "values", 1 ));
+
   
 });
