@@ -428,6 +428,7 @@ a.active-facets__button {
   }
   .collection-tag{
     color : #000;
+    margin-right: 15px;
   }
   .filter-mask{
     visibility : hidden;
