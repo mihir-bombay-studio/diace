@@ -75,6 +75,10 @@
   width: 5px;
 }
 
+.overflow::-webkit-scrollbar {
+  display : none;
+}
+
 /* Track */
 .collection-tags::-webkit-scrollbar-track  , .active-collection-tags::-webkit-scrollbar-track {
   background: #fff; 
