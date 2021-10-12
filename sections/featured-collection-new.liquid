@@ -15,6 +15,7 @@
     {% assign current_id = product.id %}
     {% assign products_shown = 0 %}
     {% for product in products_by_price limit:4 %}
+    {% if products_shown > 0 %}
     {% if products_shown < 3 %}
     {% if product.id != current_id %}
     <div class="featured-product-card">
@@ -56,7 +57,7 @@
       </div>
     </div>
 
-    
+    {% endif %}
     {% assign products_shown = products_shown | plus: 1 %}
     {% endif %}
     {% endif %}
