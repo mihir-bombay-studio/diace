@@ -13,4 +13,14 @@ $(function() {
 	});
 	$( "#amount" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) +
 	  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  
+  
+  $('.product-collection-card').each(function() {
+        var product_price = $(this).data('price');
+//         console.log(product_price);
+        $(this).addClass('out-of-range-min');
+        if( product_price >= ui.values[ 0 ] && product_price <= ui.values[ 1 ]) {
+          $(this).removeClass('out-of-range-min');
+        }
+      });
 });
