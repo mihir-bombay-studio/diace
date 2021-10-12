@@ -71,6 +71,24 @@
   overflow-y : auto;
 }
 
+.collection-tags::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.collection-tags::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+.collection-tags::-webkit-scrollbar-thumb {
+  background: #000; 
+}
+
+/* Handle on hover */
+.collection-tags::-webkit-scrollbar-thumb:hover {
+  background: #000; 
+}
 
 .range-slide {
   position: relative;
