@@ -672,7 +672,7 @@
                     <span class="hover-text bold">KOPEN</span>
                   </div>
                   <div data-id="{% for variant in product.variants %} {{variant.title }} {% endfor %} " class="product_coll_variant"> 
-
+					<span>
                     {%- unless product.has_only_default_variant -%}
                     <div class="variant-options-wrapper">
                       <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
@@ -747,7 +747,7 @@
                       </variant-radios>
                     </div>
                     {%- endunless -%}
-
+                    </span>
                   </div>
                 </div>
                 <div class="product-title-price flex-box justify-between">
