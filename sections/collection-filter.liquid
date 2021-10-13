@@ -712,7 +712,7 @@
                             {% assign variantImg = blank %}
                             {% assign variantColorCode = blank %}
                             {% for variant in product.variants %}
-                            {% assign variant_id = variant.id %}
+                          
                             {% if variant.option1 and variant.option2 == blank %}
                             {% if variant.option1 == value or variant.option2 == value %}
                             {% if variant.metafields.my_fields.variant_image %}
@@ -738,7 +738,7 @@
                                    >
                             {%-if option.name == "Kleur" or option.name == "Color" or option.name == "Colour" -%}
 
-                            <label class="{{ option.name }} color-label AddToCart" data-variant-id="{{variant_id}}" data-quantity="1" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+                            <label class="{{ option.name }} color-label AddToCart" data-variant-id="" data-quantity="1" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
                               <span class="color-swatch" >
                                 {% assign imgsrc = value | append: ".PNG" %}
                                 {% if variantImg != blank %}
