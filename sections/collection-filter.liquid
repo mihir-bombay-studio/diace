@@ -691,8 +691,8 @@
                   <div id="{{product.handle}}" class="product_coll_variant variant-options-wrapper">
                     <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
                       <div data-options = "{{product.options_with_values.size}}" class="fieldset-wrapper style-scrollbar">
-                        {%- for option in product.options_with_values -%}
-                        <span>
+                        {% comment %}
+                        {%- for option in product.options_with_values -%}                    
                           <fieldset class="js product-form__input ">
                             <div class="variant-option-name">
                               {%- if option.name == "Size" or option.name == "Maat"  -%}
@@ -754,9 +754,13 @@
                             </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
                             {%- endif -%}
                             {%- endfor -%}
-                          </fieldset>
-                        </span>
-                        {%- endfor -%}            
+                          </fieldset>                   
+                        {%- endfor -%}    
+                        {% endcomment %}
+                        
+                        {% for variant in product.variants %}
+                        {{variant.id}}
+                        {% endfor %}
                       </div>
                       <script id="product-json" type="application/json">
               {{ product.variants | json }}
