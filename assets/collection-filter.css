@@ -403,6 +403,10 @@ a.active-facets__button {
   cursor : pointer;
 }
 
+.product_coll_variant .variant-option-name{
+	display : none;
+}
+
 .flex{
 	display : flex;
 }
