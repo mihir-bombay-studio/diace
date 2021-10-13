@@ -101,12 +101,10 @@
       <div class="variant-options-wrapper">
         <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
           <div class="fieldset-wrapper style-scrollbar">
-          {% paginate collections[section.settings.grouping_collection].products by 1000 %}
-            {%- for productx in collections[section.settings.grouping_collection].products -%}
-            {%- for optionx in productx.options_with_values -%}
+          {%- for option in product.options_with_values -%}
           <fieldset class="js product-form__input">
             <div class="variant-option-name">
-              {%- if optionx.name == "Size" or optionx.name == "Maat" -%}
+              {%- if option.name == "Size" or option.name == "Maat" -%}
               KIES JOUW MAAT
 
               <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
@@ -117,16 +115,18 @@
               </div>
               {%- endif -%}
             </div>
-            
+            {% paginate collections[section.settings.grouping_collection].products by 1000 %}
+            {%- for productx in collections[section.settings.grouping_collection].products -%}
+            {%- for optionx in productx.options_with_values -%}
             {%- for value in optionx.values -%}
             <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
                    class="no-disp"
                    name="{%- if optionx.name == "Title" or optionx.name == "Maat" or optionx.name == "Size" -%}
                          Title
                          {%- else if optionx.name == "Colour" -%}
-                         {{ optionx.name }}-{{ forloop.index }}
+                         {{ optionx.name }}
                          {%- else if optionx.name == "Band Kleur" -%}
-                         {{ optionx.name }}-{{ forloop.index }}
+                         {{ optionx.name }}
                          {%- else if optionx.name == "Kleur" or optionx.name == "Color" -%}
                          Color
                          {%- endif -%}"
@@ -144,11 +144,11 @@
             </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
             {%- endif -%}
             {%- endfor -%}
-            
-          </fieldset>
-          {%- endfor -%}
+            {%- endfor -%}
             {%- endfor -%}
             {% endpaginate %}
+          </fieldset>
+          {%- endfor -%}
             </div>
           <script id="product-json" type="application/json">
           {% paginate collections[section.settings.grouping_collection].products by 1000 %}
