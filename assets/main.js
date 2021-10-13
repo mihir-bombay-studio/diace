@@ -145,3 +145,13 @@ $('#header-anouncement-close').click(function(){
   $('.header-anouncement').css('display','none');
   setCookie("header-anouncement", "close", 1);
 });
+
+
+// collection tag script
+$( document ).ready(function() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const tag = urlParams.get('tag');
+  console.log(tag);
+  $(`.${tag}`).trigger( "click" );
+});
