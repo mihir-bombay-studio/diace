@@ -97,7 +97,7 @@ $(document).mouseup(function(e) {
   else if ((!menu.is(e.target) // The target of the click isn't the container.
             && menu.has(e.target).length === 0)) // Nor a child element of the container
   {
-    console.log("notclicked");
+//     console.log("notclicked");
     $(".login-wrapper").removeClass("active");
   }
 
