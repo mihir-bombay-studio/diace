@@ -10,8 +10,8 @@
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
 
   <div class="featured-products flex-box justify-between">
-    {% assign products_by_price = collections[product_handle].products | sort: "price" %}
-    {% if products_by_price.size > 1 %}
+    {% assign products_by_price_1 = collections[product_handle].products | sort: "price" %}
+    {% if products_by_price_1.size > 1 %}
     {% assign products_by_price = collections[product_handle].products | sort: "price" %}
     {% else %}
     {% assign products_by_price = section.settings.featured_collection %} 
