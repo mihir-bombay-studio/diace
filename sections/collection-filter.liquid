@@ -672,12 +672,13 @@
                     <span class="hover-text bold">KOPEN</span>
                   </div>
                   <div id="product_coll_variant" class="product_coll_variant"> 
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>5</span>
-                    <span>6</span>
+                    {%- for option in product.options_with_values -%}
+                    {%- if option.name == "Kleur" or option.name == "Color"  -%}
+                    {%- for value in option.values -%}
+                    <span>{{value}}</span>
+                    {% endfor %}
+                    {% endif %}
+                    {% endfor %}
                   </div>
                 </div>
                 <div class="product-title-price flex-box justify-between">
