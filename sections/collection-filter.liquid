@@ -680,7 +680,7 @@
                   </div>
                   {% else %}
                 
-                  <div class="variant-pop product-hover-text flex-box align-center">
+                  <div data-prod-id="{{product.handle}}" class="variant-pop product-hover-text flex-box align-center">
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <span class="hover-text bold">KOPEN</span>
                   </div>
@@ -688,7 +688,7 @@
                   
                   {%- unless product.has_only_default_variant -%}
                   {% if product.options_with_values.size <= 1 %}
-                  <div class="product_coll_variant variant-options-wrapper">
+                  <div id="{{product.handle}}" class="product_coll_variant variant-options-wrapper">
                     <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
                       <div data-options = "{{product.options_with_values.size}}" class="fieldset-wrapper style-scrollbar">
                         {%- for option in product.options_with_values -%}
