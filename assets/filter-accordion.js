@@ -95,7 +95,7 @@ runFilter();
 
 
 
-$("#prod_id").click(function () {
+$(".variant-pop").click(function () {
 console.log("Hello Product")
 
 });
