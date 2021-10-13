@@ -667,19 +667,31 @@
                   {% else %}
                   {{ 'product-1' | placeholder_svg_tag }}
                   {% endif %}
-                  <div id="prod_id" class="variant-pop product-hover-text flex-box align-center">
+                  
+                  {% if product.has_only_default_variant %}
+                  <div class="AddToCart product-hover-text flex-box align-center" data-variant-id="{{product.first_available_variant.id}}" data-quantity='1' >
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <span class="hover-text bold">KOPEN</span>
                   </div>
-                  <div data-id="{% for variant in product.variants %} {{variant.title }} {% endfor %} " class=""> 
-					
-                    {%- unless product.has_only_default_variant -%}
-                     {% if product.options_with_values.size <= 1 %}
-                    <div class="product_coll_variant variant-options-wrapper">
-                      <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
-                        <div data-options = "{{product.options_with_values.size}}" class="fieldset-wrapper style-scrollbar">
-                          {%- for option in product.options_with_values -%}
-                          <span>
+                  {% else if product.options_with_values.size <= 1 %}
+                  <div class="variant-pop product-hover-text flex-box align-center">
+                    <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+                    <span class="hover-text bold">KOPEN</span>
+                  </div>
+                  {% else %}
+                  <div class="product-hover-text flex-box align-center">
+                    <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+                    <a href="{{product.url}}" class="hover-text bold">KOPEN</a>
+                  </div>
+                  {% endif %}
+                  
+                  {%- unless product.has_only_default_variant -%}
+                  {% if product.options_with_values.size <= 1 %}
+                  <div class="product_coll_variant variant-options-wrapper">
+                    <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
+                      <div data-options = "{{product.options_with_values.size}}" class="fieldset-wrapper style-scrollbar">
+                        {%- for option in product.options_with_values -%}
+                        <span>
                           <fieldset class="js product-form__input ">
                             <div class="variant-option-name">
                               {%- if option.name == "Size" or option.name == "Maat"  -%}
@@ -699,7 +711,7 @@
                             {% assign variantImg = blank %}
                             {% assign variantColorCode = blank %}
                             {% for variant in product.variants %}
-                           	{% if variant.option1 and variant.option2 == blank %}
+                            {% if variant.option1 and variant.option2 == blank %}
                             {% if variant.option1 == value or variant.option2 == value %}
                             {% if variant.metafields.my_fields.variant_image %}
                             {% assign variantImg = variant.metafields.my_fields.variant_image %}
@@ -742,18 +754,18 @@
                             {%- endif -%}
                             {%- endfor -%}
                           </fieldset>
-                            </span>
-                          {%- endfor -%}            
-                        </div>
-                        <script id="product-json" type="application/json">
+                        </span>
+                        {%- endfor -%}            
+                      </div>
+                      <script id="product-json" type="application/json">
               {{ product.variants | json }}
-                        </script>
-                      </variant-radios>
-                    </div>
-                    {% endif %}
-                    {%- endunless -%}
-                    
+                      </script>
+                    </variant-radios>
                   </div>
+                  {% endif %}
+                  {%- endunless -%}
+                    
+               
                 </div>
                 <div class="product-title-price flex-box justify-between">
                   <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  | capitalize}}</a></div>
