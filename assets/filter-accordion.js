@@ -96,6 +96,7 @@ runFilter();
 
 
 $(".variant-pop").click(function () {
- $(".product_coll_variant").toggleClass("flex")
+  let id = $(this).data("prod-id");
+  $(`#${id}`).toggleClass("flex");
 });
 
