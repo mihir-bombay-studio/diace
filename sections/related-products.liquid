@@ -3,7 +3,7 @@
 {% assign product_handle = section.settings.featured_collection %} 
 {% endcomment %}
 <div class="featured-collection-wrapper container" >
-  <h2 class="featured-collection-heading yellow-text bold {{section.settings.new_featured_collection}}">{{ section.settings.featured_collection_title }}</h2>
+  <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
   {% for collection in product.collections limit:1%}
   {% assign product_handle = collection.handle %}
   {% endfor %}
