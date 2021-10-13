@@ -158,3 +158,9 @@ $( document ).ready(function() {
     console.log(tag);
   }
 });
+
+// slide-up script
+$('.go-up').click(function (event) {
+  event.preventDefault();
+  $('html').animate({ scrollTop: 0 },300,"linear");
+});
