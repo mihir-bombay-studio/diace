@@ -786,12 +786,14 @@
                   {% else %}
                   {% for variant in product.variants limit:1%}
                   {%- for option in product.options_with_values limit:1-%}
+                  {% if product.options_with_values <= 1 %}
                   <div class="product-color">
                     <span>{{option.name}}: </span>
                     <span>
                       {{variant.title}}
                     </span>
                   </div>
+                  {% endif %}
                  {% endfor %}
                   {% endfor %}
                   <div class="other-available-colors">
