@@ -16,7 +16,7 @@
     {% assign products_shown = 0 %}
     {% for product in products_by_price limit:4 %}
     {% if products_shown < 3 %}
-    {% if product.id != current_id %}
+    {% if product.id != current_id and products_by_price.size > 1 %}
     <div class="featured-product-card" data-value="{{products_by_price.size}}">
       <div class="featured-product-img rel">
         <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
