@@ -155,7 +155,8 @@ $( document ).ready(function() {
   if(tag){
     tag = tag.replace(/\s+/g, '-').toLowerCase(); 
     $(`.${tag}`).trigger( "click" );
+    console.log(tag);
   }
-  console.log(tag);
+  
 
 });
