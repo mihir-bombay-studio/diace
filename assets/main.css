@@ -211,6 +211,7 @@ a {
   letter-spacing: 0;
   color: #000;
   text-transform: uppercase; 
+  margin: 0;
 }
 
 .shopify-policy__body{
