@@ -672,12 +672,8 @@
                     <span class="hover-text bold">KOPEN</span>
                   </div>
                   <div id="product_coll_variant" class="product_coll_variant"> 
-                    {%- for option in product.options_with_values -%}
-                    {%- if option.name == "Kleur" or option.name == "Color"  -%}
-                    {%- for value in option.values limit:6 -%}
-                    <span>{{value}}</span>
-                    {% endfor %}
-                    {% endif %}
+                       {% for variant in product.variants %}
+                    <span> {{variant }}</span>
                     {% endfor %}
                   </div>
                 </div>
