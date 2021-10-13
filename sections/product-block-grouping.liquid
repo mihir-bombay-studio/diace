@@ -123,6 +123,10 @@
                    class="no-disp"
                    name="{%- if optionx.name == "Title" or optionx.name == "Maat" or optionx.name == "Size" -%}
                          Title
+                         {%- else if optionx.name == "Colour" -%}
+                         {{ option.name }}
+                         {%- else if optionx.name == "Band Kleur" -%}
+                         {{ option.name }}
                          {%- else if optionx.name == "Kleur" or optionx.name == "Color" -%}
                          Color
                          {%- endif -%}"
