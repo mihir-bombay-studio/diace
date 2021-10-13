@@ -119,7 +119,7 @@
             {%- for productx in collections[section.settings.grouping_collection].products -%}
             {%- for optionx in productx.options_with_values -%}
             {%- for value in optionx.values -%}
-            <div>
+            
             <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
                    class="no-disp"
                    name="{%- if optionx.name == "Title" or optionx.name == "Maat" or optionx.name == "Size" -%}
@@ -143,7 +143,6 @@
               {{ value }} 
             </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
             {%- endif -%}
-            </div>
             {%- endfor -%}
             {%- endfor -%}
             {%- endfor -%}
