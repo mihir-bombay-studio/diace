@@ -122,8 +122,17 @@
         "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
       }
     },
+    "1634149386ce8a60a9": {
+      "type": "related-products",
+      "settings": {
+        "featured_collection_title": "",
+        "featured_collection_desc": "",
+        "featured_collection": ""
+      }
+    },
     "1633621467157b4204": {
       "type": "featured-collection-new",
+      "disabled": true,
       "blocks": {
         "447ca38c-9411-48cc-a824-4397be54c255": {
           "type": "button",
@@ -203,6 +212,7 @@
     "16336209926af228d4",
     "163362115027b57f6f",
     "1633621187288eeba0",
+    "1634149386ce8a60a9",
     "1633621467157b4204",
     "1633621996c72e5409",
     "16336220533f137fd8"
