@@ -388,6 +388,7 @@
 <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
 
 <div id="CollectionProductGrid">
+  {% paginate collection.products by limit %}
   {%- if collection.products.size == 0 -%}
   <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
 
@@ -427,6 +428,10 @@
   </div>
 
   {%- endif -%}
+  {%- if paginate.pages > 1 -%}
+  {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
+  {%- endif -%}
+  {%- endpaginate -%}
 </div>
 
 {% schema %}
