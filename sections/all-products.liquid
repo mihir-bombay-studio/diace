@@ -6,6 +6,7 @@
     {% for vendor in shop.vendors %}
     {{vendor}}
     {% for product in collections['all'].products %}
+    {{product.vendor}}
     {% if vendor == product.vendor and product.featured_image != blank %}
 
 
