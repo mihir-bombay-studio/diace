@@ -671,10 +671,10 @@
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <span class="hover-text bold">KOPEN</span>
                   </div>
-                  <div data-id="{% for variant in product.variants %} {{variant.title }} {% endfor %} " class="product_coll_variant"> 
+                  <div data-id="{% for variant in product.variants %} {{variant.title }} {% endfor %} " class=""> 
 					
                     {%- unless product.has_only_default_variant -%}
-                    <div class="variant-options-wrapper">
+                    <div class="product_coll_variant variant-options-wrapper">
                       <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
                         <div class="fieldset-wrapper style-scrollbar">
                           {%- for option in product.options_with_values limit:1-%}
