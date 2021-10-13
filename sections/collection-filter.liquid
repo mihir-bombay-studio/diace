@@ -673,7 +673,7 @@
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <span class="hover-text bold">KOPEN</span>
                   </div>
-                  {% else if product.options_with_values.size > 1  %}
+                  {% elsif  product.options_with_values.size > 1  %}
                    <div class="product-hover-text flex-box align-center">
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <a href="{{product.url}}" class="hover-text bold">KOPEN</a>
