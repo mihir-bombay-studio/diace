@@ -677,7 +677,7 @@
                     <div class="product_coll_variant variant-options-wrapper">
                       <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
                         <div class="fieldset-wrapper style-scrollbar">
-                          {%- for option in product.options_with_values limit:1-%}
+                          {%- for option in product.options_with_values-%}
                           <span>
                           <fieldset class="js product-form__input ">
                             <div class="variant-option-name">
@@ -695,16 +695,16 @@
                               {%- endif -%}
                             </div>
                             {%- for value in option.values limit:3-%}
-                       		
                             {% assign variantImg = blank %}
                             {% assign variantColorCode = blank %}
                             {% for variant in product.variants %}
-                           
+                           	{% if variant.option1 and variant.option2 == blank %}
                             {% if variant.option1 == value or variant.option2 == value %}
                             {% if variant.metafields.my_fields.variant_image %}
                             {% assign variantImg = variant.metafields.my_fields.variant_image %}
                             {% elsif variant.metafields.my_fields.variant_color %}
                             {% assign variantColorCode = variant.metafields.my_fields.variant_color %}
+                            {% endif %}
                             {% endif %}
                             {% endif %}
                             {% endfor %}
