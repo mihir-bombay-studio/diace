@@ -672,12 +672,13 @@
                     <span class="hover-text bold">KOPEN</span>
                   </div>
                   <div data-id="{% for variant in product.variants %} {{variant.title }} {% endfor %} " class="product_coll_variant"> 
-					<span>
+					
                     {%- unless product.has_only_default_variant -%}
                     <div class="variant-options-wrapper">
                       <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
                         <div class="fieldset-wrapper style-scrollbar">
                           {%- for option in product.options_with_values limit:1-%}
+                          <span>
                           <fieldset class="js product-form__input ">
                             <div class="variant-option-name">
                               {%- if option.name == "Size" or option.name == "Maat"  -%}
@@ -739,6 +740,7 @@
                             {%- endif -%}
                             {%- endfor -%}
                           </fieldset>
+                            </span>
                           {%- endfor -%}
                         </div>
                         <script id="product-json" type="application/json">
@@ -747,7 +749,7 @@
                       </variant-radios>
                     </div>
                     {%- endunless -%}
-                    </span>
+                    
                   </div>
                 </div>
                 <div class="product-title-price flex-box justify-between">
