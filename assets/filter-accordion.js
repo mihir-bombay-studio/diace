@@ -95,7 +95,8 @@ runFilter();
 
 
 
-$("#prod_id").click(()=> {
+$("#prod_id").click(function () {
 console.log("Hello Product")
 
 });
+
