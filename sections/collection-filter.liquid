@@ -671,8 +671,10 @@
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <span class="hover-text bold">KOPEN</span>
                   </div>
-                  <div id="product_coll_variant" class="product_coll_variant"> 
+                  <div data-id="{% for variant in product.variants %} {{variant.title }} {% endfor %} " class="product_coll_variant"> 
                        
+           
+                    
                   </div>
                 </div>
                 <div class="product-title-price flex-box justify-between">
@@ -710,9 +712,6 @@
               </div>
        
             {% endfor %}
-            {% for variant in product.variants %}
-                    <span> {{variant.title }}</span>
-                    {% endfor %}
           </div>
         </div>
         {%- endif -%}
