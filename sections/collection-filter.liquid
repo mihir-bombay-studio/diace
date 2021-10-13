@@ -676,7 +676,7 @@
                     {%- unless product.has_only_default_variant -%}
                     <div class="product_coll_variant variant-options-wrapper">
                       <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
-                        <div data-options = "{{product.options_with_values}}" class="fieldset-wrapper style-scrollbar">
+                        <div data-options = "{{product.options_with_values.size}}" class="fieldset-wrapper style-scrollbar">
                           {%- for option in product.options_with_values -%}
                        
                           <span>
