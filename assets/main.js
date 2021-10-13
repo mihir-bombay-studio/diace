@@ -152,7 +152,10 @@ $( document ).ready(function() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   let tag = urlParams.get('tag');
-  tag = tag.replace(/\s+/g, '-').toLowerCase(); 
+  if(tag){
+    tag = tag.replace(/\s+/g, '-').toLowerCase(); 
+    $(`.${tag}`).trigger( "click" );
+  }
   console.log(tag);
-  $(`.${tag}`).trigger( "click" );
+
 });
