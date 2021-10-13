@@ -96,8 +96,6 @@ runFilter();
 
 
 $(".variant-pop").click(function () {
-//   $(".product_coll_variant").css({"display" : "flex" , "transition" : "all 4s ease"});
- $(".product_coll_variant").css("display" , "flex" );
-  $(".product_coll_variant").fadeIn("slow");
+ $(".product_coll_variant").toggleClass("flex")
 });
 
