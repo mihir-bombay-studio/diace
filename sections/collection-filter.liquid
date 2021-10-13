@@ -673,7 +673,7 @@
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <span class="hover-text bold">KOPEN</span>
                   </div>
-                  {% else if product.options_with_values.size <= 1 %}
+                  {% else if product.options_with_values.size <= 1 and !product.has_only_default_variant %}
                   <div class="variant-pop product-hover-text flex-box align-center">
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <span class="hover-text bold">KOPEN</span>
