@@ -374,6 +374,12 @@ a.active-facets__button {
   display : none; 
 }
 
+.product-colors{
+  display : flex;
+  flex-direction : column;
+  gap : 2px;
+}
+
 @media screen and (max-width: 992px) {
   .collection-filter-left , .collection-filter-right, .filter-mask{
     width : 100%;
