@@ -168,6 +168,7 @@
           <script id="product-json" type="application/json">
               {{ product.variants | json }}
               var prodvar = JSON.parse(`{{ product.variants | json }}`);
+              console.log(prodvar);
           </script>
         </variant-radios>
       </div>
