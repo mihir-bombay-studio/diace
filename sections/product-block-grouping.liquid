@@ -124,9 +124,9 @@
                    name="{%- if optionx.name == "Title" or optionx.name == "Maat" or optionx.name == "Size" -%}
                          Title
                          {%- else if optionx.name == "Colour" -%}
-                         {{ optionx.name }}
+                         {{ optionx.name }}-{{ forloop.index }}
                          {%- else if optionx.name == "Band Kleur" -%}
-                         {{ optionx.name }}
+                         {{ optionx.name }}-{{ forloop.index }}
                          {%- else if optionx.name == "Kleur" or optionx.name == "Color" -%}
                          Color
                          {%- endif -%}"
