@@ -1,7 +1,5 @@
 {{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
 
-<!-- {% assign product_handle = section.settings.featured_collection %} -->
-
 <div class="featured-collection-wrapper container" >
   <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
   {% for collection in product.collections limit:1%}
@@ -10,13 +8,16 @@
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
 
   <div class="featured-products flex-box justify-between">
+    {% if collections[product_handle].products.size > 1 %}
     {% assign products_by_price = collections[product_handle].products | sort: "price" %}
-    
+    {% else %}
+    {% assign product_handle = section.settings.featured_collection %} 
+    {% endif %}
     {% assign current_id = product.id %}
     {% assign products_shown = 0 %}
     {% for product in products_by_price limit:4 %}
     {% if products_shown < 3 %}
-    {% if product.id != current_id and products_by_price.size > 1 %}
+    {% if product.id != current_id %}
     <div class="featured-product-card" data-value="{{products_by_price.size}}">
       <div class="featured-product-img rel">
         <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
