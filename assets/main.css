@@ -167,6 +167,25 @@ a {
     max-height: 48px;
 }
 
+.go-up {
+    transform: rotate(180deg);
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #FEC23B;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.go-up svg {
+    width: 16px;
+    height: 8px;
+}
+
+
 @media screen and (min-width: 769px) {
 
 .icon-send{
@@ -223,10 +242,10 @@ button:hover .icon-send{
     z-index: -1;
 }
 
-.dots-right-down {
+  .dots-right-down {
     bottom: -56px;
     right: -50px;
-}
+  }
 }
 
 @media screen and (min-width: 991px) {
