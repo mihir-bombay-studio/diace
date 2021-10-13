@@ -759,7 +759,7 @@
                         {% endcomment %}
                         
                         <div class="color_wrapper">
-                          {% for variant in product.variants limit:6%}
+                          {% for variant in product.variants %}
 
                           <span class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
 
