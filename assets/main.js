@@ -157,6 +157,4 @@ $( document ).ready(function() {
     $(`.tag-${tag}`).trigger( "click" );
     console.log(tag);
   }
-  
-
 });
