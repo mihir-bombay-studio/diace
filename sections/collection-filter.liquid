@@ -759,7 +759,7 @@
                         {% endcomment %}
                         
                         {% for variant in product.variants %}
-                        {{variant.id}}
+                        <span class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
                         {% endfor %}
                       </div>
                       <script id="product-json" type="application/json">
