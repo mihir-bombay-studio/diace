@@ -393,6 +393,15 @@ a.active-facets__button {
   justify-content: space-evenly;
 }
 
+.product_coll_variant span{
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor : pointer;
+}
 
 .product_coll_variant .variant-option-name{
 	display : none;
