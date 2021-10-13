@@ -322,7 +322,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   background: #EBEBEB 0% 0% no-repeat padding-box;
   box-shadow: 0px 8px 16px #CCC2AF33;
   border-radius: 16px;
-  cursor : pointer;
+  user-select: none;
   z-index:3;
 }
 

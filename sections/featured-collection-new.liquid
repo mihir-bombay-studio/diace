@@ -1,14 +1,18 @@
 {{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
 
+
 {% assign product_handle = section.settings.featured_collection %} 
+
 
 <div class="featured-collection-wrapper container" >
   <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
 
   <div class="featured-products flex-box justify-between">
+
     {% for product in collections[product_handle].products limit:3 %}
     <div class="featured-product-card">
+
       <div class="featured-product-img rel">
         <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
         <div class="AddToCart fp-hover-text flex-box align-center " data-variant-id="{{product.first_available_variant.id}}" data-quantity = "1">

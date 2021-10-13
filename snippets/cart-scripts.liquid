@@ -97,8 +97,10 @@ function getCartDetails(){
 }
 
 function convertNumber(num){
-  
-  return ((num / 100).toFixed(2)).replace(".", ",");
+  {% for currency in shop.enabled_currencies  %}
+{% assign currency_symbol = currency.symbol %}
+{% endfor %}
+  return `{{ currency_symbol }}${((num / 100).toFixed(2)).replace(".", ",")}`;
 }
 
 
@@ -108,7 +110,7 @@ function refreshCart(cart) {
   let output = "";
 
   if (cart.item_count > 0) {
-    output += `<div class="cart-list">`;
+    output += `<div class="cart-list style-scrollbar">`;
     for (var i = 0; i < items.length; i++) {
       let item = cart.items[i];
       upsellHandle === item.handle ? $("#cart_container").addClass("hide-upsell") : null;

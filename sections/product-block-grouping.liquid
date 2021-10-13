@@ -4,23 +4,25 @@
 {{ 'image-with-text-new.css' | asset_url | stylesheet_tag }}
 <style>
   .slick-next {
-    /* right: -62px; */
-    right: 7px;
+    right: 8px;
     width: calc(25% - 20.5px);
     height: 84px;
     border-radius: 8px;
-    background: #000000;
+    background-color: #000000;
     opacity: 0.8;
     top: 40.5px;
-}
-  
+    background-image: url('{{ 'next-arrow.png' | asset_img_url: '300x' }}');
+      background-repeat: no-repeat;
+      background-position: 50%;
+      }
+
   .slick-next svg{
-  width: 16px;
+    width: 16px;
     height: 16px;
     transform: rotate(-90deg);
-    
+
   }
-  
+
   .slick-prev {
     left: 12px;
     width: calc(25% - 20.5px);
@@ -30,17 +32,40 @@
     opacity: 0.8;
     top: 40.5px;
     z-index: 1;
-}
-  
+    background-image: url('{{ 'next-arrow.png' | asset_img_url: '300x' }}');
+      background-repeat: no-repeat;
+      background-position: 50%;
+      }
+
   .product-block-wrapper .dots-left-down {
     top: -23px;
-    left: 2px;
-}
-  
-  .slider-for img{
-  height:572px;
+    left: -22px;
   }
+
+  .slider-for img{
+    height:572px;
+    background-color: #ffffff;
+  }
+
+  @media screen and (max-width: 560px) {
+    .slick-next{
+      right: 5px;
+      width: calc(25% - 18.5px);
+    }
+
+    .slick-prev {
+      left: 11px;
+      width: calc(25% - 18.5px);
+    }
+
+    .slider-for img {
+      max-height: 263px;
+    }
+  }
+
+
 </style>
+
 
 
 <div class="product-block-wrapper container rel">
@@ -69,21 +94,22 @@
         </div>
       </div>
 
-      <div class="product-desc light">{{ product.description }}</div>
+      <div class="product-desc light style-scrollbar">{{ product.description }}</div>
 
       <!--       ----------------------------------------------------------------------- -->
       {%- unless product.has_only_default_variant -%}
       <div class="variant-options-wrapper">
         <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
-          {%- for option in product.options_with_values -%}
+          <div class="fieldset-wrapper style-scrollbar">
+          
           <fieldset class="js product-form__input">
             <div class="variant-option-name">
-              {%- if option.name == "Size" -%}
+              {%- if option.name == "Size" or option.name == "Maat" -%}
               KIES JOUW MAAT
 
               <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
               <div class="mask" role="dialog"></div>
-              <div class="modal" role="alert">
+              <div class="modal style-scrollbar" role="alert">
                 <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"></div>
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div>
@@ -93,32 +119,37 @@
             {%- for productx in collections[section.settings.grouping_collection].products -%}
             {%- for optionx in productx.options_with_values -%}
             {%- for value in optionx.values -%}
+            
             <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
                    class="no-disp"
-                   name="{% if optionx.name == "Kleur" or optionx.name == "Title" %}Title{% else %}{{optionx.name}}{% endif %}"
+                   name="{%- if optionx.name == "Title" or optionx.name == "Maat" or optionx.name == "Size" -%}
+                         Title
+                         {%- else if optionx.name == "Band Kleur" -%}
+                         {{ optionx.name }}
+                         {%- else if optionx.name == "Kleur" or optionx.name == "Color" -%}
+                         Color
+                         {%- endif -%}"
                    value="{{ value | escape }}"
                    form="product-form-{{ section.id }}"
                    {% if product.id == productx.id %}checked{% endif %}
                    >
-            {%- if optionx.name == "Size"  -%}
+            {%-if optionx.name == "Kleur" or optionx.name == "Color" -%}
             <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+              <span class="color-swatch" style="background-color:{{ productx.variants[forloop.index0].metafields.my_fields.color }}"></span> 
               {{ value }} 
-            </label>&nbsp - &nbsp
-            {%-elsif optionx.name == "Color" and productx.variants[forloop.index0].metafields.my_fields.color -%}
-            <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
-              <span class="color-swatch" style="background-color:{{ productx.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
             </label>
             {%- else -%}
-            <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+            <label class="{{ optionx.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               {{ value }} 
-            </label>
+            </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
             {%- endif -%}
             {%- endfor -%}
             {%- endfor -%}
             {%- endfor -%}
             {% endpaginate %}
           </fieldset>
-          {%- endfor -%}
+          
+            </div>
           <script id="product-json" type="application/json">
           {% paginate collections[section.settings.grouping_collection].products by 1000 %}
           [{%- for productx in collections[section.settings.grouping_collection].products -%}
@@ -185,10 +216,6 @@
     </div>
   </div>
 </div>
-
-{% comment %}
-{% include "cart-scripts" %}
-{% endcomment %}
 
 <script>
   $('.qty-minus').click(function() {

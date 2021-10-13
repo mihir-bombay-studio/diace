@@ -1,25 +1,25 @@
 /* width */
 
-.cart-list::-webkit-scrollbar {
+.style-scrollbar::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Track */
 
-.cart-list::-webkit-scrollbar-track {
+.style-scrollbar::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
 /* Handle */
 
-.cart-list::-webkit-scrollbar-thumb {
+.style-scrollbar::-webkit-scrollbar-thumb {
   background: lightgrey;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 
-.cart-list::-webkit-scrollbar-thumb:hover {
+.style-scrollbar::-webkit-scrollbar-thumb:hover {
   background: grey;
 }
 

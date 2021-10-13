@@ -3,7 +3,9 @@
 {% assign current_variant = upsellProduct.selected_or_first_available_variant %}
 {% assign upsellProductHandle = upsellProduct.handle %}
 
+
 <script>
+
    {% if upsellProduct != blank %}
   var upsell = {
     id:"{{ upsellProduct.first_available_variant.id }}",
@@ -32,12 +34,12 @@
     <div class="cart-header">
       <button id="cart_close" class="cart-close">{% render "icon-close-1" %}</button>
       <div class="cart-heading">
-        JE WINKELMANDJE
+        JE WINKELMANDJE  
       </div>
     </div>
     <div id="cart_body_wrapper" class="cart-body-wrapper">
       {% if cart.item_count > 0 %}
-      <div class="cart-list">
+      <div class="cart-list style-scrollbar">
         {% for item in cart.items %}
         <div id="cart_item_{{item.variant_id}}" class="list-item {{ forloop.index }}">
           <a href="{{ item.product.url }}" class="product-img">
