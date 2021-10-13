@@ -41,7 +41,7 @@
           <div class="collection-types bold{% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %} {% endif %}"><a href="{{coll.url}}">{{ coll.title }}</a></div>
           <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}">
             {% for tag in collection.tags %}
-            <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
+            <div class="collection-tag semibold tag-{{ tag | handleize}}" data-tfilter="{{ tag }}">{{ tag }}</div>
             {% endfor %}
           </div>
           {% endfor %}
@@ -79,21 +79,20 @@
               </div>
               <div class="panel">
                 <div class="slidecontainer">
-                  <div class="price-slider">
-                    <span class="no-disp">
-                      <input type="number" value="0" min="0" max="1000" /> to
-                      <input type="number" value="1000" min="0" max="1000" />
-                    </span>
-                    <div class="range-inputs">
-                      <input class="max-range-value" id="min-range" value="0" min="0" max="1000" step="2" type="range" />
-                      <input class="max-range-value" id="max-range" value="1000" min="0" max="1000" step="2" type="range" />
-
-                    </div>
-
-                  </div>
+                  
+                  <div class="price-range-slider">
+                    
+                  <div id="slider-range" class="range-bar"></div>
+                </div>
+                  
                   <div class="range-count">
-                    <div id="lower-value">0</div>
-                    <div id="higher-value">1000</div>
+                    <div type="text" id="lower-value"></div>
+                    
+                    <p class="range-value">
+<!--                     <div type="text" id="amount" readonly>
+                    </div> -->
+                    </p>
+                    <div type="text" id="higher-value"></div>
                   </div>
                 </div>
               </div>
@@ -625,6 +624,7 @@
 		<script src="{{ 'filter-accordion.js' | asset_url }}" defer="defer"></script>
 
       <div id="CollectionProductGrid">
+        {% paginate collection.products by limit %}
         {%- if collection.products.size == 0 -%}
         {% comment %}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
@@ -660,14 +660,121 @@
 		{% comment %}<p class="collection-product-count light">{{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}</p>{% endcomment %}
           <div class="product-collection flex-box">
             {% for product in collection.products %}
-            <a href="{{product.url}}">
               <div class="product-collection-card {% for tag in product.tags %} {{ tag | downcase | remove : " " }} {% endfor %}" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price | divided_by : 100.00 }}"  data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}" title="{{product.title}}" href="{{ product.url }}">
                 <div class="featured-product-img rel">
-                  <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
-                  <div class="product-hover-text flex-box align-center">
+                  {% if product.featured_image != blank %}
+                  <a href="{{product.url}}" ><img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
+                  {% else %}
+                  {{ 'product-1' | placeholder_svg_tag }}
+                  {% endif %}
+                  
+                  {% if product.has_only_default_variant %}
+                  <div class="AddToCart product-hover-text flex-box align-center" data-variant-id="{{product.first_available_variant.id}}" data-quantity='1' >
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-                    <a href="" class="hover-text bold">KOPEN</a>
+                    <span class="hover-text bold">KOPEN</span>
                   </div>
+                  {% elsif  product.options_with_values.size > 1  %}
+                   <div class="product-hover-text flex-box align-center">
+                    <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+                    <a href="{{product.url}}" class="hover-text bold">KOPEN</a>
+                  </div>
+                  {% else %}
+                
+                  <div data-prod-id="{{product.handle}}" class="variant-pop product-hover-text flex-box align-center">
+                    <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+                    <span class="hover-text bold">KOPEN</span>
+                  </div>
+                  {% endif %}
+                  
+                  {%- unless product.has_only_default_variant -%}
+                  {% if product.options_with_values.size <= 1 %}
+                  <div id="{{product.handle}}" class="product_coll_variant variant-options-wrapper">
+                    <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
+                      <div data-options = "{{product.options_with_values.size}}" class="fieldset-wrapper style-scrollbar">
+                        {% comment %}
+                        {%- for option in product.options_with_values -%}                    
+                          <fieldset class="js product-form__input ">
+                            <div class="variant-option-name">
+                              {%- if option.name == "Size" or option.name == "Maat"  -%}
+                              KIES JOUW MAAT
+
+                              <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
+                              <div class="mask" role="dialog"></div>
+                              <div class="modal style-scrollbar" role="alert">
+                                <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"></div>
+                                <button class="close" role="button">{% render "icon-close-1" %}</button>
+                              </div>
+                              {%- else if option.name == "Kleur" or option.name == "Color" -%}
+                              KIES HET KLEUR VAN DE BAND: <span class="color-change-btn light"> Wijzig</span>
+                              {%- endif -%}
+                            </div>
+                            {%- for value in option.values limit:3-%}
+                            {% assign variantImg = blank %}
+                            {% assign variantColorCode = blank %}
+                            {% for variant in product.variants %}
+                            {% if variant.option1 and variant.option2 == blank %}
+                            {% if variant.option1 == value or variant.option2 == value %}
+                            {% if variant.metafields.my_fields.variant_image %}
+                            {% assign variantImg = variant.metafields.my_fields.variant_image %}
+                            {% elsif variant.metafields.my_fields.variant_color %}
+                            {% assign variantColorCode = variant.metafields.my_fields.variant_color %}
+                            {% endif %}
+                            {% endif %}
+                            {% endif %}
+                            {% endfor %}
+                            <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
+                                   class="no-disp"
+                                   name="{%- if option.name == "Title" or option.name == "Maat" or option.name == "Size" -%}
+                                         Title
+                                         {%- else if option.name == "Colour" -%}
+                                         {{ option.name }}
+                                         {%- else if option.name == "Kleur" or option.name == "Color"  -%}
+                                         Color
+                                         {%- endif -%}"
+                                   value="{{ value | escape }}"
+                                   form="product-form-{{ section.id }}"
+                                   {% if option.selected_value == value %}checked{% endif %}
+                                   >
+                            {%-if option.name == "Kleur" or option.name == "Color" or option.name == "Colour" -%}
+
+                            <label class="{{ option.name }} color-label AddToCart" data-variant-id="" data-quantity="1" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+                              <span class="color-swatch" >
+                                {% assign imgsrc = value | append: ".PNG" %}
+                                {% if variantImg != blank %}
+                                <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
+                                {% else %}
+                                <span class="colors-color" style="background-color:{{ variantColorCode }};"></span>
+                                {% endif %}
+                              </span>
+                              <span> {{ value }}</span> 
+                            </label>
+                            {%- else -%}
+                            <label class="{{ option.name }} title-label "  for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+                              {{ value }} 
+                            </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
+                            {%- endif -%}
+                            {%- endfor -%}
+                          </fieldset>                   
+                        {%- endfor -%}    
+                        {% endcomment %}
+                        
+                        <div class="color_wrapper">
+                          {% for variant in product.variants limit:6%}
+
+                          <span class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
+
+                          {% endfor %}
+                        </div>
+                      </div>
+                      <script id="product-json" type="application/json">
+              {{ product.variants | json }}
+                      </script>
+                    </variant-radios>
+                  </div>
+                  {% endif %}
+                  {%- endunless -%}
+                    
+               
                 </div>
                 <div class="product-title-price flex-box justify-between">
                   <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  | capitalize}}</a></div>
@@ -686,7 +793,7 @@
                   </div>          
                   {% else %}
                   {% for variant in product.variants limit:1%}
-                  {%- for option in product.options_with_values -%}
+                  {%- for option in product.options_with_values limit:1-%}
                   <div class="product-color">
                     <span>{{option.name}}: </span>
                     <span>
@@ -702,11 +809,16 @@
                 </div>
 
               </div>
-            </a>
+       
             {% endfor %}
           </div>
         </div>
         {%- endif -%}
+        {%- if paginate.pages > 1 -%}
+        {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
+        {%- endif -%}
+        {%- endpaginate -%}
+        
       </div>
 
 

@@ -130,103 +130,164 @@ a {
 
 
 .hover-text {
-    padding: 2px 16px 0 0;
-    text-transform: uppercase;
-    line-height: 24px;
-    letter-spacing: .8px;
-    max-width: 0;
-    -webkit-transition: font-size .8s ease;
-    transition: font-size .4s ease;
-    font-size: 0;
+  padding: 2px 16px 0 0;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: .8px;
+  max-width: 0;
+  -webkit-transition: font-size .8s ease;
+  transition: font-size .4s ease;
+  font-size: 0;
 }
 
 .fp-hover-text:hover .hover-text, .hero-hover-text:hover .hover-text , .product-hover-text:hover .hover-text {
 
-    font-size: inherit;
+  font-size: inherit;
 }
 
 .hero-hover-text:hover .hover-text , .product-hover-text:hover .hover-text{
-    max-width: 100%;
+  max-width: 100%;
 }
 
 
 .hero-hover-text:hover , .product-hover-text:hover {
-    max-width: unset;
+  max-width: unset;
 }
 
 .hero-hover-text {
-    position: absolute;
-    bottom: 26px;
-    left: 16px;
-    background-color: #fff;
-    border-radius: 50px;
-    transition: .4s ease;
-    cursor: pointer;
-    overflow: hidden;
-    max-width: 48px;
-    max-height: 48px;
+  position: absolute;
+  bottom: 26px;
+  left: 16px;
+  background-color: #fff;
+  border-radius: 50px;
+  transition: .4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 48px;
+  max-height: 48px;
 }
+
+.go-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #FEC23B;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.go-up svg {
+  width: 16px;
+  height: 8px;
+}
+
+.shopify-policy__container{
+
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shopify-policy__title{
+  position: relative!important;
+  background-color: #fff3d8;
+  height: 220px;
+}
+
+.shopify-policy__title h1{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  text-align: left;
+  font: normal normal bold 32px/48px Myriad Pro;
+  letter-spacing: 0;
+  color: #000;
+  text-transform: uppercase; 
+  margin: 0;
+}
+
+.shopify-policy__body{
+  display: flex;
+  justify-content: center;
+}
+
+.shopify-policy__body .rte{
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 52px;
+  justify-content: space-around;
+}
+
 
 @media screen and (min-width: 769px) {
 
-.icon-send{
-  margin-top: 5px;
-  transition: .3s ease;
-}
+  .icon-send{
+    margin-top: 5px;
+    transition: .3s ease;
+  }
 
-button:hover .icon-send{
-  transform: rotate(-26deg) translateX(5px);
-}
+  button:hover .icon-send{
+    transform: rotate(-26deg) translateX(5px);
+  }
 
-.padding-y-0{
-  padding-top: 0;
-  padding-bottom: 0;
-}
+  .padding-y-0{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
-.padding-y-25{
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
+  .padding-y-25{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 
-.padding-y-50{
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+  .padding-y-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-.padding-y-75{
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
+  .padding-y-75{
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
 
-.margin-y-0{
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  .margin-y-0{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-.margin-y-25{
-  margin-top: 25px;
-  /*   margin-bottom: 25px; */
-}
+  .margin-y-25{
+    margin-top: 25px;
+    /*   margin-bottom: 25px; */
+  }
 
-.margin-y-50{
-  margin-top: 50px;
-  /*   margin-bottom: 50px; */
-}
+  .margin-y-50{
+    margin-top: 50px;
+    /*   margin-bottom: 50px; */
+  }
 
-.margin-y-75{
-  margin-top: 75px;
-  /*   margin-bottom: 75px; */
-}
+  .margin-y-75{
+    margin-top: 75px;
+    /*   margin-bottom: 75px; */
+  }
 
-.bg-yellow-dots {
+  .bg-yellow-dots {
     position: absolute;
     z-index: -1;
-}
+  }
 
-.dots-right-down {
+  .dots-right-down {
     bottom: -56px;
     right: -50px;
-}
+  }
 }
 
 @media screen and (min-width: 991px) {
@@ -242,8 +303,8 @@ button:hover .icon-send{
     display:none;
   }
 
-/*   .mobile-top-margin {
-    margin-top: 10.5rem;
-  } */
+  /*   .mobile-top-margin {
+  margin-top: 10.5rem;
+} */
 
 }

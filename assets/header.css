@@ -1,6 +1,7 @@
 .header-anouncement{
   background-color: var(--background-yellow);
     padding: 7px 0 5px;
+    display : none;
     }
 #header-anouncement-close {
   margin-left: 12px;

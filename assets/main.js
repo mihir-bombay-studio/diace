@@ -97,7 +97,7 @@ $(document).mouseup(function(e) {
   else if ((!menu.is(e.target) // The target of the click isn't the container.
             && menu.has(e.target).length === 0)) // Nor a child element of the container
   {
-    console.log("notclicked");
+//     console.log("notclicked");
     $(".login-wrapper").removeClass("active");
   }
 
@@ -112,4 +112,55 @@ $(".view-password").click(function() {
   } else {
     input.attr("type", "password");
   }
+});
+
+
+//cookie code start
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+var anouncement=getCookie("header-anouncement");
+if (anouncement == "") {
+  $('.header-anouncement').css('display','flex');
+}
+$('#header-anouncement-close').click(function(){
+  $('.header-anouncement').css('display','none');
+  setCookie("header-anouncement", "close", 1);
+});
+
+
+// get collection tag from url script
+$( document ).ready(function() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  let tag = urlParams.get('tag');
+  if(tag){
+    tag = tag.replace(/\s+/g, '-').toLowerCase(); 
+    $(`.tag-${tag}`).trigger( "click" );
+    console.log(tag);
+  }
+});
+
+// slide-up script
+$('.go-up').click(function (event) {
+  event.preventDefault();
+  $('html').animate({ scrollTop: 0 },200,"linear");
 });

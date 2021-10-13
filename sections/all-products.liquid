@@ -4,13 +4,17 @@
 <div class="porduct-collection-wrapper container">
   <div class="product-collection flex-box">
     {% for vendor in shop.vendors %}
+    {% for product in collections['all'].products %}
+    {% if vendor == product.vendor and product.featured_image != blank %}
+
+
     <div class="product-collection-card">
       <div class="featured-product-img rel">
         <a href="{{product.url}}">
-          {% if product.images.size == 0 %} 
-          {{ 'collection-2' | placeholder_svg_tag }}
-          {% else %}
+          {% if product.featured_image.src != blank %} 
           <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
+        {% else %}
+        {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
         <a href="/collections/all?filter.p.vendor={{vendor}}">
           <div class="product-hover-text flex-box align-center">
@@ -19,8 +23,11 @@
           </div>
         </a>
       </div>
-      <a href="" class="collection-btn">MERK</a>
+      <a href="" class="collection-btn">{{vendor}}</a>
     </div>
+    {% break %}
+    {% endif %}
+    {% endfor %}
     {% endfor %}
   </div>
 </div>

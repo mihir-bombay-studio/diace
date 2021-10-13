@@ -1,80 +1,147 @@
-{%- if section.settings.show_product_recommendations -%}
-  <div class="product-recommendations" data-product-id="{{ product.id }}" data-limit="4">
-    {%- if recommendations.products_count > 0 -%}
-      <h2>{{ section.settings.heading }}</h2>
-      <ul>
-        {%- for product in recommendations.products -%}
-        <li class="product">
-          <a href="{{ product.url }}">
-            <img class="product__img" src="{{ product.featured_image | img_url: '300x300' }}" alt="{{ product.featured_image.alt }}" />
-            <p class="product__title">{{ product.title }}</p>
-            <p class="product__price">{{ product.price | money}}</p>
-          </a>
-        </li>
-        {%- endfor -%}
-      </ul>
-    {%- endif -%}
+{{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
+{% comment %}
+{% assign product_handle = section.settings.featured_collection %} 
+{% endcomment %}
+<div class="featured-collection-wrapper container" >
+  <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
+  {% for collection in product.collections limit:1%}
+  {% assign product_handle = collection.handle %}
+  {% endfor %}
+  <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
+
+  <div class="featured-products flex-box justify-between">
+    {% assign products_by_price_1 = collections[product_handle].products | sort: "price" %}
+    {% if products_by_price_1.size > 1 %}
+    {% assign products_by_price = collections[product_handle].products | sort: "price" %}
+    {% else %}
+    {% assign products_by_price = section.settings.new_featured_collection %} 
+    {% endif %}
+    {% assign current_id = product.id %}
+    {% assign products_shown = 0 %}
+    {% for product in products_by_price limit:4 %}
+    {% if products_shown < 3 %}
+    {% if product.id != current_id %}
+    <div class="featured-product-card">
+      <div class="featured-product-img rel">
+        <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+        <div class="fp-hover-text flex-box align-center">
+          <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+          <a href="" class="hover-text bold">KOPEN</a>
+        </div>
+      </div>
+      <div class="product-title-price flex-box justify-between">
+        <div class="product-title semibold">{{ product.title | escape  }}</div>
+        <div class="product-compare-to-and-price">
+          <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
+          <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
+        </div>
+      </div>
+      
+      <div class="product-colors flex-box justify-between light">
+        {% if product.has_only_default_variant %}   
+        <div class="product-color">
+
+        </div>          
+        {% else %}
+        {% for variant in product.variants limit:1%}
+        {%- for option in product.options_with_values -%}
+        <div class="product-color">
+          <span>{{option.name}}: </span>
+          <span>
+            {{variant.title}}
+          </span>
+        </div>
+        {% endfor %}
+        {% endfor %}
+        <div class="other-available-colors">
+          <a class="featured-product-link" href="{{product.url}}">Meer kleuren beschikbaar</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% assign products_shown = products_shown | plus: 1 %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
   </div>
-{%- endif -%}
+
+  {% for block in section.blocks %}
+  {% if block.type == "button" %}
+  {%- if block.settings.button_label != blank -%}
+  <a href="{{ block.settings.button_link }}" class="btn center-it {% if block.settings.button-color == 'grey' %}btn-grey{% else %}btn-yellow{% endif %}">{{ block.settings.button_label | escape }}</a>
+  {%- endif -%}
+  {% endif %}
+  {% endfor %}
+</div>
 
 {% schema %}
-{
-  "name": "Product recommendations",
-  "settings": [
+  {
+    "name": "Related Products",
+    "settings": [
+		{
+          "type": "text",
+          "id": "featured_collection_title",
+          "label": "Featured Collection Title"
+        },
+		{
+          "type": "text",
+          "id": "featured_collection_desc",
+          "label": "Featured Collection Desc"
+        },
+		{
+          "type": "collection",
+          "id": "new_featured_collection",
+          "label": "Featured Collection"
+        }
+	],
+	"blocks": [
 	{
-      "type": "checkbox",
-      "id": "show_product_recommendations",
-      "label": "Turn on product recommendations",
-      "default": false
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "You might also like"
-    }
+          "type": "button",
+          "name": "Button",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "text",
+              "id": "button_label",
+              "default": "Button label",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+              "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+            },
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+            },
+            {
+              "type": "select",
+              "id": "button-color",
+              "options": [
+                {
+                  "value": "grey",
+                  "label": "Grey"
+                },
+                {
+                  "value": "yellow",
+                  "label": "Yellow"
+                }
+              ],
+              "default": "grey",
+              "label": "Grey"
+            }
+          ]
+        }
   ],
   "presets": [
     {
-      "name": "Product recommendations",
+      "name": "Related Products",
 		"category":"section"
     }
   ]
-}
+  }
 {% endschema %}
 
-<script>
-var loadProductRecommendationsIntoSection = function() {
-  // Look for an element with class 'product-recommendations'
-  var productRecommendationsSection = document.querySelector(".product-recommendations");
-  if (productRecommendationsSection === null) { return; }
-  // Read product id from data attribute
-  var productId = productRecommendationsSection.dataset.productId;
-  // Read limit from data attribute
-  var limit = productRecommendationsSection.dataset.limit;
-  // Build request URL
-  var requestUrl = "/recommendations/products?section_id=product-recommendations&limit="+limit+"&product_id="+productId;
-  // Create request and submit it using Ajax
-  var request = new XMLHttpRequest();
-  request.open("GET", requestUrl);
-  request.onload = function() {
-    if (request.status >= 200 && request.status < 300) {
-      var container = document.createElement("div");
-      container.innerHTML = request.response;
-      productRecommendationsSection.parentElement.innerHTML = container.querySelector(".product-recommendations").innerHTML;
-    }
-  };
-  request.send();
-};
-// If your section has theme settings, the theme editor
-// reloads the section as you edit those settings. When that happens, the
-// recommendations need to be fetched again.
-// See https://help.shopify.com/en/themes/development/sections/integration-with-theme-editor
-document.addEventListener("shopify:section:load", function(event) {
-  if (event.detail.sectionId === "product-recommendations") {
-    loadProductRecommendationsIntoSection();
-  }
-});
-// Fetching the recommendations on page load
-loadProductRecommendationsIntoSection();
-</script>
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

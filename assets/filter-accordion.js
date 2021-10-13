@@ -20,7 +20,7 @@ for (i = 0; i < acc.length; i++) {
 
 $('.filter-by-tags .filter-option').click(function () {
   $(this).toggleClass('filteredselected');
- runFilter();
+  runFilter();
 });
 
 
@@ -42,14 +42,14 @@ function runFilter() {
   $(".brand.filteredselected").each(function (index) {
     brand.push($(this).data('value'));
   });
-  
+
   var i;
-  
-  
+
+
   $('.product-collection-card').addClass('disp_no');
-  
-  
-  
+
+
+
   if (gender.length > 0) {
     for (i = 0; i < gender.length; i++) {
       $('.product-collection-card.' + gender[i]).addClass('gp');
@@ -57,7 +57,7 @@ function runFilter() {
   } else {
     $('.product-collection-card').addClass('gp');
   }
-  
+
   if (size.length > 0) {
     for (i = 0; i < size.length; i++) {
       $('.product-collection-card.' + size[i]).addClass('sp');
@@ -65,7 +65,7 @@ function runFilter() {
   } else {
     $('.product-collection-card').addClass('sp');
   }
-  
+
   if (type.length > 0) {
     for (i = 0; i < type.length; i++) {
       $('.product-collection-card.' + type[i]).addClass('tp');
@@ -73,7 +73,7 @@ function runFilter() {
   } else {
     $('.product-collection-card').addClass('tp');
   }
-  
+
   if (brand.length > 0) {
     for (i = 0; i < brand.length; i++) {
       $('.product-collection-card.' + brand[i]).addClass('bp');
@@ -82,7 +82,7 @@ function runFilter() {
     $('.product-collection-card').addClass('bp');
   }
 
-  
+
   $('.product-collection-card.gp.sp.tp.bp').removeClass('disp_no');
   $('.gp').removeClass('gp');
   $('.sp').removeClass('sp');
@@ -92,3 +92,11 @@ function runFilter() {
   console.log(brand);
 }
 runFilter();
+
+
+
+$(".variant-pop").click(function () {
+  let id = $(this).data("prod-id");
+  $(`#${id}`).toggleClass("flex");
+});
+

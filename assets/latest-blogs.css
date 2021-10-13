@@ -61,6 +61,7 @@ h2.latest-blogs-heading.bold {
 }
 
 .latest-blogs-wrapper{
+  margin-top: 220px;
   margin-bottom: 220px;
 }
 
@@ -70,7 +71,7 @@ h2.latest-blogs-heading.bold {
 
 @media screen and (max-width: 992px) {
   .latest-blogs-wrapper{
-    margin-bottom : 82px;
+    margin : 82px 0;
   }
 }
 
