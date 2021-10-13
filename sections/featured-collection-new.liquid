@@ -11,9 +11,9 @@
     <div class="featured-product-card">
       <div class="featured-product-img rel">
         <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
-        <div class="fp-hover-text flex-box align-center">
+        <div class="AddToCart fp-hover-text flex-box align-center " data-variant-id="{{product.first_available_variant.id}}" data-quantity = "1">
           <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-          <a href="" class="hover-text bold">KOPEN</a>
+          <span href="" class="hover-text bold">KOPEN</span>
         </div>
       </div>
       <div class="product-title-price flex-box justify-between">
