@@ -737,7 +737,7 @@
                                    >
                             {%-if option.name == "Kleur" or option.name == "Color" or option.name == "Colour" -%}
 
-                            <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+                            <label class="{{ option.name }} color-label AddToCart" data-variant-id="{{variant.id}}" data-quantity="1" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
                               <span class="color-swatch" >
                                 {% assign imgsrc = value | append: ".PNG" %}
                                 {% if variantImg != blank %}
@@ -749,7 +749,7 @@
                               <span> {{ value }}</span> 
                             </label>
                             {%- else -%}
-                            <label class="{{ option.name }} title-label AddToCart" data-variant-id="{{variant.id}}" data-quantity="1" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+                            <label class="{{ option.name }} title-label "  for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
                               {{ value }} 
                             </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
                             {%- endif -%}
