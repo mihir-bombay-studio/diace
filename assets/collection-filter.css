@@ -401,6 +401,7 @@ a.active-facets__button {
   align-items: center;
   display: flex;
   justify-content: center;
+  cursor : pointer;
 }
 
 @media screen and (max-width: 992px) {
