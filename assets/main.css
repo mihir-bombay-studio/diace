@@ -188,6 +188,44 @@ a {
   height: 8px;
 }
 
+.shopify-policy__container{
+
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shopify-policy__title{
+  position: relative!important;
+  background-color: #fff3d8;
+  height: 220px;
+}
+
+.shopify-policy__title h1{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  text-align: left;
+  font: normal normal bold 32px/48px Myriad Pro;
+  letter-spacing: 0;
+  color: #000;
+  text-transform: uppercase; 
+}
+
+.shopify-policy__body{
+  display: flex;
+  justify-content: center;
+}
+
+.shopify-policy__body .rte{
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 52px;
+  justify-content: space-around;
+}
+
 
 @media screen and (min-width: 769px) {
 
