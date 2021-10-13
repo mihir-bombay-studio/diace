@@ -123,8 +123,6 @@
                    class="no-disp"
                    name="{%- if optionx.name == "Title" or optionx.name == "Maat" or optionx.name == "Size" -%}
                          Title
-                         {%- else if optionx.name == "Colour" -%}
-                         {{ optionx.name }}
                          {%- else if optionx.name == "Band Kleur" -%}
                          {{ optionx.name }}
                          {%- else if optionx.name == "Kleur" or optionx.name == "Color" -%}
@@ -136,7 +134,8 @@
                    >
             {%-if optionx.name == "Kleur" or optionx.name == "Color" -%}
             <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
-              <span class="color-swatch" style="background-color:{{ productx.variants[forloop.index0].metafields.my_fields.color }}"></span> {{ value }} 
+              <span class="color-swatch" style="background-color:{{ productx.variants[forloop.index0].metafields.my_fields.color }}"></span> 
+              {{ value }} 
             </label>
             {%- else -%}
             <label class="{{ optionx.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
