@@ -154,7 +154,7 @@ $( document ).ready(function() {
   let tag = urlParams.get('tag');
   if(tag){
     tag = tag.replace(/\s+/g, '-').toLowerCase(); 
-    $(`.${tag}`).trigger( "click" );
+    $(`.tag-${tag}`).trigger( "click" );
     console.log(tag);
   }
   
