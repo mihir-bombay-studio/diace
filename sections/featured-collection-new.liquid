@@ -1,21 +1,13 @@
 {{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
 
-
+{% assign product_handle = section.settings.featured_collection %} 
 
 <div class="featured-collection-wrapper container" >
   <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
-  {% for collection in product.collections limit:1%}
-  {% assign product_handle = collection.handle %}
-  {% endfor %}
   <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
 
   <div class="featured-products flex-box justify-between">
-    {% assign products_by_price = collections[product_handle].products | sort: "price" %}
-    {% assign current_id = product.id %}
-    {% assign products_shown = 0 %}
-    {% for product in products_by_price limit:4 %}
-    {% if products_shown < 3 %}
-    {% if product.id != current_id %}
+    {% for product in collections[product_handle].products  %}
     <div class="featured-product-card">
       <div class="featured-product-img rel">
         <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
@@ -54,9 +46,6 @@
         {% endif %}
       </div>
     </div>
-    {% assign products_shown = products_shown | plus: 1 %}
-    {% endif %}
-    {% endif %}
     {% endfor %}
   </div>
 
