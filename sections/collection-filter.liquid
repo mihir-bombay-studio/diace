@@ -677,7 +677,7 @@
                     <div class="variant-options-wrapper">
                       <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
                         <div class="fieldset-wrapper style-scrollbar">
-                          {%- for option in product.options_with_values limit :1-%}
+                          {%- for option in product.options_with_values limit:1-%}
                           <fieldset class="js product-form__input ">
                             <div class="variant-option-name">
                               {%- if option.name == "Size" or option.name == "Maat"  -%}
