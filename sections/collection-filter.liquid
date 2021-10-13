@@ -749,7 +749,7 @@
                               <span> {{ value }}</span> 
                             </label>
                             {%- else -%}
-                            <label class="{{ option.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+                            <label class="{{ option.name }} title-label AddToCart" data-variant-id="{{variant.id}}" data-quantity="1" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
                               {{ value }} 
                             </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
                             {%- endif -%}
