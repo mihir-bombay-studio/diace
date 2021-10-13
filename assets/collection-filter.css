@@ -407,6 +407,10 @@ a.active-facets__button {
 	display : none;
 }
 
+.product_coll_variant .js.product-form__input {
+	border : 0;
+}
+
 .flex{
 	display : flex;
 }
