@@ -404,6 +404,10 @@ a.active-facets__button {
   cursor : pointer;
 }
 
+.flex{
+	display : flex;
+}
+
 @media screen and (max-width: 992px) {
   .collection-filter-left , .collection-filter-right, .filter-mask{
     width : 100%;
