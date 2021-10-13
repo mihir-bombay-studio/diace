@@ -712,7 +712,6 @@
                             {% assign variantImg = blank %}
                             {% assign variantColorCode = blank %}
                             {% for variant in product.variants %}
-                          
                             {% if variant.option1 and variant.option2 == blank %}
                             {% if variant.option1 == value or variant.option2 == value %}
                             {% if variant.metafields.my_fields.variant_image %}
