@@ -1,10 +1,26 @@
+.header-wrapper.mb {
+  margin: 0;
+}
+
+.shopify-policy__title {
+  display: none;
+}
+
+.shopify-policy__container{
+
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
 .text-background {
   position: relative !important;
-  background-image: url(//cdn.shopify.com/s/files/1/0594/3604/0367/t/2/assets/article-bg.svg?v=3246859187231546785);
+  background-image: url(//cdn.shopify.com/s/files/1/0594/3604/0367/t/7/assets/article-bg.svg?v=3246859187231546785);
   background-repeat: no-repeat;
   background-size: cover;
   height: 220px;
 }
+
 
 .heading-container{
   display: flex;
