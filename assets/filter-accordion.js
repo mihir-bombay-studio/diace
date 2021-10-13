@@ -96,7 +96,7 @@ runFilter();
 
 
 $(".variant-pop").click(function () {
-console.log("Hello Product")
+$(".product_coll_variant").css("display" , "flex");
 
 });
 
