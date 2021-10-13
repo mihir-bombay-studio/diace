@@ -96,7 +96,7 @@ runFilter();
 
 
 $(".variant-pop").click(function () {
-$(".product_coll_variant").css("display" , "flex");
+$("#product_coll_variant").css("display" , "flex");
 
 });
 
