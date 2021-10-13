@@ -151,7 +151,8 @@ $('#header-anouncement-close').click(function(){
 $( document ).ready(function() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
-  const tag = urlParams.get('tag');
+  let tag = urlParams.get('tag');
+  tag = let.replace(/\s+/g, '-').toLowerCase(); 
   console.log(tag);
   $(`.${tag}`).trigger( "click" );
 });
