@@ -270,7 +270,7 @@ $("body").on('click', '.AddToCart', function (e) {
     
     setTimeout(function(){ 
      
-      $(`#${success_handler}`).removeClass("flex"); 
+      $(`#${success_handler}`).css("bottom" , "0"); 
       $(".product_coll_variant , .other-variants").removeClass("flex"); 
     }, 3000);
     
