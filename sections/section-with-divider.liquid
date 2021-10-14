@@ -5,17 +5,15 @@
     <div class="article-share">
       <p class="share-heading">{{section.settings.share_heading}}</p>
       <div class="share-platforms">
-        {% for block in section.blocks %}
-        <a href="{{ block.settings.social_icon_link }}">
-          {% if block.settings.social_icon != blank %}
-          <img src="{{ block.settings.social_icon | img_url : " icon" }}" 
-               alt="social-icon" 
-               loading="lazy">
-          {% else %}
-          <div class="cart-placeholder">{{ 'image' | placeholder_svg_tag }}</div>
-          {% endif %}
-        </a>
-        {% endfor %}
+        <a class="share_icons" href="http://www.facebook.com/share.php?u={{ section.settings.share_link }}&title={{ section.settings.share_title }}" target="_blank"></a>
+        <a class="share_icons" href="http://twitter.com/share?url={{ section.settings.share_link }}" target="_blank"></a>
+        <a class="share_icons"
+           href="http://pinterest.com/pin/create/button/?url={{ section.settings.share_link }}"
+           target="_blank"></a>
+        <a class="share_icons"
+           href="http://www.linkedin.com/shareArticle?mini=true&url={{ section.settings.share_link }}&title={{ section.settings.share_title }}&source={{ section.settings.website_url }}"
+           target="_blank"></a>
+        <a class="share_icons" href="mailto:" target="_blank"></a>
         <a href="#" class=" tooltip rel" id="share" onclick="return false;">{% render "icon-share-link" %}</a>
       </div>
     </div>
@@ -109,6 +107,11 @@
                     "id": "website_url",
                     "type": "url",
                     "label": "Url of your website or homepage"
+                },
+                {
+                    "id": "share_mail",
+                    "type": "text",
+                    "label": "Enter a mail id"
                 }
     ],
     "blocks": [
