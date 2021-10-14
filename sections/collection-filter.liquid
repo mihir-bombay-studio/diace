@@ -695,7 +695,7 @@
                       {% endfor %}
                     </div>
                   </div>
-                  <span id ="success_{{product.handle}}" class="success_cart__message">TOEGEVOEGD</span>
+                  <span id ="success_{{product.handle}}" class="success_cart__message">TOEGEVOEGD{% render "tick" %}</span>
                   {% endif %}
                   {%- endunless -%}
                
