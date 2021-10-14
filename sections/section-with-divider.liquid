@@ -12,8 +12,23 @@
     </div>
     <div class="divider"></div>
     <div class="next-previous-article">
-      <span class="previous">{% include "back-icon" %} {{section.settings.previous_heading}}</span>
-      <span class="next">{{section.settings.next_heading}} {% include "back-icon" %} </span>
+      {% if blog.next_article or blog.previous_article %}
+        <hr>
+        <p>
+          {% if blog.previous_article %}
+            <span class="previous">
+              &larr; {% include "back-icon" %}{{ section.settings.previous_heading | link_to: blog.previous_article }}
+            </span>
+          {% endif %}
+          {% if blog.next_article %}
+            <span class="next">
+              {{ section.settings.next_heading | link_to: blog.next_article }} {% include "back-icon" %} &rarr;
+            </span>
+          {% endif %}
+        </p>
+      {% endif %}
+<!--       <span class="previous">{% include "back-icon" %} {{section.settings.previous_heading}}</span>
+      <span class="next">{{section.settings.next_heading}} {% include "back-icon" %} </span> -->
     </div>
   </div>
 </div>
