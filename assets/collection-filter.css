@@ -420,6 +420,10 @@ a.active-facets__button {
   gap: 10px;
 }
 
+.product_coll_variant . color_wrapper{
+  gap:10px;
+  justify-content : space-evenly;
+}
 
 .color_wrapper{
   width: 100%;
