@@ -625,9 +625,13 @@
 		<script src="{{ 'filter-accordion.js' | asset_url }}" defer="defer"></script>
 
       <div id="CollectionProductGrid">
-        
-        {% assign number_render = 5 %}
-        {% paginate collection.products by limit %}
+        {%- assign paginationAmount = 50 -%}
+        {%- if cart.attributes.pagination != blank -%}
+
+        {%- assign paginationAmount = cart.attributes.pagination | default:40 | abs -%}
+
+        {%- endif -%}
+	{%- paginate collection.products by paginationAmount -%}
         {%- if collection.products.size == 0 -%}
         {% comment %}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
