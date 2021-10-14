@@ -248,8 +248,6 @@ $("body").on('click', '.AddToCart', function (e) {
   let variant_id = parseInt(this.getAttribute("data-variant-id"));
 //   console.log();
   let success_handler = $(this).data("success-id");
-  let success_varaint_option = $(".variant-pop").data("prod-id");
-  console.log(success_varaint_option);
   let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
   console.log(variant_id);
   let formData = {
