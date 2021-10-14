@@ -422,7 +422,7 @@ a.active-facets__button {
 .color_wrapper{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100%;
   align-items: center;
   flex-wrap: wrap;
