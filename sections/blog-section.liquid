@@ -61,7 +61,7 @@
     
     {%- assign article = article.content -%}{%- assign readtime = '' -%}
     {%- assign words = article | strip_html | split:' ' -%}
-    {%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
+    {%- assign readtime = words.size | divided_by: 180  -%}
     {%- capture readtime -%}{{ readtime }}- min read{%- endcapture -%}
     
     <div class="blogs" data-btag="{% for tag in article.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
