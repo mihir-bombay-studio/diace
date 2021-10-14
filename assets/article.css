@@ -131,7 +131,14 @@ img {
 
 .article-content{
   font-family : Myriad Pro;
+  font-weight: 300;
 }
+
+.article-content h3{
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .share{
   max-width : 768px; 
   padding: 26px 25px 52px 25px;
