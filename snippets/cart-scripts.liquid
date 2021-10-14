@@ -266,9 +266,10 @@ $("body").on('click', '.AddToCart', function (e) {
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
     getCartDetails();
     
-    var success_hander = $(this).data("success");
-    	console.log(success_hander)
-    
+    var success_hander = $('.AddToCart').data("success");
+    if(success_hander == "success"){
+    	console.log("succcess")
+    }
   })
   .fail(function (error) {
     console.log(error);
