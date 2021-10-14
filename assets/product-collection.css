@@ -15,30 +15,7 @@
   object-fit : cover;
 }
 
-.product-hover-text {
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-  background-color: #fff;
-  border-radius: 50px;
-  transition: .4s ease;
-  cursor: pointer;
-  overflow: hidden;
-  max-width: 48px;
-  max-height: 48px;
-}
 
-.plus-icon {
-  width: 48px;
-  height: 48px;
-  display: block;
-  transition: .4s ease;
-}
-
-.plus-icon svg {
-  width: 48px;
-  height: 48px;
-}
 
 /* .hover-text {
 padding: 2px 16px 0 0;
@@ -50,9 +27,6 @@ max-width: 0;
 transition: .4s ease;
 }
 */
-.product-hover-text:hover .plus-icon{
-  transform: rotate(180deg);
-}
 
 /* .product-hover-text:hover .hover-text {
 max-width: 100%;

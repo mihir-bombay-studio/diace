@@ -274,6 +274,35 @@ a {
   text-decoration: line-through;
 }
 
+.product-hover-text {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background-color: #fff;
+  border-radius: 50px;
+  transition: .4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.plus-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  transition: .4s ease;
+}
+
+.plus-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.product-hover-text:hover .plus-icon{
+  transform: rotate(180deg);
+}
+
 
 @media screen and (max-width: 992px) {
   .article-product{
