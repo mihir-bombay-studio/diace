@@ -6,20 +6,21 @@
 
 {%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
 {%- capture readtime -%}{{ readtime }} - min read{%- endcapture -%}
-<div class="background-overlay">
-</div>
+
+
 <div class="container article-container">
   <div class="content-wrapper">
 
+    <div class="background-overlay">
+      <a class="back-btn" href="/blogs/news">{% include "back-icon" %} Terug</a>
+      <div class="time-and-date">
+        <span class="date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
 
-    <a class="back-btn" href="/blogs/news">{% include "back-icon" %} Terug</a>
-    <div class="time-and-date">
-      <span class="date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
-
-      <span>{{readtime}}</span>
-    </div>
-    <div class="article-image">
-      <img src="{{ article.image.src | img_url: 'master' }}" alt="">
+        <span>{{readtime}}</span>
+      </div>
+      <div class="article-image">
+        <img src="{{ article.image.src | img_url: 'master' }}" alt="">
+      </div>
     </div>
     <div class="author">
       <img src="{{ article.image.src | img_url: 'master' }}" alt="author">
