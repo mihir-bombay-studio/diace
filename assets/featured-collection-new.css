@@ -21,6 +21,7 @@ h2.featured-collection-heading {
 .featured-product-img{
   height: 278px;
   margin-bottom: 16px;
+  overflow : hidden;
 }
 
 .featured-product-img img{
