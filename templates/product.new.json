@@ -122,10 +122,10 @@
         "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
       }
     },
-    "163414963797b28766": {
+    "16341916776d2c727b": {
       "type": "related-products",
       "blocks": {
-        "cb7fd544-5d41-41e5-bd9a-56ec91f400f2": {
+        "264fa710-56d1-441d-90c1-ada884c2520b": {
           "type": "button",
           "settings": {
             "button_label": "ALLE CATEGORIEËN",
@@ -135,12 +135,34 @@
         }
       },
       "block_order": [
-        "cb7fd544-5d41-41e5-bd9a-56ec91f400f2"
+        "264fa710-56d1-441d-90c1-ada884c2520b"
       ],
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
         "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
-        "featured_collection": "stickers"
+        "new_featured_collection": "stickers"
+      }
+    },
+    "16323185558f193575": {
+      "type": "featured-collection-new",
+      "disabled": true,
+      "blocks": {
+        "c8c3fdfb-865c-4801-9d4e-545a204238c8": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections",
+            "button-color": "yellow"
+          }
+        }
+      },
+      "block_order": [
+        "c8c3fdfb-865c-4801-9d4e-545a204238c8"
+      ],
+      "settings": {
+        "featured_collection_title": "NIEUWE PRODUCTEN",
+        "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
+        "featured_collection": "new-collection"
       }
     },
     "163231983925a321da": {
@@ -203,7 +225,8 @@
     "1632294615f908e16b",
     "1632296628d5bc229d",
     "163229690103dae5ee",
-    "163414963797b28766",
+    "16341916776d2c727b",
+    "16323185558f193575",
     "163231983925a321da",
     "1633620719d73fe2db"
   ]
