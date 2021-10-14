@@ -45,45 +45,50 @@
 </div>
 
 {% schema %}
-  {
+{
     "name": "Section with divider",
     "settings": [
-		{
-          "id": "share_heading",
-          "type": "text",
-          "label": "Heading"
+        {
+            "id": "share_heading",
+            "type": "text",
+            "label": "Heading"
         },
-		{
-          "id": "previous_heading",
-          "type": "text",
-          "label": "Previous Text"
+        {
+            "id": "previous_heading",
+            "type": "text",
+            "label": "Previous Text"
         },
-		{
-          "id": "next_heading",
-          "type": "text",
-          "label": "Next Text"
+        {
+            "id": "next_heading",
+            "type": "text",
+            "label": "Next Text"
         }
-	],
-	"blocks": [
-	{
-          "type": "social",
-          "name": "Social Icon",
-          "limit": 4,
-          "settings": [
-            {
-              "id": "social_icon",
-              "type": "image_picker",
-              "label": "Social icon"
-            }
-          ]
+    ],
+    "blocks": [
+        {
+            "type": "social",
+            "name": "Social Icon",
+            "limit": 4,
+            "settings": [
+                {
+                    "id": "social_icon",
+                    "type": "image_picker",
+                    "label": "Social icon"
+                },
+                {
+                    "id": "social_icon_link",
+                    "type": "url",
+                    "label": "Social link"
+                }
+            ]
         }
-  ],
-  "presets": [
-    {
-      "name": "Social Icon"
-    }
-  ]
-  }
+    ],
+    "presets": [
+        {
+            "name": "Social Icon"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
