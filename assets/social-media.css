@@ -205,14 +205,16 @@ h2.newsletter-subscription-heading {
 
 
 
-@media screen and (max-width: 992px) {
-  .social-media-wrapper{
+/* @media screen and (max-width: 992px) {
+
+} */
+
+
+@media screen and (max-width: 991px) {
+    .social-media-wrapper{
     margin-bottom : 82px;
   }
-}
-
-
-@media screen and (max-width: 768px) {
+  
   .social-media.flex-box{
     flex-wrap: wrap;
   }
