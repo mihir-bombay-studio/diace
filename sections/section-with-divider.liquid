@@ -14,19 +14,22 @@
     <div class="next-previous-article">
       {% if blog.next_article or blog.previous_article %}
 
-          {% if blog.previous_article %}
-            <span class="previous">
-             {% include "back-icon" %}{{ section.settings.previous_heading | link_to: blog.previous_article }}
-            </span>
+      {% if blog.previous_article %}
+      <span class="previous">
+        {% include "back-icon" %}{{ section.settings.previous_heading | link_to: blog.previous_article }}
+      </span>
       {% else %}
       <div></div>
-          {% endif %}
-          {% if blog.next_article %}
-            <span class="next">
-              {{ section.settings.next_heading | link_to: blog.next_article }} {% include "back-icon" %}
-            </span>
-          {% endif %}
-       
+      {% endif %}
+      
+      {% if blog.next_article %}
+      <span class="next">
+        {{ section.settings.next_heading | link_to: blog.next_article }} {% include "back-icon" %}
+      </span>
+      {% else %}
+      <div></div>
+      {% endif %}
+
       {% endif %}
 
     </div>
