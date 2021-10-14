@@ -1,22 +1,21 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "1634223383c0c22675": {
+      "type": "product-block-dual-colors",
+      "settings": {
+      }
+    },
+    "1632117875e7ef7fbe": {
+      "type": "product-block",
       "disabled": true,
       "settings": {
+        "featured_collection_title": ""
       }
     },
-    "1633426090f2e2900d": {
-      "type": "product-block-grouping",
-      "settings": {
-        "featured_collection_title": "",
-        "grouping_collection": "grouping-collection"
-      }
-    },
-    "1632294615f908e16b": {
+    "16336209926af228d4": {
       "type": "our-values",
       "blocks": {
-        "1c81f3dd-2258-4ae8-8d2b-244338cdd8f6": {
+        "66a802a9-8f8e-4677-adbc-e83bedf9cc1a": {
           "type": "value",
           "settings": {
             "value_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"60.717\" height=\"85\" viewbox=\"0 0 60.717 85\"><defs><style>.a-icon-location{fill:#fec23b;}<\/style><\/defs><g transform=\"translate(-96 -32)\"><path class=\"a-icon-location\" d=\"M126.358,32C109.619,32,96,45.026,96,61.03c0,7.622,3.474,17.758,10.326,30.127a222.616,222.616,0,0,0,15.179,23.38,6.024,6.024,0,0,0,9.718,0A223.544,223.544,0,0,0,146.4,91.157c6.84-12.365,10.314-22.5,10.314-30.127C156.717,45.026,143.1,32,126.358,32Zm0,42.5A12.143,12.143,0,1,1,138.5,62.358,12.143,12.143,0,0,1,126.358,74.5Z\"><\/path><\/g><\/svg>",
@@ -24,7 +23,7 @@
             "value_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
           }
         },
-        "e86de89a-4eb6-4a5b-b4d9-bba5020e954e": {
+        "bcb7ac6e-5e48-4c48-aa64-a47ecf1d60f6": {
           "type": "value",
           "settings": {
             "value_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"93\" height=\"85\" viewbox=\"0 0 93 85\"><defs><style>.a-icon-heart{fill:#fec23b;}<\/style><\/defs><path class=\"a-icon-heart\" d=\"M46.5,85C21.5,68.028,8.384,52.589,3.006,39.667-11.4,5.037,29.75-11.524,46.5,8.919c16.75-20.443,57.9-3.882,43.494,30.748C84.616,52.589,71.5,68.028,46.5,85Z\"><\/path><\/svg>",
@@ -32,7 +31,7 @@
             "value_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
           }
         },
-        "7a5eea25-2bd0-4e24-89b0-8db1adcc7f62": {
+        "d263c21d-b8a1-4f14-9bec-463dcfc14cf6": {
           "type": "value",
           "settings": {
             "value_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"84.997\" height=\"84.999\" viewbox=\"0 0 84.997 84.999\"><defs><style>.a-icon-rocket{fill:#fec23b;}<\/style><\/defs><g transform=\"translate(-32.016 -32.002)\"><path class=\"a-icon-rocket\" d=\"M116.527,35.428a.055.055,0,0,1,0-.017,3.871,3.871,0,0,0-2.871-2.9C108,31.129,99.108,32.6,89.251,36.546c-9.934,3.984-19.243,9.866-25.534,16.169a60.848,60.848,0,0,0-5.607,6.419A24.868,24.868,0,0,0,47,60.919C36.043,65.74,32.915,78.078,32.082,83.144a4.743,4.743,0,0,0,5.159,5.5h.025l12.2-1.332c.015.156.032.3.046.429a6.519,6.519,0,0,0,1.878,3.931l5.956,5.959a6.5,6.5,0,0,0,3.929,1.88l.408.044-1.328,12.188v.025a4.709,4.709,0,0,0,5.457,5.166c5.094-.82,17.427-3.91,22.235-14.924a25.091,25.091,0,0,0,1.793-11.069,59.725,59.725,0,0,0,6.441-5.607c6.343-6.31,12.243-15.543,16.186-25.333C116.394,50.26,117.872,41.3,116.527,35.428ZM96.215,68.609a11.061,11.061,0,1,1,3.3-7.88A11.151,11.151,0,0,1,96.215,68.609Z\"><\/path><path class=\"a-icon-rocket\" d=\"M69.612,345.554a3.036,3.036,0,0,0-2.087.507c-1.212.829-2.43,1.649-3.66,2.448a2.831,2.831,0,0,1-3.984-3.795l2.305-3.984A3.036,3.036,0,0,0,59.309,336a11.621,11.621,0,0,0-6.76,3.313c-.694.7-2.806,2.81-3.943,10.864A67.912,67.912,0,0,0,48,357.156a3.036,3.036,0,0,0,3.036,3.114h.076a68.28,68.28,0,0,0,6.982-.607c8.058-1.138,10.171-3.252,10.866-3.946a11.477,11.477,0,0,0,3.3-6.781A3.036,3.036,0,0,0,69.612,345.554Z\" transform=\"translate(-12.947 -246.304)\"><\/path><\/g><\/svg>",
@@ -42,30 +41,30 @@
         }
       },
       "block_order": [
-        "1c81f3dd-2258-4ae8-8d2b-244338cdd8f6",
-        "e86de89a-4eb6-4a5b-b4d9-bba5020e954e",
-        "7a5eea25-2bd0-4e24-89b0-8db1adcc7f62"
+        "66a802a9-8f8e-4677-adbc-e83bedf9cc1a",
+        "bcb7ac6e-5e48-4c48-aa64-a47ecf1d60f6",
+        "d263c21d-b8a1-4f14-9bec-463dcfc14cf6"
       ],
       "settings": {
         "our_value_heading": "ONZE WAARDEN"
       }
     },
-    "1632296628d5bc229d": {
+    "163362115027b57f6f": {
       "type": "image-with-text-new",
       "blocks": {
-        "1632296628d5bc229d-0": {
+        "163362115027b57f6f-0": {
           "type": "heading",
           "settings": {
             "heading": "INFO OVER PRODUCT"
           }
         },
-        "1632296628d5bc229d-1": {
+        "163362115027b57f6f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <\/p><p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat<\/p>"
           }
         },
-        "1632296628d5bc229d-2": {
+        "163362115027b57f6f-2": {
           "type": "button",
           "settings": {
             "button_label": "",
@@ -75,9 +74,9 @@
         }
       },
       "block_order": [
-        "1632296628d5bc229d-0",
-        "1632296628d5bc229d-1",
-        "1632296628d5bc229d-2"
+        "163362115027b57f6f-0",
+        "163362115027b57f6f-1",
+        "163362115027b57f6f-2"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
@@ -86,24 +85,24 @@
         "padd-top": false
       }
     },
-    "163229690103dae5ee": {
+    "1633621187288eeba0": {
       "type": "faq",
       "blocks": {
-        "b7704465-49ce-46d3-8c81-f495d0cd4aea": {
+        "d58d451f-e2fb-40fc-9e38-efbfd783a326": {
           "type": "faq",
           "settings": {
             "question": "Question",
             "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
           }
         },
-        "a286061a-a5bd-432f-9b1f-d25161512e59": {
+        "670e8e10-5817-46be-b4b9-5ead25305b9a": {
           "type": "faq",
           "settings": {
             "question": "Question",
             "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
           }
         },
-        "d64872bc-8f16-45cc-9a88-5bbb849ce095": {
+        "5eda3cf8-59fa-4b21-9320-c1480662916b": {
           "type": "button",
           "settings": {
             "button_label": "MEER VRAGEN",
@@ -111,7 +110,7 @@
             "button-color": "grey"
           }
         },
-        "8dc47c1d-6cce-4dc4-987d-7bc0fa185ac9": {
+        "dbd78463-70dd-4750-b572-742fa2ad443d": {
           "type": "cta",
           "settings": {
             "cta_label": "CONTACTEER ONS",
@@ -120,19 +119,19 @@
         }
       },
       "block_order": [
-        "b7704465-49ce-46d3-8c81-f495d0cd4aea",
-        "a286061a-a5bd-432f-9b1f-d25161512e59",
-        "d64872bc-8f16-45cc-9a88-5bbb849ce095",
-        "8dc47c1d-6cce-4dc4-987d-7bc0fa185ac9"
+        "d58d451f-e2fb-40fc-9e38-efbfd783a326",
+        "670e8e10-5817-46be-b4b9-5ead25305b9a",
+        "5eda3cf8-59fa-4b21-9320-c1480662916b",
+        "dbd78463-70dd-4750-b572-742fa2ad443d"
       ],
       "settings": {
         "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
       }
     },
-    "16341897088bf88769": {
+    "1634189346f895f445": {
       "type": "related-products",
       "blocks": {
-        "6b6c60ba-a42e-4ee9-9801-65c20b8958a7": {
+        "2610b275-4898-4dc1-b9d8-7dbfb3093dbf": {
           "type": "button",
           "settings": {
             "button_label": "ALLE CATEGORIEËN",
@@ -142,7 +141,7 @@
         }
       },
       "block_order": [
-        "6b6c60ba-a42e-4ee9-9801-65c20b8958a7"
+        "2610b275-4898-4dc1-b9d8-7dbfb3093dbf"
       ],
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
@@ -150,10 +149,32 @@
         "new_featured_collection": "stickers"
       }
     },
-    "163231983925a321da": {
+    "1633621467157b4204": {
+      "type": "featured-collection-new",
+      "disabled": true,
+      "blocks": {
+        "447ca38c-9411-48cc-a824-4397be54c255": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections",
+            "button-color": "yellow"
+          }
+        }
+      },
+      "block_order": [
+        "447ca38c-9411-48cc-a824-4397be54c255"
+      ],
+      "settings": {
+        "featured_collection_title": "NIEUWE PRODUCTEN",
+        "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
+        "featured_collection": ""
+      }
+    },
+    "1633621996c72e5409": {
       "type": "social-media",
       "blocks": {
-        "f9bfa53c-9619-4849-b13f-46c287bed1b6": {
+        "230cfd30-0352-45d0-89f6-abf233c45930": {
           "type": "sm_other_imgs",
           "settings": {
             "sm_other_img": "shopify:\/\/shop_images\/sm_img_2.png",
@@ -161,7 +182,7 @@
             "sm_link": ""
           }
         },
-        "31206256-50b8-4162-a910-73020fc11163": {
+        "28c6f779-1134-4b1f-b857-ca181173684c": {
           "type": "sm_other_imgs",
           "settings": {
             "sm_other_img": "shopify:\/\/shop_images\/sm_img_3.png",
@@ -169,7 +190,7 @@
             "sm_link": ""
           }
         },
-        "3064974d-f114-47f4-9c3b-abc5f9e132c5": {
+        "abd2a411-acae-4a92-8719-fb8c7ca1208e": {
           "type": "sm_other_imgs",
           "settings": {
             "sm_other_img": "shopify:\/\/shop_images\/sm_img_4.png",
@@ -177,7 +198,7 @@
             "sm_link": ""
           }
         },
-        "38d531e9-032e-4bd1-9853-a41a95982f0a": {
+        "128efefd-c97b-424e-b598-1cc1f2383956": {
           "type": "sm_text",
           "settings": {
             "sm_text": "We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!"
@@ -185,25 +206,35 @@
         }
       },
       "block_order": [
-        "f9bfa53c-9619-4849-b13f-46c287bed1b6",
-        "31206256-50b8-4162-a910-73020fc11163",
-        "3064974d-f114-47f4-9c3b-abc5f9e132c5",
-        "38d531e9-032e-4bd1-9853-a41a95982f0a"
+        "230cfd30-0352-45d0-89f6-abf233c45930",
+        "28c6f779-1134-4b1f-b857-ca181173684c",
+        "abd2a411-acae-4a92-8719-fb8c7ca1208e",
+        "128efefd-c97b-424e-b598-1cc1f2383956"
       ],
       "settings": {
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
         "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
         "remove_padd": true
       }
+    },
+    "16336220533f137fd8": {
+      "type": "newsletter-new",
+      "settings": {
+        "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
+        "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.",
+        "submit_btn_text": "VERZENDEN"
+      }
     }
   },
   "order": [
-    "main",
-    "1633426090f2e2900d",
-    "1632294615f908e16b",
-    "1632296628d5bc229d",
-    "163229690103dae5ee",
-    "16341897088bf88769",
-    "163231983925a321da"
+    "1634223383c0c22675",
+    "1632117875e7ef7fbe",
+    "16336209926af228d4",
+    "163362115027b57f6f",
+    "1633621187288eeba0",
+    "1634189346f895f445",
+    "1633621467157b4204",
+    "1633621996c72e5409",
+    "16336220533f137fd8"
   ]
 }

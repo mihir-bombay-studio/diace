@@ -100,14 +100,16 @@
   margin-top: 10px;
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
 
-  .hero-new-wrapper{
+
+} */
+
+@media screen and (max-width: 991px) {
+    .hero-new-wrapper{
     margin-bottom : 82px;
   }
-}
-
-@media screen and (max-width: 768px) {
+  
   .hero.flex-box{
     flex-wrap : wrap;
   }

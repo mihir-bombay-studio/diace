@@ -1,4 +1,4 @@
-{{ 'customer.css' | asset_url | stylesheet_tag }}
+
 {{ 'orders.css' | asset_url | stylesheet_tag }}
 {{ 'social-media.css' | asset_url | stylesheet_tag }}
 
@@ -171,7 +171,7 @@
 
 <div class="container">
   <div class="social-media  socila-media-lower newsletter-container">
-    <div class="bg-yellow-dots dots-right-down">
+    <div class="bg-yellow-dots dots-right-down no-mobile">
       {% include 'bg-yellow-dots-sm' %}
     </div>
     <h2 class="text-center newsletter-subscription-heading bold">WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF</h2>
@@ -223,7 +223,7 @@
 
 {% comment %}
 
-{% endcomment %}
+
 <div class="customer account">
   <div>
     <h1>{{ 'customer.account.title' | t }}</h1>
@@ -340,7 +340,7 @@
 
   </div>
 </div>
-  
+  {% endcomment %}
   <script>
   function openTab(evt, tabId) {
     var i, tabcontent, tablinks;

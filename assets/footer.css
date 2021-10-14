@@ -45,7 +45,7 @@ footer{
 }
 
 .footer-lower-left{
-	width: 40%;
+  gap: 26px;
 }
 
 .footer-lower-right{
@@ -91,7 +91,7 @@ footer .accordion.question{
 	text-decoration : underline;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .footer-lower-nav-item , .footer-wrapper{
     display : none;
   }

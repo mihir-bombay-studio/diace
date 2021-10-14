@@ -44,21 +44,24 @@
   display : none;
 }
 
+/* @media screen and (max-width: 991px) {
+
+
+}
+
 @media screen and (max-width: 992px) {
+
+} */
+
+
+@media screen and (max-width: 991px) {
   .review-wrapper .bg-yellow-dots{
     display :none;
   }
-
-}
-
-@media screen and (max-width: 992px) {
   .review-wrapper{
     margin-bottom: 82px;
   }
-}
-
-
-@media screen and (max-width: 768px) {
+  
   .review.flex-box{
     flex-direction : column;
   }

@@ -14,7 +14,8 @@
     {% if products_by_price_1.size > 1 %}
     {% assign products_by_price = collections[product_handle].products | sort: "price" %}
     {% else %}
-    {% assign products_by_price = section.settings.new_featured_collection %} 
+    {% assign product_handle = section.settings.new_featured_collection %}
+    {% assign products_by_price = collections[product_handle].products %} 
     {% endif %}
     {% assign current_id = product.id %}
     {% assign products_shown = 0 %}

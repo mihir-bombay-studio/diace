@@ -225,7 +225,109 @@ a {
   flex-direction: column;
   margin-top: 52px;
   justify-content: space-around;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
+
+.article-product {
+  width: 100%;
+  display: flex;
+  font-family: Myriad Pro;
+  padding : 52px 0;
+}
+
+
+.product-image{
+  width: 50%;   
+}
+
+.product-image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.product-content{
+  background: #FEC23B33;
+  position : relative;
+  border-radius: 8px;
+  width: 50%;
+  padding: 75px 26px;
+}
+
+.product-title{
+  font-weight: 600;
+}
+
+.product-desc , .product-variant{
+  font-weight: 300;
+}
+
+.product-price{
+  color: #FEC23B;
+  font-weight: 600;
+}
+
+.compare-to-price{
+  font-weight: 300;
+  color: #737373;
+  text-decoration: line-through;
+}
+
+.article-product .product-hover-text{
+  bottom : 0;
+  left : 0;
+  margin-top : 10px;
+  width : fit-content;
+}
+
+.product-hover-text {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background-color: #fff;
+  border-radius: 50px;
+  transition: .4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.plus-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  transition: .4s ease;
+}
+
+.plus-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.product-hover-text:hover .plus-icon{
+  transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 992px) {
+  .article-product{
+    flex-direction: column;
+    padding : 26px 0;
+  }
+  .product-content , .product-image{
+    width: 100%;
+  }
+  .product-content{
+    padding: 16px;
+  }
+  
+
+}
+
+
 
 
 

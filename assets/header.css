@@ -65,7 +65,7 @@
   margin-left: 26px;
 }
 
-.right-nav-upper .dropdown{
+.right-nav-upper .dropdown, .right-nav-upper .dropdown a {
   color: #737373;
 }
 
@@ -102,6 +102,10 @@ nav .dropdown {
 nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   max-height: 999px;
   opacity: 1;
+}
+
+nav .dropdown.lang:hover svg{
+transform: rotate(180deg);
 }
 
 .right-wrap{

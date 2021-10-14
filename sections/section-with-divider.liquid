@@ -5,59 +5,146 @@
     <div class="article-share">
       <p class="share-heading">{{section.settings.share_heading}}</p>
       <div class="share-platforms">
-        {% for block in section.blocks %}
-        <img src="{{ block.settings.social_icon | img_url : "icon" }}" alt="social-icon" loading="lazy">
-        {% endfor %}
+        <a class="share_icons" href="http://www.facebook.com/share.php?u={{ section.settings.share_link }}&title={{ section.settings.share_title }}" target="_blank">
+        {% render "icon-fb-new" %}
+        </a>
+        <a class="share_icons" href="http://twitter.com/share?url={{ section.settings.share_link }}" target="_blank">
+        {% render "icon-twitter-new" %}
+        </a>
+        <a class="share_icons"
+           href="http://pinterest.com/pin/create/button/?url={{ section.settings.share_link }}"
+           target="_blank">
+          {% render "icon-pinterest-new" %}
+        </a>
+        <a class="share_icons"
+           href="http://www.linkedin.com/shareArticle?mini=true&url={{ section.settings.share_link }}&title={{ section.settings.share_title }}&source={{ section.settings.website_url }}"
+           target="_blank">{% render "icon-linkedin" %}</a>
+        <a class="share_icons" href="mailto:{{ section.settings.share_mail }}" target="_blank">{% render "icon-mail" %}</a>
+        <a href="#" class=" tooltip rel" id="share" onclick="return false;">{% render "icon-share-link" %}</a>
       </div>
     </div>
     <div class="divider"></div>
     <div class="next-previous-article">
-      <span class="previous">{% include "back-icon" %} {{section.settings.previous_heading}}</span>
-      <span class="next">{{section.settings.next_heading}} {% include "back-icon" %} </span>
+      {% if blog.next_article or blog.previous_article %}
+
+      {% if blog.previous_article %}
+      <span class="previous">
+        {% include "back-icon" %} {{ section.settings.previous_heading | link_to: blog.previous_article }}
+      </span>
+      {% else %}
+      <div></div>
+      {% endif %}
+      
+      {% if blog.next_article %}
+      <span class="next">
+        {{ section.settings.next_heading | link_to: blog.next_article }} {% include "back-icon" %}
+      </span>
+      {% else %}
+      <div></div>
+      {% endif %}
+
+      {% endif %}
+
     </div>
   </div>
 </div>
 
+<script>
+
+  $( "#share" ).click(function() {
+    if (navigator.share) {
+      navigator.share({
+        title: '{{ section.settings.website_url }}',
+        text: '{{ section.settings.share_title }}',
+        url: '{{ section.settings.share_link }}',
+      })
+      .then(() => console.log('Successful share'))
+      .catch((error) => console.log('Error sharing', error));
+    } else {
+      var el = document.createElement('textarea');
+      el.value = "{{ block.settings.share_link }}";
+      document.body.appendChild(el);
+      el.select();
+      el.setSelectionRange(0, 99999);
+      document.execCommand('copy');
+      document.body.removeChild(el);
+
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copied to clipboard";
+    }
+  });
+  if (navigator.share) {
+    $("#myTooltip").remove();
+  }
+
+</script>
+
 {% schema %}
-  {
+{
     "name": "Section with divider",
     "settings": [
-		{
-          "id": "share_heading",
-          "type": "text",
-          "label": "Heading"
+        {
+            "id": "share_heading",
+            "type": "text",
+            "label": "Heading"
         },
-		{
-          "id": "previous_heading",
-          "type": "text",
-          "label": "Previous Text"
+        {
+            "id": "previous_heading",
+            "type": "text",
+            "label": "Previous Text"
         },
-		{
-          "id": "next_heading",
-          "type": "text",
-          "label": "Next Text"
+        {
+            "id": "next_heading",
+            "type": "text",
+            "label": "Next Text"
+        },
+                {
+                    "id": "share_link",
+                    "type": "url",
+                    "label": "Url to be shared of the item/product"
+                },
+                {
+                    "id": "share_title",
+                    "type": "text",
+                    "label": "Text for the message",
+                    "info": "This wil be showed in message when the user shares the url"
+                },
+                {
+                    "id": "website_url",
+                    "type": "url",
+                    "label": "Url of your website or homepage"
+                },
+                {
+                    "id": "share_mail",
+                    "type": "text",
+                    "label": "Enter a mail id"
+                }
+    ],
+    "blocks": [
+        {
+            "type": "social",
+            "name": "Social Icon",
+            "limit": 6,
+            "settings": [
+                {
+                    "id": "social_icon",
+                    "type": "image_picker",
+                    "label": "Social icon"
+                },
+                {
+                    "id": "social_icon_link",
+                    "type": "url",
+                    "label": "Social link"
+                }
+            ]
         }
-	],
-	"blocks": [
-	{
-          "type": "social",
-          "name": "Social Icon",
-          "limit": 4,
-          "settings": [
-            {
-              "id": "social_icon",
-              "type": "image_picker",
-              "label": "Social icon"
-            }
-          ]
+    ],
+    "presets": [
+        {
+            "name": "Social Icon"
         }
-  ],
-  "presets": [
-    {
-      "name": "Social Icon"
-    }
-  ]
-  }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
