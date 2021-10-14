@@ -104,7 +104,7 @@ nav .dropdown:hover .header-nav-list-sub, .login-wrapper.active {
   opacity: 1;
 }
 
-nav .dropdown:hover svg{
+nav .dropdown.lang:hover svg{
 transform: rotate(180deg);
 }
 
