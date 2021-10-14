@@ -139,11 +139,11 @@ function getCookie(cname) {
 }
 var anouncement=getCookie("header-anouncement");
 
-if (anouncement == "") {
-  $('.header-anouncement').addClass('flexbox');
+if ( anouncement == "") {
+  $('.header-anouncement').css('display','flex');
 }
 $('#header-anouncement-close').click(function(){
-  $('.header-anouncement').removeClass("flexbox");
+  $('.header-anouncement').css('display','none');
   setCookie("header-anouncement", "close", 1);
 });
 
