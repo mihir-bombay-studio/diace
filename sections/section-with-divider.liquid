@@ -46,14 +46,13 @@
 </div>
 
 <script>
-  {% for block in section.blocks %}
-  {% if block.type == "share_link" %}
+
   $( "#share" ).click(function() {
     if (navigator.share) {
       navigator.share({
-        title: '{{ block.settings.website_url }}',
-        text: '{{ block.settings.share_title }}',
-        url: '{{ block.settings.share_link }}',
+        title: '{{ section.settings.website_url }}',
+        text: '{{ section.settings.share_title }}',
+        url: '{{ section.settings.share_link }}',
       })
       .then(() => console.log('Successful share'))
       .catch((error) => console.log('Error sharing', error));
@@ -73,8 +72,7 @@
   if (navigator.share) {
     $("#myTooltip").remove();
   }
-  {% endif %}
- {% endfor %}
+
 </script>
 
 {% schema %}
