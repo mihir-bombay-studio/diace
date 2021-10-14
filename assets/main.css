@@ -225,6 +225,9 @@ a {
   flex-direction: column;
   margin-top: 52px;
   justify-content: space-around;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
 
