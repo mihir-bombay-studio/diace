@@ -1,0 +1,11 @@
+
+{%- assign paginationAmount = 50 -%}
+
+{%- if cart.attributes.pagination != blank -%}
+
+  {%- assign paginationAmount = cart.attributes.pagination | default:40 | abs -%}
+
+{%- endif -%}
+{%- paginate collection.products by paginationAmount -%}
+  ...
+{%- endpaginate -%}
