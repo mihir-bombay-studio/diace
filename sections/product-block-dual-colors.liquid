@@ -119,17 +119,6 @@
               {%- endif -%}
             </div>
             {%- for value in option.values -%}
-            {% assign variantImg = blank %}
-            {% assign variantColorCode = blank %}
-            {% for variant in product.variants %}
-              {% if variant.option1 == value or variant.option2 == value %}
-                {% if variant.metafields.my_fields.variant_image %}
-                  {% assign variantImg = variant.metafields.my_fields.variant_image %}
-            	{% elsif variant.metafields.my_fields.variant_color %}
-                  {% assign variantColorCode = variant.metafields.my_fields.variant_color %}
-                {% endif %}
-              {% endif %}
-            {% endfor %}
             <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
                    class="no-disp"
                    name="{%- if option.name == "Title" or option.name == "Maat" or option.name == "Size" -%}
@@ -147,12 +136,8 @@
             
             <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               <span class="color-swatch" >
-                {% assign imgsrc = value | append: ".PNG" %}
-                {% if variantImg != blank %}
-                <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
-                {% else %}
-                <span class="colors-color" style="background-color:{{ variantColorCode }};"></span>
-                {% endif %}
+                <span class="colors-color" style="background-color:#000;"></span>
+                
               </span>
               <span> {{ value }}</span> 
             </label>
