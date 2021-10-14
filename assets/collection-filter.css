@@ -437,7 +437,7 @@ a.active-facets__button {
 }
 
 .other-variants .color_wrapper span{
-  width: calc(16.777% - 0px);
+  width: calc(16.777% - 1px);
   height: 100%;
   display: flex;
   justify-content: space-evenly;
