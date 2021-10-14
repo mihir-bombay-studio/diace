@@ -138,7 +138,8 @@ function getCookie(cname) {
   return "";
 }
 var anouncement=getCookie("header-anouncement");
-if (anouncement == "") {
+
+if (screen.width > 991 and anouncement == "") {
   $('.header-anouncement').css('display','flex');
 }
 $('#header-anouncement-close').click(function(){
