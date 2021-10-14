@@ -230,6 +230,24 @@
   </div>
 </div>
 <script>
+  
+  // jQuery functions to show and hide divisions
+  $(document).ready(function () {
+    $('.color-selector').click(function () {
+      var inputValue = $(this).data("value");
+      console.log(inputValue);
+      $(".selected-color").hide();
+      $(inputValue).toggle();
+      $(".color-selector-wrapper").toggle();
+    });
+
+    $('.color-change-btn').click(function () {
+      $(".color-selector-wrapper").toggle();
+    });
+  });
+  
+  
+  
     $(".product-qty-add-to-cart-wrapper").on( "click", ".qty-minus", function() {
   	var data_qty = parseInt($(this).next().data('qty'));
     if( data_qty != 1 )
