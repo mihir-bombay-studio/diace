@@ -235,6 +235,7 @@ a {
   display: flex;
   font-family: Myriad Pro;
   max-height : 376px;
+  padding : 52px 0;
 }
 
 
@@ -277,6 +278,7 @@ img{
   .article-product{
     flex-direction: column;
     max-height : none;
+    padding : 26px 0;
   }
   .product-content , .product-image{
     width: 100%;
