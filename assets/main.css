@@ -250,6 +250,7 @@ a {
 }
 .product-content{
   background: #FEC23B33;
+  position : relative;
   border-radius: 8px;
   width: 50%;
   padding: 75px 26px;
