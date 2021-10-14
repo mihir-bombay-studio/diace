@@ -674,10 +674,12 @@
                     <span class="hover-text bold">KOPEN</span>
                   </div>
                   {% elsif  product.options_with_values.size > 1  %}
+                  <a href="{{product.url}}">
                    <div class="product-hover-text flex-box align-center">
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <a href="{{product.url}}" class="hover-text bold">KOPEN</a>
                   </div>
+                  </a>
                   {% else %}
                 
                   <div data-prod-id="{{product.handle}}" class="variant-pop product-hover-text flex-box align-center">
