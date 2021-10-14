@@ -267,9 +267,8 @@ $("body").on('click', '.AddToCart', function (e) {
     getCartDetails();
     
     var success_hander = $(this).data("success");
-    if(success_hander == "success"){
-    	console.log("succcess")
-    }
+    	console.log(success_hander)
+    
   })
   .fail(function (error) {
     console.log(error);
