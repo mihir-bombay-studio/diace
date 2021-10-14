@@ -210,6 +210,12 @@ transform: rotate(180deg);
   left: auto;
 }
 
+.login-form input::placeholder, .login-page input::placeholder, .login-form input, .login-page input {
+  font-weight: 300;
+  color: #737373;
+  font-size: 16px;
+}
+
 
 .login-form input, .login-page input{
   border: 1px solid #FEC23B;
@@ -217,6 +223,7 @@ transform: rotate(180deg);
   display: block;
   width: 100%;
   padding: 8px;
+  font-size: 16px;
 }
 
 .input_form_control {
