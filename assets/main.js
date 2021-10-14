@@ -139,7 +139,7 @@ function getCookie(cname) {
 }
 var anouncement=getCookie("header-anouncement");
 
-if (screen.width > 991 and anouncement == "") {
+if (screen.width > 991 && anouncement == "") {
   $('.header-anouncement').css('display','flex');
 }
 $('#header-anouncement-close').click(function(){
