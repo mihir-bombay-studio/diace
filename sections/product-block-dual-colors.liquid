@@ -153,8 +153,6 @@
                    form="product-form-{{ section.id }}"
                    {% if option.selected_value == value %}checked{% endif %}
                    >
-            {%-if option.name == "Kleur" or option.name == "Color" or option.name == "Colour" -%}
-            
             <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               <span class="color-swatch" >
                 <span class="colors-color" style="background-color:#000;"></span>
@@ -162,13 +160,7 @@
               </span>
               <span> {{ value }}</span> 
             </label>
-            {%- else -%}
-            <label class="{{ option.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
-              {{ value }} 
-            </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
-            {%- endif -%}
             {%- endfor -%}
-           </fieldset>
             <!--        ======================= LIST OF PALATTE TO SELECT FROM =================================        -->
               <div class="color-selector-wrapper">
                 KIES HET KLEUR VAN DE BAND:
@@ -197,6 +189,8 @@
                   </label>
                 </div>
               </div>
+           </fieldset>
+            
           {%- endfor -%}
           </div>
           <script id="product-json" type="application/json">
