@@ -7,7 +7,7 @@
       <div class="share-platforms">
         {% for block in section.blocks %}
         <a href="{{ block.settings.social_icon_link }}">
-          {% if item.image != blank %}
+          {% if block.settings.social_icon != blank %}
           <img src="{{ block.settings.social_icon | img_url : " icon" }}" 
                alt="social-icon" 
                loading="lazy">
