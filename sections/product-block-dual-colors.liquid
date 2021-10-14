@@ -112,7 +112,7 @@
             <div class="variant-option-name">
 <!--               KIES HET KLEUR VAN DE BAND: <span class="color-change-btn light"> Wijzig</span> -->
               <div class="variant-selected-color">
-                KLEUR SENSORHOUDER: <span class="color-change-btn light"> Wijzig</span>
+                KLEUR SENSORHOUDER: <span class="color-change-btn light" data-palatte="palatte_{{forloop.index}}"> Wijzig</span>
                 <div id="1" class="selected-color">
                   <span class="color-swatch">
                     <span class="colors-color" style="background-color:#bfb9ab;"></span>
@@ -159,7 +159,7 @@
             </label>
             {%- endfor -%}
             <!--        ======================= LIST OF PALATTE TO SELECT FROM =================================        -->
-              <div class="color-selector-wrapper">
+              <div id="palatte_{{forloop.index}}" class="color-selector-wrapper">
                 KIES HET KLEUR VAN DE BAND:
                 <br>
                 <div class="">
