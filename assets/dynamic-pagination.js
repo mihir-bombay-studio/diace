@@ -8,6 +8,7 @@
 /* Grab the <select> element, and cache it should it be needed later */
 window.theme = window.theme || ();
 
+theme.cache.paginateDropdown = $('#paginateBy');
 
 /* Bind a change event to the dropdown */
 theme.cache.paginateDropdown.on('change', function(){
