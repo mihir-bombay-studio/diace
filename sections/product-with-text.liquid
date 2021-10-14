@@ -2,23 +2,24 @@
 {% for product in collection['all'].products %}
 <div class="article-product">
   <div class="product-image">
-    <img src="12.jpg" alt="product Image" loading="lazy">
+    <img src="https://cdn.shopify.com/s/files/1/0594/3604/0367/products/product1_346ec9fd-5347-4cd9-884a-7b9a590858e5.png?v=1631779609" alt="product Image" loading="lazy">
   </div>
   <div class="product-content">
-    <div class="product-title">{{product.title}}</div>
+    <div class="product-title">Copy of Freestyle Libre sensorhouder</div>
     <div class="product-variant">
-      <span>Kleur: Paars</span>
+      <span>Kleur: Purple</span>
     </div>
     <div class="productprice">
-      <span class="compare-to-price">{{ product.compare_at_price | money }}</span>
-      <span class="product-price">{{ product.price | money  }}</span>
+      <span class="compare-to-price">€20,99</span>
+      <span class="product-price">€16,95</span>
     </div>
     <div class="product-desc">
-      {{product.description}}
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+      labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
     </div>
     <div class="product-hover-text flex-box align-center">
-      <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-      <a href="{{product.url}}" class="hover-text bold">KOPEN</a>
+      <span class="plus-icon"><svg fill="none" height="24" stroke="#FEC23B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg></span>
+      <a href="https://y7ki8n12edr2g873-59436040367.shopifypreview.com/products_preview?preview_key=52b98bd0dc671bb05fee7503cd4e8e6e" class="hover-text bold">KOPEN</a>
     </div>
   </div>
 </div>
