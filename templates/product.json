@@ -122,10 +122,10 @@
         "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
       }
     },
-    "1634149386ce8a60a9": {
+    "1634189346f895f445": {
       "type": "related-products",
       "blocks": {
-        "96258259-2369-4881-a386-bfe9b885666a": {
+        "2610b275-4898-4dc1-b9d8-7dbfb3093dbf": {
           "type": "button",
           "settings": {
             "button_label": "ALLE CATEGORIEËN",
@@ -135,12 +135,12 @@
         }
       },
       "block_order": [
-        "96258259-2369-4881-a386-bfe9b885666a"
+        "2610b275-4898-4dc1-b9d8-7dbfb3093dbf"
       ],
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
         "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
-        "featured_collection": "stickers"
+        "new_featured_collection": "stickers"
       }
     },
     "1633621467157b4204": {
@@ -225,7 +225,7 @@
     "16336209926af228d4",
     "163362115027b57f6f",
     "1633621187288eeba0",
-    "1634149386ce8a60a9",
+    "1634189346f895f445",
     "1633621467157b4204",
     "1633621996c72e5409",
     "16336220533f137fd8"
