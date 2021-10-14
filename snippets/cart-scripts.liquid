@@ -268,7 +268,7 @@ $("body").on('click', '.AddToCart', function (e) {
     
     var success_hander = $('.AddToCart').data("success");
     if(success_hander == "successfull"){
-    	let success_id = $(this).data("success-id");
+    	let success_id = $(".variant-pop").data("success-id");
   		$(`#${id}`).toggleClass("flex");
     }
   })
