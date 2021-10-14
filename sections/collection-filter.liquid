@@ -688,14 +688,21 @@
                   
                   {%- unless product.has_only_default_variant -%}
                   {% if product.options_with_values.size <= 1 %}
+                  {%- if option.name == "Kleur" or option.name == "Color" -%}
+                  
                   <div id="{{product.handle}}" class="product_coll_variant variant-options-wrapper">
                     <div class="color_wrapper">
-                      {% for variant in product.variants limit:6%}
+                      {% for variant in product.variants limit:6 %}
                       <span data-success-id="success_{{product.handle}}" class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
                       {% endfor %}
                     </div>
                   </div>
                   <span id ="success_{{product.handle}}" class="success_cart__message">TOEGEVOEGD  {% include "tick" %}</span>
+                  
+                  
+                  {% elsif option.name == "Title" or option.name == "Maat" or option.name == "Size" %}
+                  title
+                  {% endif %}
                   {% endif %}
                   {%- endunless -%}
                
