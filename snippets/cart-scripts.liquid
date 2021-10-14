@@ -267,8 +267,9 @@ $("body").on('click', '.AddToCart', function (e) {
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
     getCartDetails();
     $(`#${success_handler}`).addClass("flex");
+    
     setTimeout(function(){ 
-      
+     
       $(`#${success_handler}`).removeClass("flex"); 
       $(".product_coll_variant , .other-variants").removeClass("flex"); 
     }, 3000);
