@@ -424,11 +424,10 @@ a.active-facets__button {
 .color_wrapper{
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 100%;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
 .color_wrapper span{
@@ -436,6 +435,15 @@ a.active-facets__button {
   color: #000;
   font-weight: 600;
 }
+
+.other-variants .color_wrapper span{
+  width: calc(16.777% - 0px);
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 
 .success_cart__message{
   position: absolute;
@@ -457,6 +465,8 @@ a.active-facets__button {
 .flex{
   display : flex;
 }
+
+
 
 .other-variants .color_wrapper span:hover{
   background-color : #FEC23B;
