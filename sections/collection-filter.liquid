@@ -689,86 +689,11 @@
                   {%- unless product.has_only_default_variant -%}
                   {% if product.options_with_values.size <= 1 %}
                   <div id="{{product.handle}}" class="product_coll_variant variant-options-wrapper">
-                    <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
-                      <div data-options = "{{product.options_with_values.size}}" class="fieldset-wrapper style-scrollbar">
-                        {% comment %}
-                        {%- for option in product.options_with_values -%}                    
-                          <fieldset class="js product-form__input ">
-                            <div class="variant-option-name">
-                              {%- if option.name == "Size" or option.name == "Maat"  -%}
-                              KIES JOUW MAAT
-
-                              <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
-                              <div class="mask" role="dialog"></div>
-                              <div class="modal style-scrollbar" role="alert">
-                                <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"></div>
-                                <button class="close" role="button">{% render "icon-close-1" %}</button>
-                              </div>
-                              {%- else if option.name == "Kleur" or option.name == "Color" -%}
-                              KIES HET KLEUR VAN DE BAND: <span class="color-change-btn light"> Wijzig</span>
-                              {%- endif -%}
-                            </div>
-                            {%- for value in option.values limit:3-%}
-                            {% assign variantImg = blank %}
-                            {% assign variantColorCode = blank %}
-                            {% for variant in product.variants %}
-                            {% if variant.option1 and variant.option2 == blank %}
-                            {% if variant.option1 == value or variant.option2 == value %}
-                            {% if variant.metafields.my_fields.variant_image %}
-                            {% assign variantImg = variant.metafields.my_fields.variant_image %}
-                            {% elsif variant.metafields.my_fields.variant_color %}
-                            {% assign variantColorCode = variant.metafields.my_fields.variant_color %}
-                            {% endif %}
-                            {% endif %}
-                            {% endif %}
-                            {% endfor %}
-                            <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
-                                   class="no-disp"
-                                   name="{%- if option.name == "Title" or option.name == "Maat" or option.name == "Size" -%}
-                                         Title
-                                         {%- else if option.name == "Colour" -%}
-                                         {{ option.name }}
-                                         {%- else if option.name == "Kleur" or option.name == "Color"  -%}
-                                         Color
-                                         {%- endif -%}"
-                                   value="{{ value | escape }}"
-                                   form="product-form-{{ section.id }}"
-                                   {% if option.selected_value == value %}checked{% endif %}
-                                   >
-                            {%-if option.name == "Kleur" or option.name == "Color" or option.name == "Colour" -%}
-
-                            <label class="{{ option.name }} color-label AddToCart" data-variant-id="" data-quantity="1" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
-                              <span class="color-swatch" >
-                                {% assign imgsrc = value | append: ".PNG" %}
-                                {% if variantImg != blank %}
-                                <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
-                                {% else %}
-                                <span class="colors-color" style="background-color:{{ variantColorCode }};"></span>
-                                {% endif %}
-                              </span>
-                              <span> {{ value }}</span> 
-                            </label>
-                            {%- else -%}
-                            <label class="{{ option.name }} title-label "  for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
-                              {{ value }} 
-                            </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
-                            {%- endif -%}
-                            {%- endfor -%}
-                          </fieldset>                   
-                        {%- endfor -%}    
-                        {% endcomment %}
-                        
-                        <div class="color_wrapper">
-                          {% for variant in product.variants limit:6%}
-                          <span  class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
-                         <span  class="success_cart__message">TOEGEVOEGD</span>
-                          {% endfor %}
-                        </div>
-                      </div>
-                      <script id="product-json" type="application/json">
-              {{ product.variants | json }}
-                      </script>
-                    </variant-radios>
+                    <div class="color_wrapper">
+                      {% for variant in product.variants limit:6%}
+                      <span  class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
+                      {% endfor %}
+                    </div>
                   </div>
                   {% endif %}
                   {%- endunless -%}
