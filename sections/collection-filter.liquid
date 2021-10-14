@@ -626,7 +626,7 @@
       <div id="CollectionProductGrid">
         
         {% assign number_render = 5 %}
-        {% paginate collection.products by number_render %}
+        {% paginate collection.products by limit %}
         {%- if collection.products.size == 0 -%}
         {% comment %}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
