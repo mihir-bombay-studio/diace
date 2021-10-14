@@ -431,6 +431,8 @@ a.active-facets__button {
 
 .color_wrapper span{
   cursor : pointer;
+  color: #000;
+  font-weight: 600;
 }
 
 .success_cart__message{
