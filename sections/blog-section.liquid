@@ -64,7 +64,7 @@
     {%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
     {%- capture readtime -%}{{ readtime }}- min read{%- endcapture -%}
     
-    <div data-value="{{words.size}}" class="blogs" data-btag="{% for tag in article.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
+    <div class="blogs" data-btag="{% for tag in article.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
       <div class="blog-image">
         <a href="{{article.url}}">
         {% if article.image != blank %}
