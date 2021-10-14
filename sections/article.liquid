@@ -7,34 +7,35 @@
 {%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
 {%- capture readtime -%}{{ readtime }} - min read{%- endcapture -%}
 <div class="background-overlay">
-  <div class="container article-container">
-    <div class="content-wrapper">
+</div>
+<div class="container article-container">
+  <div class="content-wrapper">
 
 
-      <a class="back-btn" href="/blogs/news">{% include "back-icon" %} Terug</a>
-      <div class="time-and-date">
-        <span class="date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
+    <a class="back-btn" href="/blogs/news">{% include "back-icon" %} Terug</a>
+    <div class="time-and-date">
+      <span class="date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
 
-        <span>{{readtime}}</span>
+      <span>{{readtime}}</span>
+    </div>
+    <div class="article-image">
+      <img src="{{ article.image.src | img_url: 'master' }}" alt="">
+    </div>
+    <div class="author">
+      <img src="{{ article.image.src | img_url: 'master' }}" alt="author">
+      <span class="author-name">{{ article.author }}</span>
+    </div>
+    <div class="article-content">
+      <div class="heading">
+        {{ article.title }}
       </div>
-      <div class="article-image">
-        <img src="{{ article.image.src | img_url: 'master' }}" alt="">
-      </div>
-      <div class="author">
-        <img src="{{ article.image.src | img_url: 'master' }}" alt="author">
-        <span class="author-name">{{ article.author }}</span>
-      </div>
-      <div class="article-content">
-        <div class="heading">
-          {{ article.title }}
-        </div>
-        <div class="description">
-          {{ article.content }}
-        </div>
+      <div class="description">
+        {{ article.content }}
       </div>
     </div>
   </div>
 </div>
+
 
 {% schema %}
 {
