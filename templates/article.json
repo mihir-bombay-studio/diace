@@ -72,13 +72,29 @@
             "social_icon": "shopify:\/\/shop_images\/linkedin-svgrepo-com_1.png",
             "social_icon_link": ""
           }
+        },
+        "fd011653-896a-4275-87b8-be66d932ff18": {
+          "type": "social",
+          "settings": {
+            "social_icon": "shopify:\/\/shop_images\/email-envelope-button-svgrepo-com.png",
+            "social_icon_link": ""
+          }
+        },
+        "0e943a79-441c-406d-862e-3ea02f4b9d2b": {
+          "type": "social",
+          "settings": {
+            "social_icon": "shopify:\/\/shop_images\/link-svgrepo-com.png",
+            "social_icon_link": ""
+          }
         }
       },
       "block_order": [
         "54a1ff4b-ada3-4b40-ace7-e62f17e5d006",
         "6ac79c46-7615-492a-bc4b-200d90fba1a8",
         "0d8cac31-057b-453f-8616-28019c6ad7ae",
-        "722bb71b-b78d-4d93-8a72-516d3120dcc9"
+        "722bb71b-b78d-4d93-8a72-516d3120dcc9",
+        "fd011653-896a-4275-87b8-be66d932ff18",
+        "0e943a79-441c-406d-862e-3ea02f4b9d2b"
       ],
       "settings": {
         "share_heading": "Deel dit artikel",
