@@ -234,12 +234,11 @@ a {
   width: 100%;
   display: flex;
   font-family: Myriad Pro;
+  max-height : 376px;
 }
 
 
-
 .product-image{
-  height: 376px;
   width: 50%;   
 }
 img{
@@ -277,6 +276,7 @@ img{
 @media screen and (max-width: 992px) {
   .article-product{
     flex-direction: column;
+    max-height : none;
   }
   .product-content , .product-image{
     width: 100%;
@@ -284,9 +284,7 @@ img{
   .product-content{
     padding: 16px;
   }
-  .product-image{
-    height: 350px;
-  }
+  
 
 }
 
