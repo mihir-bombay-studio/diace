@@ -18,6 +18,8 @@
             <span class="previous">
              {% include "back-icon" %}{{ section.settings.previous_heading | link_to: blog.previous_article }}
             </span>
+      {% else %}
+      <div></div>
           {% endif %}
           {% if blog.next_article %}
             <span class="next">
