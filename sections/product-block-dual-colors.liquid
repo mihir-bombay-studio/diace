@@ -268,7 +268,8 @@
     });
 
     $('.color-change-btn').click(function () {
-      $(".color-selector-wrapper").toggle();
+      let palatte_id = $(this).data("palatte");
+      $(`#${palatte_id}`).toggle();
     });
   });
   
