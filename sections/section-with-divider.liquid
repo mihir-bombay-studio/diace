@@ -16,7 +16,7 @@
 
       {% if blog.previous_article %}
       <span class="previous">
-        {% include "back-icon" %}{{ section.settings.previous_heading | link_to: blog.previous_article }}
+        {% include "back-icon" %} {{ section.settings.previous_heading | link_to: blog.previous_article }}
       </span>
       {% else %}
       <div></div>
