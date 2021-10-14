@@ -164,3 +164,10 @@ $('.go-up').click(function (event) {
   event.preventDefault();
   $('html').animate({ scrollTop: 0 },200,"linear");
 });
+
+
+$(document).ready(function() {
+  if (window.location.href.indexOf("policies") > -1) {
+    $(".header-wrapper").removeClass("mb");
+  }
+});
