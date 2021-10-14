@@ -405,9 +405,6 @@ a.active-facets__button {
   gap: 10px;
 }
 
-.flex{
-  display : flex;
-}
 
 .color_wrapper{
   width: 100%;
@@ -436,6 +433,9 @@ a.active-facets__button {
 
 }
 
+.flex{
+  display : flex;
+}
 
 @media screen and (max-width: 992px) {
   .collection-filter-left , .collection-filter-right, .filter-mask{
