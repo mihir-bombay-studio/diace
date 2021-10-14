@@ -15,9 +15,7 @@
 
 .text-background {
   position: relative !important;
-  background-image: url(//cdn.shopify.com/s/files/1/0594/3604/0367/t/7/assets/article-bg.svg?v=3246859187231546785);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color : #FEC23B33;
   height: 220px;
 }
 
@@ -75,7 +73,15 @@
   border: #0d0d0d;
   margin-bottom: 2px;
 }
-
+@media screen and (max-width: 991px) {
+  .text-background{
+    height : auto;
+    padding: 25px 0;
+  }
+  .heading-container{
+  	font-size : 20px;
+  }
+}
 
 
 @media screen and (max-width: 768px) {

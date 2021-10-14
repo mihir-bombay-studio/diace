@@ -65,25 +65,13 @@
         "6f0cd511-fcf7-4de5-9779-11fccff6d3d6": {
           "type": "brand_filter",
           "settings": {
-            "brand": "Merk01"
+            "brand": "diace"
           }
         },
         "dbd2c05d-59c4-433a-98bb-62775eba7570": {
           "type": "brand_filter",
           "settings": {
-            "brand": "Merk02"
-          }
-        },
-        "e2e41fd0-d008-4820-a95c-db2869a91081": {
-          "type": "brand_filter",
-          "settings": {
-            "brand": "Merk03"
-          }
-        },
-        "2395cb24-5dd2-4934-969b-889e37fcadcb": {
-          "type": "brand_filter",
-          "settings": {
-            "brand": "Merk04"
+            "brand": "diace-store"
           }
         }
       },
@@ -95,9 +83,7 @@
         "a61b7d2a-c121-41a2-801d-31e56caaf40d",
         "5a68c4ee-a2f2-4da0-992b-d5d742dab923",
         "6f0cd511-fcf7-4de5-9779-11fccff6d3d6",
-        "dbd2c05d-59c4-433a-98bb-62775eba7570",
-        "e2e41fd0-d008-4820-a95c-db2869a91081",
-        "2395cb24-5dd2-4934-969b-889e37fcadcb"
+        "dbd2c05d-59c4-433a-98bb-62775eba7570"
       ],
       "settings": {
         "enable_filtering": true,

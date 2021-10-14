@@ -15,9 +15,7 @@
 
 .text-background {
   position: relative !important;
-  background-image: url({{"article-bg.svg" | asset_url }});
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color : #FEC23B33;
   height: 220px;
 }
 
@@ -75,7 +73,15 @@
   border: #0d0d0d;
   margin-bottom: 2px;
 }
-
+@media screen and (max-width: 991px) {
+  .text-background{
+    height : auto;
+    padding: 25px 0;
+  }
+  .heading-container{
+  	font-size : 20px;
+  }
+}
 
 
 @media screen and (max-width: 768px) {
