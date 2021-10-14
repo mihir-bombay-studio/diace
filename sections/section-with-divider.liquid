@@ -6,7 +6,15 @@
       <p class="share-heading">{{section.settings.share_heading}}</p>
       <div class="share-platforms">
         {% for block in section.blocks %}
-        <img src="{{ block.settings.social_icon | img_url : "icon" }}" alt="social-icon" loading="lazy">
+        <a href="{{ block.settings.social_icon_link }}">
+          {% if item.image != blank %}
+          <img src="{{ block.settings.social_icon | img_url : " icon" }}" 
+               alt="social-icon" 
+               loading="lazy">
+          {% else %}
+          <div class="cart-placeholder">{{ 'image' | placeholder_svg_tag }}</div>
+          {% endif %}
+        </a>
         {% endfor %}
       </div>
     </div>
