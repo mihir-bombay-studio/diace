@@ -45,6 +45,35 @@
   </div>
 </div>
 
+<script>
+  $( "#share" ).click(function() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'blisspaint.com',
+        text: 'Choose your own colour - Wall Paint',
+        url: 'https://blisspaint.com/products/choose-your-own-colour-wall-paint',
+      })
+      .then(() => console.log('Successful share'))
+      .catch((error) => console.log('Error sharing', error));
+    } else {
+      var el = document.createElement('textarea');
+      el.value = "https://blisspaint.com/products/choose-your-own-colour-wall-paint";
+      document.body.appendChild(el);
+      el.select();
+      el.setSelectionRange(0, 99999);
+      document.execCommand('copy');
+      document.body.removeChild(el);
+
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copied to clipboard";
+    }
+  });
+  if (navigator.share) {
+    $("#myTooltip").remove();
+  }
+  });
+</script>
+
 {% schema %}
 {
     "name": "Section with divider",
