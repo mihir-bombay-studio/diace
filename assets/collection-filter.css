@@ -397,6 +397,7 @@ a.active-facets__button {
   position: absolute;
   height: 65px;
   background: #fff;
+  border: 2px solid #fff;
   bottom: 0;
   width: 100%;
   opacity: .85;
