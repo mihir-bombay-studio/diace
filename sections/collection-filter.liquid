@@ -233,12 +233,13 @@
  
       <div class="sorting-wrapper light flex-box justify-between">
         <div class="sorting-part total-items flex-box border-bottom justify-between">
-          <select id="filter-count" class="select__select product_count_sort">
-            <option value="" disabled selected>Toon 16 items</option>
-            <option value="16">1-16</option>
-            <option value="32">32</option>
-            <option value="64">64</option>
-            <option value="all">all</option>
+<!--                       <option value="" disabled selected><label for="paginateBy">Paginate By</label></option> -->
+          <select name="paginateBy" id="paginateBy" class="select__select product_count_sort">
+            {%- assign paginationAmounts = '5,10,15,20,25' | split:',' -%}
+            {%- for i in paginationAmounts -%}
+            {% assign v = i | append:'' %}
+            <option value="{{ v }}"{% if cart.attributes.pagination != blank and cart.attributes.pagination %}{% if cart.attributes.pagination == v %} selected{% endif %}{% else %}{% if i == 40 %} selected{% endif %}{% endif %}>{{ i }} per page</option>
+            {% endfor %}
           </select>
     
             {% include 'icon-black-down-chevron' %}
