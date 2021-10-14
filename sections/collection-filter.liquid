@@ -688,7 +688,8 @@
                   
                   {%- unless product.has_only_default_variant -%}
                   {% if product.options_with_values.size <= 1 %}
-                  
+                  {%- for option in product.options_with_values -%}
+                  {%- if option.name == "Kleur" or option.name == "Color" -%}
                   <div id="{{product.handle}}" class="product_coll_variant variant-options-wrapper">
                     <div class="color_wrapper">
                       {% for variant in product.variants limit:6 %}
@@ -698,6 +699,10 @@
                   </div>
                   <span id ="success_{{product.handle}}" class="success_cart__message">TOEGEVOEGD  {% include "tick" %}</span>
                   
+                  {% else %}
+                  title
+                  {% endif %}
+                  {% endfor %}
                   {% endif %}
                   {%- endunless -%}
                
