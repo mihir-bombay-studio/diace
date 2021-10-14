@@ -129,25 +129,25 @@
         "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
       }
     },
-    "163414971038d9a655": {
+    "16341897088bf88769": {
       "type": "related-products",
       "blocks": {
-        "73771ff6-c0a3-4223-8cba-3123438a5c6c": {
+        "6b6c60ba-a42e-4ee9-9801-65c20b8958a7": {
           "type": "button",
           "settings": {
             "button_label": "ALLE CATEGORIEËN",
-            "button_link": "shopify:\/\/collections",
+            "button_link": "",
             "button-color": "yellow"
           }
         }
       },
       "block_order": [
-        "73771ff6-c0a3-4223-8cba-3123438a5c6c"
+        "6b6c60ba-a42e-4ee9-9801-65c20b8958a7"
       ],
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
         "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
-        "featured_collection": "stickers"
+        "new_featured_collection": "stickers"
       }
     },
     "163231983925a321da": {
@@ -203,7 +203,7 @@
     "1632294615f908e16b",
     "1632296628d5bc229d",
     "163229690103dae5ee",
-    "163414971038d9a655",
+    "16341897088bf88769",
     "163231983925a321da"
   ]
 }
