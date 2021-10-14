@@ -6,11 +6,10 @@
 */
 
 /* Grab the <select> element, and cache it should it be needed later */
-var theme = "diace-store"
-theme.cache.paginateDropdown = $('#paginateBy');
+window.theme.cache.paginateDropdown = $('#paginateBy');
 
 /* Bind a change event to the dropdown */
-theme.cache.paginateDropdown.on('change', function(){
+window.theme.cache.paginateDropdown.on('change', function(){
 
   /* Get the current value. Some value validation could be added here (but we don't) */
   var val = $(this).val();
