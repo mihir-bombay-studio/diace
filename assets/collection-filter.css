@@ -409,6 +409,7 @@ a.active-facets__button {
 .color_wrapper{
   width: 100%;
   display: flex;
+  justify-content: center;
   gap: 10px;
 
 }
