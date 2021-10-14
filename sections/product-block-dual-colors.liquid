@@ -264,7 +264,7 @@
       console.log(inputValue);
       $(".selected-color").hide();//hide the color which was previously selected
       $(inputValue).toggle();// show the color which is selected
-      $(".color-selector-wrapper").toggle();//toggle the palatte
+      $(this).closest(".color-selector-wrapper").toggle();//toggle the palatte
     });
 
     $('.color-change-btn').click(function () {
