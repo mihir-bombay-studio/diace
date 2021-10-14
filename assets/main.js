@@ -140,10 +140,10 @@ function getCookie(cname) {
 var anouncement=getCookie("header-anouncement");
 
 if ( anouncement == "") {
-  $('.header-anouncement').css('display','flex');
+  $('.header-anouncement').removeClass('no-disp');
 }
 $('#header-anouncement-close').click(function(){
-  $('.header-anouncement').css('display','none');
+  $('.header-anouncement').addClass('no-disp');
   setCookie("header-anouncement", "close", 1);
 });
 
