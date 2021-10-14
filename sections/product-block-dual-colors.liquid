@@ -105,28 +105,19 @@
           {%- for option in product.options_with_values -%}
           <fieldset class="js product-form__input ">
             <div class="variant-option-name">
-              {%- if option.name == "Size" or option.name == "Maat"  -%}
-              KIES JOUW MAAT
-
-              <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
-              <div class="mask" role="dialog"></div>
-              <div class="modal style-scrollbar" role="alert">
-                <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"></div>
-                <button class="close" role="button">{% render "icon-close-1" %}</button>
-              </div>
-              {%- else if option.name == "Kleur" or option.name == "Color" -%}
+              {%- if option.name == "Kleur" or option.name == "Color" -%}
               KIES HET KLEUR VAN DE BAND: <span class="color-change-btn light"> Wijzig</span>
+              {%- else -%}
+              
               {%- endif -%}
             </div>
             {%- for value in option.values -%}
             <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
                    class="no-disp"
-                   name="{%- if option.name == "Title" or option.name == "Maat" or option.name == "Size" -%}
-                         Title
-                         {%- else if option.name == "Colour" -%}
-                         {{ option.name }}
-                         {%- else if option.name == "Kleur" or option.name == "Color"  -%}
+                   name="{%- if option.name == "Kleur" or option.name == "Color" or option.name == "Colour"  -%}
                          Color
+                         {%-else-%}
+                         {{ option.name }}
                          {%- endif -%}"
                    value="{{ value | escape }}"
                    form="product-form-{{ section.id }}"
