@@ -139,7 +139,7 @@ function getCookie(cname) {
 }
 var anouncement=getCookie("header-anouncement");
 if (anouncement == "") {
-  $('.header-anouncement').css('display','flex');
+  $('.header-anouncement').toggleClass("flex");
 }
 $('#header-anouncement-close').click(function(){
   $('.header-anouncement').css('display','none');
