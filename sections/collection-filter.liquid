@@ -680,7 +680,7 @@
                   </div>
                   {% else %}
                 
-                  <div data-success-id="success_{{product.handle}}" data-prod-id="{{product.handle}}" class="variant-pop product-hover-text flex-box align-center">
+                  <div data-prod-id="{{product.handle}}" class="variant-pop product-hover-text flex-box align-center">
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <span class="hover-text bold">KOPEN</span>
                   </div>
@@ -761,7 +761,7 @@
                         <div class="color_wrapper">
                           {% for variant in product.variants limit:6%}
 
-                          <span data-success="successfull" class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
+                          <span  class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
 
                           {% endfor %}
                         </div>
@@ -773,7 +773,7 @@
                   </div>
                   {% endif %}
                   {%- endunless -%}
-                  <span id="success_{{product.handle}}" class="success_cart__message">TOEGEVOEGD</span>
+                  <span  class="success_cart__message">TOEGEVOEGD</span>
                
                 </div>
                 <div class="product-title-price flex-box justify-between">
