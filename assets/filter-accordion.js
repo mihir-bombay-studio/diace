@@ -98,5 +98,6 @@ runFilter();
 $(".variant-pop").click(function () {
   let id = $(this).data("prod-id");
   $(`#${id}`).toggleClass("flex");
+  $(this).addClass("no-disp")
 });
 
