@@ -59,8 +59,8 @@
     {% for article in blogs.news.articles reversed  %}
     {% assign desc = article.content %}
     
-    {%- assign article = article.content -%}{%- assign readtime = '' -%}
-    {%- assign words = article  -%}
+    {%- assign article_content = article.content  -%}{%- assign readtime = '' -%}
+    {%- assign words = article_content | number_of_words -%}
     {%- assign readtime = words.size | divided_by: 180 | round | at_least: 1 -%}
     {%- capture readtime -%}{{ readtime }}- min read{%- endcapture -%}
     
