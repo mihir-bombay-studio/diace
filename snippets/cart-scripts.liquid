@@ -248,7 +248,8 @@ $("body").on('click', '.AddToCart', function (e) {
   let variant_id = parseInt(this.getAttribute("data-variant-id"));
 //   console.log();
   let success_handler = $(this).data("success-id");
-  console.log(success_handler);
+  let success_varaint_option = $(".variant-pop").data("prod-id");
+  console.log(success_varaint_option);
   let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
   console.log(variant_id);
   let formData = {
@@ -268,7 +269,7 @@ $("body").on('click', '.AddToCart', function (e) {
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
     getCartDetails();
     $(`#${success_handler}`).addClass("flex");
-    setTimeout(function(){ $(`#${success_handler}`).removeClass("flex"); }, 3000);
+    setTimeout(function(){ $(`#${success_handler}`).removeClass("flex"); ,  }, 3000);
     
     
   })
