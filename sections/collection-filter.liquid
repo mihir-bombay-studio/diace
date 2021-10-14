@@ -624,7 +624,8 @@
 		<script src="{{ 'filter-accordion.js' | asset_url }}" defer="defer"></script>
 
       <div id="CollectionProductGrid">
-        {% paginate collection.products by 200 %}
+        {% assign number_render = 5 %}
+        {% paginate collection.products by number_render %}
         {%- if collection.products.size == 0 -%}
         {% comment %}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
