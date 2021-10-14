@@ -5,7 +5,7 @@
         <span id="header-anouncement-close" class="flex-box">{% include 'icon-close-circle' %}</span>
     </span>
 
-    <div class="header-wrapper {{ template.name }} {% if template.name != "article" and template.name != "register" and template.name != "page" and template.name != "login"  and template.name != "policies"  %}mb{% endif %}">
+    <div class="header-wrapper {% if template.name != "article" and template.name != "register" and template.name != "page" and template.name != "login"  and template.name != "policies"  %}mb{% endif %}">
 
         <div class="container flex-box justify-between align-center">
             <nav>
