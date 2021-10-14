@@ -760,9 +760,8 @@
                         
                         <div class="color_wrapper">
                           {% for variant in product.variants limit:6%}
-
                           <span  class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
-
+                         <span  class="success_cart__message">TOEGEVOEGD</span>
                           {% endfor %}
                         </div>
                       </div>
@@ -773,7 +772,6 @@
                   </div>
                   {% endif %}
                   {%- endunless -%}
-                  <span  class="success_cart__message">TOEGEVOEGD</span>
                
                 </div>
                 <div class="product-title-price flex-box justify-between">
