@@ -66,12 +66,6 @@
   <div class="filtered-blog-container">
     {% paginate blog.articles by 5 %}
     {% for article in blogs.news.articles reversed  %}
-    {%- assign article = article.content -%}{%- assign readtime = '' -%}
-
-{%- assign words = article | strip_html | split:' ' -%}
-
-{%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
-{%- capture readtime -%}{{ readtime }}- min read{%- endcapture -%}
     {% assign desc = article.content %}
     <div class="blogs" data-btag="{% for tag in article.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}">
       <div class="blog-image">
