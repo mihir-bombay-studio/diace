@@ -1,7 +1,13 @@
 {
   "sections": {
+    "1634223383c0c22675": {
+      "type": "product-block-dual-colors",
+      "settings": {
+      }
+    },
     "1632117875e7ef7fbe": {
       "type": "product-block",
+      "disabled": true,
       "settings": {
         "featured_collection_title": ""
       }
@@ -221,6 +227,7 @@
     }
   },
   "order": [
+    "1634223383c0c22675",
     "1632117875e7ef7fbe",
     "16336209926af228d4",
     "163362115027b57f6f",
