@@ -267,7 +267,9 @@ $("body").on('click', '.AddToCart', function (e) {
     getCartDetails();
     
     var success_hander = $('.AddToCart').data("success");
-    console.log(success_hander)
+    if(success_hander === "success"){
+    	console.log("verified")
+    }
   })
   .fail(function (error) {
     console.log(error);
