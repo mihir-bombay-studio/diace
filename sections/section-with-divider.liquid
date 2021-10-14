@@ -13,11 +13,13 @@
         </a>
         <a class="share_icons"
            href="http://pinterest.com/pin/create/button/?url={{ section.settings.share_link }}"
-           target="_blank"></a>
+           target="_blank">
+          {% render "icon-pinterest-new" %}
+        </a>
         <a class="share_icons"
            href="http://www.linkedin.com/shareArticle?mini=true&url={{ section.settings.share_link }}&title={{ section.settings.share_title }}&source={{ section.settings.website_url }}"
            target="_blank">{% render "icon-linkedin" %}</a>
-        <a class="share_icons" href="mailto:{{ section.settings.share_mail }}" target="_blank"></a>
+        <a class="share_icons" href="mailto:{{ section.settings.share_mail }}" target="_blank">{% render "icon-mail" %}</a>
         <a href="#" class=" tooltip rel" id="share" onclick="return false;">{% render "icon-share-link" %}</a>
       </div>
     </div>
