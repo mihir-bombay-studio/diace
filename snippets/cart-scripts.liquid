@@ -268,7 +268,8 @@ $("body").on('click', '.AddToCart', function (e) {
     
     var success_hander = $('.AddToCart').data("success");
     if(success_hander == "successfull"){
-    	console.log("verified")
+    	let success_id = $(this).data("success-id");
+  		$(`#${id}`).toggleClass("flex");
     }
   })
   .fail(function (error) {
