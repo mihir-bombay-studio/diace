@@ -6,6 +6,7 @@
 */
 
 /* Grab the <select> element, and cache it should it be needed later */
+var theme = "diace-store"
 theme.cache.paginateDropdown = $('#paginateBy');
 
 /* Bind a change event to the dropdown */
