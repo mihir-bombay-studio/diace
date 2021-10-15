@@ -23,9 +23,15 @@
          loading="lazy"
          >
   </div>
-    <div class="bg-yellow-dots dots-left-down">
+    {% if section.settings.banner_title contains "merk" or section.settings.banner_title contains "MERK"  %}
+    <div class="bg-yellow-dots dots-right-down">
       	{% include 'bg-grey-dots-wide' %}
       </div>
+    {% else %}
+    <div class="bg-yellow-dots dots-left-down">
+      {% include 'bg-yellow-dots-wide' %}
+    </div>
+    {% endif %}
   </div>
   
   <div class="shop-by-category-banner-new small">
