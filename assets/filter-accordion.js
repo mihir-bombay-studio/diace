@@ -105,20 +105,6 @@ $(".variant-pop").click(function () {
 $("#filter-count").on("change",function(){
   let numOfProd = $(this).val();
   console.log(numOfProd);
-//   let product_classlist = $(".product-collection-card").data("price");
-//   let product_list=[];
-//    console.log(product_classlist);
-  
-//   for(let i=0;i<=product_classlist.length;i++){
-//     let x = "";
-//     x = product_classlist[i].product_classlist;
-//     product_list.push(x);
-//   }
-   
-//   console.log(product_list);
-//   let collection_grid = $("#CollectionProductGrid");
-  
-  
 
   let a = [];
   let btns=document.querySelectorAll('.product-collection-card[title]');
@@ -127,7 +113,7 @@ $("#filter-count").on("change",function(){
   console.log(a.length);
   console.log(a);
   //   if(numOfProd > )
-  a.length = 4;
+  a.length = numOfProd;
   console.log(a);
 
   $('.product-collection-card').each(function() {
