@@ -153,7 +153,7 @@
                 <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
                 {% else %}
                 {% if variantColorCode == blank%}
-                {% assign colorsSch = colorScheme | split: "," %}
+                {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
                 {% for colors in colorsSch %}
                 {% assign color = colors | split: ":" %}
                 {% if color[0] == value %}
