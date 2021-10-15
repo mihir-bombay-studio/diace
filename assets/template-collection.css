@@ -88,7 +88,7 @@
 }
 
 .collection.loading .loading-overlay {
-  display: block;
+  display: flex;
 }
 
 .collection--empty .title-wrapper {
