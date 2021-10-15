@@ -59,6 +59,10 @@
 .shop-by-category-banner-new.small{
   display : none;
 }
+.shop-by-category-banner-wrapper .dots-left-down {
+  bottom: -57px;
+  left: -47px;
+}
 
 @media screen and (max-width: 768px) {
   .shop-by-category-banner{
