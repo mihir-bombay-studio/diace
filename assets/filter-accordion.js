@@ -112,13 +112,13 @@ $("#filter-count").on("change",function(){
   let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
   console.log(a.length);
   console.log(a);
-  //   if(numOfProd > )
+
   a.length = numOfProd;
   console.log(a);
 
   $('.product-collection-card').each(function() {
     var title = $(this).attr('title');
-            console.log(title);
+
     $(this).addClass('out-of-range-min');
     if( a.includes(title) ) {
       $(this).removeClass('out-of-range-min');
