@@ -54,8 +54,10 @@ $(document).ready(function(){
             return item.public_title === string;
           });
           $(".slider-nav img").each(function(index) {
-            if(w.featured_image.src.indexOf($(this).attr('src')) > -1) {
-              $('.slider-nav').slick('slickGoTo', index);
+            if($(this).attr('src') != null) {
+              if(w.featured_image.src.indexOf($(this).attr('src')) > -1) {
+                $('.slider-nav').slick('slickGoTo', index);
+              }
             }
           });
         }
