@@ -619,6 +619,16 @@ a.active-facets__button {
     overflow-y : auto;
     height: 80vh;
   }
+  
+  .product-colors{
+    flex-direction: column
+  }
+  .product-colors .product-color {
+    flex-basis: 100%;
+  }
+  .product-colors .other-available-colors {
+    flex-basis: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
