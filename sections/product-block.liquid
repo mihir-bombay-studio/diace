@@ -152,6 +152,7 @@
                 {% if variantImg != blank %}
                 <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
                 {% else %}
+                {% if variantColorCode == blank%}{% assign variantColorCode = value %}{% endif %}
                 <span class="colors-color" style="background-color:{{ variantColorCode }};"></span>
                 {% endif %}
               </span>
