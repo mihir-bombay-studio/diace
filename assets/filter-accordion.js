@@ -107,7 +107,7 @@ $("#filter-count").on("change",function(){
   let product_classlist = document.getElementsByClassName("product-collection-card");
   let product_list=[];
   
-  for(i=0;i<=product_classlist.length;i++){
+  for(let i=0;i<=product_classlist.length;i++){
     let x = "";
     x = product_classlist[i].getAttribute("data-price");
     product_list.push(x);
