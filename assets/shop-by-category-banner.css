@@ -73,6 +73,9 @@
   width: 100%;
   height: 282px;
 }
+.bg-yellow-dots.dots-left-down svg .circle-wide-c {
+  fill: #fec23b;
+}
 
 @media screen and (max-width: 768px) {
   .shop-by-category-banner{
