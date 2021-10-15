@@ -401,8 +401,8 @@ a.active-facets__button {
 .other-variants{
   position: absolute;
   height: 65px;
-  background: #fff;
-  border: 2px solid #fff;
+  background: #ffffffcc;
+  border: 2px solid #ffffffcc;
   display : none;
   bottom: 0;
   width: 100%;
