@@ -40,10 +40,9 @@
                                     {% include 'icon-grey-down-chevron' %}
                                 </a>
                                 <ul class="header-nav-list-sub">
-                                  {% for locale in shop.published_locales %}  
-                                  
+                                  {% for locale in shop.published_locales %}                                    
                                     <li url="{{locale.root_url}}" live="{{locale.primary}}">
-                                        <a href="{{ shop.url }}/{{ locale.iso_code }}">{{ locale.iso_code | uppercase }}</a>
+                                        <a href="{{ shop.url }}/{{locale.root_url}}">{{ locale.iso_code | upcase }}</a>
                                     </li>
                                   {% endfor %}
                                 </ul>
