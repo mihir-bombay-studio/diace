@@ -134,7 +134,7 @@ $("#filter-count").on("change",function(){
     var title = $(this).attr('title');
             console.log(title);
     $(this).addClass('out-of-range-min');
-    if( title in a) {
+    if( a.includes(title) ) {
       $(this).removeClass('out-of-range-min');
     }
   });
