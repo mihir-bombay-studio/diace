@@ -103,7 +103,8 @@ $(".variant-pop").click(function () {
 
 
 $("#filter-count").on("change",function(){
-  console.log($(this).val());
+  let numOfProd = $(this).val();
+  console.log(numOfProd);
 //   let product_classlist = $(".product-collection-card").data("price");
 //   let product_list=[];
 //    console.log(product_classlist);
@@ -125,4 +126,7 @@ let btns=document.querySelectorAll('.product-collection-card[title]');
 let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
 console.log(a.length);
   console.log(a);
+//   if(numOfProd > )
+  a.length = 4;
+   console.log(a);
 })
