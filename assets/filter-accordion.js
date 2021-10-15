@@ -110,7 +110,8 @@ $("#filter-count").on("change",function(){
     
     $(".loading-overlay").css("display" , "flex");
   	$(".collection").removeClass("Loading");
-  }, 3000);
+    $(".loading-overlay").css("display" , "none");
+  }, 500);
 
 
   let a = [];
