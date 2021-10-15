@@ -56,7 +56,7 @@
   </div>
   <div class="filtered-blog-container">
     {% paginate blog.articles by 5 %}
-    {% for article in blogs.news.articles reversed  %}
+    {% for article in blogs.news.articles  %}
     {% assign desc = article.content %}
     
     {%- assign article_content = article.content  -%}{%- assign readtime = '' -%}
