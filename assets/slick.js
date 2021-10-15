@@ -48,7 +48,6 @@ $(document).ready(function(){
             }
 
           });
-          console.log(string);
           var x = JSON.parse($('#product-json').html());
 
           var w = x.find(item => {
@@ -57,7 +56,6 @@ $(document).ready(function(){
           $(".slider-nav img").each(function(index) {
             if(w.featured_image.src.indexOf($(this).attr('src')) > -1) {
               $('.slider-nav').slick('slickGoTo', index);
-              console.log('sdfsdf')
             }
           });
         }
