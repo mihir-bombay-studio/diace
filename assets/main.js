@@ -47,15 +47,29 @@ for (i = 0; i < acc.length; i++) {
 
 $('.collection-tag').click(function() {
   $(this).toggleClass("underline-selected");
-  var filter_tag = $(this).data('tfilter');
-  $('.product-collection-card').toggleClass('no-disp');
-  $('.product-collection-card').each(function() {
-    var string = $(this).data('tag');
-    var tag = string.split(',');
-    if( $.inArray(filter_tag, tag) != -1 ) {
-      $(this).removeClass('no-disp');
-    }
+  var filter_tags = [];
+  $('.collection-tag.underline-selected').each(function() {
+    filter_tags.push($(this).data('tfilter'));
   });
+  var filters_length = $('.collection-tag.underline-selected').length;
+  if(filters_length > 0) {
+    $('.product-collection-card').addClass('no-disp');
+    $('.product-collection-card').each(function() {
+      var string = $(this).data('tag');
+      var tag = string.split(',');
+      $(this).dataFilters(0);
+      for(var i = 0; i<filters_length;i++) {
+        if( $.inArray(filter_tags[i], tag) != -1 ) {
+          $(this).dataFilters($(this).dataFilters()+1);
+        }
+      }
+      if($(this).dataFilters == filters_length) {
+      	$(this).removeClass('no-disp');
+      }
+    });
+  } else {
+    $('.product-collection-card').removeClass('no-disp');
+  }
 
 });
 
