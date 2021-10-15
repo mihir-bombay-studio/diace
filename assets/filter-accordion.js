@@ -106,7 +106,11 @@ $("#filter-count").on("change",function(){
   let numOfProd = $(this).val();
 	$(".collection").addClass("Loading");
   
-  setTimeout(function(){ $(".loading-overlay").css("display" , "flex") }, 3000);
+  setTimeout(function(){ 
+    
+    $(".loading-overlay").css("display" , "flex");
+  	$(".collection").removeClass("Loading");
+  }, 3000);
 
 
   let a = [];
