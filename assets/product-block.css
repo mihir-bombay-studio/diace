@@ -138,6 +138,10 @@ cursor: pointer;
   display: inline-flex;
 
 }
+fieldset.product-form__input input:checked+label .color-swatch {
+  border: 2px solid;
+  border-radius: 50%;
+}
 
 .color-swatch .colors-color{
   width:100%;
