@@ -136,10 +136,12 @@ cursor: pointer;
   width: 32px;
   height: 32px;
   display: inline-flex;
+  border: 2px solid transparent;
+  border-radius: 50%;
 
 }
 fieldset.product-form__input input:checked+label .color-swatch {
-  border: 2px solid;
+  border: 2px solid #000000;
   border-radius: 50%;
 }
 
