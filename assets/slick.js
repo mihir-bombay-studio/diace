@@ -17,6 +17,7 @@ $(document).ready(function(){
     focusOnSelect: true,
     infinite: false,
     accessibility: false,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 992,
