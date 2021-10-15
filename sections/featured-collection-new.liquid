@@ -14,16 +14,16 @@
     <div class="featured-product-card">
 
       <div class="featured-product-img rel">
-        <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+        <a href="{{product.url}}"><img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
         <div class="AddToCart fp-hover-text flex-box align-center " data-variant-id="{{product.first_available_variant.id}}" data-quantity = "1">
           <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
           <span href="" class="hover-text bold">KOPEN</span>
         </div>
       </div>
       <div class="product-title-price flex-box justify-between">
-        <div class="product-title semibold">{{ product.title | escape  }}</div>
+        <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  }}</a></div>
         <div class="product-compare-to-and-price">
-          <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
+          <span class="compare-to-price light"><a href="{{product.url}}">{{ product.compare_at_price | money }}</a></span>
           <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
         </div>
       </div>
