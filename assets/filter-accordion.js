@@ -104,17 +104,16 @@ $(".variant-pop").click(function () {
 
 $("#filter-count").on("change",function(){
   let numOfProd = $(this).val();
-  console.log(numOfProd);
+
 
   let a = [];
   let btns=document.querySelectorAll('.product-collection-card[title]');
-  console.log(btns);
+
   let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
-  console.log(a.length);
-  console.log(a);
+ 
 
   a.length = numOfProd;
-  console.log(a);
+
 
   $('.product-collection-card').each(function() {
     var title = $(this).attr('title');
