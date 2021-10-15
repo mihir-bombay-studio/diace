@@ -104,6 +104,9 @@ $(".variant-pop").click(function () {
 
 $("#filter-count").on("change",function(){
   let numOfProd = $(this).val();
+	$(".collection").addClass("Loading");
+  
+  setTimeout(function(){ $(".loading-overlay").css("display" , "flex") }, 3000);
 
 
   let a = [];
