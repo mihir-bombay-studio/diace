@@ -376,8 +376,13 @@ a.active-facets__button {
 
 .product-colors{
   display : flex;
-  flex-direction : column;
-  gap : 2px;
+  gap : 10px;
+}
+.product-colors .product-color {
+  flex-basis: calc(100% - 146px);
+}
+.product-colors .other-available-colors {
+  flex-basis: 138px;
 }
 
 .product_coll_variant{
