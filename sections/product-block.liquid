@@ -64,7 +64,13 @@
       max-height: 263px;
     }
   }
-
+  {% assign images_count = product.images | size %}
+  {% if images_count < 5 %}
+  .slider-nav .slick-track {
+    margin-left: 0;
+    transform: none !important;
+  }
+  {% endif %}
 
 </style>
 
@@ -144,7 +150,7 @@
                    form="product-form-{{ section.id }}"
                    {% if option.selected_value == value %}checked{% endif %}
                    >
-            {%-if option.name == "Kleur" or option.name == "Color" or option.name == "Colour" -%}
+            {%-if option.name contains "Kleur" or option.name contains "Color" or option.name contains "Colour" -%}
             
             <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               <span class="color-swatch" >
