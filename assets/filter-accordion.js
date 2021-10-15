@@ -104,13 +104,13 @@ $(".variant-pop").click(function () {
 
 $("#filter-count").on("change",function(){
   console.log($(this).val());
-  let product_classlist = document.getElementsByClassName("product-collection-card");
+  let product_classlist = $(".product-collection-card").data("price");
   let product_list=[];
    console.log(product_classlist);
   
   for(let i=0;i<=product_classlist.length;i++){
     let x = "";
-    x = product_classlist[i].getAttribute("data-price");
+    x = product_classlist[i].product_classlist;
     product_list.push(x);
   }
    
