@@ -24,7 +24,7 @@
         <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  }}</a></div>
         <div class="product-compare-to-and-price">
           <span class="compare-to-price light"><a href="{{product.url}}">{{ product.compare_at_price | money }}</a></span>
-          <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
+          <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}"><a href="{{product.url}}">{{ product.price | money }}</a></span>
         </div>
       </div>
       
