@@ -36,6 +36,7 @@
         {% else %}
         {% for variant in product.variants limit:1%}
         {%- for option in product.options_with_values -%}
+        {% assign opt_name = option.name %}
         <div class="product-color">
           <span>{{option.name}}: </span>
           <span>
@@ -45,7 +46,7 @@
         {% endfor %}
         {% endfor %}
         <div class="other-available-colors">
-          <a class="featured-product-link" href="{{product.url}}">{% if option.name contains "Kleur" or option.name contains "Color" %}Meer kleuren beschikbaar{% else %}meer opties beschikbaar{% endif %}</a>
+          <a class="featured-product-link" href="{{product.url}}">{% if opt_name contains "Kleur" or opt_name contains "Color" %}Meer kleuren beschikbaar{% else %}meer opties beschikbaar{% endif %}</a>
         </div>
         {% endif %}
       </div>
