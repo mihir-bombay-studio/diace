@@ -103,18 +103,26 @@ $(".variant-pop").click(function () {
 
 
 $("#filter-count").on("change",function(){
-  console.log($(this).val());
-  let product_classlist = $(".product-collection-card").data("price");
-  let product_list=[];
-   console.log(product_classlist);
+//   console.log($(this).val());
+//   let product_classlist = $(".product-collection-card").data("price");
+//   let product_list=[];
+//    console.log(product_classlist);
   
-  for(let i=0;i<=product_classlist.length;i++){
-    let x = "";
-    x = product_classlist[i].product_classlist;
-    product_list.push(x);
-  }
+//   for(let i=0;i<=product_classlist.length;i++){
+//     let x = "";
+//     x = product_classlist[i].product_classlist;
+//     product_list.push(x);
+//   }
    
-  console.log(product_list);
-  let collection_grid = $("#CollectionProductGrid");
+//   console.log(product_list);
+//   let collection_grid = $("#CollectionProductGrid");
+  
+  
+  
+let a = [];
+let btns=document.querySelectorAll('.product-collection-card[data-price]');
+let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
+let max_price = Math.max(...a);
+console.log(a);
   
 })
