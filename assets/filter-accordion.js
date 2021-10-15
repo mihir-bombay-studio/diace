@@ -104,14 +104,14 @@ $(".variant-pop").click(function () {
 
 $("#filter-count").on("change",function(){
   let numOfProd = $(this).val();
-	$(".collection").addClass("Loading");
-  
+  $(".collection").addClass("Loading");
+  $(".loading-overlay").css("display" , "flex");
+
   setTimeout(function(){ 
-    
-    $(".loading-overlay").css("display" , "flex");
-  	$(".collection").removeClass("Loading");
+
+    $(".collection").removeClass("Loading");
     $(".loading-overlay").css("display" , "none");
-  }, 500);
+  }, 1000);
 
 
   let a = [];
