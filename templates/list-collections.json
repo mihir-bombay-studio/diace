@@ -18,7 +18,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP VOLGENS MERK",
-            "button_link": "shopify:\/\/collections"
+            "button_link": "#brand-block"
           }
         }
       },
