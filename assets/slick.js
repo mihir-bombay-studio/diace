@@ -54,7 +54,7 @@ $(document).ready(function(){
             return item.public_title === string;
           });
           $(".slider-nav img").each(function(index) {
-            console.log(w.featured_image.src);
+            console.log(w.featured_image);
             if($(this).attr('src') != null && w.featured_image.src != null) {
               if(w.featured_image.src.indexOf($(this).attr('src')) > -1) {
                 $('.slider-nav').slick('slickGoTo', index);
