@@ -133,9 +133,9 @@ $("#filter-count").on("change",function(){
   $('.product-collection-card').each(function() {
     var title = $(this).attr('title');
             console.log(title);
-//     $(this).addClass('out-of-range-min');
-//     if( product_price >= slide1 && product_price <= slide2) {
-//       $(this).removeClass('out-of-range-min');
-//     }
+    $(this).addClass('out-of-range-min');
+    if( title in a) {
+      $(this).removeClass('out-of-range-min');
+    }
   });
 })
