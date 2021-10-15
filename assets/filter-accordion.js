@@ -104,8 +104,15 @@ $(".variant-pop").click(function () {
 
 $("#filter-count").on("change",function(){
   console.log($(this).val());
-//   let product_list = document.getElementsByClassName("product-collection-card").getAttribute("data-price");
-   let product_list = $(".product-collection-card").data("price");
+  let product_classlist = document.getElementsByClassName("product-collection-card");
+  let product_list=[];
+  
+  for(i=0;i<=product_classlist.length;i++){
+    let x = "";
+    x = product_classlist[i].getAttribute("data-price");
+    product_list.push(x);
+  }
+   
   console.log(product_list);
   let collection_grid = $("#CollectionProductGrid");
   
