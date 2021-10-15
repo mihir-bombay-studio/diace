@@ -36,10 +36,12 @@
         </div>
         {% endif %}
       </li>
-      <li class="mobile-nav-langs">
-        <span class="active">NL</span>
-        <span>FR</span>
-        <span>EN</span>
+      <li class="mobile-nav-langs">        
+        {% for locale in shop.published_locales %}   
+        <span class="{% if request.locale.iso_code == locale.iso_code  %}active{% endif %}">
+          <a href="{{ shop.url }}{{locale.root_url}}">{{ locale.iso_code | upcase }}</a>
+        </span>
+      {% endfor %}
       </li>
       <li class="mobile-nav-social-icons">
         <span>{% render 'facebook' %}</span>
