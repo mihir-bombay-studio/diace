@@ -36,14 +36,16 @@
                             {% endfor %}
                             <li class="right-nav-list dropdown lang bold">
                                 <a href="#">
-                                    NL
+                                    {{ request.locale.iso_code | upcase }}
                                     {% include 'icon-grey-down-chevron' %}
                                 </a>
                                 <ul class="header-nav-list-sub">
-                                  {% for locale in shop.published_locales %}                                    
+                                  {% for locale in shop.published_locales %}   
+                                  {% unless request.locale.iso_code == locale.iso_code  %}
                                     <li url="{{locale.root_url}}" live="{{locale.primary}}">
                                         <a href="{{ shop.url }}/{{locale.root_url}}">{{ locale.iso_code | upcase }}</a>
                                     </li>
+                                  {% endunless %}
                                   {% endfor %}
                                 </ul>
                             </li>
