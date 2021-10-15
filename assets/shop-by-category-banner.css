@@ -60,9 +60,9 @@
   display : none;
 }
 .shop-by-category-banner-wrapper .dots-left-down {
-  bottom: -48px;
+  bottom: -36px;
   left: -25px;
-  max-width: 90%;
+  max-width: 100%;
 }
 .shop-by-category-banner-wrapper svg {
   width: 100%;
