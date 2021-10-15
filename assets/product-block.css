@@ -249,7 +249,7 @@ transform: scale(0.9);
   transform: translate(-50%,-50%);
 }
 
-fieldset.product-form__input input:checked + label {
+fieldset.product-form__input input:checked + label:not(.color-label) {
   font-weight: 600;
 }
 
