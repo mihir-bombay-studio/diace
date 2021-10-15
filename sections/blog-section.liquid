@@ -3,6 +3,11 @@
 
 {% for article in blog.articles %}
 {% if forloop.first %}
+{%- assign article_content = article.content  -%}{%- assign readtime = '' -%}
+    {%- assign words = article_content | number_of_words | strip_html | split:' ' -%}
+    {%- assign readtime = words.size | divided_by: 180 | round | at_least: 1 -%}
+    {%- capture readtime -%}{{ readtime }}- min read{%- endcapture -%}
+    
 <div class="featured-blog-post container">
   <div class="blog-text">
     <div class="welcomeheading">
