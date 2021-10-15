@@ -60,7 +60,7 @@ $('.collection-tag').click(function() {
       $(this).data('filters',0);
       for(var i = 0; i<filters_length;i++) {
         if( $.inArray(filter_tags[i], tag) != -1 ) {
-          $(this).data('filters',$(this).dataFilters()+1);
+          $(this).data('filters',$(this).data('filters')+1);
         }
       }
       if($(this).data('filters') == filters_length) {
