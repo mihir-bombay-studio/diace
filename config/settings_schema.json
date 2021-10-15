@@ -323,5 +323,207 @@
         "info": "This menu will be displayed when the cart is empty"
       }
     ]
+  },
+  {
+    "name": "Translation Lab",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Language Switcher"
+      },
+      {
+        "type": "checkbox",
+        "id": "language_switcher_enabled",
+        "label": "Enable language switcher",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Position"
+      },
+      {
+        "type": "select",
+        "id": "language_switcher_position",
+        "label": "Position",
+        "options": [
+          {
+            "value": "top-right",
+            "label": "Top right"
+          },
+          {
+            "value": "top-left",
+            "label": "Top left"
+          },
+          {
+            "value": "bottom-right",
+            "label": "Bottom right"
+          },
+          {
+            "value": "bottom-left",
+            "label": "Bottom left"
+          }
+        ],
+        "default": "top-right"
+      },
+      {
+        "type": "text",
+        "id": "language_switcher_spacing_top",
+        "default": "55",
+        "label": "Top"
+      },
+      {
+        "type": "text",
+        "id": "language_switcher_spacing_right",
+        "default": "20",
+        "label": "Right"
+      },
+      {
+        "type": "text",
+        "id": "language_switcher_spacing_bottom",
+        "default": "20",
+        "label": "Bottom"
+      },
+      {
+        "type": "text",
+        "id": "language_switcher_spacing_left",
+        "default": "20",
+        "label": "Left"
+      },
+      {
+        "type": "header",
+        "content": "Flags"
+      },
+      {
+        "type": "checkbox",
+        "id": "language_switcher_flags",
+        "label": "Show flags",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Labels"
+      },
+      {
+        "type": "select",
+        "id": "language_switcher_label",
+        "options": [
+          {
+            "value": "language-name",
+            "label": "Language name"
+          },
+          {
+            "value": "language-code",
+            "label": "Language code"
+          }
+        ],
+        "default": "language-name"
+      },
+      {
+        "type": "header",
+        "content": "Font"
+      },
+      {
+        "type": "select",
+        "id": "language_switcher_font_size",
+        "label": "Font size",
+        "options": [
+          {
+            "value": "8px"
+          },
+          {
+            "value": "9px"
+          },
+          {
+            "value": "10px"
+          },
+          {
+            "value": "11px"
+          },
+          {
+            "value": "12px"
+          },
+          {
+            "value": "13px"
+          },
+          {
+            "value": "14px"
+          },
+          {
+            "value": "15px"
+          },
+          {
+            "value": "16px"
+          },
+          {
+            "value": "17px"
+          },
+          {
+            "value": "18px"
+          }
+        ],
+        "default": "14px"
+      },
+      {
+        "type": "select",
+        "id": "language_switcher_font_weight",
+        "label": "Font weight",
+        "options": [
+          {
+            "value": "normal",
+            "label": "Normal"
+          },
+          {
+            "value": "bold",
+            "label": "Bold"
+          }
+        ],
+        "default": "normal"
+      },
+      {
+        "type": "header",
+        "content": "Border"
+      },
+      {
+        "type": "range",
+        "id": "language_switcher_border_width",
+        "min": 0,
+        "max": 4,
+        "step": 1,
+        "unit": "px",
+        "label": "Border width",
+        "default": 1
+      },
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "language_switcher_text_color",
+        "label": "Text color",
+        "default": "#5c5c5c"
+      },
+      {
+        "type": "color",
+        "id": "language_switcher_background_color",
+        "label": "Background color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "language_switcher_border_color",
+        "label": "Border color",
+        "default": "#000000"
+      },
+      {
+        "type": "header",
+        "content": "Custom CSS"
+      },
+      {
+        "type": "textarea",
+        "id": "language_switcher_custom_css",
+        "default": "@media screen and (max-width: 768px) {}"
+      }
+    ]
   }
 ]
