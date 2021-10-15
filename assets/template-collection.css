@@ -80,6 +80,9 @@
   bottom: 0;
   left: 0;
   display: none;
+  justify-content : center;
+  align-items : baseline;
+  display : flex;
   width: 100%;
   padding: 0 5rem;
   background-color: rgba(var(--color-base-background-1-rgb), 0.7);
