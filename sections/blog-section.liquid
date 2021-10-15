@@ -83,7 +83,13 @@
         <span class="blog-date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
         <span class="blog-time">{{ readtime }}</span>
       </div>
-      <p class="blog-topic">Topic</p>
+      <p class="blog-topic">
+      {% for tag in article.tags %}
+        {% unless tag == "alle" %}
+        {{tag}} {% unless forloop.last %}-{% endunless %}
+        {% endunless %}
+        {% endfor %}
+      </p>
       <div class="blog-heading">{{article.title}}</div>
       <div class="blogdesc">{{desc | strip_html | truncatewords: 20 | escape}}</div>
       <div class="readmore"><a href="{{article.url}}">{{section.settings.link_text}} >></a></div>
