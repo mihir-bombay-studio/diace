@@ -106,6 +106,7 @@ $("#filter-count").on("change",function(){
   console.log($(this).val());
   let product_classlist = document.getElementsByClassName("product-collection-card");
   let product_list=[];
+   console.log(product_classlist);
   
   for(let i=0;i<=product_classlist.length;i++){
     let x = "";
