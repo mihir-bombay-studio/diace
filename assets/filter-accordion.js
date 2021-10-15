@@ -101,3 +101,7 @@ $(".variant-pop").click(function () {
   $(this).addClass("no-disp")
 });
 
+
+$("#filter-count").on("change",function(){
+  console.log($(this).val());
+})
