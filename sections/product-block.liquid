@@ -122,7 +122,7 @@
             {%- for value in option.values -%}
             {% assign variantImg = blank %}
             {% assign variantColorCode = blank %}
-            {% for variant in product.variants %}{{variant.option1}}---{{value}}---{{variant.option2}}
+            {% for variant in product.variants %}{{variant.option1}}---{{value}}---{{variant.option2}}////
               {% if variant.option1 == value or variant.option2 == value %}
                 {% if variant.metafields.my_fields.variant_image %}
                   {% assign variantImg = variant.metafields.my_fields.variant_image %}
