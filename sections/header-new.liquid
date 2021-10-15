@@ -42,7 +42,7 @@
                                 <ul class="header-nav-list-sub">
                                   {% for locale in shop.published_locales %}  
                                   
-                                    <li url="{{shop_locale.root_url}}">
+                                    <li url="{{locale.root_url}}">
                                         <a href="{{ shop.url }}/{{ locale.iso_code }}">{{ locale.iso_code | uppercase }}</a>
                                     </li>
                                   {% endfor %}
