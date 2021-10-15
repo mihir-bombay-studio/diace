@@ -119,14 +119,23 @@ $("#filter-count").on("change",function(){
 //   let collection_grid = $("#CollectionProductGrid");
   
   
-  
-let a = [];
-let btns=document.querySelectorAll('.product-collection-card[title]');
+
+  let a = [];
+  let btns=document.querySelectorAll('.product-collection-card[title]');
   console.log(btns);
-let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
-console.log(a.length);
+  let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
+  console.log(a.length);
   console.log(a);
-//   if(numOfProd > )
+  //   if(numOfProd > )
   a.length = 4;
-   console.log(a);
+  console.log(a);
+
+  $('.product-collection-card').each(function() {
+    var title = $(this).attr('title');
+            console.log(title);
+//     $(this).addClass('out-of-range-min');
+//     if( product_price >= slide1 && product_price <= slide2) {
+//       $(this).removeClass('out-of-range-min');
+//     }
+  });
 })
