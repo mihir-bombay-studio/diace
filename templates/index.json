@@ -384,7 +384,7 @@
           "type": "button",
           "settings": {
             "button_label": "MEER VRAGEN",
-            "button_link": "shopify:\/\/blogs\/news",
+            "button_link": "shopify:\/\/pages\/contact-and-faq",
             "button-color": "grey"
           }
         }
