@@ -115,7 +115,7 @@
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div>
               {%- else if option.name == "Kleur" or option.name == "Color" -%}
-              KIES HET KLEUR VAN DE BAND: <span class="color-change-btn light"> Wijzig</span>
+              {{option.name | upcase}}: <span class="color-change-btn light"> Wijzig</span>
               {%- endif -%}
             </div>
             {%- for value in option.values -%}
