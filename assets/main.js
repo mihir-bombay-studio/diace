@@ -57,13 +57,13 @@ $('.collection-tag').click(function() {
     $('.product-collection-card').each(function() {
       var string = $(this).data('tag');
       var tag = string.split(',');
-      $(this).dataFilters(0);
+      $(this).data('filters',0);
       for(var i = 0; i<filters_length;i++) {
         if( $.inArray(filter_tags[i], tag) != -1 ) {
-          $(this).dataFilters($(this).dataFilters()+1);
+          $(this).data('filters',$(this).dataFilters()+1);
         }
       }
-      if($(this).dataFilters == filters_length) {
+      if($(this).data('filters') == filters_length) {
       	$(this).removeClass('no-disp');
       }
     });
