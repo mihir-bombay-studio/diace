@@ -104,4 +104,8 @@ $(".variant-pop").click(function () {
 
 $("#filter-count").on("change",function(){
   console.log($(this).val());
+  let product_list = document.getElementsByClassName("product-collection-card");
+  console.log(product_list);
+  let collection_grid = $("#CollectionProductGrid");
+  
 })
