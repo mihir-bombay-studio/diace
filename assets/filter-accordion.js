@@ -120,10 +120,9 @@ $("#filter-count").on("change",function(){
   
   
 let a = [];
-let btns=document.querySelectorAll('.product-collection-card[data-price]');
+let btns=document.querySelectorAll('.product-collection-card[title]');
   console.log(btns);
-let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('data-price')));
-let max_price = Math.max(...a);
-console.log(max_price);
+let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
+console.log(a);
   
 })
