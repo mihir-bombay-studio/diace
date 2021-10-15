@@ -76,6 +76,9 @@
 .bg-yellow-dots.dots-left-down svg .circle-wide-c {
   fill: #fec23b;
 }
+.shop-by-category-banner-wrapper span.right-black-chveron {
+	display: inline-block;
+}
 
 @media screen and (max-width: 768px) {
   .shop-by-category-banner{
