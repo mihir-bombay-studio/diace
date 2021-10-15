@@ -123,6 +123,6 @@ let a = [];
 let btns=document.querySelectorAll('.product-collection-card[title]');
   console.log(btns);
 let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
-console.log(a);
+console.log(a.length);
   
 })
