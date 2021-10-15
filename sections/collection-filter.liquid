@@ -233,13 +233,12 @@
  
       <div class="sorting-wrapper light flex-box justify-between">
         <div class="sorting-part total-items flex-box border-bottom justify-between">
-<!--                       <option value="" disabled selected><label for="paginateBy">Paginate By</label></option> -->
-          <select name="paginateBy" id="paginateBy" class="select__select product_count_sort">
-            {%- assign paginationAmounts = '5,10,15,20,25' | split:',' -%}
-            {%- for i in paginationAmounts -%}
-            {% assign v = i | append:'' %}
-            <option value="{{ v }}"{% if cart.attributes.pagination != blank and cart.attributes.pagination %}{% if cart.attributes.pagination == v %} selected{% endif %}{% else %}{% if i == 40 %} selected{% endif %}{% endif %}>{{ i }} per page</option>
-            {% endfor %}
+          <select id="filter-count" class="select__select product_count_sort">
+            <option value="" disabled selected>Toon 16 items</option>
+            <option value="16">1-16</option>
+            <option value="32">32</option>
+            <option value="64">64</option>
+            <option value="all">all</option>
           </select>
     
             {% include 'icon-black-down-chevron' %}
@@ -625,13 +624,7 @@
 		<script src="{{ 'filter-accordion.js' | asset_url }}" defer="defer"></script>
 
       <div id="CollectionProductGrid">
-        {%- assign paginationAmount = 50 -%}
-        {%- if cart.attributes.pagination != blank -%}
-
-        {%- assign paginationAmount = cart.attributes.pagination | default:40 | abs -%}
-
-        {%- endif -%}
-	{%- paginate collection.products by paginationAmount -%}
+        {% paginate collection.products by 200 %}
         {%- if collection.products.size == 0 -%}
         {% comment %}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
@@ -681,12 +674,10 @@
                     <span class="hover-text bold">KOPEN</span>
                   </div>
                   {% elsif  product.options_with_values.size > 1  %}
-                  <a href="{{product.url}}">
                    <div class="product-hover-text flex-box align-center">
                     <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
                     <a href="{{product.url}}" class="hover-text bold">KOPEN</a>
                   </div>
-                  </a>
                   {% else %}
                 
                   <div data-prod-id="{{product.handle}}" class="variant-pop product-hover-text flex-box align-center">
@@ -940,7 +931,6 @@
 
 
  <script src="{{ "price-range.js" | asset_url }}" defer="defer"></script>
- <script src="{{ "dynamic-pagination.js" | asset_url }}" defer="defer"></script>
 
 <script>
   // Function for close the Cart
