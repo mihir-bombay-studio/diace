@@ -125,3 +125,21 @@
       </div>
     </div>
   </div>
+
+<script>
+  $(document).ready(function (){
+    validate();
+    $('#RegisterForm-FirstName, #RegisterForm-password, #RegisterForm-email').change(validate);
+  });
+
+  function validate(){
+    if ($('#RegisterForm-FirstName').val().length   >   0   &&
+        $('#RegisterForm-password').val().length  >   0   &&
+        $('#RegisterForm-email').val().length    >   0) {
+      $("button[type=submit]").attr("disabled", false);
+    }
+    else {
+      $("button[type=submit]").attr("disabled", true);
+    }
+  }
+</script>
