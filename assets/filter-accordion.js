@@ -112,7 +112,8 @@ $("#filter-count").on("change",function(){
     $(".collection").removeClass("Loading");
     $(".loading-overlay").css("display" , "none");
   }, 1000);
-
+	
+  $(".showing-items").html("Items" numOfProd  "van" 102)
 
   let a = [];
   let btns=document.querySelectorAll('.product-collection-card[title]');
