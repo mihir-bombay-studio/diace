@@ -137,13 +137,19 @@ $("#filter-count").on("change",function(){
       $(this).removeClass('out-of-range-min');
     }
   });
-})
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 function prevPage()
 {
     if (current_page > 1) {
@@ -199,3 +205,9 @@ function numPages()
 window.onload = function() {
     changePage(1);
 };
+})
+
+
+
+
+
