@@ -101,7 +101,6 @@ $(".variant-pop").click(function () {
   $(this).addClass("no-disp")
 });
 
-  var objJson = [];
 $("#filter-count").on("change",function(){
   let numOfProd = $(this).val();
 
@@ -146,6 +145,10 @@ $("#filter-count").on("change",function(){
 var current_page = 1;
 var records_per_page = $("#filter-count").val();
 
+var objJson = [];
+let btns=document.querySelectorAll('.product-collection-card[title]');
+  var titleObjList = [...btns].forEach(btn1 =>  objJson.push({adName:btn1.getAttribute('title')}));
+  console.log(objJson);
 
 
   function prevPage()
