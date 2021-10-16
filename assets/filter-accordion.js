@@ -124,6 +124,7 @@ $("#filter-count").on("change",function(){
  
 
   a.length = numOfProd;
+   a1.length = numOfProd;
 console.log(a1);
 
   $('.product-collection-card').each(function() {
