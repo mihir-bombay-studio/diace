@@ -658,16 +658,18 @@
 		{% comment %}<p class="collection-product-count light">{{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}</p>{% endcomment %}
           <div class="product-collection flex-box">
             <script>
-              var prodJson = [];
+              var prodArray = [];
               var prodObj = {};
               {% for product in collection.products limit:10%}
+              
               prodObj = {
                 url:'{{product.url}}',
                 price:'{{ product.price | money  }}'
               }
-              prodJson.push(prodObj);
+              
+              prodArray.push(prodObj);
               {% endfor %}
-              console.log(prodJson);
+              console.log(prodArray);
             </script>
             {% for product in collection.products %}
  
