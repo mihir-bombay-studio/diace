@@ -143,7 +143,7 @@ $("#filter-count").on("change",function(){
 
 
 var current_page = 1;
-var records_per_page = 3;
+var records_per_page = $("#filter-count").val();
 
 var objJson = [];
 let btns=document.querySelectorAll('.product-collection-card[title]');
@@ -182,7 +182,6 @@ console.log(objJson[4].adName)
 
     for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
       listing_table.innerHTML += `<p>${objJson[i].adName}</p> <br>`;
-      console.log(objJson[i].adName)
     }
     page_span.innerHTML = page;
 
