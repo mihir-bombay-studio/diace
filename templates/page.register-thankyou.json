@@ -38,7 +38,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/nick_and_stefanie.png",
         "img_preference": "image second",
-        "text_over_img": "BEKIJK PRODUCTEN",
+        "text_over_img": "",
         "padd-top": true
       }
     },
