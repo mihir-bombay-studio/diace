@@ -148,7 +148,6 @@ var records_per_page = $("#filter-count").val();
 
 
 
-function loadPaginator(){
   function prevPage()
   {
     if (current_page > 1) {
@@ -205,5 +204,3 @@ function loadPaginator(){
     changePage(1);
   };
 
-}
-loadPaginator();
