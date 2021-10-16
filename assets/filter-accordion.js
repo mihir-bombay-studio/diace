@@ -104,8 +104,7 @@ $(".variant-pop").click(function () {
 
 $("#filter-count").on("change",function(){
   let numOfProd = $(this).val();
-  var current_page = 1;
-  var records_per_page = 3;
+
   $(".collection").addClass("Loading");
   $(".loading-overlay").css("display" , "flex");
 
@@ -140,16 +139,27 @@ $("#filter-count").on("change",function(){
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+})
+
+
+
+
+  var current_page = 1;
+  var records_per_page = 3;
+
+  var objJson = [
+    { adName: "AdName 1"},
+    { adName: "AdName 2"},
+    { adName: "AdName 3"},
+    { adName: "AdName 4"},
+    { adName: "AdName 5"},
+    { adName: "AdName 6"},
+    { adName: "AdName 7"},
+    { adName: "AdName 8"},
+    { adName: "AdName 9"},
+    { adName: "AdName 10"}
+]; // Can be obtained from another source, such as your objJson variable
 function prevPage()
 {
     if (current_page > 1) {
@@ -205,9 +215,4 @@ function numPages()
 window.onload = function() {
     changePage(1);
 };
-})
-
-
-
-
 
