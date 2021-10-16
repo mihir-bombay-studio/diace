@@ -129,7 +129,7 @@
 <script>
   $(document).ready(function (){
     validate();
-    $('#RegisterForm-FirstName, #RegisterForm-password, #RegisterForm-email').change(validate);
+    $('#RegisterForm-FirstName, #RegisterForm-password, #RegisterForm-email').keyup(validate);
   });
 
   function validate(){
