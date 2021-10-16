@@ -79,6 +79,7 @@
                      aria-describedby="RegisterForm-email-error"
                      {% endif %}
                      placeholder="youremail@mail.com"
+                     required
                      >
             </div>
             {%- if form.errors contains 'email' -%}
@@ -101,6 +102,7 @@
                      aria-describedby="RegisterForm-password-error"
                      {% endif %}
                      placeholder="Kies je wachtwoord"
+                     required
                      >
             </div>
             {%- if form.errors contains 'password' -%}
