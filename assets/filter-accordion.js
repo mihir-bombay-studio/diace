@@ -88,8 +88,6 @@ function runFilter() {
   $('.sp').removeClass('sp');
   $('.tp').removeClass('tp');
   $('.bp').removeClass('bp');
-  console.log(size);
-  console.log(brand);
 }
 runFilter();
 
