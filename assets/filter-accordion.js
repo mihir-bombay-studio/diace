@@ -204,3 +204,4 @@ let btns=document.querySelectorAll('.product-collection-card[title]');
     changePage(1);
   };
 
+console.log(prodArray);
