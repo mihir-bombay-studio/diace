@@ -105,7 +105,7 @@ $(".variant-pop").click(function () {
 $("#filter-count").on("change",function(){
   let numOfProd = $(this).val();
   var current_page = 1;
-  var records_per_page = numOfProd;
+  var records_per_page = 3;
   $(".collection").addClass("Loading");
   $(".loading-overlay").css("display" , "flex");
 
