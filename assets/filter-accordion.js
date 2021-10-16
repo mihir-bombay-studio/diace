@@ -149,7 +149,6 @@ var objJson = [];
 let btns=document.querySelectorAll('.product-collection-card[title]');
   var titleObjList = [...btns].forEach(btn1 =>  objJson.push({adName:btn1.getAttribute('title')}));
   console.log(objJson);
-console.log(objJson[4].adName)
 
   function prevPage()
   {
