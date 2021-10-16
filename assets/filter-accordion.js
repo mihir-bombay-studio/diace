@@ -119,7 +119,7 @@ $("#filter-count").on("change",function(){
   $(".showing-items").html("Items " + numOfProd + " van " + 102);
 
   let a = [];
-  let objJson = [];
+  var objJson = [];
   let btns=document.querySelectorAll('.product-collection-card[title]');
 
   let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
