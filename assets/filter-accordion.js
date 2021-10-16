@@ -116,14 +116,15 @@ $("#filter-count").on("change",function(){
   $(".showing-items").html("Items " + numOfProd + " van " + 102);
 
   let a = [];
+  let a1 = [];
   let btns=document.querySelectorAll('.product-collection-card[title]');
 
   let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
-//   let titleObjList = [...btns].forEach(btn1 =>  a.push(btn1.getAttribute('title')));
+  let titleObjList = [...btns].forEach(btn1 =>  a1.push({title:btn1.getAttribute('title')});
  
 
   a.length = numOfProd;
-console.log(a);
+console.log(a1);
 
   $('.product-collection-card').each(function() {
     var title = $(this).attr('title');
