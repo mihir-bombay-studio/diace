@@ -182,6 +182,7 @@ let btns=document.querySelectorAll('.product-collection-card[title]');
 
     for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
       listing_table.innerHTML += objJson[i].adName + "<br>";
+      console.log(objJson[i].adName)
     }
     page_span.innerHTML = page;
 
