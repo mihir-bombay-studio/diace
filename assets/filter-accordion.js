@@ -119,7 +119,7 @@ $("#filter-count").on("change",function(){
   let btns=document.querySelectorAll('.product-collection-card[title]');
 
   let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
-  let titleObjList = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
+  let titleObjList = [...btns].forEach(btn1 =>  a.push(btn1.getAttribute('title')));
  console.log(titleObjList);
 
   a.length = numOfProd;
