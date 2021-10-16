@@ -181,7 +181,7 @@ console.log(objJson[0].adName)
     listing_table.innerHTML = "";
 
     for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
-      listing_table.innerHTML += objJson[i].adName + "<br>";
+      listing_table.innerHTML += `<p>${objJson[i].adName}</p> <br>`;
       console.log(objJson[i].adName)
     }
     page_span.innerHTML = page;
