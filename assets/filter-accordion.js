@@ -143,7 +143,7 @@ $("#filter-count").on("change",function(){
 
 
 var current_page = 1;
-var records_per_page = $("#filter-count").val();
+var records_per_page = parseInt($("#filter-count").val());
 
 var objJson = [];
 let btns=document.querySelectorAll('.product-collection-card[title]');
