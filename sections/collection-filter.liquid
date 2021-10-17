@@ -234,7 +234,7 @@
       <div class="sorting-wrapper light flex-box justify-between">
         <div class="sorting-part total-items flex-box border-bottom justify-between">
           <select id="filter-count" class="select__select product_count_sort">
-            <option value="50" disabled selected>Toon 50 items</option>
+            <option value="" disabled selected>Toon 50 items</option>
             <option value="50">Toon 50 items</option>
             <option value="100">Toon 100 items</option>
             <option value="200">Toon 200 items</option>
@@ -242,8 +242,10 @@
           </select>
     
             {% include 'icon-black-down-chevron' %}
+         
+       
         </div>
-        <div class="sorting-part showing-items">Items 50 van 102</div>
+<!--         <div class="sorting-part showing-items">Items 1 - 16 van 102</div> -->
         <div class = "sort__by_filter" >
           <div class=" collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
         {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
@@ -623,6 +625,7 @@
 		<script src="{{ 'filter-accordion.js' | asset_url }}" defer="defer"></script>
 
       <div id="CollectionProductGrid">
+        {% paginate collection.products by 200 %}
         {%- if collection.products.size == 0 -%}
         {% comment %}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
@@ -657,24 +660,7 @@
           </div>
 		{% comment %}<p class="collection-product-count light">{{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}</p>{% endcomment %}
           <div class="product-collection flex-box">
-            <script>
-              var objJson = [];
-              var prodObj = {};
-              {% for product in collection.products %}
-              
-              prodObj = {
-                title :'{{product.title}}',
-                url:'{{product.url}}',
-                price:'{{ product.price | money  }}',
-                ImageUrl :'{{ product.featured_image.src | img_url: 'x282' }}'
-              }
-              
-              objJson.push(prodObj);
-              {% endfor %}
-              
-            </script>
             {% for product in collection.products %}
- 
               <div class="product-collection-card {% for tag in product.tags %} {{ tag | downcase | remove : " " }} {% endfor %}" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price | divided_by : 100.00 }}"  data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}" title="{{product.title}}" href="{{ product.url }}">
                 <div class="featured-product-img rel">
                   {% if product.featured_image != blank %}
@@ -767,12 +753,13 @@
           </div>
         </div>
         {%- endif -%}
-        <div id="listingTable">fgfdg</div>
-<a href="javascript:prevPage()" id="btn_prev">Prev</a>
-<a href="javascript:nextPage()" id="btn_next">Next</a>
-page: <span id="page"></span>
-
+        {%- if paginate.pages > 1 -%}
+        {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
+        {%- endif -%}
+        {%- endpaginate -%}
+        
       </div>
+
 
 			</div>
 		</div>
