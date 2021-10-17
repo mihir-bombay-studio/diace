@@ -99,47 +99,52 @@ $(".variant-pop").click(function () {
   $(this).addClass("no-disp")
 });
 
-$("#filter-count").on("change",function(){
-  let numOfProd = $(this).val();
+// $("#filter-count").on("change",function(){
+//   let numOfProd = $(this).val();
 
 
 
-  $(".collection").addClass("Loading");
-  $(".loading-overlay").css("display" , "flex");
+//   $(".collection").addClass("Loading");
+//   $(".loading-overlay").css("display" , "flex");
 
-  setTimeout(function(){ 
+//   setTimeout(function(){ 
 
-    $(".collection").removeClass("Loading");
-    $(".loading-overlay").css("display" , "none");
-  }, 1000);
+//     $(".collection").removeClass("Loading");
+//     $(".loading-overlay").css("display" , "none");
+//   }, 1000);
 
-  $(".showing-items").html("Items " + numOfProd + " van " + 102);
+//   $(".showing-items").html("Items " + numOfProd + " van " + 102);
 
-  let a = [];
+//   let a = [];
 
-  let btns=document.querySelectorAll('.product-collection-card[title]');
+//   let btns=document.querySelectorAll('.product-collection-card[title]');
 
-  let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
-
-
-  a.length = numOfProd;
+//   let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
 
 
-  $('.product-collection-card').each(function() {
-    var title = $(this).attr('title');
-
-    $(this).addClass('out-of-range-min');
-    if( a.includes(title) ) {
-      $(this).removeClass('out-of-range-min');
-    }
-  });
+//   a.length = numOfProd;
 
 
+//   $('.product-collection-card').each(function() {
+//     var title = $(this).attr('title');
+
+//     $(this).addClass('out-of-range-min');
+//     if( a.includes(title) ) {
+//       $(this).removeClass('out-of-range-min');
+//     }
+//   });
 
 
-})
 
 
+// })
+
+
+$(document).ready(function(){
+    jQuery('#filter-count').on('change', function(){
+      window.location.replace(jQuery(this).val());
+    });
+});
 
 
 
