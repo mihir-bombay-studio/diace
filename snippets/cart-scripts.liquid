@@ -287,10 +287,6 @@ $("body").on('click', '.AddToCart', function (e) {
 
 
 function UpdateCart(variant_id){
-  request = new XMLHttpRequest();
-request.open('GET', '/?sections=header-new,footer', true);
-request.send();
-JSON.parse(request.responseText);
   $("#cart_container").addClass("block-cursor");
   reduceOpacity(`cart_item_${variant_id}`);
   let update_quantity = $(`#item_count_${variant_id}`).data("qty");
