@@ -181,7 +181,108 @@ function changePage(page)
     listing_table.innerHTML = "";
 
     for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
-        listing_table.innerHTML += objJson[i].title + "<br>";
+        listing_table.innerHTML += `<div class="collection ">
+          <div class="loading-overlay">
+            <div class="loading-overlay__spinner">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </div>
+		{% comment %}<p class="collection-product-count light">{{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}</p>{% endcomment %}
+          <div class="product-collection flex-box">
+            {% for product in collection.products %}
+              <div class="product-collection-card {% for tag in product.tags %} {{ tag | downcase | remove : " " }} {% endfor %}" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price | divided_by : 100.00 }}"  data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}" title="{{product.title}}" href="{{ product.url }}">
+                <div class="featured-product-img rel">
+                  {% if product.featured_image != blank %}
+                  <a href="{{product.url}}" ><img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
+                  {% else %}
+                  {{ 'product-1' | placeholder_svg_tag }}
+                  {% endif %}
+                  
+                  {% if product.has_only_default_variant %}
+                  <div class="AddToCart product-hover-text flex-box align-center" data-variant-id="{{product.first_available_variant.id}}" data-quantity='1' >
+                    <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+                    <span class="hover-text bold">KOPEN</span>
+                  </div>
+                  {% elsif  product.options_with_values.size > 1  %}
+                   <div class="product-hover-text flex-box align-center">
+                    <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+                    <a href="{{product.url}}" class="hover-text bold">KOPEN</a>
+                  </div>
+                  {% else %}
+                
+                  <div data-prod-id="{{product.handle}}" class="variant-pop product-hover-text flex-box align-center">
+                    <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+                    <span class="hover-text bold">KOPEN</span>
+                  </div>
+                  {% endif %}
+                  
+                  {%- unless product.has_only_default_variant -%}
+                  {% if product.options_with_values.size <= 1 %}
+                  {%- for option in product.options_with_values -%}
+                  {%- if option.name == "Kleur" or option.name == "Color" -%}
+                  <div id="{{product.handle}}" class="product_coll_variant variant-options-wrapper">
+                    <div class="color_wrapper">
+                      {% for variant in product.variants limit:6 %}
+                      <span data-success-id="success_{{product.handle}}" class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
+                      {% endfor %}
+                    </div>
+                  </div>
+                  <span id ="success_{{product.handle}}" class="success_cart__message">TOEGEVOEGD  {% include "tick" %}</span>
+                  
+                  {% else %}
+                  <div id="{{product.handle}}" class="other-variants">
+                  	<div class="color_wrapper">
+                      {% for variant in product.variants limit:6 %}
+                      <span variant-option="{{variant.option2}}" data-success-id="success_{{product.handle}}" class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
+                      {% endfor %}
+                    </div>
+                  </div>
+                   <span id ="success_{{product.handle}}" class="success_cart__message">TOEGEVOEGD  {% include "tick" %}</span>
+                  {% endif %}
+                  {% endfor %}
+                  {% endif %}
+                  {%- endunless -%}
+               
+                </div>
+                <div class="product-title-price flex-box justify-between">
+                  <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  | capitalize}}</a></div>
+                  <div class="product-compare-to-and-price">
+                    <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
+                    <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money  }}</span>
+                  </div>
+                </div>
+                
+                
+
+                <div class="product-colors flex-box justify-between light">
+                  {% if product.has_only_default_variant %}   
+                  <div class="product-color">
+                    
+                  </div>          
+                  {% else %}
+                  {% for variant in product.variants limit:1%}
+                  {%- for option in product.options_with_values limit:1-%}
+                  <div class="product-color">
+                    <span>{{option.name}}: </span>
+                    <span>
+                      {{variant.title}}
+                    </span>
+                  </div>
+                 {% endfor %}
+                  {% endfor %}
+                  <div class="other-available-colors">
+                    <a class="featured-product-link" href="{{product.url}}">Meer kleuren beschikbaar</a>
+                  </div>
+                  {% endif %}
+                </div>
+
+              </div>
+       
+            {% endfor %}
+          </div>
+        </div>`;
     }
     page_span.innerHTML = page;
 
