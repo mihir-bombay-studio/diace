@@ -190,7 +190,7 @@ function changePage(page)
   for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
     table_output += `<div class="product-collection-card"
     id="main-collection-product-grid" data-id="{{ section.id }}"
-   title="${objJson[i].title}" href="${objJson[i].url}">
+    ">
     <div class="featured-product-img rel">
        <a href="${objJson[i].url}" ><img class="product-img" src="${objJson[i].Image}"></a>
     </div>
