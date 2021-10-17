@@ -122,7 +122,7 @@
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div>
               {%- else if option.name contains "Kleur" or option.name contains "Color" or option.name contains "color" -%}
-              {{option.name | upcase}}:<span class="color-change-btn light" data-palatte="palatte_{{forloop.index}}"> Wijzig</span>
+              {{option.name | upcase}}: <span class="color-change-btn light" data-palatte="palatte_{{forloop.index}}">Wijzig</span>
               {%- endif -%}
             </div>
             {%- for value in option.values -%}
@@ -247,6 +247,23 @@
   </div>
 </div>
 <script>
+  
+  
+    $(document).ready(function () {
+    $('.color-selector').click(function () {
+      var inputValue = $(this).data("value");
+      console.log(inputValue);
+      $(this).closest(".selected-color").hide();//hide the color which was previously selected
+      $(inputValue).show();// show the color which is selected
+      $(this).closest(".color-selector-wrapper").toggle();//toggle the palatte
+    });
+
+    $('.color-change-btn').click(function () {
+      let palatte_id = $(this).data("palatte");
+      $(`#${palatte_id}`).toggle();
+    });
+  });
+  
     $(".product-qty-add-to-cart-wrapper").on( "click", ".qty-minus", function() {
   	var data_qty = parseInt($(this).next().data('qty'));
     if( data_qty != 1 )
