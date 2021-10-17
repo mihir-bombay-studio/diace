@@ -165,16 +165,14 @@
                 {% if variantImg != blank %}
                 <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
                 {% else %}
-                {% if variantColorCode == blank%}
                 {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
                 {% for colors in colorsSch %}
-                {% assign color = colors | split: ":" %}
-                {% if color[0] == value %}
-                {% assign variantColorCode = color[1] %}
-                {% break %}
-                {% endif %}
-                {% endfor %}                
-                {% endif %}
+                  {% assign color = colors | split: ":" %}
+                  {% if color[0] == value %}
+                    {% assign variantColorCode = color[1] %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}  
                 <span class="colors-color" style="background-color:{{ variantColorCode }};"></span>
                 {% endif %}
               </span>
