@@ -258,6 +258,9 @@
     $('.color-change-btn').click(function () {
       $(this).closest("fieldset").addClass("toggle-colors-open");
     });
+    $('.product-form__input input[type=radio]').change(function() {
+      $(this).closest("fieldset").removeClass("toggle-colors-open");
+    });
   });
   
     $(".product-qty-add-to-cart-wrapper").on( "click", ".qty-minus", function() {
