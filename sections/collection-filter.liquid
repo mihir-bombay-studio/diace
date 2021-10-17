@@ -630,9 +630,9 @@
           var tagArray = [];
           var tagObj = {};
           var prodObj = {};
-          {% for product in collection.products%}
-		
           
+          {% for product in collection.products%}
+
           prodObj = {
             title :'{{product.title | escape  | capitalize}}',
             url:'{{product.url}}',
@@ -640,18 +640,12 @@
             price:'{{ product.price | money  }}',
             compare_price:'{{ product.compare_at_price | money }}'
           }
-
-        
-        
-          {% for tags in product.tags %}
-          
-          tagObj = {
-            
-            tags : '{{tag | downcase | remove : " " }}',
-             
-          }
-          
           {% endfor %}
+          
+          {% for tags in product.tags %}
+          tagObj = {
+            tags : '{{tag | downcase | remove : " " }}',
+          }
           {% endfor %}
 
           objJson.push(prodObj);
