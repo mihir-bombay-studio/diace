@@ -121,7 +121,7 @@ $("#filter-count").on("change",function(){
   $(".showing-items").html("Items " + numOfProd + " van " + collectionSizee);
   }
   else{
-  $(".showing-items").html("Showing all Items");
+  $(".showing-items").html("Items " + collectionSizee + " van " + collectionSizee);
   }
 
   let a = [];
