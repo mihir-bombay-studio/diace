@@ -145,9 +145,9 @@ var records_per_page = 50;
 
 // var objJson = []; 
 
-let prod = document.querySelectorAll('.product-collection-card[title]');
+// let prod = document.querySelectorAll('.product-collection-card[title]');
 
-let prodobj = [...prod].forEach(btnn =>  objJson.push({title : btnn.getAttribute('title')}));
+// let prodobj = [...prod].forEach(btnn =>  objJson.push({title : btnn.getAttribute('title')}));
 
 console.log(objJson);
 
