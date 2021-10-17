@@ -180,10 +180,12 @@ function changePage(page)
 
     listing_table.innerHTML = "";
   
+  
+  listing_table.innerHTML += `<div class="collection">
+			<div class="product-collection flex-box">`;
 
   for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
-    listing_table.innerHTML += `<div class="collection">
-			<div class="product-collection flex-box"><div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="${objJson[i].price}" title="${objJson[i].price}" href="${objJson[i].url}">
+    listing_table.innerHTML += `<div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="${objJson[i].price}" title="${objJson[i].price}" href="${objJson[i].url}">
         <div class="featured-product-img rel">
 
         <a href="${objJson[i].url}" ><img class="product-img" src="${objJson[i].Image}"></a>
@@ -198,11 +200,13 @@ function changePage(page)
         </div>
         </div>
         </div>
-		</div>
-        </div>
+
 `;
-    listing_table.innerHTML += `</div></div>`
+    
     }
+ listing_table.innerHTML += `</div ></div >`;
+  
+  
     page_span.innerHTML = page;
 
     if (page == 1) {
