@@ -140,7 +140,7 @@ $("#filter-count").on("change",function(){
 
 var current_page = 1;
 
-var records = 50;
+var records = 10;
 
 paginator(records);
 
