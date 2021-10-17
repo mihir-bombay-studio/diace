@@ -122,7 +122,7 @@
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div>
               {% assign dwncase = option.name | downcase %}
-              {% assign loopno = forloop.index0%}
+              {% assign loopno = forloop.index0 %}
               {%- elsif dwncase contains "kleur" or dwncase contains "color" -%}
               {{option.name | upcase}}: <span class="color-change-btn light">Wijzig</span>
               {%- endif -%}
@@ -130,7 +130,7 @@
             {%- for value in option.values -%}
             {% assign variantImg = blank %}
             {% assign variantColorCode = blank %}
-            {% for variant in product.variants %}{{variant.options[loopno]}}t
+            {% for variant in product.variants %}{{variant.options[loopno]}}t{{loopno}}
               {% if variant.options[loopno] == value %}
                 {% if variant.metafields.my_fields.variant_image %}
                   {% assign variantImg = variant.metafields.my_fields.variant_image %}
