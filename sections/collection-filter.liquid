@@ -240,10 +240,31 @@
             <option value="200">Toon 200 items</option>
             <option value="500">Toon All items</option>
              -->
-            <option value="/collections/{{ collection.handle }}?page=2&viewurl=9" {% if limit == 9 %}selected="selected"{% endif %}>9</option>
-            <option value="/collections/{{ collection.handle }}?page=2&viewurl=12" {% if limit == 12 %}selected="selected"{% endif %}>12</option>
-            <option value="/collections/{{ collection.handle }}?page=2&viewurl=24" {% if limit == 24 %}selected="selected"{% endif %}>24</option>
-            <option value="/collections/{{ collection.handle }}?page=2&viewurl=36" {% if limit == 36 %}selected="selected"{% endif %}>36</option>
+            
+            
+            {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+            {%- assign page_url = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |   replace:'\/','/' |    replace:'%20',' ' |    replace:'\u0026','&'  -%}
+            {%- assign param_page = '' -%}
+            {%- for i in (1..1) -%}
+            {%- unless page_url contains "?" -%}{% break %}{%- endunless -%}
+            {%- assign query_string = page_url | split:'?' | last -%}
+            {%- assign qry_parts= query_string | split:'&' -%}
+            {%- for part in qry_parts -%}
+            {%- assign key_and_value = part | split:'=' -%}
+            {%- if key_and_value.size > 1 -%}
+            {% if key_and_value[0] == 'page' %}
+            {%- assign param_page = key_and_value[1] -%}
+            {% endif%}
+            {%- endif -%}
+            {%- endfor -%}
+            {%- endfor -%}
+
+            Page value = {{ param_page }}
+            
+            <option value="/collections/{{ collection.handle }}?page={{ param_page }}&viewurl=9" {% if limit == 9 %}selected="selected"{% endif %}>9</option>
+            <option value="/collections/{{ collection.handle }}?page={{ param_page }}&viewurl=12" {% if limit == 12 %}selected="selected"{% endif %}>12</option>
+            <option value="/collections/{{ collection.handle }}?page={{ param_page }}&viewurl=24" {% if limit == 24 %}selected="selected"{% endif %}>24</option>
+            <option value="/collections/{{ collection.handle }}?page={{ param_page }}&viewurl=36" {% if limit == 36 %}selected="selected"{% endif %}>36</option>
           </select>
     
             {% include 'icon-black-down-chevron' %}
