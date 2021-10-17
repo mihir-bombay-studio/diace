@@ -111,7 +111,7 @@
           
             {% paginate collections[section.settings.grouping_collection].products by 1000 %}
             {%- for productx in collections[section.settings.grouping_collection].products -%}
-          {%- for option in product.options_with_values -%}
+          {%- for option in productx.options_with_values -%}
             
               {% assign dwncase = option.name | downcase %}
               {% assign loopno = forloop.index0 %}
