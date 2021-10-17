@@ -102,7 +102,7 @@ $(".variant-pop").click(function () {
 $("#filter-count").on("change",function(){
   let numOfProd = $(this).val();
 
- 
+
 
   $(".collection").addClass("Loading");
   $(".loading-overlay").css("display" , "flex");
@@ -133,34 +133,41 @@ $("#filter-count").on("change",function(){
       $(this).removeClass('out-of-range-min');
     }
   });
-  
-  
+
+
 })
 
 
 var current_page = 1;
-var records_per_page = 4;
 
-// var objJson = [];
-// let btns=document.querySelectorAll('.product-collection-card[title]');
-//   var titleObjList = [...btns].forEach(btn1 =>  objJson.push({adName:btn1.getAttribute('title')}));
-//   console.log(objJson);
+var records = 50;
 
-  function prevPage()
-  {
-    if (current_page > 1) {
-      current_page--;
-      changePage(current_page);
-    }
+paginator(records);
+
+$("#filter-count").on("change",function(){
+  let numOfProd = $(this).val();
+  paginator(numOfProd);
+})
+
+function prevPage()
+{
+  if (current_page > 1) {
+    current_page--;
+    changePage(current_page);
   }
+}
 
-  function nextPage()
-  {
-    if (current_page < numPages()) {
-      current_page++;
-      changePage(current_page);
-    }
+function nextPage()
+{
+  if (current_page < numPages()) {
+    current_page++;
+    changePage(current_page);
   }
+}
+
+
+function paginator(records_per_page){
+
 
   function changePage(page)
   {
@@ -198,8 +205,11 @@ var records_per_page = 4;
     return Math.ceil(objJson.length / records_per_page);
   }
 
-  window.onload = function() {
-    changePage(1);
-  };
+}
 
-console.log(objJson);
+
+
+window.onload = function() {
+  changePage(1);
+};
+
