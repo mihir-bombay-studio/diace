@@ -641,6 +641,7 @@
           {% endfor %}
           
         </script>
+        {% comment %}
         {%- if collection.products.size == 0 -%}
         {% comment %}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
@@ -768,6 +769,7 @@
           </div>
         </div>
         {%- endif -%}
+        {% endcomment %}
         <div id="listingTable"></div>
         <a href="javascript:prevPage()" id="btn_prev">Prev</a>
         <a href="javascript:nextPage()" id="btn_next">Next</a>
