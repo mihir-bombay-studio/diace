@@ -197,8 +197,8 @@ function changePage(page)
     <div class="product-title-price flex-box justify-between">
     	<div class="product-title semibold"><a href="${objJson[i].url}">${objJson[i].title}</a></div>
         	<div class="product-compare-to-and-price">
-              <span class="compare-to-price light">${objJson[i].price}</span>
-              <span class="product-price semibold">${objJson[i].compare_price}</span>
+              <span class="compare-to-price light">${objJson[i].compare_price}</span>
+              <span class="product-price semibold">${objJson[i].price}</span>
         	</div>
        </div>
     </div>`;
