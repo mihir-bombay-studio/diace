@@ -158,7 +158,7 @@ fieldset.product-form__input input:checked+label .v-name-color {
   display: none !important;
 }
 
-.toggle-colors-open fieldset.product-form__input input:checked+label {
+.toggle-colors-open fieldset.product-form__input input+label {
   display: inline-flex;
 }
 
