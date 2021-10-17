@@ -181,7 +181,7 @@ function changePage(page)
     listing_table.innerHTML = "";
 
     for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
-        listing_table.innerHTML += `<div class="collection ">
+        listing_table.innerHTML += `
           <div class="loading-overlay">
             <div class="loading-overlay__spinner">
               <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -208,7 +208,7 @@ function changePage(page)
                 </div>
               </div>
           </div>
-        </div>`;
+        `;
     }
     page_span.innerHTML = page;
 
