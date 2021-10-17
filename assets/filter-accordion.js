@@ -143,7 +143,7 @@ $("#filter-count").on("change",function(){
 var current_page = 1;
 var records_per_page = 25;
 
-var objJson = []; 
+// var objJson = []; 
 
 let prod = document.querySelectorAll('.product-collection-card[title]');
 

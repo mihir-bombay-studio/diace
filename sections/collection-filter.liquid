@@ -625,7 +625,22 @@
 		<script src="{{ 'filter-accordion.js' | asset_url }}" defer="defer"></script>
 
       <div id="CollectionProductGrid">
-       
+        <script>
+          var objJson = [];
+          var prodObj = {};
+          {% for product in collection.products%}
+
+          prodObj = {
+            title :'{{product.title}}',
+            url:'{{product.url}}',
+            Image:'{{product.featured_image.src | img_url: 'x282'}}',
+            price:'{{ product.price | money  }}'
+          }
+
+          prodArray.push(prodObj);
+          {% endfor %}
+          console.log(prodArray);
+        </script>
         {%- if collection.products.size == 0 -%}
         {% comment %}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
