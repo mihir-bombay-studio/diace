@@ -136,13 +136,13 @@ $("#filter-count").on("change",function(){
 
 
 
- fetch('/?sections=header-new')
-.then((response) => response.text())
-.then((responseText) => {
-  const html = new DOMParser().parseFromString(responseText, 'text/html')
-console.log(html);
+//  fetch('/?sections=header-new')
+// .then((response) => response.text())
+// .then((responseText) => {
+//   const html = new DOMParser().parseFromString(responseText, 'text/html')
+// console.log(html);
 
-  });
+//   });
 
 })
 
