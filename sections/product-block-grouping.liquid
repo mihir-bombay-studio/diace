@@ -63,6 +63,13 @@
     }
   }
 
+  {% assign images_count = product.images | size %}
+  {% if images_count < 5 %}
+  .slider-nav .slick-track {
+    margin-left: 0;
+    transform: none !important;
+  }
+  {% endif %}
 
 </style>
 
