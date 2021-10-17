@@ -1040,7 +1040,7 @@ function changePage(page)
   
 
   for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
-    table_output += `<div class="product-collection-card ${objJson[i].tags.forEach(tag => tag)}" 
+    table_output += `<div class="product-collection-card ${objJson[i].tags}" 
     id="main-collection-product-grid" data-id=""
     data-price="${objJson[i].price}" title="${objJson[i].price}" href="${objJson[i].url}">
     <div class="featured-product-img rel">
