@@ -110,7 +110,7 @@ fieldset.product-form__input {
 
 .product-form__input label{
 cursor: pointer;
-    display: inline-flex;
+    display: none;
     align-items: center;
     justify-content: center;
     gap: 8px;
@@ -140,8 +140,8 @@ cursor: pointer;
   border-radius: 50%;
 
 }
-fieldset.product-form__input input+label {
-  display: none;
+fieldset.product-form__input input:checked+label {
+  display: inline-flex;
 }
 fieldset.product-form__input input:checked+label .color-swatch {
   border: 2px solid #000000;
