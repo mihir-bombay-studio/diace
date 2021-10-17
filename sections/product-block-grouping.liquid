@@ -137,7 +137,7 @@
             {%- for value in option.values -%}
             {% assign variantImg = blank %}
             {% assign variantColorCode = blank %}
-            {% for variant in product.variants %}
+            {% for variant in productx.variants %}
               {% if variant.options[loopno] == value %}
             {% if loopno == 0 %}
                 {% if variant.metafields.my_fields.variant_image %}
