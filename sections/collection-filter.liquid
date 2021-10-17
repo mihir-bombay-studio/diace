@@ -637,9 +637,9 @@
             price:'{{ product.price | money  }}'
           }
 
-          prodArray.push(prodObj);
+          objJson.push(prodObj);
           {% endfor %}
-          console.log(prodArray);
+          
         </script>
         {%- if collection.products.size == 0 -%}
         {% comment %}
