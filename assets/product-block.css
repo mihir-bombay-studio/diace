@@ -145,6 +145,9 @@ fieldset.product-form__input input:checked+label .color-swatch {
   border-radius: 50%;
   display: inline-flex;
 }
+.v-name-color {
+	display: none;
+}
 
 .color-swatch .colors-color{
   width:100%;
