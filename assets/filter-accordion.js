@@ -139,7 +139,7 @@ $("#filter-count").on("change",function(){
   request = new XMLHttpRequest();
   request.open('GET', '/?sections=template--15166822318255__16330268764c434e3c', true);
   request.send();
-  JSON.parse(request.responseText);
+//   JSON.parse(request.responseText);
 console.log(JSON.parse(request.responseText));
 
 })
