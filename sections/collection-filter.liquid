@@ -641,7 +641,7 @@
           }
 
           {% for tag in product.tags %}
-          prodObj.tags.push('{{tag | downcase | remove : " "}}');
+          prodObj.tags.push('{{tag | downcase | remove : " " | replace : "," , " " }}');
           {% endfor %}
           
           objJson.push(prodObj);
