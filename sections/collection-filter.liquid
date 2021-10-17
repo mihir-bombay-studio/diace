@@ -627,6 +627,8 @@
       <div id="CollectionProductGrid">
         <script>
           var objJson = [];
+          var tagArray = [];
+          var tagObj = {};
           var prodObj = {};
           {% for product in collection.products%}
 		
@@ -639,10 +641,23 @@
             compare_price:'{{ product.compare_at_price | money }}'
           }
 
-          objJson.push(prodObj);
         
-   
+        
+          {% for tags in product.tags %}
+          
+          tagObj = {
+            
+            tags : '{{tag | downcase | remove : " " }}',
+             
+          }
+          
           {% endfor %}
+          {% endfor %}
+
+          objJson.push(prodObj);
+          tagArray.push(tagObj);
+          
+          
         </script>
         {% comment %}
         {%- if collection.products.size == 0 -%}
