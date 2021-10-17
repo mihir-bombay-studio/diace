@@ -137,7 +137,7 @@ $("#filter-count").on("change",function(){
 
 
   request = new XMLHttpRequest();
-  request.open('GET', '/?sections=template--15166822318255__16330268764c434e3c', true);
+  request.open('GET', '/?sections=header-new', true);
   request.send();
   //   JSON.parse(request.responseText);
   const html = new DOMParser().parseFromString(request.responseText, 'text/html')
