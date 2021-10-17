@@ -140,7 +140,7 @@ cursor: pointer;
   border-radius: 50%;
 
 }
-fieldset.product-form__input input:checked+label {
+fieldset.product-form__input input+label {
   display: none;
 }
 fieldset.product-form__input input:checked+label .color-swatch {
