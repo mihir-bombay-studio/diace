@@ -116,9 +116,9 @@ $("#filter-count").on("change",function(){
   }, 1000);
 
   if(numOfProd < 100){
-  var collectionSizee =  $("#CollectionSize").data("collectionSize");
+  var collectionSizee =  document.getElementById("collectionSize").getAttribute("data-collectionSize");
     console.log(collectionSizee);
-    $(".showing-items").html(`Items  ${numOfProd}   van   ${collectionSizee}`);
+  $(".showing-items").html("Items " + numOfProd + " van " + collectionSizee);
   }
   else{
   $(".showing-items").html("Showing all Items");
