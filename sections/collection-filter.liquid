@@ -635,7 +635,8 @@
             url:'{{product.url}}',
             Image:'{{product.featured_image.src | img_url: 'x282'}}',
             price:'{{ product.price | money  }}',
-            compare_price:'{{ product.compare_at_price | money }}'
+            compare_price:'{{ product.compare_at_price | money }}',
+            tags : {% for tag in product.tags %} {{ tag | downcase | remove : " " }} {% endfor %},
           }
 
           objJson.push(prodObj);
