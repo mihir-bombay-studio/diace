@@ -308,8 +308,8 @@
           var w = x.find(item => {
             return item.public_title === string;
           });
-        document.title = "united";
-        	history.pushState({}, null, "/sdfsdf");
+        document.title = w.name;
+        	history.pushState({}, null, $(this).next().data("url"));
      
         }
     });
