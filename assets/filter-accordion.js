@@ -117,7 +117,7 @@ $("#filter-count").on("change",function(){
 
   if(numOfProd < 100){
   var collectionSizee =  $("#CollectionSize").data("collectionSize");
-    console.log(collectionSizee)'
+    console.log(collectionSizee);
   $(".showing-items").html("Items " + numOfProd + " van " + collectionSizee);
   }
   else{
