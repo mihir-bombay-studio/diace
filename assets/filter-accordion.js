@@ -205,11 +205,13 @@ function paginator(records_per_page){
     return Math.ceil(objJson.length / records_per_page);
   }
 
+  window.onload = function() {
+    changePage(1);
+  };
+
+
 }
 
 
 
-window.onload = function() {
-  changePage(1);
-};
 
