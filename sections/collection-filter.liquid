@@ -629,20 +629,19 @@
           var objJson = [];
           var prodObj = {};
           {% for product in collection.products%}
-			{% for tag in product.tags %}
+		
           
           prodObj = {
             title :'{{product.title | escape  | capitalize}}',
             url:'{{product.url}}',
             Image:'{{product.featured_image.src | img_url: 'x282'}}',
             price:'{{ product.price | money  }}',
-            compare_price:'{{ product.compare_at_price | money }}',
-            tags : '{{tag | downcase | remove : " " }}'
+            compare_price:'{{ product.compare_at_price | money }}'
           }
 
           objJson.push(prodObj);
         
-          {% endfor %}
+   
           {% endfor %}
         </script>
         {% comment %}
