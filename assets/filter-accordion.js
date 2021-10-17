@@ -149,25 +149,26 @@ $("#filter-count").on("change",function(){
   paginator(numOfProd);
 })
 
-function prevPage()
-{
-  if (current_page > 1) {
-    current_page--;
-    changePage(current_page);
-  }
-}
-
-function nextPage()
-{
-  if (current_page < numPages()) {
-    current_page++;
-    changePage(current_page);
-  }
-}
 
 
 function paginator(records_per_page){
 
+  
+  function prevPage()
+  {
+    if (current_page > 1) {
+      current_page--;
+      changePage(current_page);
+    }
+  }
+
+  function nextPage()
+  {
+    if (current_page < numPages()) {
+      current_page++;
+      changePage(current_page);
+    }
+  }
 
   function changePage(page)
   {
