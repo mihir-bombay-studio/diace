@@ -118,7 +118,7 @@
             
               {% assign dwncase = option.name | downcase %}
               {% assign loopno = forloop.index0 %}
-            {% assign lastone = blank %}
+            {% assign lastone = null %}
             {% if forloop.last %}
             {% assign lastone = "true" %}
             {% endif %}
