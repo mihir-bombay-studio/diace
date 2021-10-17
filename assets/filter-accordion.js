@@ -144,17 +144,15 @@ var current_page = 1;
 var records_per_page = 2;
 
 var objJson = [
-    { adName: "AdName 1"},
-    { adName: "AdName 2"},
-    { adName: "AdName 3"},
-    { adName: "AdName 4"},
-    { adName: "AdName 5"},
-    { adName: "AdName 6"},
-    { adName: "AdName 7"},
-    { adName: "AdName 8"},
-    { adName: "AdName 9"},
-    { adName: "AdName 10"}
-]; // Can be obtained from another source, such as your objJson variable
+    { adName: "AdName 1"}
+]; 
+
+
+let prod = document.querySelectorAll('.product-collection-card[title]');
+
+let prodobj = [...prod].forEach(btnn =>  objJson.push(btnn.getAttribute('title')));
+
+console.log(objJson);
 
 function prevPage()
 {
