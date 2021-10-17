@@ -131,7 +131,7 @@
             {% assign variantImg = blank %}
             {% assign variantColorCode = blank %}
             {% for variant in product.variants %}
-              {% if variant.option[loopno] == value %}fg
+              {% if variant.option1 == value %}fg
                 {% if variant.metafields.my_fields.variant_image %}
                   {% assign variantImg = variant.metafields.my_fields.variant_image %}
             	{% elsif variant.metafields.my_fields.variant_color %}
