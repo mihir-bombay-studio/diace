@@ -148,6 +148,10 @@ fieldset.product-form__input input:checked+label .color-swatch {
 .v-name-color {
 	display: none;
 }
+fieldset.product-form__input input:checked+label .v-name-color {
+	display: block;
+}
+.toggle-colors-open {}
 
 .color-swatch .colors-color{
   width:100%;
