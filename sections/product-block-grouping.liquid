@@ -276,7 +276,18 @@
 </div>
 
 <script>
-  $('.qty-minus').click(function() {
+  
+  
+  $(document).ready(function () {
+    $('.color-change-btn').click(function () {
+      $(this).closest("fieldset").addClass("toggle-colors-open");
+    });
+    $('.product-form__input input[type=radio]').change(function() {
+      $(this).closest("fieldset").removeClass("toggle-colors-open");
+    });
+  });
+  
+    $(".product-qty-add-to-cart-wrapper").on( "click", ".qty-minus", function() {
   	var data_qty = parseInt($(this).next().data('qty'));
     if( data_qty != 1 )
     {
@@ -286,7 +297,7 @@
     }
   });
   
-  $('.qty-plus').click(function() {
+  $(".product-qty-add-to-cart-wrapper").on( "click", ".qty-plus", function() {
     var data_qty = parseInt($(this).prev().data('qty'));
     data_qty = data_qty + 1;
     $(this).prev().data('qty', data_qty);
