@@ -136,7 +136,7 @@ $("#filter-count").on("change",function(){
 
 
 
- fetch('/?section=template--15166822318255__16330268764c434e3c')
+ fetch('/?sections=header-new')
 .then((response) => response.text())
 .then((responseText) => {
   const html = new DOMParser().parseFromString(responseText, 'text/html')
