@@ -660,7 +660,7 @@
             <script>
               var objJson = [];
               var prodObj = {};
-              {% for product in collection.products limit:10%}
+              {% for product in collection.products %}
               
               prodObj = {
                 title :'{{product.title}}',
