@@ -658,7 +658,7 @@
 		{% comment %}<p class="collection-product-count light">{{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}</p>{% endcomment %}
           <div class="product-collection flex-box">
             <script>
-              var prodArray = [];
+              var objJson = [];
               var prodObj = {};
               {% for product in collection.products limit:10%}
               
@@ -669,7 +669,7 @@
                 ImageUrl :'{{ product.featured_image.src | img_url: 'x282' }}'
               }
               
-              prodArray.push(prodObj);
+              objJson.push(prodObj);
               {% endfor %}
               
             </script>

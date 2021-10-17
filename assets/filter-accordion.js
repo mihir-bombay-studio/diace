@@ -143,10 +143,10 @@ $("#filter-count").on("change",function(){
 var current_page = 1;
 var records_per_page = 4;
 
-var objJson = [];
-let btns=document.querySelectorAll('.product-collection-card[title]');
-  var titleObjList = [...btns].forEach(btn1 =>  objJson.push({adName:btn1.getAttribute('title')}));
-  console.log(objJson);
+// var objJson = [];
+// let btns=document.querySelectorAll('.product-collection-card[title]');
+//   var titleObjList = [...btns].forEach(btn1 =>  objJson.push({adName:btn1.getAttribute('title')}));
+//   console.log(objJson);
 
   function prevPage()
   {
@@ -178,7 +178,7 @@ let btns=document.querySelectorAll('.product-collection-card[title]');
     listing_table.innerHTML = "";
 
     for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
-      listing_table.innerHTML += `<p>${objJson[i].adName}</p> <br>`;
+      listing_table.innerHTML += `<p>${objJson[i].title}</p> <br>`;
     }
     page_span.innerHTML = page;
 
@@ -204,4 +204,4 @@ let btns=document.querySelectorAll('.product-collection-card[title]');
     changePage(1);
   };
 
-console.log(prodArray);
+console.log(objJson);
