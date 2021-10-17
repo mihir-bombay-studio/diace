@@ -150,7 +150,7 @@ var records_per_page = 4;
 // let prodobj = [...prod].forEach(btnn =>  objJson.push({title : btnn.getAttribute('title')}));
 
 console.log(objJson);
-console.log(tagArray);
+
 
 function prevPage()
 {
