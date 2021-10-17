@@ -183,7 +183,7 @@ function changePage(page)
   	let table_output = "";
   
   
-  table_output += `<div class="collection">
+  table_output += `<div id="CollectionProductGrid"><div class="collection">
 			<div class="product-collection flex-box">`;
   
 
@@ -205,7 +205,7 @@ function changePage(page)
     
   }
  
-  table_output += `</div ></div >`;
+  table_output += `</div ></div ></div >`;
   
   $('#listingTable').html(table_output);
   
