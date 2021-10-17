@@ -1083,7 +1083,9 @@ function changePage(page)
 
 function numPages()
 {
-    return (objJson.length / records_per_page);
+  console.log(Math.ceil(objJson.length / records_per_page))
+    return Math.ceil(objJson.length / records_per_page);
+  
 }
 
 window.onload = function() {
