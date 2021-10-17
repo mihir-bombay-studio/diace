@@ -120,12 +120,10 @@ $("#filter-count").on("change",function(){
   let btns=document.querySelectorAll('.product-collection-card[title]');
 
   let price = [...btns].forEach(btn =>  a.push(btn.getAttribute('title')));
-  var titleObjList = [...btns].forEach(btn1 =>  objJson.push({adName:btn1.getAttribute('title')}));
 
 
   a.length = numOfProd;
-//   objJson.length = numOfProd;
-  console.log(objJson);
+
 
   $('.product-collection-card').each(function() {
     var title = $(this).attr('title');
