@@ -119,7 +119,7 @@
               {% assign dwncase = option.name | downcase %}
               {% assign loopno = forloop.index0 %}
           <fieldset class="js product-form__input ">
-            {% if forloop.first %}
+            {% if forloop.first and dwncase != blank %}
             <div class="variant-option-name">
               {%- if option.name contains "Size" or option.name contains "Maat"  -%}
               KIES JOUW MAAT
