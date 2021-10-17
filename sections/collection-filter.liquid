@@ -663,6 +663,7 @@
               {% for product in collection.products limit:10%}
               
               prodObj = {
+                title :'{{product.title}}',
                 url:'{{product.url}}',
                 price:'{{ product.price | money  }}',
                 ImageUrl :'{{ product.featured_image.src | img_url: 'x282' }}'
