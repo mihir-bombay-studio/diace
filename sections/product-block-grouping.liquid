@@ -309,7 +309,7 @@
             return item.public_title === string;
           });
         document.title = w.name;
-        	history.pushState({}, null, $(this).next().data("url"));
+        	history.pushState({}, null, $(this).next().data("url").toString());
         console.log($(this).next().data("url"))
      
         }
