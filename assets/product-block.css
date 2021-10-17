@@ -116,6 +116,9 @@ cursor: pointer;
     gap: 8px;
 /*     margin: 0 8px; */
 }
+.product-form__input label.color-label{
+display: none;
+}
 
 .variant-option-name{
 
@@ -140,7 +143,7 @@ cursor: pointer;
   border-radius: 50%;
 
 }
-fieldset.product-form__input input:checked+label {
+fieldset.product-form__input input:checked+label.color-label {
   display: inline-flex;
 }
 fieldset.product-form__input input:checked+label .color-swatch {
@@ -150,7 +153,7 @@ fieldset.product-form__input input:checked+label .color-swatch {
 .v-name-color {
   display: none;
 }
-fieldset.product-form__input input:checked+label .v-name-color {
+fieldset.product-form__input input:checked+label.color-label .v-name-color {
   display: block;
 }
 .toggle-colors-open .v-name-color {
