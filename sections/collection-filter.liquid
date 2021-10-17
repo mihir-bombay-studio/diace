@@ -630,7 +630,7 @@
           var prodObj = {};
           {% for product in collection.products%}
 			{% for tag in product.tags %}
-          {% if forloop.last == false %}','
+          
           prodObj = {
             title :'{{product.title | escape  | capitalize}}',
             url:'{{product.url}}',
@@ -641,7 +641,7 @@
           }
 
           objJson.push(prodObj);
-          {% endif %}
+        
           {% endfor %}
           {% endfor %}
         </script>
