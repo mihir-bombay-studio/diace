@@ -625,30 +625,7 @@
 		<script src="{{ 'filter-accordion.js' | asset_url }}" defer="defer"></script>
 
       <div id="CollectionProductGrid">
-        <script>
-          var objJson = [];
-          var prodObj = {};
-          {% for product in collection.products %}
-			
-          prodObj = {
-            title :'{{product.title | escape  | capitalize}}',
-            url:'{{product.url}}',
-            Image:'{{product.featured_image.src | img_url: 'x282'}}',
-            price:'{{ product.price | divided_by : 100.00}}',
-            compare_price:'{{ product.compare_at_price | money }}',
-            tags : []
-          
-          }
-
-          {% for tag in product.tags %}
-          prodObj.tags.push('{{tag | downcase | remove : " "}}');
-          {% endfor %}
-          
-          objJson.push(prodObj);
-          {% endfor %}
-          
-        </script>
-      
+        {% paginate collection.products by limit %}
         {%- if collection.products.size == 0 -%}
         {% comment %}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
@@ -661,7 +638,7 @@
           </div>
 			
           <p class="collection-product-count light">
-            No Products Found
+            {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
           </p>
 		
           <div class="title-wrapper center">
@@ -776,7 +753,10 @@
           </div>
         </div>
         {%- endif -%}
-       
+        {%- if paginate.pages > 1 -%}
+        {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
+        {%- endif -%}
+        {%- endpaginate -%}
         
       </div>
 
@@ -988,10 +968,4 @@
   $(".filter-close").click(function(){
     closeFilter();
   });
-  
-//   --------------------------------------
-  
-
-
 </script>
-
