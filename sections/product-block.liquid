@@ -254,18 +254,9 @@
 <script>
   
   
-    $(document).ready(function () {
-    $('.color-selector').click(function () {
-      var inputValue = $(this).data("value");
-      console.log(inputValue);
-      $(this).closest(".selected-color").hide();//hide the color which was previously selected
-      $(inputValue).show();// show the color which is selected
-      $(this).closest(".color-selector-wrapper").toggle();//toggle the palatte
-    });
-
+  $(document).ready(function () {
     $('.color-change-btn').click(function () {
-      let palatte_id = $(this).data("palatte");
-      $(`#${palatte_id}`).toggle();
+      $(this).closest("fieldset").addClass("toggle-colors-open");
     });
   });
   
