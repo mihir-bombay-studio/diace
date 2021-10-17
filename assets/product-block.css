@@ -135,10 +135,13 @@ cursor: pointer;
 .color-swatch {
   width: 32px;
   height: 32px;
-  display: none;
+  display: inline-flex;
   border: 2px solid transparent;
   border-radius: 50%;
 
+}
+fieldset.product-form__input input:checked+label {
+  display: none;
 }
 fieldset.product-form__input input:checked+label .color-swatch {
   border: 2px solid #000000;
@@ -150,9 +153,6 @@ fieldset.product-form__input input:checked+label .color-swatch {
 }
 fieldset.product-form__input input:checked+label .v-name-color {
   display: block;
-}
-.toggle-colors-open .color-swatch {
-  display: inline-flex;
 }
 .toggle-colors-open .v-name-color {
   display: none !important;
