@@ -155,7 +155,7 @@ fieldset.product-form__input input:checked+label .v-name-color {
   display: inline-flex;
 }
 .toggle-colors-open .v-name-color {
-  display: none;
+  display: none !important;
 }
 
 .color-swatch .colors-color{
