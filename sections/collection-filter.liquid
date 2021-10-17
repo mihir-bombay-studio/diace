@@ -664,7 +664,8 @@
               
               prodObj = {
                 url:'{{product.url}}',
-                price:'{{ product.price | money  }}'
+                price:'{{ product.price | money  }}',
+                ImageUrl :'{{ product.featured_image.src }}'
               }
               
               prodArray.push(prodObj);
