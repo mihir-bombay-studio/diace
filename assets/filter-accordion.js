@@ -207,8 +207,6 @@ function changePage(page)
                   </div>
                 </div>
               </div>
-       
-            {% endfor %}
           </div>
         </div>`;
     }
