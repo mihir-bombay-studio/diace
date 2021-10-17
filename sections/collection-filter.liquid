@@ -662,7 +662,7 @@
             </div>
           </div>
 		{% comment %}<p class="collection-product-count light">{{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}</p>{% endcomment %}
-          <div class="product-collection flex-box">
+          <div class="product-collection flex-box"  data-collectionSize="{{collection.products.size}}">
             {% for product in collection.products %}
               <div class="product-collection-card {% for tag in product.tags %} {{ tag | downcase | remove : " " }} {% endfor %}" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price | divided_by : 100.00 }}"  data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}" title="{{product.title}}" href="{{ product.url }}">
                 <div class="featured-product-img rel">
