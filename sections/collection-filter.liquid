@@ -625,7 +625,7 @@
 		<script src="{{ 'filter-accordion.js' | asset_url }}" defer="defer"></script>
 
       <div id="CollectionProductGrid">
-        
+        {% paginate collection.products by 500 %}
         {%- if collection.products.size == 0 -%}
         {% comment %}
         <div class="collection collection--empty " id="main-collection-product-grid" data-id="{{ section.id }}">
@@ -753,10 +753,10 @@
           </div>
         </div>
         {%- endif -%}
-        <div id="listingTable"></div>
-        <a href="javascript:prevPage()" id="btn_prev">Prev</a>
-        <a href="javascript:nextPage()" id="btn_next">Next</a>
-        page: <span id="page"></span>
+        {%- if paginate.pages > 1 -%}
+        {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
+        {%- endif -%}
+        {%- endpaginate -%}
         
       </div>
 
