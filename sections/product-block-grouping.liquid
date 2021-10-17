@@ -109,9 +109,16 @@
         <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
           <div class="fieldset-wrapper style-scrollbar">
           
-          <fieldset class="js product-form__input">
+            {% paginate collections[section.settings.grouping_collection].products by 1000 %}
+            {%- for productx in collections[section.settings.grouping_collection].products -%}
+          {%- for option in product.options_with_values -%}
+            
+              {% assign dwncase = option.name | downcase %}
+              {% assign loopno = forloop.index0 %}
+          <fieldset class="js product-form__input ">
+            {% if forloop.first %}
             <div class="variant-option-name">
-              {%- if option.name == "Size" or option.name == "Maat" -%}
+              {%- if option.name contains "Size" or option.name contains "Maat"  -%}
               KIES JOUW MAAT
 
               <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
@@ -120,41 +127,85 @@
                 <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"></div>
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div>
+              {%- elsif dwncase contains "kleur" or dwncase contains "color" -%}
+              {{option.name | upcase}}: <span class="color-change-btn light">Wijzig</span>
+              {% else %}
+              {{option.name | upcase}}:
               {%- endif -%}
             </div>
-            {% paginate collections[section.settings.grouping_collection].products by 1000 %}
-            {%- for productx in collections[section.settings.grouping_collection].products -%}
-            {%- for optionx in productx.options_with_values -%}
-            {%- for value in optionx.values -%}
-            
+            {% endif %}
+            {%- for value in option.values -%}
+            {% assign variantImg = blank %}
+            {% assign variantColorCode = blank %}
+            {% for variant in product.variants %}
+              {% if variant.options[loopno] == value %}
+            {% if loopno == 0 %}
+                {% if variant.metafields.my_fields.variant_image %}
+                  {% assign variantImg = variant.metafields.my_fields.variant_image %}
+            	{% elsif variant.metafields.my_fields.variant_color %}
+                  {% assign variantColorCode = variant.metafields.my_fields.variant_color %}
+                {% endif %}
+            {% elsif loopno == 1 %}
+            	{% if variant.metafields.my_fields.variant_image_2 %}
+                  {% assign variantImg = variant.metafields.my_fields.variant_image_2 %}
+            	{% elsif variant.metafields.my_fields.variant_color_2 %}
+                  {% assign variantColorCode = variant.metafields.my_fields.variant_color_2 %}
+                {% endif %}
+            {% else %}
+            	{% if variant.metafields.my_fields.variant_image_3 %}
+                  {% assign variantImg = variant.metafields.my_fields.variant_image_3 %}
+            	{% elsif variant.metafields.my_fields.variant_color_3 %}
+                  {% assign variantColorCode = variant.metafields.my_fields.variant_color_3 %}
+                {% endif %}
+            {% endif %}
+              {% endif %}      
+            {% endfor %}
             <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
                    class="no-disp"
-                   name="{%- if optionx.name == "Title" or optionx.name == "Maat" or optionx.name == "Size" -%}
+                   name="{%- if option.name contains "Title" or option.name contains "Maat" or option.name contains "Size" -%}
                          Title
-                         {%- else if optionx.name == "Band Kleur" -%}
-                         {{ optionx.name }}
-                         {%- else if optionx.name == "Kleur" or optionx.name == "Color" -%}
+                         {%- else if option.name contains "Colour" -%}
+                         {{ option.name }}
+                         {%- elsif dwncase contains "kleur" or dwncase contains "color" -%}
                          Color
+                         {% else %}
+                         {{ option.name }}
                          {%- endif -%}"
                    value="{{ value | escape }}"
                    form="product-form-{{ section.id }}"
-                   {% if product.id == productx.id %}checked{% endif %}
+                   {% if option.selected_value == value %}checked{% endif %}
                    >
-            {%-if optionx.name == "Kleur" or optionx.name == "Color" -%}
-            <label class="{{ optionx.name }}" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
-              <span class="color-swatch" style="background-color:{{ productx.variants[forloop.index0].metafields.my_fields.color }}"></span> 
-              {{ value }} 
+            {%-if dwncase contains "kleur" or dwncase contains "color" or dwncase contains "colour" -%}
+            
+            <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+              <span class="color-swatch" >
+                {% assign imgsrc = value | append: ".PNG" %}
+                {% if variantImg != blank %}
+                <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
+                {% else %}
+                {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
+                {% for colors in colorsSch %}
+                  {% assign color = colors | split: ":" %}
+                  {% if color[0] == value %}
+                    {% assign variantColorCode = color[1] %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}  
+                <span class="colors-color" style="background-color:{{ variantColorCode }};"></span>
+                {% endif %}
+              </span>
+              <span class="v-name {%if dwncase contains "kleur" or dwncase contains "color" or dwncase contains "colour" %}v-name-color{%endif%}"> {{ value }}</span> 
             </label>
             {%- else -%}
-            <label class="{{ optionx.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
-              {{ value }} 
+            <label class="{{ option.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
+              {{ value }}
             </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
             {%- endif -%}
             {%- endfor -%}
-            {%- endfor -%}
-            {%- endfor -%}
-            {% endpaginate %}
-          </fieldset>
+           </fieldset>
+          {%- endfor -%}
+          {%- endfor -%}
+          {% endpaginate %}
           
             </div>
           <script id="product-json" type="application/json">
