@@ -146,12 +146,14 @@ fieldset.product-form__input input:checked+label .color-swatch {
   display: inline-flex;
 }
 .v-name-color {
-	display: none;
+  display: none;
 }
 fieldset.product-form__input input:checked+label .v-name-color {
-	display: block;
+  display: block;
 }
-.toggle-colors-open {}
+.toggle-colors-open .color-swatch {
+  display: inline-flex;
+}
 
 .color-swatch .colors-color{
   width:100%;
