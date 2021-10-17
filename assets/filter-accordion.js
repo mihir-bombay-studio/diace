@@ -143,14 +143,11 @@ $("#filter-count").on("change",function(){
 var current_page = 1;
 var records_per_page = 2;
 
-var objJson = [
-    { adName: "AdName 1"}
-]; 
-
+var objJson = []; 
 
 let prod = document.querySelectorAll('.product-collection-card[title]');
 
-let prodobj = [...prod].forEach(btnn =>  objJson.push(btnn.getAttribute('title')));
+let prodobj = [...prod].forEach(btnn =>  objJson.push({title : btnn.getAttribute('title')}));
 
 console.log(objJson);
 
@@ -184,7 +181,7 @@ function changePage(page)
     listing_table.innerHTML = "";
 
     for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
-        listing_table.innerHTML += objJson[i].adName + "<br>";
+        listing_table.innerHTML += objJson[i].title + "<br>";
     }
     page_span.innerHTML = page;
 
