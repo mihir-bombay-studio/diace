@@ -122,7 +122,7 @@
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div>
               {% assign dwncase = option.name | downcase %}
-              {% assign loopno = forloop.index0 %}
+              {% assign loopno = forloop.index0 %}{{forloop.index0}}
               {%- elsif dwncase contains "kleur" or dwncase contains "color" -%}
               {{option.name | upcase}}: <span class="color-change-btn light">Wijzig</span>
               {%- endif -%}
