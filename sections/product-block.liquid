@@ -135,11 +135,25 @@
             {% assign variantColorCode = blank %}
             {% for variant in product.variants %}
               {% if variant.options[loopno] == value %}
+            {% if loopno == 0 %}
                 {% if variant.metafields.my_fields.variant_image %}
                   {% assign variantImg = variant.metafields.my_fields.variant_image %}
             	{% elsif variant.metafields.my_fields.variant_color %}
                   {% assign variantColorCode = variant.metafields.my_fields.variant_color %}
                 {% endif %}
+            {% elsif loopno == 1 %}
+            	{% if variant.metafields.my_fields.variant_image_2 %}
+                  {% assign variantImg = variant.metafields.my_fields.variant_image_2 %}
+            	{% elsif variant.metafields.my_fields.variant_color_2 %}
+                  {% assign variantColorCode = variant.metafields.my_fields.variant_color_2 %}
+                {% endif %}
+            {% else %}
+            	{% if variant.metafields.my_fields.variant_image_3 %}
+                  {% assign variantImg = variant.metafields.my_fields.variant_image_3 %}
+            	{% elsif variant.metafields.my_fields.variant_color_3 %}
+                  {% assign variantColorCode = variant.metafields.my_fields.variant_color_3 %}
+                {% endif %}
+            {% endif %}
               {% endif %}      
             {% endfor %}
             <input type="radio" id="{{ section.id }}-{{ value }}-{{ forloop.index0 }}"
