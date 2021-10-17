@@ -178,14 +178,17 @@ function changePage(page)
     if (page < 1) page = 1;
     if (page > numPages()) page = numPages();
 
-    listing_table.innerHTML = "";
+    
+  
+  	let table_output = "";
   
   
-  listing_table.innerHTML += `
+  table_output += `<div class="collection">
 			<div class="product-collection flex-box">`;
+  
 
   for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
-    listing_table.innerHTML += `<div class="product-collection-card"
+    table_output += `<div class="product-collection-card"
     id="main-collection-product-grid" data-id="{{ section.id }}"
     data-price="${objJson[i].price}" title="${objJson[i].price}" href="${objJson[i].url}">
     <div class="featured-product-img rel">
@@ -202,7 +205,9 @@ function changePage(page)
     
   }
  
-  listing_table.innerHTML += `</div >`;
+  table_output += `</div ></div >`;
+  
+  $('#listingTable').html(table_output);
   
   
     page_span.innerHTML = page;
