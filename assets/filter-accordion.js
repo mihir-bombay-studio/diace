@@ -115,7 +115,12 @@ $("#filter-count").on("change",function(){
     $(".loading-overlay").css("display" , "none");
   }, 1000);
 
+  if(numOfProd < 100){
   $(".showing-items").html("Items " + numOfProd + " van " + 102);
+  }
+  else{
+  $(".showing-items").html("Showing all Items");
+  }
 
   let a = [];
 
