@@ -200,9 +200,9 @@ function changePage(page)
         </div>
         </div>
         </div>
-</div>
-        </div>
+
 `;
+    listing_table.innerHTML += `</div></div>`
     }
     page_span.innerHTML = page;
 
