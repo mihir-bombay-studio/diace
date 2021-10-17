@@ -232,7 +232,7 @@
       
  
       <div class="sorting-wrapper light flex-box justify-between">
-        {% comment %}
+       
         <div class="sorting-part total-items flex-box border-bottom justify-between">
           <select id="filter-count" class="select__select product_count_sort">
             <option value="" disabled selected>Toon 16 items</option>
@@ -245,8 +245,8 @@
             {% include 'icon-black-down-chevron' %}
      
         </div>
-        {% endcomment %}
-<!--         <div class="sorting-part showing-items">Items 1 - 16 van 102</div> -->
+        
+        <div class="sorting-part showing-items">Items 1 - 16 van 102</div>
         <div class = "sort__by_filter" >
           <div class=" collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
         {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
