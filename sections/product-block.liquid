@@ -121,7 +121,8 @@
                 <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"></div>
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div>
-              {%- else if option.name contains "Kleur" or option.name contains "Color" or option.name contains "color" -%}
+              {% assign dwncase = option.name | downcase %}
+              {%- else if dwncase contains "kleur" or dwncase contains "color" -%}
               {{option.name | upcase}}: <span class="color-change-btn light">Wijzig</span>
               {%- endif -%}
             </div>
