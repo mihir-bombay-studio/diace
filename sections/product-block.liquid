@@ -148,14 +148,16 @@
                          Title
                          {%- else if option.name contains "Colour" -%}
                          {{ option.name }}
-                         {%- else if option.name contains "Kleur" or option.name contains "Color" or option.name contains "color" -%}
+                         {%- elsif dwncase contains "kleur" or dwncase contains "color" -%}
                          Color
+                         {% else %}
+                         {{ option.name }}
                          {%- endif -%}"
                    value="{{ value | escape }}"
                    form="product-form-{{ section.id }}"
                    {% if option.selected_value == value %}checked{% endif %}
                    >
-            {%-if option.name contains "Kleur" or option.name contains "Color" or option.name contains "Colour" -%}
+            {%-if dwncase contains "kleur" or dwncase contains "color" or dwncase contains "colour" -%}
             
             <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               <span class="color-swatch" >
