@@ -197,84 +197,15 @@ function changePage(page)
                  
                   <a href="${objJson[i].url}" ><img class="product-img" src="${objJson[i].Image}"></a>
                   
-                  {% if product.has_only_default_variant %}
-                  <div class="AddToCart product-hover-text flex-box align-center" data-variant-id="{{product.first_available_variant.id}}" data-quantity='1' >
-                    <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-                    <span class="hover-text bold">KOPEN</span>
-                  </div>
-                  {% elsif  product.options_with_values.size > 1  %}
-                   <div class="product-hover-text flex-box align-center">
-                    <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-                    <a href="{{product.url}}" class="hover-text bold">KOPEN</a>
-                  </div>
-                  {% else %}
-                
-                  <div data-prod-id="{{product.handle}}" class="variant-pop product-hover-text flex-box align-center">
-                    <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-                    <span class="hover-text bold">KOPEN</span>
-                  </div>
-                  {% endif %}
-                  
-                  {%- unless product.has_only_default_variant -%}
-                  {% if product.options_with_values.size <= 1 %}
-                  {%- for option in product.options_with_values -%}
-                  {%- if option.name == "Kleur" or option.name == "Color" -%}
-                  <div id="{{product.handle}}" class="product_coll_variant variant-options-wrapper">
-                    <div class="color_wrapper">
-                      {% for variant in product.variants limit:6 %}
-                      <span data-success-id="success_{{product.handle}}" class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
-                      {% endfor %}
-                    </div>
-                  </div>
-                  <span id ="success_{{product.handle}}" class="success_cart__message">TOEGEVOEGD  {% include "tick" %}</span>
-                  
-                  {% else %}
-                  <div id="{{product.handle}}" class="other-variants">
-                  	<div class="color_wrapper">
-                      {% for variant in product.variants limit:6 %}
-                      <span variant-option="{{variant.option2}}" data-success-id="success_{{product.handle}}" class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
-                      {% endfor %}
-                    </div>
-                  </div>
-                   <span id ="success_{{product.handle}}" class="success_cart__message">TOEGEVOEGD  {% include "tick" %}</span>
-                  {% endif %}
-                  {% endfor %}
-                  {% endif %}
-                  {%- endunless -%}
                
                 </div>
                 <div class="product-title-price flex-box justify-between">
-                  <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  | capitalize}}</a></div>
+                  <div class="product-title semibold"><a href="${objJson[i].url}">${objJson[i].title}</a></div>
                   <div class="product-compare-to-and-price">
-                    <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
-                    <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money  }}</span>
+                    <span class="compare-to-price light">${objJson[i].price}</span>
+                    <span class="product-price semibold">${objJson[i].compare_price}</span>
                   </div>
                 </div>
-                
-                
-
-                <div class="product-colors flex-box justify-between light">
-                  {% if product.has_only_default_variant %}   
-                  <div class="product-color">
-                    
-                  </div>          
-                  {% else %}
-                  {% for variant in product.variants limit:1%}
-                  {%- for option in product.options_with_values limit:1-%}
-                  <div class="product-color">
-                    <span>{{option.name}}: </span>
-                    <span>
-                      {{variant.title}}
-                    </span>
-                  </div>
-                 {% endfor %}
-                  {% endfor %}
-                  <div class="other-available-colors">
-                    <a class="featured-product-link" href="{{product.url}}">Meer kleuren beschikbaar</a>
-                  </div>
-                  {% endif %}
-                </div>
-
               </div>
        
             {% endfor %}
