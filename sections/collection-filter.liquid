@@ -680,10 +680,10 @@
         
         {%- for i in (1..1) -%}
         {%- unless pageUrl contains "?" -%}{% break %}{%- endunless -%}
-        {%- if pageUrl contains "page=2&viewurl=9" -%}{%- assign limit = 9 -%}{%- endif -%}
-        {%- if pageUrl contains "page=2&viewurl=12" -%}{%- assign limit = 12 -%}{%- endif -%}
-        {%- if pageUrl contains "page=2&viewurl=24" -%}{%- assign limit = 24 -%}{%- endif -%}
-        {%- if pageUrl contains "page=2&viewurl=36" -%}{%- assign limit = 36 -%}{%- endif -%}
+        {%- if pageUrl contains "viewurl=9" -%}{%- assign limit = 9 -%}{%- endif -%}
+        {%- if pageUrl contains "viewurl=12" -%}{%- assign limit = 12 -%}{%- endif -%}
+        {%- if pageUrl contains "viewurl=24" -%}{%- assign limit = 24 -%}{%- endif -%}
+        {%- if pageUrl contains "viewurl=36" -%}{%- assign limit = 36 -%}{%- endif -%}
         {%- endfor -%}
         
         
