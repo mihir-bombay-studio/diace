@@ -189,16 +189,13 @@ function changePage(page)
               </svg>
             </div>
           </div>
-		{% comment %}<p class="collection-product-count light">{{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}</p>{% endcomment %}
+		
           <div class="product-collection flex-box">
-            {% for product in collection.products %}
-              <div class="product-collection-card {% for tag in product.tags %} {{ tag | downcase | remove : " " }} {% endfor %}" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="{{ product.price | divided_by : 100.00 }}"  data-tag="{% for tag in product.tags %}{{ tag }}{% if forloop.last == false %},{% endif %}{% endfor %}" title="{{product.title}}" href="{{ product.url }}">
+            
+              <div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}" data-price="${objJson[i].price}" title="${objJson[i].price}" href="${objJson[i].url}">
                 <div class="featured-product-img rel">
-                  {% if product.featured_image != blank %}
-                  <a href="{{product.url}}" ><img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
-                  {% else %}
-                  {{ 'product-1' | placeholder_svg_tag }}
-                  {% endif %}
+                 
+                  <a href="${objJson[i].url}" ><img class="product-img" src="${objJson[i].Image}"></a>
                   
                   {% if product.has_only_default_variant %}
                   <div class="AddToCart product-hover-text flex-box align-center" data-variant-id="{{product.first_available_variant.id}}" data-quantity='1' >
