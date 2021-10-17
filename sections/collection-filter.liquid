@@ -628,7 +628,7 @@
         <script>
           var objJson = [];
           var prodObj = {};
-          {% for product in collection.products%}
+          {% for product in collection.products %}
 			
           prodObj = {
             title :'{{product.title | escape  | capitalize}}',
@@ -636,9 +636,14 @@
             Image:'{{product.featured_image.src | img_url: 'x282'}}',
             price:'{{ product.price | money  }}',
             compare_price:'{{ product.compare_at_price | money }}',
-            
+            tags : []
+          
           }
 
+          {% for tag in product.tags %}
+          prodObj.tags.push({{tag}});
+          {% endfor %}
+          
           objJson.push(prodObj);
           {% endfor %}
           
@@ -987,4 +992,102 @@
   $(".filter-close").click(function(){
     closeFilter();
   });
+  
+//   --------------------------------------
+  
+  
+var current_page = 1;
+var records_per_page = 4;
+
+
+console.log(objJson);
+
+
+function prevPage()
+{
+    if (current_page > 1) {
+        current_page--;
+        changePage(current_page);
+    }
+}
+
+function nextPage()
+{
+    if (current_page < numPages()) {
+        current_page++;
+        changePage(current_page);
+    }
+}
+    
+function changePage(page)
+{
+    var btn_next = document.getElementById("btn_next");
+    var btn_prev = document.getElementById("btn_prev");
+    var listing_table = document.getElementById("listingTable");
+    var page_span = document.getElementById("page");
+ 
+    // Validate page
+    if (page < 1) page = 1;
+    if (page > numPages()) page = numPages();
+
+    
+  
+  	let table_output = "";
+  
+  
+  table_output += `<div id="CollectionProductGrid"><div class="collection">
+			<div class="product-collection flex-box">`;
+  
+
+  for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
+    table_output += `<div class="product-collection-card"
+    id="main-collection-product-grid" data-id="{{ section.id }}"
+    data-price="${objJson[i].price}" title="${objJson[i].price}" href="${objJson[i].url}">
+    <div class="featured-product-img rel">
+       <a href="${objJson[i].url}" ><img class="product-img" src="${objJson[i].Image}"></a>
+    </div>
+    <div class="product-title-price flex-box justify-between">
+    	<div class="product-title semibold"><a href="${objJson[i].url}">${objJson[i].title}</a></div>
+        	<div class="product-compare-to-and-price">
+              <span class="compare-to-price light">${objJson[i].price}</span>
+              <span class="product-price semibold">${objJson[i].compare_price}</span>
+        	</div>
+       </div>
+    </div>`;
+    
+  }
+ 
+  table_output += `</div ></div ></div >`;
+  
+  $('#listingTable').html(table_output);
+  
+  
+    page_span.innerHTML = page;
+
+    if (page == 1) {
+        btn_prev.style.visibility = "hidden";
+    } else {
+        btn_prev.style.visibility = "visible";
+    }
+
+    if (page == numPages()) {
+        btn_next.style.visibility = "hidden";
+    } else {
+        btn_next.style.visibility = "visible";
+    }
+}
+
+function numPages()
+{
+    return Math.ceil(objJson.length / records_per_page);
+}
+
+window.onload = function() {
+    changePage(1);
+};
+
+
+
+
 </script>
+
