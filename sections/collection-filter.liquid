@@ -259,7 +259,7 @@
             {%- endfor -%}
             {%- endfor -%}
 
-            Page value = {{ param_page }}
+     
             
             <option value="/collections/{{ collection.handle }}?page={{ param_page }}&viewurl=9" {% if limit == 9 %}selected="selected"{% endif %}>9</option>
             <option value="/collections/{{ collection.handle }}?page={{ param_page }}&viewurl=12" {% if limit == 12 %}selected="selected"{% endif %}>12</option>
@@ -679,7 +679,7 @@
 
         {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
         {%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last | replace:'\/','/' | replace:'%20',' ' | replace:'\u0026','&' -%}
-        {{ pageUrl }}
+      
         
         {%- assign param_page = '' -%}
         {%- for i in (1..1) -%}
@@ -697,7 +697,7 @@
         {%- endfor -%}
         
         
-		Page value = {{ param_page }}
+	
         
         {%- for i in (1..1) -%}
         {%- unless pageUrl contains "?" -%}{% break %}{%- endunless -%}
