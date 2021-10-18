@@ -71,9 +71,9 @@
                                       {% assign collhand = link.url | split: "/" | last %}
                                       {% assign product_size = collections[collhand].products | size %}
                                         <a href="{{ link.url }}">{{ link.title }}
-                                          {% if product_size > 0 %}<span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>{% endif %}
+                                          {% if product_size > 0 %}ys<span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>{% endif %}
                                         </a>
-                                        {% if product_size > 0 %}
+                                        {% if product_size > 0 %}no
                                       
                                             <div class="hover-wrapper">
                                                 <div id="nav-sub-drop" class="dropdown-container container">
