@@ -40,8 +40,10 @@ $(document).ready(function(){
       function changeImage() {
         if($('#product-json').length > 0) {
           var string = "";
+          var hardcode_img = "";
           $(".product-form__input").each(function(index){
             if(index == 0) {
+              hardcode_img = $(this).find("input:checked").data("img");
               string += $(this).find("input:checked").val();
             } else {
               string += " / " + $(this).find("input:checked").val();
@@ -55,6 +57,7 @@ $(document).ready(function(){
           });
           console.log(w);
           $(".slider-nav img").each(function(index) {
+            if(w.featured_image == null && )
             if($(this).attr('src') != null && w.featured_image != null) {
               if(w.featured_image.src.indexOf($(this).attr('src')) > -1) {
                 $('.slider-nav').slick('slickGoTo', index);
