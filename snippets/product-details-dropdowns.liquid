@@ -1,0 +1,34 @@
+<div class="product-details">
+  {% if product.metafields.my_fields.omschrijving != blank %}
+  <div id="openAccordion" class="accordion question semibold flex-box justify-between">
+    <div class="question-left">OMSCHRIJVING</div>
+    <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
+  </div>
+  <div class="panel answer light"><p>{{ product.metafields.my_fields.omschrijving }}</p></div>
+  {% endif %}
+
+  {% if product.metafields.my_fields.materiaal != blank %}
+  <div class="accordion question semibold flex-box justify-between">
+    <div class="question-left">MATERIAAL</div>
+    <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
+  </div>
+  <div class="panel answer light"><p>{{ product.metafields.my_fields.materiaal }}</p></div>
+  {% endif %}
+
+  {% if product.metafields.my_fields.gebruiksaanwijzing != blank %}
+  <div class="accordion question semibold flex-box justify-between">
+    <div class="question-left">GEBRUIKSAANWIJZING</div>
+    <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
+  </div>
+  <div class="panel answer light"><p>{{ product.metafields.my_fields.gebruiksaanwijzing }}</p></div>
+  {% endif %}
+
+  {% if product.metafields.my_fields.wasvoorschrift != blank %}
+  <div class="accordion question semibold flex-box justify-between">
+    <div class="question-left">WASVOORSCHRIFT</div>
+    <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
+  </div>
+  <div class="panel answer light"><p>{{ product.metafields.my_fields.wasvoorschrift }}</p></div>
+  {% endif %}
+
+</div>

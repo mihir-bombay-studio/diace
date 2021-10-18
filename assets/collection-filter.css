@@ -475,10 +475,15 @@ a.active-facets__button {
   display : flex;
 }
 
+.filter-tags{
+  max-height : 500px;
+  overflow-y : auto;
+}
+
 
 
 /* .other-variants .color_wrapper span:hover{
-  background-color : #FEC23B;
+background-color : #FEC23B;
 } */
 
 @media screen and (max-width: 992px) {
@@ -619,7 +624,7 @@ a.active-facets__button {
     overflow-y : auto;
     height: 80vh;
   }
-  
+
   .product-colors{
     flex-direction: column
   }
