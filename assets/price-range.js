@@ -3,8 +3,8 @@ $(function() {
 	$( "#slider-range" ).slider({
 	  range: true,
 	  min: 0,
-	  max: 1000,
-	  values: [ 0, 1000 ],
+	  max: 200,
+	  values: [ 0, 200 ],
 	  slide: function( event, ui ) {
 		$( "#amount" ).text( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
         $( "#lower-value" ).text( ui.values[ 0 ] );
