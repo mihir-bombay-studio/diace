@@ -303,7 +303,7 @@
     ]
   },
   {
-    "name": "t:settings_schema.favicon.name",
+    "name": "Favicon",
     "settings": [
       {
         "type": "image_picker",
