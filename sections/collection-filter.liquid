@@ -36,7 +36,7 @@
     <div class="filter-mask">
       <div class="collection-filter-left">
 
-        <div class="filter-tags">
+        <div class="filter-tags style-scrollbar">
           {%- for coll in collections -%}
           <div class="collection-types bold{% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %} {% endif %}"><a href="{{coll.url}}">{{ coll.title }}</a></div>
           {% if coll.title == collection.title %}
