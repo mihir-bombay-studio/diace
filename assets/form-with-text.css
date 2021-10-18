@@ -166,7 +166,7 @@ button{
     align-items: center;
 }
 
-.frequently_asked_q button{
+.frequently_asked_q .btn{
   padding: 20px 46px 16px 46px;
   background: #D9D9D9;
   border-radius: 8px;
@@ -180,7 +180,7 @@ button{
     .form_with_text_wrapper{
     flex-direction : column;
   }
-  .frequently_asked_q button {
+  .frequently_asked_q .btn {
     display : none;
   }
   .form{
