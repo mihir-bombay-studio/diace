@@ -4,6 +4,8 @@
     "breakpoint_tablet": 992,
     "container_width": "1246px",
     "container_padding_tablet": "40px",
+    "social_facebook_link": "https:\/\/www.facebook.com\/diace.eu",
+    "social_instagram_link": "https:\/\/www.instagram.com\/diace.eu\/",
     "upsell_product": "copy-of-freestyle-libre-sensorhouder",
     "empty_cart_links": "header-lower-menu",
     "language_switcher_enabled": false,
