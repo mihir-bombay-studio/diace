@@ -3,14 +3,15 @@
 <div class="hero-new-wrapper container">
   <div class="hero flex-box justify-between">
     <div class="hero-left rel">
-      <a href="{{section.settings.hero_image_link}}">
+     
     	<img 
             src="{{ section.settings.hero_main_img | img_url: '533x' }}"
             alt="{{ section.settings.hero_main_img.alt | escape }}"
             loading="lazy"
           >
+      <a href="{{section.settings.hero_image_link}}">
+        <div class="text-over-hero bold new">{{section.settings.text_over_hero}}</div>
       </a>
-      <div class="text-over-hero bold new">{{section.settings.text_over_hero}}</div>
       <div class="bg-yellow-dots dots-left-down">
       	{% include 'bg-grey-dots' %}
       </div>
@@ -59,7 +60,7 @@
 	{
       "type": "text",
       "id": "hero_image_link",
-      "label": "Hero Image Link"
+      "label": "Hero Button Link"
     }
   ],
   "blocks": [
