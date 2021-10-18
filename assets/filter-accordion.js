@@ -116,16 +116,11 @@ $("#filter-count").on("change",function(){
   }, 1000);
 
   var collectionSizee =  document.getElementById("CollectionSize").getAttribute("data-collectionSize");
-
-
-  if(numOfProd < collectionSizee){
+  if(numOfProd <= 100){
     $(".showing-items").html("Items " + numOfProd + " van " + collectionSizee);
   }
-  else if(numOfProd > collectionSizee){
-    $(".showing-items").html("Items " + collectionSizee + " van " + collectionSizee);
-  }
   else{
-    $(".showing-items").html("Items " + collectionSizee + " van " + collectionSizee);
+  $(".showing-items").html("Items " + collectionSizee + " van " + collectionSizee);
   }
 
   let a = [];
