@@ -180,10 +180,9 @@
             
             <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               <span class="color-swatch" >
-                {% assign imgsrc = value | append: ".PNG" %}
-                {% if variantImg != blank %}
+                {% comment %}
                 <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
-                {% else %}
+                {% endcomment %}
                 {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
                 {% for colors in colorsSch %}
                   {% assign color = colors | split: ":" %}
@@ -191,9 +190,17 @@
                     {% assign variantColorCode = color[1] %}
                     {% break %}
                   {% endif %}
-                {% endfor %}  
-                <span class="colors-color" style="background-color:{{ variantColorCode }};"></span>
+                {% endfor %} 
+                
+                
+                {% assign imgsrc = value | append: ".PNG" %}
+                {% if variantImg != blank %}
+                {% assign variantColorCode = variantImg | img_url | prepend: "url(" | append: ")" %}
                 {% endif %}
+                
+                
+                <span class="colors-color" style="background:{{ variantColorCode }};"></span>
+                
               </span>
               <span class="v-name {%if dwncase contains "kleur" or dwncase contains "color" or dwncase contains "colour" %}v-name-color{%endif%}"> {{ value }}</span> 
             </label>
