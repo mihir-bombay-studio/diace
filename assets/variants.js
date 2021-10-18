@@ -46,7 +46,11 @@ class VariantSelects extends HTMLElement {
 
   updateURL() {
     if (!this.currentVariant) return;
-    window.history.replaceState({ }, '', `${this.dataset.url}?variant=${this.currentVariant.id}`);
+        if($(".product-block-wrapper").hasClass("wrap-group")) {
+        	
+        } else {
+        	window.history.replaceState({ }, '', `${this.dataset.url}?variant=${this.currentVariant.id}`);
+        }    
   }
 
   updateVariantInput() {
