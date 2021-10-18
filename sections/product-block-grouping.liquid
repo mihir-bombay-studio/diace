@@ -213,8 +213,8 @@
             </label>
             {%- else -%}
             <label class="{{ option.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}" data-url="{{productx.url}}{%- if option.id -%}?variant={{option.id}}{%- endif -%}">
-              {{ value }} {% unless lastone %}-{% endunless %}
-            </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
+              {{ value }} 
+            </label>&nbsp{% unless lastone %} - {% endunless %}&nbsp
             {%- endif -%}
             {%- endfor -%}
             {% if forloop.last %}
