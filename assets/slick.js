@@ -58,7 +58,7 @@ $(document).ready(function(){
           console.log(w);
           $(".slider-nav img").each(function(index) {
             if(w.featured_image == null && hardcode_img != "" && hardcode_img != null) {
-              if(hardcode_img($(this).attr('src')) > -1) {
+              if(hardcode_img.indexOf($(this).attr('src')) > -1) {
                 $('.slider-nav').slick('slickGoTo', index);
               }
             }
