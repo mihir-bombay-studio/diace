@@ -103,7 +103,7 @@ $(".variant-pop").click(function () {
 
 
 $("#filter-count").on("change",function(){
-  let numOfProd = $(this).val();
+  let numOfProd = parseInt($(this).val());
 
 
   $(".collection").addClass("Loading");
