@@ -5,7 +5,7 @@ $(function() {
   const btns= document.querySelectorAll('.product-collection-card[data-price]');
   var price = [...btns].forEach(btn =>  max_value_products.push(btn.getAttribute('data-price')));
   const max_price = Math.max(...max_value_products);
-  console.log(max_value_products);
+  console.log(max_price);
   
 	$( "#slider-range" ).slider({
 	  range: true,
