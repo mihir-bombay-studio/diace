@@ -67,14 +67,13 @@
                         <ul class="hover-ul header-nav-list flex-box justify-between bold">
                             {% for block in section.blocks %}
                                 {% for link in linklists[block.settings.nav_list_lower].links %}
-                                    <li class=" {% if link.links != blank %}hover-dropdown{% endif %} right-nav-list">
                                       {% assign collhand = link.url | split: "/" | last %}
                                       {% assign product_size = collections[collhand].products | size %}
+                                    <li class=" {% if product_size > 0 %}hover-dropdown{% endif %} right-nav-list">
                                         <a href="{{ link.url }}">{{ link.title }}
-                                          {% if product_size > 0 %}ys<span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>{% endif %}
+                                          {% if product_size > 0 %}<span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>{% endif %}
                                         </a>
-                                        {% if product_size > 0 %}no
-                                      
+                                        {% if product_size > 0 %}                                     
                                             <div class="hover-wrapper">
                                                 <div id="nav-sub-drop" class="dropdown-container container">
                                                     <div class="wrapper">
