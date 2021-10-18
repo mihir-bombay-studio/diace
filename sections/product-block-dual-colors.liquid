@@ -222,36 +222,7 @@
       <div class="cont-shopping light">
         <a href="/collections">Verder winkelen</a>
       </div>
-      <div class="product-details">
-        <div id="openAccordion" class="accordion question semibold flex-box justify-between">
-          <div class="question-left">OMSCHRIJVING</div>
-          <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
-        </div>
-        <div class="panel answer light"><p>{{ product.metafields.my_fields.omschrijving }}</p></div>
-
-
-        <div class="accordion question semibold flex-box justify-between">
-          <div class="question-left">MATERIAAL</div>
-          <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
-        </div>
-        <div class="panel answer light"><p>{{ product.metafields.my_fields.materiaal }}</p></div>
-
-
-        <div class="accordion question semibold flex-box justify-between">
-          <div class="question-left">GEBRUIKSAANWIJZING</div>
-          <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
-        </div>
-        <div class="panel answer light"><p>{{ product.metafields.my_fields.gebruiksaanwijzing }}</p></div>
-
-
-        <div class="accordion question semibold flex-box justify-between">
-          <div class="question-left">WASVOORSCHRIFT</div>
-          <div class="question-chevron yellow-down-chevron">{% include 'icon-black-down-chevron' %}</div>
-        </div>
-        <div class="panel answer light"><p>{{ product.metafields.my_fields.wasvoorschrift }}</p></div>
-
-
-      </div>
+{% render "product-details-dropdowns" %}
     </div>
   </div>
 </div>
