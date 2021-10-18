@@ -45,7 +45,8 @@ for (i = 0; i < acc.length; i++) {
 
 // filter by tags and range script
 
-$('.collection-tag').click(function() {
+$('.collection-tag:not(.nocurr-tag)').click(function() {
+  $('.nocurr-tag').removeClass("underline-selected");
   $(this).toggleClass("underline-selected");
   var filter_tags = [];
   $('.collection-tag.underline-selected').each(function() {
