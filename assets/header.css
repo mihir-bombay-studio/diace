@@ -480,7 +480,7 @@ transform: rotate(180deg);
   }
 
   .mobile-nav-wrapper {
-    padding: 16px 36px;
+    padding: 16px 36px 80px;
     display: flex;
     flex-direction: column;
     gap: 32px;
