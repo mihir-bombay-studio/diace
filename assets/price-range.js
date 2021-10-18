@@ -10,8 +10,8 @@ $(function() {
 	$( "#slider-range" ).slider({
 	  range: true,
 	  min: 0,
-	  max: 200,
-	  values: [ 0, 200 ],
+	  max: max_price,
+	  values: [ 0, max_price ],
 	  slide: function( event, ui ) {
 		$( "#amount" ).text( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
         $( "#lower-value" ).text( ui.values[ 0 ] );
