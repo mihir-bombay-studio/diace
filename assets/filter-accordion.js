@@ -119,8 +119,11 @@ $("#filter-count").on("change",function(){
   if(numOfProd <= 100){
     $(".showing-items").html("Items " + numOfProd + " van " + collectionSizee);
   }
+  else if(numOfProd < collectionSizee){
+    $(".showing-items").html("Items " + collectionSizee + " van " + collectionSizee);
+  }
   else{
-  $(".showing-items").html("Items " + collectionSizee + " van " + collectionSizee);
+    $(".showing-items").html("Items " + collectionSizee + " van " + collectionSizee);
   }
 
   let a = [];
