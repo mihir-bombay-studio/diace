@@ -113,6 +113,11 @@
             
               {% assign dwncase = option.name | downcase %}
               {% assign loopno = forloop.index0 %}
+            
+            {% assign lastone = null %}
+            {% if forloop.last %}
+            {% assign lastone = "true" %}
+            {% endif %}
           <fieldset class="js product-form__input ">
             <div class="variant-option-name">
               {%- if option.name contains "Size" or option.name contains "Maat"  -%}
@@ -195,7 +200,7 @@
             {%- else -%}
             <label class="{{ option.name }} title-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}">
               {{ value }}
-            </label>&nbsp{% unless forloop.last %} - {% endunless %}&nbsp
+            </label>&nbsp{% unless lastone %} - {% endunless %}&nbsp
             {%- endif -%}
             {%- endfor -%}
            </fieldset>
