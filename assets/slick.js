@@ -49,10 +49,11 @@ $(document).ready(function(){
 
           });
           var x = JSON.parse($('#product-json').html());
-
+		
           var w = x.find(item => {
             return item.public_title === string;
           });
+          console.log(w);
           $(".slider-nav img").each(function(index) {
             if($(this).attr('src') != null && w.featured_image != null) {
               if(w.featured_image.src.indexOf($(this).attr('src')) > -1) {
