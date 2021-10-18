@@ -10,6 +10,9 @@
     "upsell_product": "copy-of-freestyle-libre-sensorhouder",
     "empty_cart_links": "header-lower-menu",
     "language_switcher_enabled": false,
+    "checkout_sidebar_background_color": "#d9d9d9",
+    "checkout_accent_color": "#fec23b",
+    "checkout_button_color": "#fec23b",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
