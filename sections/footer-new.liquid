@@ -259,16 +259,18 @@
     	<div class="social-icons flex-box">
       {% for block in section.blocks %}
       {% if block.type == "Social_Icons" %}
-      <div class="social-icon">
-        <a href="{{block.settings.social_link}}" class="btn-footer-icons">
-          {% if block.settings.social_icons != blank %}
-          <img
-               srcset="{% if block.settings.social_icons.width >= 24 %}{{ block.settings.social_icons | img_url: '24x' }} {% endif %}"
-               src="{{ block.settings.social_icons | img_url : "icon" }}" loading="lazy" alt="">
-          {% elsif block.settings.social_icons_svg != blank %}{{ block.settings.social_icons_svg }}
-          {% else %}{{ 'lifestyle-2' | placeholder_svg_tag }}{% endif %}
-        </a>
-      </div>
+          <a href="{{block.settings.social_link}}" class="btn-footer-icons">
+            <div class="social-icon">
+
+              {% if block.settings.social_icons != blank %}
+              <img
+                   srcset="{% if block.settings.social_icons.width >= 24 %}{{ block.settings.social_icons | img_url: '24x' }} {% endif %}"
+                   src="{{ block.settings.social_icons | img_url : "icon" }}" loading="lazy" alt="">
+              {% elsif block.settings.social_icons_svg != blank %}{{ block.settings.social_icons_svg }}
+              {% else %}{{ 'lifestyle-2' | placeholder_svg_tag }}{% endif %}
+
+            </div>
+          </a>
       {% endif %}
       {% endfor %}
     </div>
