@@ -86,14 +86,22 @@
 
     <div class="product-block-left">
       <div class="slider-for">
-        {% for image in product.images %}
-        <img src="{{ image.src | img_url: 'master' }}" alt="{{ product.title | escape }}" style="width: 100%;">
+        {% paginate collections[section.settings.grouping_collection].products by 1000 %}
+        {%- for productx in collections[section.settings.grouping_collection].products -%}
+        {% for image in productx.images %}
+        <img src="{{ image.src | img_url: 'master' }}" alt="{{ productx.title | escape }}" style="width: 100%;">
         {% endfor %}
+        {% endfor %}
+        {% endpaginate %}
       </div>
       <div class="slider-nav">
-        {% for image in product.images %}
-        <img src="{{ image.src | img_url: 'master' }}" alt="{{ product.title | escape }}" style="width: 100%;">
+        {% paginate collections[section.settings.grouping_collection].products by 1000 %}
+        {%- for productx in collections[section.settings.grouping_collection].products -%}
+        {% for image in productx.images %}
+        <img src="{{ image.src | img_url: 'master' }}" alt="{{ productx.title | escape }}" style="width: 100%;">
         {% endfor %}
+        {% endfor %}
+        {% endpaginate %}
       </div>
     </div>
     <div class="product-block-right">
