@@ -166,7 +166,7 @@ $('#header-anouncement-close').click(function(){
 $( document ).ready(function() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
-  let tag = urlParams.get('tagx');
+  let tag = urlParams.get('tag');
   if(tag){
     tag = tag.replace(/\s+/g, '-').toLowerCase(); 
     $(`.tag-${tag}`).trigger( "click" );
