@@ -58,8 +58,9 @@ $(document).ready(function(){
           console.log(w);
           $(".slider-nav img").each(function(index) {
             if(w.featured_image == null && hardcode_img != "" && hardcode_img != null) {
-            	console.log($(this).attr('src'));
-              console.log(hardcode_img);
+              if(hardcode_img($(this).attr('src')) > -1) {
+                $('.slider-nav').slick('slickGoTo', index);
+              }
             }
             if($(this).attr('src') != null && w.featured_image != null) {
               if(w.featured_image.src.indexOf($(this).attr('src')) > -1) {
