@@ -330,7 +330,7 @@ console.log(string);
             return item.public_title === string;
           });
         document.title = w.name;
-        	history.pushState({}, null, $(this).next().data("url").toString());
+        	history.pushState({}, null, varurl[w.id]);
         console.log(varurl[w.id]);
      
         }
