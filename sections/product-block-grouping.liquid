@@ -261,7 +261,7 @@
               var variant_{{ productx.variant.id }} = "{{ productx.variant.url }}";
               {% else %}
               {% for variant in productx.variants %}
-              var variant_{{ variantx.id }} = "{{ variantx.url }}";
+              var variant_{{ variant.id }} = "{{ variant.url }}";
               {% endfor%}
              {% endif %}
             {% endfor%}
