@@ -121,8 +121,14 @@
 
       <div class="product-desc light style-scrollbar">{{ product.description }}</div>
 	  {% for option in product.options_with_values %}
-      {% assign opt_sel_val = option.selected_value | split: " / " %}
+      {% if forloop.last %}
+      {% assign opt_sel_val = option.selected_value %}
+      {% else %}
+      {% assign opt_sel_val = option.selected_value | append: "," %}
+      {% endif %}
       {% endfor %}
+      
+      {% assign opt_sel_val = opt_sel_val | split: "," %}
       <!--       ----------------------------------------------------------------------- -->
       {%- unless product.has_only_default_variant -%}
       <div class="variant-options-wrapper">
