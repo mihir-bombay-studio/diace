@@ -13,7 +13,7 @@
       <div class="featured-product-img rel">
         <a href="{{product.url}}">
           {%- if settings.vendor_1 == vendor -%}
-          <img class="product-img" src="{{ vendor_image_1 | img_url: 'x282' }}">
+          <img class="product-img" src="{{ vendor_image_1 | img_url: 'x282' }}">{{vendor_image_1}}
           {% elsif settings.vendor_2 == vendor %}
           <img class="product-img" src="{{ vendor_image_2 | img_url: 'x282' }}">
           {% elsif settings.vendor_3 == vendor %}
