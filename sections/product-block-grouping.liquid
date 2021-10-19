@@ -253,7 +253,7 @@
           {{ stringer | replace_first: "[", "" | split: "" | reverse | join: "" | replace_first: "]", "" | split: "" | reverse | join: "" }}{% unless forloop.last %},{% endunless %}
           {%- endfor -%}]
           {% endpaginate %}
-          
+          var a = 0;
           {% paginate collections[section.settings.grouping_collection].products by 1000 %}
           {%- for productx in collections[section.settings.grouping_collection].products -%}
             {% if productx.has_only_default_variant %}  
