@@ -38,16 +38,19 @@
 
         <div class="filter-tags style-scrollbar">
           {%- for coll in collections -%}
-          {% if coll.image %}
-          <div class="collection-types bold{% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %} {% endif %}"><a href="{{coll.url}}">{{ coll.title }}</a></div>
-          {% if coll.title == collection.title %}
-          <div class="collection-tags{% if coll.title != collection.title %} no-disp nocurr-tag{% else %} curr-tag{% endif %}">
-            {% for tag in collection.tags %}
-            <div class="collection-tag semibold tag-{{ tag | handleize}}" data-tfilter="{{ tag }}">{{ tag }}</div>
-            {% endfor %}
-          </div>
-          {% endif %}
-          {% endif %}
+            {% if coll.image %}
+          
+            <div class="collection-types bold{% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %} {% endif %}"><a href="{{coll.url}}">{{ coll.title }}</a></div>
+          
+            {% if coll.title == collection.title %}
+            <div class="collection-tags{% if coll.title != collection.title %} no-disp nocurr-tag{% else %} curr-tag{% endif %}">
+              {% for tag in collection.tags %}
+              <div class="collection-tag semibold tag-{{ tag | handleize}}" data-tfilter="{{ tag }}">{{ tag }}</div>
+              {% endfor %}
+            </div>
+          	{% endif %}
+          
+            {% endif %}
           {% endfor %}
 
         </div>
