@@ -320,7 +320,7 @@
           var w = x.find(item => {
             return item.public_title === string;
           });
-        document.title = w.id;
+        document.title = w.name;
         	history.pushState({}, null, $(this).next().data("url").toString());
         console.log(varurl[w.id]);
      
