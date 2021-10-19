@@ -62,9 +62,15 @@
       max-height: 263px;
     }
   }
-
-  {% assign images_count = product.images | size %}
-  {% if images_count < 5 %}
+  {% assign images_len = 0 %}
+	{% paginate collections[section.settings.grouping_collection].products by 1000 %}
+        {%- for productx in collections[section.settings.grouping_collection].products -%}
+        {% for image in productx.images %}
+        {% assign images_len = images_len | plus: 1 %}
+        {% endfor %}
+        {% endfor %}
+        {% endpaginate %}
+  {% if images_len < 5 %}
   .slider-nav .slick-track {
     margin-left: 0;
     transform: none !important;
