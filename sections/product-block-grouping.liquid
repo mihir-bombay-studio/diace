@@ -125,10 +125,10 @@
         <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
           <div class="fieldset-wrapper style-scrollbar">
           {% for i in (0..2) %}
+            {% assign opties = "" %}
             {% paginate collections[section.settings.grouping_collection].products by 1000 %}
             {%- for productx in collections[section.settings.grouping_collection].products -%}
           {%- assign option = productx.options_with_values[i] -%}
-            
               {% assign dwncase = option.name | downcase %}
               {% assign loopno = forloop.index0 %}
             {% assign lastone = null %}
@@ -158,7 +158,13 @@
               {%- endif -%}
             </div>
             {% endif %}
+            
+            
+            
             {%- for value in option.values -%}
+            {% assign tempvar = value | append: "," %}
+            {% unless opties contains tempvar %}
+            {% assign opties = opties | append: tempvar %}
             {% assign variantImg = blank %}
             {% assign variantColorCode = blank %}
             {% for variant in productx.variants %}
@@ -236,12 +242,14 @@
               {{ value }} 
             </label>&nbsp{% unless lastone %} - {% endunless %}&nbsp
             {%- endif -%}
+            {% endunless %}
             {%- endfor -%}
             {% if forloop.last %}
            </fieldset>
             {% endif %}
           {%- endfor -%}
           {% endpaginate %}
+            
             {% endfor %}
           
             </div>
