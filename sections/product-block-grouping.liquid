@@ -253,6 +253,18 @@
           {{ stringer | replace_first: "[", "" | split: "" | reverse | join: "" | replace_first: "]", "" | split: "" | reverse | join: "" }}{% unless forloop.last %},{% endunless %}
           {%- endfor -%}]
           {% endpaginate %}
+          
+          {% paginate collections[section.settings.grouping_collection].products by 1000 %}
+          {%- for productx in collections[section.settings.grouping_collection].products -%}
+            {% if productx.has_only_default_variant %}  
+              var variant_{{ productx.variant.id }} = "{{ productx.variant.url }}";
+              {% else %}
+              {% for variantx in productx.variants %}
+              var variant_{{ variantx.id }} = "{{ variantx.url }}";
+              {% endfor%}
+             {% endif %}
+            {% endfor%}
+          {% endpaginate %}
           </script>
         </variant-radios>
       </div>
