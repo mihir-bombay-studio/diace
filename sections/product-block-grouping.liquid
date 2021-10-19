@@ -275,13 +275,19 @@
           </script>
           <script>
             var varurl = {};
+            var varprice = {};
+            var vartitle = {};
           {% paginate collections[section.settings.grouping_collection].products by 1000 %}
           {%- for productx in collections[section.settings.grouping_collection].products -%}
             {% if productx.has_only_default_variant %}  
               varurl["{{ productx.variant.id }}"] = "{{ productx.variant.url }}";
+              varprice["{{ productx.variant.id }}"] = "{{ productx.variant.price | money }}";
+              vartitle["{{ productx.variant.id }}"] = "{{ productx.variant.product.title }}";
               {% else %}
               {% for variant in productx.variants %}
               varurl["{{ variant.id }}"] = "{{ variant.url }}";
+              varprice["{{ variant.id }}"] = "{{ variant.price | money }}";
+              vartitle["{{ variant.id }}"] = "{{ variant.product.title }}";
               {% endfor%}
              {% endif %}
             {% endfor%}
