@@ -208,7 +208,7 @@
                    >
             {%-if dwncase contains "kleur" or dwncase contains "color" or dwncase contains "colour" -%}
             
-            <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}" title="{{ option.name }}">
+            <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}" title="{{ value }}">
               <span class="color-swatch" >
                 {% comment %}
                 <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
