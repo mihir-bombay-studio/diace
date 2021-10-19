@@ -127,7 +127,7 @@
       {% assign opt_sel_val = option.selected_value | append: "," %}
       {% endif %}
       {% endfor %}
-      
+      {{opt_sel_val}}
       {% assign opt_sel_val = opt_sel_val | split: "," %}
       <!--       ----------------------------------------------------------------------- -->
       {%- unless product.has_only_default_variant -%}
