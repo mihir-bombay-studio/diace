@@ -69,9 +69,9 @@
                                 {% for link in linklists[block.settings.nav_list_lower].links %}
                                       {% assign collhand = link.url | split: "/" | last %}
                                       {% assign product_size = collections[collhand].products | size %}
-                                    <li class=" {% if product_size > 0 %}hover-dropdown{% endif %} right-nav-list">
+                                    <li class=" {% if link.links != blank %}hover-dropdown{% endif %} right-nav-list">
                                         <a href="{{ link.url }}">{{ link.title }}
-                                          {% if product_size > 0 %}<span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>{% endif %}
+                                          {% if link.links != blank %}<span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>{% endif %}
                                         </a>
                                         {% if link.links != blank %}                                    
                                             <div class="hover-wrapper">
