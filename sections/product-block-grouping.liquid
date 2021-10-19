@@ -255,13 +255,14 @@
           {% endpaginate %}
           </script>
           <script>
+            var varurl = {};
           {% paginate collections[section.settings.grouping_collection].products by 1000 %}
           {%- for productx in collections[section.settings.grouping_collection].products -%}
             {% if productx.has_only_default_variant %}  
-              var variant_{{ productx.variant.id }} = "{{ productx.variant.url }}";
+              varurl["{{ productx.variant.id }}"] = "{{ productx.variant.url }}";
               {% else %}
               {% for variant in productx.variants %}
-              var variant_{{ variant.id }} = "{{ variant.url }}";
+              varurl["{{ variant.id }}"] = "{{ variant.url }}";
               {% endfor%}
              {% endif %}
             {% endfor%}
