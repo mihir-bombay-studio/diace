@@ -120,14 +120,14 @@
       </div>
 
       <div class="product-desc light style-scrollbar">{{ product.description }}</div>
-	  {% for option in product.options_with_values %}wwwwwwwwwwwwww<br>{{option.selected_value}}
+	  {% for option in product.options_with_values %}
       {% if forloop.last %}
       {% assign opt_sel_val = opt_sel_val | append: option.selected_value %}
       {% else %}
       {% assign opt_sel_val = opt_sel_val | append: option.selected_value | append: "," %}
       {% endif %}
       {% endfor %}
-      {{opt_sel_val}}
+      
       {% assign opt_sel_val = opt_sel_val | split: "," %}
       <!--       ----------------------------------------------------------------------- -->
       {%- unless product.has_only_default_variant -%}
