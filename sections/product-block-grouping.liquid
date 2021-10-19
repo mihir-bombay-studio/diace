@@ -348,8 +348,9 @@ console.log(string);
         if (typeof(w) != "undefined") {
         document.title = w.name;
         	history.pushState({}, null, varurl[w.id]);
-        console.log(varurl[w.id]);
           $("#add-to-cart").removeClass("unavailable");
+          $(".price-item.product-price").text(varprice[w.id]);
+          $(".product-title").text(vartitle[w.id]);
         } else {
           $("#add-to-cart").addClass("unavailable");
         }
