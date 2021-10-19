@@ -314,6 +314,61 @@
     ]
   },
   {
+    "name": "Vendors",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "vendor_image_1",
+        "label": "Vendor image 1"
+      },
+      {
+        "type": "text",
+        "id": "vendor_1",
+        "label": "Vendor 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "vendor_image_2",
+        "label": "Vendor image 2"
+      },
+      {
+        "type": "text",
+        "id": "vendor_2",
+        "label": "Vendor 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "vendor_image_3",
+        "label": "Vendor image 3"
+      },
+      {
+        "type": "text",
+        "id": "vendor_3",
+        "label": "Vendor 3"
+      },
+      {
+        "type": "image_picker",
+        "id": "vendor_image_4",
+        "label": "Vendor image 4"
+      },
+      {
+        "type": "text",
+        "id": "vendor_4",
+        "label": "Vendor 4"
+      },
+      {
+        "type": "image_picker",
+        "id": "vendor_image_5",
+        "label": "Vendor image 5"
+      },
+      {
+        "type": "text",
+        "id": "vendor_5",
+        "label": "Vendor 5"
+      }
+    ]
+  },
+  {
     "name": "Upsell Product",
     "settings": [
       {
