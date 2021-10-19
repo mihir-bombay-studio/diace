@@ -13,15 +13,15 @@
       <div class="featured-product-img rel">
         <a href="{{product.url}}">
           {%- if settings.vendor_1 == vendor -%}
-          <img class="product-img" src="{{ vendor_image_1 | img_url: 'x282' }}">{{vendor_image_1}}
+          <img class="product-img" src="{{ settings.vendor_image_1 | img_url: 'x282' }}">{{vendor_image_1}}
           {% elsif settings.vendor_2 == vendor %}
-          <img class="product-img" src="{{ vendor_image_2 | img_url: 'x282' }}">
+          <img class="product-img" src="{{ settings.vendor_image_2 | img_url: 'x282' }}">
           {% elsif settings.vendor_3 == vendor %}
-          <img class="product-img" src="{{ vendor_image_3 | img_url: 'x282' }}">
+          <img class="product-img" src="{{ settings.vendor_image_3 | img_url: 'x282' }}">
           {% elsif settings.vendor_4 == vendor %}
-          <img class="product-img" src="{{ vendor_image_4 | img_url: 'x282' }}">
+          <img class="product-img" src="{{ settings.vendor_image_4 | img_url: 'x282' }}">
           {% elsif settings.vendor_5 == vendor %}
-          <img class="product-img" src="{{ vendor_image_5 | img_url: 'x282' }}">
+          <img class="product-img" src="{{ settings.vendor_image_5 | img_url: 'x282' }}">
           {%- elsif product.featured_image.src != blank -%} 
           <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
         {%- else -%}
