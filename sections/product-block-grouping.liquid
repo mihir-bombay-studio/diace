@@ -151,7 +151,7 @@
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div> 
               {%- elsif dwncase contains "kleur" or dwncase contains "color" -%}
-              {% if option.name == "Title" %}
+              {% if option.name == "title" %}
               Opties
               {% else %}
               {{option.name | upcase}}:
