@@ -73,16 +73,16 @@
                                         <a href="{{ link.url }}">{{ link.title }}
                                           {% if product_size > 0 %}<span class="yellow-down-chevron">{% include 'icon-yellow-down-chevron' %}</span>{% endif %}
                                         </a>
-                                        {% if product_size > 0 %}                                     
+                                        {% if link.links != blank %}                                    
                                             <div class="hover-wrapper">
                                                 <div id="nav-sub-drop" class="dropdown-container container">
                                                     <div class="wrapper">
                                                         <div class="hover-content-wrapper">
                                                             <div class="left-wrap content-sub-list">
                                                                 <ul class="content-list">
-                                                                    {%- for tag in collections[collhand].tags -%}
+                                                                    {%- for child_link in link.links -%}
                                                                         <li>
-                                                                            <a href="{{ collections[collhand].url }}?tag={{ tag }}">{{ tag | upcase }}
+                                                                            <a href="{{ child_link.url }}">{{ child_link.title }}
                                                                                 {% render "back-icon" %}</a>
                                                                         </li>
                                                                     {% endfor %}
