@@ -224,12 +224,11 @@
                 <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
                 {% endcomment %}
                 {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
-                {{colorsScheme}}
-                {% for colors in colorsSch %}sssssssssssssssssssss
+                {% for colors in colorsSch %}
                   {% assign color = colors | split: ":" %}
-                {% assign downcase1 = color[0] %}{{ downcase1 }}
-                {% assign downcase2 = value %}{{downcase2}}
-                  {% if downcase1 == downcase2 %}yes yes
+                {% assign downcase1 = color[0] %}
+                {% assign downcase2 = value %}
+                  {% if downcase1 == downcase2 %}
                     {% assign variantColorCode = color[1] %}
                     {% break %}
                   {% endif %}
