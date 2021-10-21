@@ -100,7 +100,7 @@
           "type": "button",
           "settings": {
             "button_label": "MEER VRAGEN",
-            "button_link": "https:\/\/diace-store.myshopify.com\/en\/pages\/contact-and-faq#multiple-faqs",
+            "button_link": "https:\/\/diace-store.myshopify.com\/pages\/contact-faq#veelgestelde-vragen",
             "button-color": "grey"
           }
         },
