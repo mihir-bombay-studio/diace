@@ -224,7 +224,7 @@
                 <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
                 {% endcomment %}
                 {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
-                {{colorsSch}}
+                {{colorsScheme}}
                 {% for colors in colorsSch %}sssssssssssssssssssss
                   {% assign color = colors | split: ":" %}
                 {% assign downcase1 = color[0] %}{{ downcase1 }}
