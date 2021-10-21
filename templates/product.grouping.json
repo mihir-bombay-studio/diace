@@ -115,7 +115,7 @@
           "type": "cta",
           "settings": {
             "cta_label": "CONTACTEER ONS",
-            "cta_link": ""
+            "cta_link": "https:\/\/diace-store.myshopify.com\/en\/pages\/contact-and-faq#multiple-faqs"
           }
         }
       },
