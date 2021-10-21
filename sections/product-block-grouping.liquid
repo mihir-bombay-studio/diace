@@ -222,7 +222,7 @@
               <span class="color-swatch" >
                 {% comment %}
                 <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
-                {% endcomment %}
+                {% endcomment %}{{ value }}=={{ color[0] }}
                 {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
                 {% for colors in colorsSch %}
                   {% assign color = colors | split: ":" %}
