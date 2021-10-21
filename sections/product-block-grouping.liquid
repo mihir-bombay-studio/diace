@@ -222,13 +222,13 @@
               <span class="color-swatch" >
                 {% comment %}
                 <img src="{{ variantImg | img_url }}" class="{{ value }} colors-color">
-                {% endcomment %}{{ value }}=={{ color[0] }}
+                {% endcomment %}
                 {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
                 {% for colors in colorsSch %}
                   {% assign color = colors | split: ":" %}
                 {% assign downcase1 = color[0] %}
                 {% assign downcase2 = value %}
-                  {% if downcase1 == downcase2 %}
+                  {% if downcase1 == downcase2 %}yes yes
                     {% assign variantColorCode = color[1] %}
                     {% break %}
                   {% endif %}
