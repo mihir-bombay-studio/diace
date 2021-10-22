@@ -432,7 +432,12 @@
         "shipping_address_title": "Delivery address",
         "delivery_option_title": "Delivery method",
         "contact_method_title": "Contact information",
-        "email_label": "E-mail"
+        "email_label": "E-mail",
+        "email_placeholder": "E-mail",
+        "email_or_phone_label": "Email or mobile phone number",
+        "email_or_phone_placeholder": "Email or mobile phone number",
+        "stored_addresses_label": "Saved addresses",
+        "new_address_label": "Use a new address"
       }
     }
   }
