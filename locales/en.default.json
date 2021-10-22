@@ -769,7 +769,14 @@
         },
         "subscription_agreement_label": "I understand that I agree to a subscription. It will be renewed at the stated price and frequency until it expires or becomes %{cancelled}.",
         "subscription_agreement_cancelled": "cancelled",
-        "card_expired": "Expired"
+        "card_expired": "Expired",
+        "card_verification_confirm": "Enter your card's security code for verification purposes.",
+        "different_credit_card_label": "Use a different credit card",
+        "ftd_vault_credit_card_label": "Save my credit card for faster checkout",
+        "apple": {
+          "connect": "Click to link your Apple Pay account",
+          "not_available": "Apple Pay is not available in this browser. To link your Apple Pay account, you must use Safari on an Apple device."
+        }
       }
     }
   }
