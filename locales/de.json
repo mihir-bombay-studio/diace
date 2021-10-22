@@ -767,7 +767,16 @@
         "account_connected": "Konto verknüpft",
         "delete_customer_mandate_modal_title": "Diese Karte löschen?",
         "delete_customer_mandate_modal_body": "Das kann nicht rückgängig gemacht werden.",
-        "delete_customer_mandate_modal_confirm": "Löschen"
+        "delete_customer_mandate_modal_confirm": "Löschen",
+        "delete_customer_mandate_modal_cancel": "Abbrechen",
+        "maximum_vaulted_card_info": {
+          "one": "Sie können %{count} Kreditkarte auf Ihrem Konto speichern.",
+          "other": "Sie können bis zu %{count} Kreditkarten auf Ihrem Konto speichern."
+        }
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Aktueller Kontostand %{amount}",
+        "credit_card_expires_on_notice": "Läuft am %{month}\/%{year} ab"
       }
     }
   }
