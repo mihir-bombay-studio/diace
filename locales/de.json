@@ -470,7 +470,17 @@
         "ship": "Senden",
         "pick_up": "Abrufen",
         "pick_up_in_two_hours": "In der Regel innerhalb von 2 Stunden fertig",
-        "pick_up_in_four_hours": "In der Regel innerhalb von 4 Stunden fertig"
+        "pick_up_in_four_hours": "In der Regel innerhalb von 4 Stunden fertig",
+        "pick_up_immediately": "Jetzt abholbereit",
+        "pick_up_next_day": "Abholbereit am nächsten Tag",
+        "pick_up_in_one_hour": "In der Regel innerhalb von 1 Stunde fertig",
+        "pick_up_in_twenty_four_hours": "In der Regel innerhalb von 24 Stunden fertig",
+        "pick_up_in_two_to_four_days": "In der Regel innerhalb von 2-4 Tagen fertig",
+        "pick_up_in_five_or_more_days": "Normalerweise in mehr als 5 Tagen fertig",
+        "pick_up_in_zero_to_two_hours": "Abholbereit in 2 Stunden",
+        "pick_up_in_two_to_four_hours": "Abholbereit in 4 Stunden",
+        "free_total_label": "Kostenlos",
+        "shipping_address": "Lieferadresse"
       }
     }
   }
