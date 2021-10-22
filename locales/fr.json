@@ -1369,7 +1369,14 @@
         },
         "fulfillment_status": {
           "fulfilled": "Terminé",
-          "complete": "Compléter"
+          "complete": "Compléter",
+          "partial": "Partiellement",
+          "unfulfilled": "Ouvert",
+          "restocked": "Réapprovisionné"
+        },
+        "transaction_status": {
+          "success": "Passé",
+          "pending": "En attente"
         }
       }
     }
