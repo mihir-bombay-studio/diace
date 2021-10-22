@@ -401,7 +401,12 @@
         "close_notice_label": "Close",
         "expand_notice_label": "View more",
         "continue_to_shipping_method": "Continue sending",
-        "continue_to_payment_method": "Go to payment"
+        "continue_to_payment_method": "Go to payment",
+        "continue_to_review": "Check order",
+        "back_to_cart": "Back to shopping cart",
+        "back_to_contact_information": "Back to information",
+        "back_to_shipping_method": "Back to send",
+        "back_to_payment_method": "Back to payment"
       }
     }
   }
