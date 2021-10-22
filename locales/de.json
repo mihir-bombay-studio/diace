@@ -561,7 +561,14 @@
         "scroll_order_summary": "Scrollen Sie für weitere Artikel",
         "expand_order_summary": "Bestellübersicht anzeigen",
         "collapse_order_summary": "Bestellübersicht ausblenden",
-        "total_updated_label": "Aktualisierter Gesamtpreis:"
+        "total_updated_label": "Aktualisierter Gesamtpreis:",
+        "order_total_updated_label": "Aktualisierte Summe",
+        "total_already_paid_label": "Bereits bezahlt",
+        "unit_price": {
+          "accessible_separator": "pro",
+          "content_html": "%{price}%{accessible_separator} %{per_unit}"
+        },
+        "pickup_label": "Abrufen"
       }
     }
   }
