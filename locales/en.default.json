@@ -718,7 +718,14 @@
         "same_billing_address_label": "Same as delivery address",
         "different_billing_address_label": "Use a different billing address",
         "free_order_notice_html": "Your order is <strong>for free<\/strong>. No payment is required.",
-        "express_checkout_free_order": "There is no charge for a free order"
+        "express_checkout_free_order": "There is no charge for a free order",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Your order will be paid for with your gift card.",
+          "other": "Your order will be paid for with your gift cards."
+        },
+        "offsite_gateway_redirect_hint": "After clicking “%{button_label}”, you will be redirected to %{gateway_label} to safely complete your purchase.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} total %{total_shop_price}",
+        "billing_address_title": "Billing address"
       }
     }
   }
