@@ -933,7 +933,17 @@
         "cancelled_page_title": "Bestellung storniert",
         "customer_information_title": "Benutzerdefinierte Informationen",
         "contact_information_title": "Kontaktinformationen",
-        "billing_address_title": "Rechnungsadresse"
+        "billing_address_title": "Rechnungsadresse",
+        "shipping_address_title": "Lieferadresse",
+        "shipping_address_map_title": "Google-Karte mit genauer Angabe der Lieferadresse: %{address}",
+        "payment_method_title": "Bezahlverfahren",
+        "shipping_method_title": "Versandart",
+        "tracking_number": "Auftragsnummer, Frachtnummer, Sendungscode:",
+        "company_tracking_number": "%{company} Tracking-Nummer:",
+        "estimated_arrival": "Voraussichtliches Lieferdatum:",
+        "re-order": "Bestellen Sie die gleichen Artikel erneut",
+        "confirmed": "Bestätigt",
+        "thank_you_title": "Ihre Bestellung wurde bestätigt"
       }
     }
   }
