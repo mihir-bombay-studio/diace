@@ -1155,7 +1155,26 @@
         "additional_payment_requested": "Le paiement de %{total_outstanding} est requis",
         "checkout_review_and_pay": "Votre commande %{order_name} a été mise à jour. Passez en revue ces modifications, puis payez pour confirmer votre commande.",
         "order_updated_on": "Votre commande a été mise à jour le %{last_edited_at}.",
-        "order_review_and_pay": "Votre commande a été mise à jour. Vérifiez et payez pour confirmer votre commande."
+        "order_review_and_pay": "Votre commande a été mise à jour. Vérifiez et payez pour confirmer votre commande.",
+        "pay_now": "Payez maintenant"
+      },
+      "change_currency": {
+        "currency_button_label": "%{currency} (%{currency_symbol})",
+        "credit_card_will_be_charged_html": "Votre carte de crédit sera débitée %{amount}",
+        "payment_total_label": "Paiements totaux",
+        "conversion_rate": "1 %{from_currency_code} = %{rate} %{to_currency_code}",
+        "change_currency_link": "Changer en %{currency_name}",
+        "card_provider_fx_charges_warning": "L'émetteur de votre carte peut facturer %{currency_code} transactions.",
+        "currency_not_supported_by_shop": "La devise que vous avez sélectionnée n'est plus disponible. Tous les prix sont maintenant en %{currency_code}."
+      },
+      "tips": {
+        "title": "Ajouter un pourboire",
+        "description": "Montrez votre soutien à l'équipe %{shop_name}",
+        "presets_description": "Choisissez un pourcentage de pourboire",
+        "custom_label": "Astuce personnalisée",
+        "add_tip": "Ajouter un pourboire",
+        "update_tip": "Conseil de mise à jour",
+        "message": "Merci, nous l'apprécions vraiment"
       }
     }
   }
