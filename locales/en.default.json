@@ -297,15 +297,15 @@
     "log_out": "Log out",
     "login_page": {
       "cancel": "Cancel",
-      "create_account": "Create account",
-      "email": "Email",
+      "create_account": "create an account",
+      "email": "E-mail",
       "forgot_password": "Forgot your password?",
-      "guest_continue": "Continue",
-      "guest_title": "Continue as a guest",
-      "password": "Password",
-      "title": "Login",
-      "sign_in": "Sign in",
-      "submit": "Submit"
+      "guest_continue": "Further",
+      "guest_title": "Continue as guest",
+      "password": "password",
+      "title": "Credentials",
+      "sign_in": "login",
+      "submit": "Send"
     },
     "order": {
       "title": "Order {{ name }}",
