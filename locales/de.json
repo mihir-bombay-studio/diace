@@ -1232,7 +1232,27 @@
             "other": ", dann %{count} Zahlungen, jeweils %{total_price}"
           }
         }
+      },
+      "customer_payment_methods": {
+        "page_title": "Zahlungsmethoden",
+        "title": "Zahlungsmethoden",
+        "update_card_button_label": "Karte aktualisieren",
+        "delete_customer_mandate": {
+          "generic_error": "Bei der Bearbeitung Ihrer Anfrage ist ein Problem aufgetreten.",
+          "success_message": "Ihre Zahlungsmethode wurde entfernt"
+        }
       }
+    },
+    "pagination": {
+      "previous": "Vorherige",
+      "next": "Nächster"
+    },
+    "links": {
+      "powered_by_shopify": "Präsentiert von Shopify",
+      "learn_more": "Mehr Informationen"
+    },
+    "feed": {
+      "more": "Mehr"
     }
   }
 }
