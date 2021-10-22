@@ -907,7 +907,23 @@
         "continue_to_payment_gateway_notice_error": "Your payment details cannot be verified.",
         "continue_to_payment_gateway_button_label_error": "Update payment details",
         "page_title": "order is being processed",
-        "title": "order is being processed"
+        "title": "order is being processed",
+        "your_order_has_been_received_title": "Thanks for your order",
+        "you_will_receive_confirmation": "We are currently receiving a lot of orders. You should receive a confirmation by email or text shortly. Let us know if you haven't received it within an hour.",
+        "wait": {
+          "short": "Your order is being processed.",
+          "medium": {
+            "one": "Your order is being processed. Estimated waiting time is 1 minute.",
+            "other": "Your order is being processed. Estimated wait time is %{count} minutes."
+          },
+          "long": "You will receive an email as soon as your order has been processed. There is currently a large number of orders.",
+          "no_auto_refresh_html": "%{link} if you are not automatically forwarded.",
+          "refresh_this_page": "Reload this page"
+        },
+        "you_will_not_be_charged": "No fees will be charged yet"
+      },
+      "failed_payment": {
+        "page_title": "Payment could not be processed"
       }
     }
   }
