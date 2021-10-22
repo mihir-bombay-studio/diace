@@ -937,7 +937,17 @@
       },
       "thank_you": {
         "title": "Thank you for your purchase!",
-        "confirmation_email_sent_text": "A confirmation email has been sent to %{email}"
+        "confirmation_email_sent_text": "A confirmation email has been sent to %{email}",
+        "return_to_store_link_label": "Return to store",
+        "print_link_label": "Print proof of purchase",
+        "payment_information_title": "Payment details",
+        "shipping_information_title": "Shipping Details",
+        "page_title": "Thanks, %{display_name}!",
+        "page_title_no_name": "Thank you!",
+        "cancelled_page_title": "Order cancelled",
+        "customer_information_title": "Custom Information",
+        "contact_information_title": "Contact information",
+        "billing_address_title": "Billing address"
       }
     }
   }
