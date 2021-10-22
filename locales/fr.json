@@ -750,7 +750,12 @@
         "change_currency_section_description": "Sélectionnez une option de devise",
         "no_real_orders_dev_store": "Ce magasin ne peut pas accepter de vraies commandes ni traiter de vrais paiements.",
         "subscription_agreement_label_html": "Je comprends que j'accepte un abonnement. Il sera renouvelé au prix et à la fréquence indiqués jusqu'à son expiration ou\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">annulé<\/a>.",
-        "waiting_on_payment_methods": "Obtenez les méthodes de paiement disponibles..."
+        "waiting_on_payment_methods": "Obtenez les méthodes de paiement disponibles...",
+        "apple_pay_payment_error": "Votre paiement n'a pas pu être effectué. Veuillez réessayer ou utiliser un autre mode de paiement.",
+        "subscription_card_update_agreement_label": "Changer votre mode de paiement mettra à jour votre abonnement et vos paiements récurrents à l'avenir.",
+        "card_security_vault_notice": "Nous avons besoin de vos coordonnées pour les paiements futurs. Toutes les transactions sont sécurisées et cryptées.",
+        "taxes_not_included": "Hors taxes",
+        "no_taxes_banner_content": "Les taxes ne sont pas facturées sur cette commande. Vous ne pouvez plus ajouter de taxes si le paiement a déjà été encaissé."
       }
     }
   }
