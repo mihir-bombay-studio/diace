@@ -1181,7 +1181,16 @@
         "custom_label": "Custom tip",
         "add_tip": "Add tip",
         "update_tip": "Update tip",
-        "message": "Thank you, we really appreciate it"
+        "message": "Thank you, we really appreciate it",
+        "preset_label": "%{tip_percent}%",
+        "no_tip_label": "No"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "%{product_name} buy",
+          "one": "%{product_name} and %{count} buy another item",
+          "other": "%{product_name} and %{count} to buy other items"
+        }
       }
     }
   }
