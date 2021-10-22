@@ -442,7 +442,17 @@
         "optional_first_name_label": "First name (optional)",
         "last_name_label": "Last name",
         "company_label": "Business",
-        "optional_company_label": "Company (optional)"
+        "optional_company_label": "Company (optional)",
+        "address1_label": "Address",
+        "address2_label": "PO Box No., etc.",
+        "optional_address2_label": "PO Box No., etc. (optional)",
+        "city_label": "City",
+        "country_label": "Country\/Region",
+        "country_code": "Country\/Region Code",
+        "province_label": "Province",
+        "province_placeholder": "Province",
+        "county_label": "Province",
+        "county_placeholder": "Province"
       }
     }
   }
