@@ -526,7 +526,17 @@
         "applied_discount_message": "%{amount} Rabatt wurde vom Gesamtpreis abgezogen.",
         "discount_has_been_applied": "Rabatt wurde angewendet",
         "discount_has_been_removed": "Rabatt wurde entfernt",
-        "gift_card_has_been_applied": "Geschenkkarte wurde angewendet"
+        "gift_card_has_been_applied": "Geschenkkarte wurde angewendet",
+        "gift_card_has_been_removed": "Geschenkkarte wurde entfernt",
+        "discount_already_applied": "Auf diese Bestellung wurde ein Rabatt gewährt. Sie können keinen weiteren Rabatt hinzufügen.",
+        "cart_does_not_meet_discount_requirements_notice": "Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> gilt nicht für die Artikel in Ihrem Warenkorb",
+        "discount_requires_customer_notice": "Geben Sie Ihre Versanddaten ein, um den Rabattcode zu erhalten <strong style=\"text-transform:uppercase\">%{code}<\/strong> bewirbt sich",
+        "customer_does_not_meet_discount_requirements_notice": "Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> steht Ihnen derzeit nicht zur Verfügung",
+        "shipping_information_does_not_meet_discount_requirements_notice": "Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> ist für Ihre Lieferadresse nicht verfügbar",
+        "customer_already_used_once_per_customer_discount_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> wurde schon verwendet",
+        "subtotal_label": "Zwischensumme",
+        "shipping_label": "Versenden",
+        "tip_label": "Spitze"
       }
     }
   }
