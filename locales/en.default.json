@@ -417,8 +417,22 @@
         "autocomplete_selection": "{{number}} of the {{total}}",
         "autocomplete_close": "Close suggestions",
         "forwarding_indicator": {
-          "new_window": "Opens in a new window."
-        }
+          "new_window": "Opens in a new window.",
+          "external": "Opens external website.",
+          "external_and_new_window": "Opens external website in a new window."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Checkout"
+        },
+        "tooltip_accessibility_label": "More information"
+      },
+      "contact": {
+        "title": "Information",
+        "address_title": "Address",
+        "shipping_address_title": "Delivery address",
+        "delivery_option_title": "Delivery method",
+        "contact_method_title": "Contact information",
+        "email_label": "E-mail"
       }
     }
   }
