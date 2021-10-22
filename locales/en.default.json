@@ -947,7 +947,17 @@
         "cancelled_page_title": "Order cancelled",
         "customer_information_title": "Custom Information",
         "contact_information_title": "Contact information",
-        "billing_address_title": "Billing address"
+        "billing_address_title": "Billing address",
+        "shipping_address_title": "Delivery address",
+        "shipping_address_map_title": "Google map with pinpoint of the delivery address: %{address}",
+        "payment_method_title": "Payment method",
+        "shipping_method_title": "Shipping method",
+        "tracking_number": "Tracking Number:",
+        "company_tracking_number": "%{company} tracking number:",
+        "estimated_arrival": "Estimated Delivery Date:",
+        "re-order": "Order the same items again",
+        "confirmed": "Confirmed",
+        "thank_you_title": "Your order has been confirmed"
       }
     }
   }
