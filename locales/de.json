@@ -761,8 +761,13 @@
         "ftd_vault_credit_card_label": "Speichern Sie meine Kreditkarte für einen schnelleren Checkout",
         "apple": {
           "connect": "Klicken Sie hier, um Ihr Apple Pay-Konto zu verknüpfen",
-          "not_available": "Apple Pay ist in diesem Browser nicht verfügbar. Um Ihr Apple Pay-Konto zu verknüpfen, müssen Sie Safari auf einem Apple-Gerät verwenden."
-        }
+          "not_available": "Apple Pay ist in diesem Browser nicht verfügbar. Um Ihr Apple Pay-Konto zu verknüpfen, müssen Sie Safari auf einem Apple-Gerät verwenden.",
+          "email_connected": "Konto verknüpft:"
+        },
+        "account_connected": "Konto verknüpft",
+        "delete_customer_mandate_modal_title": "Diese Karte löschen?",
+        "delete_customer_mandate_modal_body": "Das kann nicht rückgängig gemacht werden.",
+        "delete_customer_mandate_modal_confirm": "Löschen"
       }
     }
   }
