@@ -1430,7 +1430,12 @@
       "products": "Products",
       "shopping_cart": "Your shopping cart",
       "account": "Account",
-      "create_account": "create an account"
+      "create_account": "create an account",
+      "reset_account": "Reset account",
+      "addresses": "Addresses",
+      "order": "Order %{name}",
+      "search": "To search",
+      "collections": "Collections"
     }
   }
 }
