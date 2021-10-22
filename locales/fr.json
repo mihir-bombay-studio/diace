@@ -867,8 +867,30 @@
         "shipping_method": "Votre panier a été mis à jour et les frais de livraison précédents ne sont pas valables. Choisissez un nouveau tarif.",
         "shipping_method_not_available": "Votre panier a été mis à jour et les articles que vous avez ajoutés ne peuvent pas être expédiés à votre adresse. Veuillez retirer les articles pour terminer votre commande.",
         "shipping_method_not_available_generic": {
-          "one": "Cette commande ne peut pas être expédiée à l'adresse saisie. Veuillez vérifier l'adresse et assurez-vous que tous les champs sont remplis correctement. Puis réessayez."
+          "one": "Cette commande ne peut pas être expédiée à l'adresse saisie. Veuillez vérifier l'adresse et assurez-vous que tous les champs sont remplis correctement. Puis réessayez.",
+          "other": "Certains articles de votre panier ne peuvent pas être expédiés à l'adresse saisie. Veuillez vérifier l'adresse et assurez-vous que tous les champs sont remplis correctement. Puis réessayez."
+        },
+        "shipping_method_not_available_updated": {
+          "one": "L'article que vous avez ajouté ne sera pas expédié à votre emplacement. Veuillez supprimer cet article pour payer ou contacter le magasin.",
+          "other": "Un ou plusieurs articles que vous avez ajoutés ne peuvent pas être expédiés à votre emplacement. Retirez les articles à payer ou contactez le magasin."
         }
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "Paiement rapide",
+        "or": "OU"
+      },
+      "alternative_payment_method": {
+        "button_html": "Commander avec : %{method}",
+        "button_label": "Commander avec : %{method}"
+      },
+      "paypal": {
+        "button_html": "Commander avec %{logo}"
+      },
+      "apple_pay": {
+        "button_html": "Acheter avec %{logo}"
+      },
+      "processing": {
+        "redirecting_page_title": "Référer…"
       }
     }
   }
