@@ -1138,6 +1138,19 @@
           "paid_in_installments": "Payé en plusieurs fois avec Shop Pay.",
           "view_schedule": "Voir l'horaire"
         }
+      },
+      "notifications": {
+        "title": "avis"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Montant à payer pour la commande %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "ajoutée",
+            "other": "%{count} ajouté"
+          },
+          "removed": "Supprimé"
+        }
       }
     }
   }
