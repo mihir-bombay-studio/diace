@@ -807,7 +807,17 @@
         "address_address1_blank": "Enter an address",
         "address_address2_blank": "Enter an apartment or suite number, etc.",
         "address_city_blank": "Enter a city",
-        "address_country_blank": "Select a country\/region"
+        "address_country_blank": "Select a country\/region",
+        "address_country_not_supported": "We currently do not ship to this country\/region. Please enter a new delivery address and try again.",
+        "address_province_blank": "Select a state\/province",
+        "address_company_blank": "Enter a company name",
+        "address_phone_blank": "enter a valid phone number",
+        "address_zip_blank": "Enter a ZIP or zip code",
+        "address_zip_invalid_for_country": "Please enter a valid ZIP or zip code for %{country}",
+        "address_zip_invalid_for_country_and_province": "Please enter a valid ZIP or zip code for %{province}, %{country}",
+        "credit_card_name_blank": "Enter your name as it appears on your card",
+        "credit_card_name_invalid": "Enter your name as it appears on your card",
+        "credit_card_number_invalid": "Please enter a valid card number"
       }
     }
   }
