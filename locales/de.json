@@ -958,7 +958,17 @@
         "confirmed_title": "Ihre Bestellung wurde bestätigt",
         "confirmed_description": "Wir haben Ihre Bestellung angenommen und bereiten sie vor. Bitte besuchen Sie diese Seite erneut, um Informationen zu Ihrem Versandstatus zu erhalten.",
         "order_updates_title": "Aktualisierungen bestellen",
-        "order_updates_description_html": "Eine Bestätigung wurde an %{customer_contact} gesendet."
+        "order_updates_description_html": "Eine Bestätigung wurde an %{customer_contact} gesendet.",
+        "order_updates_current_step_prefix": "Aktueller Schritt:",
+        "order_updates_past_step_prefix": "Vorheriger Schritt:",
+        "order_updates_upcoming_step_prefix": "Nächster Schritt:",
+        "in_transit": "Unterwegs",
+        "in_transit_title": "Deine Bestellung ist unterwegs",
+        "in_transit_description": "Sie werden über den Fortschritt informiert.",
+        "in_transit_description_days": "Ihre Bestellung wird innerhalb von %{number} Tagen geliefert.",
+        "in_transit_description_today": "Ihre Bestellung wird heute geliefert.",
+        "in_transit_description_tomorrow": "Ihre Bestellung wird morgen geliefert.",
+        "no_tracking_number": "Es gibt keine Tracking-Nummer für diese Bestellung."
       }
     }
   }
