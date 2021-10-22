@@ -725,7 +725,19 @@
         },
         "offsite_gateway_redirect_hint": "After clicking “%{button_label}”, you will be redirected to %{gateway_label} to safely complete your purchase.",
         "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} total %{total_shop_price}",
-        "billing_address_title": "Billing address"
+        "billing_address_title": "Billing address",
+        "billing_address_description": "Select the address that matches your card or payment method.",
+        "billing_address_description_no_shipping_address": "Enter the address that matches your card or payment method.",
+        "no_js_credit_card_fields_redirect_hint": "You will be redirected to add your payment information.",
+        "card_fields_container_prefix": "This field contains:",
+        "card_fields_unavailable_html": {
+          "one": "Payment by credit or debit card is currently not available.<br><a href=\"%{current_url}\">Refresh this page<\/a> or try again later.",
+          "other": "Payment by credit or debit card is currently not available.<br><a href=\"%{current_url}\">Refresh this page<\/a> or try another payment method."
+        },
+        "card_fields_processing_error": "There was a problem processing the payment. Please refresh this page or check your internet connection.",
+        "technical_error": "Due to a technical issue, payments cannot be processed at the moment. Try again in a few minutes.",
+        "no_method_error": "This store is currently unable to accept payments.",
+        "not_configured_error": "This store is currently unable to accept payments."
       }
     }
   }
