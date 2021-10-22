@@ -774,7 +774,16 @@
         "account_connected": "Compte lié",
         "delete_customer_mandate_modal_title": "Supprimer cette carte ?",
         "delete_customer_mandate_modal_body": "Ça ne peut pas être annulé.",
-        "delete_customer_mandate_modal_confirm": "supprimer"
+        "delete_customer_mandate_modal_confirm": "supprimer",
+        "delete_customer_mandate_modal_cancel": "Annuler",
+        "maximum_vaulted_card_info": {
+          "one": "Vous pouvez enregistrer %{count} carte de crédit sur votre compte.",
+          "other": "Vous pouvez stocker jusqu'à %{count} cartes de crédit sur votre compte."
+        }
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Solde actuel %{amount}",
+        "credit_card_expires_on_notice": "Expire le %{month}\/%{year}"
       }
     }
   }
