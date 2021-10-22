@@ -346,11 +346,11 @@
       "sku": "UGS",
       "price": "Prix",
       "quantity": "Nombre",
-      "total": "Total",
-      "fulfilled_at_html": "Traitée le {{ date }}",
-      "track_shipment": "Suivre l'envoi",
-      "tracking_url": "Lien de suivi",
-      "tracking_company": "Transporteur",
+      "total": "Le total",
+      "fulfilled_at_html": "Rencontré {{ date }}",
+      "track_shipment": "Suivre l'expédition",
+      "tracking_url": "suivre le lien",
+      "tracking_company": "transporteur",
       "tracking_number": "Numéro de suivi",
       "subtotal": "Sous-total"
     }
