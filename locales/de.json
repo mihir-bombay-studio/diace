@@ -123,7 +123,7 @@
       "vendor": "Verkäufer",
       "video_exit_message": "{{ title }} öffnet ein Vollbild-Video im selben Fenster.",
       "xr_button": "Sehen Sie in Ihrem Raum",
-      "xr_button_label": "\"Ansicht in deinem Raum\" lädt den Artikel in ein Augmented-Reality-Fenster",
+      "xr_button_label": "In Ihrem Raum anzeigen, Artikel im Augmented-Reality-Fenster laden",
       "pickup_availability": {
         "view_store_info": "Shopdetails ansehen",
         "check_other_stores": "Verfügbarkeit in anderen Geschäften prüfen",
@@ -135,31 +135,31 @@
       }
     },
     "modal": {
-      "label": "Medien-Galerie"
+      "label": "Medien Gallerie"
     }
   },
   "templates": {
     "search": {
-      "no_results": "Keine Ergebnisse für \"{{ terms }}\" gefunden. Überprüfe die Schreibweise oder versuche es mit einer anderen Suchanfrage.",
+      "no_results": "Keine Ergebnisse gefunden für „{{ terms }}“. Überprüfen Sie die Rechtschreibung oder verwenden Sie ein anderes Wort oder einen anderen Satz.",
       "results_with_count": {
-        "one": "{{ count }} Ergebnis für “{{ terms }}” gefunden",
-        "other": "{{ count }} Ergebnisse für “{{ terms }}” gefunden"
+        "one": "{{ count }} Ergebnis gefunden für „{{ terms }}“",
+        "other": "{{ count }} Ergebnisse gefunden für „{{ terms }}“"
       },
       "title": "Suchergebnisse",
-      "page": "Seite"
+      "page": "Buchseite"
     },
     "cart": {
-      "cart": "Warenkorb"
+      "cart": "Einkaufswagen"
     },
     "contact": {
       "form": {
         "name": "Name",
-        "email": "E-Mail",
+        "email": "Email",
         "phone": "Telefonnummer",
-        "comment": "Kommentar",
-        "send": "Senden",
-        "post_success": "Danke, dass du uns kontaktiert hast. Wir werden uns so schnell wie möglich bei dir melden.",
-        "error_heading": "Bitte passe Folgendes an:"
+        "comment": "Antwort",
+        "send": "Lenken",
+        "post_success": "Danke, dass Sie uns kontaktiert haben. Sie werden so schnell wie möglich von uns hören.",
+        "error_heading": "Passen Sie Folgendes an:"
       }
     },
     "404": {
