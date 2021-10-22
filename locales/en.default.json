@@ -775,8 +775,13 @@
         "ftd_vault_credit_card_label": "Save my credit card for faster checkout",
         "apple": {
           "connect": "Click to link your Apple Pay account",
-          "not_available": "Apple Pay is not available in this browser. To link your Apple Pay account, you must use Safari on an Apple device."
-        }
+          "not_available": "Apple Pay is not available in this browser. To link your Apple Pay account, you must use Safari on an Apple device.",
+          "email_connected": "Account linked:"
+        },
+        "account_connected": "Account linked",
+        "delete_customer_mandate_modal_title": "Delete this card?",
+        "delete_customer_mandate_modal_body": "This cannot be undone.",
+        "delete_customer_mandate_modal_confirm": "remove"
       }
     }
   }
