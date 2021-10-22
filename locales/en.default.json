@@ -737,7 +737,17 @@
         "card_fields_processing_error": "There was a problem processing the payment. Please refresh this page or check your internet connection.",
         "technical_error": "Due to a technical issue, payments cannot be processed at the moment. Try again in a few minutes.",
         "no_method_error": "This store is currently unable to accept payments.",
-        "not_configured_error": "This store is currently unable to accept payments."
+        "not_configured_error": "This store is currently unable to accept payments.",
+        "missing_credit_card_error": "Enter your card details to complete the payment",
+        "generic_incorrect_card_info": "Your payment details cannot be verified. Please check your card details and try again.",
+        "sofort_label": "sofort",
+        "ideal_label": "iDEAL",
+        "bank_picker_label": "Bank",
+        "klarna_pay_now_label": "Pay now with Klarna",
+        "klarna_pay_later_label": "Pay afterwards with Klarna",
+        "bancontact_label": "Bancontact",
+        "eps_label": "eps-Überweisung (eps transfer)",
+        "klarna_slice_it_label": "Finance with Klarna"
       }
     }
   }
