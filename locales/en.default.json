@@ -530,7 +530,12 @@
         "gift_card_title": "Gift voucher",
         "gift_card_label": "Gift voucher",
         "gift_card_placeholder": "Gift voucher",
-        "gift_card_and_discount_title": "Gift voucher or discount code"
+        "gift_card_and_discount_title": "Gift voucher or discount code",
+        "gift_card_and_discount_label": "Gift voucher or discount code",
+        "gift_card_and_discount_placeholder": "Gift voucher or discount code",
+        "remove_gift_card_label": "Remove gift card",
+        "remove_discount_label": "Remove discount",
+        "free_shipping_discount_label": "Free Shipping"
       }
     }
   }
