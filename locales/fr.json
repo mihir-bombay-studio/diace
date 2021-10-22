@@ -1050,7 +1050,12 @@
         "other_options": "Autres options",
         "shop_phone_description": "Vous recevrez un SMS avec un lien vers l'application Shop pour suivre votre commande.",
         "ready_for_delivery_title": "Votre commande est prête à être livrée.",
-        "ready_for_delivery_description": "Nous avons préparé votre commande."
+        "ready_for_delivery_description": "Nous avons préparé votre commande.",
+        "order_status_confirmed_order_local": "Nous préparons votre commande pour la livraison.",
+        "delivery_information_label": "Informations de livraison:",
+        "gift_card_sent_confirmation": "Cartes cadeaux envoyées",
+        "out_for_delivery_local_title": "Votre commande est prête à être livrée",
+        "out_for_delivery_local_description_html": "Vous recevrez votre commande sous peu."
       }
     }
   }
