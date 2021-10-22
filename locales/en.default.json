@@ -962,7 +962,17 @@
         "thank_you_confirmed_order_with_phone": "You will soon receive a confirmation text message with your order number",
         "thank_you_confirmed_order_with_email_and_phone": "You will shortly receive a confirmation email and text message with your order number.",
         "thank_you_confirmed_order_with_missing": "Please contact us via email or telephone for your order confirmation.",
-        "order_status_confirmed_order_with_email": "You will receive an email when your order is ready."
+        "order_status_confirmed_order_with_email": "You will receive an email when your order is ready.",
+        "order_status_confirmed_order_with_phone": "You will receive a text message when your order is ready.",
+        "order_status_confirmed_order_with_email_and_phone": "You will receive an email and text message when your order is ready.",
+        "order_status_updates_with_email": "You will receive updates about your shipping and delivery via email.",
+        "order_status_updates_with_phone": "You will receive updates about your shipping and delivery via SMS.",
+        "order_status_updates_with_email_and_phone": "You will receive updates about your shipping and delivery via email and SMS.",
+        "order_status_updates_with_missing": "Choose how you want to receive shipping updates.",
+        "confirmed_title": "Your order has been confirmed",
+        "confirmed_description": "We have accepted your order and are preparing it. Please visit this page again for updates on your shipping status.",
+        "order_updates_title": "Order updates",
+        "order_updates_description_html": "A confirmation was sent to %{customer_contact}"
       }
     }
   }
