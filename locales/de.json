@@ -1416,7 +1416,57 @@
       "products": "Produkte",
       "shopping_cart": "Ihr Einkaufswagen",
       "account": "Konto",
-      "create_account": "ein Konto erstellen"
+      "create_account": "ein Konto erstellen",
+      "reset_account": "Konto zurücksetzen",
+      "addresses": "Adressen",
+      "order": "Bestellung %{name}",
+      "search": "Suchen",
+      "collections": "Kollektionen",
+      "not_found": "404 Nicht gefunden",
+      "challenge": "Herausforderung",
+      "checkpoint": "Kontrollpunkt",
+      "search_results": {
+        "one": "Suche: %{count} Ergebnis gefunden für '%{terms}'",
+        "other": "Suche: %{count} Ergebnisse für '%{terms}' gefunden"
+      },
+      "blog_or_article_with_error": "Fehler - %{title}"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} Rabatte wurden angewendet"
+    },
+    "challenge": {
+      "message": "Lassen Sie uns wissen, dass Sie kein Roboter sind, um fortzufahren.",
+      "error": "Ihre Antwort war falsch, bitte versuchen Sie es erneut.",
+      "submit_button_text": "Senden"
+    },
+    "checkpoint": {
+      "message": "Captcha lösen, um fortzufahren",
+      "error": "Captcha-Überprüfung fehlgeschlagen",
+      "submit_button_text": "Senden"
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Vielen Dank, dass Sie sich in unsere Mailingliste eingetragen haben.",
+        "disclaimer": "Sie können sich jederzeit abmelden.",
+        "unsubscribe": "Ausloggen"
+      },
+      "unsubscribed": {
+        "confirmation": "Sie wurden von unserer Mailingliste abgemeldet.",
+        "disclaimer": "Sie erhalten keine Marketing-Updates mehr von uns. Sie können sich jederzeit wieder anmelden.",
+        "preview": "Sie sehen in der Vorschau, was Kunden sehen, wenn sie sich abmelden."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Sie haben dem offenen Tracking per E-Mail zugestimmt.<\/b>",
+          "visibility": "E-Mail-Öffnungsraten werden anonym gemeldet. Wir sehen nur, ob Sie eine E-Mail als Teil einer aggregierten E-Mail-Öffnungsrate geöffnet haben.",
+          "opt_out_html": "du kannst <a style='text-decoration:underline;' href='%{link}'>austragen<\/a> aus E-Mail-Open-Tracking, wenn Sie diese Informationen nicht teilen möchten.",
+          "preview_bar": "Sie sehen in der Vorschau, was Kunden sehen, wenn sie dem Erhalt offener Tracking-E-Mails zustimmen."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Sie haben sich vom E-Mail-Offen-Tracking abgemeldet.<\/b>",
+          "visibility": "Wir sehen nicht, ob Sie unsere E-Mails geöffnet haben."
+        }
+      }
     }
   }
 }
