@@ -1383,9 +1383,54 @@
         },
         "transaction_status": {
           "success": "Passed",
-          "pending": "Pending"
-        }
+          "pending": "Pending",
+          "failure": "Failed",
+          "error": "Wrong"
+        },
+        "cancel_reason": {
+          "declined": "Payment declined",
+          "inventory": "Items not available",
+          "fraud": "Fraudulent order",
+          "customer": "Customer changed\/cancelled order",
+          "other": "Different"
+        },
+        "cash_on_delivery": "cash on delivery"
+      },
+      "cart": {
+        "only_n_items_available": "You can only add %{count} %{name} to your cart.",
+        "too_many_items_in_cart": "You can no longer add %{name} to your shopping cart.",
+        "all_items_in_cart": "All %{count} %{name} are in your shopping cart.",
+        "empty_update": "can't update empty cart",
+        "missing_parameters": "no valid ID or line number",
+        "generic_error": "Cart Error",
+        "too_many_line_items_error": "Your cart cannot contain more than %{max} items.",
+        "link_expired": "Link Expired",
+        "link_no_longer_exists": "Link no longer exists.",
+        "stock_problems_html": "One or more items are no longer available. We have a <a href='%{link}'>updated shopping cart<\/a> prepared.",
+        "changed": "Shopping cart changed",
+        "items_changed": "One or more articles have been changed.",
+        "product_sold_out": "The product '%{name}' is already sold out.",
+        "variant_not_found": "Can't find variant",
+        "variant_requires_selling_plan": "Variant can only be purchased with a sales subscription.",
+        "shipping_address_not_required": "No shipping is required with this shopping cart",
+        "shipping_address_invalid": "There was a problem calculating your shipping costs. Proceed to checkout to choose shipping costs before completing your order.",
+        "selling_plan_not_applicable": "Unable to apply sales subscription to variant"
+      },
+      "storefront": {
+        "invalid_password": "Password incorrect, please try again."
+      },
+      "tags": {
+        "add_articles": "Limit the search to articles with the tag %{tag}",
+        "add_products": "Limit the search to products with the matching tag %{tag}",
+        "remove_articles": "Extend the search to articles not tagged with %{tag}",
+        "remove_products": "Remove tag %{tag}"
       }
+    },
+    "page_titles": {
+      "products": "Products",
+      "shopping_cart": "Your shopping cart",
+      "account": "Account",
+      "create_account": "create an account"
     }
   }
 }
