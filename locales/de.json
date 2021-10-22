@@ -1078,7 +1078,12 @@
         "blocks": {
           "contact_method_title": "Kontakt",
           "billing_address_title": "Abrechnung",
-          "shipping_address_title": "Senden an"
+          "shipping_address_title": "Senden an",
+          "shipping_method_title": "Weise",
+          "payment_method_title": "Zahlung",
+          "change_link_label": "Ändern",
+          "change_contact_method_link_label": "Kontaktdaten ändern",
+          "change_billing_address_link_label": "Rechnungsadresse ändern"
         }
       }
     }
