@@ -738,7 +738,17 @@
         "card_expiration_year_label": "Ablaufjahr",
         "card_information_notice": "Alle Transaktionen sind gesichert und verschlüsselt. Kreditkartendaten werden nie gespeichert.",
         "credit_card_start_month": "Monat Startdatum",
-        "credit_card_start_year": "Jahresbeginn"
+        "credit_card_start_year": "Jahresbeginn",
+        "billing_address_not_supported_for_payment_method_error": "Diese Zahlungsmethode ist für Ihre Rechnungsadresse und Währung nicht verfügbar. Versuchen Sie es mit einer anderen Zahlungsmethode.",
+        "change_currency_section_description": "Wählen Sie eine Währungsoption",
+        "no_real_orders_dev_store": "Dieser Shop kann keine echten Bestellungen annehmen oder echte Zahlungen verarbeiten.",
+        "subscription_agreement_label_html": "Ich verstehe, dass ich mit einem Abonnement einverstanden bin. Es wird zum angegebenen Preis und in der angegebenen Häufigkeit verlängert, bis es abläuft oder wird\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">Storniert<\/a>.",
+        "waiting_on_payment_methods": "Verfügbare Zahlungsmethoden abrufen...",
+        "apple_pay_payment_error": "Ihre Zahlung konnte nicht abgeschlossen werden. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "subscription_card_update_agreement_label": "Wenn Sie Ihre Zahlungsmethode ändern, werden Ihr Abonnement und Ihre wiederkehrenden Zahlungen in Zukunft aktualisiert.",
+        "card_security_vault_notice": "Wir benötigen Ihre Daten für zukünftige Zahlungen. Alle Transaktionen sind gesichert und verschlüsselt.",
+        "taxes_not_included": "Ohne Steuer",
+        "no_taxes_banner_content": "Auf diese Bestellung werden keine Steuern erhoben. Sie können keine Steuern mehr hinzufügen, wenn die Zahlung bereits eingezogen wurde."
       }
     }
   }
