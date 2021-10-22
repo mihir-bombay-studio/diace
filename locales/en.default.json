@@ -972,7 +972,17 @@
         "confirmed_title": "Your order has been confirmed",
         "confirmed_description": "We have accepted your order and are preparing it. Please visit this page again for updates on your shipping status.",
         "order_updates_title": "Order updates",
-        "order_updates_description_html": "A confirmation was sent to %{customer_contact}"
+        "order_updates_description_html": "A confirmation was sent to %{customer_contact}",
+        "order_updates_current_step_prefix": "Current step:",
+        "order_updates_past_step_prefix": "Previous step:",
+        "order_updates_upcoming_step_prefix": "Next step:",
+        "in_transit": "En route",
+        "in_transit_title": "Your order is on its way",
+        "in_transit_description": "You will receive updates on the progress.",
+        "in_transit_description_days": "Your order will be delivered within %{number} days.",
+        "in_transit_description_today": "Your order will be delivered today.",
+        "in_transit_description_tomorrow": "Your order will be delivered tomorrow.",
+        "no_tracking_number": "There is no tracking number for this order."
       }
     }
   }
