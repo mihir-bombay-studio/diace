@@ -250,16 +250,16 @@
     "account_fallback": "Konto",
     "activate_account": {
       "title": "Konto aktivieren",
-      "subtext": "Erstelle ein Passwort, um dein Konto zu aktiveren.",
+      "subtext": "Erstellen Sie Ihr Passwort, um Ihr Konto zu aktivieren.",
       "password": "Passwort",
-      "password_confirm": "Passwort bestätigen",
+      "password_confirm": "Kennwort bestätigen",
       "submit": "Konto aktivieren",
       "cancel": "Einladung ablehnen"
     },
     "addresses": {
       "title": "Adressen",
       "default": "Standard",
-      "add_new": "Neue Adresse hinzufügen",
+      "add_new": "Füge eine neue Adresse hinzu",
       "edit_address": "Adresse bearbeiten",
       "first_name": "Vorname",
       "last_name": "Nachname",
