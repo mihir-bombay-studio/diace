@@ -499,7 +499,12 @@
         "price_column_header": "Preis",
         "status_column_header": "Status",
         "removed_from_cart_notice": "Aus dem Warenkorb entfernt",
-        "sold_out_label": "Nicht vorrättig"
+        "sold_out_label": "Nicht vorrättig",
+        "reduced_label": "Reduziert",
+        "reduced_with_quantity_label": "Nur %{quantity_available} auf Lager",
+        "remove_from_cart_button_label": "Aus dem Warenkorb entfernen",
+        "continue_shopping_button_label": "Weitermachen",
+        "go_back_to_cart_button_label": "Zurück zu meinem Warenkorb"
       }
     }
   }
