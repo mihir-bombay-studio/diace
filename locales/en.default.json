@@ -1033,7 +1033,21 @@
         "order_updates_description_missing": "You will not receive shipping updates.",
         "order_updates_subscribe_to_email_notifications": "Receive shipping updates via email",
         "order_updates_subscribe_to_email_or_phone_notifications": "Receive shipping updates via email or SMS",
-        "order_updates_subscribe_to_phone_notifications": "Receive your shipping updates via text message"
+        "order_updates_subscribe_to_phone_notifications": "Receive your shipping updates via text message",
+        "order_updates_submit_subscription": "Submit",
+        "track_shipment": "Track Shipping",
+        "shopify_pay": {
+          "order_completed_html": "Order completed with %{shopify_pay}",
+          "learn_more_label": "More information about Shop Pay"
+        },
+        "order_status_confirmed_order_with_email_pick_up": "You will receive an email when you can pick up your order.",
+        "order_status_confirmed_order_with_phone_pick_up": "You will receive a text message when you can pick up your order.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "You will receive an email and a text message when you can pick up your order.",
+        "pick_up_in_store_marker": {
+          "current": "Current shipping location",
+          "shipping": "Pick up location"
+        },
+        "thank_you_confirmed_order_with_email_pick_up": "You will receive an email when you can pick up your order."
       }
     }
   }
