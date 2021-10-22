@@ -64,13 +64,13 @@
     "close": "Close",
     "unit_price_separator": "per",
     "vendor": "Seller:",
-    "error": "Error",
-    "refresh_page": "Choosing a selection results in a full page refresh.",
+    "error": "Wrong",
+    "refresh_page": "Choosing a selection results in a complete refresh of the page.",
     "link_messages": {
       "new_window": "Opens in a new window.",
       "external": "Opens external website."
     },
-    "of": "of",
+    "of": "by",
     "next_slide": "Slide right",
     "previous_slide": "Slide left",
     "loading": "Loading..."
