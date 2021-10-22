@@ -865,8 +865,26 @@
           "transaction_declined": "This transaction has been rejected",
           "address_mismatch": "Address and zip code do not match.",
           "cannot_process": "This transaction cannot be processed.",
-          "no_match": "No match"
+          "no_match": "No match",
+          "card_declined": "Your card has been declined"
+        },
+        "payment_processing_no_retry": "Your payment cannot be processed for technical reasons. Try another payment method."
+      },
+      "shipping_errors": {
+        "shipping_method": "Your cart has been updated and the previous shipping costs are not valid. Choose a new rate.",
+        "shipping_method_not_available": "Your cart has been updated and the items you have added cannot be shipped to your address. Please remove the items to complete your order.",
+        "shipping_method_not_available_generic": {
+          "one": "This order cannot be shipped to the address entered. Please check the address and make sure all fields are filled in correctly. Then try again.",
+          "other": "Some items in your shopping cart cannot be shipped to the address entered. Please check the address and make sure all fields are filled in correctly. Then try again."
+        },
+        "shipping_method_not_available_updated": {
+          "one": "The item you've added won't ship to your location. Please remove this item to pay, or contact the store.",
+          "other": "One or more items you've added cannot be shipped to your location. Remove the items to pay, or contact the store."
         }
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "Fast checkout",
+        "or": "OR"
       }
     }
   }
