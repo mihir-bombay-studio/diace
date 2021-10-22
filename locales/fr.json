@@ -410,8 +410,17 @@
         "autocomplete_selection": "{{number}} du {{total}}",
         "autocomplete_close": "Fermer les suggestions",
         "forwarding_indicator": {
-          "new_window": "Ouvre dans une nouvelle fenêtre."
-        }
+          "new_window": "Ouvre dans une nouvelle fenêtre.",
+          "external": "Ouvre un site Web externe.",
+          "external_and_new_window": "Ouvre un site Web externe dans une nouvelle fenêtre."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Paiement"
+        },
+        "tooltip_accessibility_label": "Plus d'information"
+      },
+      "contact": {
+        "title": "Informations"
       }
     }
   }
