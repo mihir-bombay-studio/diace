@@ -462,7 +462,12 @@
         "governorate_label": "government",
         "governorate_placeholder": "government",
         "emirate_label": "Emirate",
-        "emirate_placeholder": "Emirate"
+        "emirate_placeholder": "Emirate",
+        "state_and_territory_label": "State\/Territory",
+        "state_and_territory_placeholder": "State\/Territory",
+        "phone_label": "Telephone",
+        "optional_phone_label": "Phone (optional)",
+        "phone_placeholder": "Telephone"
       }
     }
   }
