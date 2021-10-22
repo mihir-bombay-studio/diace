@@ -1528,6 +1528,13 @@
       "product_type": {
         "label": "Product type"
       }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Relevance",
+        "price_ascending": "Price: low to high",
+        "price_descending": "Price: high to low"
+      }
     }
   }
 }
