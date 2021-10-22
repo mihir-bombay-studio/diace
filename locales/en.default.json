@@ -366,9 +366,9 @@
     "issued": {
       "title": "Here's your gift card worth {{ value }} for {{ shop }}!",
       "subtext": "Your gift card",
-      "gift_card_code": "Gift card code",
-      "shop_link": "Continue shopping",
-      "remaining_html": "Remaining {{ balance }}",
+      "gift_card_code": "Gift voucher code",
+      "shop_link": "Return to store",
+      "remaining_html": "Remaining amount: {{ balance }}",
       "add_to_apple_wallet": "Add to Apple Wallet",
       "qr_image_alt": "QR code — scan to redeem gift card",
       "copy_code": "Copy code",
