@@ -1454,7 +1454,25 @@
     "email_marketing": {
       "subscribed": {
         "confirmation": "Merci de vous être inscrit à notre liste de diffusion.",
-        "disclaimer": "Vous pouvez vous désinscrire à tout moment."
+        "disclaimer": "Vous pouvez vous désinscrire à tout moment.",
+        "unsubscribe": "Se déconnecter"
+      },
+      "unsubscribed": {
+        "confirmation": "Vous avez été désinscrit de notre liste de diffusion.",
+        "disclaimer": "Vous ne recevrez plus de mises à jour marketing de notre part. Vous pouvez vous réinscrire à tout moment.",
+        "preview": "Vous affichez un aperçu de ce que les clients verront lorsqu'ils se désabonneront."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Vous avez consenti au suivi ouvert par e-mail.<\/b>",
+          "visibility": "Les taux d'ouverture des e-mails sont signalés de manière anonyme. Nous ne verrons que si vous avez ouvert un e-mail dans le cadre d'un taux d'ouverture d'e-mails agrégé.",
+          "opt_out_html": "vous pouvez <a style='text-decoration:underline;' href='%{link}'>Se déconnecter<\/a> d'e-mail open-tracking si vous ne souhaitez pas partager ces informations.",
+          "preview_bar": "Vous affichez un aperçu de ce que les clients verront lorsqu'ils accepteront de recevoir des e-mails de suivi ouverts."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Vous vous êtes désabonné du suivi ouvert par e-mail.<\/b>",
+          "visibility": "Nous ne voyons pas si vous avez ouvert nos e-mails."
+        }
       }
     }
   }
