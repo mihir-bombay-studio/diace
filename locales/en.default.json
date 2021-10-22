@@ -1002,7 +1002,26 @@
         "failed_contact_merchant_no_company": "Please contact us to arrange delivery.",
         "non_shippable_title": "Your order has been completed",
         "login_title": "Log in to view all order details",
-        "login_description": "You can find your order number in the invoice you received by email."
+        "login_description": "You can find your order number in the invoice you received by email.",
+        "login_description_phone": "You will find your order number in the invoice that you received via SMS.",
+        "login_not_customer_html": "Not %{name}? You can %{link}",
+        "login_reorder_link_text": {
+          "one": "also buy this product",
+          "other": "also buy these products"
+        },
+        "customer_information_hidden_fields_message": "Log in to view all customer information.",
+        "cancelled_title": "Your order has been cancelled",
+        "cancelled_description": "Your order was canceled on %{date}. Please contact us if you have any questions.",
+        "order_number_label": "Order number",
+        "customer_validation_error": "Please enter a valid email address or order number.",
+        "customer_validation_error_phone": "Please enter a valid phone or order number.",
+        "login": "login",
+        "unfulfilled_items_title": "Shipping is being prepared",
+        "unfulfilled_items_description": "We are currently preparing these items for shipment.",
+        "marker": {
+          "current": "Current shipping location",
+          "shipping": "Delivery address"
+        }
       }
     }
   }
