@@ -1026,7 +1026,14 @@
         "order_updates_description_missing": "Vous ne recevrez aucune mise à jour d'expédition.",
         "order_updates_subscribe_to_email_notifications": "Recevez des mises à jour d'expédition par e-mail",
         "order_updates_subscribe_to_email_or_phone_notifications": "Recevez des mises à jour d'expédition par e-mail ou SMS",
-        "order_updates_subscribe_to_phone_notifications": "Recevez vos mises à jour d'expédition par SMS"
+        "order_updates_subscribe_to_phone_notifications": "Recevez vos mises à jour d'expédition par SMS",
+        "order_updates_submit_subscription": "Soumettre",
+        "track_shipment": "Suivre l'expédition",
+        "shopify_pay": {
+          "order_completed_html": "Commande complétée avec %{shopify_pay}",
+          "learn_more_label": "Plus d'informations sur Shop Pay"
+        },
+        "order_status_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque vous pourrez récupérer votre commande."
       }
     }
   }
