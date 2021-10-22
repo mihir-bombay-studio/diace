@@ -423,7 +423,17 @@
         "email_or_phone_label": "E-Mail oder Handynummer",
         "email_or_phone_placeholder": "E-Mail oder Handynummer",
         "stored_addresses_label": "Gespeicherte Adressen",
-        "new_address_label": "Verwenden Sie eine neue Adresse"
+        "new_address_label": "Verwenden Sie eine neue Adresse",
+        "first_name_label": "Vorname",
+        "optional_first_name_label": "Vorname (optional)",
+        "last_name_label": "Nachname",
+        "company_label": "Unternehmen",
+        "optional_company_label": "Firma (optional)",
+        "address1_label": "Die Anschrift",
+        "address2_label": "Postfach-Nr. usw.",
+        "optional_address2_label": "Postfachnummer usw. (optional)",
+        "city_label": "Stadt",
+        "country_label": "Land\/Region"
       }
     }
   }
