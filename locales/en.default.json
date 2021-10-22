@@ -1452,6 +1452,17 @@
       "message": "Let us know you are not a robot to continue.",
       "error": "Your answer was wrong, please try again.",
       "submit_button_text": "Send"
+    },
+    "checkpoint": {
+      "message": "Solve captcha to continue",
+      "error": "captcha verification failed",
+      "submit_button_text": "Send"
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Thank you for subscribing to our mailing list.",
+        "disclaimer": "You can unsubscribe at any time."
+      }
     }
   }
 }
