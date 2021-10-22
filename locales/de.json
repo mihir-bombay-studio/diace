@@ -1209,7 +1209,27 @@
         },
         "recurring_total_intervals": {
           "day": {
-            "one": "Tag"
+            "one": "Tag",
+            "other": "%{count} Tage"
+          },
+          "week": {
+            "one": "Woche",
+            "other": "%{count} Wochen"
+          },
+          "month": {
+            "one": "Monat",
+            "other": "%{count} Monate"
+          },
+          "year": {
+            "one": "Jahr",
+            "other": "%{count} Jahr"
+          }
+        },
+        "recurring_totals_with_initial_order_shipping_discount": "Erste Zahlung %{total_price_with_discount} dann %{recurring_total}",
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", dann %{count} Zahlung von %{total_price}",
+            "other": ", dann %{count} Zahlungen, jeweils %{total_price}"
           }
         }
       }
