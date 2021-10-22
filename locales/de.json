@@ -1362,7 +1362,14 @@
         },
         "fulfillment_status": {
           "fulfilled": "Fertig",
-          "complete": "Vollständig"
+          "complete": "Vollständig",
+          "partial": "Teilweise",
+          "unfulfilled": "Offen",
+          "restocked": "Aufgefüllt"
+        },
+        "transaction_status": {
+          "success": "Bestanden",
+          "pending": "Ausstehend"
         }
       }
     }
