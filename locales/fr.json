@@ -1314,7 +1314,52 @@
       "gift_card_disabled": "Le bon cadeau est bloqué",
       "gift_card_expired": "Le bon cadeau a expiré",
       "invalid": "est invalide",
-      "bad_domain": "contient un nom de domaine invalide"
+      "bad_domain": "contient un nom de domaine invalide",
+      "taken": "a déjà été utilisé",
+      "contains_html_tags": "ne peut pas contenir de balises HTML",
+      "too_short": "est trop court (le minimum est de %{count} caractères)",
+      "too_long": "est trop long (le maximum est de %{count} caractères)",
+      "password_mismatch": "doit être identique au mot de passe spécifié.",
+      "contains_spaces": "commence ou se termine par des espaces.",
+      "email_domain_invalid": "le transporteur n'est pas pris en charge",
+      "invalid_for_country": "n'est pas valide pour %{country}",
+      "invalid_for_country_and_province": "n'est pas valide pour %{province} et %{country}",
+      "invalid_province_in_country": "n'est pas une province valide dans %{country}",
+      "invalid_state_in_country": "n'est pas un état valide dans %{country}",
+      "invalid_region_in_country": "n'est pas une région valide dans %{country}",
+      "less_than_or_equal_to": "doit être inférieur ou égal à %{count}",
+      "not_supported": "n'est pas pris en charge",
+      "full_name_required": "Entrez un prénom et un nom",
+      "invalid_for_card_type": "est invalide",
+      "invalid_type": "désolé, nous n'acceptons pas les cartes de ce type",
+      "invalid_format": "le format n'est pas valide",
+      "expired": "a expiré",
+      "invalid_start_date_or_issue_number_for_debit": "date de début valide ou numéro d'émission valide requis",
+      "invalid_expiry_year": "n'est pas une année d'expiration valide",
+      "reset_password_html": "Cette adresse e-mail est déjà associée à un compte. Si ce compte est le vôtre, vous pouvez <a href=\"\/account\/login#recover\">réinitialisez votre mot de passe<\/a>",
+      "verify_email": "Nous avons envoyé un e-mail à %{customer_email}. Veuillez cliquer sur le lien ci-joint pour vérifier votre adresse e-mail.",
+      "blocked_address": "Cet emplacement n'est pas pris en charge."
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Erreur lors de la réinitialisation du mot de passe",
+        "no_account_found": "Aucun compte trouvé avec cette adresse e-mail.",
+        "invalid_credentials": "Email ou mot de passe incorrect."
+      },
+      "address": {
+        "updated": "Adresse mise à jour.",
+        "error_updating": "Erreur lors de la mise à jour de l'adresse",
+        "created": "Adresse créée",
+        "error_creating": "Erreur lors de la création de l'adresse.",
+        "deleted": "Adresse supprimée",
+        "error_deleting": "Erreur lors de la suppression de l'adresse."
+      },
+      "order": {
+        "not_available": "Cette commande n'est pas disponible",
+        "financial_status": {
+          "authorized": "Vérifié"
+        }
+      }
     }
   }
 }
