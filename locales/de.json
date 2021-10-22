@@ -1284,8 +1284,35 @@
         "best_selling": "Meistverkauft",
         "az": "Alphabetisch: A-Z",
         "za": "Alphabetisch: Z-A",
-        "price_ascending": "Preis niedrig bis hoch"
+        "price_ascending": "Preis niedrig bis hoch",
+        "price_descending": "Preis: hoch bis niedrig",
+        "date_ascending": "Datum: alt zu neu",
+        "date_descending": "Datum: neu bis alt"
       }
+    },
+    "errors": {
+      "blank": "kann nicht leer sein",
+      "credit_card_session_expired": "Kreditkartenautorisierung ist abgelaufen. Geben Sie Ihre Zahlungsdaten erneut ein. Es wurde kein Geld von Ihrer Karte abgebucht.",
+      "empty": "kann nicht leer sein",
+      "invalid_email": "muss eine gültige E-Mail-Adresse sein",
+      "discount_disabled": "Dieser Rabatt ist gesperrt",
+      "discount_expired": "Dieser Rabatt ist nicht mehr gültig",
+      "discount_limit_reached": "Dieser Rabatt hat das Nutzungslimit erreicht",
+      "discount_not_found": "Kann keinen gültigen Rabatt finden, der dem Code entspricht",
+      "customer_already_used_once_per_customer_discount_notice": "Dieser Rabatt hat das Nutzungslimit erreicht",
+      "gift_card_already_applied": "Code wurde bereits auf Ihren Warenkorb angewendet",
+      "gift_card_code_invalid": "Code ist ungültig",
+      "gift_card_currency_mismatch": "%{gift_card_currency} Geschenkkarten können nicht auf Bestellungen in %{checkout_currency} angewendet werden",
+      "gift_card_depleted": "Auf dieser Geschenkkarte ist kein Guthaben vorhanden",
+      "gift_card_disabled": "Geschenkgutschein ist gesperrt",
+      "gift_card_expired": "Geschenkgutschein ist abgelaufen",
+      "invalid": "ist ungültig",
+      "bad_domain": "enthält einen ungültigen Domainnamen",
+      "taken": "wurde schon verwendet",
+      "contains_html_tags": "darf keine HTML-Tags enthalten",
+      "too_short": "ist zu kurz (mindestens %{count} Zeichen)",
+      "too_long": "ist zu lang (maximal %{count} Zeichen)",
+      "password_mismatch": "muss mit dem angegebenen Passwort identisch sein."
     }
   }
 }
