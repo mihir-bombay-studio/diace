@@ -835,7 +835,17 @@
       },
       "payment_errors": {
         "generic_error": "Bei der Verarbeitung Ihrer Zahlung ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
-        "rejected_transaction": "Ihre Zahlung wurde abgelehnt. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode."
+        "rejected_transaction": "Ihre Zahlung wurde abgelehnt. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "credit_card_processing": "Ihre Zahlung kann aus technischen Gründen nicht verarbeitet werden. Bitte versuchen Sie es in einigen Minuten erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "order_total_changed": "Der Gesamtbetrag Ihrer Bestellung hat sich geändert. Bitte aktualisieren Sie Ihren Warenkorb und versuchen Sie es erneut.",
+        "payment_processing": "Ihre Zahlung kann aus technischen Gründen nicht verarbeitet werden. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "paypal_zero_amount": "Sie können PayPal nicht für %{amount} Bestellungen verwenden. Bestätigen Sie die Richtigkeit Ihrer Bestellung und zahlen Sie ohne PayPal.",
+        "paypal_invalid_token": "PayPal war nicht verfügbar. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "pay_later_failed": "Bei der Verarbeitung Ihrer Zahlung mit Später bezahlen ist ein Fehler aufgetreten. Bitte wählen Sie eine andere Zahlungsmethode und versuchen Sie es erneut.",
+        "three_d_secure_failed": "Ihre Zahlung kann nicht verifiziert werden. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "three_d_secure_throttled": "Zu viele Versuche; warte eine Weile, bevor du es erneut versuchst",
+        "subscription_agreement_blank": "Ihre Zahlungsdaten werden beim Kauf eines Abonnements gespeichert. Bitte bestätigen Sie Ihr Einverständnis oder entfernen Sie alle Abonnements aus Ihrer Bestellung, um fortzufahren.",
+        "three_d_secure_failed_duplicate": "Die 3D Secure-Kreditkartenauthentifizierung ist fehlgeschlagen, da bereits eine andere durchgeführt wird."
       }
     }
   }
