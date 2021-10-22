@@ -817,7 +817,17 @@
         "address_zip_invalid_for_country_and_province": "Please enter a valid ZIP or zip code for %{province}, %{country}",
         "credit_card_name_blank": "Enter your name as it appears on your card",
         "credit_card_name_invalid": "Enter your name as it appears on your card",
-        "credit_card_number_invalid": "Please enter a valid card number"
+        "credit_card_number_invalid": "Please enter a valid card number",
+        "credit_card_expiry_invalid": "Please enter a valid expiry date for the card",
+        "credit_card_month_invalid": "Please enter a valid expiry month for the card",
+        "credit_card_year_invalid": "Enter a valid expiration year for the card",
+        "credit_card_start_invalid": "Please enter a valid card start date",
+        "credit_card_start_month_invalid": "Please enter a valid card start month",
+        "credit_card_start_year_invalid": "Please enter a valid card start year",
+        "credit_card_verification_value_blank": "Enter your card's CVV\/CVC or security code",
+        "reduction_code_code_not_found": "Enter a valid discount code or gift card",
+        "reduction_code_discount_not_found": "Please enter a valid discount code",
+        "reduction_code_gift_card_code_invalid": "Please enter a valid gift card"
       }
     }
   }
