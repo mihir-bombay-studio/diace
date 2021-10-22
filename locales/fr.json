@@ -435,7 +435,17 @@
         "optional_first_name_label": "Prénom (facultatif)",
         "last_name_label": "nom de famille",
         "company_label": "Entreprise",
-        "optional_company_label": "Société (optionel)"
+        "optional_company_label": "Société (optionel)",
+        "address1_label": "Adresse",
+        "address2_label": "N° de boîte postale, etc.",
+        "optional_address2_label": "N° de boîte postale, etc. (facultatif)",
+        "city_label": "Ville",
+        "country_label": "Pays\/Région",
+        "country_code": "Code pays\/région",
+        "province_label": "Province",
+        "province_placeholder": "Province",
+        "county_label": "Province",
+        "county_placeholder": "Province"
       }
     }
   }
