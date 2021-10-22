@@ -1299,7 +1299,22 @@
     },
     "errors": {
       "blank": "ne peux pas être vide",
-      "credit_card_session_expired": "L'autorisation de la carte de crédit a expiré. Saisissez à nouveau vos informations de paiement. Aucune somme n'a été débitée de votre carte."
+      "credit_card_session_expired": "L'autorisation de la carte de crédit a expiré. Saisissez à nouveau vos informations de paiement. Aucune somme n'a été débitée de votre carte.",
+      "empty": "ne peux pas être vide",
+      "invalid_email": "Doit être une adresse e-mail valide",
+      "discount_disabled": "Cette remise est bloquée",
+      "discount_expired": "Cette remise n'est plus valable",
+      "discount_limit_reached": "Cette remise a atteint la limite d'utilisation",
+      "discount_not_found": "Impossible de trouver une remise valide correspondant au code",
+      "customer_already_used_once_per_customer_discount_notice": "Cette remise a atteint la limite d'utilisation",
+      "gift_card_already_applied": "Le code a déjà été appliqué à votre panier",
+      "gift_card_code_invalid": "Le code n'est pas valide",
+      "gift_card_currency_mismatch": "Les cartes-cadeaux %{gift_card_currency} ne peuvent pas être appliquées aux commandes en %{checkout_currency}",
+      "gift_card_depleted": "Il n'y a pas de solde sur cette carte cadeau",
+      "gift_card_disabled": "Le bon cadeau est bloqué",
+      "gift_card_expired": "Le bon cadeau a expiré",
+      "invalid": "est invalide",
+      "bad_domain": "contient un nom de domaine invalide"
     }
   }
 }
