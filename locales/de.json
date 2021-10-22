@@ -536,7 +536,17 @@
         "customer_already_used_once_per_customer_discount_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> wurde schon verwendet",
         "subtotal_label": "Zwischensumme",
         "shipping_label": "Versenden",
-        "tip_label": "Spitze"
+        "tip_label": "Spitze",
+        "shipping_default_value": "Im nächsten Schritt berechnet",
+        "shipping_pending_value": "—",
+        "shipping_pending_message": "Noch nicht verfügbar",
+        "shipping_policy_link": "Portokosten",
+        "taxes_label": "MwSt.",
+        "total_label": "Gesamt",
+        "total_outstanding_label": "Bezahlbarer Betrag",
+        "partial_total_label": "Gesamt",
+        "free_total_label": "Kostenlos",
+        "paid_label": "Bezahlt"
       }
     }
   }
