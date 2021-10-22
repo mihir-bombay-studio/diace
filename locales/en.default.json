@@ -648,8 +648,15 @@
             "month": {
               "one": "every month",
               "other": "every %{count} months"
+            },
+            "year": {
+              "one": "every year",
+              "other": "every %{count} year"
             }
-          }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} per delivery",
+          "prepaid_shipping_price_label": "%{shipping_price} per delivery x %{delivery_interval_count}",
+          "initial_order_discounted": "First shipping %{discounted_shipping_cost}, then %{frequency_description}"
         }
       }
     }
