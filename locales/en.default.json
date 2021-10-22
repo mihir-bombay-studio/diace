@@ -678,7 +678,37 @@
         "estimated_delivery_time_range": "Expected delivery %{min_time}–%{max_time}"
       },
       "payment": {
-        "amazon_payments_label": "Amazon Pay"
+        "amazon_payments_label": "Amazon Pay",
+        "amazon_payments_login_hint": "You will be asked to log in to Amazon.",
+        "amazon_payments_logout": "Log out of Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "The selected payment method cannot be used. Select another method or contact your bank or card issuer.",
+        "amazon_payments_abandoned_mfa_challenge": "Your payment could not be completed. Try another payment method or contact your bank or card issuer.",
+        "amazon_payments_could_not_enqueue_authorize": "There was a problem processing your payment. Please try again or use a different payment method.",
+        "title": "Payment",
+        "amount_left_to_pay_label": "Amount Due:",
+        "discount_button_action_label": "Apply Discount Code",
+        "gift_card_code_label": "Gift voucher code",
+        "apply_gift_card_button_label": "To apply",
+        "gift_card_balance_label": "Balance:",
+        "supported_card_brands_more_label": "and more…",
+        "detected_card_brand": "Card type detected: {brand}",
+        "card_number_label": "Card number",
+        "card_number_placeholder": "Card number",
+        "card_pay_with": "Pay with:",
+        "card_security_notice": "All transactions are secured and encrypted.",
+        "name_on_card_label": "Name on card",
+        "name_on_card_placeholder": "Name on card",
+        "card_expiry_label": "Expiration date (MM\/YY)",
+        "card_expiry_placeholder": "Expiration date (MM\/YY)",
+        "card_verification_value_label": "security code",
+        "card_verification_value_placeholder": "security code",
+        "card_expiry_date_explanation": "Card Expiration Format: Month, Month, Year, Year",
+        "card_verification_value_explanation": "3-digit security code, usually found on the back of your card. American Express has a 4-digit code on the front.",
+        "card_verification_value_explanation_amex": "4-digit security code on the front of your card",
+        "card_verification_value_explanation_other": "3-digit security code on the back of your card",
+        "card_start_label": "Issue date (MM \/ YY)",
+        "card_start_placeholder": "Issue date (MM \/ YY)",
+        "card_issue_number_label": "Issue number"
       }
     }
   }
