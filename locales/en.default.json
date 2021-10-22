@@ -885,6 +885,24 @@
       "alternative_payment_method_banner": {
         "express_checkout": "Fast checkout",
         "or": "OR"
+      },
+      "alternative_payment_method": {
+        "button_html": "Checkout with: %{method}",
+        "button_label": "Checkout with: %{method}"
+      },
+      "paypal": {
+        "button_html": "Checkout with %{logo}"
+      },
+      "apple_pay": {
+        "button_html": "Buy with %{logo}"
+      },
+      "processing": {
+        "redirecting_page_title": "Refer…",
+        "redirecting_title": "Refer…",
+        "redirecting_notice": "You are referred.",
+        "complete_your_purchase_title": "Complete your purchase",
+        "continue_to_payment_gateway_notice": "Proceed to payment to add your payment details.",
+        "continue_to_payment_gateway_button_label": "Go to payment"
       }
     }
   }
