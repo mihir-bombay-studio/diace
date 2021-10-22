@@ -565,7 +565,12 @@
         "vat_label_html": "Including %{amount} VAT",
         "discount_and_gift_card_savings_notice": "After %{discount_amount} discount and %{gift_card_amount} of gift card value",
         "discount_savings_notice": "After %{discount_amount} discount",
-        "gift_card_savings_notice": "After %{gift_card_amount} of gift card value"
+        "gift_card_savings_notice": "After %{gift_card_amount} of gift card value",
+        "cost_table_title": "Cost overview",
+        "description_label": "Description",
+        "price_label": "Price",
+        "quantity_label": "Number",
+        "product_change_label": "Modify"
       }
     }
   }
