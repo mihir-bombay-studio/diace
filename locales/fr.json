@@ -450,7 +450,17 @@
         "state_placeholder": "Des stands",
         "region_label": "Région",
         "region_placeholder": "Région",
-        "prefecture_label": "Préfecture"
+        "prefecture_label": "Préfecture",
+        "prefecture_placeholder": "Préfecture",
+        "governorate_label": "gouvernement",
+        "governorate_placeholder": "gouvernement",
+        "emirate_label": "Émirat",
+        "emirate_placeholder": "Émirat",
+        "state_and_territory_label": "État\/Territoire",
+        "state_and_territory_placeholder": "État\/Territoire",
+        "phone_label": "Téléphone",
+        "optional_phone_label": "Téléphone facultatif)",
+        "phone_placeholder": "Téléphone"
       }
     }
   }
