@@ -664,7 +664,17 @@
         "estimated_delivery_time_range": "Voraussichtliche Lieferung %{min_time}–%{max_time}"
       },
       "payment": {
-        "amazon_payments_label": "Amazon Pay"
+        "amazon_payments_label": "Amazon Pay",
+        "amazon_payments_login_hint": "Sie werden aufgefordert, sich bei Amazon anzumelden.",
+        "amazon_payments_logout": "Von Amazon Pay abmelden",
+        "amazon_payments_failed_mfa_challenge": "Die ausgewählte Zahlungsmethode kann nicht verwendet werden. Wählen Sie eine andere Methode oder wenden Sie sich an Ihre Bank oder Ihren Kartenaussteller.",
+        "amazon_payments_abandoned_mfa_challenge": "Ihre Zahlung konnte nicht abgeschlossen werden. Versuchen Sie es mit einer anderen Zahlungsmethode oder wenden Sie sich an Ihre Bank oder Ihren Kartenaussteller.",
+        "amazon_payments_could_not_enqueue_authorize": "Bei der Verarbeitung Ihrer Zahlung ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "title": "Zahlung",
+        "amount_left_to_pay_label": "Offener Betrag:",
+        "discount_button_action_label": "Rabattcode anwenden",
+        "gift_card_code_label": "Gutscheincode",
+        "apply_gift_card_button_label": "Bewerben"
       }
     }
   }
