@@ -487,7 +487,14 @@
         "pick_up_in_zero_to_two_hours": "Prêt à être récupéré en 2 heures",
         "pick_up_in_two_to_four_hours": "Prêt à être récupéré en 4 heures",
         "free_total_label": "Gratuite",
-        "shipping_address": "Adresse de livraison"
+        "shipping_address": "Adresse de livraison",
+        "pick_up_locations": "Lieux de prise en charge"
+      },
+      "customer_account": {
+        "not_user_label": "N'êtes-vous pas %{first_name} ?",
+        "have_an_account_label": "Avez-vous déjà un compte?",
+        "sign_in_link_label": "connexion",
+        "sign_out_link_label": "Se déconnecter"
       }
     }
   }
