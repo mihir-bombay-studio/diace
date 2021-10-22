@@ -1521,6 +1521,13 @@
       "product_type": {
         "label": "Type de produit"
       }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Pertinence",
+        "price_ascending": "Prix croissant",
+        "price_descending": "Prix : élevé à faible"
+      }
     }
   }
 }
