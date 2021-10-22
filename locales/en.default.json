@@ -1062,7 +1062,19 @@
         "delivery_information_label": "Delivery Information:",
         "gift_card_sent_confirmation": "Gift cards sent",
         "out_for_delivery_local_title": "Your order is ready for delivery",
-        "out_for_delivery_local_description_html": "You will receive your order shortly."
+        "out_for_delivery_local_description_html": "You will receive your order shortly.",
+        "delivered_local_title": "Your order has been delivered",
+        "delivered_local_description_html": "Have you not received your order yet? %{let_us_know}.",
+        "let_us_know": "Let us know",
+        "qr_code": {
+          "title": "Follow on your phone",
+          "subtitle": "Scan the code with your phone's camera to track with Shop.",
+          "send_link_to_phone": "Or send a link to your phone"
+        },
+        "gift_card_confirmation_by_text": "Gift vouchers are sent by message. If you haven't received a message yet, please try sending them again or contact us.",
+        "gift_card_confirmation_by_email": "Gift cards are sent by email. If you haven't received a message yet, please try sending them again or contact us.",
+        "gift_card_title": "Gift cards",
+        "resend_gift_cards": "Resend Gift Cards"
       }
     }
   }
