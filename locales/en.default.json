@@ -837,7 +837,12 @@
         "gift_card_depleted": "There is no more money on this gift card",
         "gift_card_currency_mismatch": "Only gift cards in %{checkout_currency} can be used for this order",
         "payment_gateway_needs_paid_plan_error": "This payment method cannot currently be used for this store",
-        "payment_gateway_incompatible_with_multi_currency": "Pay with a credit card to pay in your local currency"
+        "payment_gateway_incompatible_with_multi_currency": "Pay with a credit card to pay in your local currency",
+        "subscription_agreement_blank": "To continue with your purchase, you must agree to the terms of the subscription",
+        "physical_gift_card_invalid_quantity": "Order lines for physical gift cards must have a quantity that matches the number of gift card codes.",
+        "physical_gift_card_duplicate_code": "Order line for physical gift card contains duplicate code.",
+        "physical_gift_card_invalid_code": "Physical gift card code is invalid.",
+        "payment_gateway_not_in_test_mode": "is not built for test orders. This store cannot accept real orders or process real payments."
       }
     }
   }
