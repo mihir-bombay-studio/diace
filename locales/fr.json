@@ -325,10 +325,10 @@
     },
     "reset_password": {
       "title": "Réinitialiser le mot de passe du compte",
-      "subtext": "Saisir un nouveau mot de passe pour {{ email }}",
-      "password": "Mot de passe",
-      "password_confirm": "Confirmer le mot de passe",
-      "submit": "Réinitialiser le mot de passe"
+      "subtext": "Entrez un nouveau mot de passe pour {{ email }}",
+      "password": "le mot de passe",
+      "password_confirm": "Confirmez le mot de passe",
+      "submit": "réinitialiser le mot de passe"
     },
     "order": {
       "title": "Commande {{ name }}",
@@ -357,12 +357,12 @@
   },
   "gift_cards": {
     "issued": {
-      "title": "Voici votre carte-cadeau {{ shop }} d'une valeur de {{ value }} !",
-      "subtext": "Votre carte-cadeau",
-      "gift_card_code": "Code de la carte-cadeau",
-      "shop_link": "Continuer les achats",
-      "remaining_html": "Reste {{ balance }}",
-      "add_to_apple_wallet": "Ajouter à Apple Wallet",
+      "title": "Voici votre carte cadeau d'une valeur de {{ value }} pour {{ shop }} !",
+      "subtext": "Votre carte cadeau",
+      "gift_card_code": "Code de bon cadeau",
+      "shop_link": "Retour au magasin",
+      "remaining_html": "Montant restant : {{ balance }}",
+      "add_to_apple_wallet": "Ajouter au portefeuille Apple",
       "qr_image_alt": "Code QR : scannez-le pour utiliser votre carte-cadeau",
       "copy_code": "Copier le code",
       "expired": "Expiré",
