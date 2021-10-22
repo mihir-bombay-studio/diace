@@ -983,7 +983,12 @@
         "contact_us_html": "Brauchen Sie Hilfe? %{contact_us}",
         "updated_time": "Vor %{time_ago} aktualisiert",
         "failure": "Nicht besorgt",
-        "failed_title": "Ihre Bestellung konnte nicht geliefert werden."
+        "failed_title": "Ihre Bestellung konnte nicht geliefert werden.",
+        "failed_contact_merchant": "Bitte kontaktieren Sie %{company}, um die Lieferung zu vereinbaren.",
+        "failed_contact_merchant_no_company": "Bitte kontaktieren Sie uns, um die Lieferung zu vereinbaren.",
+        "non_shippable_title": "Ihre Bestellung ist abgeschlossen",
+        "login_title": "Melden Sie sich an, um alle Bestelldetails anzuzeigen",
+        "login_description": "Ihre Bestellnummer finden Sie in der Rechnung, die Sie per E-Mail erhalten haben."
       }
     }
   }
