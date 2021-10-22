@@ -40,38 +40,38 @@
       "search": "Suchen"
     },
     "cart": {
-      "view": "Meinen Warenkorb ({{ count }}) anzeigen",
-      "item_added": "Artikel wurde in den Warenkorb gelegt"
+      "view": "Warenkorb anzeigen ({{ count }})",
+      "item_added": "Artikel zum Warenkorb hinzugefügt"
     },
     "share": {
-      "copy_to_clipboard": "URL in die Zwischenablage kopieren",
+      "copy_to_clipboard": "URL in Zwischenablage kopieren",
       "share": "Teilen",
       "share_url": "URL teilen",
       "success_message": "In die Zwischenablage kopiert!"
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%VON"
   },
   "newsletter": {
-    "label": "Deine E-Mail-Adresse",
-    "success": "Danke für deine Anmeldung",
+    "label": "deine E-Mail-Adresse",
+    "success": "Danke fürs Abonnieren",
     "button_label": "Abonnieren"
   },
   "accessibility": {
     "skip_to_text": "Direkt zum Inhalt",
-    "close": "Schließen",
+    "close": "Nah dran",
     "unit_price_separator": "pro",
-    "vendor": "Anbieter:",
-    "error": "Fehler",
-    "refresh_page": "Wenn du dich für eine Auswahl entscheidest, wird die Seite komplett aktualisiert.",
+    "vendor": "Verkäufer:",
+    "error": "Falsch",
+    "refresh_page": "Die Auswahl einer Auswahl führt zu einer vollständigen Aktualisierung der Seite.",
     "link_messages": {
-      "new_window": "Wird in einem neuen Fenster geöffnet.",
-      "external": "Öffnet externe Webseite."
+      "new_window": "Öffnet in einem neuen Fenster.",
+      "external": "Öffnet eine externe Website."
     },
     "next_slide": "Nach rechts schieben",
     "previous_slide": "Nach links schieben",
-    "loading": "Wird geladen ...",
+    "loading": "Wird geladen...",
     "of": "von"
   },
   "blogs": {
@@ -80,11 +80,11 @@
       "read_more_title": "Weiterlesen: {{ title }}",
       "read_more": "Weiterlesen",
       "comments": {
-        "one": "{{ count }} Kommentar",
+        "one": "{{ count }} Antwort",
         "other": "{{ count }} Kommentare"
       },
-      "moderated": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen.",
-      "comment_form_title": "Hinterlasse einen Kommentar",
+      "moderated": "Hinweis: Kommentare müssen vor der Veröffentlichung genehmigt werden.",
+      "comment_form_title": "Einen Kommentar posten",
       "name": "Name",
       "email": "E-Mail",
       "message": "Kommentar",
