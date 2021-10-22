@@ -1280,7 +1280,12 @@
     "addresses": {
       "zip_code": "Postal Code",
       "postal_code": "Postal Code",
-      "postcode": "Postal Code"
+      "postcode": "Postal Code",
+      "pincode": "Postal Code",
+      "region": "Region",
+      "prefecture": "Prefecture",
+      "province": "Province",
+      "state": "Stands"
     }
   }
 }
