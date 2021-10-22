@@ -713,7 +713,12 @@
         "card_change_label": "Modify",
         "ends_with_label": "ends in %{last_digits}",
         "masked_digits_label": "•••• %{last_digits}",
-        "saved_by_payment_method": "Saved with %{payment_method}"
+        "saved_by_payment_method": "Saved with %{payment_method}",
+        "pay_with_payment_method": "Pay with %{payment_method}",
+        "same_billing_address_label": "Same as delivery address",
+        "different_billing_address_label": "Use a different billing address",
+        "free_order_notice_html": "Your order is <strong>for free<\/strong>. No payment is required.",
+        "express_checkout_free_order": "There is no charge for a free order"
       }
     }
   }
