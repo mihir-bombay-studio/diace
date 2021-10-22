@@ -1057,7 +1057,12 @@
         "other_options": "Other options",
         "shop_phone_description": "You will receive a text message with a link to the Shop app to track your order.",
         "ready_for_delivery_title": "Your order is ready for delivery.",
-        "ready_for_delivery_description": "We have prepared your order."
+        "ready_for_delivery_description": "We have prepared your order.",
+        "order_status_confirmed_order_local": "We prepare your order for delivery.",
+        "delivery_information_label": "Delivery Information:",
+        "gift_card_sent_confirmation": "Gift cards sent",
+        "out_for_delivery_local_title": "Your order is ready for delivery",
+        "out_for_delivery_local_description_html": "You will receive your order shortly."
       }
     }
   }
