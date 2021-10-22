@@ -923,7 +923,14 @@
         "you_will_not_be_charged": "No fees will be charged yet"
       },
       "failed_payment": {
-        "page_title": "Payment could not be processed"
+        "page_title": "Payment could not be processed",
+        "title": "Payment could not be processed",
+        "payment_not_processed_title": "Your payment cannot be processed.",
+        "payment_not_processed_text": "No fees have been charged. Return to your cart to complete your purchase.",
+        "return_to_cart_button_label": "Back to shopping cart"
+      },
+      "payment_gateway": {
+        "credit_card_label": "credit card"
       }
     }
   }
