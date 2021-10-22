@@ -162,11 +162,11 @@
       "form": {
         "name": "Name",
         "email": "E-mail",
-        "phone": "Phone number",
-        "comment": "Comment",
-        "send": "Send",
-        "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
-        "error_heading": "Please adjust the following:"
+        "phone": "phone number",
+        "comment": "Response",
+        "send": "To steer",
+        "post_success": "Thank you for contacting us. You will hear from us as soon as possible.",
+        "error_heading": "Adjust the following:"
       }
     },
     "404": {
@@ -249,7 +249,7 @@
     }
   },
   "localization": {
-    "country_label": "Country\/region",
+    "country_label": "Country\/Region",
     "language_label": "Language",
     "update_language": "Update language",
     "update_country": "Update country\/region"
