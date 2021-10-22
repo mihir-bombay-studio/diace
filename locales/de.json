@@ -813,7 +813,17 @@
         "credit_card_verification_value_blank": "Geben Sie den CVV\/CVC oder den Sicherheitscode Ihrer Karte ein",
         "reduction_code_code_not_found": "Geben Sie einen gültigen Rabattcode oder eine Geschenkkarte ein",
         "reduction_code_discount_not_found": "Bitte gib einen gültigen Rabattcode ein",
-        "reduction_code_gift_card_code_invalid": "Bitte geben Sie einen gültigen Geschenkgutschein ein"
+        "reduction_code_gift_card_code_invalid": "Bitte geben Sie einen gültigen Geschenkgutschein ein",
+        "reduction_code_gift_card_unusable": "Sie können keine Geschenkkarte verwenden, um eine andere Geschenkkarte zu kaufen",
+        "shipping_line_phone_blank": "Bitte geben Sie eine Telefonnummer ein, um diese Versandmethode zu verwenden",
+        "shipping_line_phone_invalid": "Bitte geben Sie eine gültige Telefonnummer ein, um diese Versandmethode zu verwenden",
+        "gift_card_already_applied": "Diese Geschenkkarte wurde bereits auf Ihre Bestellung angewendet",
+        "gift_card_disabled": "Diese Geschenkkarte ist nicht mehr verfügbar",
+        "gift_card_expired": "Diese Geschenkkarte ist abgelaufen",
+        "gift_card_depleted": "Auf dieser Geschenkkarte ist kein Geld mehr vorhanden",
+        "gift_card_currency_mismatch": "Für diese Bestellung können nur Geschenkkarten in %{checkout_currency} verwendet werden",
+        "payment_gateway_needs_paid_plan_error": "Diese Zahlungsmethode kann derzeit für diesen Shop nicht verwendet werden",
+        "payment_gateway_incompatible_with_multi_currency": "Bezahlen Sie mit einer Kreditkarte, um in Ihrer Landeswährung zu bezahlen"
       }
     }
   }
