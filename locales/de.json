@@ -90,23 +90,23 @@
       "message": "Antwort",
       "post": "Hinterlasse einen Kommentar",
       "back_to_blog": "Zurück zum Blog",
-      "share": "Diesen Artikel teilen",
-      "success": "Dein Kommentar wurde erfolgreich gepostet! Vielen Dank!",
-      "success_moderated": "Dein Kommentar wurde erfolgreich gepostet. Da unser Blog moderiert wird, werden wir ihn erst kurze Zeit später veröffentlichen."
+      "share": "Teile diese Artikel",
+      "success": "Ihr Kommentar wurde veröffentlicht! Dankeschön!",
+      "success_moderated": "Ihr Kommentar wurde veröffentlicht. Wir veröffentlichen es so; unser Blog wird moderiert."
     }
   },
   "onboarding": {
-    "product_title": "Beispiel für Produkttitel",
-    "collection_title": "Name deiner Kategorie"
+    "product_title": "Beispielprodukttitel",
+    "collection_title": "Der Name Ihrer Sammlung"
   },
   "products": {
     "product": {
       "add_to_cart": "In den Warenkorb legen",
       "description": "Beschreibung",
-      "on_sale": "Sale",
+      "on_sale": "Angebot",
       "product_variants": "Produktvarianten",
       "quantity": {
-        "label": "Anzahl",
+        "label": "Nummer",
         "input_label": "Anzahl von {{ product }}",
         "increase": "Erhöhe die Menge für {{ product }}",
         "decrease": "Verringere die Menge für {{ product }}"
