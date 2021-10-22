@@ -309,10 +309,10 @@
     },
     "order": {
       "title": "Order {{ name }}",
-      "date_html": "Placed on {{ date }}",
-      "cancelled_html": "Order Cancelled on {{ date }}",
+      "date_html": "Posted on {{ date }}",
+      "cancelled_html": "Order canceled on {{ date }}",
       "cancelled_reason": "Reason: {{ reason }}",
-      "billing_address": "Billing Address",
+      "billing_address": "Billing address",
       "payment_status": "Payment Status",
       "shipping_address": "Shipping Address",
       "fulfillment_status": "Fulfillment Status",
