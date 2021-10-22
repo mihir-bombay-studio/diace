@@ -1110,6 +1110,13 @@
             "terms_of_service": "Conditions d'utilisation"
           }
         }
+      },
+      "shop_policies": {
+        "refund_policy": "Politique de remboursement",
+        "privacy_policy": "Politique de confidentialité",
+        "terms_of_service": "Termes et conditions",
+        "legal_notice": "Mention légale",
+        "shipping_policy": "Politique d'expédition"
       }
     }
   }
