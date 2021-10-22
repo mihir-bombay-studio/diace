@@ -988,7 +988,19 @@
         "failed_contact_merchant_no_company": "Bitte kontaktieren Sie uns, um die Lieferung zu vereinbaren.",
         "non_shippable_title": "Ihre Bestellung ist abgeschlossen",
         "login_title": "Melden Sie sich an, um alle Bestelldetails anzuzeigen",
-        "login_description": "Ihre Bestellnummer finden Sie in der Rechnung, die Sie per E-Mail erhalten haben."
+        "login_description": "Ihre Bestellnummer finden Sie in der Rechnung, die Sie per E-Mail erhalten haben.",
+        "login_description_phone": "Ihre Bestellnummer finden Sie in der Rechnung, die Sie per SMS erhalten haben.",
+        "login_not_customer_html": "Nicht %{name}? Sie können %{link}",
+        "login_reorder_link_text": {
+          "one": "auch dieses Produkt kaufen",
+          "other": "auch diese Produkte kaufen"
+        },
+        "customer_information_hidden_fields_message": "Melden Sie sich an, um alle Kundeninformationen anzuzeigen.",
+        "cancelled_title": "Ihre Bestellung wurde storniert",
+        "cancelled_description": "Ihre Bestellung wurde am %{date} storniert. Bitte kontaktieren Sie uns, wenn Sie Fragen haben.",
+        "order_number_label": "Bestellnummer",
+        "customer_validation_error": "Bitte geben Sie eine gültige E-Mail-Adresse oder Bestellnummer ein.",
+        "customer_validation_error_phone": "Bitte geben Sie eine gültige Telefon- oder Bestellnummer ein."
       }
     }
   }
