@@ -452,7 +452,12 @@
         "province_label": "Province",
         "province_placeholder": "Province",
         "county_label": "Province",
-        "county_placeholder": "Province"
+        "county_placeholder": "Province",
+        "state_label": "Stands",
+        "state_placeholder": "Stands",
+        "region_label": "Region",
+        "region_placeholder": "Region",
+        "prefecture_label": "Prefecture"
       }
     }
   }
