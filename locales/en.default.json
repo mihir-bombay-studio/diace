@@ -71,13 +71,13 @@
       "external": "Opens external website."
     },
     "of": "by",
-    "next_slide": "Slide right",
-    "previous_slide": "Slide left",
+    "next_slide": "Slide to the right",
+    "previous_slide": "Slide to the left",
     "loading": "Loading..."
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
+      "blog": "blog",
       "read_more_title": "Read more: {{ title }}",
       "read_more": "Read more",
       "comments": {
