@@ -1156,8 +1156,13 @@
             "one": "added",
             "other": "%{count} added"
           },
-          "removed": "Deleted"
-        }
+          "removed": "Deleted",
+          "subtracted": "%{count} deleted"
+        },
+        "additional_payment_requested": "Payment of %{total_outstanding} is required",
+        "checkout_review_and_pay": "Your order %{order_name} has been updated. Review these changes and then pay to confirm your order.",
+        "order_updated_on": "Your order has been updated on %{last_edited_at}.",
+        "order_review_and_pay": "Your order has been updated. Check and pay to confirm your order."
       }
     }
   }
