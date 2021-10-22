@@ -628,7 +628,29 @@
         "shipping_line_delivery_instructions": "Enter required information such as door codes and delivery instructions.",
         "local_delivery": "Local delivery",
         "subscription_shipping": "Subscription for sending",
-        "shipping_method_one_time_purchase_group_title": "One-time-purchase"
+        "shipping_method_one_time_purchase_group_title": "One-time-purchase",
+        "shipping_method_subscription_group_title": "Subscription",
+        "one_time_purchase_shipping": "Send once",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "for %{count} delivery(s)",
+            "other": "for %{count} deliveries"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "every day",
+              "other": "every %{count} days"
+            },
+            "week": {
+              "one": "weekly",
+              "other": "every %{count} weeks"
+            },
+            "month": {
+              "one": "every month",
+              "other": "every %{count} months"
+            }
+          }
+        }
       }
     }
   }
