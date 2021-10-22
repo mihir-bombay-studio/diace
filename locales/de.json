@@ -1131,6 +1131,19 @@
           "paid_in_installments": "Zahlung in Raten mit Shop Pay.",
           "view_schedule": "Zeitplan anzeigen"
         }
+      },
+      "notifications": {
+        "title": "Benachrichtigungen"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Zu zahlender Betrag für die Bestellung %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "hinzugefügt",
+            "other": "%{count} hinzugefügt"
+          },
+          "removed": "Gelöscht"
+        }
       }
     }
   }
