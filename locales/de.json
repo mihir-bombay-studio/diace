@@ -609,7 +609,12 @@
         },
         "shipping_rate_discounted_amount": "Waschen: %{original_amount}. Jetzt: %{amount}",
         "shipping_line_delivery_phone": "Wir können diese Nummer verwenden, um Sie über Ihre Lieferung anzurufen oder Ihnen eine Nachricht zu senden.",
-        "optional_shipping_line_delivery_instructions_label": "Lieferhinweise (optional)"
+        "optional_shipping_line_delivery_instructions_label": "Lieferhinweise (optional)",
+        "shipping_line_delivery_phone_label": "Handy Nummer",
+        "shipping_line_delivery_instructions": "Geben Sie die erforderlichen Informationen wie Türcodes und Lieferanweisungen ein.",
+        "local_delivery": "Lieferung vor Ort",
+        "subscription_shipping": "Abonnement zum Versenden",
+        "shipping_method_one_time_purchase_group_title": "Einmaliger kauf"
       }
     }
   }
