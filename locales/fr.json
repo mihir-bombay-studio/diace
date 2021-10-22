@@ -825,7 +825,50 @@
         "shipping_line_phone_blank": "Veuillez entrer un numéro de téléphone pour utiliser ce mode de livraison",
         "shipping_line_phone_invalid": "Veuillez entrer un numéro de téléphone valide pour utiliser ce mode de livraison",
         "gift_card_already_applied": "Cette carte cadeau a déjà été appliquée à votre commande",
-        "gift_card_disabled": "Cette carte cadeau n'est plus disponible"
+        "gift_card_disabled": "Cette carte cadeau n'est plus disponible",
+        "gift_card_expired": "Cette carte-cadeau a expiré",
+        "gift_card_depleted": "Il n'y a plus d'argent sur cette carte cadeau",
+        "gift_card_currency_mismatch": "Seules les cartes-cadeaux en %{checkout_currency} peuvent être utilisées pour cette commande",
+        "payment_gateway_needs_paid_plan_error": "Ce mode de paiement ne peut actuellement pas être utilisé pour ce magasin",
+        "payment_gateway_incompatible_with_multi_currency": "Payez avec une carte de crédit pour payer dans votre devise locale",
+        "subscription_agreement_blank": "Pour continuer votre achat, vous devez accepter les termes de l'abonnement",
+        "physical_gift_card_invalid_quantity": "Les lignes de commande de cartes-cadeaux physiques doivent avoir une quantité correspondant au nombre de codes de cartes-cadeaux.",
+        "physical_gift_card_duplicate_code": "La ligne de commande pour la carte-cadeau physique contient un code en double.",
+        "physical_gift_card_invalid_code": "Le code de la carte-cadeau physique n'est pas valide.",
+        "payment_gateway_not_in_test_mode": "n'est pas conçu pour les commandes de test. Ce magasin ne peut pas accepter de vraies commandes ni traiter de vrais paiements.",
+        "tips_invalid_tip_amount": "Veuillez saisir un pourboire ne dépassant pas %{amount}",
+        "payment_gateway_unsupported_for_subscriptions": "Ce mode de paiement n'est pas disponible pour les commandes d'abonnement.",
+        "sms_marketing_phone_invalid": "entrez un numéro de téléphone valide"
+      },
+      "payment_errors": {
+        "generic_error": "Un problème est survenu lors du traitement de votre paiement. Veuillez réessayer ou utiliser un autre mode de paiement.",
+        "rejected_transaction": "Votre paiement a été refusé. Veuillez réessayer ou utiliser un autre mode de paiement.",
+        "credit_card_processing": "Votre paiement ne peut pas être traité pour des raisons techniques. Veuillez réessayer dans quelques minutes ou utiliser un autre mode de paiement.",
+        "order_total_changed": "Le total de votre commande a changé. Veuillez actualiser votre panier et réessayer.",
+        "payment_processing": "Votre paiement ne peut pas être traité pour des raisons techniques. Veuillez réessayer ou utiliser un autre mode de paiement.",
+        "paypal_zero_amount": "Vous ne pouvez pas utiliser PayPal pour les commandes %{amount}. Confirmez que votre commande est correcte et payez sans PayPal.",
+        "paypal_invalid_token": "PayPal n'était pas disponible. Veuillez réessayer ou utiliser une autre méthode de paiement.",
+        "pay_later_failed": "Une erreur s'est produite lors du traitement de votre paiement avec Payer plus tard. Veuillez choisir un autre mode de paiement et réessayer.",
+        "three_d_secure_failed": "Votre paiement ne peut pas être vérifié. Veuillez réessayer ou utiliser un autre mode de paiement.",
+        "three_d_secure_throttled": "Trop d'essais; attendez un peu avant de réessayer",
+        "subscription_agreement_blank": "Vos informations de paiement sont enregistrées lors de l'achat d'un abonnement. Veuillez confirmer que vous acceptez ou supprimez tout abonnement de votre commande pour continuer.",
+        "three_d_secure_failed_duplicate": "L'authentification par carte de crédit 3D Secure a échoué car une autre est déjà en cours.",
+        "insufficient_funds": "Votre paiement a été refusé en raison de fonds insuffisants. Veuillez réessayer ou utiliser un autre mode de paiement.",
+        "fraud_payment_errors": {
+          "transaction_declined": "Cette transaction a été rejetée",
+          "address_mismatch": "L'adresse et le code postal ne correspondent pas.",
+          "cannot_process": "Cette transaction ne peut pas être traitée.",
+          "no_match": "Aucune concordance",
+          "card_declined": "Votre carte a été refusée"
+        },
+        "payment_processing_no_retry": "Votre paiement ne peut pas être traité pour des raisons techniques. Essayez un autre mode de paiement."
+      },
+      "shipping_errors": {
+        "shipping_method": "Votre panier a été mis à jour et les frais de livraison précédents ne sont pas valables. Choisissez un nouveau tarif.",
+        "shipping_method_not_available": "Votre panier a été mis à jour et les articles que vous avez ajoutés ne peuvent pas être expédiés à votre adresse. Veuillez retirer les articles pour terminer votre commande.",
+        "shipping_method_not_available_generic": {
+          "one": "Cette commande ne peut pas être expédiée à l'adresse saisie. Veuillez vérifier l'adresse et assurez-vous que tous les champs sont remplis correctement. Puis réessayez."
+        }
       }
     }
   }
