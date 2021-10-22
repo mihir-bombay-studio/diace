@@ -1396,7 +1396,17 @@
         "empty_update": "impossible de mettre à jour le panier vide",
         "missing_parameters": "pas d'identifiant ou de numéro de ligne valide",
         "generic_error": "Erreur de panier",
-        "too_many_line_items_error": "Votre panier ne peut pas contenir plus de %{max} articles."
+        "too_many_line_items_error": "Votre panier ne peut pas contenir plus de %{max} articles.",
+        "link_expired": "Le lien a expiré",
+        "link_no_longer_exists": "Le lien n'existe plus.",
+        "stock_problems_html": "Un ou plusieurs articles ne sont plus disponibles. Nous avons un <a href='%{link}'>panier mis à jour<\/a> préparé.",
+        "changed": "Panier modifié",
+        "items_changed": "Un ou plusieurs articles ont été modifiés.",
+        "product_sold_out": "Le produit '%{name}' est déjà épuisé.",
+        "variant_not_found": "Impossible de trouver la variante",
+        "variant_requires_selling_plan": "La variante ne peut être achetée qu'avec un abonnement de vente.",
+        "shipping_address_not_required": "Aucune expédition n'est requise avec ce panier",
+        "shipping_address_invalid": "Un problème est survenu lors du calcul de vos frais d'expédition. Passez à la caisse pour choisir les frais de livraison avant de finaliser votre commande."
       }
     }
   }
