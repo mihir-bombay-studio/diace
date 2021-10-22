@@ -1357,7 +1357,12 @@
       "order": {
         "not_available": "Cette commande n'est pas disponible",
         "financial_status": {
-          "authorized": "Vérifié"
+          "authorized": "Vérifié",
+          "pending": "En attente",
+          "paid": "Payé",
+          "unpaid": "Non payé",
+          "voided": "Expiré",
+          "partially_paid": "Partiellement payé"
         }
       }
     }
