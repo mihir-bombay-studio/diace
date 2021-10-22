@@ -748,7 +748,21 @@
         "subscription_card_update_agreement_label": "Wenn Sie Ihre Zahlungsmethode ändern, werden Ihr Abonnement und Ihre wiederkehrenden Zahlungen in Zukunft aktualisiert.",
         "card_security_vault_notice": "Wir benötigen Ihre Daten für zukünftige Zahlungen. Alle Transaktionen sind gesichert und verschlüsselt.",
         "taxes_not_included": "Ohne Steuer",
-        "no_taxes_banner_content": "Auf diese Bestellung werden keine Steuern erhoben. Sie können keine Steuern mehr hinzufügen, wenn die Zahlung bereits eingezogen wurde."
+        "no_taxes_banner_content": "Auf diese Bestellung werden keine Steuern erhoben. Sie können keine Steuern mehr hinzufügen, wenn die Zahlung bereits eingezogen wurde.",
+        "card_update_label": "Karte aktualisieren",
+        "paypal": {
+          "connect": "Klicken Sie hier, um Ihr PayPal-Konto zu verknüpfen"
+        },
+        "subscription_agreement_label": "Ich verstehe, dass ich mit einem Abonnement einverstanden bin. Es wird zum angegebenen Preis und in der angegebenen Häufigkeit verlängert, bis es abläuft oder %{cancelled} wird.",
+        "subscription_agreement_cancelled": "Storniert",
+        "card_expired": "Abgelaufen",
+        "card_verification_confirm": "Geben Sie zur Überprüfung den Sicherheitscode Ihrer Karte ein.",
+        "different_credit_card_label": "Verwenden Sie eine andere Kreditkarte",
+        "ftd_vault_credit_card_label": "Speichern Sie meine Kreditkarte für einen schnelleren Checkout",
+        "apple": {
+          "connect": "Klicken Sie hier, um Ihr Apple Pay-Konto zu verknüpfen",
+          "not_available": "Apple Pay ist in diesem Browser nicht verfügbar. Um Ihr Apple Pay-Konto zu verknüpfen, müssen Sie Safari auf einem Apple-Gerät verwenden."
+        }
       }
     }
   }
