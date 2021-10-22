@@ -987,7 +987,12 @@
         "out_for_delivery_title": "Your order is ready for delivery",
         "out_for_delivery_description_html": "Your order is on its way and should arrive today. If not delivered in the next two days, %{contact_us}.",
         "attempted_delivery": "Delivery attempt",
-        "attempted_delivery_title": "An attempt was made to deliver your order"
+        "attempted_delivery_title": "An attempt was made to deliver your order",
+        "attempted_delivery_description_html": "The attempt to deliver your order was unsuccessful. To arrange another delivery attempt, %{contact_us}.",
+        "delivered": "Worried",
+        "delivered_title": "Your order has been delivered",
+        "delivered_description_html": "Your order has been delivered to the address you provided. If you didn't receive it, or if there are other problems, %{contact_us}.",
+        "contact_us": "Contact us"
       }
     }
   }
