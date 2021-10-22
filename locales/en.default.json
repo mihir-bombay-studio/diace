@@ -156,12 +156,12 @@
       "title": "Search results"
     },
     "cart": {
-      "cart": "Cart"
+      "cart": "Shopping cart"
     },
     "contact": {
       "form": {
         "name": "Name",
-        "email": "Email",
+        "email": "E-mail",
         "phone": "Phone number",
         "comment": "Comment",
         "send": "Send",
