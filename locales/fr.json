@@ -1,7 +1,7 @@
 {
   "general": {
     "password_page": {
-      "login_form_heading": "Accéder à la boutique à l'aide d'un mot de passe :",
+      "login_form_heading": "Entrez dans le magasin avec le mot de passe :",
       "login_password_button": "Saisir avec un mot de passe",
       "login_form_password_label": "Mot de passe",
       "login_form_password_placeholder": "Votre mot de passe",
@@ -217,7 +217,7 @@
     },
     "collection_template": {
       "title": "Collection",
-      "sort_by_label": "Trier par",
+      "sort_by_label": "trier sur",
       "sort_button": "Trier",
       "empty": "aucun produit trouvé",
       "apply": "Postuler",
@@ -225,12 +225,12 @@
       "clear_all": "Tout effacer",
       "from": "Par",
       "filter_and_sort": "Filtrer et trier",
-      "filter_by_label": "Filtrer par",
-      "filter_button": "Filtrer",
-      "max_price": "Le prix le plus élevé est de {{ price }}",
+      "filter_by_label": "Filtrer sur",
+      "filter_button": "Filtre",
+      "max_price": "Le prix le plus élevé est {{ price }}",
       "reset": "Réinitialiser",
-      "to": "À",
-      "use_fewer_filters_html": "Utiliser moins de filtres ou <a class=\"{{ class }}\" href=\"{{ link }}\">tout effacer<\/a>",
+      "to": "Au",
+      "use_fewer_filters_html": "Utilisez moins de filtres ou <a class=\"{{ class }}\" href=\"{{ link }}\">tout effacer<\/a>",
       "product_count": {
         "one": "Affichage de {{ count }} produit sur {{ product_count }}",
         "other": "Affichage de {{ count }} produits sur {{ product_count }}"
