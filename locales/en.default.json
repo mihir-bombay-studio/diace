@@ -1223,7 +1223,27 @@
         },
         "recurring_total_intervals": {
           "day": {
-            "one": "day"
+            "one": "day",
+            "other": "%{count} days"
+          },
+          "week": {
+            "one": "week",
+            "other": "%{count} weeks"
+          },
+          "month": {
+            "one": "month",
+            "other": "%{count} months"
+          },
+          "year": {
+            "one": "year",
+            "other": "%{count} year"
+          }
+        },
+        "recurring_totals_with_initial_order_shipping_discount": "First payment %{total_price_with_discount} then %{recurring_total}",
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", then %{count} payment of %{total_price}",
+            "other": ", then %{count} payments, each of %{total_price}"
           }
         }
       }
