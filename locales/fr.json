@@ -908,8 +908,15 @@
           "medium": {
             "one": "Votre commande est en traitement. Le temps d'attente estimé est de 1 minute.",
             "other": "Votre commande est en traitement. Le temps d'attente estimé est de %{count} minutes."
-          }
-        }
+          },
+          "long": "Vous recevrez un e-mail dès que votre commande aura été traitée. Il y a actuellement un grand nombre de commandes.",
+          "no_auto_refresh_html": "%{link} si vous n'êtes pas automatiquement redirigé.",
+          "refresh_this_page": "Recharger cette page"
+        },
+        "you_will_not_be_charged": "Aucun frais ne sera facturé pour le moment"
+      },
+      "failed_payment": {
+        "page_title": "Le paiement n'a pas pu être traité"
       }
     }
   }
