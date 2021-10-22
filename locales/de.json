@@ -1389,8 +1389,34 @@
         "empty_update": "Kann den leeren Warenkorb nicht aktualisieren",
         "missing_parameters": "keine gültige ID oder Zeilennummer",
         "generic_error": "Warenkorbfehler",
-        "too_many_line_items_error": "Ihr Warenkorb darf nicht mehr als %{max} Artikel enthalten."
+        "too_many_line_items_error": "Ihr Warenkorb darf nicht mehr als %{max} Artikel enthalten.",
+        "link_expired": "Link abgelaufen",
+        "link_no_longer_exists": "Link existiert nicht mehr.",
+        "stock_problems_html": "Ein oder mehrere Artikel sind nicht mehr verfügbar. Wir haben ein <a href='%{link}'>aktualisierter Warenkorb<\/a> bereit.",
+        "changed": "Warenkorb geändert",
+        "items_changed": "Ein oder mehrere Artikel wurden geändert.",
+        "product_sold_out": "Das Produkt '%{name}' ist bereits ausverkauft.",
+        "variant_not_found": "Kann Variante nicht finden",
+        "variant_requires_selling_plan": "Variante kann nur mit einem Sales-Abo erworben werden.",
+        "shipping_address_not_required": "Für diesen Warenkorb ist kein Versand erforderlich",
+        "shipping_address_invalid": "Bei der Berechnung Ihrer Versandkosten ist ein Problem aufgetreten. Gehen Sie zur Kasse, um die Versandkosten auszuwählen, bevor Sie Ihre Bestellung abschließen.",
+        "selling_plan_not_applicable": "Das Verkaufsabonnement kann nicht auf die Variante angewendet werden"
+      },
+      "storefront": {
+        "invalid_password": "Passwort falsch, bitte versuchen Sie es erneut."
+      },
+      "tags": {
+        "add_articles": "Beschränken Sie die Suche auf Artikel mit dem Tag %{tag}",
+        "add_products": "Beschränken Sie die Suche auf Produkte mit dem passenden Tag %{tag}",
+        "remove_articles": "Erweitern Sie die Suche auf Artikel, die nicht mit %{tag} gekennzeichnet sind",
+        "remove_products": "Tag entfernen %{tag}"
       }
+    },
+    "page_titles": {
+      "products": "Produkte",
+      "shopping_cart": "Ihr Einkaufswagen",
+      "account": "Konto",
+      "create_account": "ein Konto erstellen"
     }
   }
 }
