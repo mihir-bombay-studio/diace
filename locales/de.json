@@ -943,7 +943,17 @@
         "estimated_arrival": "Voraussichtliches Lieferdatum:",
         "re-order": "Bestellen Sie die gleichen Artikel erneut",
         "confirmed": "Bestätigt",
-        "thank_you_title": "Ihre Bestellung wurde bestätigt"
+        "thank_you_title": "Ihre Bestellung wurde bestätigt",
+        "thank_you_confirmed_order_with_email": "Sie erhalten in Kürze eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_confirmed_order_with_phone": "Sie erhalten in Kürze eine Bestätigungs-SMS mit Ihrer Bestellnummer",
+        "thank_you_confirmed_order_with_email_and_phone": "Sie erhalten in Kürze eine Bestätigungs-E-Mail und eine SMS mit Ihrer Bestellnummer.",
+        "thank_you_confirmed_order_with_missing": "Bitte kontaktieren Sie uns per E-Mail oder Telefon für Ihre Auftragsbestätigung.",
+        "order_status_confirmed_order_with_email": "Sie erhalten eine E-Mail, wenn Ihre Bestellung fertig ist.",
+        "order_status_confirmed_order_with_phone": "Sie erhalten eine SMS, wenn Ihre Bestellung fertig ist.",
+        "order_status_confirmed_order_with_email_and_phone": "Sie erhalten eine E-Mail und eine SMS, wenn Ihre Bestellung fertig ist.",
+        "order_status_updates_with_email": "Sie erhalten per E-Mail Updates zu Versand und Lieferung.",
+        "order_status_updates_with_phone": "Sie werden per SMS über Ihren Versand und Ihre Zustellung informiert.",
+        "order_status_updates_with_email_and_phone": "Sie erhalten Updates zu Versand und Lieferung per E-Mail und SMS."
       }
     }
   }
