@@ -694,7 +694,24 @@
         "card_verification_value_explanation_other": "3-stelliger Sicherheitscode auf der Rückseite Ihrer Karte",
         "card_start_label": "Ausstellungsdatum (MM \/ YY)",
         "card_start_placeholder": "Ausstellungsdatum (MM \/ YY)",
-        "card_issue_number_label": "Ausgabe Nummer"
+        "card_issue_number_label": "Ausgabe Nummer",
+        "card_issue_number_placeholder": "Ausgabe Nummer",
+        "card_change_label": "Ändern",
+        "ends_with_label": "endet in %{last_digits}",
+        "masked_digits_label": "•••• %{last_digits}",
+        "saved_by_payment_method": "Gespeichert mit %{payment_method}",
+        "pay_with_payment_method": "Bezahlen mit %{payment_method}",
+        "same_billing_address_label": "Wie Lieferadresse",
+        "different_billing_address_label": "Verwenden Sie eine andere Rechnungsadresse",
+        "free_order_notice_html": "Ihre Bestellung ist <strong>kostenlos<\/strong>. Es ist keine Zahlung erforderlich.",
+        "express_checkout_free_order": "Für eine kostenlose Bestellung fallen keine Gebühren an",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Ihre Bestellung wird mit Ihrem Geschenkgutschein bezahlt.",
+          "other": "Ihre Bestellung wird mit Ihren Geschenkkarten bezahlt."
+        },
+        "offsite_gateway_redirect_hint": "Nachdem Sie auf „%{button_label}“ geklickt haben, werden Sie zu %{gateway_label} weitergeleitet, um Ihren Einkauf sicher abzuschließen.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} gesamt %{total_shop_price}",
+        "billing_address_title": "Rechnungsadresse"
       }
     }
   }
