@@ -733,7 +733,12 @@
         "klarna_pay_later_label": "Bezahlen Sie danach mit Klarna",
         "bancontact_label": "Bancontact",
         "eps_label": "eps-Überweisung",
-        "klarna_slice_it_label": "Finanzieren mit Klarna"
+        "klarna_slice_it_label": "Finanzieren mit Klarna",
+        "card_expiration_month_label": "Monat des Ablaufens",
+        "card_expiration_year_label": "Ablaufjahr",
+        "card_information_notice": "Alle Transaktionen sind gesichert und verschlüsselt. Kreditkartendaten werden nie gespeichert.",
+        "credit_card_start_month": "Monat Startdatum",
+        "credit_card_start_year": "Jahresbeginn"
       }
     }
   }
