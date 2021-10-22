@@ -69,22 +69,22 @@
       "new_window": "Ouvre dans une nouvelle fenêtre.",
       "external": "Ouvre un site Web externe."
     },
-    "next_slide": "Faire glisser vers la droite",
-    "previous_slide": "Faire glisser vers la gauche",
-    "loading": "Chargement en cours...",
+    "next_slide": "Glisser vers la droite",
+    "previous_slide": "Glisser vers la gauche",
+    "loading": "Chargement...",
     "of": "par"
   },
   "blogs": {
     "article": {
       "blog": "Blog",
-      "read_more_title": "Lire la suite : {{ title }}",
+      "read_more_title": "Lire la suite : {{ title }}",
       "read_more": "Lire la suite",
       "comments": {
-        "one": "{{ count }} commentaire",
-        "other": "{{ count }} commentaires"
+        "one": "{{ count }} réponse",
+        "other": "{{ count }} commentaires"
       },
-      "moderated": "Veuillez noter que les commentaires doivent être approuvés avant d'être publiés.",
-      "comment_form_title": "Laisser un commentaire",
+      "moderated": "Remarque : Les commentaires doivent être approuvés avant d'être publiés.",
+      "comment_form_title": "Poste un commentaire",
       "name": "Nom",
       "email": "E-mail",
       "message": "Commentaire",
