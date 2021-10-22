@@ -332,7 +332,7 @@
       "subtotal": "Subtotal"
     },
     "orders": {
-      "title": "Order history",
+      "title": "Order overview",
       "order_number": "Order",
       "order_number_link": "Order number {{ number }}",
       "date": "Date",
