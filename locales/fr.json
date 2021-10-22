@@ -311,12 +311,12 @@
       "none": "Vous ne avez pas encore passé de commande."
     },
     "recover_password": {
-      "title": "Réinitialiser son mot de passe",
-      "subtext": "Nous vous ferons parvenir un e-mail pour réinitialiser votre mot de passe",
-      "success": "Nous vous avons envoyé un e-mail contenant un lien pour mettre à jour votre mot de passe."
+      "title": "réinitialiser le mot de passe",
+      "subtext": "Nous vous enverrons un e-mail pour réinitialiser votre mot de passe",
+      "success": "Nous vous avons envoyé un e-mail avec un lien pour réinitialiser votre mot de passe."
     },
     "register": {
-      "title": "Créer un compte",
+      "title": "créer un compte",
       "first_name": "Prénom",
       "last_name": "Nom de famille",
       "email": "E-mail",
