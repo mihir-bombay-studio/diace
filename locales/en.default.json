@@ -1336,7 +1336,21 @@
       "invalid_region_in_country": "is not a valid region in %{country}",
       "less_than_or_equal_to": "must be less than or equal to %{count}",
       "not_supported": "is not supported",
-      "full_name_required": "Enter a first and last name"
+      "full_name_required": "Enter a first and last name",
+      "invalid_for_card_type": "is invalid",
+      "invalid_type": "sorry, we do not accept cards of this type",
+      "invalid_format": "format is invalid",
+      "expired": "has expired",
+      "invalid_start_date_or_issue_number_for_debit": "valid start date or valid issue number required",
+      "invalid_expiry_year": "is not a valid expiration year",
+      "reset_password_html": "This email address is already associated with an account. If this account is yours, then you can <a href=\"\/account\/login#recover\">reset your password<\/a>",
+      "verify_email": "We have sent an email to %{customer_email}. Please click on the attached link to check your email address.",
+      "blocked_address": "This location is not supported."
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Error resetting the password"
+      }
     }
   }
 }
