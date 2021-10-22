@@ -332,9 +332,9 @@
     },
     "order": {
       "title": "Commande {{ name }}",
-      "date_html": "Passée le {{ date }}",
+      "date_html": "Posté le {{ date }}",
       "cancelled_html": "Commande annulée le {{ date }}",
-      "cancelled_reason": "Motif : {{ reason }}",
+      "cancelled_reason": "Raison : {{ reason }}",
       "billing_address": "Adresse de facturation",
       "payment_status": "Statut de paiement",
       "shipping_address": "Adresse d'expédition",
