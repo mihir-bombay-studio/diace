@@ -1000,7 +1000,21 @@
         "cancelled_description": "Ihre Bestellung wurde am %{date} storniert. Bitte kontaktieren Sie uns, wenn Sie Fragen haben.",
         "order_number_label": "Bestellnummer",
         "customer_validation_error": "Bitte geben Sie eine gültige E-Mail-Adresse oder Bestellnummer ein.",
-        "customer_validation_error_phone": "Bitte geben Sie eine gültige Telefon- oder Bestellnummer ein."
+        "customer_validation_error_phone": "Bitte geben Sie eine gültige Telefon- oder Bestellnummer ein.",
+        "login": "Anmeldung",
+        "unfulfilled_items_title": "Versand wird vorbereitet",
+        "unfulfilled_items_description": "Wir bereiten diese Artikel derzeit für den Versand vor.",
+        "marker": {
+          "current": "Aktueller Versandort",
+          "shipping": "Lieferadresse"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Artikel in dieser Sendung",
+          "unfulfilled_table_title": "Artikel werden für den Versand vorbereitet",
+          "product_image_label": "Produktbild",
+          "description_label": "Beschreibung",
+          "quantity_label": "Nummer"
+        }
       }
     }
   }
