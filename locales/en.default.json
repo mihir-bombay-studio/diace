@@ -610,7 +610,14 @@
         "cheapest_rate_label": "cheapest",
         "please_enter_your_shipping_information_notice": "Enter your shipping information.",
         "estimated_delivery_date": {
-          "one": "1 working day"
+          "one": "1 working day",
+          "other": "%{count} working days"
+        },
+        "estimated_delivery_date_range": "%{minimum} to %{maximum} working days",
+        "shipping_line_phone_label": "Mobile phone number (mandatory)",
+        "shipping_line_phone": "Your carrier can use this number to contact you.",
+        "other_method": {
+          "zero": "No other methods available"
         }
       }
     }
