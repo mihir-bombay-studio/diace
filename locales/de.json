@@ -909,7 +909,21 @@
         "you_will_not_be_charged": "Es werden noch keine Gebühren erhoben"
       },
       "failed_payment": {
-        "page_title": "Zahlung konnte nicht verarbeitet werden"
+        "page_title": "Zahlung konnte nicht verarbeitet werden",
+        "title": "Zahlung konnte nicht verarbeitet werden",
+        "payment_not_processed_title": "Ihre Zahlung kann nicht verarbeitet werden.",
+        "payment_not_processed_text": "Es wurden keine Gebühren erhoben. Kehren Sie zu Ihrem Warenkorb zurück, um Ihren Einkauf abzuschließen.",
+        "return_to_cart_button_label": "Zurück zum Warenkorb"
+      },
+      "payment_gateway": {
+        "credit_card_label": "Kreditkarte",
+        "bank_deposit_label": "Bankdepot",
+        "cash_on_delivery_label": "Barzahlung bei Lieferung",
+        "money_order_label": "Geldbestellung"
+      },
+      "thank_you": {
+        "title": "Danke für Ihren Einkauf!",
+        "confirmation_email_sent_text": "Eine Bestätigungs-E-Mail wurde an %{email} gesendet."
       }
     }
   }
