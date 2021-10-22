@@ -521,7 +521,12 @@
         "gift_card_and_discount_placeholder": "Geschenkgutschein oder Rabattcode",
         "remove_gift_card_label": "Geschenkkarte entfernen",
         "remove_discount_label": "Rabatt entfernen",
-        "free_shipping_discount_label": "Kostenloser Versand"
+        "free_shipping_discount_label": "Kostenloser Versand",
+        "apply_discount_button_label": "Bewerben",
+        "applied_discount_message": "%{amount} Rabatt wurde vom Gesamtpreis abgezogen.",
+        "discount_has_been_applied": "Rabatt wurde angewendet",
+        "discount_has_been_removed": "Rabatt wurde entfernt",
+        "gift_card_has_been_applied": "Geschenkkarte wurde angewendet"
       }
     }
   }
