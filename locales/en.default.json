@@ -1105,7 +1105,59 @@
         }
       },
       "marketing": {
-        "accept_marketing_checkbox_label": "Send me an email with news of offers"
+        "accept_marketing_checkbox_label": "Send me an email with news of offers",
+        "unsubscribe": {
+          "title": "You have unsubscribed",
+          "description": "You will no longer receive cart reminders from us."
+        },
+        "accept_sms_checkbox_label": "Send me a text message with news and offers",
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Privacy Policy",
+            "terms_of_service": "Terms of Service"
+          }
+        }
+      },
+      "shop_policies": {
+        "refund_policy": "Refund Policy",
+        "privacy_policy": "Privacy Policy",
+        "terms_of_service": "Terms and Conditions",
+        "legal_notice": "Legal notice",
+        "shipping_policy": "Shipping policy",
+        "terms_of_sale": "Terms of sale",
+        "subscription_policy": "Subscription Policy"
+      },
+      "remember_me": {
+        "shopify_pay_label": "Shop Pay",
+        "save": "Keep",
+        "title": "Remember me",
+        "label": "Save my details for faster checkout",
+        "description_html": "The next time you check out here or at other stores provided by Shopify, you'll receive a code via text message that allows you to pay securely via Shop Pay.",
+        "mobile_phone_icon_alt": "Mobile phone",
+        "mobile_phone_number": "Mobile number",
+        "terms_and_privacy_html": "By continuing, you agree to the %{privacy_href} and %{terms_href} of Shop Pay.",
+        "errors": {
+          "optin": "Shop Pay is not available"
+        },
+        "privacy_policy": "Privacy Policy",
+        "terms_of_service": "Terms of Service",
+        "installments": {
+          "paid_in_installments": "Paid in installments with Shop Pay.",
+          "view_schedule": "View Schedule"
+        }
+      },
+      "notifications": {
+        "title": "notifications"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Amount to be paid for order %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "added",
+            "other": "%{count} added"
+          },
+          "removed": "Deleted"
+        }
       }
     }
   }
