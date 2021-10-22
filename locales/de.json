@@ -177,9 +177,9 @@
       }
     },
     "cart": {
-      "title": "Dein Warenkorb",
+      "title": "Ihr Einkaufswagen",
       "caption": "Artikel im Warenkorb",
-      "remove_title": "{{ title }} entfernen",
+      "remove_title": "{{ title }} löschen",
       "subtotal": "Zwischensumme",
       "new_subtotal": "Neue Zwischensumme",
       "note": "Spezielle Bestellanweisungen",
