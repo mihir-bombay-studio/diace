@@ -268,7 +268,7 @@
       "password": "password",
       "password_confirm": "Confirm Password",
       "submit": "Activate account",
-      "cancel": "Decline invitation"
+      "cancel": "Reject invitation"
     },
     "addresses": {
       "title": "Addresses",
