@@ -992,7 +992,12 @@
         "delivered": "Worried",
         "delivered_title": "Your order has been delivered",
         "delivered_description_html": "Your order has been delivered to the address you provided. If you didn't receive it, or if there are other problems, %{contact_us}.",
-        "contact_us": "Contact us"
+        "contact_us": "Contact us",
+        "contact_us_lowercase": "contact us",
+        "contact_us_html": "Need help? %{contact_us}",
+        "updated_time": "Updated %{time_ago} ago",
+        "failure": "Not worried",
+        "failed_title": "Your order could not be delivered."
       }
     }
   }
