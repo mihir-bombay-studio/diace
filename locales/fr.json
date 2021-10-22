@@ -56,23 +56,23 @@
   "newsletter": {
     "label": "votre adresse email",
     "success": "Merci pour votre subscription",
-    "button_label": "S'inscrire"
+    "button_label": "S'abonner"
   },
   "accessibility": {
-    "skip_to_text": "Ignorer et passer au contenu",
+    "skip_to_text": "Directement au contenu",
     "close": "Fermer",
     "unit_price_separator": "par",
-    "vendor": "Distributeur :",
-    "error": "Erreur",
-    "refresh_page": "Le choix d'une sélection entraîne l'actualisation de la page entière.",
+    "vendor": "Vendeur:",
+    "error": "Tort",
+    "refresh_page": "Le choix d'une sélection entraîne un rafraîchissement complet de la page.",
     "link_messages": {
-      "new_window": "S'ouvre dans une nouvelle fenêtre.",
-      "external": "Ouvre un site web externe."
+      "new_window": "Ouvre dans une nouvelle fenêtre.",
+      "external": "Ouvre un site Web externe."
     },
     "next_slide": "Faire glisser vers la droite",
     "previous_slide": "Faire glisser vers la gauche",
     "loading": "Chargement en cours...",
-    "of": "sur"
+    "of": "par"
   },
   "blogs": {
     "article": {
