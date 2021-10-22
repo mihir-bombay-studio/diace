@@ -396,7 +396,12 @@
         "edit_link_label": "Modify",
         "all_rights_reserved": "All rights reserved %{shop_name}",
         "print_policies_link_label": "Print",
-        "cart": "Shopping cart"
+        "cart": "Shopping cart",
+        "close_modal_label": "Close",
+        "close_notice_label": "Close",
+        "expand_notice_label": "View more",
+        "continue_to_shipping_method": "Continue sending",
+        "continue_to_payment_method": "Go to payment"
       }
     }
   }
