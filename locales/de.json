@@ -480,7 +480,21 @@
         "pick_up_in_zero_to_two_hours": "Abholbereit in 2 Stunden",
         "pick_up_in_two_to_four_hours": "Abholbereit in 4 Stunden",
         "free_total_label": "Kostenlos",
-        "shipping_address": "Lieferadresse"
+        "shipping_address": "Lieferadresse",
+        "pick_up_locations": "Abholorte"
+      },
+      "customer_account": {
+        "not_user_label": "Bist du nicht %{first_name}?",
+        "have_an_account_label": "Haben Sie bereits ein Konto?",
+        "sign_in_link_label": "Anmeldung",
+        "sign_out_link_label": "Ausloggen",
+        "save_my_information_label": "Speichern Sie diese Informationen, um in Zukunft schneller zur Kasse zu gehen"
+      },
+      "stock": {
+        "page_title": "Lagerproblem",
+        "title": "Nicht vorrättig",
+        "items_unavailable_notice": "Einige Artikel sind nicht mehr verfügbar. Ihr Warenkorb wurde geändert.",
+        "product_column_header": "Produkte"
       }
     }
   }
