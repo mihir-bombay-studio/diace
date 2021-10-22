@@ -888,7 +888,21 @@
         "redirecting_notice": "Sie werden verwiesen.",
         "complete_your_purchase_title": "Schließen Sie Ihren Einkauf ab",
         "continue_to_payment_gateway_notice": "Fahren Sie mit der Zahlung fort, um Ihre Zahlungsdetails hinzuzufügen.",
-        "continue_to_payment_gateway_button_label": "Zur Zahlung gehen"
+        "continue_to_payment_gateway_button_label": "Zur Zahlung gehen",
+        "complete_your_purchase_title_error": "Korrigieren Sie Ihre Zahlungsinformationen",
+        "continue_to_payment_gateway_notice_error": "Ihre Zahlungsdaten können nicht verifiziert werden.",
+        "continue_to_payment_gateway_button_label_error": "Zahlungsdetails aktualisieren",
+        "page_title": "Die Bestellung wird bearbeitet",
+        "title": "Die Bestellung wird bearbeitet",
+        "your_order_has_been_received_title": "Danke für Ihre Bestellung",
+        "you_will_receive_confirmation": "Wir erhalten derzeit viele Bestellungen. Sie sollten in Kürze eine Bestätigung per E-Mail oder SMS erhalten. Lassen Sie es uns wissen, wenn Sie es nicht innerhalb einer Stunde erhalten haben.",
+        "wait": {
+          "short": "Ihre Bestellung wird bearbeitet.",
+          "medium": {
+            "one": "Ihre Bestellung wird bearbeitet. Die voraussichtliche Wartezeit beträgt 1 Minute.",
+            "other": "Ihre Bestellung wird bearbeitet. Die geschätzte Wartezeit beträgt %{count} Minuten."
+          }
+        }
       }
     }
   }
