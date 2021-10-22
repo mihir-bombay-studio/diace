@@ -1253,6 +1253,20 @@
     },
     "feed": {
       "more": "Mehr"
+    },
+    "attributes": {
+      "email": "Email",
+      "password": "Passwort",
+      "password_confirmation": "die Passwortbestätigung",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "body": "Haupt Text",
+      "signature": "Die Anschrift"
+    },
+    "addresses": {
+      "zip_code": "Postleitzahl",
+      "postal_code": "Postleitzahl",
+      "postcode": "Postleitzahl"
     }
   }
 }
