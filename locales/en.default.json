@@ -545,7 +545,12 @@
         "discount_already_applied": "A discount has been applied to this order. You cannot add any other discount.",
         "cart_does_not_meet_discount_requirements_notice": "Discount code <strong style=\"text-transform:uppercase\">%{code}<\/strong> does not apply to the items in your shopping cart",
         "discount_requires_customer_notice": "Enter your shipping details to get the discount code <strong style=\"text-transform:uppercase\">%{code}<\/strong> applying",
-        "customer_does_not_meet_discount_requirements_notice": "Discount code <strong style=\"text-transform:uppercase\">%{code}<\/strong> is currently not available to you"
+        "customer_does_not_meet_discount_requirements_notice": "Discount code <strong style=\"text-transform:uppercase\">%{code}<\/strong> is currently not available to you",
+        "shipping_information_does_not_meet_discount_requirements_notice": "Discount code <strong style=\"text-transform:uppercase\">%{code}<\/strong> is not available for your delivery address",
+        "customer_already_used_once_per_customer_discount_notice": "The discount code <strong style=\"text-transform:uppercase\">%{code}<\/strong> has already been used",
+        "subtotal_label": "Subtotal",
+        "shipping_label": "Dispatch",
+        "tip_label": "Tip"
       }
     }
   }
