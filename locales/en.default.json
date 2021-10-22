@@ -1298,8 +1298,15 @@
         "best_selling": "Best selling",
         "az": "Alphabetically: A-Z",
         "za": "Alphabetically: Z-A",
-        "price_ascending": "Price: low to high"
+        "price_ascending": "Price: low to high",
+        "price_descending": "Price: high to low",
+        "date_ascending": "Date: old to new",
+        "date_descending": "Date: new to old"
       }
+    },
+    "errors": {
+      "blank": "cannot be empty",
+      "credit_card_session_expired": "Credit card authorization has expired. Enter your payment details again. No money has been debited from your card."
     }
   }
 }
