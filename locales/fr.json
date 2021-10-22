@@ -900,7 +900,16 @@
         "continue_to_payment_gateway_notice_error": "Vos informations de paiement ne peuvent pas être vérifiées.",
         "continue_to_payment_gateway_button_label_error": "Mettre à jour les détails de paiement",
         "page_title": "la commande est en cours de traitement",
-        "title": "la commande est en cours de traitement"
+        "title": "la commande est en cours de traitement",
+        "your_order_has_been_received_title": "Merci pour votre commande",
+        "you_will_receive_confirmation": "Nous recevons actuellement beaucoup de commandes. Vous devriez recevoir une confirmation par e-mail ou SMS sous peu. Faites-nous savoir si vous ne l'avez pas reçu dans l'heure.",
+        "wait": {
+          "short": "Votre commande est en traitement.",
+          "medium": {
+            "one": "Votre commande est en traitement. Le temps d'attente estimé est de 1 minute.",
+            "other": "Votre commande est en traitement. Le temps d'attente estimé est de %{count} minutes."
+          }
+        }
       }
     }
   }
