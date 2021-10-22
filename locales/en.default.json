@@ -1086,7 +1086,26 @@
         "order_status_confirmed_order_with_email_and_phone_payment": "You have made a payment for your order %{date}."
       },
       "review": {
-        "title": "Review"
+        "title": "Review",
+        "review_title": "Check order",
+        "checkout_as_guest": "check out as a guest",
+        "blocks": {
+          "contact_method_title": "Contact",
+          "billing_address_title": "Billing",
+          "shipping_address_title": "Send to",
+          "shipping_method_title": "Wise",
+          "payment_method_title": "Payment",
+          "change_link_label": "Modify",
+          "change_contact_method_link_label": "Change contact information",
+          "change_billing_address_link_label": "Change billing address",
+          "change_shipping_address_link_label": "change delivery address",
+          "change_shipping_method_link_label": "Change shipping method",
+          "change_payment_method_link_label": "Change payment method",
+          "pick_up_in_store_shipping_method_html": "Pick up in store %{location_name}"
+        }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Send me an email with news of offers"
       }
     }
   }
