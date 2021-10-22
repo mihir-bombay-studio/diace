@@ -460,7 +460,12 @@
         "state_and_territory_placeholder": "État\/Territoire",
         "phone_label": "Téléphone",
         "optional_phone_label": "Téléphone facultatif)",
-        "phone_placeholder": "Téléphone"
+        "phone_placeholder": "Téléphone",
+        "phone_tooltip": "Au cas où nous aurions besoin de vous contacter au sujet de votre commande",
+        "zip_code_label": "Code postal",
+        "zip_code_placeholder": "Code postal",
+        "postal_code_label": "Code postal",
+        "postal_code_placeholder": "Code postal"
       }
     }
   }
