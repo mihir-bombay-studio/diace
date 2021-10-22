@@ -1285,7 +1285,21 @@
       "region": "Region",
       "prefecture": "Prefecture",
       "province": "Province",
-      "state": "Stands"
+      "state": "Stands",
+      "state_and_territory": "State\/Territory",
+      "county": "Province",
+      "emirate": "Emirate",
+      "governorate": "government",
+      "confirm": "Are you sure you want to delete this address?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Featured",
+        "best_selling": "Best selling",
+        "az": "Alphabetically: A-Z",
+        "za": "Alphabetically: Z-A",
+        "price_ascending": "Price: low to high"
+      }
     }
   }
 }
