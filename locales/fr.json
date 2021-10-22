@@ -1040,7 +1040,17 @@
           "current": "Lieu d'expédition actuel",
           "shipping": "Lieu de ramassage"
         },
-        "thank_you_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque vous pourrez récupérer votre commande."
+        "thank_you_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque vous pourrez récupérer votre commande.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Vous recevrez un SMS lorsque vous pourrez récupérer votre commande.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Vous recevrez un e-mail lorsque vous pourrez récupérer votre commande.",
+        "ready_for_pickup_title": "Votre commande est prête à être récupérée",
+        "ready_for_pickup_description": "Votre commande peut être récupérée. Veuillez apporter votre confirmation de commande lorsque vous récupérez votre commande.",
+        "picked_up_title": "Votre commande a été récupérée",
+        "picked_up_description_html": "Votre commande a été récupérée à %{location_name} le %{date}.",
+        "other_options": "Autres options",
+        "shop_phone_description": "Vous recevrez un SMS avec un lien vers l'application Shop pour suivre votre commande.",
+        "ready_for_delivery_title": "Votre commande est prête à être livrée.",
+        "ready_for_delivery_description": "Nous avons préparé votre commande."
       }
     }
   }
