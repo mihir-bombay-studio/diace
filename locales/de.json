@@ -1014,7 +1014,41 @@
           "product_image_label": "Produktbild",
           "description_label": "Beschreibung",
           "quantity_label": "Nummer"
-        }
+        },
+        "opt_in_message_html": "Ihre Daten werden in %{shopify_pay} gespeichert.",
+        "order_updates_description_missing": "Sie erhalten keine Versandaktualisierungen.",
+        "order_updates_subscribe_to_email_notifications": "Versand-Updates per E-Mail erhalten",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Erhalten Sie Versand-Updates per E-Mail oder SMS",
+        "order_updates_subscribe_to_phone_notifications": "Erhalten Sie Ihre Versand-Updates per SMS",
+        "order_updates_submit_subscription": "einreichen",
+        "track_shipment": "Versand verfolgen",
+        "shopify_pay": {
+          "order_completed_html": "Bestellung abgeschlossen mit %{shopify_pay}",
+          "learn_more_label": "Weitere Informationen zu Shop-Pay"
+        },
+        "order_status_confirmed_order_with_email_pick_up": "Sie erhalten eine E-Mail, wenn Sie Ihre Bestellung abholen können.",
+        "order_status_confirmed_order_with_phone_pick_up": "Sie erhalten eine SMS, wenn Sie Ihre Bestellung abholen können.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Sie erhalten eine E-Mail und eine SMS, wenn Sie Ihre Bestellung abholen können.",
+        "pick_up_in_store_marker": {
+          "current": "Aktueller Versandort",
+          "shipping": "Treffpunkt"
+        },
+        "thank_you_confirmed_order_with_email_pick_up": "Sie erhalten eine E-Mail, wenn Sie Ihre Bestellung abholen können.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Sie erhalten eine SMS, wenn Sie Ihre Bestellung abholen können.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Sie erhalten eine E-Mail, wenn Sie Ihre Bestellung abholen können.",
+        "ready_for_pickup_title": "Ihre Bestellung ist abholbereit",
+        "ready_for_pickup_description": "Ihre Bestellung kann abgeholt werden. Bitte bringen Sie Ihre Bestellbestätigung zur Abholung mit.",
+        "picked_up_title": "Ihre Bestellung wurde abgeholt",
+        "picked_up_description_html": "Ihre Bestellung wurde am %{date} um %{location_name} abgeholt.",
+        "other_options": "Andere Optionen",
+        "shop_phone_description": "Sie erhalten eine SMS mit einem Link zur Shop-App, um Ihre Bestellung zu verfolgen.",
+        "ready_for_delivery_title": "Ihre Bestellung ist versandfertig.",
+        "ready_for_delivery_description": "Wir haben Ihre Bestellung vorbereitet.",
+        "order_status_confirmed_order_local": "Wir bereiten Ihre Bestellung für die Lieferung vor.",
+        "delivery_information_label": "Lieferinformationen:",
+        "gift_card_sent_confirmation": "Geschenkgutscheine verschickt",
+        "out_for_delivery_local_title": "Ihre Bestellung ist versandfertig",
+        "out_for_delivery_local_description_html": "Sie erhalten Ihre Bestellung in Kürze."
       }
     }
   }
