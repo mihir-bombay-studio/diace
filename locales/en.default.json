@@ -457,7 +457,12 @@
         "state_placeholder": "Stands",
         "region_label": "Region",
         "region_placeholder": "Region",
-        "prefecture_label": "Prefecture"
+        "prefecture_label": "Prefecture",
+        "prefecture_placeholder": "Prefecture",
+        "governorate_label": "government",
+        "governorate_placeholder": "government",
+        "emirate_label": "Emirate",
+        "emirate_placeholder": "Emirate"
       }
     }
   }
