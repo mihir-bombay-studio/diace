@@ -1471,8 +1471,28 @@
         },
         "opt_out": {
           "opted_out_html": "<b>Vous vous êtes désabonné du suivi ouvert par e-mail.<\/b>",
-          "visibility": "Nous ne voyons pas si vous avez ouvert nos e-mails."
+          "visibility": "Nous ne voyons pas si vous avez ouvert nos e-mails.",
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>Autoriser<\/a> pour un suivi ouvert des e-mails.",
+          "preview_bar": "Vous prévisualisez ce que les clients verront lorsqu'ils refuseront de recevoir des e-mails de suivi ouverts."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Nous ne suivons plus si les e-mails sont ouverts.<\/b>",
+          "privacy_policy": "Après l'envoi de cet e-mail, nous avons mis à jour notre politique de confidentialité et ne suivons plus l'ouverture des e-mails."
+        },
+        "track": {
+          "status_html": "<b>Le suivi des e-mails ouverts est signalé.<\/b>",
+          "visibility": "Nous verrons uniquement si vous avez ouvert l'e-mail, dans le cadre du taux d'ouverture global des e-mails."
+        },
+        "updated_policy": {
+          "status_html": "<b>Le suivi des e-mails ouverts est signalé.<\/b>",
+          "visibility": "Nous avons mis à jour notre politique et suivons désormais les e-mails ouverts. Les taux d'ouverture des e-mails sont signalés de manière anonyme. Nous verrons uniquement si vous avez ouvert un e-mail dans le cadre du taux d'ouverture global des e-mails.",
+          "opt_out_html": "Si vous ne souhaitez plus partager ces informations, vous pouvez <a style='text-decoration:underline;' href='%{link}'>Se déconnecter<\/a>."
         }
+      }
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Généralement prêt en 1 heure"
       }
     }
   }
