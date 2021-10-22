@@ -890,7 +890,12 @@
         "button_html": "Acheter avec %{logo}"
       },
       "processing": {
-        "redirecting_page_title": "Référer…"
+        "redirecting_page_title": "Référer…",
+        "redirecting_title": "Référer…",
+        "redirecting_notice": "Vous êtes référé.",
+        "complete_your_purchase_title": "Terminez votre achat",
+        "continue_to_payment_gateway_notice": "Procédez au paiement pour ajouter vos détails de paiement.",
+        "continue_to_payment_gateway_button_label": "Aller au paiement"
       }
     }
   }
