@@ -229,19 +229,19 @@
       "empty": "no products found",
       "from": "By",
       "filter_and_sort": "Filter and sort",
-      "filter_by_label": "Filter by",
+      "filter_by_label": "Filter on",
       "filter_button": "Filter",
       "filters_selected": {
         "one": "{{ count }} selected",
         "other": "{{ count }} selected"
       },
-      "max_price": "The highest price is {{ price }}",
+      "max_price": "The highest prize is {{ price }}",
       "product_count": {
         "one": "Showing {{ product_count }} of {{ count }} product",
         "other": "Showing {{ product_count }} of {{ count }} products"
       },
       "reset": "Reset",
-      "sort_button": "Sort",
+      "sort_button": "To sort",
       "sort_by_label": "Sort by",
       "title": "Collection",
       "to": "To",
