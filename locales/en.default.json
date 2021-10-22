@@ -1028,7 +1028,12 @@
           "product_image_label": "Product image",
           "description_label": "Description",
           "quantity_label": "Number"
-        }
+        },
+        "opt_in_message_html": "Your information is stored in %{shopify_pay}",
+        "order_updates_description_missing": "You will not receive shipping updates.",
+        "order_updates_subscribe_to_email_notifications": "Receive shipping updates via email",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Receive shipping updates via email or SMS",
+        "order_updates_subscribe_to_phone_notifications": "Receive your shipping updates via text message"
       }
     }
   }
