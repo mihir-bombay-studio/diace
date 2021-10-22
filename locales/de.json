@@ -723,7 +723,17 @@
         "card_fields_processing_error": "Bei der Verarbeitung der Zahlung ist ein Problem aufgetreten. Bitte aktualisieren Sie diese Seite oder überprüfen Sie Ihre Internetverbindung.",
         "technical_error": "Aufgrund eines technischen Problems können derzeit keine Zahlungen bearbeitet werden. Versuchen Sie es in ein paar Minuten noch einmal.",
         "no_method_error": "Dieser Shop kann derzeit keine Zahlungen akzeptieren.",
-        "not_configured_error": "Dieser Shop kann derzeit keine Zahlungen akzeptieren."
+        "not_configured_error": "Dieser Shop kann derzeit keine Zahlungen akzeptieren.",
+        "missing_credit_card_error": "Geben Sie Ihre Kartendaten ein, um die Zahlung abzuschließen",
+        "generic_incorrect_card_info": "Ihre Zahlungsdaten können nicht verifiziert werden. Bitte überprüfen Sie Ihre Kartendaten und versuchen Sie es erneut.",
+        "sofort_label": "sofort",
+        "ideal_label": "Ideal",
+        "bank_picker_label": "Bank",
+        "klarna_pay_now_label": "Bezahlen Sie jetzt mit Klarna",
+        "klarna_pay_later_label": "Bezahlen Sie danach mit Klarna",
+        "bancontact_label": "Bancontact",
+        "eps_label": "eps-Überweisung",
+        "klarna_slice_it_label": "Finanzieren mit Klarna"
       }
     }
   }
