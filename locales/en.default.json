@@ -550,7 +550,12 @@
         "customer_already_used_once_per_customer_discount_notice": "The discount code <strong style=\"text-transform:uppercase\">%{code}<\/strong> has already been used",
         "subtotal_label": "Subtotal",
         "shipping_label": "Dispatch",
-        "tip_label": "Tip"
+        "tip_label": "Tip",
+        "shipping_default_value": "Calculated at the next step",
+        "shipping_pending_value": "—",
+        "shipping_pending_message": "Not yet available",
+        "shipping_policy_link": "Postage costs",
+        "taxes_label": "VAT"
       }
     }
   }
