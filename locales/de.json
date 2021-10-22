@@ -1464,8 +1464,28 @@
         },
         "opt_out": {
           "opted_out_html": "<b>Sie haben sich vom E-Mail-Offen-Tracking abgemeldet.<\/b>",
-          "visibility": "Wir sehen nicht, ob Sie unsere E-Mails geöffnet haben."
+          "visibility": "Wir sehen nicht, ob Sie unsere E-Mails geöffnet haben.",
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>Autorisieren<\/a> zum offenen Tracking von E-Mails.",
+          "preview_bar": "Sie sehen in der Vorschau, was Kunden sehen, wenn sie sich vom Erhalt offener Tracking-E-Mails abmelden."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Wir verfolgen nicht mehr, ob E-Mails geöffnet werden.<\/b>",
+          "privacy_policy": "Nachdem diese E-Mail gesendet wurde, haben wir unsere Datenschutzrichtlinie aktualisiert und verfolgen das Öffnen von E-Mails nicht mehr."
+        },
+        "track": {
+          "status_html": "<b>E-Mail-Öffnungsverfolgung wird gemeldet.<\/b>",
+          "visibility": "Wir sehen nur, ob Sie die E-Mail als Teil der gesamten E-Mail-Öffnungsrate geöffnet haben."
+        },
+        "updated_policy": {
+          "status_html": "<b>E-Mail-Öffnungsverfolgung wird gemeldet.<\/b>",
+          "visibility": "Wir haben unsere Richtlinie aktualisiert und verfolgen jetzt offene E-Mails. E-Mail-Öffnungsraten werden anonym gemeldet. Wir sehen nur, ob Sie eine E-Mail als Teil der gesamten E-Mail-Öffnungsrate geöffnet haben.",
+          "opt_out_html": "Wenn Sie diese Informationen nicht mehr weitergeben möchten, können Sie <a style='text-decoration:underline;' href='%{link}'>austragen<\/a>."
         }
+      }
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Normalerweise innerhalb von 1 Stunde fertig"
       }
     }
   }
