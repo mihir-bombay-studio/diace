@@ -1291,8 +1291,15 @@
         "best_selling": "Meilleure vente",
         "az": "Par ordre alphabétique : A-Z",
         "za": "Par ordre alphabétique : Z-A",
-        "price_ascending": "Prix croissant"
+        "price_ascending": "Prix croissant",
+        "price_descending": "Prix : élevé à faible",
+        "date_ascending": "Date : de l'ancien au nouveau",
+        "date_descending": "Date : nouveau à ancien"
       }
+    },
+    "errors": {
+      "blank": "ne peux pas être vide",
+      "credit_card_session_expired": "L'autorisation de la carte de crédit a expiré. Saisissez à nouveau vos informations de paiement. Aucune somme n'a été débitée de votre carte."
     }
   }
 }
