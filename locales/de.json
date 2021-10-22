@@ -7,14 +7,14 @@
       "login_form_password_placeholder": "Ihr Passwort",
       "login_form_error": "Falsches Passwort!",
       "login_form_submit": "Eintreten",
-      "modal": "Passwort-Modal",
-      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"\/admin\" class=\"link underlined-link\">Hier einloggen<\/a>",
-      "powered_by_shopify_html": "Dieser Shop wird unterstützt von {{ shopify }}"
+      "modal": "Modal für Passwort",
+      "admin_link_html": "Sind Sie der Ladenbesitzer? <a href=\"\/admin\" class=\"link underlined-link\">Hier anmelden<\/a>",
+      "powered_by_shopify_html": "Dieser Shop wird betrieben von {{ shopify }}"
     },
     "social": {
       "alt_text": {
         "share_on_facebook": "Auf Facebook teilen",
-        "share_on_twitter": "Auf Twitter twittern",
+        "share_on_twitter": "Twittern auf Twitter",
         "share_on_pinterest": "Auf Pinterest pinnen"
       },
       "links": {
@@ -22,14 +22,14 @@
         "facebook": "Facebook",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
-        "tumblr": "Tumblr",
+        "tumblr": "tumblr",
         "snapchat": "Snapchat",
-        "youtube": "YouTube",
+        "youtube": "Youtube",
         "vimeo": "Vimeo",
-        "tiktok": "TikTok"
+        "tiktok": "Tick Tack"
       }
     },
-    "continue_shopping": "Weiter shoppen",
+    "continue_shopping": "Zurück zum Laden",
     "pagination": {
       "label": "Seitennummerierung",
       "page": "Seite {{ number }}",
