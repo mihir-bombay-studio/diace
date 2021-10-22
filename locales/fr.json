@@ -1428,7 +1428,14 @@
       "addresses": "Adresses",
       "order": "Commande %{name}",
       "search": "Chercher",
-      "collections": "Collections"
+      "collections": "Collections",
+      "not_found": "404 non trouvé",
+      "challenge": "Défi",
+      "checkpoint": "Point de contrôle",
+      "search_results": {
+        "one": "Recherche : %{count} résultat trouvé pour '%{terms}'",
+        "other": "Recherche : %{count} résultats trouvés pour '%{terms}'"
+      }
     }
   }
 }
