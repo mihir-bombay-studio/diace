@@ -849,7 +849,17 @@
       },
       "payment_errors": {
         "generic_error": "There was a problem processing your payment. Please try again or use a different payment method.",
-        "rejected_transaction": "Your payment has been declined. Please try again or use a different payment method."
+        "rejected_transaction": "Your payment has been declined. Please try again or use a different payment method.",
+        "credit_card_processing": "Your payment cannot be processed for technical reasons. Please try again in a few minutes or use a different payment method.",
+        "order_total_changed": "The total of your order has changed. Please refresh your cart and try again.",
+        "payment_processing": "Your payment cannot be processed for technical reasons. Please try again or use a different payment method.",
+        "paypal_zero_amount": "You cannot use PayPal for %{amount} orders. Confirm that your order is correct and pay without PayPal.",
+        "paypal_invalid_token": "PayPal was not available. Please try again or use a different checkout method.",
+        "pay_later_failed": "There was an error processing your payment with Pay later. Please choose another payment method and try again.",
+        "three_d_secure_failed": "Your payment cannot be verified. Please try again or use a different payment method.",
+        "three_d_secure_throttled": "Too many attempts; wait a while before trying again",
+        "subscription_agreement_blank": "Your payment details are saved when purchasing a subscription. Please confirm you agree or remove any subscriptions from your order to continue.",
+        "three_d_secure_failed_duplicate": "The 3D Secure credit card authentication failed because another one is already in progress."
       }
     }
   }
