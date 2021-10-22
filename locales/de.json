@@ -1485,7 +1485,12 @@
     },
     "store_availability": {
       "pick_up_time": {
-        "one_hour": "Normalerweise innerhalb von 1 Stunde fertig"
+        "one_hour": "Normalerweise innerhalb von 1 Stunde fertig",
+        "two_hours": "In der Regel innerhalb von 2 Stunden fertig",
+        "four_hours": "In der Regel innerhalb von 4 Stunden fertig",
+        "twenty_four_hours": "In der Regel innerhalb von 24 Stunden fertig",
+        "two_to_four_days": "In der Regel innerhalb von 2-4 Tagen fertig",
+        "five_or_more_days": "Normalerweise in mehr als 5 Tagen fertig"
       }
     }
   }
