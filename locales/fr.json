@@ -1492,7 +1492,21 @@
     },
     "store_availability": {
       "pick_up_time": {
-        "one_hour": "Généralement prêt en 1 heure"
+        "one_hour": "Généralement prêt en 1 heure",
+        "two_hours": "Généralement prêt dans les 2 heures",
+        "four_hours": "Habituellement prêt dans les 4 heures",
+        "twenty_four_hours": "Généralement prêt dans les 24 heures",
+        "two_to_four_days": "Habituellement prêt dans les 2-4 jours",
+        "five_or_more_days": "Habituellement prêt en plus de 5 jours",
+        "zero_to_two_hours": "Généralement prêt dans les 2 heures",
+        "two_to_four_hours": "Habituellement prêt dans les 4 heures",
+        "immediately": "Prêt à ramasser maintenant",
+        "next_day": "Prêt à être récupéré le lendemain"
+      }
+    },
+    "filters": {
+      "availability": {
+        "label": "disponibilité"
       }
     }
   }
