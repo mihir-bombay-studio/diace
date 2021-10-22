@@ -1445,6 +1445,17 @@
       "message": "Faites-nous savoir que vous n'êtes pas un robot pour continuer.",
       "error": "Votre réponse était fausse, veuillez réessayer.",
       "submit_button_text": "expédier"
+    },
+    "checkpoint": {
+      "message": "Résolvez le captcha pour continuer",
+      "error": "la vérification captcha a échoué",
+      "submit_button_text": "expédier"
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Merci de vous être inscrit à notre liste de diffusion.",
+        "disclaimer": "Vous pouvez vous désinscrire à tout moment."
+      }
     }
   }
 }
