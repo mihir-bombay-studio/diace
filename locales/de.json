@@ -433,7 +433,22 @@
         "address2_label": "Postfach-Nr. usw.",
         "optional_address2_label": "Postfachnummer usw. (optional)",
         "city_label": "Stadt",
-        "country_label": "Land\/Region"
+        "country_label": "Land\/Region",
+        "country_code": "Länder-\/Regionscode",
+        "province_label": "Provinz",
+        "province_placeholder": "Provinz",
+        "county_label": "Provinz",
+        "county_placeholder": "Provinz",
+        "state_label": "Steht",
+        "state_placeholder": "Steht",
+        "region_label": "Region",
+        "region_placeholder": "Region",
+        "prefecture_label": "Präfektur",
+        "prefecture_placeholder": "Präfektur",
+        "governorate_label": "Regierung",
+        "governorate_placeholder": "Regierung",
+        "emirate_label": "Emirat",
+        "emirate_placeholder": "Emirat"
       }
     }
   }
