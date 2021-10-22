@@ -399,7 +399,19 @@
         "back_to_cart": "Retour au panier",
         "back_to_contact_information": "Retour aux informations",
         "back_to_shipping_method": "Retour à envoyer",
-        "back_to_payment_method": "Retour au paiement"
+        "back_to_payment_method": "Retour au paiement",
+        "choose_shipping_method": "Choisissez un mode d'expédition",
+        "choose_payment_method": "Choisissez une méthode de paiement",
+        "choose_billing_address": "choisissez une adresse de facturation",
+        "contact_us_html": "Contactez-nous pour plus d'informations",
+        "autocomplete_title": "suggestions",
+        "autocomplete_single_item": "1 article disponible",
+        "autocomplete_multi_item": "{{number}} articles disponibles",
+        "autocomplete_selection": "{{number}} du {{total}}",
+        "autocomplete_close": "Fermer les suggestions",
+        "forwarding_indicator": {
+          "new_window": "Ouvre dans une nouvelle fenêtre."
+        }
       }
     }
   }
