@@ -458,7 +458,19 @@
         "zip_code_label": "Postleitzahl",
         "zip_code_placeholder": "Postleitzahl",
         "postal_code_label": "Postleitzahl",
-        "postal_code_placeholder": "Postleitzahl"
+        "postal_code_placeholder": "Postleitzahl",
+        "postcode_label": "Postleitzahl",
+        "postcode_placeholder": "Postleitzahl",
+        "pincode_label": "Postleitzahl",
+        "pincode_placeholder": "Postleitzahl",
+        "region_none": "Nichts ausgewählt",
+        "civic_number_warning": "Fügen Sie eine Hausnummer hinzu, wenn Sie eine haben"
+      },
+      "delivery_options": {
+        "ship": "Senden",
+        "pick_up": "Abrufen",
+        "pick_up_in_two_hours": "In der Regel innerhalb von 2 Stunden fertig",
+        "pick_up_in_four_hours": "In der Regel innerhalb von 4 Stunden fertig"
       }
     }
   }
