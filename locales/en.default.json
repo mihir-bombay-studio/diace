@@ -467,7 +467,17 @@
         "state_and_territory_placeholder": "State\/Territory",
         "phone_label": "Telephone",
         "optional_phone_label": "Phone (optional)",
-        "phone_placeholder": "Telephone"
+        "phone_placeholder": "Telephone",
+        "phone_tooltip": "In case we need to contact you about your order",
+        "zip_code_label": "Postal Code",
+        "zip_code_placeholder": "Postal Code",
+        "postal_code_label": "Postal Code",
+        "postal_code_placeholder": "Postal Code",
+        "postcode_label": "Postal Code",
+        "postcode_placeholder": "Postal Code",
+        "pincode_label": "Postal Code",
+        "pincode_placeholder": "Postal Code",
+        "region_none": "None selected"
       }
     }
   }
