@@ -747,7 +747,17 @@
         "klarna_pay_later_label": "Pay afterwards with Klarna",
         "bancontact_label": "Bancontact",
         "eps_label": "eps-Überweisung (eps transfer)",
-        "klarna_slice_it_label": "Finance with Klarna"
+        "klarna_slice_it_label": "Finance with Klarna",
+        "card_expiration_month_label": "Expiration month",
+        "card_expiration_year_label": "Expiration year",
+        "card_information_notice": "All transactions are secured and encrypted. Credit card details are never stored.",
+        "credit_card_start_month": "Month start date",
+        "credit_card_start_year": "Year start date",
+        "billing_address_not_supported_for_payment_method_error": "This payment method is not available for your billing address and currency. Try another payment method.",
+        "change_currency_section_description": "Select a currency option",
+        "no_real_orders_dev_store": "This store cannot accept real orders or process real payments.",
+        "subscription_agreement_label_html": "I understand that I agree to a subscription. It will be renewed at the stated price and frequency until it expires or becomes\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">cancelled<\/a>.",
+        "waiting_on_payment_methods": "Get available payment methods..."
       }
     }
   }
