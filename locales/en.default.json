@@ -827,7 +827,17 @@
         "credit_card_verification_value_blank": "Enter your card's CVV\/CVC or security code",
         "reduction_code_code_not_found": "Enter a valid discount code or gift card",
         "reduction_code_discount_not_found": "Please enter a valid discount code",
-        "reduction_code_gift_card_code_invalid": "Please enter a valid gift card"
+        "reduction_code_gift_card_code_invalid": "Please enter a valid gift card",
+        "reduction_code_gift_card_unusable": "You cannot use a gift card to buy another gift card",
+        "shipping_line_phone_blank": "Please enter a phone number to use this delivery method",
+        "shipping_line_phone_invalid": "Please enter a valid phone number to use this delivery method",
+        "gift_card_already_applied": "This gift card has already been applied to your order",
+        "gift_card_disabled": "This gift card is no longer available",
+        "gift_card_expired": "This gift card has expired",
+        "gift_card_depleted": "There is no more money on this gift card",
+        "gift_card_currency_mismatch": "Only gift cards in %{checkout_currency} can be used for this order",
+        "payment_gateway_needs_paid_plan_error": "This payment method cannot currently be used for this store",
+        "payment_gateway_incompatible_with_multi_currency": "Pay with a credit card to pay in your local currency"
       }
     }
   }
