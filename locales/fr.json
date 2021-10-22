@@ -916,7 +916,41 @@
         "you_will_not_be_charged": "Aucun frais ne sera facturé pour le moment"
       },
       "failed_payment": {
-        "page_title": "Le paiement n'a pas pu être traité"
+        "page_title": "Le paiement n'a pas pu être traité",
+        "title": "Le paiement n'a pas pu être traité",
+        "payment_not_processed_title": "Votre paiement ne peut pas être traité.",
+        "payment_not_processed_text": "Aucun frais n'a été facturé. Retournez dans votre panier pour finaliser votre achat.",
+        "return_to_cart_button_label": "Retour au panier"
+      },
+      "payment_gateway": {
+        "credit_card_label": "Carte de crédit",
+        "bank_deposit_label": "dépôt bancaire",
+        "cash_on_delivery_label": "paiement à la livraison",
+        "money_order_label": "mandat postal"
+      },
+      "thank_you": {
+        "title": "Merci pour votre achat!",
+        "confirmation_email_sent_text": "Un e-mail de confirmation a été envoyé à %{email}",
+        "return_to_store_link_label": "Retour au magasin",
+        "print_link_label": "Imprimer la preuve d'achat",
+        "payment_information_title": "Détails de paiement",
+        "shipping_information_title": "Les détails d'expédition",
+        "page_title": "Merci, %{display_name} !",
+        "page_title_no_name": "Merci!",
+        "cancelled_page_title": "Commande annulée",
+        "customer_information_title": "Informations personnalisées",
+        "contact_information_title": "Informations de contact",
+        "billing_address_title": "Adresse de facturation",
+        "shipping_address_title": "Adresse de livraison",
+        "shipping_address_map_title": "Carte Google avec localisation précise de l'adresse de livraison : %{address}",
+        "payment_method_title": "Mode de paiement",
+        "shipping_method_title": "Mode de livraison",
+        "tracking_number": "Numéro de suivi:",
+        "company_tracking_number": "%{company} numéro de suivi :",
+        "estimated_arrival": "Date de livraison estimée:",
+        "re-order": "Commander à nouveau les mêmes articles",
+        "confirmed": "Confirmé",
+        "thank_you_title": "Votre commande a été confirmée"
       }
     }
   }
