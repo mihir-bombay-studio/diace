@@ -823,7 +823,12 @@
         "gift_card_depleted": "Auf dieser Geschenkkarte ist kein Geld mehr vorhanden",
         "gift_card_currency_mismatch": "Für diese Bestellung können nur Geschenkkarten in %{checkout_currency} verwendet werden",
         "payment_gateway_needs_paid_plan_error": "Diese Zahlungsmethode kann derzeit für diesen Shop nicht verwendet werden",
-        "payment_gateway_incompatible_with_multi_currency": "Bezahlen Sie mit einer Kreditkarte, um in Ihrer Landeswährung zu bezahlen"
+        "payment_gateway_incompatible_with_multi_currency": "Bezahlen Sie mit einer Kreditkarte, um in Ihrer Landeswährung zu bezahlen",
+        "subscription_agreement_blank": "Um mit Ihrem Kauf fortzufahren, müssen Sie den Bedingungen des Abonnements zustimmen",
+        "physical_gift_card_invalid_quantity": "Bestellpositionen für physische Geschenkgutscheine müssen eine Menge aufweisen, die der Anzahl der Geschenkgutscheincodes entspricht.",
+        "physical_gift_card_duplicate_code": "Die Bestellzeile für die physische Geschenkkarte enthält einen doppelten Code.",
+        "physical_gift_card_invalid_code": "Der physische Geschenkkartencode ist ungültig.",
+        "payment_gateway_not_in_test_mode": "ist nicht für Testaufträge gebaut. Dieser Shop kann keine echten Bestellungen annehmen oder echte Zahlungen verarbeiten."
       }
     }
   }
