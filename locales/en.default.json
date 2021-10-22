@@ -1306,7 +1306,12 @@
     },
     "errors": {
       "blank": "cannot be empty",
-      "credit_card_session_expired": "Credit card authorization has expired. Enter your payment details again. No money has been debited from your card."
+      "credit_card_session_expired": "Credit card authorization has expired. Enter your payment details again. No money has been debited from your card.",
+      "empty": "cannot be empty",
+      "invalid_email": "must be a valid email address",
+      "discount_disabled": "This discount is blocked",
+      "discount_expired": "This discount is no longer valid",
+      "discount_limit_reached": "This discount has reached the usage limit"
     }
   }
 }
