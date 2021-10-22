@@ -224,10 +224,10 @@
     },
     "collection_template": {
       "apply": "To apply",
-      "clear": "Clear",
+      "clear": "To clear",
       "clear_all": "Clear all",
-      "empty": "No products found",
-      "from": "From",
+      "empty": "no products found",
+      "from": "By",
       "filter_and_sort": "Filter and sort",
       "filter_by_label": "Filter by",
       "filter_button": "Filter",
