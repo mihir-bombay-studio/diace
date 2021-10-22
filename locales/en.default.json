@@ -1079,7 +1079,14 @@
         "attempted_delivery_local_description_html": "Unfortunately we were unable to deliver your order. %{contact_us} to schedule another delivery.",
         "thank_you_title_payment": "Your payment has been confirmed",
         "thank_you_confirmed_order_with_email_payment": "You have made a payment for your order %{date}.",
-        "thank_you_confirmed_order_with_phone_payment": "You have made a payment for your order %{date}."
+        "thank_you_confirmed_order_with_phone_payment": "You have made a payment for your order %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "You have made a payment for your order %{date}.",
+        "order_status_confirmed_order_with_email_payment": "You have made a payment for your order %{date}.",
+        "order_status_confirmed_order_with_phone_payment": "You have made a payment for your order %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "You have made a payment for your order %{date}."
+      },
+      "review": {
+        "title": "Review"
       }
     }
   }
