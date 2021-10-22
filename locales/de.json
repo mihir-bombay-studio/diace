@@ -978,7 +978,12 @@
         "delivered": "Besorgt",
         "delivered_title": "Ihre Bestellung wurde geliefert",
         "delivered_description_html": "Ihre Bestellung wurde an die von Ihnen angegebene Adresse geliefert. Wenn Sie es nicht erhalten haben oder andere Probleme vorliegen, %{contact_us}.",
-        "contact_us": "Kontaktiere uns"
+        "contact_us": "Kontaktiere uns",
+        "contact_us_lowercase": "kontaktiere uns",
+        "contact_us_html": "Brauchen Sie Hilfe? %{contact_us}",
+        "updated_time": "Vor %{time_ago} aktualisiert",
+        "failure": "Nicht besorgt",
+        "failed_title": "Ihre Bestellung konnte nicht geliefert werden."
       }
     }
   }
