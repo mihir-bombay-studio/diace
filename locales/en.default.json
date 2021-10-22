@@ -623,7 +623,12 @@
         },
         "shipping_rate_discounted_amount": "Wash: %{original_amount}. Now: %{amount}",
         "shipping_line_delivery_phone": "We may use this number to call or message you about your delivery.",
-        "optional_shipping_line_delivery_instructions_label": "Delivery instructions (optional)"
+        "optional_shipping_line_delivery_instructions_label": "Delivery instructions (optional)",
+        "shipping_line_delivery_phone_label": "Mobile number",
+        "shipping_line_delivery_instructions": "Enter required information such as door codes and delivery instructions.",
+        "local_delivery": "Local delivery",
+        "subscription_shipping": "Subscription for sending",
+        "shipping_method_one_time_purchase_group_title": "One-time-purchase"
       }
     }
   }
