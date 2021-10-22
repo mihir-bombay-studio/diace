@@ -795,7 +795,12 @@
         "email_invalid": "Entrez une adresse e-mail valide",
         "email_or_phone_blank": "Saisissez une adresse e-mail ou un numéro de téléphone portable",
         "email_or_phone_invalid": "Veuillez entrer une adresse e-mail ou un numéro de téléphone portable valide",
-        "address_first_name_blank": "Entrez un prénom"
+        "address_first_name_blank": "Entrez un prénom",
+        "address_last_name_blank": "Entrez un nom de famille",
+        "address_address1_blank": "Entrer une adresse",
+        "address_address2_blank": "Entrez un numéro d'appartement ou de suite, etc.",
+        "address_city_blank": "Entrez une ville",
+        "address_country_blank": "Sélectionnez un pays\/une région"
       }
     }
   }
