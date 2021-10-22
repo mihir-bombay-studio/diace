@@ -1052,7 +1052,12 @@
         "thank_you_confirmed_order_with_email_and_phone_pick_up": "You will receive an email when you can pick up your order.",
         "ready_for_pickup_title": "Your order is ready to pick up",
         "ready_for_pickup_description": "Your order can be picked up. Please bring your order confirmation with you when you pick up your order.",
-        "picked_up_title": "Your order has been picked up"
+        "picked_up_title": "Your order has been picked up",
+        "picked_up_description_html": "Your order was picked up at %{location_name} on %{date}.",
+        "other_options": "Other options",
+        "shop_phone_description": "You will receive a text message with a link to the Shop app to track your order.",
+        "ready_for_delivery_title": "Your order is ready for delivery.",
+        "ready_for_delivery_description": "We have prepared your order."
       }
     }
   }
