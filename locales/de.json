@@ -953,7 +953,12 @@
         "order_status_confirmed_order_with_email_and_phone": "Sie erhalten eine E-Mail und eine SMS, wenn Ihre Bestellung fertig ist.",
         "order_status_updates_with_email": "Sie erhalten per E-Mail Updates zu Versand und Lieferung.",
         "order_status_updates_with_phone": "Sie werden per SMS über Ihren Versand und Ihre Zustellung informiert.",
-        "order_status_updates_with_email_and_phone": "Sie erhalten Updates zu Versand und Lieferung per E-Mail und SMS."
+        "order_status_updates_with_email_and_phone": "Sie erhalten Updates zu Versand und Lieferung per E-Mail und SMS.",
+        "order_status_updates_with_missing": "Wählen Sie aus, wie Sie Versandaktualisierungen erhalten möchten.",
+        "confirmed_title": "Ihre Bestellung wurde bestätigt",
+        "confirmed_description": "Wir haben Ihre Bestellung angenommen und bereiten sie vor. Bitte besuchen Sie diese Seite erneut, um Informationen zu Ihrem Versandstatus zu erhalten.",
+        "order_updates_title": "Aktualisierungen bestellen",
+        "order_updates_description_html": "Eine Bestätigung wurde an %{customer_contact} gesendet."
       }
     }
   }
