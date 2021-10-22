@@ -711,7 +711,19 @@
         },
         "offsite_gateway_redirect_hint": "Nachdem Sie auf „%{button_label}“ geklickt haben, werden Sie zu %{gateway_label} weitergeleitet, um Ihren Einkauf sicher abzuschließen.",
         "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} gesamt %{total_shop_price}",
-        "billing_address_title": "Rechnungsadresse"
+        "billing_address_title": "Rechnungsadresse",
+        "billing_address_description": "Wählen Sie die Adresse aus, die Ihrer Karte oder Zahlungsmethode entspricht.",
+        "billing_address_description_no_shipping_address": "Geben Sie die Adresse ein, die Ihrer Karte oder Zahlungsmethode entspricht.",
+        "no_js_credit_card_fields_redirect_hint": "Sie werden weitergeleitet, um Ihre Zahlungsinformationen hinzuzufügen.",
+        "card_fields_container_prefix": "Dieses Feld enthält:",
+        "card_fields_unavailable_html": {
+          "one": "Die Zahlung per Kredit- oder Debitkarte ist derzeit nicht möglich.<br><a href=\"%{current_url}\">Diese Seite aktualisieren<\/a> oder versuchen Sie es später erneut.",
+          "other": "Die Zahlung per Kredit- oder Debitkarte ist derzeit nicht möglich.<br><a href=\"%{current_url}\">Diese Seite aktualisieren<\/a> oder versuchen Sie es mit einer anderen Zahlungsmethode."
+        },
+        "card_fields_processing_error": "Bei der Verarbeitung der Zahlung ist ein Problem aufgetreten. Bitte aktualisieren Sie diese Seite oder überprüfen Sie Ihre Internetverbindung.",
+        "technical_error": "Aufgrund eines technischen Problems können derzeit keine Zahlungen bearbeitet werden. Versuchen Sie es in ein paar Minuten noch einmal.",
+        "no_method_error": "Dieser Shop kann derzeit keine Zahlungen akzeptieren.",
+        "not_configured_error": "Dieser Shop kann derzeit keine Zahlungen akzeptieren."
       }
     }
   }
