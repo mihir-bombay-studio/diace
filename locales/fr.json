@@ -1423,7 +1423,12 @@
       "products": "Des produits",
       "shopping_cart": "Votre Panier",
       "account": "Compte",
-      "create_account": "créer un compte"
+      "create_account": "créer un compte",
+      "reset_account": "Réinitialiser le compte",
+      "addresses": "Adresses",
+      "order": "Commande %{name}",
+      "search": "Chercher",
+      "collections": "Collections"
     }
   }
 }
