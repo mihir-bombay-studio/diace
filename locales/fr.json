@@ -1391,7 +1391,12 @@
       },
       "cart": {
         "only_n_items_available": "Vous ne pouvez ajouter que %{count} %{name} à votre panier.",
-        "too_many_items_in_cart": "Vous ne pouvez plus ajouter %{name} à votre panier."
+        "too_many_items_in_cart": "Vous ne pouvez plus ajouter %{name} à votre panier.",
+        "all_items_in_cart": "Tous les %{count} %{name} sont dans votre panier.",
+        "empty_update": "impossible de mettre à jour le panier vide",
+        "missing_parameters": "pas d'identifiant ou de numéro de ligne valide",
+        "generic_error": "Erreur de panier",
+        "too_many_line_items_error": "Votre panier ne peut pas contenir plus de %{max} articles."
       }
     }
   }
