@@ -797,7 +797,17 @@
         "free_label": "For free"
       },
       "field_errors": {
-        "handle_phone_invalid": "enter a valid phone number"
+        "handle_phone_invalid": "enter a valid phone number",
+        "handle_email_invalid": "Enter a valid e-mail address",
+        "email_invalid": "Enter a valid e-mail address",
+        "email_or_phone_blank": "Enter an email address or mobile phone number",
+        "email_or_phone_invalid": "Please enter a valid email address or mobile phone number",
+        "address_first_name_blank": "Enter a first name",
+        "address_last_name_blank": "Enter a last name",
+        "address_address1_blank": "Enter an address",
+        "address_address2_blank": "Enter an apartment or suite number, etc.",
+        "address_city_blank": "Enter a city",
+        "address_country_blank": "Select a country\/region"
       }
     }
   }
