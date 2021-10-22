@@ -1350,7 +1350,19 @@
       "order": {
         "not_available": "Diese Bestellung ist nicht verfügbar",
         "financial_status": {
-          "authorized": "Verifiziert"
+          "authorized": "Verifiziert",
+          "pending": "Ausstehend",
+          "paid": "Bezahlt",
+          "unpaid": "Unbezahlt",
+          "voided": "Abgelaufen",
+          "partially_paid": "Teilweise bezahlt",
+          "partially_refunded": "Teilweise zurückerstattet",
+          "refunded": "Zurückerstattet",
+          "expired": "Abgelaufen"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Fertig",
+          "complete": "Vollständig"
         }
       }
     }
