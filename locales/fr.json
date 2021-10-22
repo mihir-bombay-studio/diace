@@ -755,7 +755,21 @@
         "subscription_card_update_agreement_label": "Changer votre mode de paiement mettra à jour votre abonnement et vos paiements récurrents à l'avenir.",
         "card_security_vault_notice": "Nous avons besoin de vos coordonnées pour les paiements futurs. Toutes les transactions sont sécurisées et cryptées.",
         "taxes_not_included": "Hors taxes",
-        "no_taxes_banner_content": "Les taxes ne sont pas facturées sur cette commande. Vous ne pouvez plus ajouter de taxes si le paiement a déjà été encaissé."
+        "no_taxes_banner_content": "Les taxes ne sont pas facturées sur cette commande. Vous ne pouvez plus ajouter de taxes si le paiement a déjà été encaissé.",
+        "card_update_label": "Mettre à jour la carte",
+        "paypal": {
+          "connect": "Cliquez pour lier votre compte PayPal"
+        },
+        "subscription_agreement_label": "Je comprends que j'accepte un abonnement. Il sera renouvelé au prix et à la fréquence indiqués jusqu'à son expiration ou jusqu'à ce qu'il devienne %{cancelled}.",
+        "subscription_agreement_cancelled": "annulé",
+        "card_expired": "Expiré",
+        "card_verification_confirm": "Entrez le code de sécurité de votre carte à des fins de vérification.",
+        "different_credit_card_label": "Utiliser une autre carte de crédit",
+        "ftd_vault_credit_card_label": "Enregistrer ma carte de crédit pour un paiement plus rapide",
+        "apple": {
+          "connect": "Cliquez pour lier votre compte Apple Pay",
+          "not_available": "Apple Pay n'est pas disponible dans ce navigateur. Pour lier votre compte Apple Pay, vous devez utiliser Safari sur un appareil Apple."
+        }
       }
     }
   }
