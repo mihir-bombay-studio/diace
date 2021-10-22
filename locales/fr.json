@@ -1266,7 +1266,19 @@
       "password": "le mot de passe",
       "password_confirmation": "la confirmation du mot de passe",
       "first_name": "Prénom",
-      "last_name": "nom de famille"
+      "last_name": "nom de famille",
+      "body": "texte principal",
+      "signature": "Adresse"
+    },
+    "addresses": {
+      "zip_code": "Code postal",
+      "postal_code": "Code postal",
+      "postcode": "Code postal",
+      "pincode": "Code postal",
+      "region": "Région",
+      "prefecture": "Préfecture",
+      "province": "Province",
+      "state": "Des stands"
     }
   }
 }
