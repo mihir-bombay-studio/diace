@@ -1513,7 +1513,20 @@
     },
     "filters": {
       "availability": {
-        "label": "availabilty"
+        "label": "availabilty",
+        "value": {
+          "in_stock": "In stock",
+          "out_of_stock": "Out of Stock"
+        }
+      },
+      "vendor": {
+        "label": "Brand"
+      },
+      "price": {
+        "label": "Price"
+      },
+      "product_type": {
+        "label": "Product type"
       }
     }
   }
