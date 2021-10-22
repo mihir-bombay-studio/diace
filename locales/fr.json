@@ -430,7 +430,12 @@
         "email_or_phone_label": "E-mail ou numéro de téléphone portable",
         "email_or_phone_placeholder": "E-mail ou numéro de téléphone portable",
         "stored_addresses_label": "Adresses enregistrées",
-        "new_address_label": "Utiliser une nouvelle adresse"
+        "new_address_label": "Utiliser une nouvelle adresse",
+        "first_name_label": "Prénom",
+        "optional_first_name_label": "Prénom (facultatif)",
+        "last_name_label": "nom de famille",
+        "company_label": "Entreprise",
+        "optional_company_label": "Société (optionel)"
       }
     }
   }
