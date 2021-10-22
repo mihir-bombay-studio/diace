@@ -1109,7 +1109,14 @@
         "privacy_policy": "Datenschutz-Bestimmungen",
         "terms_of_service": "Geschäftsbedingungen",
         "legal_notice": "Impressum",
-        "shipping_policy": "Versandbedingungen"
+        "shipping_policy": "Versandbedingungen",
+        "terms_of_sale": "Verkaufsbedingungen",
+        "subscription_policy": "Abonnementrichtlinie"
+      },
+      "remember_me": {
+        "shopify_pay_label": "Shop-Bezahlung",
+        "save": "Halten",
+        "title": "Erinnere dich an mich"
       }
     }
   }
