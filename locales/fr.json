@@ -1033,7 +1033,14 @@
           "order_completed_html": "Commande complétée avec %{shopify_pay}",
           "learn_more_label": "Plus d'informations sur Shop Pay"
         },
-        "order_status_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque vous pourrez récupérer votre commande."
+        "order_status_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque vous pourrez récupérer votre commande.",
+        "order_status_confirmed_order_with_phone_pick_up": "Vous recevrez un SMS lorsque vous pourrez récupérer votre commande.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Vous recevrez un e-mail et un SMS lorsque vous pourrez récupérer votre commande.",
+        "pick_up_in_store_marker": {
+          "current": "Lieu d'expédition actuel",
+          "shipping": "Lieu de ramassage"
+        },
+        "thank_you_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque vous pourrez récupérer votre commande."
       }
     }
   }
