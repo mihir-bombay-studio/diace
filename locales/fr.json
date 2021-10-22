@@ -1415,8 +1415,15 @@
       "tags": {
         "add_articles": "Limiter la recherche aux articles avec la balise %{tag}",
         "add_products": "Limiter la recherche aux produits avec la balise correspondante %{tag}",
-        "remove_articles": "Étendre la recherche aux articles non tagués avec %{tag}"
+        "remove_articles": "Étendre la recherche aux articles non tagués avec %{tag}",
+        "remove_products": "supprimer la balise %{tag}"
       }
+    },
+    "page_titles": {
+      "products": "Des produits",
+      "shopping_cart": "Votre Panier",
+      "account": "Compte",
+      "create_account": "créer un compte"
     }
   }
 }
