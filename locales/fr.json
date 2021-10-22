@@ -501,7 +501,17 @@
         "page_title": "Problème de stock",
         "title": "En rupture de stock",
         "items_unavailable_notice": "Certains articles ne sont plus disponibles. Votre panier a été modifié.",
-        "product_column_header": "Des produits"
+        "product_column_header": "Des produits",
+        "quantity_column_header": "Nombre",
+        "price_column_header": "Prix",
+        "status_column_header": "Statut",
+        "removed_from_cart_notice": "Retiré du panier",
+        "sold_out_label": "Rupture de stock",
+        "reduced_label": "Réduit",
+        "reduced_with_quantity_label": "Seulement %{quantity_available} en stock",
+        "remove_from_cart_button_label": "Retirer du panier",
+        "continue_shopping_button_label": "Continuer",
+        "go_back_to_cart_button_label": "Retour à mon panier"
       }
     }
   }
