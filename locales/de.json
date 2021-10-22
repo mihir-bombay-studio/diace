@@ -294,14 +294,14 @@
       "submit": "Senden"
     },
     "orders": {
-      "title": "Bestellhistorie",
-      "order_number": "Bestellung",
+      "title": "Bestellübersicht",
+      "order_number": "Befehl",
       "order_number_link": "Bestellnummer {{ number }}",
       "date": "Datum",
       "payment_status": "Zahlungsstatus",
-      "fulfillment_status": "Fulfillmentstatus",
-      "total": "Gesamtsumme",
-      "none": "Du hast noch keine Bestellungen aufgegeben."
+      "fulfillment_status": "Erfüllungsstatus",
+      "total": "Gesamt",
+      "none": "Sie haben noch keine Bestellungen aufgegeben."
     },
     "recover_password": {
       "title": "Setze dein Passwort zurück",
@@ -334,17 +334,17 @@
       "fulfillment_status": "Erfüllungsstatus",
       "discount": "Rabatt",
       "shipping": "Versenden",
-      "tax": "Steuer",
+      "tax": "MwSt",
       "product": "Produkt",
-      "sku": "SKU",
+      "sku": "Artikelnummer",
       "price": "Preis",
-      "quantity": "Menge",
-      "total": "Gesamtsumme",
-      "fulfilled_at_html": "Ausgeführt am {{ date }}",
-      "track_shipment": "Sendung nachverfolgen",
-      "tracking_url": "Tracking-Link",
-      "tracking_company": "Versanddienstleister",
-      "tracking_number": "Trackingnummer",
+      "quantity": "Nummer",
+      "total": "Gesamt",
+      "fulfilled_at_html": "Erfüllt {{ date }}",
+      "track_shipment": "Versand verfolgen",
+      "tracking_url": "folge dem link",
+      "tracking_company": "Träger",
+      "tracking_number": "Auftragsnummer, Frachtnummer, Sendungscode",
       "subtotal": "Zwischensumme"
     }
   },
