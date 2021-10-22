@@ -252,14 +252,14 @@
     "country_label": "Country\/Region",
     "language_label": "Language",
     "update_language": "Update language",
-    "update_country": "Update country\/region"
+    "update_country": "Update Country\/Region"
   },
   "customer": {
     "account": {
       "title": "Account",
       "details": "Account details",
       "view_addresses": "View addresses",
-      "return": "Return to Account details"
+      "return": "Back to Account Details"
     },
     "account_fallback": "Account",
     "activate_account": {
