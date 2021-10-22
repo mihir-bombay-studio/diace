@@ -668,8 +668,17 @@
           "first_n_order_free": {
             "one": "First order free",
             "other": "First %{count} orders free"
+          },
+          "free_for_first_n_order": {
+            "one": "For first order",
+            "other": "For first %{count} orders"
           }
-        }
+        },
+        "estimated_delivery_time": "Expected delivery %{time}",
+        "estimated_delivery_time_range": "Expected delivery %{min_time}–%{max_time}"
+      },
+      "payment": {
+        "amazon_payments_label": "Amazon Pay"
       }
     }
   }
