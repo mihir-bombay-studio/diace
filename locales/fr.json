@@ -172,14 +172,14 @@
       "announcement": "Annonce",
       "menu": "Menu",
       "cart_count": {
-        "one": "{{ count }} article",
-        "other": "{{ count }} articles"
+        "one": "{{ count }} article",
+        "other": "{{ count }} articles"
       }
     },
     "cart": {
-      "title": "Votre panier",
-      "caption": "Articles du panier",
-      "remove_title": "Supprimer {{ title }}",
+      "title": "Votre Panier",
+      "caption": "Articles dans le panier",
+      "remove_title": "{{ title }} supprimer",
       "subtotal": "Sous-total",
       "new_subtotal": "Nouveau sous-total",
       "note": "Instructions spéciales concernant la commande",
