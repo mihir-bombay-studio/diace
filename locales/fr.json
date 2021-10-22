@@ -494,7 +494,14 @@
         "not_user_label": "N'êtes-vous pas %{first_name} ?",
         "have_an_account_label": "Avez-vous déjà un compte?",
         "sign_in_link_label": "connexion",
-        "sign_out_link_label": "Se déconnecter"
+        "sign_out_link_label": "Se déconnecter",
+        "save_my_information_label": "Enregistrez ces informations pour un paiement plus rapide à l'avenir"
+      },
+      "stock": {
+        "page_title": "Problème de stock",
+        "title": "En rupture de stock",
+        "items_unavailable_notice": "Certains articles ne sont plus disponibles. Votre panier a été modifié.",
+        "product_column_header": "Des produits"
       }
     }
   }
