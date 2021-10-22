@@ -204,26 +204,26 @@
         "total": "Total",
         "quantity": "Number"
       },
-      "update": "Update"
+      "update": "To update"
     },
     "footer": {
-      "social_placeholder": "Follow us on social media!",
+      "social_placeholder": "Follow us on social media.",
       "payment": "Payment methods"
     },
     "featured_blog": {
-      "view_all": "View all",
-      "onboarding_title": "Blog post",
-      "onboarding_content": "Give your customers a summary of your blog post"
+      "view_all": "Look at everything",
+      "onboarding_title": "blog post",
+      "onboarding_content": "Give your customers an overview of your blog post"
     },
     "featured_collection": {
-      "view_all": "View all",
-      "view_all_label": "View all products in the {{ collection_name }} collection"
+      "view_all": "Look at everything",
+      "view_all_label": "View all products in the collection {{ collection_name }}"
     },
     "collection_list": {
-      "view_all": "View all"
+      "view_all": "Look at everything"
     },
     "collection_template": {
-      "apply": "Apply",
+      "apply": "To apply",
       "clear": "Clear",
       "clear_all": "Clear all",
       "empty": "No products found",
