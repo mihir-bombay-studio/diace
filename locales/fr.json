@@ -465,7 +465,19 @@
         "zip_code_label": "Code postal",
         "zip_code_placeholder": "Code postal",
         "postal_code_label": "Code postal",
-        "postal_code_placeholder": "Code postal"
+        "postal_code_placeholder": "Code postal",
+        "postcode_label": "Code postal",
+        "postcode_placeholder": "Code postal",
+        "pincode_label": "Code postal",
+        "pincode_placeholder": "Code postal",
+        "region_none": "Aucune sélection",
+        "civic_number_warning": "Ajoutez un numéro de maison si vous en avez un"
+      },
+      "delivery_options": {
+        "ship": "expédier",
+        "pick_up": "À récupérer",
+        "pick_up_in_two_hours": "Généralement prêt dans les 2 heures",
+        "pick_up_in_four_hours": "Habituellement prêt dans les 4 heures"
       }
     }
   }
