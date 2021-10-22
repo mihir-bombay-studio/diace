@@ -406,7 +406,12 @@
         "back_to_cart": "Back to shopping cart",
         "back_to_contact_information": "Back to information",
         "back_to_shipping_method": "Back to send",
-        "back_to_payment_method": "Back to payment"
+        "back_to_payment_method": "Back to payment",
+        "choose_shipping_method": "Choose a shipping method",
+        "choose_payment_method": "Choose a payment method",
+        "choose_billing_address": "Choose a billing address",
+        "contact_us_html": "Contact us for more information",
+        "autocomplete_title": "suggestions"
       }
     }
   }
