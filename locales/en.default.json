@@ -134,15 +134,15 @@
         "unit_price": "Unit price"
       },
       "share": "Share this product",
-      "sold_out": "Sold out",
-      "unavailable": "Unavailable",
-      "vendor": "Vendor",
-      "video_exit_message": "{{ title }} opens full screen video in same window.",
+      "sold_out": "Out of stock",
+      "unavailable": "Not available",
+      "vendor": "Seller",
+      "video_exit_message": "{{ title }} opens a full screen video in the same window.",
       "xr_button": "View in your space",
-      "xr_button_label": "View in your space, loads item in augmented reality window"
+      "xr_button_label": "View in your space, load article in augmented reality window"
     },
     "modal": {
-      "label": "Media gallery"
+      "label": "media gallery"
     }
   },
   "templates": {
