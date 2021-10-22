@@ -206,21 +206,21 @@
     "featured_blog": {
       "view_all": "Regarde tout",
       "onboarding_title": "article de blog",
-      "onboarding_content": "Donnez à vos clients un résumé de votre article de blog"
+      "onboarding_content": "Donnez à vos clients un aperçu de votre article de blog"
     },
     "featured_collection": {
-      "view_all": "Tout afficher",
-      "view_all_label": "Afficher tous les produits de la collection {{ collection_name }}"
+      "view_all": "Regarde tout",
+      "view_all_label": "Voir tous les produits de la collection {{ collection_name }}"
     },
     "collection_list": {
-      "view_all": "Tout afficher"
+      "view_all": "Regarde tout"
     },
     "collection_template": {
       "title": "Collection",
       "sort_by_label": "Trier par",
       "sort_button": "Trier",
       "empty": "Aucun produit trouvé",
-      "apply": "Appliquer",
+      "apply": "Postuler",
       "clear": "Effacer",
       "clear_all": "Tout effacer",
       "from": "De",
