@@ -1442,7 +1442,16 @@
       "search_results": {
         "one": "Search: %{count} result found for '%{terms}'",
         "other": "Search: %{count} results found for '%{terms}'"
-      }
+      },
+      "blog_or_article_with_error": "Error - %{title}"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} discounts have been applied"
+    },
+    "challenge": {
+      "message": "Let us know you are not a robot to continue.",
+      "error": "Your answer was wrong, please try again.",
+      "submit_button_text": "Send"
     }
   }
 }
