@@ -190,22 +190,22 @@
       "taxes_and_shipping_policy_at_checkout_html": "Impôts et <a href=\"{{ link }}\">frais d'expédition<\/a> sont calculés à la caisse",
       "taxes_included_but_shipping_at_checkout": "Taxes incluses et frais d'expédition calculés à la caisse",
       "taxes_included_and_shipping_policy_html": "Taxe inclu. <a href=\"{{ link }}\">Frais d'expédition<\/a> sont calculés à la caisse.",
-      "taxes_and_shipping_at_checkout": "Taxes et frais d'expédition calculés lors du paiement",
+      "taxes_and_shipping_at_checkout": "Les taxes et les frais d'expédition sont calculés à la caisse",
       "headings": {
         "product": "Produit",
         "price": "Prix",
-        "total": "Total",
-        "quantity": "Quantité"
+        "total": "Le total",
+        "quantity": "Nombre"
       },
       "update": "Mettre à jour"
     },
     "footer": {
-      "payment": "Moyens de paiement",
-      "social_placeholder": "Suivez-nous sur les médias sociaux !"
+      "payment": "Méthodes de payement",
+      "social_placeholder": "Suivez-nous sur les réseaux sociaux."
     },
     "featured_blog": {
-      "view_all": "Tout afficher",
-      "onboarding_title": "Article de blog",
+      "view_all": "Regarde tout",
+      "onboarding_title": "article de blog",
       "onboarding_content": "Donnez à vos clients un résumé de votre article de blog"
     },
     "featured_collection": {
