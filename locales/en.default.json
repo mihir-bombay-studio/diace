@@ -350,21 +350,21 @@
       "title": "create an account",
       "first_name": "First Name",
       "last_name": "Last name",
-      "email": "Email",
-      "password": "Password",
+      "email": "E-mail",
+      "password": "password",
       "submit": "Create"
     },
     "reset_password": {
-      "title": "Reset account password",
+      "title": "Reset Account Password",
       "subtext": "Enter a new password for {{ email }}",
-      "password": "Password",
-      "password_confirm": "Confirm password",
-      "submit": "Reset password"
+      "password": "password",
+      "password_confirm": "Confirm Password",
+      "submit": "reset Password"
     }
   },
   "gift_cards": {
     "issued": {
-      "title": "Here's your {{ value }} gift card for {{ shop }}!",
+      "title": "Here's your gift card worth {{ value }} for {{ shop }}!",
       "subtext": "Your gift card",
       "gift_card_code": "Gift card code",
       "shop_link": "Continue shopping",
