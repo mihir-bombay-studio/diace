@@ -186,7 +186,9 @@
                 {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
                 {% for colors in colorsSch %}
                   {% assign color = colors | split: ":" %}
-                  {% if color[0] == value %}
+                {% assign downcase1 = color[0] %}
+                {% assign downcase2 = value %}
+                  {% if downcase1 == downcase2 %}
                     {% assign variantColorCode = color[1] %}
                     {% break %}
                   {% endif %}
