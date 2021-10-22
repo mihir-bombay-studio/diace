@@ -708,7 +708,12 @@
         "card_verification_value_explanation_other": "3-digit security code on the back of your card",
         "card_start_label": "Issue date (MM \/ YY)",
         "card_start_placeholder": "Issue date (MM \/ YY)",
-        "card_issue_number_label": "Issue number"
+        "card_issue_number_label": "Issue number",
+        "card_issue_number_placeholder": "Issue number",
+        "card_change_label": "Modify",
+        "ends_with_label": "ends in %{last_digits}",
+        "masked_digits_label": "•••• %{last_digits}",
+        "saved_by_payment_method": "Saved with %{payment_method}"
       }
     }
   }
