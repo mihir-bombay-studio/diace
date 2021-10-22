@@ -1239,6 +1239,15 @@
             "other": ", puis %{count} paiements, chacun des %{total_price}"
           }
         }
+      },
+      "customer_payment_methods": {
+        "page_title": "Méthodes de payement",
+        "title": "Méthodes de payement",
+        "update_card_button_label": "Mettre à jour la carte",
+        "delete_customer_mandate": {
+          "generic_error": "Il y avait un problème lors du traitement de votre demande.",
+          "success_message": "Votre mode de paiement a été supprimé"
+        }
       }
     }
   }
