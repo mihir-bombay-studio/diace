@@ -420,7 +420,12 @@
         "tooltip_accessibility_label": "Plus d'information"
       },
       "contact": {
-        "title": "Informations"
+        "title": "Informations",
+        "address_title": "Adresse",
+        "shipping_address_title": "Adresse de livraison",
+        "delivery_option_title": "Méthode de livraison",
+        "contact_method_title": "Informations de contact",
+        "email_label": "E-mail"
       }
     }
   }
