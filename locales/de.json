@@ -614,7 +614,29 @@
         "shipping_line_delivery_instructions": "Geben Sie die erforderlichen Informationen wie Türcodes und Lieferanweisungen ein.",
         "local_delivery": "Lieferung vor Ort",
         "subscription_shipping": "Abonnement zum Versenden",
-        "shipping_method_one_time_purchase_group_title": "Einmaliger kauf"
+        "shipping_method_one_time_purchase_group_title": "Einmaliger kauf",
+        "shipping_method_subscription_group_title": "Abonnement",
+        "one_time_purchase_shipping": "Einmal senden",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "für %{count} Lieferung(en)",
+            "other": "für %{count} Lieferungen"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "jeden Tag",
+              "other": "alle %{count} Tage"
+            },
+            "week": {
+              "one": "wöchentlich",
+              "other": "alle %{count} Wochen"
+            },
+            "month": {
+              "one": "jeden Monat",
+              "other": "alle %{count} Monate"
+            }
+          }
+        }
       }
     }
   }
