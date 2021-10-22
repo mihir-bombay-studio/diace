@@ -413,7 +413,12 @@
         "tooltip_accessibility_label": "Mehr Informationen"
       },
       "contact": {
-        "title": "Information"
+        "title": "Information",
+        "address_title": "Die Anschrift",
+        "shipping_address_title": "Lieferadresse",
+        "delivery_option_title": "Versandart",
+        "contact_method_title": "Kontaktinformationen",
+        "email_label": "Email"
       }
     }
   }
