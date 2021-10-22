@@ -1312,7 +1312,47 @@
       "contains_html_tags": "darf keine HTML-Tags enthalten",
       "too_short": "ist zu kurz (mindestens %{count} Zeichen)",
       "too_long": "ist zu lang (maximal %{count} Zeichen)",
-      "password_mismatch": "muss mit dem angegebenen Passwort identisch sein."
+      "password_mismatch": "muss mit dem angegebenen Passwort identisch sein.",
+      "contains_spaces": "beginnt oder endet mit Leerzeichen.",
+      "email_domain_invalid": "Mobilfunkanbieter wird nicht unterstützt",
+      "invalid_for_country": "ist nicht gültig für %{country}",
+      "invalid_for_country_and_province": "gilt nicht für %{province} und %{country}",
+      "invalid_province_in_country": "ist keine gültige Provinz in %{country}",
+      "invalid_state_in_country": "ist kein gültiger Zustand in %{country}",
+      "invalid_region_in_country": "ist keine gültige Region in %{country}",
+      "less_than_or_equal_to": "muss kleiner oder gleich %{count} sein",
+      "not_supported": "wird nicht unterstützt",
+      "full_name_required": "Geben Sie einen Vor- und Nachnamen ein",
+      "invalid_for_card_type": "ist ungültig",
+      "invalid_type": "Entschuldigung, wir akzeptieren keine Karten dieser Art",
+      "invalid_format": "Format ist ungültig",
+      "expired": "abgelaufen",
+      "invalid_start_date_or_issue_number_for_debit": "gültiges Startdatum oder gültige Ausgabenummer erforderlich",
+      "invalid_expiry_year": "ist kein gültiges Ablaufjahr",
+      "reset_password_html": "Diese E-Mail-Adresse ist bereits mit einem Konto verknüpft. Wenn dieses Konto Ihnen gehört, können Sie <a href=\"\/account\/login#recover\">Setze dein Passwort zurück<\/a>",
+      "verify_email": "Wir haben eine E-Mail an %{customer_email} gesendet. Bitte klicken Sie auf den beigefügten Link, um Ihre E-Mail-Adresse zu überprüfen.",
+      "blocked_address": "Dieser Speicherort wird nicht unterstützt."
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Fehler beim Zurücksetzen des Passworts",
+        "no_account_found": "Kein Konto mit dieser E-Mail-Adresse gefunden.",
+        "invalid_credentials": "Falsche Email oder Passwort."
+      },
+      "address": {
+        "updated": "Adresse aktualisiert.",
+        "error_updating": "Fehler beim Aktualisieren der Adresse",
+        "created": "Adresse erstellt",
+        "error_creating": "Fehler beim Erstellen der Adresse.",
+        "deleted": "Adresse entfernt",
+        "error_deleting": "Fehler beim Löschen der Adresse."
+      },
+      "order": {
+        "not_available": "Diese Bestellung ist nicht verfügbar",
+        "financial_status": {
+          "authorized": "Verifiziert"
+        }
+      }
     }
   }
 }
