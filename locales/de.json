@@ -845,7 +845,23 @@
         "three_d_secure_failed": "Ihre Zahlung kann nicht verifiziert werden. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
         "three_d_secure_throttled": "Zu viele Versuche; warte eine Weile, bevor du es erneut versuchst",
         "subscription_agreement_blank": "Ihre Zahlungsdaten werden beim Kauf eines Abonnements gespeichert. Bitte bestätigen Sie Ihr Einverständnis oder entfernen Sie alle Abonnements aus Ihrer Bestellung, um fortzufahren.",
-        "three_d_secure_failed_duplicate": "Die 3D Secure-Kreditkartenauthentifizierung ist fehlgeschlagen, da bereits eine andere durchgeführt wird."
+        "three_d_secure_failed_duplicate": "Die 3D Secure-Kreditkartenauthentifizierung ist fehlgeschlagen, da bereits eine andere durchgeführt wird.",
+        "insufficient_funds": "Ihre Zahlung wurde aufgrund unzureichender Deckung abgelehnt. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "fraud_payment_errors": {
+          "transaction_declined": "Diese Transaktion wurde abgelehnt",
+          "address_mismatch": "Adresse und Postleitzahl stimmen nicht überein.",
+          "cannot_process": "Diese Überweisung kann nicht durchgeführt werden.",
+          "no_match": "Keine Übereinstimmung",
+          "card_declined": "Ihre Karte wurde abgelehnt"
+        },
+        "payment_processing_no_retry": "Ihre Zahlung kann aus technischen Gründen nicht verarbeitet werden. Versuchen Sie es mit einer anderen Zahlungsmethode."
+      },
+      "shipping_errors": {
+        "shipping_method": "Ihr Warenkorb wurde aktualisiert und die bisherigen Versandkosten sind ungültig. Wählen Sie einen neuen Tarif.",
+        "shipping_method_not_available": "Ihr Warenkorb wurde aktualisiert und die von Ihnen hinzugefügten Artikel können nicht an Ihre Adresse versandt werden. Bitte entfernen Sie die Artikel, um Ihre Bestellung abzuschließen.",
+        "shipping_method_not_available_generic": {
+          "one": "Diese Bestellung kann nicht an die angegebene Adresse versendet werden. Bitte überprüfen Sie die Adresse und stellen Sie sicher, dass alle Felder korrekt ausgefüllt sind. Dann versuchen Sie es erneut."
+        }
       }
     }
   }
