@@ -1249,6 +1249,24 @@
           "success_message": "Votre mode de paiement a été supprimé"
         }
       }
+    },
+    "pagination": {
+      "previous": "Précédent",
+      "next": "suivante"
+    },
+    "links": {
+      "powered_by_shopify": "Propulsé par Shopify",
+      "learn_more": "Plus d'information"
+    },
+    "feed": {
+      "more": "Plus"
+    },
+    "attributes": {
+      "email": "e-mail",
+      "password": "le mot de passe",
+      "password_confirmation": "la confirmation du mot de passe",
+      "first_name": "Prénom",
+      "last_name": "nom de famille"
     }
   }
 }
