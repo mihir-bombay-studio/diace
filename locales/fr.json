@@ -1123,7 +1123,21 @@
       "remember_me": {
         "shopify_pay_label": "Boutique Payer",
         "save": "Garder",
-        "title": "Souviens-toi de moi"
+        "title": "Souviens-toi de moi",
+        "label": "Enregistrer mes coordonnées pour un paiement plus rapide",
+        "description_html": "La prochaine fois que vous passerez votre commande ici ou dans d'autres magasins fournis par Shopify, vous recevrez un code par SMS qui vous permettra de payer en toute sécurité via Shop Pay.",
+        "mobile_phone_icon_alt": "Téléphone portable",
+        "mobile_phone_number": "Numéro de portable",
+        "terms_and_privacy_html": "En continuant, vous acceptez les %{privacy_href} et %{terms_href} de Shop Pay.",
+        "errors": {
+          "optin": "Shop Pay n'est pas disponible"
+        },
+        "privacy_policy": "Politique de confidentialité",
+        "terms_of_service": "Conditions d'utilisation",
+        "installments": {
+          "paid_in_installments": "Payé en plusieurs fois avec Shop Pay.",
+          "view_schedule": "Voir l'horaire"
+        }
       }
     }
   }
