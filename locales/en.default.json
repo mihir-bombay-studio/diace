@@ -342,13 +342,13 @@
       "none": "You have not placed any orders yet."
     },
     "recover_password": {
-      "title": "Reset your password",
-      "subtext": "We will send you an email to reset your password",
-      "success": "We've sent you an email with a link to update your password."
+      "title": "reset Password",
+      "subtext": "We'll send you an email to reset your password",
+      "success": "We've sent you an email with a link to reset your password."
     },
     "register": {
-      "title": "Create account",
-      "first_name": "First name",
+      "title": "create an account",
+      "first_name": "First Name",
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
