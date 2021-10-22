@@ -1311,7 +1311,12 @@
       "invalid_email": "must be a valid email address",
       "discount_disabled": "This discount is blocked",
       "discount_expired": "This discount is no longer valid",
-      "discount_limit_reached": "This discount has reached the usage limit"
+      "discount_limit_reached": "This discount has reached the usage limit",
+      "discount_not_found": "Can't find a valid discount that matches the code",
+      "customer_already_used_once_per_customer_discount_notice": "This discount has reached the usage limit",
+      "gift_card_already_applied": "Code has already been applied to your cart",
+      "gift_card_code_invalid": "Code is invalid",
+      "gift_card_currency_mismatch": "%{gift_card_currency} gift cards cannot be applied to orders in %{checkout_currency}"
     }
   }
 }
