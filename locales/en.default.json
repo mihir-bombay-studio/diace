@@ -757,7 +757,19 @@
         "change_currency_section_description": "Select a currency option",
         "no_real_orders_dev_store": "This store cannot accept real orders or process real payments.",
         "subscription_agreement_label_html": "I understand that I agree to a subscription. It will be renewed at the stated price and frequency until it expires or becomes\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">cancelled<\/a>.",
-        "waiting_on_payment_methods": "Get available payment methods..."
+        "waiting_on_payment_methods": "Get available payment methods...",
+        "apple_pay_payment_error": "Your payment could not be completed. Please try again or use a different payment method.",
+        "subscription_card_update_agreement_label": "Changing your payment method will update your subscription and recurring payments in the future.",
+        "card_security_vault_notice": "We need your details for future payments. All transactions are secured and encrypted.",
+        "taxes_not_included": "Excluding taxes",
+        "no_taxes_banner_content": "Taxes are not charged on this order. You can no longer add taxes if the payment has already been collected.",
+        "card_update_label": "Update map",
+        "paypal": {
+          "connect": "Click to link your PayPal account"
+        },
+        "subscription_agreement_label": "I understand that I agree to a subscription. It will be renewed at the stated price and frequency until it expires or becomes %{cancelled}.",
+        "subscription_agreement_cancelled": "cancelled",
+        "card_expired": "Expired"
       }
     }
   }
