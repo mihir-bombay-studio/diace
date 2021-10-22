@@ -790,7 +790,14 @@
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Current Balance %{amount}",
-        "credit_card_expires_on_notice": "Expires on %{month}\/%{year}"
+        "credit_card_expires_on_notice": "Expires on %{month}\/%{year}",
+        "express_payment_gateway_label": "express",
+        "manual_payment_gateway_label": "Manually",
+        "billing_address_title": "Billing address",
+        "free_label": "For free"
+      },
+      "field_errors": {
+        "handle_phone_invalid": "enter a valid phone number"
       }
     }
   }
