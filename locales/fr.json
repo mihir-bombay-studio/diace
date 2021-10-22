@@ -783,7 +783,19 @@
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Solde actuel %{amount}",
-        "credit_card_expires_on_notice": "Expire le %{month}\/%{year}"
+        "credit_card_expires_on_notice": "Expire le %{month}\/%{year}",
+        "express_payment_gateway_label": "Express",
+        "manual_payment_gateway_label": "Manuellement",
+        "billing_address_title": "Adresse de facturation",
+        "free_label": "Gratuite"
+      },
+      "field_errors": {
+        "handle_phone_invalid": "entrez un numéro de téléphone valide",
+        "handle_email_invalid": "Entrez une adresse e-mail valide",
+        "email_invalid": "Entrez une adresse e-mail valide",
+        "email_or_phone_blank": "Saisissez une adresse e-mail ou un numéro de téléphone portable",
+        "email_or_phone_invalid": "Veuillez entrer une adresse e-mail ou un numéro de téléphone portable valide",
+        "address_first_name_blank": "Entrez un prénom"
       }
     }
   }
