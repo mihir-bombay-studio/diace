@@ -179,14 +179,14 @@
       "announcement": "Announcement",
       "menu": "Menu",
       "cart_count": {
-        "one": "{{ count }} item",
-        "other": "{{ count }} items"
+        "one": "{{ count }} article",
+        "other": "{{ count }} articles"
       }
     },
     "cart": {
-      "title": "Your cart",
-      "caption": "Cart items",
-      "remove_title": "Remove {{ title }}",
+      "title": "Your shopping cart",
+      "caption": "Items in shopping cart",
+      "remove_title": "{{ title }} delete",
       "subtotal": "Subtotal",
       "new_subtotal": "New subtotal",
       "note": "Order special instructions",
