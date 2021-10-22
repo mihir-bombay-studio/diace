@@ -1116,7 +1116,14 @@
         "privacy_policy": "Politique de confidentialité",
         "terms_of_service": "Termes et conditions",
         "legal_notice": "Mention légale",
-        "shipping_policy": "Politique d'expédition"
+        "shipping_policy": "Politique d'expédition",
+        "terms_of_sale": "Conditions de vente",
+        "subscription_policy": "Politique d'abonnement"
+      },
+      "remember_me": {
+        "shopify_pay_label": "Boutique Payer",
+        "save": "Garder",
+        "title": "Souviens-toi de moi"
       }
     }
   }
