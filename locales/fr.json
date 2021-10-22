@@ -108,8 +108,8 @@
       "quantity": {
         "label": "Nombre",
         "input_label": "Quantité pour {{ product }}",
-        "increase": "Augmenter la quantité de {{ product }}",
-        "decrease": "Réduire la quantité de {{ product }}"
+        "increase": "Augmenter le nombre pour {{ product }}",
+        "decrease": "Diminuer le nombre pour {{ product }}"
       },
       "price": {
         "from_price_html": "Du {{ price }}",
@@ -125,13 +125,13 @@
       "xr_button": "Afficher dans son espace",
       "xr_button_label": "Affichage dans votre espace, charge l'article dans une fenêtre de réalité augmentée",
       "pickup_availability": {
-        "view_store_info": "Afficher les informations de la boutique",
-        "check_other_stores": "Vérifier la disponibilité dans d'autres boutiques",
-        "pick_up_available": "Service de retrait disponible",
-        "pick_up_available_at_html": "Service de retrait disponible à <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Service de retrait non disponible actuellement à <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "unavailable": "Impossible de charger la disponibilité du service de retrait",
-        "refresh": "Actualiser"
+        "view_store_info": "Voir les détails du magasin",
+        "check_other_stores": "Vérifier la disponibilité dans d'autres magasins",
+        "pick_up_available": "La collection est disponible",
+        "pick_up_available_at_html": "La collection est disponible sur <strong>{{ location_name }}<\/strong>",
+        "pick_up_unavailable_at_html": "Le ramassage n'est actuellement pas disponible à <strong>{{ location_name }}<\/strong>",
+        "unavailable": "Impossible de charger la disponibilité de retrait",
+        "refresh": "Rafraîchir"
       }
     },
     "modal": {
