@@ -304,23 +304,23 @@
       "none": "Sie haben noch keine Bestellungen aufgegeben."
     },
     "recover_password": {
-      "title": "Setze dein Passwort zurück",
-      "subtext": "Wir werden dir eine E-Mail zum Zurücksetzen deines Passworts schicken",
-      "success": "Wir haben dir eine E-Mail mit einem Link zum Aktualisieren deines Passworts geschickt."
+      "title": "Passwort zurücksetzen",
+      "subtext": "Wir senden Ihnen eine E-Mail, um Ihr Passwort zurückzusetzen",
+      "success": "Wir haben Ihnen eine E-Mail mit einem Link zum Zurücksetzen Ihres Passworts gesendet."
     },
     "register": {
-      "title": "Konto erstellen",
+      "title": "ein Konto erstellen",
       "first_name": "Vorname",
       "last_name": "Nachname",
-      "email": "E-Mail",
+      "email": "Email",
       "password": "Passwort",
-      "submit": "Erstellen"
+      "submit": "Schaffen"
     },
     "reset_password": {
-      "title": "Passwort für Konto zurücksetzen",
-      "subtext": "Gib ein neues Passwort für {{ email }} ein",
+      "title": "Kontopasswort zurücksetzen",
+      "subtext": "Geben Sie ein neues Passwort für {{ email }} ein",
       "password": "Passwort",
-      "password_confirm": "Passwort bestätigen",
+      "password_confirm": "Kennwort bestätigen",
       "submit": "Passwort zurücksetzen"
     },
     "order": {
@@ -350,16 +350,16 @@
   },
   "gift_cards": {
     "issued": {
-      "title": "Hier ist dein Geschenkgutschein im Wert von {{ value }} für {{ shop }}!",
-      "subtext": "Dein Geschenkgutschein",
+      "title": "Hier ist Ihre Geschenkkarte im Wert von {{ value }} für {{ shop }}!",
+      "subtext": "Ihre Geschenkkarte",
       "gift_card_code": "Gutscheincode",
-      "shop_link": "Weiter shoppen",
-      "remaining_html": "{{ balance }} verbleibend",
-      "add_to_apple_wallet": "Zu Apple Wallet hinzufügen",
-      "qr_image_alt": "QR-Code – Scannen, um Geschenkgutschein einzulösen",
+      "shop_link": "Zurück zum Laden",
+      "remaining_html": "Restbetrag: {{ balance }}",
+      "add_to_apple_wallet": "Zur Apple Wallet hinzufügen",
+      "qr_image_alt": "QR-Code – zum Einlösen der Geschenkkarte scannen",
       "copy_code": "Code kopieren",
       "expired": "Abgelaufen",
-      "copy_code_success": "Code erfolgreich kopiert",
+      "copy_code_success": "Code kopiert",
       "print_gift_card": "Drucken"
     }
   },
