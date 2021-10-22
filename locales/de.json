@@ -923,7 +923,17 @@
       },
       "thank_you": {
         "title": "Danke für Ihren Einkauf!",
-        "confirmation_email_sent_text": "Eine Bestätigungs-E-Mail wurde an %{email} gesendet."
+        "confirmation_email_sent_text": "Eine Bestätigungs-E-Mail wurde an %{email} gesendet.",
+        "return_to_store_link_label": "Zurück zum Laden",
+        "print_link_label": "Kaufbeleg ausdrucken",
+        "payment_information_title": "Zahlungsdetails",
+        "shipping_information_title": "Versanddetails",
+        "page_title": "Danke, %{display_name}!",
+        "page_title_no_name": "Dankeschön!",
+        "cancelled_page_title": "Bestellung storniert",
+        "customer_information_title": "Benutzerdefinierte Informationen",
+        "contact_information_title": "Kontaktinformationen",
+        "billing_address_title": "Rechnungsadresse"
       }
     }
   }
