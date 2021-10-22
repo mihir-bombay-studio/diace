@@ -1461,7 +1461,25 @@
     "email_marketing": {
       "subscribed": {
         "confirmation": "Thank you for subscribing to our mailing list.",
-        "disclaimer": "You can unsubscribe at any time."
+        "disclaimer": "You can unsubscribe at any time.",
+        "unsubscribe": "Sign out"
+      },
+      "unsubscribed": {
+        "confirmation": "You have been unsubscribed from our mailing list.",
+        "disclaimer": "You will no longer receive marketing updates from us. You can re-register at any time.",
+        "preview": "You're previewing what customers will see when they unsubscribe."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>You have consented to email open tracking.<\/b>",
+          "visibility": "Email open rates are reported anonymously. We'll only see if you've opened an email as part of an aggregated email open rate.",
+          "opt_out_html": "you can <a style='text-decoration:underline;' href='%{link}'>sign out<\/a> from email open-tracking if you don't want to share this information.",
+          "preview_bar": "You're previewing what customers will see when they consent to receive open tracking emails."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>You have opted out of email open tracking.<\/b>",
+          "visibility": "We don't see if you've opened our emails."
+        }
       }
     }
   }
