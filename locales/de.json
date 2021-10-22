@@ -871,6 +871,24 @@
       "alternative_payment_method_banner": {
         "express_checkout": "Schnelle Kasse",
         "or": "ODER"
+      },
+      "alternative_payment_method": {
+        "button_html": "Zur Kasse gehen mit: %{method}",
+        "button_label": "Zur Kasse gehen mit: %{method}"
+      },
+      "paypal": {
+        "button_html": "Zur Kasse mit %{logo}"
+      },
+      "apple_pay": {
+        "button_html": "Kaufen mit %{logo}"
+      },
+      "processing": {
+        "redirecting_page_title": "Verweisen…",
+        "redirecting_title": "Verweisen…",
+        "redirecting_notice": "Sie werden verwiesen.",
+        "complete_your_purchase_title": "Schließen Sie Ihren Einkauf ab",
+        "continue_to_payment_gateway_notice": "Fahren Sie mit der Zahlung fort, um Ihre Zahlungsdetails hinzuzufügen.",
+        "continue_to_payment_gateway_button_label": "Zur Zahlung gehen"
       }
     }
   }
