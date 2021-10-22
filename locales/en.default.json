@@ -1074,7 +1074,12 @@
         "gift_card_confirmation_by_text": "Gift vouchers are sent by message. If you haven't received a message yet, please try sending them again or contact us.",
         "gift_card_confirmation_by_email": "Gift cards are sent by email. If you haven't received a message yet, please try sending them again or contact us.",
         "gift_card_title": "Gift cards",
-        "resend_gift_cards": "Resend Gift Cards"
+        "resend_gift_cards": "Resend Gift Cards",
+        "attempted_delivery_local_title": "Missed delivery",
+        "attempted_delivery_local_description_html": "Unfortunately we were unable to deliver your order. %{contact_us} to schedule another delivery.",
+        "thank_you_title_payment": "Your payment has been confirmed",
+        "thank_you_confirmed_order_with_email_payment": "You have made a payment for your order %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "You have made a payment for your order %{date}."
       }
     }
   }
