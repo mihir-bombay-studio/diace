@@ -1048,7 +1048,38 @@
         "delivery_information_label": "Lieferinformationen:",
         "gift_card_sent_confirmation": "Geschenkgutscheine verschickt",
         "out_for_delivery_local_title": "Ihre Bestellung ist versandfertig",
-        "out_for_delivery_local_description_html": "Sie erhalten Ihre Bestellung in Kürze."
+        "out_for_delivery_local_description_html": "Sie erhalten Ihre Bestellung in Kürze.",
+        "delivered_local_title": "Ihre Bestellung wurde geliefert",
+        "delivered_local_description_html": "Sie haben Ihre Bestellung noch nicht erhalten? %{let_us_know}.",
+        "let_us_know": "Lass uns wissen",
+        "qr_code": {
+          "title": "Folgen Sie auf Ihrem Telefon",
+          "subtitle": "Scannen Sie den Code mit der Kamera Ihres Telefons, um ihn mit Shop zu verfolgen.",
+          "send_link_to_phone": "Oder senden Sie einen Link an Ihr Telefon"
+        },
+        "gift_card_confirmation_by_text": "Geschenkgutscheine werden per Nachricht verschickt. Wenn Sie noch keine Nachricht erhalten haben, versuchen Sie es erneut oder kontaktieren Sie uns.",
+        "gift_card_confirmation_by_email": "Geschenkgutscheine werden per E-Mail versendet. Wenn Sie noch keine Nachricht erhalten haben, versuchen Sie es erneut oder kontaktieren Sie uns.",
+        "gift_card_title": "Geschenkkarten",
+        "resend_gift_cards": "Geschenkkarten erneut senden",
+        "attempted_delivery_local_title": "Verpasste Lieferung",
+        "attempted_delivery_local_description_html": "Leider konnten wir Ihre Bestellung nicht liefern. %{contact_us} um eine weitere Lieferung zu planen.",
+        "thank_you_title_payment": "Ihre Zahlung wurde bestätigt",
+        "thank_you_confirmed_order_with_email_payment": "Sie haben Ihre Bestellung %{date} bezahlt.",
+        "thank_you_confirmed_order_with_phone_payment": "Sie haben Ihre Bestellung %{date} bezahlt.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Sie haben Ihre Bestellung %{date} bezahlt.",
+        "order_status_confirmed_order_with_email_payment": "Sie haben Ihre Bestellung %{date} bezahlt.",
+        "order_status_confirmed_order_with_phone_payment": "Sie haben Ihre Bestellung %{date} bezahlt.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "Sie haben Ihre Bestellung %{date} bezahlt."
+      },
+      "review": {
+        "title": "Rezension",
+        "review_title": "Prüfe die Reihenfolge",
+        "checkout_as_guest": "Check out als Gast",
+        "blocks": {
+          "contact_method_title": "Kontakt",
+          "billing_address_title": "Abrechnung",
+          "shipping_address_title": "Senden an"
+        }
       }
     }
   }
