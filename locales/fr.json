@@ -800,7 +800,12 @@
         "address_address1_blank": "Entrer une adresse",
         "address_address2_blank": "Entrez un numéro d'appartement ou de suite, etc.",
         "address_city_blank": "Entrez une ville",
-        "address_country_blank": "Sélectionnez un pays\/une région"
+        "address_country_blank": "Sélectionnez un pays\/une région",
+        "address_country_not_supported": "Nous ne livrons actuellement pas dans ce pays\/région. Veuillez saisir une nouvelle adresse de livraison et réessayer.",
+        "address_province_blank": "Sélectionnez un état\/province",
+        "address_company_blank": "Entrez un nom d'entreprise",
+        "address_phone_blank": "entrez un numéro de téléphone valide",
+        "address_zip_blank": "Entrez un code postal ou un code postal"
       }
     }
   }
