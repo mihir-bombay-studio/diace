@@ -842,7 +842,14 @@
         "physical_gift_card_invalid_quantity": "Order lines for physical gift cards must have a quantity that matches the number of gift card codes.",
         "physical_gift_card_duplicate_code": "Order line for physical gift card contains duplicate code.",
         "physical_gift_card_invalid_code": "Physical gift card code is invalid.",
-        "payment_gateway_not_in_test_mode": "is not built for test orders. This store cannot accept real orders or process real payments."
+        "payment_gateway_not_in_test_mode": "is not built for test orders. This store cannot accept real orders or process real payments.",
+        "tips_invalid_tip_amount": "Please enter a tip of no more than %{amount}",
+        "payment_gateway_unsupported_for_subscriptions": "This payment method is not available for subscription orders.",
+        "sms_marketing_phone_invalid": "enter a valid phone number"
+      },
+      "payment_errors": {
+        "generic_error": "There was a problem processing your payment. Please try again or use a different payment method.",
+        "rejected_transaction": "Your payment has been declined. Please try again or use a different payment method."
       }
     }
   }
