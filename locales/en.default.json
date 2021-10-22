@@ -930,7 +930,14 @@
         "return_to_cart_button_label": "Back to shopping cart"
       },
       "payment_gateway": {
-        "credit_card_label": "credit card"
+        "credit_card_label": "credit card",
+        "bank_deposit_label": "Bank deposit",
+        "cash_on_delivery_label": "cash on delivery",
+        "money_order_label": "money order"
+      },
+      "thank_you": {
+        "title": "Thank you for your purchase!",
+        "confirmation_email_sent_text": "A confirmation email has been sent to %{email}"
       }
     }
   }
