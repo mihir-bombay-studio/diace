@@ -985,7 +985,48 @@
         "delivered": "Préoccupé",
         "delivered_title": "Votre commande a été livrée",
         "delivered_description_html": "Votre commande a été livrée à l'adresse que vous avez indiquée. Si vous ne l'avez pas reçu, ou s'il y a d'autres problèmes, %{contact_us}.",
-        "contact_us": "Contactez-nous"
+        "contact_us": "Contactez-nous",
+        "contact_us_lowercase": "Nous contacter",
+        "contact_us_html": "Besoin d'aide? %{contact_us}",
+        "updated_time": "Mis à jour il y a %{time_ago}",
+        "failure": "Pas inquiet",
+        "failed_title": "Votre commande n'a pas pu être livrée.",
+        "failed_contact_merchant": "Veuillez contacter %{company} pour organiser la livraison.",
+        "failed_contact_merchant_no_company": "Veuillez nous contacter pour organiser la livraison.",
+        "non_shippable_title": "Votre commande est terminée",
+        "login_title": "Connectez-vous pour voir tous les détails de la commande",
+        "login_description": "Vous trouverez votre numéro de commande sur la facture que vous avez reçue par e-mail.",
+        "login_description_phone": "Vous trouverez votre numéro de commande sur la facture que vous avez reçue par SMS.",
+        "login_not_customer_html": "Pas %{name} ? Vous pouvez %{link}",
+        "login_reorder_link_text": {
+          "one": "acheter aussi ce produit",
+          "other": "acheter aussi ces produits"
+        },
+        "customer_information_hidden_fields_message": "Connectez-vous pour afficher toutes les informations client.",
+        "cancelled_title": "Votre commande a été annulée",
+        "cancelled_description": "Votre commande a été annulée le %{date}. Contactez-nous si vous avez des questions.",
+        "order_number_label": "Numéro de commande",
+        "customer_validation_error": "Veuillez saisir une adresse e-mail ou un numéro de commande valide.",
+        "customer_validation_error_phone": "Veuillez entrer un numéro de téléphone ou de commande valide.",
+        "login": "connexion",
+        "unfulfilled_items_title": "L'expédition est en préparation",
+        "unfulfilled_items_description": "Nous préparons actuellement ces articles pour l'expédition.",
+        "marker": {
+          "current": "Lieu d'expédition actuel",
+          "shipping": "Adresse de livraison"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Articles dans cet envoi",
+          "unfulfilled_table_title": "Les articles sont préparés pour l'expédition",
+          "product_image_label": "Image du produit",
+          "description_label": "La description",
+          "quantity_label": "Nombre"
+        },
+        "opt_in_message_html": "Vos informations sont stockées dans %{shopify_pay}",
+        "order_updates_description_missing": "Vous ne recevrez aucune mise à jour d'expédition.",
+        "order_updates_subscribe_to_email_notifications": "Recevez des mises à jour d'expédition par e-mail",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Recevez des mises à jour d'expédition par e-mail ou SMS",
+        "order_updates_subscribe_to_phone_notifications": "Recevez vos mises à jour d'expédition par SMS"
       }
     }
   }
