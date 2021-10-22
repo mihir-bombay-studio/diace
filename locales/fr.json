@@ -1376,8 +1376,22 @@
         },
         "transaction_status": {
           "success": "Passé",
-          "pending": "En attente"
-        }
+          "pending": "En attente",
+          "failure": "Échoué",
+          "error": "Tort"
+        },
+        "cancel_reason": {
+          "declined": "Paiement refusé",
+          "inventory": "Articles non disponibles",
+          "fraud": "Commande frauduleuse",
+          "customer": "Commande modifiée\/annulée par le client",
+          "other": "Autrement"
+        },
+        "cash_on_delivery": "paiement à la livraison"
+      },
+      "cart": {
+        "only_n_items_available": "Vous ne pouvez ajouter que %{count} %{name} à votre panier.",
+        "too_many_items_in_cart": "Vous ne pouvez plus ajouter %{name} à votre panier."
       }
     }
   }
