@@ -895,7 +895,12 @@
         "redirecting_notice": "Vous êtes référé.",
         "complete_your_purchase_title": "Terminez votre achat",
         "continue_to_payment_gateway_notice": "Procédez au paiement pour ajouter vos détails de paiement.",
-        "continue_to_payment_gateway_button_label": "Aller au paiement"
+        "continue_to_payment_gateway_button_label": "Aller au paiement",
+        "complete_your_purchase_title_error": "Corrigez vos informations de paiement",
+        "continue_to_payment_gateway_notice_error": "Vos informations de paiement ne peuvent pas être vérifiées.",
+        "continue_to_payment_gateway_button_label_error": "Mettre à jour les détails de paiement",
+        "page_title": "la commande est en cours de traitement",
+        "title": "la commande est en cours de traitement"
       }
     }
   }
