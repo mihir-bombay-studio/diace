@@ -1067,7 +1067,19 @@
         "gift_card_confirmation_by_text": "Les bons cadeaux sont envoyés par message. Si vous n'avez pas encore reçu de message, essayez de le renvoyer ou contactez-nous.",
         "gift_card_confirmation_by_email": "Les cartes cadeaux sont envoyées par e-mail. Si vous n'avez pas encore reçu de message, essayez de les renvoyer ou contactez-nous.",
         "gift_card_title": "Cartes cadeaux",
-        "resend_gift_cards": "Renvoyer des cartes-cadeaux"
+        "resend_gift_cards": "Renvoyer des cartes-cadeaux",
+        "attempted_delivery_local_title": "Livraison manquée",
+        "attempted_delivery_local_description_html": "Malheureusement, nous n'avons pas pu livrer votre commande. %{contact_us} pour planifier une autre livraison.",
+        "thank_you_title_payment": "Votre paiement a été confirmé",
+        "thank_you_confirmed_order_with_email_payment": "Vous avez effectué un paiement pour votre commande %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "Vous avez effectué un paiement pour votre commande %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Vous avez effectué un paiement pour votre commande %{date}.",
+        "order_status_confirmed_order_with_email_payment": "Vous avez effectué un paiement pour votre commande %{date}.",
+        "order_status_confirmed_order_with_phone_payment": "Vous avez effectué un paiement pour votre commande %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "Vous avez effectué un paiement pour votre commande %{date}."
+      },
+      "review": {
+        "title": "Revoir"
       }
     }
   }
