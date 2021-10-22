@@ -397,7 +397,23 @@
         "choose_payment_method": "Wählen Sie eine Bezahlungsart",
         "choose_billing_address": "Wählen Sie eine Rechnungsadresse",
         "contact_us_html": "Kontaktieren Sie uns für weitere Informationen",
-        "autocomplete_title": "Vorschläge"
+        "autocomplete_title": "Vorschläge",
+        "autocomplete_single_item": "1 Artikel verfügbar",
+        "autocomplete_multi_item": "{{number}} Artikel verfügbar",
+        "autocomplete_selection": "{{number}} der {{total}}",
+        "autocomplete_close": "Vorschläge schließen",
+        "forwarding_indicator": {
+          "new_window": "Öffnet in einem neuen Fenster.",
+          "external": "Öffnet eine externe Website.",
+          "external_and_new_window": "Öffnet externe Website in einem neuen Fenster."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Kasse"
+        },
+        "tooltip_accessibility_label": "Mehr Informationen"
+      },
+      "contact": {
+        "title": "Information"
       }
     }
   }
