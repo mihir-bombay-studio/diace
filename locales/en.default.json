@@ -1478,8 +1478,28 @@
         },
         "opt_out": {
           "opted_out_html": "<b>You have opted out of email open tracking.<\/b>",
-          "visibility": "We don't see if you've opened our emails."
+          "visibility": "We don't see if you've opened our emails.",
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>Authorize<\/a> for open tracking of emails.",
+          "preview_bar": "You're previewing what customers will see when they opt out of receiving open tracking emails."
+        },
+        "no_longer_track": {
+          "status_html": "<b>We no longer track whether emails are opened.<\/b>",
+          "privacy_policy": "After this email was sent, we updated our privacy policy and no longer track email opening."
+        },
+        "track": {
+          "status_html": "<b>Email open tracking is reported.<\/b>",
+          "visibility": "We'll only see if you've opened the email, as part of the overall email open rate."
+        },
+        "updated_policy": {
+          "status_html": "<b>Email open tracking is reported.<\/b>",
+          "visibility": "We've updated our policy and are now tracking open emails. Email open rates are reported anonymously. We'll only see if you've opened an email as part of the overall email open rate.",
+          "opt_out_html": "If you no longer wish to share this information, you can <a style='text-decoration:underline;' href='%{link}'>sign out<\/a>."
         }
+      }
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Usually ready within 1 hour"
       }
     }
   }
