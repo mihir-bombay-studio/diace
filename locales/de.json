@@ -568,7 +568,17 @@
           "accessible_separator": "pro",
           "content_html": "%{price}%{accessible_separator} %{per_unit}"
         },
-        "pickup_label": "Abrufen"
+        "pickup_label": "Abrufen",
+        "no_pickup_location": "Ihre Bestellung kann nicht abgeholt werden. Geben Sie eine Lieferadresse ein.",
+        "calculating_shipping": "Berechnung...",
+        "estimated_taxes_label": "Steuern (geschätzt)",
+        "gift_card_ending": "Geschenkkarte mit Endung %{last_characters}",
+        "estimated_tax_label": "Geschätzte Last",
+        "multiple_shipping_lines_label": "Summe senden",
+        "applied_free_shipping_discount_label": "Angewandt",
+        "original_price": "Original Preis",
+        "sale_price": "Angebotspreis",
+        "recurring_total_label": "Wiederkehrende Summe"
       }
     }
   }
