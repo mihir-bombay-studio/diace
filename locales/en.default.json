@@ -508,7 +508,12 @@
         "page_title": "Stock problem",
         "title": "Out of Stock",
         "items_unavailable_notice": "Some items are no longer available. Your shopping cart has been modified.",
-        "product_column_header": "Products"
+        "product_column_header": "Products",
+        "quantity_column_header": "Number",
+        "price_column_header": "Price",
+        "status_column_header": "Status",
+        "removed_from_cart_notice": "Removed from cart",
+        "sold_out_label": "Out of stock"
       }
     }
   }
