@@ -1435,7 +1435,16 @@
       "search_results": {
         "one": "Recherche : %{count} résultat trouvé pour '%{terms}'",
         "other": "Recherche : %{count} résultats trouvés pour '%{terms}'"
-      }
+      },
+      "blog_or_article_with_error": "Erreur - %{title}"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} remises ont été appliquées"
+    },
+    "challenge": {
+      "message": "Faites-nous savoir que vous n'êtes pas un robot pour continuer.",
+      "error": "Votre réponse était fausse, veuillez réessayer.",
+      "submit_button_text": "expédier"
     }
   }
 }
