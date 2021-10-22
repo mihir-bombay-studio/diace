@@ -1316,7 +1316,17 @@
       "customer_already_used_once_per_customer_discount_notice": "This discount has reached the usage limit",
       "gift_card_already_applied": "Code has already been applied to your cart",
       "gift_card_code_invalid": "Code is invalid",
-      "gift_card_currency_mismatch": "%{gift_card_currency} gift cards cannot be applied to orders in %{checkout_currency}"
+      "gift_card_currency_mismatch": "%{gift_card_currency} gift cards cannot be applied to orders in %{checkout_currency}",
+      "gift_card_depleted": "There is no balance on this gift card",
+      "gift_card_disabled": "Gift voucher is blocked",
+      "gift_card_expired": "Gift voucher has expired",
+      "invalid": "is invalid",
+      "bad_domain": "contains an invalid domain name",
+      "taken": "has already been used",
+      "contains_html_tags": "cannot contain HTML tags",
+      "too_short": "is too short (the minimum is %{count} characters)",
+      "too_long": "is too long (the maximum is %{count} characters)",
+      "password_mismatch": "must be identical to the specified password."
     }
   }
 }
