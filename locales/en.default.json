@@ -555,7 +555,12 @@
         "shipping_pending_value": "—",
         "shipping_pending_message": "Not yet available",
         "shipping_policy_link": "Postage costs",
-        "taxes_label": "VAT"
+        "taxes_label": "VAT",
+        "total_label": "Total",
+        "total_outstanding_label": "Amount payable",
+        "partial_total_label": "Total",
+        "free_total_label": "For free",
+        "paid_label": "Paid"
       }
     }
   }
