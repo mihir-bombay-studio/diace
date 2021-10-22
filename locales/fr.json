@@ -102,11 +102,11 @@
   "products": {
     "product": {
       "add_to_cart": "Ajouter au panier",
-      "description": "Description",
-      "on_sale": "Vente",
+      "description": "La description",
+      "on_sale": "Offre",
       "product_variants": "Variantes de produits",
       "quantity": {
-        "label": "Quantité",
+        "label": "Nombre",
         "input_label": "Quantité pour {{ product }}",
         "increase": "Augmenter la quantité de {{ product }}",
         "decrease": "Réduire la quantité de {{ product }}"
