@@ -768,8 +768,13 @@
         "ftd_vault_credit_card_label": "Enregistrer ma carte de crédit pour un paiement plus rapide",
         "apple": {
           "connect": "Cliquez pour lier votre compte Apple Pay",
-          "not_available": "Apple Pay n'est pas disponible dans ce navigateur. Pour lier votre compte Apple Pay, vous devez utiliser Safari sur un appareil Apple."
-        }
+          "not_available": "Apple Pay n'est pas disponible dans ce navigateur. Pour lier votre compte Apple Pay, vous devez utiliser Safari sur un appareil Apple.",
+          "email_connected": "Compte lié :"
+        },
+        "account_connected": "Compte lié",
+        "delete_customer_mandate_modal_title": "Supprimer cette carte ?",
+        "delete_customer_mandate_modal_body": "Ça ne peut pas être annulé.",
+        "delete_customer_mandate_modal_confirm": "supprimer"
       }
     }
   }
