@@ -535,7 +535,17 @@
         "gift_card_and_discount_placeholder": "Gift voucher or discount code",
         "remove_gift_card_label": "Remove gift card",
         "remove_discount_label": "Remove discount",
-        "free_shipping_discount_label": "Free Shipping"
+        "free_shipping_discount_label": "Free Shipping",
+        "apply_discount_button_label": "To apply",
+        "applied_discount_message": "%{amount} discount has been deducted from the total price.",
+        "discount_has_been_applied": "Discount has been applied",
+        "discount_has_been_removed": "Discount has been removed",
+        "gift_card_has_been_applied": "Gift card has been applied",
+        "gift_card_has_been_removed": "Gift card has been removed",
+        "discount_already_applied": "A discount has been applied to this order. You cannot add any other discount.",
+        "cart_does_not_meet_discount_requirements_notice": "Discount code <strong style=\"text-transform:uppercase\">%{code}<\/strong> does not apply to the items in your shopping cart",
+        "discount_requires_customer_notice": "Enter your shipping details to get the discount code <strong style=\"text-transform:uppercase\">%{code}<\/strong> applying",
+        "customer_does_not_meet_discount_requirements_notice": "Discount code <strong style=\"text-transform:uppercase\">%{code}<\/strong> is currently not available to you"
       }
     }
   }
