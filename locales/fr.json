@@ -585,7 +585,56 @@
         "applied_free_shipping_discount_label": "Appliqué",
         "original_price": "Prix d'origine",
         "sale_price": "Prix de l'offre",
-        "recurring_total_label": "Total récurrent"
+        "recurring_total_label": "Total récurrent",
+        "recurring_total_tooltip": "Hors frais de port, TVA, taxes ou remises éventuelles.",
+        "gift_card_subscriptions_notice": "Les cartes-cadeaux ne s'appliquent qu'à votre premier paiement",
+        "confirmation_number_label": "Numéro de confirmation %{confirmation_number}"
+      },
+      "shipping": {
+        "title": "Envoi",
+        "shipping_method_title": "Mode de livraison",
+        "waiting_on_rate_notice": "Obtenez les tarifs d'expédition disponibles...",
+        "waiting_on_pickup_location_notice": "Ramassez les lieux de ramassage disponibles...",
+        "no_rates_for_cart_or_destination_notice": "Il n'y a pas de méthodes d'expédition disponibles pour votre panier ou votre adresse",
+        "no_pickup_location_notice": "Au moins un de vos produits ne peut pas être récupéré",
+        "no_rates_for_country_notice": "Aucun tarif d'expédition trouvé pour cette adresse.",
+        "no_rates_contact_notice": "Contactez-nous pour plus d'informations",
+        "free_rate_label": "Gratuite",
+        "cheapest_rate_label": "le moins cher",
+        "please_enter_your_shipping_information_notice": "Entrez vos informations d'expédition.",
+        "estimated_delivery_date": {
+          "one": "1 jour ouvrable",
+          "other": "%{count} jours ouvrés"
+        },
+        "estimated_delivery_date_range": "%{minimum} à %{maximum} jours ouvrables",
+        "shipping_line_phone_label": "Numéro de téléphone portable (obligatoire)",
+        "shipping_line_phone": "Votre opérateur peut utiliser ce numéro pour vous contacter.",
+        "other_method": {
+          "zero": "Aucune autre méthode disponible",
+          "one": "1 autre méthode disponible pour",
+          "other": "%{count} autres méthodes disponibles à partir de"
+        },
+        "shipping_rate_discounted_amount": "Lavage : %{original_amount}. Maintenant : %{amount}",
+        "shipping_line_delivery_phone": "Nous pouvons utiliser ce numéro pour vous appeler ou vous envoyer un message au sujet de votre livraison.",
+        "optional_shipping_line_delivery_instructions_label": "Instructions de livraison (facultatif)",
+        "shipping_line_delivery_phone_label": "Numéro de portable",
+        "shipping_line_delivery_instructions": "Entrez les informations requises telles que les codes de porte et les instructions de livraison.",
+        "local_delivery": "Livraison à domicile",
+        "subscription_shipping": "Abonnement pour l'envoi",
+        "shipping_method_one_time_purchase_group_title": "Achat en un click",
+        "shipping_method_subscription_group_title": "Abonnement",
+        "one_time_purchase_shipping": "Envoyer une fois",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "pour %{count} livraison(s)",
+            "other": "pour %{count} livraisons"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "tous les jours"
+            }
+          }
+        }
       }
     }
   }
