@@ -501,7 +501,14 @@
         "not_user_label": "Aren't you %{first_name}?",
         "have_an_account_label": "Do you already have an account?",
         "sign_in_link_label": "login",
-        "sign_out_link_label": "Log out"
+        "sign_out_link_label": "Log out",
+        "save_my_information_label": "Save this information for faster checkout in the future"
+      },
+      "stock": {
+        "page_title": "Stock problem",
+        "title": "Out of Stock",
+        "items_unavailable_notice": "Some items are no longer available. Your shopping cart has been modified.",
+        "product_column_header": "Products"
       }
     }
   }
