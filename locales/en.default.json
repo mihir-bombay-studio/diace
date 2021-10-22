@@ -859,7 +859,14 @@
         "three_d_secure_failed": "Your payment cannot be verified. Please try again or use a different payment method.",
         "three_d_secure_throttled": "Too many attempts; wait a while before trying again",
         "subscription_agreement_blank": "Your payment details are saved when purchasing a subscription. Please confirm you agree or remove any subscriptions from your order to continue.",
-        "three_d_secure_failed_duplicate": "The 3D Secure credit card authentication failed because another one is already in progress."
+        "three_d_secure_failed_duplicate": "The 3D Secure credit card authentication failed because another one is already in progress.",
+        "insufficient_funds": "Your payment has been declined due to insufficient funds. Please try again or use a different payment method.",
+        "fraud_payment_errors": {
+          "transaction_declined": "This transaction has been rejected",
+          "address_mismatch": "Address and zip code do not match.",
+          "cannot_process": "This transaction cannot be processed.",
+          "no_match": "No match"
+        }
       }
     }
   }
