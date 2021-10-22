@@ -1061,8 +1061,13 @@
         "let_us_know": "Faites le nous savoir",
         "qr_code": {
           "title": "Suivez sur votre téléphone",
-          "subtitle": "Scannez le code avec l'appareil photo de votre téléphone pour suivre avec Shop."
-        }
+          "subtitle": "Scannez le code avec l'appareil photo de votre téléphone pour suivre avec Shop.",
+          "send_link_to_phone": "Ou envoyez un lien sur votre téléphone"
+        },
+        "gift_card_confirmation_by_text": "Les bons cadeaux sont envoyés par message. Si vous n'avez pas encore reçu de message, essayez de le renvoyer ou contactez-nous.",
+        "gift_card_confirmation_by_email": "Les cartes cadeaux sont envoyées par e-mail. Si vous n'avez pas encore reçu de message, essayez de les renvoyer ou contactez-nous.",
+        "gift_card_title": "Cartes cadeaux",
+        "resend_gift_cards": "Renvoyer des cartes-cadeaux"
       }
     }
   }
