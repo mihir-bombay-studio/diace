@@ -1116,7 +1116,21 @@
       "remember_me": {
         "shopify_pay_label": "Shop-Bezahlung",
         "save": "Halten",
-        "title": "Erinnere dich an mich"
+        "title": "Erinnere dich an mich",
+        "label": "Speichern Sie meine Daten für einen schnelleren Checkout",
+        "description_html": "Wenn Sie das nächste Mal hier oder in anderen von Shopify bereitgestellten Shops auschecken, erhalten Sie einen Code per SMS, mit dem Sie sicher über Shop Pay bezahlen können.",
+        "mobile_phone_icon_alt": "Handy",
+        "mobile_phone_number": "Handy Nummer",
+        "terms_and_privacy_html": "Indem Sie fortfahren, stimmen Sie den %{privacy_href} und %{terms_href} von Shop Pay zu.",
+        "errors": {
+          "optin": "Shop-Pay ist nicht verfügbar"
+        },
+        "privacy_policy": "Datenschutz-Bestimmungen",
+        "terms_of_service": "Nutzungsbedingungen",
+        "installments": {
+          "paid_in_installments": "Zahlung in Raten mit Shop Pay.",
+          "view_schedule": "Zeitplan anzeigen"
+        }
       }
     }
   }
