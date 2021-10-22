@@ -661,7 +661,14 @@
           "prepaid_initial_order_discounted_with_per_delivery_price": "First shipping %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
           "prepaid_initial_order_discounted_with_renewal": "First shipping %{discounted_shipping_price} %{prepaid_delivery_frequency}, then %{shipping_price} %{billing_cycle}",
           "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "First shipping %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), then %{shipping_price} %{billing_cycle}",
-          "shipping_price_included": "Included"
+          "shipping_price_included": "Included",
+          "recurring_order_shipping_price": "followed by %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "First order included, followed by %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} per delivery), followed by %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "First order free",
+            "other": "First %{count} orders free"
+          }
         }
       }
     }
