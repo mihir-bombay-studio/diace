@@ -1349,7 +1349,42 @@
     },
     "notices": {
       "customer": {
-        "password_reset_error": "Error resetting the password"
+        "password_reset_error": "Error resetting the password",
+        "no_account_found": "No account found with that email address.",
+        "invalid_credentials": "Incorrect email or password."
+      },
+      "address": {
+        "updated": "Address updated.",
+        "error_updating": "Error updating address",
+        "created": "Address created",
+        "error_creating": "Error creating address.",
+        "deleted": "Address removed",
+        "error_deleting": "Error deleting address."
+      },
+      "order": {
+        "not_available": "This order is not available",
+        "financial_status": {
+          "authorized": "Verified",
+          "pending": "Pending",
+          "paid": "Paid",
+          "unpaid": "Unpaid",
+          "voided": "Expired",
+          "partially_paid": "Partly paid",
+          "partially_refunded": "Partially refunded",
+          "refunded": "Refunded",
+          "expired": "Expired"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Done",
+          "complete": "Complete",
+          "partial": "Partially",
+          "unfulfilled": "Open",
+          "restocked": "Restocked"
+        },
+        "transaction_status": {
+          "success": "Passed",
+          "pending": "Pending"
+        }
       }
     }
   }
