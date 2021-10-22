@@ -603,8 +603,13 @@
         "shipping_line_phone_label": "Handynummer (Pflichtfeld)",
         "shipping_line_phone": "Ihr Mobilfunkanbieter kann diese Nummer verwenden, um Sie zu kontaktieren.",
         "other_method": {
-          "zero": "Keine anderen Methoden verfügbar"
-        }
+          "zero": "Keine anderen Methoden verfügbar",
+          "one": "1 weitere Methode verfügbar für",
+          "other": "%{count} andere Methoden erhältlich von"
+        },
+        "shipping_rate_discounted_amount": "Waschen: %{original_amount}. Jetzt: %{amount}",
+        "shipping_line_delivery_phone": "Wir können diese Nummer verwenden, um Sie über Ihre Lieferung anzurufen oder Ihnen eine Nachricht zu senden.",
+        "optional_shipping_line_delivery_instructions_label": "Lieferhinweise (optional)"
       }
     }
   }
