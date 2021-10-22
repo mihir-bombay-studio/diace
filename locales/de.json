@@ -453,7 +453,12 @@
         "state_and_territory_placeholder": "Staat\/Gebiet",
         "phone_label": "Telefon",
         "optional_phone_label": "Telefon optional)",
-        "phone_placeholder": "Telefon"
+        "phone_placeholder": "Telefon",
+        "phone_tooltip": "Falls wir Sie wegen Ihrer Bestellung kontaktieren müssen",
+        "zip_code_label": "Postleitzahl",
+        "zip_code_placeholder": "Postleitzahl",
+        "postal_code_label": "Postleitzahl",
+        "postal_code_placeholder": "Postleitzahl"
       }
     }
   }
