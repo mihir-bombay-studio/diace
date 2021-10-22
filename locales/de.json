@@ -968,7 +968,17 @@
         "in_transit_description_days": "Ihre Bestellung wird innerhalb von %{number} Tagen geliefert.",
         "in_transit_description_today": "Ihre Bestellung wird heute geliefert.",
         "in_transit_description_tomorrow": "Ihre Bestellung wird morgen geliefert.",
-        "no_tracking_number": "Es gibt keine Tracking-Nummer für diese Bestellung."
+        "no_tracking_number": "Es gibt keine Tracking-Nummer für diese Bestellung.",
+        "out_for_delivery": "Bereit zur Lieferung",
+        "out_for_delivery_title": "Ihre Bestellung ist versandfertig",
+        "out_for_delivery_description_html": "Ihre Bestellung ist unterwegs und sollte heute ankommen. Wenn nicht in den nächsten zwei Tagen geliefert, %{contact_us}.",
+        "attempted_delivery": "Zustellversuch",
+        "attempted_delivery_title": "Es wurde versucht, Ihre Bestellung zuzustellen",
+        "attempted_delivery_description_html": "Der Versuch, Ihre Bestellung zuzustellen, war erfolglos. Um einen weiteren Zustellversuch zu vereinbaren, %{contact_us}.",
+        "delivered": "Besorgt",
+        "delivered_title": "Ihre Bestellung wurde geliefert",
+        "delivered_description_html": "Ihre Bestellung wurde an die von Ihnen angegebene Adresse geliefert. Wenn Sie es nicht erhalten haben oder andere Probleme vorliegen, %{contact_us}.",
+        "contact_us": "Kontaktiere uns"
       }
     }
   }
