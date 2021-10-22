@@ -656,7 +656,12 @@
           },
           "multiple_subscriptions_shipping_price_label": "%{shipping_price} per delivery",
           "prepaid_shipping_price_label": "%{shipping_price} per delivery x %{delivery_interval_count}",
-          "initial_order_discounted": "First shipping %{discounted_shipping_cost}, then %{frequency_description}"
+          "initial_order_discounted": "First shipping %{discounted_shipping_cost}, then %{frequency_description}",
+          "prepaid_initial_order_discounted": "First shipping %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "First shipping %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "First shipping %{discounted_shipping_price} %{prepaid_delivery_frequency}, then %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "First shipping %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), then %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Included"
         }
       }
     }
