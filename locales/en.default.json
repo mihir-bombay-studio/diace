@@ -599,7 +599,12 @@
       },
       "shipping": {
         "title": "Dispatch",
-        "shipping_method_title": "Shipping method"
+        "shipping_method_title": "Shipping method",
+        "waiting_on_rate_notice": "Get available shipping rates...",
+        "waiting_on_pickup_location_notice": "Pick up available pick up locations...",
+        "no_rates_for_cart_or_destination_notice": "There are no shipping methods available for your cart or address",
+        "no_pickup_location_notice": "At least one of your products cannot be picked up",
+        "no_rates_for_country_notice": "No shipping rates found for this address."
       }
     }
   }
