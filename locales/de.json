@@ -1266,7 +1266,26 @@
     "addresses": {
       "zip_code": "Postleitzahl",
       "postal_code": "Postleitzahl",
-      "postcode": "Postleitzahl"
+      "postcode": "Postleitzahl",
+      "pincode": "Postleitzahl",
+      "region": "Region",
+      "prefecture": "Präfektur",
+      "province": "Provinz",
+      "state": "Steht",
+      "state_and_territory": "Staat\/Gebiet",
+      "county": "Provinz",
+      "emirate": "Emirat",
+      "governorate": "Regierung",
+      "confirm": "Möchten Sie diese Adresse wirklich löschen?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Empfohlen",
+        "best_selling": "Meistverkauft",
+        "az": "Alphabetisch: A-Z",
+        "za": "Alphabetisch: Z-A",
+        "price_ascending": "Preis niedrig bis hoch"
+      }
     }
   }
 }
