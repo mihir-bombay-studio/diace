@@ -1169,7 +1169,19 @@
         "currency_button_label": "%{currency} (%{currency_symbol})",
         "credit_card_will_be_charged_html": "Your credit card will be charged %{amount}",
         "payment_total_label": "Total payments",
-        "conversion_rate": "1 %{from_currency_code} = %{rate} %{to_currency_code}"
+        "conversion_rate": "1 %{from_currency_code} = %{rate} %{to_currency_code}",
+        "change_currency_link": "Change to %{currency_name}",
+        "card_provider_fx_charges_warning": "Your card issuer may charge for %{currency_code} transactions.",
+        "currency_not_supported_by_shop": "The currency you selected is no longer available. All prices are now in %{currency_code}."
+      },
+      "tips": {
+        "title": "Add tip",
+        "description": "Show your support for the %{shop_name} team",
+        "presets_description": "Choose a tip percentage",
+        "custom_label": "Custom tip",
+        "add_tip": "Add tip",
+        "update_tip": "Update tip",
+        "message": "Thank you, we really appreciate it"
       }
     }
   }
