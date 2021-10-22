@@ -901,8 +901,15 @@
           "medium": {
             "one": "Ihre Bestellung wird bearbeitet. Die voraussichtliche Wartezeit beträgt 1 Minute.",
             "other": "Ihre Bestellung wird bearbeitet. Die geschätzte Wartezeit beträgt %{count} Minuten."
-          }
-        }
+          },
+          "long": "Sie erhalten eine E-Mail, sobald Ihre Bestellung bearbeitet wurde. Derzeit liegen viele Bestellungen vor.",
+          "no_auto_refresh_html": "%{link} wenn Sie nicht automatisch weitergeleitet werden.",
+          "refresh_this_page": "Lade diese Seite neu"
+        },
+        "you_will_not_be_charged": "Es werden noch keine Gebühren erhoben"
+      },
+      "failed_payment": {
+        "page_title": "Zahlung konnte nicht verarbeitet werden"
       }
     }
   }
