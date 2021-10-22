@@ -112,17 +112,17 @@
         "decrease": "Anzahl für {{ product }} verringern"
       },
       "price": {
-        "from_price_html": "Von {{ price }}",
+        "from_price_html": "Ab {{ price }}",
         "regular_price": "Normaler Preis",
-        "sale_price": "Verkaufspreis",
-        "unit_price": "Grundpreis"
+        "sale_price": "Angebotspreis",
+        "unit_price": "Stückpreis"
       },
-      "share": "Dieses Produkt teilen",
-      "sold_out": "Ausverkauft",
+      "share": "Teile dieses Produkt",
+      "sold_out": "Nicht vorrättig",
       "unavailable": "Nicht verfügbar",
-      "vendor": "Anbieter",
-      "video_exit_message": "{{ title }} öffnet das Video auf derselben Seite im Vollbildmodus.",
-      "xr_button": "In deinem Bereich ansehen",
+      "vendor": "Verkäufer",
+      "video_exit_message": "{{ title }} öffnet ein Vollbild-Video im selben Fenster.",
+      "xr_button": "Sehen Sie in Ihrem Raum",
       "xr_button_label": "\"Ansicht in deinem Raum\" lädt den Artikel in ein Augmented-Reality-Fenster",
       "pickup_availability": {
         "view_store_info": "Shopdetails ansehen",
