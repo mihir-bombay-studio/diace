@@ -585,7 +585,12 @@
       },
       "shipping": {
         "title": "Versenden",
-        "shipping_method_title": "Versandart"
+        "shipping_method_title": "Versandart",
+        "waiting_on_rate_notice": "Verfügbare Versandkosten abrufen...",
+        "waiting_on_pickup_location_notice": "Verfügbare Abholorte abholen...",
+        "no_rates_for_cart_or_destination_notice": "Für Ihren Warenkorb oder Ihre Adresse sind keine Versandmethoden verfügbar",
+        "no_pickup_location_notice": "Mindestens eines Ihrer Produkte kann nicht abgeholt werden",
+        "no_rates_for_country_notice": "Für diese Adresse wurden keine Versandkosten gefunden."
       }
     }
   }
