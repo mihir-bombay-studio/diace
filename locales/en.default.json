@@ -1211,6 +1211,21 @@
       },
       "change_country": {
         "cart_updated_based_on_country": "Your cart has been updated based on the shipping destination country."
+      },
+      "subscriptions": {
+        "recurring_totals": "%{total_price} at every %{interval}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "First payment %{total_price}",
+            "other": "First %{count} payments for %{total_price} each"
+          },
+          "following_cycles": ", then %{total_price} every %{interval}"
+        },
+        "recurring_total_intervals": {
+          "day": {
+            "one": "day"
+          }
+        }
       }
     }
   }
