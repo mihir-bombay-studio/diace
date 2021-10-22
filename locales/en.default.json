@@ -1256,6 +1256,31 @@
           "success_message": "Your payment method has been removed"
         }
       }
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next one"
+    },
+    "links": {
+      "powered_by_shopify": "Powered by Shopify",
+      "learn_more": "More information"
+    },
+    "feed": {
+      "more": "More"
+    },
+    "attributes": {
+      "email": "e-mail",
+      "password": "password",
+      "password_confirmation": "the password confirmation",
+      "first_name": "First Name",
+      "last_name": "last name",
+      "body": "main text",
+      "signature": "Address"
+    },
+    "addresses": {
+      "zip_code": "Postal Code",
+      "postal_code": "Postal Code",
+      "postcode": "Postal Code"
     }
   }
 }
