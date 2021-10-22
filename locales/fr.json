@@ -301,8 +301,8 @@
       "submit": "expédier"
     },
     "orders": {
-      "title": "Historique des commandes",
-      "order_number": "Commande",
+      "title": "Aperçu de la commande",
+      "order_number": "Commander",
       "order_number_link": "Numéro de commande {{ number }}",
       "date": "Date",
       "payment_status": "Statut des paiements",
@@ -352,7 +352,7 @@
       "tracking_url": "suivre le lien",
       "tracking_company": "transporteur",
       "tracking_number": "Numéro de suivi",
-      "subtotal": "Sous-total"
+      "subtotal": "Total"
     }
   },
   "gift_cards": {
