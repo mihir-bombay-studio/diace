@@ -425,7 +425,12 @@
         "shipping_address_title": "Adresse de livraison",
         "delivery_option_title": "Méthode de livraison",
         "contact_method_title": "Informations de contact",
-        "email_label": "E-mail"
+        "email_label": "E-mail",
+        "email_placeholder": "E-mail",
+        "email_or_phone_label": "E-mail ou numéro de téléphone portable",
+        "email_or_phone_placeholder": "E-mail ou numéro de téléphone portable",
+        "stored_addresses_label": "Adresses enregistrées",
+        "new_address_label": "Utiliser une nouvelle adresse"
       }
     }
   }
