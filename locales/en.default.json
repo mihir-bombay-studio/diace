@@ -192,17 +192,17 @@
       "note": "Special Order Instructions",
       "checkout": "To settle",
       "empty": "Your shopping cart is empty",
-      "cart_error": "There was an error while updating your cart. Please try again.",
-      "cart_quantity_error_html": "You can only add [quantity] of this item to your cart.",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
-      "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
-      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
+      "cart_error": "There was an error updating your shopping cart. Try again.",
+      "cart_quantity_error_html": "You can only add [number] of this item to your shopping cart.",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">postage costs<\/a> are calculated at checkout",
+      "taxes_included_but_shipping_at_checkout": "Tax included and shipping charges calculated at checkout",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Postage costs<\/a> are calculated at checkout.",
+      "taxes_and_shipping_at_checkout": "Taxes and shipping charges are calculated at checkout",
       "headings": {
         "product": "Product",
         "price": "Price",
         "total": "Total",
-        "quantity": "Quantity"
+        "quantity": "Number"
       },
       "update": "Update"
     },
