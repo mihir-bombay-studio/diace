@@ -582,7 +582,12 @@
           "accessible_separator": "per",
           "content_html": "%{price}%{accessible_separator} %{per_unit}"
         },
-        "pickup_label": "To retrieve"
+        "pickup_label": "To retrieve",
+        "no_pickup_location": "Your order cannot be picked up. Enter a delivery address.",
+        "calculating_shipping": "Calculating...",
+        "estimated_taxes_label": "Taxes (estimated)",
+        "gift_card_ending": "Gift card ending in %{last_characters}",
+        "estimated_tax_label": "Estimated load"
       }
     }
   }
