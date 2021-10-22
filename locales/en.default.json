@@ -587,7 +587,19 @@
         "calculating_shipping": "Calculating...",
         "estimated_taxes_label": "Taxes (estimated)",
         "gift_card_ending": "Gift card ending in %{last_characters}",
-        "estimated_tax_label": "Estimated load"
+        "estimated_tax_label": "Estimated load",
+        "multiple_shipping_lines_label": "Send total",
+        "applied_free_shipping_discount_label": "Applied",
+        "original_price": "Original price",
+        "sale_price": "Offer price",
+        "recurring_total_label": "Recurring Total",
+        "recurring_total_tooltip": "Excluding shipping, VAT, duties or any discounts.",
+        "gift_card_subscriptions_notice": "Gift cards are only applied to your first payment",
+        "confirmation_number_label": "Confirmation number %{confirmation_number}"
+      },
+      "shipping": {
+        "title": "Dispatch",
+        "shipping_method_title": "Shipping method"
       }
     }
   }
