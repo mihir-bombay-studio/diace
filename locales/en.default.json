@@ -1246,6 +1246,15 @@
             "other": ", then %{count} payments, each of %{total_price}"
           }
         }
+      },
+      "customer_payment_methods": {
+        "page_title": "Payment methods",
+        "title": "Payment methods",
+        "update_card_button_label": "Update map",
+        "delete_customer_mandate": {
+          "generic_error": "There was a problem processing your request.",
+          "success_message": "Your payment method has been removed"
+        }
       }
     }
   }
