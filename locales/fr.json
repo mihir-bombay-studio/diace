@@ -2,34 +2,34 @@
   "general": {
     "password_page": {
       "login_form_heading": "Entrez dans le magasin avec le mot de passe :",
-      "login_password_button": "Saisir avec un mot de passe",
-      "login_form_password_label": "Mot de passe",
-      "login_form_password_placeholder": "Votre mot de passe",
-      "login_form_error": "Mot de passe incorrect !",
-      "login_form_submit": "Saisir",
-      "modal": "Mot de passe modal",
-      "admin_link_html": "La boutique vous appartient-elle ? <a href=\"\/admin\" class=\"link underlined-link\">Se connecter ici<\/a>",
-      "powered_by_shopify_html": "Cette boutique sera propulsée par {{ shopify }}"
+      "login_password_button": "Entrer avec mot de passe",
+      "login_form_password_label": "le mot de passe",
+      "login_form_password_placeholder": "votre mot de passe",
+      "login_form_error": "Mot de passe incorrect!",
+      "login_form_submit": "Introduire",
+      "modal": "Modal pour mot de passe",
+      "admin_link_html": "Êtes-vous le propriétaire du magasin? <a href=\"\/admin\" class=\"link underlined-link\">Connectez-vous ici<\/a>",
+      "powered_by_shopify_html": "Ce magasin est alimenté par {{ shopify }}"
     },
     "social": {
       "alt_text": {
         "share_on_facebook": "Partager sur Facebook",
         "share_on_twitter": "Tweeter sur Twitter",
-        "share_on_pinterest": "Épingler sur Pinterest"
+        "share_on_pinterest": "Épingler à Pinterest"
       },
       "links": {
         "twitter": "Twitter",
         "facebook": "Facebook",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
-        "tumblr": "Tumblr",
+        "tumblr": "tumblr",
         "snapchat": "Snapchat",
-        "youtube": "YouTube",
-        "vimeo": "Vimeo",
-        "tiktok": "TikTok"
+        "youtube": "Youtube",
+        "vimeo": "Viméo",
+        "tiktok": "TIC Tac"
       }
     },
-    "continue_shopping": "Continuer les achats",
+    "continue_shopping": "Retour au magasin",
     "pagination": {
       "label": "Pagination",
       "page": "Page {{ number }}",
@@ -37,25 +37,25 @@
       "previous": "Page précédente"
     },
     "search": {
-      "search": "Recherche"
+      "search": "Chercher"
     },
     "cart": {
-      "view": "Afficher mon panier ({{ count }})",
+      "view": "Voir le panier ({{ count }})",
       "item_added": "Article ajouté au panier"
     },
     "share": {
       "copy_to_clipboard": "Copier l'URL dans le presse-papiers",
       "share": "Partager",
       "share_url": "Partager l'URL",
-      "success_message": "Copié dans le presse-papier !"
+      "success_message": "Copié dans le presse-papier!"
     }
   },
   "date_formats": {
-    "month_year": "%b %Y"
+    "month_year": "%PAR"
   },
   "newsletter": {
-    "label": "Votre e-mail",
-    "success": "Merci de votre inscription",
+    "label": "votre adresse email",
+    "success": "Merci pour votre subscription",
     "button_label": "S'inscrire"
   },
   "accessibility": {
