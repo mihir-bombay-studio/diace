@@ -997,7 +997,12 @@
         "contact_us_html": "Need help? %{contact_us}",
         "updated_time": "Updated %{time_ago} ago",
         "failure": "Not worried",
-        "failed_title": "Your order could not be delivered."
+        "failed_title": "Your order could not be delivered.",
+        "failed_contact_merchant": "Please contact %{company} to arrange delivery.",
+        "failed_contact_merchant_no_company": "Please contact us to arrange delivery.",
+        "non_shippable_title": "Your order has been completed",
+        "login_title": "Log in to view all order details",
+        "login_description": "You can find your order number in the invoice you received by email."
       }
     }
   }
