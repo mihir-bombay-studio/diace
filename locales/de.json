@@ -578,7 +578,14 @@
         "applied_free_shipping_discount_label": "Angewandt",
         "original_price": "Original Preis",
         "sale_price": "Angebotspreis",
-        "recurring_total_label": "Wiederkehrende Summe"
+        "recurring_total_label": "Wiederkehrende Summe",
+        "recurring_total_tooltip": "Ohne Versandkosten, Mehrwertsteuer, Zölle oder Rabatte.",
+        "gift_card_subscriptions_notice": "Geschenkkarten werden nur auf Ihre erste Zahlung angewendet",
+        "confirmation_number_label": "Bestätigungsnummer %{confirmation_number}"
+      },
+      "shipping": {
+        "title": "Versenden",
+        "shipping_method_title": "Versandart"
       }
     }
   }
