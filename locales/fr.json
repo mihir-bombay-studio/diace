@@ -1406,7 +1406,16 @@
         "variant_not_found": "Impossible de trouver la variante",
         "variant_requires_selling_plan": "La variante ne peut être achetée qu'avec un abonnement de vente.",
         "shipping_address_not_required": "Aucune expédition n'est requise avec ce panier",
-        "shipping_address_invalid": "Un problème est survenu lors du calcul de vos frais d'expédition. Passez à la caisse pour choisir les frais de livraison avant de finaliser votre commande."
+        "shipping_address_invalid": "Un problème est survenu lors du calcul de vos frais d'expédition. Passez à la caisse pour choisir les frais de livraison avant de finaliser votre commande.",
+        "selling_plan_not_applicable": "Impossible d'appliquer l'abonnement de vente à la variante"
+      },
+      "storefront": {
+        "invalid_password": "Mot de passe incorrect, veuillez réessayer."
+      },
+      "tags": {
+        "add_articles": "Limiter la recherche aux articles avec la balise %{tag}",
+        "add_products": "Limiter la recherche aux produits avec la balise correspondante %{tag}",
+        "remove_articles": "Étendre la recherche aux articles non tagués avec %{tag}"
       }
     }
   }
