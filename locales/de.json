@@ -1142,8 +1142,13 @@
             "one": "hinzugefügt",
             "other": "%{count} hinzugefügt"
           },
-          "removed": "Gelöscht"
-        }
+          "removed": "Gelöscht",
+          "subtracted": "%{count} gelöscht"
+        },
+        "additional_payment_requested": "Zahlung von %{total_outstanding} ist erforderlich",
+        "checkout_review_and_pay": "Ihre Bestellung %{order_name} wurde aktualisiert. Überprüfen Sie diese Änderungen und bezahlen Sie dann, um Ihre Bestellung zu bestätigen.",
+        "order_updated_on": "Ihre Bestellung wurde am %{last_edited_at} aktualisiert.",
+        "order_review_and_pay": "Ihre Bestellung wurde aktualisiert. Überprüfen und bezahlen Sie, um Ihre Bestellung zu bestätigen."
       }
     }
   }
