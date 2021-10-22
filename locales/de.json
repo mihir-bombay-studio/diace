@@ -505,6 +505,23 @@
         "remove_from_cart_button_label": "Aus dem Warenkorb entfernen",
         "continue_shopping_button_label": "Weitermachen",
         "go_back_to_cart_button_label": "Zurück zu meinem Warenkorb"
+      },
+      "order_summary": {
+        "title": "Bestellübersicht",
+        "order_name_label": "Bestellung %{name}",
+        "shopping_cart_label": "Einkaufswagen",
+        "discount_title": "Rabatt",
+        "discount_label": "Rabattcode",
+        "discount_placeholder": "Rabattcode",
+        "gift_card_title": "Geschenkgutschein",
+        "gift_card_label": "Geschenkgutschein",
+        "gift_card_placeholder": "Geschenkgutschein",
+        "gift_card_and_discount_title": "Geschenkgutschein oder Rabattcode",
+        "gift_card_and_discount_label": "Geschenkgutschein oder Rabattcode",
+        "gift_card_and_discount_placeholder": "Geschenkgutschein oder Rabattcode",
+        "remove_gift_card_label": "Geschenkkarte entfernen",
+        "remove_discount_label": "Rabatt entfernen",
+        "free_shipping_discount_label": "Kostenloser Versand"
       }
     }
   }
