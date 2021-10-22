@@ -1055,7 +1055,14 @@
         "delivery_information_label": "Informations de livraison:",
         "gift_card_sent_confirmation": "Cartes cadeaux envoyées",
         "out_for_delivery_local_title": "Votre commande est prête à être livrée",
-        "out_for_delivery_local_description_html": "Vous recevrez votre commande sous peu."
+        "out_for_delivery_local_description_html": "Vous recevrez votre commande sous peu.",
+        "delivered_local_title": "Votre commande a été livrée",
+        "delivered_local_description_html": "Vous n'avez pas encore reçu votre commande ? %{let_us_know}.",
+        "let_us_know": "Faites le nous savoir",
+        "qr_code": {
+          "title": "Suivez sur votre téléphone",
+          "subtitle": "Scannez le code avec l'appareil photo de votre téléphone pour suivre avec Shop."
+        }
       }
     }
   }
