@@ -2,11 +2,11 @@
   "general": {
     "password_page": {
       "login_form_heading": "Shop mit Passwort betreten:",
-      "login_password_button": "Mit Passwort betreten",
+      "login_password_button": "Mit Passwort eingeben",
       "login_form_password_label": "Passwort",
-      "login_form_password_placeholder": "Dein Passwort",
+      "login_form_password_placeholder": "Ihr Passwort",
       "login_form_error": "Falsches Passwort!",
-      "login_form_submit": "Betreten",
+      "login_form_submit": "Eintreten",
       "modal": "Passwort-Modal",
       "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"\/admin\" class=\"link underlined-link\">Hier einloggen<\/a>",
       "powered_by_shopify_html": "Dieser Shop wird unterstützt von {{ shopify }}"
@@ -216,8 +216,8 @@
       "view_all": "Schau dir alles an"
     },
     "collection_template": {
-      "title": "Kategorie",
-      "sort_by_label": "Sortieren nach",
+      "title": "Sammlung",
+      "sort_by_label": "sortieren",
       "sort_button": "Sortieren",
       "product_count": "{{ count }} Produkte",
       "empty": "keine Produkte gefunden",
@@ -230,8 +230,8 @@
       "filter_button": "Filter",
       "max_price": "Der höchste Preis ist {{ price }}",
       "reset": "Zurücksetzen",
-      "to": "Nach",
-      "use_fewer_filters_html": "Verwende weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">lösche alle<\/a>"
+      "to": "Auf",
+      "use_fewer_filters_html": "Verwenden Sie weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">alles löschen<\/a>"
     }
   },
   "localization": {
