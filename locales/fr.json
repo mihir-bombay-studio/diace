@@ -394,7 +394,12 @@
         "close_notice_label": "Fermer",
         "expand_notice_label": "Voir plus",
         "continue_to_shipping_method": "Continuer l'envoi",
-        "continue_to_payment_method": "Aller au paiement"
+        "continue_to_payment_method": "Aller au paiement",
+        "continue_to_review": "Vérifier la commande",
+        "back_to_cart": "Retour au panier",
+        "back_to_contact_information": "Retour aux informations",
+        "back_to_shipping_method": "Retour à envoyer",
+        "back_to_payment_method": "Retour au paiement"
       }
     }
   }
