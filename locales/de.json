@@ -107,9 +107,9 @@
       "product_variants": "Produktvarianten",
       "quantity": {
         "label": "Nummer",
-        "input_label": "Anzahl von {{ product }}",
-        "increase": "Erhöhe die Menge für {{ product }}",
-        "decrease": "Verringere die Menge für {{ product }}"
+        "input_label": "Menge für {{ product }}",
+        "increase": "Anzahl für {{ product }} erhöhen",
+        "decrease": "Anzahl für {{ product }} verringern"
       },
       "price": {
         "from_price_html": "Von {{ price }}",
@@ -125,13 +125,13 @@
       "xr_button": "In deinem Bereich ansehen",
       "xr_button_label": "\"Ansicht in deinem Raum\" lädt den Artikel in ein Augmented-Reality-Fenster",
       "pickup_availability": {
-        "view_store_info": "Shop-Informationen anzeigen",
-        "check_other_stores": "Verfügbarkeit in anderen Shops überprüfen",
-        "pick_up_available": "Abholung verfügbar",
-        "pick_up_available_at_html": "Abholung bei <strong>{{ location_name }}<\/strong> verfügbar",
-        "pick_up_unavailable_at_html": "Abholung bei <strong>{{ location_name }}<\/strong> derzeit nicht verfügbar",
-        "unavailable": "Verfügbarkeit für Abholungen konnte nicht geladen werden",
-        "refresh": "Aktualisieren"
+        "view_store_info": "Shopdetails ansehen",
+        "check_other_stores": "Verfügbarkeit in anderen Geschäften prüfen",
+        "pick_up_available": "Abholung ist möglich",
+        "pick_up_available_at_html": "Abholung ist erhältlich unter <strong>{{ location_name }}<\/strong>",
+        "pick_up_unavailable_at_html": "Abholung ist derzeit nicht möglich unter <strong>{{ location_name }}<\/strong>",
+        "unavailable": "Abholverfügbarkeit kann nicht geladen werden",
+        "refresh": "Aktualisierung"
       }
     },
     "modal": {
