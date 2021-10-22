@@ -781,7 +781,16 @@
         "account_connected": "Account linked",
         "delete_customer_mandate_modal_title": "Delete this card?",
         "delete_customer_mandate_modal_body": "This cannot be undone.",
-        "delete_customer_mandate_modal_confirm": "remove"
+        "delete_customer_mandate_modal_confirm": "remove",
+        "delete_customer_mandate_modal_cancel": "Cancel",
+        "maximum_vaulted_card_info": {
+          "one": "You can save %{count} credit card to your account.",
+          "other": "You can store up to %{count} credit cards on your account."
+        }
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Current Balance %{amount}",
+        "credit_card_expires_on_notice": "Expires on %{month}\/%{year}"
       }
     }
   }
