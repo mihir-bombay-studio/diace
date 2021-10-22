@@ -305,10 +305,10 @@
       "order_number": "Commander",
       "order_number_link": "Numéro de commande {{ number }}",
       "date": "Date",
-      "payment_status": "Statut des paiements",
-      "fulfillment_status": "Statut des commandes",
-      "total": "Total",
-      "none": "Vous n'avez encore passé aucune commande."
+      "payment_status": "Statut de paiement",
+      "fulfillment_status": "Statut d'exécution",
+      "total": "Le total",
+      "none": "Vous ne avez pas encore passé de commande."
     },
     "recover_password": {
       "title": "Réinitialiser son mot de passe",
