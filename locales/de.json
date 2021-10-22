@@ -546,7 +546,17 @@
         "total_outstanding_label": "Bezahlbarer Betrag",
         "partial_total_label": "Gesamt",
         "free_total_label": "Kostenlos",
-        "paid_label": "Bezahlt"
+        "paid_label": "Bezahlt",
+        "payment_due_label": "Zahlung fällig",
+        "vat_label_html": "Inklusive %{amount} MwSt.",
+        "discount_and_gift_card_savings_notice": "Nach %{discount_amount} Rabatt und %{gift_card_amount} Geschenkgutscheinwert",
+        "discount_savings_notice": "Nach %{discount_amount} Rabatt",
+        "gift_card_savings_notice": "Nach %{gift_card_amount} Wert der Geschenkkarte",
+        "cost_table_title": "Kostenübersicht",
+        "description_label": "Beschreibung",
+        "price_label": "Preis",
+        "quantity_label": "Nummer",
+        "product_change_label": "Ändern"
       }
     }
   }
