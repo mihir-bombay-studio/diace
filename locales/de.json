@@ -1167,7 +1167,16 @@
         "custom_label": "Benutzerdefinierter Tipp",
         "add_tip": "Tipp hinzufügen",
         "update_tip": "Update-Tipp",
-        "message": "Danke, das wissen wir sehr zu schätzen"
+        "message": "Danke, das wissen wir sehr zu schätzen",
+        "preset_label": "%{tip_percent}%",
+        "no_tip_label": "Nein"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "%{product_name} kaufen",
+          "one": "%{product_name} und %{count} einen anderen Artikel kaufen",
+          "other": "%{product_name} und %{count} um andere Artikel zu kaufen"
+        }
       }
     }
   }
