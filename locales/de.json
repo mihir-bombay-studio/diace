@@ -201,19 +201,19 @@
     },
     "footer": {
       "payment": "Zahlungsmethoden",
-      "social_placeholder": "Folge uns auf Social Media!"
+      "social_placeholder": "Folgen Sie uns in den sozialen Medien."
     },
     "featured_blog": {
-      "view_all": "Alle anzeigen",
-      "onboarding_title": "Blog-Beitrag",
-      "onboarding_content": "Verschaffe deinen Kunden eine Übersicht über deinen Blog-Beitrag"
+      "view_all": "Schau dir alles an",
+      "onboarding_title": "Blogeintrag",
+      "onboarding_content": "Geben Sie Ihren Kunden einen Überblick über Ihren Blogbeitrag"
     },
     "featured_collection": {
-      "view_all": "Alle anzeigen",
-      "view_all_label": "Alle Produkte in der Kategorie {{ collection_name }} anzeigen"
+      "view_all": "Schau dir alles an",
+      "view_all_label": "Alle Produkte der Kollektion ansehen {{ collection_name }}"
     },
     "collection_list": {
-      "view_all": "Alle anzeigen"
+      "view_all": "Schau dir alles an"
     },
     "collection_template": {
       "title": "Kategorie",
@@ -221,7 +221,7 @@
       "sort_button": "Sortieren",
       "product_count": "{{ count }} Produkte",
       "empty": "Keine Produkte gefunden",
-      "apply": "Anwenden",
+      "apply": "Bewerben",
       "clear": "Löschen",
       "clear_all": "Alles löschen",
       "from": "Von",
