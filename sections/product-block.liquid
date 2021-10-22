@@ -258,7 +258,7 @@
   
   $(document).ready(function () {
     $('.color-change-btn').click(function () {
-      $(this).closest("fieldset").addClass("toggle-colors-open");
+      $(this).closest("fieldset").toggleClass("toggle-colors-open");
     });
     $('.product-form__input input[type=radio]').change(function() {
       $(this).closest("fieldset").removeClass("toggle-colors-open");
