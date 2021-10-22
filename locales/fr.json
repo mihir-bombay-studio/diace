@@ -718,7 +718,39 @@
         },
         "offsite_gateway_redirect_hint": "Après avoir cliqué sur \"%{button_label}\", vous serez redirigé vers %{gateway_label} pour terminer votre achat en toute sécurité.",
         "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} total %{total_shop_price}",
-        "billing_address_title": "Adresse de facturation"
+        "billing_address_title": "Adresse de facturation",
+        "billing_address_description": "Sélectionnez l'adresse qui correspond à votre carte ou à votre mode de paiement.",
+        "billing_address_description_no_shipping_address": "Saisissez l'adresse qui correspond à votre carte ou à votre mode de paiement.",
+        "no_js_credit_card_fields_redirect_hint": "Vous serez redirigé pour ajouter vos informations de paiement.",
+        "card_fields_container_prefix": "Ce champ contient :",
+        "card_fields_unavailable_html": {
+          "one": "Le paiement par carte de crédit ou de débit n'est actuellement pas disponible.<br><a href=\"%{current_url}\">Actualiser cette page<\/a> ou réessayez plus tard.",
+          "other": "Le paiement par carte de crédit ou de débit n'est actuellement pas disponible.<br><a href=\"%{current_url}\">Actualiser cette page<\/a> ou essayez un autre mode de paiement."
+        },
+        "card_fields_processing_error": "Un problème est survenu lors du traitement du paiement. Veuillez actualiser cette page ou vérifier votre connexion Internet.",
+        "technical_error": "En raison d'un problème technique, les paiements ne peuvent pas être traités pour le moment. Réessayez dans quelques minutes.",
+        "no_method_error": "Ce magasin n'est actuellement pas en mesure d'accepter les paiements.",
+        "not_configured_error": "Ce magasin n'est actuellement pas en mesure d'accepter les paiements.",
+        "missing_credit_card_error": "Entrez les détails de votre carte pour terminer le paiement",
+        "generic_incorrect_card_info": "Vos informations de paiement ne peuvent pas être vérifiées. Veuillez vérifier les détails de votre carte et réessayer.",
+        "sofort_label": "sofort",
+        "ideal_label": "idéal",
+        "bank_picker_label": "Banque",
+        "klarna_pay_now_label": "Payez maintenant avec Klarna",
+        "klarna_pay_later_label": "Payez ensuite avec Klarna",
+        "bancontact_label": "Bancontact",
+        "eps_label": "eps-Überweisung (transfert eps)",
+        "klarna_slice_it_label": "Financer avec Klarna",
+        "card_expiration_month_label": "Mois d'expiration",
+        "card_expiration_year_label": "Année d'expiration",
+        "card_information_notice": "Toutes les transactions sont sécurisées et cryptées. Les détails de la carte de crédit ne sont jamais stockés.",
+        "credit_card_start_month": "Date de début du mois",
+        "credit_card_start_year": "Date de début d'année",
+        "billing_address_not_supported_for_payment_method_error": "Ce mode de paiement n'est pas disponible pour votre adresse de facturation et votre devise. Essayez un autre mode de paiement.",
+        "change_currency_section_description": "Sélectionnez une option de devise",
+        "no_real_orders_dev_store": "Ce magasin ne peut pas accepter de vraies commandes ni traiter de vrais paiements.",
+        "subscription_agreement_label_html": "Je comprends que j'accepte un abonnement. Il sera renouvelé au prix et à la fréquence indiqués jusqu'à son expiration ou\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">annulé<\/a>.",
+        "waiting_on_payment_methods": "Obtenez les méthodes de paiement disponibles..."
       }
     }
   }
