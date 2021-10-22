@@ -689,7 +689,12 @@
         "card_verification_value_label": "Sicherheitscode",
         "card_verification_value_placeholder": "Sicherheitscode",
         "card_expiry_date_explanation": "Kartenablaufformat: Monat, Monat, Jahr, Jahr",
-        "card_verification_value_explanation": "3-stelliger Sicherheitscode, der sich normalerweise auf der Rückseite Ihrer Karte befindet. American Express hat einen 4-stelligen Code auf der Vorderseite."
+        "card_verification_value_explanation": "3-stelliger Sicherheitscode, der sich normalerweise auf der Rückseite Ihrer Karte befindet. American Express hat einen 4-stelligen Code auf der Vorderseite.",
+        "card_verification_value_explanation_amex": "4-stelliger Sicherheitscode auf der Vorderseite Ihrer Karte",
+        "card_verification_value_explanation_other": "3-stelliger Sicherheitscode auf der Rückseite Ihrer Karte",
+        "card_start_label": "Ausstellungsdatum (MM \/ YY)",
+        "card_start_placeholder": "Ausstellungsdatum (MM \/ YY)",
+        "card_issue_number_label": "Ausgabe Nummer"
       }
     }
   }
