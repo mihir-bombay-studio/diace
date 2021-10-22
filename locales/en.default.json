@@ -902,7 +902,12 @@
         "redirecting_notice": "You are referred.",
         "complete_your_purchase_title": "Complete your purchase",
         "continue_to_payment_gateway_notice": "Proceed to payment to add your payment details.",
-        "continue_to_payment_gateway_button_label": "Go to payment"
+        "continue_to_payment_gateway_button_label": "Go to payment",
+        "complete_your_purchase_title_error": "Correct your payment information",
+        "continue_to_payment_gateway_notice_error": "Your payment details cannot be verified.",
+        "continue_to_payment_gateway_button_label_error": "Update payment details",
+        "page_title": "order is being processed",
+        "title": "order is being processed"
       }
     }
   }
