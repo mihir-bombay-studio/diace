@@ -1083,8 +1083,33 @@
           "payment_method_title": "Zahlung",
           "change_link_label": "Ändern",
           "change_contact_method_link_label": "Kontaktdaten ändern",
-          "change_billing_address_link_label": "Rechnungsadresse ändern"
+          "change_billing_address_link_label": "Rechnungsadresse ändern",
+          "change_shipping_address_link_label": "ändere die Lieferadresse",
+          "change_shipping_method_link_label": "Versandart ändern",
+          "change_payment_method_link_label": "Bezahlungsmethode ändern",
+          "pick_up_in_store_shipping_method_html": "Abholung im Geschäft %{location_name}"
         }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Senden Sie mir eine E-Mail mit Neuigkeiten zu Angeboten",
+        "unsubscribe": {
+          "title": "Sie haben sich abgemeldet",
+          "description": "Sie erhalten von uns keine Warenkorberinnerungen mehr."
+        },
+        "accept_sms_checkbox_label": "Senden Sie mir eine SMS mit Neuigkeiten und Angeboten",
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Datenschutz-Bestimmungen",
+            "terms_of_service": "Nutzungsbedingungen"
+          }
+        }
+      },
+      "shop_policies": {
+        "refund_policy": "Rückgaberecht",
+        "privacy_policy": "Datenschutz-Bestimmungen",
+        "terms_of_service": "Geschäftsbedingungen",
+        "legal_notice": "Impressum",
+        "shipping_policy": "Versandbedingungen"
       }
     }
   }
