@@ -1499,7 +1499,21 @@
     },
     "store_availability": {
       "pick_up_time": {
-        "one_hour": "Usually ready within 1 hour"
+        "one_hour": "Usually ready within 1 hour",
+        "two_hours": "Usually ready within 2 hours",
+        "four_hours": "Usually ready within 4 hours",
+        "twenty_four_hours": "Usually ready within 24 hours",
+        "two_to_four_days": "Usually ready within 2-4 days",
+        "five_or_more_days": "Usually ready in more than 5 days",
+        "zero_to_two_hours": "Usually ready within 2 hours",
+        "two_to_four_hours": "Usually ready within 4 hours",
+        "immediately": "Ready to pick up now",
+        "next_day": "Ready for pick up the next day"
+      }
+    },
+    "filters": {
+      "availability": {
+        "label": "availabilty"
       }
     }
   }
