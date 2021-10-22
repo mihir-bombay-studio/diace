@@ -489,7 +489,19 @@
         "pick_up_next_day": "Ready for pick up the next day",
         "pick_up_in_one_hour": "Usually ready within 1 hour",
         "pick_up_in_twenty_four_hours": "Usually ready within 24 hours",
-        "pick_up_in_two_to_four_days": "Usually ready within 2-4 days"
+        "pick_up_in_two_to_four_days": "Usually ready within 2-4 days",
+        "pick_up_in_five_or_more_days": "Usually ready in more than 5 days",
+        "pick_up_in_zero_to_two_hours": "Ready for pick up in 2 hours",
+        "pick_up_in_two_to_four_hours": "Ready for pick up in 4 hours",
+        "free_total_label": "For free",
+        "shipping_address": "Delivery address",
+        "pick_up_locations": "Pickup Locations"
+      },
+      "customer_account": {
+        "not_user_label": "Aren't you %{first_name}?",
+        "have_an_account_label": "Do you already have an account?",
+        "sign_in_link_label": "login",
+        "sign_out_link_label": "Log out"
       }
     }
   }
