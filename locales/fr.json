@@ -363,10 +363,10 @@
       "shop_link": "Retour au magasin",
       "remaining_html": "Montant restant : {{ balance }}",
       "add_to_apple_wallet": "Ajouter au portefeuille Apple",
-      "qr_image_alt": "Code QR : scannez-le pour utiliser votre carte-cadeau",
+      "qr_image_alt": "QR code — scannez pour utiliser la carte-cadeau",
       "copy_code": "Copier le code",
       "expired": "Expiré",
-      "copy_code_success": "Le code a bien été copié",
+      "copy_code_success": "Code copié",
       "print_gift_card": "Imprimer"
     }
   },
