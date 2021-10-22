@@ -560,7 +560,12 @@
         "total_outstanding_label": "Amount payable",
         "partial_total_label": "Total",
         "free_total_label": "For free",
-        "paid_label": "Paid"
+        "paid_label": "Paid",
+        "payment_due_label": "Payment Due",
+        "vat_label_html": "Including %{amount} VAT",
+        "discount_and_gift_card_savings_notice": "After %{discount_amount} discount and %{gift_card_amount} of gift card value",
+        "discount_savings_notice": "After %{discount_amount} discount",
+        "gift_card_savings_notice": "After %{gift_card_amount} of gift card value"
       }
     }
   }
