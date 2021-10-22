@@ -104,7 +104,7 @@
     "product": {
       "add_to_cart": "Add to cart",
       "description": "Description",
-      "on_sale": "Sale",
+      "on_sale": "Offer",
       "product_variants": "Product variants",
       "media": {
         "open_featured_media": "Open featured media in gallery view",
@@ -113,7 +113,7 @@
         "play_video": "Play video"
       },
       "quantity": {
-        "label": "Quantity",
+        "label": "Number",
         "input_label": "Quantity for {{ product }}",
         "increase": "Increase quantity for {{ product }}",
         "decrease": "Decrease quantity for {{ product }}"
