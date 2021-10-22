@@ -387,7 +387,17 @@
         "close_notice_label": "Nah dran",
         "expand_notice_label": "Mehr sehen",
         "continue_to_shipping_method": "Weiter senden",
-        "continue_to_payment_method": "Zur Zahlung gehen"
+        "continue_to_payment_method": "Zur Zahlung gehen",
+        "continue_to_review": "Prüfe die Reihenfolge",
+        "back_to_cart": "Zurück zum Warenkorb",
+        "back_to_contact_information": "Zurück zu Informationen",
+        "back_to_shipping_method": "Zurück zum Senden",
+        "back_to_payment_method": "Zurück zur Zahlung",
+        "choose_shipping_method": "Wählen Sie eine Versandart",
+        "choose_payment_method": "Wählen Sie eine Bezahlungsart",
+        "choose_billing_address": "Wählen Sie eine Rechnungsadresse",
+        "contact_us_html": "Kontaktieren Sie uns für weitere Informationen",
+        "autocomplete_title": "Vorschläge"
       }
     }
   }
