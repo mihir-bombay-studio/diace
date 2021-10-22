@@ -2,34 +2,34 @@
   "general": {
     "password_page": {
       "login_form_heading": "Enter store with password:",
-      "login_password_button": "Enter using password",
-      "login_form_password_label": "Password",
-      "login_form_password_placeholder": "Your password",
-      "login_form_error": "Wrong password!",
+      "login_password_button": "Enter with password",
+      "login_form_password_label": "password",
+      "login_form_password_placeholder": "your password",
+      "login_form_error": "Password incorrect!",
       "login_form_submit": "Enter",
-      "modal": "Password modal",
+      "modal": "Modal for password",
       "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"link underlined-link\">Log in here<\/a>",
-      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
+      "powered_by_shopify_html": "This store is powered by {{ shopify }}"
     },
     "social": {
       "alt_text": {
         "share_on_facebook": "Share on Facebook",
-        "share_on_twitter": "Tweet on Twitter",
-        "share_on_pinterest": "Pin on Pinterest"
+        "share_on_twitter": "Tweeting on Twitter",
+        "share_on_pinterest": "Pin to Pinterest"
       },
       "links": {
         "twitter": "Twitter",
-        "facebook": "Facebook",
+        "facebook": "facebook",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
-        "tumblr": "Tumblr",
+        "tumblr": "tumblr",
         "snapchat": "Snapchat",
         "youtube": "YouTube",
         "vimeo": "Vimeo",
         "tiktok": "TikTok"
       }
     },
-    "continue_shopping": "Continue shopping",
+    "continue_shopping": "Return to store",
     "pagination": {
       "label": "Pagination",
       "page": "Page {{ number }}",
@@ -37,24 +37,24 @@
       "previous": "Previous page"
     },
     "search": {
-      "search": "Search"
+      "search": "To search"
     },
     "cart": {
-      "view": "View my cart ({{ count }})",
-      "item_added": "Item added to your cart"
+      "view": "View Cart ({{ count }})",
+      "item_added": "Item added to cart"
     },
     "share": {
-      "copy_to_clipboard": "Copy link",
-      "share": "Share",
-      "share_url": "Link",
-      "success_message": "Link copied to clipboard!"
+      "copy_to_clipboard": "Copy URL to clipboard",
+      "share": "To share",
+      "share_url": "Share URL",
+      "success_message": "Copied to clipboard!"
     }
   },
   "date_formats": {
     "month_year": "%B %Y"
   },
   "newsletter": {
-    "label": "Your email",
+    "label": "your e-mail adress",
     "success": "Thanks for subscribing",
     "button_label": "Subscribe"
   },
