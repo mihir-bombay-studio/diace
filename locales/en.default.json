@@ -617,8 +617,13 @@
         "shipping_line_phone_label": "Mobile phone number (mandatory)",
         "shipping_line_phone": "Your carrier can use this number to contact you.",
         "other_method": {
-          "zero": "No other methods available"
-        }
+          "zero": "No other methods available",
+          "one": "1 other method available for",
+          "other": "%{count} other methods available from"
+        },
+        "shipping_rate_discounted_amount": "Wash: %{original_amount}. Now: %{amount}",
+        "shipping_line_delivery_phone": "We may use this number to call or message you about your delivery.",
+        "optional_shipping_line_delivery_instructions_label": "Delivery instructions (optional)"
       }
     }
   }
