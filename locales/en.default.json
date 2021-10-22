@@ -513,7 +513,12 @@
         "price_column_header": "Price",
         "status_column_header": "Status",
         "removed_from_cart_notice": "Removed from cart",
-        "sold_out_label": "Out of stock"
+        "sold_out_label": "Out of stock",
+        "reduced_label": "Reduced",
+        "reduced_with_quantity_label": "Only %{quantity_available} in stock",
+        "remove_from_cart_button_label": "Remove from cart",
+        "continue_shopping_button_label": "Continue",
+        "go_back_to_cart_button_label": "Back to my shopping cart"
       }
     }
   }
