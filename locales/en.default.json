@@ -1021,6 +1021,13 @@
         "marker": {
           "current": "Current shipping location",
           "shipping": "Delivery address"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Items in this shipment",
+          "unfulfilled_table_title": "Items are prepared for shipment",
+          "product_image_label": "Product image",
+          "description_label": "Description",
+          "quantity_label": "Number"
         }
       }
     }
