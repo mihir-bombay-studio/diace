@@ -1435,7 +1435,14 @@
       "addresses": "Addresses",
       "order": "Order %{name}",
       "search": "To search",
-      "collections": "Collections"
+      "collections": "Collections",
+      "not_found": "404 not found",
+      "challenge": "Challenge",
+      "checkpoint": "Checkpoint",
+      "search_results": {
+        "one": "Search: %{count} result found for '%{terms}'",
+        "other": "Search: %{count} results found for '%{terms}'"
+      }
     }
   }
 }
