@@ -604,7 +604,14 @@
         "waiting_on_pickup_location_notice": "Pick up available pick up locations...",
         "no_rates_for_cart_or_destination_notice": "There are no shipping methods available for your cart or address",
         "no_pickup_location_notice": "At least one of your products cannot be picked up",
-        "no_rates_for_country_notice": "No shipping rates found for this address."
+        "no_rates_for_country_notice": "No shipping rates found for this address.",
+        "no_rates_contact_notice": "Contact us for more information",
+        "free_rate_label": "For free",
+        "cheapest_rate_label": "cheapest",
+        "please_enter_your_shipping_information_notice": "Enter your shipping information.",
+        "estimated_delivery_date": {
+          "one": "1 working day"
+        }
       }
     }
   }
