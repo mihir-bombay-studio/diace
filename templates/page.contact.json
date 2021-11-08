@@ -81,6 +81,13 @@
             "answer": "Soms lukt het niet om de betaling rond te krijgen. Wat je kan doen is de betaling opnieuw proberen met een ander betaalmiddel. Wanneer dat ook niet lukt, kun je de order helemaal opnieuw doen. De eerste order (die niet betaald is) wordt uit het systeem gehaald. Wanneer de tweede poging ook niet lukt, kun je mailen naar info@diace.be Wanneer je rechtstreeks op onze bank wilt storten, graag op BE40 7370 5105 3163 o.v.v. je ordernummer van de nog niet betaalde order."
           }
         },
+        "efdc90e8-eaa7-4869-9c0a-4d43e4c7b387": {
+          "type": "subject_2",
+          "settings": {
+            "question": "Hoe lang duurt het voordat mijn betaling is verwerkt?",
+            "answer": "Dat is afhankelijk van je bank."
+          }
+        },
         "1fe5fe56-8794-4ffc-a8a3-be3615528e73": {
           "type": "subject_3",
           "settings": {
@@ -112,6 +119,7 @@
         "fce729b0-1a3c-4d2d-b7db-54d785d786a2",
         "bac7dda9-5881-486f-a6be-501abb093bc8",
         "3fda73ef-7555-4001-8881-3904c0d6563a",
+        "efdc90e8-eaa7-4869-9c0a-4d43e4c7b387",
         "1fe5fe56-8794-4ffc-a8a3-be3615528e73",
         "9c9b21d4-2d24-4146-aba2-7563d4e709b6",
         "534c6057-07a8-42fe-a942-197a65da7b37"
