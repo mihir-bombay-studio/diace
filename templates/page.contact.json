@@ -122,6 +122,13 @@
             "question": "Mijn order is niet binnen gekomen, wat moet ik doen?",
             "answer": "De overkomstduur gaat in vanaf het moment dat je onze verzendbevestiging heeft ontvangen. In de komende periode is vertraging mogelijk. Als je bestelling na de maximale overkomstduur nog niet bezorgd is vernemen wij dat graag van jou per email: info@diace.be"
           }
+        },
+        "31615080-3604-41e7-853f-4f6abbdcba9e": {
+          "type": "subject_3",
+          "settings": {
+            "question": "retourneren",
+            "answer": "Wanneer je om welke reden dan ook ontevreden bent over sommige of alle goederen die je ontvangen heeft, kun je ze binnen 14 dagen na ontvangst, terug sturen.  Stuur je goederen terug naar Diacé BV, Duwijckstraat 17, 2500 Lier (BE). Wij raden je aan om de goederen met verzendbewijs terug te sturen. De retour verzendkosten zijn voor jouw rekening. Zodra wij je retour ontvangen hebben, sturen wij je een e-mail. Het bedrag van je retour wordt dan automatisch terug gestort op de rekening die je hebt gebruikt bij de betaling of wordt in mindering gebracht in je Klarna account. De terugbetaling gebeurd uiterlijk binnen 14 dagen na ontvangst van de goederen (kosten voor terugstorten naar buitenlandse rekening zijn voor de consument)."
+          }
         }
       },
       "block_order": [
@@ -138,7 +145,8 @@
         "1fe5fe56-8794-4ffc-a8a3-be3615528e73",
         "9c9b21d4-2d24-4146-aba2-7563d4e709b6",
         "534c6057-07a8-42fe-a942-197a65da7b37",
-        "a11dc33a-eca6-495a-8c4d-8cb53c52a6cb"
+        "a11dc33a-eca6-495a-8c4d-8cb53c52a6cb",
+        "31615080-3604-41e7-853f-4f6abbdcba9e"
       ],
       "settings": {
         "section_heading": "VEELGESTELDE VRAGEN",
