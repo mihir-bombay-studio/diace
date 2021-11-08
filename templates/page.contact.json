@@ -46,6 +46,13 @@
             "answer": "Na een succesvolle bestelling wordt er automatisch een bevestigingsmail gestuurd. Heb je deze mail niet ontvangen? Mogelijk is deze mail in uw ongewenste mail (SPAM) beland. Is dit niet het geval, stuur ons een mail naar info@diace.be."
           }
         },
+        "d7aa8fcf-aa60-4215-85ba-8894a6ab07da": {
+          "type": "subject_1",
+          "settings": {
+            "question": "Ik wil mijn bestelling annuleren, hoe doe ik dat?",
+            "answer": "Dat kan alleen wanneer je bestelling nog niet verzonden is. Neem zo spoedig mogelijk contact op ons. Email: info@diace.be of via de live chat."
+          }
+        },
         "fce729b0-1a3c-4d2d-b7db-54d785d786a2": {
           "type": "subject_2",
           "settings": {
@@ -86,6 +93,7 @@
         "901c3531-3ccd-4fe5-89c7-b28eb587dbbd",
         "4f43a51a-e07b-4f60-bffc-3324ea6da57e",
         "cbada998-11c8-4adc-ad4d-6de0dd29d56f",
+        "d7aa8fcf-aa60-4215-85ba-8894a6ab07da",
         "fce729b0-1a3c-4d2d-b7db-54d785d786a2",
         "bac7dda9-5881-486f-a6be-501abb093bc8",
         "1fe5fe56-8794-4ffc-a8a3-be3615528e73",
