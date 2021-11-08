@@ -88,6 +88,13 @@
             "answer": "Dat is afhankelijk van je bank."
           }
         },
+        "6e0436de-c8bb-4eec-b9cb-f4fc84f4eef2": {
+          "type": "subject_2",
+          "settings": {
+            "question": "Hoe garanderen jullie de veiligheid van de credit card betaling?",
+            "answer": "De pagina waarop je je aankopen verricht is Mollie, een wereldwijde betalingsprovider. De veiligheid van je betalingen is voor Mollie  een voortdurende zorg. Het Mollie-team van specialisten houdt zich doorlopend op de hoogte van de nieuwste ontwikkelen in dit domein, om je een veilige en betrouwbare dienst te leveren. Voor meer informatie, lees verder op de website van Mollie."
+          }
+        },
         "1fe5fe56-8794-4ffc-a8a3-be3615528e73": {
           "type": "subject_3",
           "settings": {
@@ -120,6 +127,7 @@
         "bac7dda9-5881-486f-a6be-501abb093bc8",
         "3fda73ef-7555-4001-8881-3904c0d6563a",
         "efdc90e8-eaa7-4869-9c0a-4d43e4c7b387",
+        "6e0436de-c8bb-4eec-b9cb-f4fc84f4eef2",
         "1fe5fe56-8794-4ffc-a8a3-be3615528e73",
         "9c9b21d4-2d24-4146-aba2-7563d4e709b6",
         "534c6057-07a8-42fe-a942-197a65da7b37"
