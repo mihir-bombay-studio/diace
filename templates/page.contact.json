@@ -112,6 +112,13 @@
         "534c6057-07a8-42fe-a942-197a65da7b37": {
           "type": "subject_3",
           "settings": {
+            "question": "Hoe lang duurt het verzenden van mijn pakket?",
+            "answer": "We werken met Track&Trace pakketpost. De levering is in België en Nederland 1 - 3 werkdagen. Je krijgt bericht wanneer het pakket verzonden is. Door de landelijke corona-maatregelen kunnen levertijden enkele dagen langer zijn. Voor zendingen van uitsluitend stickers werken wij met briefpostzendingen. De levering van briefpostzendingen in Europa is 2 tot 5 werkdagen.  Een pakket naar een ander land duurt 2 tot 5 werkdagen onder normale omstandigheden."
+          }
+        },
+        "a11dc33a-eca6-495a-8c4d-8cb53c52a6cb": {
+          "type": "subject_3",
+          "settings": {
             "question": "",
             "answer": ""
           }
@@ -130,7 +137,8 @@
         "efdc90e8-eaa7-4869-9c0a-4d43e4c7b387",
         "1fe5fe56-8794-4ffc-a8a3-be3615528e73",
         "9c9b21d4-2d24-4146-aba2-7563d4e709b6",
-        "534c6057-07a8-42fe-a942-197a65da7b37"
+        "534c6057-07a8-42fe-a942-197a65da7b37",
+        "a11dc33a-eca6-495a-8c4d-8cb53c52a6cb"
       ],
       "settings": {
         "section_heading": "VEELGESTELDE VRAGEN",
