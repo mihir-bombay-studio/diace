@@ -260,6 +260,7 @@
     },
     "image_with_text_2": {
       "type": "image-with-text-new",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -349,8 +350,8 @@
         "a90a1c8d-dff1-4016-a9e2-50ebc4748416": {
           "type": "faq",
           "settings": {
-            "question": "Question",
-            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem"
+            "question": "Wat betaal ik aan verzendkosten naar een adres?",
+            "answer": "Wij leveren wereldwijd, alle bestellingen worden volledig geregistreerd. Bestellingen worden zo snel mogelijk na ontvangst van uw bestelling verwerkt. De verzendkosten worden bepaald op basis van grootte en gewicht en land van bestemming. De verzendkosten worden automatisch berekend tijdens het afrekenen. Stickers worden verstuurd per briefomslag. Alle andere producten worden met track & trace code verzonden. Je ontvangt de track en trace code zodra je bestelling verzonden is. Franco levering mogelijk in Belgie, Nederland en Luxemburg: Is het bedrag van jouw bestelling hoger dan 75 €? Dan geniet je van gratis verzending op jouw bestelling."
           }
         },
         "29c1604e-6449-4fb5-85c5-c86d85ffe18e": {
