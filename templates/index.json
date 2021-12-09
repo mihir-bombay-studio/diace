@@ -260,12 +260,11 @@
     },
     "image_with_text_2": {
       "type": "image-with-text-new",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "DE ONE-STOP-SHOP VOOR JOUW FAVORIETE DIABETES ACCESSOIRES."
+            "heading": "KIJK MEE IN ONS EIGEN ATELIER"
           }
         },
         "text": {
