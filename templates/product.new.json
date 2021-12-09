@@ -14,7 +14,7 @@
           "settings": {
             "value_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"60.717\" height=\"85\" viewbox=\"0 0 60.717 85\"><defs><style>.a-icon-location{fill:#fec23b;}<\/style><\/defs><g transform=\"translate(-96 -32)\"><path class=\"a-icon-location\" d=\"M126.358,32C109.619,32,96,45.026,96,61.03c0,7.622,3.474,17.758,10.326,30.127a222.616,222.616,0,0,0,15.179,23.38,6.024,6.024,0,0,0,9.718,0A223.544,223.544,0,0,0,146.4,91.157c6.84-12.365,10.314-22.5,10.314-30.127C156.717,45.026,143.1,32,126.358,32Zm0,42.5A12.143,12.143,0,1,1,138.5,62.358,12.143,12.143,0,0,1,126.358,74.5Z\"><\/path><\/g><\/svg>",
             "value_title": "BELGISCH",
-            "value_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+            "value_desc": "Wij zijn een Belgisch bedrijf dat zich inzet voor duurzaamheid en ecologie. Door onze eigen Diacé collectie in ons eigen atelier te produceren."
           }
         },
         "e86de89a-4eb6-4a5b-b4d9-bba5020e954e": {
@@ -108,7 +108,7 @@
           "type": "cta",
           "settings": {
             "cta_label": "CONTACTEER ONS",
-            "cta_link": "https:\/\/diace-store.myshopify.com\/en\/pages\/contact-and-faq"
+            "cta_link": "https:\/\/diace-store.myshopify.com\/pages\/contact-faq"
           }
         }
       },
