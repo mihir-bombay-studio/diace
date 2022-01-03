@@ -16,7 +16,7 @@
   };
   var upsellProduct = JSON.parse(`{{ upsellProduct | json }}`);
   console.log(upsellProduct);
-  var current_variant = upsellProduct;
+  var current_variant = upsellProduct.variants[0];
   {% endif %}
 
 </script>
