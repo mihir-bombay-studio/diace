@@ -95,7 +95,8 @@
         "gender_filter_title": "GESLACHT",
         "size_filter_title": "",
         "type_filter_title": "",
-        "brand_filter_title": "MERK"
+        "brand_filter_title": "MERK",
+        "header-list": "header-lower-menu"
       }
     }
   },
