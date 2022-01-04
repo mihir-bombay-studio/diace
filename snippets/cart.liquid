@@ -18,7 +18,7 @@
   console.log(upsellProduct);
   var current_variant = upsellProduct;
   {% endif %}
-
+//{{ upsellProduct.first_available_variant.id }}
 </script>
 {% for item in cart.items %}
 {% if item.product.handle == upsellProductHandle %}
