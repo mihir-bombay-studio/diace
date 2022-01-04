@@ -41,6 +41,8 @@
             {% if coll.image %}
           
             <div class="collection-types bold{% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %} {% endif %}"><a href="{{coll.url}}">{{ coll.title }}</a></div>
+          
+          {% if coll.title == collection.title %}
           {% for link in linklists[section.settings.header-list].links %}
           {% assign collhand = link.url | split: "/" | last %}
           {% if collhand == collection.handle %}
@@ -58,7 +60,7 @@
             </div>
           {% endif %}
           {% endfor %}
-          
+          {% endif %}
             {% endif %}
           {% endfor %}
 
