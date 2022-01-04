@@ -41,17 +41,7 @@
             {% if coll.image %}
           
             <div class="collection-types bold{% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %} {% endif %}"><a href="{{coll.url}}">{{ coll.title }}</a></div>
-          {% for link in linklists[section.settings.header-list].links %}
-          {% assign collhand = link.url | split: "/" | last %}
-          {% if collhand == collection.handle %}
-          <div class="collection-tags curr-tag">
-              {%- for child_link in link.links -%}
-            {% assign tagx = child_link.url | split: "tag=" | last %}
-              <div class="collection-tag semibold tag-{{ tagx | handleize}}" data-tfilter="{{ tagx }}">{{ tagx }}</div>
-              {% endfor %}
-            </div>
-          {% endif %}
-          {% endfor %}
+
             {% if coll.title == collection.title %}
             <div class="collection-tags{% if coll.title != collection.title %} no-disp nocurr-tag{% else %} curr-tag{% endif %}">
               {% for tag in collection.tags %}
