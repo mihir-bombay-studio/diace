@@ -52,13 +52,6 @@
             </div>
           {% endif %}
           {% endfor %}
-            {% if coll.title == collection.title %}
-            <div class="collection-tags{% if coll.title != collection.title %} no-disp nocurr-tag{% else %} curr-tag{% endif %}">
-              {% for tag in collection.tags %}
-              <div class="collection-tag semibold tag-{{ tag | handleize}}" data-tfilter="{{ tag }}">{{ tag }}</div>
-              {% endfor %}
-            </div>
-          	{% endif %}
           
             {% endif %}
           {% endfor %}
