@@ -42,7 +42,7 @@
           
             <div class="collection-types bold{% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %} {% endif %}"><a href="{{coll.url}}">{{ coll.title }}</a></div>
           {% for link in linklists[block.settings.nav_list_lower].links %}
-          {% assign collhand = link.url | split: "/" | last %}
+          {% assign collhand = link.url | split: "/" | last %}{{collhand}}-{{collection.handle}}
           {% if collhand == collection.handle %}
           <div class="collection-tags curr-tag">
               {%- for child_link in link.links -%}
