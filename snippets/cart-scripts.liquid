@@ -150,7 +150,7 @@ function refreshCart(cart) {
     }
 
     output += `</div >`;
-    output += `<div id="upsell_item_${current_variant.id}" class="upsell-container">
+    output += `<div id="upsell_item_${current_variant.variants[0].id}" class="upsell-container">
       <div class="upsell-heading semibold">Mensen kochten ook:</div>
       <div class="list-item">
         <a href="${upsell.url}" class="product-img">
@@ -175,7 +175,7 @@ function refreshCart(cart) {
                   </div>
                   <button 
                           class="add-upsell-btn semibold AddToCart no-mobile"
-                          data-variant-id = "${current_variant.id}"
+                          data-variant-id = "${current_variant.variants[0].id}"
                           data-quantity = ""
                           > 
                     <span class="plus-circle">{% render 'icon-close-circle' %}</span> 
@@ -185,7 +185,7 @@ function refreshCart(cart) {
               </div>
               <button 
                       class="add-upsell-btn AddToCart btn btn-yellow no-desktop"
-                      data-variant-id = "${current_variant.id}"
+                      data-variant-id = "${current_variant.variants[0].id}"
                       data-quantity = ""
                       > 
                 <span class="plus-circle">+</span> 
