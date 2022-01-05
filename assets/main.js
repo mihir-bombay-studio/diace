@@ -80,6 +80,11 @@ $('.article_filter_tag').click(function() {
 
   $(this).addClass("active-pill");
   var bfilter_tag = $(this).data('bfilter');
+  if(bfilter_tag == 'alle') {
+    $('#loadMore').removeClass('no-disp');
+  } else {
+  	$('#loadMore').addClass('no-disp');
+  }
   $('.blogs').addClass('no-disp');
   $('.blogs').removeClass('sho');
   $('.blogs').each(function() {
