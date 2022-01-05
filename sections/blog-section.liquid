@@ -101,10 +101,10 @@
     </div>
 
     {% endfor %}
+  </div>
     {% if blog.articles.size > 6 %}
     <div id="loadMore" class="btn">Load more</div>
     {% endif %}
-  </div>
   {%- if paginate.pages > 1 -%}
     {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
     {%- endif -%}
