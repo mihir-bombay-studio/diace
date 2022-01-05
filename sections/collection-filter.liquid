@@ -727,7 +727,37 @@
                   <div id="{{product.handle}}" class="other-variants">
                   	<div class="color_wrapper">
                       {% for variant in product.variants limit:6 %}
-                      <span variant-option="{{variant.option2}}" data-success-id="success_{{product.handle}}" class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">{{variant.title}}</span>
+                      <span variant-option="{{variant.option2}}" data-success-id="success_{{product.handle}}" class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">
+                        
+                        {{variant.title}}
+
+                        <span class="color-swatch" >
+                          {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
+                          {% for colors in colorsSch %}
+                          {% assign color = colors | split: ":" %}
+                          {% assign downcase1 = color[0] | downcase %}
+                          {% assign downcase2 = value | downcase %}
+                          {% if downcase1 == downcase2 %}
+                          {% assign variantColorCode = color[1] %}
+                          {% break %}
+                          {% endif %}
+                          {% endfor %} 
+
+
+                          {% assign imgsrc = value | append: ".PNG" %}
+                          {% if variantImg != blank %}
+                          {% assign variantColorCode = variantImg | img_url | prepend: "url(" | append: ")" %}
+                          {% endif %}
+
+                          {% if variantColorCode == blank %}
+                          {% assign variantColorCode = "url(//cdn.shopify.com/s/files/1/0594/3604/0367/files/none.png?v=1634556355)" %}
+                          {% endif %}
+
+                          <span class="colors-color" style="background:{{ variantColorCode }};"></span>
+
+                        </span>
+
+                      </span>
                       {% endfor %}
                     </div>
                   </div>
