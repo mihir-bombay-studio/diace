@@ -123,7 +123,9 @@
       e.preventDefault();
       x = x+6;
       $('.filtered-blog-container .blogs:not(.no-disp)').slice(0, x).slideDown();
-      if($('.filtered-blog-container .blogs:visible').length == $('.filtered-blog-container .blogs').length)
+      if($('.filtered-blog-container .blogs:visible').length == $('.filtered-blog-container .blogs').length) {
+      	$('#loadMore').remove();
+      }
     });
   });
 </script>
