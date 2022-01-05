@@ -118,11 +118,11 @@
 <script>
   $(function () {
     x=6;
-    $('.filtered-blog-container .blogs').slice(0, 6).show();
+    $('.filtered-blog-container .blogs:not(.no-disp)').slice(0, 6).show();
     $('#loadMore').on('click', function (e) {
       e.preventDefault();
       x = x+6;
-      $('.filtered-blog-container .blogs').slice(0, x).slideDown();
+      $('.filtered-blog-container .blogs:not(.no-disp)').slice(0, x).slideDown();
     });
   });
 </script>
