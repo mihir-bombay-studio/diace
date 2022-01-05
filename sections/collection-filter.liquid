@@ -719,7 +719,9 @@
                     <div class="color_wrapper">
                       {% for variant in product.variants limit:6 %}
                       <span data-success-id="success_{{product.handle}}" class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">
-                        {{variant.title}}
+
+                        {% assign variantImg = blank %}
+                        {% assign variantColorCode = blank %}
                         
 
                         <span class="color-swatch" >
