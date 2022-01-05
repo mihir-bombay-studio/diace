@@ -81,6 +81,7 @@ $('.article_filter_tag').click(function() {
   $(this).addClass("active-pill");
   var bfilter_tag = $(this).data('bfilter');
   $('.blogs').addClass('no-disp');
+  $('.blogs').removeClass('sho');
   $('.blogs').each(function() {
     var bstring = $(this).data('btag');
     var btag = bstring.split(',');
