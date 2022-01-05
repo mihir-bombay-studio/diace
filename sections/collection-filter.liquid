@@ -727,7 +727,7 @@
                           {% for colors in colorsSch %}
                           {% assign color = colors | split: ":" %}
                           {% assign downcase1 = color[0] | downcase %}
-                          {% assign downcase2 = value | downcase %}
+                          {% assign downcase2 = variant.title | downcase %}
                           {% if downcase1 == downcase2 %}
                           {% assign variantColorCode = color[1] %}
                           {% break %}
