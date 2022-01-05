@@ -86,6 +86,7 @@ $('.article_filter_tag').click(function() {
     var btag = bstring.split(',');
     if( $.inArray(bfilter_tag, btag) != -1 ) {
       $(this).removeClass('no-disp');
+      $(this).addClass('sho');
     }
   });
 
