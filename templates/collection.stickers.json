@@ -122,7 +122,8 @@
         "gender_filter_title": "",
         "size_filter_title": "",
         "type_filter_title": "TYPE",
-        "brand_filter_title": ""
+        "brand_filter_title": "",
+        "header-list": "header-lower-menu"
       }
     }
   },
