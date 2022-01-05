@@ -46,7 +46,7 @@
           {% if coll.title == collection.title %}
           {% for link in linklists[section.settings.header-list].links %}
           {% assign collhand = link.url | split: "/" | last %}
-          {% if collhand == collection.handle %}
+          {% if collhand == collection.handle %}sdfsdfsdf
           <div class="collection-tags curr-tag">
               {%- for child_link in link.links -%}
             	{% assign tagx = child_link.url | split: "tag=" | last %}
