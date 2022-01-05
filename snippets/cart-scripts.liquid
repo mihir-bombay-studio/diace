@@ -275,10 +275,11 @@ $("body").on('click', '.AddToCart', function (e) {
     }, 3000);
     
     $(".variant-pop").removeClass("no-disp");
-    
+    $(".response-message").text('');
   })
   .fail(function (error) {
     console.log(error);
+    $(".response-message").text(error.responseJSON.description);
   });
   
 });
