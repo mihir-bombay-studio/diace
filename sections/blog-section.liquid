@@ -60,7 +60,7 @@
  	{% endfor %}
   </div>
   <div class="filtered-blog-container">
-    {% paginate blog.articles by 6 %}
+    {% paginate blog.articles by 200 %}
     {% for article in blogs.news.articles  %}
     {% assign desc = article.content %}
     
