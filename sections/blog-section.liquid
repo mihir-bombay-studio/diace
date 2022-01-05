@@ -101,7 +101,9 @@
     </div>
 
     {% endfor %}
- 
+    {% if blog.articles.size > 6 %}
+    <div id="loadMore">Load more</div>
+    {% endif %}
   </div>
   {%- if paginate.pages > 1 -%}
     {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
@@ -112,6 +114,30 @@
   </div> -->
 </div>
 
+
+<script>
+  $(function () {
+    x=3;
+    $('#myList li').slice(0, 3).show();
+    $('#loadMore').on('click', function (e) {
+      e.preventDefault();
+      x = x+5;
+      $('#myList li').slice(0, x).slideDown();
+    });
+  });
+</script>
+<style>
+  .filtered-blog-container .blogs{
+    display:none;
+}
+#loadMore {
+    color:green;
+    cursor:pointer;
+}
+#loadMore:hover {
+    color:black;
+}
+</style>
 {% schema %}
   {
     "name": "Blog section",
