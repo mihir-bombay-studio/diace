@@ -6,6 +6,9 @@
 .product-collection-card{
   width: 23.68%;
   margin: 0 0.66% 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product-collection-card img{
