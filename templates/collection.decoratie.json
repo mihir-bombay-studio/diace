@@ -48,10 +48,13 @@
         "enable_sorting": true,
         "gender_show": false,
         "size_show": false,
+        "type_show": false,
         "brand_show": false,
         "gender_filter_title": "",
         "size_filter_title": "",
-        "brand_filter_title": ""
+        "type_filter_title": "",
+        "brand_filter_title": "",
+        "header-list": "header-lower-menu"
       }
     }
   },
