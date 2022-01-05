@@ -95,7 +95,9 @@ $('.article_filter_tag').click(function() {
       $(this).addClass('sho');
     }
   });
-
+  if($('.filtered-blog-container .blogs:visible').length == $('.filtered-blog-container .blogs').length) {
+    $('#loadMore').remove();
+  }
 });
 
 
