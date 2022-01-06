@@ -370,10 +370,12 @@ a.active-facets__button {
   justify-content: space-between;
 }
 
-.disp_no{
+.product-collection-card.disp_no{
   display : none; 
 }
-
+ .disp_no{
+  display : none; 
+}
 .product-colors{
   display : flex;
   gap : 10px;
