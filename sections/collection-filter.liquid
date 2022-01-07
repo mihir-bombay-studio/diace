@@ -38,7 +38,10 @@
       <div class="collection-filter-left">
 
         <div class="filter-tags style-scrollbar">
+          {% for linkx in linklists[section.settings.header-list].links %}
           {%- for coll in collections -%}
+          {% assign collhandx = linkx.url | split: "/" | last %}
+          {% if collhandx == coll.handle %}
             {% if coll.image %}
           
             <div class="collection-types bold{% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %} {% endif %}"><a href="{{coll.url}}">{{ coll.title }}</a></div>
@@ -63,6 +66,8 @@
           {% endfor %}
           {% endif %}
             {% endif %}
+            {% endif %}
+          {% endfor %}
           {% endfor %}
 
         </div>
