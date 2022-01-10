@@ -328,7 +328,7 @@
       "last_name": "Achternaam",
       "email": "E‑mail",
       "password": "Wachtwoord",
-      "submit": "Aanmaken"
+      "submit": "VERZENDEN"
     },
     "reset_password": {
       "title": "Account-wachtwoord opnieuw instellen",
