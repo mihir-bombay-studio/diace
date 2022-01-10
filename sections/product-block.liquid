@@ -128,7 +128,7 @@
           <fieldset class="js product-form__input ">
             <div class="variant-option-name">
               {%- if option.name contains "Size" or option.name contains "Maat"  -%}
-              KIES JOUW MAAT
+              {{ section.settings.choose_size_text }}
 
               <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
               <div class="mask" role="dialog"></div>
