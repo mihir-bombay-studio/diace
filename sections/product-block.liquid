@@ -130,7 +130,7 @@
               {%- if option.name contains "Size" or option.name contains "Maat"  -%}
               {{ section.settings.choose_size_text }}
 
-              <div class="show modal-btn" aria-haspopup="true">Maattabel</div>
+              <div class="show modal-btn" aria-haspopup="true">{{ section.settings.size_label }}</div>
               <div class="mask" role="dialog"></div>
               <div class="modal style-scrollbar" role="alert">
                 <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"></div>
@@ -337,6 +337,12 @@ $(document).keyup(function(e) {
 			"type": "text",
 			"label": "Choose Size Text",
 			"default": "KIES JOUW MAAT"
+		},
+		{
+			"id": "size_label",
+			"type": "text",
+			"label": "Size Label",
+			"default": "Maattabel"
 		}
 	],
 	"presets": [
