@@ -46,7 +46,7 @@
         {% endfor %}
         {% endfor %}
         <div class="other-available-colors">
-          <a class="featured-product-link" href="{{product.url}}">{% if opt_name contains "Kleur" or opt_name contains "Color" %}Meer kleuren beschikbaar{% else %}meer opties beschikbaar{% endif %}</a>
+          <a class="featured-product-link" href="{{product.url}}">{% if opt_name contains "Kleur" or opt_name contains "Color" %}{{ section.settings.more_color_text }}{% else %}{{ section.settings.more_options_text }}{% endif %}</a>
         </div>
         {% endif %}
       </div>
@@ -82,6 +82,18 @@
           "id": "featured_collection",
           "label": "Featured Collection"
         },
+		{
+			"type": "text",
+			"id": "more_color_text",
+			"label": "More Colours Text",
+			"default": "Meer kleuren beschikbaar"
+		},
+		{
+			"type": "text",
+			"id": "more_options_text",
+			"label": "More Options Text",
+			"default": "meer opties beschikbaar"
+		},
 		{
 			"type": "text",
 			"id": "hover_text",
