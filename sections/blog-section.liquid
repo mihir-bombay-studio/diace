@@ -103,7 +103,7 @@
     {% endfor %}
   </div>
     {% if blog.articles.size > 6 %}
-    <div id="loadMore" class="btn">Load more</div>
+    <div id="loadMore" class="btn">{{section.settings.load_more_link_text}}</div>
     {% endif %}
   {%- if paginate.pages > 1 -%}
     {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
@@ -140,7 +140,6 @@
     display: table;
     cursor: pointer;
     margin: 50px auto;
-    margin-top: 50px;
 }
 </style>
 {% schema %}
@@ -157,6 +156,11 @@
           "type": "text",
           "label": "Link text",
 		  "info" : "Read more text"
+        },
+		{
+          "id": "load_more_link_text",
+          "type": "text",
+          "label": "Load More Button Text"
         }
 	],
 	"presets": [
