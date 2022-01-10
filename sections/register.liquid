@@ -18,11 +18,11 @@
                     <form action="">
                         <div class="form_container">
                             <div class="input_form_control input-1">
-                                <label for="name">Naam*</label>
+                                <label for="name">{{ section.settings.name_label }}*</label>
                                 <input placeholder="Vul je naam in" type="text" id="name" class="name">
                             </div>
                             <div class="input_form_control input-2">
-                                <label for="name">E-MAIL*</label>
+                                <label for="name">{{ section.settings.email_label }}*</label>
                                 <input placeholder="youremail@mail.com" type="text" id="name" class="name">
                             </div>
                             <div class="input_form_control input-3">
@@ -56,6 +56,24 @@
           "id": "contact_desc",
           "type": "html",
           "label": "Description"
+        },
+		{
+          "id": "name_label",
+          "type": "text",
+          "label": "Name Label",
+			"default": "Naam"
+        },
+		{
+          "id": "email_label",
+          "type": "text",
+          "label": "Email Label",
+			"default": "E-MAIL"
+        },
+		{
+          "id": "pwd_label",
+          "type": "text",
+          "label": "Password Label",
+			"default": "WACHTWOORD"
         }
 	],
 	"presets": [
