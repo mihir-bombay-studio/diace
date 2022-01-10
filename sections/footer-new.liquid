@@ -67,7 +67,7 @@
         </ul>
       </div>
       <div class="footer-mid-right footer-part">
-        <div class="footer-nav-title footer-title bold">OVER DIACÉ</div>
+        <div class="footer-nav-title footer-title bold">{{ section.settings.footer_about_title }}</div>
         <ul class="footer-nav">
           {% for block in section.blocks %}
           {% if block.type == "Footer_menu" %}
@@ -81,7 +81,7 @@
         </ul>
       </div>
       <div class="footer-right footer-part">
-        <div class="footer-help-title footer-title bold">HULP NODIG?</div>
+        <div class="footer-help-title footer-title bold">{{ section.settings.footer_help_title }}</div>
         {% for block in section.blocks %}
         {% if block.type == "Footer_help" %}
         <div>{{ block.settings.help_para1 }}</div>
