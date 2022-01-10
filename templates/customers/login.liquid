@@ -83,7 +83,7 @@
 
       <div class="input_form_control"> 
         <label for="CustomerEmail">
-          E-MAIL*
+          {{ 'customer.login_page.email' | t }}*
         </label>
         <input
           type="email"
@@ -103,7 +103,7 @@
       {%- if form.password_needed -%}
         <div class="input_form_control"> 
           <label for="CustomerPassword">
-            WACHTWOORD
+            {{ 'customer.login_page.password' | t }}
           </label>
           <input
             type="password"
