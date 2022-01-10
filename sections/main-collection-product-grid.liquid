@@ -411,7 +411,7 @@
 
           <div class="AddToCart product-hover-text flex-box align-center" data-variant-id="{{product.first_available_variant.id}}" data-quantity = "1">
             <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-            <span class="hover-text bold">KOPEN</span>
+            <span class="hover-text bold">{{ section.settings.hover_text }}</span>
           </div>
         </div>
 
@@ -506,7 +506,13 @@
       "id": "enable_sorting",
       "default": true,
       "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
-    }
+    },
+		{
+			"type": "text",
+			"id": "hover_text",
+			"label": "Hover Text",
+			"default": "KOPEN"
+		}
   ]
 }
 {% endschema %}
