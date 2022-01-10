@@ -11,7 +11,7 @@
 
           <div class="form_container">
             <div class="input_form_control ">
-              <label for="first-name">Naam*</label>
+              <label for="first-name">{{ section.settings.name_label }}*</label>
               <input placeholder="Vul je naam in" 
                      type="text" 
                      name="contact[first_name]" id="first-name" class="name" 
@@ -20,7 +20,7 @@
                      >
             </div>
             <div class="input_form_control ">
-              <label for="ContactForm-email">E-MAIL*</label>
+              <label for="ContactForm-email">{{ section.settings.email_label }}*</label>
               <input
                      autocomplete="email"
                      type="email"
@@ -45,7 +45,7 @@
               {%- endif -%}
             </div>
             <div class="input_form_control ">
-              <label for="ContactForm-phone">TELEFOONNUMMER</label>
+              <label for="ContactForm-phone">{{ section.settings.phone_label }}</label>
               <input 
                      type="tel" 
                      id="ContactForm-phone" 
@@ -58,7 +58,7 @@
                      >
             </div>
             <div class="input_form_control ">
-              <label for="cv-motivate">CV - MOTIVATIE</label>
+              <label for="cv-motivate">{{ section.settings.motivation_label }}</label>
               <input 
                      placeholder="Klik om uw bestand te updloaden" 
                      type="text" 
@@ -67,7 +67,7 @@
                      >
             </div>
             <div class="input_form_control ">
-              <label for="message">UW BERICHT*</label>
+              <label for="message">{{ section.settings.message_label }}*</label>
               <textarea 
                         rows="8" cols="50" 
                         placeholder="Jouw bericht" 
@@ -80,7 +80,7 @@
               </textarea>
             </div>
             <div class="submit_button">
-              <button type="submit" class="btn-yellow">VERZENDEN <span class="icon-send">{% render "icon-send" %}</span></button>
+              <button type="submit" class="btn-yellow">{{ section.settings.sbmtbtn_label }} <span class="icon-send">{% render "icon-send" %}</span></button>
             </div>
           </div>
                 {%- if form.posted_successfully? -%}
@@ -160,7 +160,43 @@
                     ],
                     "default": "margin-y-25",
                     "label": "Section Margin(top)"
-                }
+                },
+		{
+          "id": "name_label",
+          "type": "text",
+          "label": "Name Label",
+			"default": "Naam"
+        },
+		{
+          "id": "email_label",
+          "type": "text",
+          "label": "Email Label",
+			"default": "E-MAIL"
+        },
+		{
+          "id": "phone_label",
+          "type": "text",
+          "label": "Telephone Label",
+			"default": "TELEFOONNUMMER"
+        },
+		{
+          "id": "motivation_label",
+          "type": "text",
+          "label": "Order Number Label",
+			"default": "CV - MOTIVATIE"
+        },
+		{
+          "id": "message_label",
+          "type": "text",
+          "label": "Message Label",
+			"default": "UW BERICHT"
+        },
+		{
+          "id": "sbmtbtn_label",
+          "type": "text",
+          "label": "Submit Button Text",
+			"default": "VERZENDEN"
+        }
 	],
 	"presets": [
     {
