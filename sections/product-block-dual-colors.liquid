@@ -216,11 +216,11 @@
              data-variant-id = "{{product.selected_or_first_available_variant.id }}"
              data-quantity = ""
              >
-          <span>TOEVOEGEN AAN WINKELMANDJE</span>
+          <span>{{ section.settings.add_cart_btn_txt }}</span>
         </div>
       </div>
       <div class="cont-shopping light">
-        <a href="/collections">Verder winkelen</a>
+        <a href="/collections">{{ section.settings.cont_shopping_btn_txt }}</a>
       </div>
 {% render "product-details-dropdowns" %}
     </div>
@@ -317,6 +317,18 @@ $(document).keyup(function(e) {
 			"type": "text",
 			"label": "Tire Colour Title",
 			"default": "KIES HET KLEUR VAN DE BAND:"
+		},
+		{
+			"id": "add_cart_btn_txt",
+			"type": "text",
+			"label": "Add to cart button text",
+			"default": "TOEVOEGEN AAN WINKELMANDJE"
+		},
+		{
+			"id": "cont_shopping_btn_txt",
+			"type": "text",
+			"label": "Continue shopping button text",
+			"default": "Verder winkelen"
 		}
 	],
 	"presets": [
