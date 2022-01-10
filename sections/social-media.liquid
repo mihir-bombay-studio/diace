@@ -15,7 +15,7 @@
       </div>
       <div class="sm-hover-text flex-box align-center">
           <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-          <a href="{{ section.settings.link }}" class="hover-text bold">JOIN US @FACEBOOK</a>
+          <a href="{{ section.settings.link }}" class="hover-text bold">{{ section.settings.hover_text }}</a>
         </div>
     </div>
     <div class="sm-right flex-box justify-between">
@@ -75,7 +75,13 @@
       "id": "link",
       "type": "url",
       "label": "Button Link"
-    }
+    },
+		{
+			"type": "text",
+			"id": "hover_text",
+			"label": "Hover Text",
+			"default": "JOIN US @FACEBOOK"
+		}
 	
   ],
   "blocks": [
