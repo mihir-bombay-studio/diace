@@ -12,7 +12,7 @@
           <a href="{{product.url}}">
           <div class="product-hover-text flex-box align-center">
             <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-            <a href="{{product.url}}" class="hover-text bold">KOPEN</a>
+            <a href="{{product.url}}" class="hover-text bold">{{ section.settings.hover_text }}</a>
           </div>
           </a>
         </div>
@@ -31,7 +31,13 @@
           "type": "collection",
           "id": "featured_collection",
           "label": "Featured Collection"
-        }
+        },
+		{
+			"type": "text",
+			"id": "hover_text",
+			"label": "Hover Text",
+			"default": "KOPEN"
+		}
 	],
   "presets": [
     {
