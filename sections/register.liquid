@@ -26,7 +26,7 @@
                                 <input placeholder="youremail@mail.com" type="text" id="name" class="name">
                             </div>
                             <div class="input_form_control input-3">
-                                <label for="name">WACHTWOORD</label>
+                                <label for="name">{{ section.settings.pwd_label }}</label>
                                 <input placeholder="Kies je wachtwoord" type="text" id="name" class="name">
                             </div>
                             <div class="tip">
@@ -74,6 +74,12 @@
           "type": "text",
           "label": "Password Label",
 			"default": "WACHTWOORD"
+        },
+		{
+          "id": "tip_txt",
+          "type": "text",
+          "label": "Tip Text",
+			"default": "8 characters, 1 capital letter, 1 symbol"
         }
 	],
 	"presets": [
