@@ -30,10 +30,10 @@
                                 <input placeholder="Kies je wachtwoord" type="text" id="name" class="name">
                             </div>
                             <div class="tip">
-                                8 characters, 1 capital letter, 1 symbol
+                                {{ section.settings.tip_txt }}
                             </div>
                             <div class="submit_button">
-                                <button type="submit btn-yellow">VERZENDEN <span class="icon-send">{% render "icon-send" %}</span></button>
+                                <button type="submit btn-yellow">{{ section.settings.sbmtbtn_label }} <span class="icon-send">{% render "icon-send" %}</span></button>
                             </div>
                         </div>
                     </form>
@@ -80,6 +80,12 @@
           "type": "text",
           "label": "Tip Text",
 			"default": "8 characters, 1 capital letter, 1 symbol"
+        },
+		{
+          "id": "sbmtbtn_label",
+          "type": "text",
+          "label": "Submit Button Text",
+			"default": "VERZENDEN"
         }
 	],
 	"presets": [
