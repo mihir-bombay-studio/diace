@@ -27,7 +27,7 @@
         <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
         <div class="fp-hover-text flex-box align-center">
           <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-          <a href="" class="hover-text bold">KOPEN</a>
+          <a href="" class="hover-text bold">{{ section.settings.hover_text }}</a>
         </div>
       </div>
       <div class="product-title-price flex-box justify-between">
@@ -55,7 +55,7 @@
         {% endfor %}
         {% endfor %}
         <div class="other-available-colors">
-          <a class="featured-product-link" href="{{product.url}}">Meer kleuren beschikbaar</a>
+          <a class="featured-product-link" href="{{product.url}}">{{ section.settings.more_colors_text }}</a>
         </div>
         {% endif %}
       </div>
@@ -93,7 +93,19 @@
           "type": "collection",
           "id": "new_featured_collection",
           "label": "Featured Collection"
-        }
+        },
+		{
+			"type": "text",
+			"id": "hover_text",
+			"label": "Hover Text",
+			"default": "KOPEN"
+		},
+		{
+			"type": "text",
+			"id": "more_colors_text",
+			"label": "More Colours Text",
+			"default": "Meer kleuren beschikbaar"
+		}
 	],
 	"blocks": [
 	{
