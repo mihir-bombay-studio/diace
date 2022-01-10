@@ -35,6 +35,7 @@
       "type": "blog-section",
       "settings": {
         "heading": "WELKOM OP ONZE BLOG",
+        "topic_heading": "topic",
         "link_text": "Verder lezen",
         "load_more_link_text": "LOAD MORE"
       }
