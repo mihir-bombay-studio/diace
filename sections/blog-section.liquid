@@ -30,7 +30,7 @@
     <div class="date_and_time">
       <span class="date">{{ article.published_at | date: '%d/%m/%Y' }}</span> -
       <span class="time">{{ readtime }}</span>
-      <p class="topic">Topic</p>
+      <p class="topic">{{section.settings.topic_heading}}</p>
     </div>
     <div class="blogheading">{{ article.title }}</div>
     <div class="blogdesc">{{ article.excerpt_or_content | strip_html | truncatewords: 20 | escape }}</div>
