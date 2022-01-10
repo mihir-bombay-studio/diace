@@ -49,7 +49,7 @@
                      >
             </div>
             <div class="input_form_control input-2">
-              <label for="ContactForm-email">E-MAIL*</label>
+              <label for="ContactForm-email">{{ section.settings.email_label }}*</label>
               <input
                      autocomplete="email"
                      type="email"
@@ -74,7 +74,7 @@
               {%- endif -%}
             </div>
             <div class="input_form_control input-3">
-              <label for="ContactForm-phone">TELEFOONNUMMER</label>
+              <label for="ContactForm-phone">{{ section.settings.phone_label }}</label>
               <input 
                      type="tel" 
                      id="ContactForm-phone" 
@@ -87,7 +87,7 @@
                      >
             </div>
             <div class="input_form_control input-4">
-              <label for="topic">ONDERWERP</label>
+              <label for="topic">{{ section.settings.topic_label }}</label>
               <input 
                      placeholder="Waarover gaat je bericht?" 
                      type="text" 
@@ -96,7 +96,7 @@
                      >
             </div>
             <div class="input_form_control input-5">
-              <label for="order-number">ORDERNUMMER</label>
+              <label for="order-number">{{ section.settings.ordernum_label }}</label>
               <input 
                      placeholder="Vul je ordernummer in, indien van toepassing" 
                      type="text" 
@@ -105,7 +105,7 @@
                      >
             </div>
             <div class="input_form_control input-6">
-              <label for="message">UW BERICHT*</label>
+              <label for="message">{{ section.settings.message_label }}*</label>
               <textarea 
                         rows="8" cols="50" 
                         placeholder="Jouw bericht" 
@@ -118,7 +118,7 @@
               </textarea>
             </div>
             <div class="submit_button">
-              <button type="submit" class="btn-yellow">VERZENDEN <span class="icon-send">{% render "icon-send" %}</span></button>
+              <button type="submit" class="btn-yellow">{{ section.settings.sbmtbtn_label }} <span class="icon-send">{% render "icon-send" %}</span></button>
             </div>
           </div>
        {%- endform -%}
@@ -192,6 +192,12 @@
           "type": "text",
           "label": "Message Label",
 			"default": "UW BERICHT"
+        },
+		{
+          "id": "sbmtbtn_label",
+          "type": "text",
+          "label": "Submit Button Text",
+			"default": "VERZENDEN"
         }
 	],
 	"presets": [
