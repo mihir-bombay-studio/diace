@@ -13,7 +13,7 @@
       {
         "id": "welcome_text",
         "type": "text",
-        "default": "WELKOM TERU"
+        "default": "WELKOM TERUG"
       }
     ]
   },
