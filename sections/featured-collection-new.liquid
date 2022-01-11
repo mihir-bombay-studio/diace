@@ -101,15 +101,21 @@
 			"default": "KOPEN"
 		},
 		{
-          "type": "range",
-          "id": "marg_top",
-          "min": 100,
-          "max": 200,
-          "step": 1,
-          "unit": "px",
-          "label": "Margin Top",
-          "default": 136
-        }
+            "type": "select",
+            "id": "marg_top",
+            "label": "Margin Top",
+            "options": [
+              {
+                "value": "big",
+                "label": "Big"
+              },
+              {
+                "value": "medium",
+                "label": "Medium"
+              }
+            ],
+            "default": "medium"
+          }
 	],
 	"blocks": [
 	{
