@@ -37,6 +37,13 @@
   font-size: 20px;
 }
 
+.incl-tax.light {
+    font-size: 16px;
+    line-height: 24px;
+    color: #737373;
+    letter-spacing: 0;
+}
+
 .product-price-wrapper {
   margin-bottom: 12px;
 }
