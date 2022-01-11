@@ -49,6 +49,11 @@
         "id": "my_details_text",
         "type": "text",
         "default": "MIJN GEGEVENS"
+      },
+      {
+        "id": "orders_text",
+        "type": "text",
+        "default": "BESTELLINGEN"
       }
     ]
   },
