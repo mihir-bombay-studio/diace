@@ -39,6 +39,11 @@
         "id": "billing_address_text",
         "type": "text",
         "default": "FACTUURADRES"
+      },
+      {
+        "id": "same_as_delivery_text",
+        "type": "text",
+        "default": "Zelfde als leveringsadres"
       }
     ]
   },
