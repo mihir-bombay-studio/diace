@@ -120,7 +120,7 @@
               </div>
               <div class="detail-block">
                 <div class="detail-header">
-                  {{ delivery_address_text }} <a href="{{ routes.account_addresses_url }}" class="underline-link">{{ settings.change_text }}</a>
+                  {{ settings.delivery_address_text }} <a href="{{ routes.account_addresses_url }}" class="underline-link">{{ settings.change_text }}</a>
                 </div>
                 <div>
                   {{ order.shipping_address | format_address }}
