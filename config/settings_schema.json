@@ -74,6 +74,11 @@
         "id": "subscribe_newsletter_heading",
         "type": "text",
         "default": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF"
+      },
+      {
+        "id": "newsletter_paragraph",
+        "type": "text",
+        "default": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community."
       }
     ]
   },
