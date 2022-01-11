@@ -44,6 +44,11 @@
         "id": "same_as_delivery_text",
         "type": "text",
         "default": "Zelfde als leveringsadres"
+      },
+      {
+        "id": "my_details_text",
+        "type": "text",
+        "default": "MIJN GEGEVENS"
       }
     ]
   },
