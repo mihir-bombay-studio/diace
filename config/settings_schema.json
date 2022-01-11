@@ -29,6 +29,11 @@
         "id": "change_text",
         "type": "text",
         "default": "Wijzig"
+      },
+      {
+        "id": "delivery_address_text",
+        "type": "text",
+        "default": "LEVERINGSADRES"
       }
     ]
   },
