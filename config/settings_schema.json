@@ -24,6 +24,11 @@
         "id": "cont_detail_text",
         "type": "text",
         "default": "CONTACTGEGEVENS"
+      },
+      {
+        "id": "change_text",
+        "type": "text",
+        "default": "Wijzig"
       }
     ]
   },
