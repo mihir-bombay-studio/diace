@@ -100,7 +100,7 @@
              placeholder="youremail@mail.com"
              required
              >
-      <button class="submit-btn btn btn-yellow bold" type="submit" form="contact_form" value="Submit">VERZENDEN <span class="icon-send">{% render "icon-send" %}</span></button>
+      <button class="submit-btn btn btn-yellow bold" type="submit" form="contact_form" value="Submit">{{ settings.submit_btn_text }} <span class="icon-send">{% render "icon-send" %}</span></button>
     </div>
         {%- if form.errors -%}
     <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
