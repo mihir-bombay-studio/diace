@@ -20,6 +20,7 @@
 .product-title{
   font-size: 32px;
     text-transform: uppercase;
+  line-height: 48px;
   margin: 0;
   margin-bottom: 8px;
 }
