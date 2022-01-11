@@ -232,7 +232,9 @@
       "settings": {
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
         "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
-        "remove_padd": true
+        "remove_padd": true,
+        "link": "",
+        "hover_text": "JOIN US @FACEBOOK"
       }
     },
     "16335248292a6d3173": {
@@ -240,7 +242,8 @@
       "settings": {
         "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
         "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.",
-        "submit_btn_text": "VERZENDEN"
+        "submit_btn_text": "VERZENDEN",
+        "marg_bott": "medium"
       }
     },
     "16317936215fa18fef": {
@@ -261,7 +264,11 @@
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
         "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
-        "featured_collection": "opbergen"
+        "featured_collection": "opbergen",
+        "more_color_text": "Meer kleuren beschikbaar",
+        "more_options_text": "meer opties beschikbaar",
+        "hover_text": "KOPEN",
+        "marg_top": "medium"
       }
     }
   },
