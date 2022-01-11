@@ -1,7 +1,7 @@
 {{ 'social-media.css' | asset_url | stylesheet_tag }}
 
 <div class="container">
-  <div class="social-media  socila-media-lower newsletter-container {{ section.settings.marg_top }}">
+  <div class="social-media  socila-media-lower newsletter-container {{ section.settings.marg_bott }}">
     <div class="bg-yellow-dots dots-right-down">
       {% include 'bg-yellow-dots-sm' %}
     </div>
@@ -65,8 +65,8 @@
       },
 		{
             "type": "select",
-            "id": "marg_top",
-            "label": "Margin Top",
+            "id": "marg_bott",
+            "label": "Margin Bottom",
             "options": [
               {
                 "value": "big",
