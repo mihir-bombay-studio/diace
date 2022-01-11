@@ -18,6 +18,8 @@
 }
 
 .product-title{
+  font-size: 32px;
+    text-transform: uppercase;
   margin: 0;
   margin-bottom: 8px;
 }
