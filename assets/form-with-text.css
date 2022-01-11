@@ -154,6 +154,7 @@ button{
 
 .address .address_text{
   margin-left: 16px;
+  line-height: 24px;
 }
 
 .mail {
