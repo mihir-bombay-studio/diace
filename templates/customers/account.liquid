@@ -172,7 +172,7 @@
     <div class="bg-yellow-dots dots-right-down no-mobile">
       {% include 'bg-yellow-dots-sm' %}
     </div>
-    <h2 class="text-center newsletter-subscription-heading bold">WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF</h2>
+    <h2 class="text-center newsletter-subscription-heading bold">{{ settings.subscribe_newsletter_heading }}</h2>
     <div class="text-center newsletter-subscription-desc light">We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.</div>
 
     {% form 'customer', class: 'newsletter-form' %}
