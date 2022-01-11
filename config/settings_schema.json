@@ -79,6 +79,11 @@
         "id": "newsletter_paragraph",
         "type": "text",
         "default": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community."
+      },
+      {
+        "id": "submit_btn_text",
+        "type": "text",
+        "default": "VERZENDEN"
       }
     ]
   },
