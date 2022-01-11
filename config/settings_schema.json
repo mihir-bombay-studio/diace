@@ -69,6 +69,11 @@
         "id": "write_review_text",
         "type": "text",
         "default": "SCHRIJF EEN REVIEW"
+      },
+      {
+        "id": "subscribe_newsletter_heading",
+        "type": "text",
+        "default": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF"
       }
     ]
   },
