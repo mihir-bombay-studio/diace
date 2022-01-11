@@ -3,7 +3,12 @@
     "1632117875e7ef7fbe": {
       "type": "product-block",
       "settings": {
-        "featured_collection_title": ""
+        "featured_collection_title": "",
+        "choose_size_text": "KIES JOUW MAAT",
+        "size_label": "Maattabel",
+        "change_text": "Wijzig",
+        "add_cart_btn_txt": "TOEVOEGEN AAN WINKELMANDJE",
+        "cont_shopping_btn_txt": "Verder winkelen"
       }
     },
     "1632294615f908e16b": {
@@ -140,7 +145,10 @@
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
         "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
-        "new_featured_collection": "stickers"
+        "new_featured_collection": "stickers",
+        "hover_text": "KOPEN",
+        "more_colors_text": "Meer kleuren beschikbaar",
+        "marg_top": "medium"
       }
     },
     "16323185558f193575": {
@@ -162,7 +170,11 @@
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
         "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
-        "featured_collection": "new-collection"
+        "featured_collection": "new-collection",
+        "more_color_text": "Meer kleuren beschikbaar",
+        "more_options_text": "meer opties beschikbaar",
+        "hover_text": "KOPEN",
+        "marg_top": "medium"
       }
     },
     "163231983925a321da": {
@@ -208,7 +220,9 @@
       "settings": {
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
         "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
-        "remove_padd": true
+        "remove_padd": true,
+        "link": "",
+        "hover_text": "JOIN US @FACEBOOK"
       }
     },
     "1633620719d73fe2db": {
@@ -216,7 +230,8 @@
       "settings": {
         "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
         "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.",
-        "submit_btn_text": "VERZENDEN"
+        "submit_btn_text": "VERZENDEN",
+        "marg_bott": "medium"
       }
     }
   },
