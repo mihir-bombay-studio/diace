@@ -2,7 +2,7 @@
 {% comment %}
 {% assign product_handle = section.settings.featured_collection %} 
 {% endcomment %}
-<div class="featured-collection-wrapper container" >
+<div class="featured-collection-wrapper container {{ section.settings.marg_top }}" >
   <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
   {% for collection in product.collections limit:1%}
   {% assign product_handle = collection.handle %}
@@ -105,7 +105,23 @@
 			"id": "more_colors_text",
 			"label": "More Colours Text",
 			"default": "Meer kleuren beschikbaar"
-		}
+		},
+		{
+            "type": "select",
+            "id": "marg_top",
+            "label": "Margin Top",
+            "options": [
+              {
+                "value": "big",
+                "label": "Big"
+              },
+              {
+                "value": "medium",
+                "label": "Medium"
+              }
+            ],
+            "default": "medium"
+          }
 	],
 	"blocks": [
 	{
