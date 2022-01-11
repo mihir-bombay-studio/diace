@@ -96,12 +96,12 @@
       <div class="welcome-tab">
         <div class="grid-left-img"> {% render "order_text" %}</div>
       </div>
-      <h2 class="customer-header">WELKOM TERUG {{ customer.first_name }}</h2>
+      <h2 class="customer-header">{{ settings.welcome_text }} {{ customer.first_name }}</h2>
     </div>
 
     <div class="customer-details-wrapper">
       <div class="accordion-wrapper">
-        <button class="blank-accordion">VOLG MIJN LAATSTE BESTELLING</button>
+        <button class="blank-accordion">{{ settings.latest_order_text }}</button>
         
       </div>
       <div class="accordion-wrapper">
