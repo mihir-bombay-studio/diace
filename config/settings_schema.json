@@ -64,6 +64,11 @@
         "id": "my_orders_text",
         "type": "text",
         "default": "MIJN BESTELLINGEN"
+      },
+      {
+        "id": "write_review_text",
+        "type": "text",
+        "default": "SCHRIJF EEN REVIEW"
       }
     ]
   },
