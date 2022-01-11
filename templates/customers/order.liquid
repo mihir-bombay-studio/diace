@@ -22,11 +22,11 @@
           {%- endfor -%}
         </div>
       </div>
-      <div class="text-over-grid bold">BESTELLINGEN</div>
+      <div class="text-over-grid bold">{{ settings.orders_text }}</div>
     </div>
     <div class="grid-right single-order-details ">
       <div class="product-list-wrapper">
-        <div class="detail-header">BESTELLING: BE 012 345 678</div>
+        <div class="detail-header">{{ settings.orders_text }}: BE 012 345 678</div>
         <div class="product-list">
           {%- for line_item in order.line_items -%}
           <div class="product-block">
