@@ -1,7 +1,7 @@
 {{ 'social-media.css' | asset_url | stylesheet_tag }}
 
 <div class="container">
-  <div class="social-media  socila-media-lower newsletter-container">
+  <div class="social-media  socila-media-lower newsletter-container {{ section.settings.marg_top }}">
     <div class="bg-yellow-dots dots-right-down">
       {% include 'bg-yellow-dots-sm' %}
     </div>
@@ -62,7 +62,27 @@
         "type": "text",
         "id": "submit_btn_text",
         "label": "Submit Button Text"
-      }
+      },
+		{
+            "type": "select",
+            "id": "marg_top",
+            "label": "Margin Top",
+            "options": [
+              {
+                "value": "big",
+                "label": "Big"
+              },
+              {
+                "value": "medium",
+                "label": "Medium"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              }
+            ],
+            "default": "small"
+          }
 	],
   "presets": [
     {
