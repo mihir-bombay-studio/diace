@@ -34,6 +34,11 @@
         "id": "delivery_address_text",
         "type": "text",
         "default": "LEVERINGSADRES"
+      },
+      {
+        "id": "billing_address_text",
+        "type": "text",
+        "default": "FACTUURADRES"
       }
     ]
   },
