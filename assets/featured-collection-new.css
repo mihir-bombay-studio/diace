@@ -52,8 +52,15 @@ h2.featured-collection-heading {
 }
 
 .featured-collection-wrapper {
-  margin-top: 186px;
   margin-bottom: 172px;
+}
+
+.featured-collection-wrapper.medium{
+	margin-top: 136px;
+}
+
+.featured-collection-wrapper.big{
+  margin-top: 186px;
 }
 
 .featured-collection-wrapper .btn{
