@@ -59,6 +59,11 @@
         "id": "latest_order_text",
         "type": "text",
         "default": "VOLG MIJN LAATSTE BESTELLING"
+      },
+      {
+        "id": "my_orders_text",
+        "type": "text",
+        "default": "MIJN BESTELLINGEN"
       }
     ]
   },
