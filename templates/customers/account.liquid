@@ -173,7 +173,7 @@
       {% include 'bg-yellow-dots-sm' %}
     </div>
     <h2 class="text-center newsletter-subscription-heading bold">{{ settings.subscribe_newsletter_heading }}</h2>
-    <div class="text-center newsletter-subscription-desc light">We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.</div>
+    <div class="text-center newsletter-subscription-desc light">{{ settings.newsletter_paragraph }}</div>
 
     {% form 'customer', class: 'newsletter-form' %}
     <div class="subscription-form flex-box">
