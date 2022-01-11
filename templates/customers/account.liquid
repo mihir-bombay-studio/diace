@@ -10,7 +10,7 @@
     
     <div id="welcome-tab" class="welcome-tab tabcontent" style="display: block">
       <div class="grid-left-img"> {% render "order_text" %}</div>
-      <div class="text-over-grid bold white-bg">WELKOM TERUG {{ customer.first_name }}</div>
+      <div class="text-over-grid bold white-bg">{{ settings.welcome_text }} {{ customer.first_name }}</div>
     </div>
     <div id="details-tab" class="details-tab tabcontent">
       <div class="details-wrapper">
