@@ -94,6 +94,11 @@
         "id": "register_now_text",
         "type": "text",
         "default": "Heb je nog geen account? Registreer je nu"
+      },
+      {
+        "id": "welcome_heading",
+        "type": "text",
+        "default": "WELKOM!"
       }
     ]
   },
