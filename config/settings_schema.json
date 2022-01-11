@@ -54,6 +54,11 @@
         "id": "orders_text",
         "type": "text",
         "default": "BESTELLINGEN"
+      },
+      {
+        "id": "latest_order_text",
+        "type": "text",
+        "default": "VOLG MIJN LAATSTE BESTELLING"
       }
     ]
   },
