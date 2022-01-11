@@ -84,6 +84,11 @@
         "id": "submit_btn_text",
         "type": "text",
         "default": "VERZENDEN"
+      },
+      {
+        "id": "to_show_text",
+        "type": "text",
+        "default": "Tonen"
       }
     ]
   },
