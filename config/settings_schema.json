@@ -19,6 +19,11 @@
         "id": "logout_text",
         "type": "text",
         "default": "LOG UIT"
+      },
+      {
+        "id": "cont_detail_text",
+        "type": "text",
+        "default": "CONTACTGEGEVENS"
       }
     ]
   },
