@@ -195,6 +195,18 @@ h2.newsletter-subscription-heading {
   position: relative;
 }
 
+.newsletter-container.small{
+	margin-bottom: 82px;
+}
+
+.newsletter-container.medium{
+	margin-bottom: 186px;
+}
+
+.newsletter-container.big{
+	
+}
+
 .newsletter{
   padding: 0 25px;
 }
