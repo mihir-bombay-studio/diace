@@ -489,6 +489,11 @@ background-color : #FEC23B;
 } */
 
 @media screen and (max-width: 992px) {
+  
+  .collection-filter-wrapper.container {
+    margin-top: 26px;
+}
+  
   .collection-filter-left , .collection-filter-right, .filter-mask{
     width : 100%;
   }
