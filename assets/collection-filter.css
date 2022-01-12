@@ -517,6 +517,12 @@ background-color : #FEC23B;
     text-align: right;
 }
   
+  .product-hover-text{
+  	bottom: 8px;
+    left: 8px;
+    max-width: unset;
+  }
+  
   .collection-filter-left , .collection-filter-right, .filter-mask{
     width : 100%;
   }
