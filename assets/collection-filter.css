@@ -506,7 +506,7 @@ background-color : #FEC23B;
 }
   
   .collection-filter-wrapper .product-collection-card{
-  	width: 100%;
+  	width: 100% !important;
   }
   
   .collection-filter-left , .collection-filter-right, .filter-mask{
