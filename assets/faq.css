@@ -108,7 +108,7 @@ border-bottom: 1px solid;
     stroke: var(--background-yellow);
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .pill{
     background : #fec23B33;
   }
@@ -124,4 +124,9 @@ border-bottom: 1px solid;
     margin-bottom : 41px;
     font-family: 'Myriad Pro';
   }
+  
+  .faq-section {
+    padding: 0;
+    margin-bottom: 83px;
+}
 }
