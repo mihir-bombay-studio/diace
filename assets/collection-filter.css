@@ -494,6 +494,10 @@ background-color : #FEC23B;
     margin-top: 26px;
 }
   
+  .banner-small img {
+    border-radius: 8px;
+}
+  
   .collection-filter-left , .collection-filter-right, .filter-mask{
     width : 100%;
   }
