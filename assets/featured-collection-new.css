@@ -120,6 +120,8 @@ h2.featured-collection-heading {
   
   .fp-hover-text {
     max-width: unset;
+    bottom: 8px;
+    left: 8px;
 }
 }
 
