@@ -291,5 +291,10 @@ h2.newsletter-subscription-heading {
     max-width: 100%!important;
     font-size: 16px!important;
 }
+  
+  .social-logo {
+    bottom: 0;
+    left: 8px;
+}
 
 }
