@@ -218,6 +218,10 @@ button{
   
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
+  
+  .form-with-text {
+    padding: 0 0 83px 0;
+}
 
 }
