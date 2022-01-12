@@ -306,6 +306,12 @@ fieldset.product-form__input input:checked + label:not(.color-label) {
     font-size: 20px;
     line-height: 30px;
 }
+  
+  .atc-plus svg{
+  	width: 12px;
+    height: 12px;
+    margin-right: 8px;
+  }
 
 }
 
