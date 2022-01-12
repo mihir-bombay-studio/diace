@@ -513,6 +513,10 @@ background-color : #FEC23B;
     flex-direction: row;
 }
   
+  .collection-filter-wrapper .product-colors .other-available-colors {
+    text-align: right;
+}
+  
   .collection-filter-left , .collection-filter-right, .filter-mask{
     width : 100%;
   }
