@@ -10,7 +10,12 @@
       "type": "product-block-grouping",
       "settings": {
         "featured_collection_title": "",
-        "grouping_collection": "grouping-collection"
+        "grouping_collection": "grouping-collection",
+        "choose_size_text": "KIES JOUW MAAT",
+        "size_label": "Maattabel",
+        "change_text": "Wijzig",
+        "add_cart_btn_txt": "TOEVOEGEN AAN WINKELMANDJE",
+        "cont_shopping_btn_txt": "Verder winkelen"
       }
     },
     "1632294615f908e16b": {
@@ -52,6 +57,7 @@
     },
     "1632296628d5bc229d": {
       "type": "image-with-text-new",
+      "disabled": true,
       "blocks": {
         "1632296628d5bc229d-0": {
           "type": "heading",
@@ -88,6 +94,7 @@
     },
     "163229690103dae5ee": {
       "type": "faq",
+      "disabled": true,
       "blocks": {
         "b7704465-49ce-46d3-8c81-f495d0cd4aea": {
           "type": "faq",
@@ -147,7 +154,10 @@
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
         "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
-        "new_featured_collection": "stickers"
+        "new_featured_collection": "stickers",
+        "hover_text": "KOPEN",
+        "more_colors_text": "Meer kleuren beschikbaar",
+        "marg_top": "medium"
       }
     },
     "163231983925a321da": {
@@ -193,7 +203,9 @@
       "settings": {
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
         "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
-        "remove_padd": true
+        "remove_padd": true,
+        "link": "",
+        "hover_text": "JOIN US @FACEBOOK"
       }
     }
   },
