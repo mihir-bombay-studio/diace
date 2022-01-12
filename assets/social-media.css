@@ -277,5 +277,10 @@ h2.newsletter-subscription-heading {
   .sm-left img{
     border-radius : 0; 
   }
+  
+  .social-media-wrapper .sm-hover-text {
+    bottom: 8px;
+    left: 8px;
+}
 
 }
