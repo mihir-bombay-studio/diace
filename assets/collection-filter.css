@@ -494,6 +494,12 @@ background-color : #FEC23B;
     margin-top: 26px;
 }
   
+  .collection-filter-wrapper .banner-title.bold{
+  	font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+  
   .banner-small img {
     border-radius: 8px;
 }
