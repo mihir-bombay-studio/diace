@@ -296,5 +296,9 @@ h2.newsletter-subscription-heading {
     bottom: 0;
     left: 8px;
 }
+  
+  .newsletter-container.medium {
+    margin-bottom: 83px;
+}
 
 }
