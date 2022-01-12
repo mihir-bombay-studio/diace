@@ -112,6 +112,10 @@ h2.featured-collection-heading {
   .featured-collection-wrapper.medium {
     margin-top: 82px;
 }
+  
+  .hover-text {
+    max-width: 100%;
+}
 }
 
 
