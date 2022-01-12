@@ -505,6 +505,10 @@ background-color : #FEC23B;
     border-radius: 8px;
 }
   
+  .collection-filter-wrapper .product-collection-card{
+  	width: 100%;
+  }
+  
   .collection-filter-left , .collection-filter-right, .filter-mask{
     width : 100%;
   }
