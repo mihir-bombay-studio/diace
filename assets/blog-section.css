@@ -207,5 +207,10 @@ img{
   .blog-filter-container{
     padding-bottom: 0px;
   }
+  
+  .filter-pills{
+  	width: 47%;
+    text-align: center;
+  }
 
 }
