@@ -105,7 +105,7 @@
 
 } */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .hero-new-wrapper{
     margin-bottom : 82px;
   }
@@ -135,4 +135,22 @@
   .hero-left img{
     border-radius: 8px 8px 0 0;
   }
+  
+  .hero-other-img img {
+    border-radius: 8px 8px 0 0;
+    display: block;
+}
+  
+  .hero-link-mob.no-d {
+    display: block;
+    background-color: #fff;
+    font-size: 16px;
+    width: 100%;
+    padding: 9.5px 0 8.5px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 3px #33270c1a;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
 }
