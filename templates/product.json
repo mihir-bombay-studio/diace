@@ -86,6 +86,7 @@
     },
     "1633621187288eeba0": {
       "type": "faq",
+      "disabled": true,
       "blocks": {
         "d58d451f-e2fb-40fc-9e38-efbfd783a326": {
           "type": "faq",
