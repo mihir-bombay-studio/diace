@@ -79,11 +79,11 @@ $("#cart_container").on( "click", ".qty-plus", function() {
 function cartItemCount(cart){
   if (cart.item_count > 0){
     $("#cart-quantity").removeClass("no-disp");
-    $("#cart-quantity").text(`${cart.item_count}`);
+    $("#cart-quantity .cart-items-num").text(`${cart.item_count}`);
   }
   else{
     $("#cart-quantity").addClass("no-disp");
-    $("#cart-quantity").text("");
+    $("#cart-quantity .cart-items-num").text("");
   }
 }
 
