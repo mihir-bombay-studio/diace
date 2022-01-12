@@ -50,6 +50,7 @@
     },
     "1632296628d5bc229d": {
       "type": "image-with-text-new",
+      "disabled": true,
       "blocks": {
         "1632296628d5bc229d-0": {
           "type": "heading",
@@ -86,6 +87,7 @@
     },
     "163229690103dae5ee": {
       "type": "faq",
+      "disabled": true,
       "blocks": {
         "b7704465-49ce-46d3-8c81-f495d0cd4aea": {
           "type": "faq",
