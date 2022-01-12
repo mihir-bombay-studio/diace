@@ -292,7 +292,7 @@ fieldset.product-form__input input:checked + label:not(.color-label) {
   font-weight: 600;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .product-block {
     flex-direction: column;
     gap: 32px;
@@ -302,6 +302,10 @@ fieldset.product-form__input input:checked + label:not(.color-label) {
     width: 100%;
   }
   
+  .product-title {
+    font-size: 20px;
+    line-height: 30px;
+}
 
 }
 
