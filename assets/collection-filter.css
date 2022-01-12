@@ -509,6 +509,10 @@ background-color : #FEC23B;
   	width: 100% !important;
   }
   
+  .collection-filter-wrapper .product-colors {
+    flex-direction: row;
+}
+  
   .collection-filter-left , .collection-filter-right, .filter-mask{
     width : 100%;
   }
