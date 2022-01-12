@@ -312,6 +312,11 @@ fieldset.product-form__input input:checked + label:not(.color-label) {
     height: 12px;
     margin-right: 8px;
   }
+  
+  .atc-cart svg{
+  	width: 24px;
+    height: 24px;
+  }
 
 }
 
