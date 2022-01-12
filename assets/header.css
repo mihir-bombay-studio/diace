@@ -19,6 +19,11 @@
     margin-bottom: 52px;
 }
 
+.cart-items-num {
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
 .menu-btn {
   height: 24px;
   display: flex;
