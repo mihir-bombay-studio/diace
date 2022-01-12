@@ -282,5 +282,10 @@ h2.newsletter-subscription-heading {
     bottom: 8px;
     left: 8px;
 }
+  
+  .hover-text {
+    max-width: 100%!important;
+    font-size: 16px!important;
+}
 
 }
