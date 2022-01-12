@@ -118,7 +118,7 @@ h2.featured-collection-heading {
 }
   
   .fp-hover-text {
-    max-width: unset;
+    max-width: unset !important;
 }
 }
 
