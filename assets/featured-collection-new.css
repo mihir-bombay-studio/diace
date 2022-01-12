@@ -108,6 +108,10 @@ h2.featured-collection-heading {
   .featured-collection-wrapper{
     margin-bottom : 82px;
   }
+  
+  .featured-collection-wrapper.medium {
+    margin-top: 82px;
+}
 }
 
 
