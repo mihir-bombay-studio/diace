@@ -317,6 +317,10 @@ fieldset.product-form__input input:checked + label:not(.color-label) {
   	width: 24px;
     height: 24px;
   }
+  
+  .mob-atc-btn{
+  	margin-top: 4px;
+  }
 
 }
 
