@@ -203,6 +203,13 @@ fieldset.product-form__input input:checked+label.color-label .v-name-color {
   color: #737373;
 }
 
+.size-guide-img {
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+    object-fit: contain;
+}
+
 
 .color-change-btn {
     text-decoration: underline;
