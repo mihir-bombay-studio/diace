@@ -133,7 +133,7 @@
               <div class="show modal-btn" aria-haspopup="true">{{ section.settings.size_label }}</div>
               <div class="mask" role="dialog"></div>
               <div class="modal style-scrollbar" role="alert">
-                <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"><img class="size-guide-img {{product.metafields.my_fields.size_image}}" src="{{ product.metafields.my_fields.size_image | img_url }}"></div>
+                <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"><img class="size-guide-img" src="{{ product.metafields.my_fields.size_image | img_url }}"></div>
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div>
               {%- elsif dwncase contains "kleur" or dwncase contains "color" -%}
