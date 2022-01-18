@@ -570,6 +570,9 @@ background-color : #FEC23B;
   .collection-types{
     color: #D9D9D9;
   }
+  .collection-types a{
+  	color: inherit;
+  }
   .collection-types svg .chevron-a{
     stroke : #D9D9D9;
   }
