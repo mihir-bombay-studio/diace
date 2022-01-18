@@ -18,7 +18,8 @@
         "add_image_padding": false,
         "show_vendor": false,
         "enable_filtering": true,
-        "enable_sorting": true
+        "enable_sorting": true,
+        "hover_text": "KOPEN"
       }
     },
     "16330268764c434e3c": {
@@ -96,6 +97,13 @@
             "button_label": "ALLE CATEGORIEËN",
             "button_link": "shopify:\/\/collections"
           }
+        },
+        "6d09e288-9a07-4cbb-90e8-1b92a9489b59": {
+          "type": "price_filter",
+          "settings": {
+            "show_price_filter": true,
+            "show_price_filter_heading": "PRIJS"
+          }
         }
       },
       "block_order": [
@@ -110,7 +118,8 @@
         "1c9f80dc-5aaa-45d2-ab67-81b25e1d6116",
         "4cc4d3d1-d18e-4c1e-8afe-05d034e1ef06",
         "b8121208-c5b3-4ed2-8fcc-57c1ea7d52f1",
-        "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf"
+        "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf",
+        "6d09e288-9a07-4cbb-90e8-1b92a9489b59"
       ],
       "settings": {
         "enable_filtering": true,
@@ -123,7 +132,12 @@
         "size_filter_title": "",
         "type_filter_title": "TYPE",
         "brand_filter_title": "",
-        "header-list": "header-lower-menu"
+        "header-list": "header-lower-menu",
+        "filter_1_text": "Toon 25 items",
+        "filter_2_text": "Toon 50 items",
+        "filter_3_text": "Toon 100 items",
+        "filter_4_text": "Toon all items",
+        "filter_products": "PRODUCTEN FILTEREN"
       }
     }
   },
