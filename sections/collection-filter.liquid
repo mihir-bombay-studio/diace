@@ -92,7 +92,7 @@
               {% if collhandx == coll.handle %}
                 {% if coll.image %}
 
-                <div class="collection-types {% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %} {% endif %}"><a href="{{coll.url}}" class="{% if coll.title == collection.title %}current"{% endif %}>{{ coll.title }} {% render "back-icon" %}</a></div>
+                <div class="collection-types {% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %} {% endif %}"><a href="{{coll.url}}">{{ coll.title }} {% render "back-icon" %}</a></div>
 
                   
                 {% endif %}
