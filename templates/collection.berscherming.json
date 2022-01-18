@@ -18,7 +18,8 @@
         "add_image_padding": false,
         "show_vendor": false,
         "enable_filtering": true,
-        "enable_sorting": true
+        "enable_sorting": true,
+        "hover_text": "KOPEN"
       }
     },
     "1633013221ada81d9a": {
@@ -42,12 +43,20 @@
           "settings": {
             "type": "Freestyle Libre reader"
           }
+        },
+        "91f90e45-f325-4f26-8c43-7a7e05e94eba": {
+          "type": "price_filter",
+          "settings": {
+            "show_price_filter": true,
+            "show_price_filter_heading": "PRIJS"
+          }
         }
       },
       "block_order": [
         "b5898956-67a5-4f73-861e-bb8c77f2334f",
         "130f5c27-fb04-4faf-88fe-aa2fe08bc903",
-        "b77ce676-6356-4da0-aeb2-e28f61842309"
+        "b77ce676-6356-4da0-aeb2-e28f61842309",
+        "91f90e45-f325-4f26-8c43-7a7e05e94eba"
       ],
       "settings": {
         "enable_filtering": true,
@@ -60,7 +69,12 @@
         "size_filter_title": "",
         "type_filter_title": "TYPE",
         "brand_filter_title": "",
-        "header-list": "header-lower-menu"
+        "header-list": "header-lower-menu",
+        "filter_1_text": "Toon 25 items",
+        "filter_2_text": "Toon 50 items",
+        "filter_3_text": "Toon 100 items",
+        "filter_4_text": "Toon all items",
+        "filter_products": "PRODUCTEN FILTEREN"
       }
     }
   },
