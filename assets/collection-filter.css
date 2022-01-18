@@ -555,6 +555,10 @@ background-color : #FEC23B;
     color : #000000 !important;
     text-decoration-color: #FEC23B;
   }
+  
+  .collection-types .current svg .chevron-a{
+  	stroke: #FEC23B;
+  }
   .active-collection-tags{
     margin-left: 40px;
     max-height: 250px;
