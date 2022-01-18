@@ -101,9 +101,43 @@
           {% endfor %}
             </div>
             <div class="active-collection-tags">
+              {% comment %}
               {% for tag in collection.tags %}
               <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
               {% endfor %}
+              {% endcomment %}
+              
+              {% for linkx in linklists[section.settings.header-list].links %}
+            {%- for coll in collections -%}
+              {% assign collhandx = linkx.url | split: "/" | last %}
+              {% if collhandx == coll.handle %}
+                {% if coll.image %}
+
+                
+
+                  {% if coll.title == collection.title %}
+                    {% for link in linklists[section.settings.header-list].links %}
+                    {% assign collhand = link.url | split: "/" | last %}
+                    {% if collhand == collection.handle %}
+                    <div class="collection-tags curr-tag">
+                        {%- for child_link in link.links -%}
+                          {% assign tagx = child_link.url | split: "tag=" | last %}
+                          {% for tag in collection.tags %}
+                          {% assign tagsm = tag | downcase %}
+                          {% assign linksm = tagx | downcase %}
+                          {% if tagsm == linksm %}
+                            <div class="collection-tag semibold tag-{{ tag | handleize}}" data-tfilter="{{ tag }}">{{ tag }}</div>
+                          {% endif %}
+                          {% endfor %}
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
             </div>
           </div>
 
