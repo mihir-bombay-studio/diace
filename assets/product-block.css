@@ -329,6 +329,11 @@ fieldset.product-form__input input:checked + label:not(.color-label) {
   	margin-top: 4px;
   }
   
+  .modal {
+    min-height: unset;
+    padding: 20px;
+}
+  
   .size-guide-img {
     width: auto;
     height: 100%;
