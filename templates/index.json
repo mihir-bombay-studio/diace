@@ -102,7 +102,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Het leven met diabetes kan best ingewikkeld zijn. Met Diacé willen wij het leven met diavetes een stuk aangenamer maken. Diacé biedt een divers aanbod diabetes accessoires aan verzameld op één website.<\/p><p>Onze website is 24 op 24 beschikbaar en omdat wij met een eigen voorraad werken kunnen wij zorgen voor een snelle verzending van jouw materiaal. Je vind op onze website de meest hekende Premium merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<\/p>"
+            "text": "<p>Het leven met diabetes kan best ingewikkeld zijn. Met Diacé willen we het leven met diabetes een stuk aangenamer maken. Diacé biedt een divers aanbod diabetes accessoires aan verzameld op één website.<\/p><p>Onze website is 24 op 24 beschikbaar en omdat we met een eigen voorraad werken kunnen we zorgen voor een snelle verzending van jouw materiaal. Je vindt op onze website de meest bekende Premium merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<\/p>"
           }
         },
         "button": {
@@ -144,7 +144,11 @@
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
         "featured_collection_desc": "Met Diacé zijn we volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
-        "featured_collection": "stickers"
+        "featured_collection": "stickers",
+        "more_color_text": "Meer kleuren beschikbaar",
+        "more_options_text": "meer opties beschikbaar",
+        "hover_text": "KOPEN",
+        "marg_top": "medium"
       }
     },
     "1631611375b605aa08": {
@@ -228,7 +232,8 @@
         "sm_main_img": "shopify:\/\/shop_images\/sm_main.png",
         "text_over_img": "DIACÉ, MEER DAN EEN WEBSHOP",
         "remove_padd": true,
-        "link": "https:\/\/www.facebook.com\/groups\/3998201956961448"
+        "link": "https:\/\/www.facebook.com\/groups\/3998201956961448",
+        "hover_text": "JOIN US @FACEBOOK"
       }
     },
     "1633285415946466ea": {
@@ -236,7 +241,8 @@
       "settings": {
         "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
         "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.",
-        "submit_btn_text": "VERZENDEN"
+        "submit_btn_text": "VERZENDEN",
+        "marg_bott": "small"
       }
     },
     "1631620069de812214": {
