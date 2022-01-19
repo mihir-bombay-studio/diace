@@ -17,8 +17,8 @@
         "2873b8ae-39d0-45bd-9806-6faccae98be0": {
           "type": "button",
           "settings": {
-            "button_label": "SHOP VOLGENS MERK",
-            "button_link": "#brand-block"
+            "button_label": "MAAK  HIER JE KEUZE",
+            "button_link": "shopify:\/\/collections"
           }
         }
       },
@@ -38,6 +38,7 @@
     },
     "1631784094158f4108": {
       "type": "shop-by-category-banner",
+      "disabled": true,
       "settings": {
         "banner_img": "shopify:\/\/shop_images\/hero_other_3.png",
         "banner_title": "SHOP VOLGENS MERK",
@@ -48,7 +49,8 @@
       "type": "product-collection",
       "disabled": true,
       "settings": {
-        "featured_collection": "opbergen"
+        "featured_collection": "opbergen",
+        "hover_text": "KOPEN"
       }
     },
     "16334453279bfbda31": {
