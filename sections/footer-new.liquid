@@ -58,7 +58,7 @@
           {% for block in section.blocks %}
           {% if block.type == "Footer_menu" %}
           {% for link in linklists[block.settings.Menu1].links %}
-          <li class="footer-nav-item">
+          <li class="footer-nav-item hover-underline">
             <a href="{{ link.url }}" class="btn-footer">{{ link.title }}</a>
           </li>
           {% endfor %}
@@ -72,7 +72,7 @@
           {% for block in section.blocks %}
           {% if block.type == "Footer_menu" %}
           {% for link in linklists[block.settings.Menu2].links %}
-          <li class="footer-nav-item">
+          <li class="footer-nav-item hover-underline">
             <a href="{{ link.url }}" class="btn-footer">{{ link.title }}</a>
           </li>
           {% endfor %}
