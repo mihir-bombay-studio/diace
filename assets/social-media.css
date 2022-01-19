@@ -9,7 +9,7 @@
 }
 
 .sm-left, .sm-right {
-  width: 49%;
+  width: calc(50% - 8px);
 }
 
 .social-media-wrapper .sm-hover-text{
@@ -78,9 +78,9 @@
 }
 
 .sm-other-img {
-  width: 48%;
+  width: calc(50% - 8px);
   /*     margin-bottom: 16px; */
-  height: calc(50% - 10px);
+  height: calc(50% - 8px);
 }
 
 .sm-other-img img {
