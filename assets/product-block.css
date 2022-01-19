@@ -328,6 +328,12 @@ fieldset.product-form__input input:checked + label:not(.color-label) {
   .mob-atc-btn{
   	margin-top: 4px;
   }
-
+  
+  .size-guide-img {
+    width: auto;
+    height: 100%;
+    margin-left: 0;
+    object-fit: cover;
+}
 }
 
