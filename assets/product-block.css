@@ -329,7 +329,11 @@ fieldset.product-form__input input:checked + label:not(.color-label) {
   	margin-top: 4px;
   }
   
-  .modal {
+  
+}
+
+@media screen and (max-width: 680px){
+	.modal {
     min-height: unset;
     padding: 20px;
 }
@@ -343,6 +347,5 @@ fieldset.product-form__input input:checked + label:not(.color-label) {
     height: 100%;
     margin-left: 0;
     object-fit: cover;
-}
 }
 
