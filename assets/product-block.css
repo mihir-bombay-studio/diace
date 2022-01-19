@@ -334,6 +334,10 @@ fieldset.product-form__input input:checked + label:not(.color-label) {
     padding: 20px;
 }
   
+  .modal div:first-child{
+  	overflow: auto;
+  }
+  
   .size-guide-img {
     width: auto;
     height: 100%;
