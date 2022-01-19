@@ -3,7 +3,7 @@
 }
 
 .image-with-text-grid-item{
-  width: 48%;
+  width: calc(50% - 8px);
 }
 
 .bg-yellow-dots{
