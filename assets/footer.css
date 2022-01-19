@@ -34,6 +34,10 @@ footer{
     margin: 8px 0;
 }
 
+.hover-underline:hover{
+  text-decoration: underline;
+}
+
 .mailto-email a{
 	text-decoration: underline;
   margin-bottom: 26px;
