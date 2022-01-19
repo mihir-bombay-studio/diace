@@ -50,6 +50,7 @@ footer{
 
 .footer-lower-right{
 	width: 25%;
+  flex-wrap: wrap;
 }
 
 .disp-none{
