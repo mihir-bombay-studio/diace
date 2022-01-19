@@ -19,7 +19,14 @@
         "contact_desc": "Heb je een vraag over één van onze diabetes accessoires en wens je snel een antwoord?\nStel ze via onze Live Chat van 9u00 tot 21u00 van maandag tot vrijdag. Of stuur ons een bericht via het contactformulier.",
         "contact_address": "Diacé B.V. Duwijckstraat 17 2500 Lier, België BTW BE 0738.615.210",
         "contact_email": "info@diace.be",
-        "btn": "VEELGESTELDE VRAGEN"
+        "btn": "VEELGESTELDE VRAGEN",
+        "name_label": "Naam",
+        "email_label": "E-MAIL",
+        "phone_label": "TELEFOONNUMMER",
+        "topic_label": "ONDERWERP",
+        "ordernum_label": "ORDERNUMMER",
+        "message_label": "UW BERICHT",
+        "sbmtbtn_label": "VERZENDEN"
       }
     },
     "1632551429cb993baa": {
@@ -50,7 +57,7 @@
           "type": "subject_1",
           "settings": {
             "question": "Ik wil mijn bestelling annuleren, hoe doe ik dat?",
-            "answer": "Dat kan alleen wanneer je bestelling nog niet verzonden is. Neem zo spoedig mogelijk contact op ons. Email: info@diace.be of via de live chat."
+            "answer": "Dat kan alleen wanneer je bestelling nog niet verzonden is. Neem zo spoedig mogelijk contact op met ons. Email: info@diace.be of via de live chat."
           }
         },
         "5bfda7cb-792b-4ac6-8412-d55a05d03a11": {
