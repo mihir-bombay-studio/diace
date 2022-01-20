@@ -250,7 +250,7 @@
     	<div class="social-icons flex-box">
       {% for block in section.blocks %}
       {% if block.type == "Social_Icons" %}
-          <a href="{{block.settings.social_link}}" class="btn-footer-icons">
+          <a href="{{block.settings.social_link}}" class="btn-footer-icons" target="_blank">
             <div class="social-icon">
 
               {% if block.settings.social_icons != blank %}
