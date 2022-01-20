@@ -53,8 +53,12 @@ footer{
 }
 
 .footer-lower-right{
-	width: 25%;
+  width: 25%;
   flex-wrap: wrap;
+}
+
+.footer-lower-right .payment-method {
+  width: calc(100% / 6);
 }
 
 .disp-none{
