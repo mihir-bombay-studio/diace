@@ -45,7 +45,15 @@
           {{block.settings.sm_text}}
       	</div>
       	<div class="sm-other-img sm-text-block flex-box align-center justify-center text-center semibold no-d">
-          {% render "order_text" %}
+          {%- if block.settings.sm_mobile_svg != blank -%}
+          	{{ block.settings.sm_mobile_svg }}
+          {%- else -%}
+          <img 
+               src="{{ block.settings.sm_mobile_img | img_url: '533x' }}"
+               alt="{{ block.settings.sm_mobile_img.alt | escape }}"
+               loading="lazy"
+               >
+          {%- endif -%}
       	</div>
       {% endif %}
       {% endfor %}
@@ -133,8 +141,21 @@
 		"settings": [
 			{
 				"id": "sm_text",
-			"type": "text",
-			"label": "Social Media Text"
+                "type": "text",
+                "label": "Social Media Text(Desktop)",
+				"info": "This text will be visible on desktop."
+			},
+			{
+				"id": "sm_mobile_svg",
+                "type": "html",
+                "label": "Social Media SVG(Mobile)",
+				"info": "This will be visible on mobile. Use this html box to insert svg images or use the below image picker option to insert a png or jpg type image. SVG image will be given priority if both options ka inserted."
+			},			
+			{
+				"id": "sm_mobile_img",
+                "type": "image_picker",
+                "label": "Social Media image(Mobile)",
+				"info": "This will be visible on mobile. Note: this is optional."
 			}
 		]
 	}
