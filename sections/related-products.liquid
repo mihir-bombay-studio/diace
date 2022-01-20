@@ -24,14 +24,14 @@
     {% if product.id != current_id %}
     <div class="featured-product-card">
       <div class="featured-product-img rel">
-        <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}">
+        <a href="{{product.url}}"><img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
         <div class="fp-hover-text flex-box align-center">
           <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
           <a href="" class="hover-text bold">{{ section.settings.hover_text }}</a>
         </div>
       </div>
       <div class="product-title-price flex-box justify-between">
-        <div class="product-title semibold">{{ product.title | escape  }}</div>
+        <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  }}</a></div>
         <div class="product-compare-to-and-price">
           {% if product.compare_at_price %}<span class="compare-to-price light">{{ product.compare_at_price | money }}</span>{% endif %}
           <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money }}</span>
