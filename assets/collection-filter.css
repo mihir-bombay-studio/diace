@@ -675,7 +675,7 @@ background-color : #FEC23B;
   }
   .overflow{
     overflow-y : auto;
-    height: 80vh;
+    height: calc(80vh - 1rem);
   }
 
   .product-colors{
