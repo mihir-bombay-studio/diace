@@ -131,7 +131,7 @@ h2.featured-collection-heading {
 @media screen and (max-width: 768px) {
   .featured-products.flex-box{
     flex-wrap : wrap;
-    margin-bottom: 0px;
+    margin: 0px;
   }
   .featured-product-card{
     width : 100%;
