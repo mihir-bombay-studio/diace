@@ -41,8 +41,11 @@
       {% endfor %}
       {% for block in section.blocks %}
       {% if block.type == "sm_text" %}
-      	<div class="sm-other-img sm-text-block flex-box align-center justify-center text-center semibold">
+      	<div class="sm-other-img sm-text-block flex-box align-center justify-center text-center semibold no-t-m">
           {{block.settings.sm_text}}
+      	</div>
+      	<div class="sm-other-img sm-text-block flex-box align-center justify-center text-center semibold no-d">
+          {% render "order_text" %}
       	</div>
       {% endif %}
       {% endfor %}
