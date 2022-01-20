@@ -25,7 +25,7 @@
   margin-bottom: 8px;
 }
 
-.compare-to-price {
+.compare-to-price:not(.featured-product-card .compare-to-price) {
   text-decoration: line-through;
   color: var(--background-grey);
     opacity: 100% !important;
