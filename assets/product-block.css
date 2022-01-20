@@ -32,7 +32,7 @@
     margin-right: 24px;
     }
 
-.product-price {
+.product-price:not(.featured-product-card .product-price) {
   color: #000000;
   font-size: 20px;
 }
