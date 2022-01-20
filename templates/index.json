@@ -196,7 +196,7 @@
           "settings": {
             "sm_other_img": "shopify:\/\/shop_images\/sm_img_2.png",
             "sm_logo": "none",
-            "sm_link": "https:\/\/www.tiktok.com\/@diace.eu"
+            "sm_link": ""
           }
         },
         "5c3be662-fc05-4d10-b897-de7efd86b355": {
@@ -241,7 +241,7 @@
       "type": "newsletter-new",
       "settings": {
         "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
-        "subscription_desc": "We sturen 1 keer per maand een mailtje met alle nieuwtjes over onze producten en de community.",
+        "subscription_desc": "Blijf op de hoogte van de nieuwste producten.",
         "submit_btn_text": "VERZENDEN",
         "marg_bott": "small"
       }
