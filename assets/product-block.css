@@ -17,7 +17,7 @@
   width: 49%;
 }
 
-.product-title{
+.product-title:not(.featured-product-card .product-title){
   font-size: 32px;
     text-transform: uppercase;
   line-height: 48px;
