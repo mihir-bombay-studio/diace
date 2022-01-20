@@ -130,7 +130,7 @@
               <div class="detail-block">
                 <div class="detail-header">{{ settings.billing_address_text }}</div>
                 <label>
-                  <input type="checkbox" name=""{% if settings.same_as_delivery_text %} checked{% endif %}/> {{ settings.same_as_delivery_text }}</label>
+                  <input type="checkbox" name=""{% if !settings.same_as_delivery_text %} checked{% endif %}/> {{ settings.same_as_delivery_text }}</label>
               </div>
             </div>
           </div>
