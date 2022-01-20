@@ -44,8 +44,8 @@
       {% endfor %}
       </li>
       <li class="mobile-nav-social-icons">
-        <span>{% render 'facebook' %}</span>
-        <span>{% render 'instagram' %}</span>
+        <a href="{{ settings.social_facebook_link }}" target="_blank"><span>{% render 'facebook' %}</span></a>
+        <a href="{{ settings.social_instagram_link }}" target="_blank"><span>{% render 'instagram' %}</span></a>
       </li>
     </ul>
   </div>
