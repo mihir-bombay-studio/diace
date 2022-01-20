@@ -773,7 +773,7 @@
                   <div id="{{product.handle}}" class="product_coll_variant variant-options-wrapper">
                     <div class="color_wrapper">
                       {% for variant in product.variants limit:6 %}
-                      <span data-success-id="success_{{product.handle}}" class="AddToCart" data-variant-id="{{variant.id}}" data-quantity="1">
+                      <span data-success-id="success_{{product.handle}}" class="AddToCart {% if variant.available == false %}sold-out{% endif %}" data-variant-id="{{variant.id}}" data-quantity="1">
 
                         {% assign variantImg = blank %}
                         {% assign variantColorCode = blank %}
