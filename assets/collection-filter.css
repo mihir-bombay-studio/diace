@@ -442,6 +442,15 @@ a.active-facets__button {
   flex-wrap: wrap;
 }
 
+.color_wrapper .sold-out{
+  pointer-events: none;
+}
+
+.color_wrapper .sold-out .colors-color{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .color_wrapper span{
   cursor : pointer;
   color: #000;
