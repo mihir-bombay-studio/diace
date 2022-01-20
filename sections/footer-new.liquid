@@ -39,7 +39,7 @@
           {% for block in section.blocks %}
           {% if block.type == "Social_Icons" %}
           <div class="social-icon">
-            <a href="{{block.settings.social_link}}" class="btn-footer-icons">
+            <a href="{{block.settings.social_link}}" class="btn-footer-icons" target="_blank">
               {% if block.settings.social_icons != blank %}
               <img
                    srcset="{% if block.settings.social_icons.width >= 24 %}{{ block.settings.social_icons | img_url: '24x' }} {% endif %}"
