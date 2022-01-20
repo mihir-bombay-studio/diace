@@ -17,7 +17,7 @@
         <a href="{{product.url}}"><img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
         <div class="AddToCart fp-hover-text flex-box align-center " data-variant-id="{{product.first_available_variant.id}}" data-quantity = "1">
           <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-          <span href="" class="hover-text bold">{{ section.settings.hover_text }}</span>
+          <span class="hover-text bold">{{ section.settings.hover_text }}</span>
         </div>
       </div>
       <div class="product-title-price flex-box justify-between">
