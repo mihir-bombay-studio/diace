@@ -38,7 +38,6 @@
     },
     "1631784094158f4108": {
       "type": "shop-by-category-banner",
-      "disabled": true,
       "blocks": {
         "01cad9ce-e87e-4d29-840e-d8928448d59c": {
           "type": "button",
@@ -54,7 +53,7 @@
       "settings": {
         "banner_img": "shopify:\/\/shop_images\/hero_other_3.png",
         "banner_title": "SHOP VOLGENS MERK",
-        "banner_desc": "Het leven met diabetes kan best ingewikkeld zijn. Het is altijd opletten en vooruit denken. Diabetes hebben is zeker geen pretje. Met onze webshop willen wij het je zo prettig mogelijk maken. Diacé.be is een online webshop gespecialiseerd in leuke en handige accessoires voor kinderen en volwassenen met diabetes type 1 en type 2."
+        "banner_desc": "Je vindt op onze website de meest gekende PREMIUM merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Alle merken waar jij naar op zoek bent zoals Freestyle libre, Medtronic, Dexcom, Tandem, Omnipod en zoveel meer vind je hier op onze website."
       }
     },
     "1631784153d7326a6e": {
