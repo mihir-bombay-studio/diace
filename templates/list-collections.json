@@ -17,8 +17,8 @@
         "2873b8ae-39d0-45bd-9806-6faccae98be0": {
           "type": "button",
           "settings": {
-            "button_label": "Shop volgens merk",
-            "button_link": "shopify:\/\/collections"
+            "button_label": "SHOP VOLGENS MERK",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
