@@ -28,7 +28,7 @@
       "settings": {
         "banner_img": "shopify:\/\/shop_images\/hero_other_3.png",
         "banner_title": "SHOP VOLGENS CATEGORIE",
-        "banner_desc": "Het leven met diabetes kan best ingewikkeld zijn. Het is altijd opletten en vooruit denken. Diabetes hebben is zeker geen pretje. Met onze webshop willen wij het je zo prettig mogelijk maken. Diacé.be is een online webshop gespecialiseerd in leuke en handige accessoires voor kinderen en volwassenen met diabetes type 1 en type 2."
+        "banner_desc": "Het leven met diabetes kan best ingewikkeld zijn. Het is altijd opletten en vooruit denken. Diabetes hebben is zeker geen pretje. Met onze webshop willen wij het je zo prettig mogelijk maken. Diacé is een online webshop gespecialiseerd in leuke en handige accessoires voor kinderen en volwassenen met diabetes type 1 en type 2.<br data-mce-fragment=\"1\">Maak hier je keuze uit ons uitgebreid assortiment aan diabetes accessoires."
       }
     },
     "1633587959e856023f": {
@@ -39,6 +39,18 @@
     "1631784094158f4108": {
       "type": "shop-by-category-banner",
       "disabled": true,
+      "blocks": {
+        "01cad9ce-e87e-4d29-840e-d8928448d59c": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "01cad9ce-e87e-4d29-840e-d8928448d59c"
+      ],
       "settings": {
         "banner_img": "shopify:\/\/shop_images\/hero_other_3.png",
         "banner_title": "SHOP VOLGENS MERK",
@@ -55,6 +67,7 @@
     },
     "16334453279bfbda31": {
       "type": "all-products",
+      "disabled": true,
       "settings": {
       }
     }
