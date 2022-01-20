@@ -39,6 +39,7 @@ h2.featured-collection-heading {
   color: #737373;
   text-decoration: line-through;
   line-height: 24px;
+  margin-right: 16px;
 }
 
 .featured-product-link{
