@@ -144,7 +144,9 @@ h2.featured-collection-heading {
     font-weight : 300;
   }
   .featured-collection-wrapper .btn{
-    padding: 20px 67px 16px;
+    padding: 20px 20px 16px;
+    width: 100%;
+    text-align: center;
   }
   .product-title-price.flex-box{
     flex-direction: column;
