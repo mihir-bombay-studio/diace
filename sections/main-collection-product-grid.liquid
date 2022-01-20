@@ -418,7 +418,7 @@
         <div class="product-title-price flex-direction flex-box justify-between">
           <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  | capitalize}}</a></div>
           <div class="product-compare-to-and-price">
-            <span class="compare-to-price light">{{ product.compare_at_price | money }}</span>
+            {% if product.compare_at_price %}<span class="compare-to-price light">{{ product.compare_at_price | money }}</span>{% endif %}
             <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money  }}</span>
           </div>
         </div>
