@@ -124,13 +124,13 @@ transform: rotate(180deg);
   width: 100%;
 }
 
-.right-nav-lower li{
+.right-nav-lower li:not(.hover-wrapper li){
   display: inline-block;
   letter-spacing: 0.8px;
   font-size: 16px;
-  /*   line-height: 24px;
-  padding-bottom: 10px; */
-  border-bottom: 2px solid transparent;
+/*     line-height: 24px; */
+  padding-bottom: 10px;
+  border-bottom: 4px solid transparent;
 }
 
 .yellow-down-chevron {
@@ -140,7 +140,7 @@ transform: rotate(180deg);
 }
 
 .hover-dropdown.right-nav-list:hover{
-  border-bottom: 2px solid #FEC23B;
+  border-bottom: 4px solid #FEC23B;
 }
 
 .content-list li:hover .chevron-a{
@@ -413,7 +413,7 @@ transform: rotate(180deg);
 }
 
 .hover-dropdown:hover .hover-wrapper{
-  padding-top: 20px;
+  padding-top: 32px;
 }
 
 .hover-dropdown:hover .dropdown-container {
