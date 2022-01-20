@@ -16,10 +16,10 @@
   border-radius: 8px;
 }
 
-.hero-left .dots-left-down{
+/* .hero-left .dots-left-down{
   bottom: -32px;
   left: -46px;
-}
+} */
 
 .text-over-hero.bold {
   text-transform: uppercase;
