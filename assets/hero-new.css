@@ -6,7 +6,8 @@
 }
 
 .hero-left, .hero-right {
-  width: 49%;
+  width: calc(50% - 8px);
+  align-content: space-between;
 }
 
 .hero-left img{
@@ -38,8 +39,9 @@
 }
 
 .hero-other-img {
-  width: 48%;
-  margin-bottom: 16px;
+  width: calc(50% - 8px);
+  height: calc(50% - 8px);
+/*   margin-bottom: 16px; */
 }
 
 .hero-other-img img{
