@@ -18,7 +18,7 @@
           "type": "button",
           "settings": {
             "button_label": "MAAK  HIER JE KEUZE",
-            "button_link": "shopify:\/\/collections"
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
@@ -67,7 +67,6 @@
     },
     "16334453279bfbda31": {
       "type": "all-products",
-      "disabled": true,
       "settings": {
       }
     }
