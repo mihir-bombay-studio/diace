@@ -27,7 +27,7 @@
         <a href="{{product.url}}"><img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
         <div class="fp-hover-text flex-box align-center">
           <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-          <a href="" class="hover-text bold">{{ section.settings.hover_text }}</a>
+          <a href="{{product.url}}" class="hover-text bold">{{ section.settings.hover_text }}</a>
         </div>
       </div>
       <div class="product-title-price flex-box justify-between">
@@ -55,7 +55,7 @@
         {% endfor %}
         {% endfor %}
         <div class="other-available-colors">
-          <a class="featured-product-link" href="{{variant.url}}">{{ section.settings.more_colors_text }}</a>
+          <a class="featured-product-link" href="{{product.url}}">{{ section.settings.more_colors_text }}</a>
         </div>
         {% endif %}
       </div>
