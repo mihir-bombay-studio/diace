@@ -80,6 +80,12 @@
           "settings": {
             "brand": "Accu-chek"
           }
+        },
+        "0419e02b-a25b-4dd5-a36a-3c17368804b1": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "Tandem Tslim X2"
+          }
         }
       },
       "block_order": [
@@ -91,7 +97,8 @@
         "5a68c4ee-a2f2-4da0-992b-d5d742dab923",
         "6f0cd511-fcf7-4de5-9779-11fccff6d3d6",
         "dbd2c05d-59c4-433a-98bb-62775eba7570",
-        "c670e3a0-1274-48c9-b4c7-17d4b4553d31"
+        "c670e3a0-1274-48c9-b4c7-17d4b4553d31",
+        "0419e02b-a25b-4dd5-a36a-3c17368804b1"
       ],
       "settings": {
         "enable_filtering": true,
