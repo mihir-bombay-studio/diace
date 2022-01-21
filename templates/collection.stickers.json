@@ -57,6 +57,7 @@
         },
         "8487da3d-6e7a-4a54-b274-eabf35e89532": {
           "type": "type_filter",
+          "disabled": true,
           "settings": {
             "type": "Freestyle libre reader"
           }
