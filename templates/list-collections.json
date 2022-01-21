@@ -39,7 +39,6 @@
     },
     "1631784094158f4108": {
       "type": "shop-by-category-banner",
-      "disabled": true,
       "blocks": {
         "01cad9ce-e87e-4d29-840e-d8928448d59c": {
           "type": "button",
@@ -55,12 +54,11 @@
       "settings": {
         "banner_img": "shopify:\/\/shop_images\/hero_other_3.png",
         "banner_title": "SHOP VOLGENS MERK",
-        "banner_desc": "Je vindt op onze website de meest gekende PREMIUM merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Alle merken waar jij naar op zoek bent zoals Freestyle libre, Medtronic, Dexcom, Tandem, Omnipod en zoveel meer vind je hier op onze website."
+        "banner_desc": "Je vindt op onze website de meest gekende PREMIUM merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Alle merken waar jij naar op zoek bent zoals Freestyle libre, Medtronic, Accu-Chek, Dexcom, Tandem, Omnipod en zoveel meer vind je hier op onze website."
       }
     },
     "1631784153d7326a6e": {
       "type": "product-collection",
-      "disabled": true,
       "settings": {
         "featured_collection": "opbergen",
         "hover_text": "KOPEN"
@@ -68,7 +66,6 @@
     },
     "16334453279bfbda31": {
       "type": "all-products",
-      "disabled": true,
       "settings": {
       }
     }
