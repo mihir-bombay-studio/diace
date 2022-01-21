@@ -50,8 +50,7 @@ $('.collection-tag').click(function() {
   var lastClass = $(this).attr('class').split(' ').pop();
   if(lastClass == "underline-selected" ){
     var arr = $(this).attr('class').split(' ');
-    lastClass = arr[arr.length - 2]
-    console.log(lastClass);
+    lastClass = arr[arr.length - 2];
   }
   $(`.${lastClass}`).toggleClass("underline-selected");
   console.log(lastClass);
