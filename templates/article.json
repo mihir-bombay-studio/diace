@@ -54,7 +54,6 @@
         },
         "6ac79c46-7615-492a-bc4b-200d90fba1a8": {
           "type": "social",
-          "disabled": true,
           "settings": {
             "social_icon": "shopify:\/\/shop_images\/twitter-svgrepo-com.png",
             "social_icon_link": ""
