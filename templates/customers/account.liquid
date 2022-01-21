@@ -39,7 +39,7 @@
               </p> -->
             </div>
           </div>
-          <div class="detail-block">
+          <div class="detail-block pointer-events-none">
             <div class="detail-header">{{ settings.billing_address_text }}</div>
             <label>
               <input type="checkbox" name=""{% if customer.billing_address == customer.shipping_address %} checked{% endif %} /> {{ settings.same_as_delivery_text }}</label>
@@ -127,7 +127,7 @@
                   {{ customer.default_address | format_address }}
                 </div>
               </div>
-              <div class="detail-block" style="pointer-events:none;">
+              <div class="detail-block pointer-events-none">
                 <div class="detail-header">{{ settings.billing_address_text }}</div>
                 <label>
                   <input type="checkbox" name=""{% if customer.billing_address == customer.shipping_address %} checked{% endif %}/> {{ settings.same_as_delivery_text }}</label>
