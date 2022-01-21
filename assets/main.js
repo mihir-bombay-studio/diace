@@ -48,6 +48,10 @@ for (i = 0; i < acc.length; i++) {
 $('.collection-tag').click(function() {
   $('.nocurr-tag').removeClass("underline-selected");
   var lastClass = $(this).attr('class').split(' ').pop();
+  if(lastClass == "underline-selected" ){
+    var lastClass = $(this).attr('class').split(' ');
+    console.log(lastClass);
+  }
   $(`.${lastClass}`).toggleClass("underline-selected");
   console.log(lastClass);
 //   $(this).toggleClass("underline-selected");
