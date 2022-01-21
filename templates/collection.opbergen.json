@@ -18,7 +18,8 @@
         "add_image_padding": false,
         "show_vendor": false,
         "enable_filtering": true,
-        "enable_sorting": true
+        "enable_sorting": true,
+        "hover_text": "KOPEN"
       }
     },
     "16330101098144147a": {
@@ -64,12 +65,14 @@
         },
         "6f0cd511-fcf7-4de5-9779-11fccff6d3d6": {
           "type": "brand_filter",
+          "disabled": true,
           "settings": {
             "brand": "diace"
           }
         },
         "dbd2c05d-59c4-433a-98bb-62775eba7570": {
           "type": "brand_filter",
+          "disabled": true,
           "settings": {
             "brand": "diace-store"
           }
@@ -96,7 +99,12 @@
         "size_filter_title": "",
         "type_filter_title": "",
         "brand_filter_title": "MERK",
-        "header-list": "header-lower-menu"
+        "header-list": "header-lower-menu",
+        "filter_1_text": "Toon 25 items",
+        "filter_2_text": "Toon 50 items",
+        "filter_3_text": "Toon 100 items",
+        "filter_4_text": "Toon all items",
+        "filter_products": "PRODUCTEN FILTEREN"
       }
     }
   },
