@@ -1228,8 +1228,8 @@ deferred-media {
   -webkit-appearance: none;
   appearance: none;
 /*   background-color: transparent; */
-  border: 2px solid #FEC23B;
-  border-radius: 8px;
+  border: none;
+  border-radius: 0;
   color: var(--color-foreground);
   font-size: 1.6rem;
   width: 100%;
@@ -1238,6 +1238,12 @@ deferred-media {
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
 }
+  
+  .customer .field input,
+  .customer select{
+    border: 2px solid #FEC23B;
+    border-radius: 8px;
+  }
 
 .select__select {
   font-family: var(--font-body-family);
