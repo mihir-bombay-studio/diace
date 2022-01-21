@@ -1228,8 +1228,8 @@ deferred-media {
   -webkit-appearance: none;
   appearance: none;
 /*   background-color: transparent; */
-  border: 0;
-  border-radius: 0;
+  border: 2px solid #FEC23B;
+  border-radius: 8px;
   color: var(--color-foreground);
   font-size: 1.6rem;
   width: 100%;
