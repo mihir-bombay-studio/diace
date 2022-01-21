@@ -48,8 +48,8 @@ for (i = 0; i < acc.length; i++) {
 $('.collection-tag').click(function() {
   $('.nocurr-tag').removeClass("underline-selected");
   console.log($(this).attr("class"));
-  let classNames = $(this).attr("class");
-  console.log(classNames[-1]);
+  let classNames = $(this).attr("class")[-1];
+  console.log(classNames);
   $(classNames).toggleClass("underline-selected");
   $(this).toggleClass("underline-selected");
   var filter_tags = [];
