@@ -49,8 +49,9 @@ $('.collection-tag').click(function() {
   $('.nocurr-tag').removeClass("underline-selected");
   var lastClass = $(this).attr('class').split(' ').pop();
   if(lastClass == "underline-selected" ){
-    var lastClass = $(this).attr('class').split(' ');
-    console.log(lastClass[-2]);
+    var arr = $(this).attr('class').split(' ');
+    lastClass = arr[arr.length - 2]
+    console.log(lastClass);
   }
   $(`.${lastClass}`).toggleClass("underline-selected");
   console.log(lastClass);
