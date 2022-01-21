@@ -49,6 +49,7 @@ $('.collection-tag').click(function() {
   $('.nocurr-tag').removeClass("underline-selected");
   var lastClass = $(this).attr('class').split(' ').pop();
 //   $(classNames).toggleClass("underline-selected");
+  console.log(lastClass);
   $(this, "." + lastClass).toggleClass("underline-selected");
   var filter_tags = [];
   $('.collection-tag.underline-selected').each(function() {
