@@ -65,14 +65,12 @@
         },
         "6f0cd511-fcf7-4de5-9779-11fccff6d3d6": {
           "type": "brand_filter",
-          "disabled": true,
           "settings": {
             "brand": "diace"
           }
         },
         "dbd2c05d-59c4-433a-98bb-62775eba7570": {
           "type": "brand_filter",
-          "disabled": true,
           "settings": {
             "brand": "diace-store"
           }
