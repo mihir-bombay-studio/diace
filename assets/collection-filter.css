@@ -556,6 +556,10 @@ background-color : #FEC23B;
     border-top: 2px solid #FEC23B;
     border-top: 0;
   }
+  
+  .filter-tags .all-collection-title{
+  	min-width: 129px;
+  }
   .current{
     font-weight: 700;
     text-decoration: underline;
