@@ -71,9 +71,8 @@
         },
         "dbd2c05d-59c4-433a-98bb-62775eba7570": {
           "type": "brand_filter",
-          "disabled": true,
           "settings": {
-            "brand": "diace-store"
+            "brand": "Freestyle Libre"
           }
         }
       },
