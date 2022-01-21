@@ -48,6 +48,7 @@ for (i = 0; i < acc.length; i++) {
 $('.collection-tag').click(function() {
   $('.nocurr-tag').removeClass("underline-selected");
   $(this).toggleClass("underline-selected");
+  console.log($(this));
   var filter_tags = [];
   $('.collection-tag.underline-selected').each(function() {
     filter_tags.push($(this).data('tfilter'));
