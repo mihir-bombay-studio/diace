@@ -92,6 +92,12 @@
           "settings": {
             "brand": "Omnipod PDM"
           }
+        },
+        "3853741a-36d4-433b-a52e-f1e2de3437d2": {
+          "type": "brand_filter",
+          "settings": {
+            "brand": "Bayer Contour"
+          }
         }
       },
       "block_order": [
@@ -105,7 +111,8 @@
         "dbd2c05d-59c4-433a-98bb-62775eba7570",
         "c670e3a0-1274-48c9-b4c7-17d4b4553d31",
         "0419e02b-a25b-4dd5-a36a-3c17368804b1",
-        "bd60e743-10ce-4e60-89d5-a63cd6febdf4"
+        "bd60e743-10ce-4e60-89d5-a63cd6febdf4",
+        "3853741a-36d4-433b-a52e-f1e2de3437d2"
       ],
       "settings": {
         "enable_filtering": true,
