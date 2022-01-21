@@ -16,6 +16,7 @@
       "blocks": {
         "2873b8ae-39d0-45bd-9806-6faccae98be0": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "SHOP VOLGENS MERK",
             "button_link": "shopify:\/\/collections\/all"
@@ -38,6 +39,7 @@
     },
     "1631784094158f4108": {
       "type": "shop-by-category-banner",
+      "disabled": true,
       "blocks": {
         "01cad9ce-e87e-4d29-840e-d8928448d59c": {
           "type": "button",
@@ -58,6 +60,7 @@
     },
     "1631784153d7326a6e": {
       "type": "product-collection",
+      "disabled": true,
       "settings": {
         "featured_collection": "opbergen",
         "hover_text": "KOPEN"
@@ -65,6 +68,7 @@
     },
     "16334453279bfbda31": {
       "type": "all-products",
+      "disabled": true,
       "settings": {
       }
     }
