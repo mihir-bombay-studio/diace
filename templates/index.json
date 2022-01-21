@@ -285,7 +285,7 @@
           "type": "button",
           "settings": {
             "button_label": "LEES ONS VERHAAL",
-            "button_link": "",
+            "button_link": "shopify:\/\/blogs\/news\/het-verhaal-achter-diace",
             "button-color": "yellow"
           }
         }
