@@ -377,6 +377,7 @@ transform: rotate(180deg);
 
 .content-list li svg{
   transform: rotate(270deg);
+  margin-bottom: 2px;
 }
 
 .content-list li:nth-child(1){
