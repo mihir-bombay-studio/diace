@@ -49,7 +49,7 @@ $('.collection-tag').click(function() {
   $('.nocurr-tag').removeClass("underline-selected");
   console.log($(this).attr("class"));
   let classNames = $(this).attr("class");
-  console.log(classNames.replace("","."));
+  console.log(classNames[-1]);
   $(classNames).toggleClass("underline-selected");
   $(this).toggleClass("underline-selected");
   var filter_tags = [];
