@@ -49,7 +49,7 @@ $('.collection-tag').click(function() {
   $('.nocurr-tag').removeClass("underline-selected");
   var lastClass = $(this).attr('class').split(' ').pop();
   if(lastClass == "underline-selected" ){
-    var arr = $(this).attr('class').split(' ');
+    let arr = $(this).attr('class').split(' ');
     lastClass = arr[arr.length - 2];
   }
   $(`.${lastClass}`).toggleClass("underline-selected");
