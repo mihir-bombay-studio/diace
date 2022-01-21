@@ -1245,6 +1245,9 @@ deferred-media {
     border-radius: 8px;
   }
 
+  .customer select{
+    padding: 15px;
+  }
 .select__select {
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
