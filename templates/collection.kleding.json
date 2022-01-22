@@ -116,7 +116,7 @@
         "enable_filtering": true,
         "enable_sorting": true,
         "gender_show": true,
-        "size_show": true,
+        "size_show": false,
         "type_show": false,
         "brand_show": false,
         "gender_filter_title": "GESLACHT",
