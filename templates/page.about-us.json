@@ -55,7 +55,7 @@
         "16317918671ad5134d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Het leven met diabetes kan best ingewikkeld zijn. Met Diacé willen we het leven met diabetes een stuk aangenamer maken. Diacé biedt een divers aanbod diabetes accessoires aan verzameld op één website.<\/p><p> Onze website is 24 op 24 beschikbaar en omdat we met een eigen voorraad werken kunnen we zorgen voor een snelle verzending van jouw materiaal. Je vind op onze website de meest bekende Premium merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<\/p>"
+            "text": "<p>Het leven met diabetes kan best ingewikkeld zijn. Met Diacé willen we het leven met diabetes een stuk aangenamer maken. Diacé biedt een divers aanbod diabetes accessoires aan verzameld op één website.<\/p><p> Onze website is 24\/7 beschikbaar en omdat we met een eigen voorraad werken kunnen we zorgen voor een snelle verzending van jouw materiaal. Je vind op onze website de meest bekende Premium merken, alsook eigen materiaal dat we zelf ontworpen hebben door onze eigen ervaringen met diabetes.<\/p>"
           }
         },
         "16317918671ad5134d-2": {
@@ -219,7 +219,8 @@
         "3d1653c9-82fa-4a45-8929-ebaa0b38b047": {
           "type": "sm_text",
           "settings": {
-            "sm_text": "We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!"
+            "sm_text": "We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!",
+            "sm_mobile_svg": ""
           }
         }
       },
