@@ -5,6 +5,7 @@
       "blocks": {
         "eaafa642-13d6-475b-8908-7645938a2855": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "SHOP VOLGENS MERK",
             "button_link": "shopify:\/\/collections"
@@ -17,7 +18,7 @@
       "settings": {
         "banner_img": "shopify:\/\/shop_images\/sm_main.png",
         "banner_title": "SHOP VOLGENS CATEGORIE",
-        "banner_desc": "Het leven met diabetes kan best ingewikkeld zijn. Het is altijd opletten en vooruit denken. Diabetes hebben is zeker geen pretje. Met onze webshop willen wij het je zo prettig mogelijk maken. Diacé.be is een online webshop gespecialiseerd in leuke en handige accessoires voor kinderen en volwassenen met diabetes type 1 en type 2."
+        "banner_desc": "Bij ons kan je terecht voor diabetes tassen, insuline pompdraagbanden, insuline pomptassen, accessoires voor je Medtronic pomp, accessoires voor je Tandem pomp, insuline koeltassen, fixtapes voor versteviging van je sensor, sensorhouders, freestyle libre accessoires en leuke Libre stickers, Dexcom stickers, Guardian stickers en nog veel meer."
       }
     },
     "product-grid": {
@@ -29,7 +30,8 @@
         "add_image_padding": false,
         "show_vendor": false,
         "enable_filtering": true,
-        "enable_sorting": true
+        "enable_sorting": true,
+        "hover_text": "KOPEN"
       }
     },
     "banner": {
