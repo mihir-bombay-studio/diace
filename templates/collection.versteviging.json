@@ -18,7 +18,8 @@
         "add_image_padding": false,
         "show_vendor": false,
         "enable_filtering": true,
-        "enable_sorting": true
+        "enable_sorting": true,
+        "hover_text": "KOPEN"
       }
     },
     "16330120123ec83063": {
@@ -67,6 +68,12 @@
           "settings": {
             "type": "Freestyle Libre"
           }
+        },
+        "c8658382-dfc1-4190-be1d-350add76c327": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Infusieset"
+          }
         }
       },
       "block_order": [
@@ -76,7 +83,8 @@
         "694460e7-0c68-48b9-becc-5f145abb07bf",
         "79870a55-0eca-4d9f-b40a-6f0d0aaf9797",
         "d4fc4c44-baee-4b73-804b-dfea8206f8fc",
-        "a1e6a804-948c-49c5-9ad5-48da1e6b509b"
+        "a1e6a804-948c-49c5-9ad5-48da1e6b509b",
+        "c8658382-dfc1-4190-be1d-350add76c327"
       ],
       "settings": {
         "enable_filtering": true,
@@ -89,7 +97,12 @@
         "size_filter_title": "",
         "type_filter_title": "TYPE",
         "brand_filter_title": "",
-        "header-list": "header-lower-menu"
+        "header-list": "header-lower-menu",
+        "filter_1_text": "Toon 25 items",
+        "filter_2_text": "Toon 50 items",
+        "filter_3_text": "Toon 100 items",
+        "filter_4_text": "Toon all items",
+        "filter_products": "PRODUCTEN FILTEREN"
       }
     }
   },
