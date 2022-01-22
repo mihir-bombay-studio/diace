@@ -66,13 +66,13 @@
         "6f0cd511-fcf7-4de5-9779-11fccff6d3d6": {
           "type": "brand_filter",
           "settings": {
-            "brand": "Medtronic Pomp"
+            "brand": "Medtronic"
           }
         },
         "dbd2c05d-59c4-433a-98bb-62775eba7570": {
           "type": "brand_filter",
           "settings": {
-            "brand": "Freestyle Libre Reader"
+            "brand": "Freestyle Libre"
           }
         },
         "c670e3a0-1274-48c9-b4c7-17d4b4553d31": {
