@@ -172,7 +172,7 @@
           "type": "button",
           "settings": {
             "button_label": "JOIN OUR TEAM",
-            "button_link": "shopify:\/\/pages\/over-ons",
+            "button_link": "shopify:\/\/pages\/join-our-team",
             "button-color": "grey"
           }
         }
