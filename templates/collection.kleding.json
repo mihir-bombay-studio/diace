@@ -18,7 +18,8 @@
         "add_image_padding": false,
         "show_vendor": false,
         "enable_filtering": true,
-        "enable_sorting": true
+        "enable_sorting": true,
+        "hover_text": "KOPEN"
       }
     },
     "16330241653fe30fdc": {
@@ -64,30 +65,35 @@
         },
         "59425ec7-deb0-45dc-9a24-d71f0a9fd3b3": {
           "type": "size_filter",
+          "disabled": true,
           "settings": {
             "size": "XS"
           }
         },
         "222ccfb8-9872-455a-b454-f1a744463fb3": {
           "type": "size_filter",
+          "disabled": true,
           "settings": {
             "size": "S"
           }
         },
         "381203d6-4c39-4572-a77e-62b6bfa12cc4": {
           "type": "size_filter",
+          "disabled": true,
           "settings": {
             "size": "M"
           }
         },
         "a093f287-4c7b-4605-93ed-b5947c808994": {
           "type": "size_filter",
+          "disabled": true,
           "settings": {
             "size": "L"
           }
         },
         "7c14de47-2872-4cec-af5e-c3523ecdaf93": {
           "type": "size_filter",
+          "disabled": true,
           "settings": {
             "size": "XL"
           }
@@ -117,7 +123,12 @@
         "size_filter_title": "MATEN",
         "type_filter_title": "",
         "brand_filter_title": "",
-        "header-list": "header-lower-menu"
+        "header-list": "header-lower-menu",
+        "filter_1_text": "Toon 25 items",
+        "filter_2_text": "Toon 50 items",
+        "filter_3_text": "Toon 100 items",
+        "filter_4_text": "Toon all items",
+        "filter_products": "PRODUCTEN FILTEREN"
       }
     }
   },
