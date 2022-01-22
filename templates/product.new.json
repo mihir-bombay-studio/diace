@@ -146,7 +146,7 @@
       ],
       "settings": {
         "featured_collection_title": "NIEUWE PRODUCTEN",
-        "featured_collection_desc": "Met Diacé zijn er volop bezig met onze eigen producten te ontwikkelen, ontdek onze laatste innovaties:",
+        "featured_collection_desc": "Met Diacé zijn er volop bezig met de ontwikkeling van eigen producten, ontdek onze laatste innovaties:",
         "new_featured_collection": "stickers",
         "hover_text": "KOPEN",
         "more_colors_text": "Meer kleuren beschikbaar",
@@ -209,7 +209,8 @@
         "38d531e9-032e-4bd1-9853-a41a95982f0a": {
           "type": "sm_text",
           "settings": {
-            "sm_text": "We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!"
+            "sm_text": "We zijn aanwezig op verschillende kanalen, volg ons en kom als eerste alles te weten!",
+            "sm_mobile_svg": ""
           }
         }
       },
