@@ -101,6 +101,7 @@
         },
         "6d09e288-9a07-4cbb-90e8-1b92a9489b59": {
           "type": "price_filter",
+          "disabled": true,
           "settings": {
             "show_price_filter": true,
             "show_price_filter_heading": "PRIJS"
