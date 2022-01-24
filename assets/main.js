@@ -187,7 +187,7 @@ $( document ).ready(function() {
   if(tag){
     tag = tag.replace(/\s+/g, '-').toLowerCase(); 
     $(`.tag-${tag}`).each(function(index){
-    	$(this).click();
+    	$(`.tag-${tag}`)[index].click();
     });
   }
 });
