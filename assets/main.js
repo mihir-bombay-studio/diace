@@ -186,8 +186,9 @@ $( document ).ready(function() {
   let tag = urlParams.get('tag');
   if(tag){
     tag = tag.replace(/\s+/g, '-').toLowerCase(); 
-    $(`.tag-${tag}`).trigger( "click" );
-    console.log(tag);
+    $(`.tag-${tag}`).each(function(index){
+    	$(this).click();
+    });
   }
 });
 
