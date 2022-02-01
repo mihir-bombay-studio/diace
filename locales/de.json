@@ -355,7 +355,7 @@
       "gift_card_code": "Gutscheincode",
       "shop_link": "Zurück zum Laden",
       "remaining_html": "Restbetrag: {{ balance }}",
-      "add_to_apple_wallet": "Zur Apple Wallet hinzufügen",
+      "add_to_apple_wallet": "Zu Apple Wallet hinzufügen",
       "qr_image_alt": "QR-Code – zum Einlösen der Geschenkkarte scannen",
       "copy_code": "Code kopieren",
       "expired": "Abgelaufen",
