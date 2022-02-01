@@ -172,7 +172,7 @@
       "announcement": "Bekanntmachung",
       "menu": "Speisekarte",
       "cart_count": {
-        "one": "{{ count }} Artikel",
+        "one": "{{ count }} artikel",
         "other": "{{ count }} Artikel"
       }
     },
@@ -185,10 +185,10 @@
       "note": "Anweisungen für Sonderbestellungen",
       "checkout": "Sich niederlassen",
       "empty": "Dein Einkaufswagen ist leer",
-      "cart_error": "Beim Aktualisieren Ihres Einkaufswagens ist ein Fehler aufgetreten. Versuchen Sie es nochmal.",
-      "cart_quantity_error_html": "Sie können nur [Anzahl] dieses Artikels in Ihren Warenkorb legen.",
-      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Portokosten<\/a> werden an der Kasse berechnet",
-      "taxes_included_but_shipping_at_checkout": "Inklusive Steuern und Versandkosten an der Kasse berechnet",
+      "cart_error": "Beim Aktualisieren Ihres Warenkorbs ist ein Fehler aufgetreten. Versuch es noch einmal.",
+      "cart_quantity_error_html": "Sie können Ihrem Warenkorb nur [Anzahl] dieses Artikels hinzufügen.",
+      "taxes_and_shipping_policy_at_checkout_html": "Steuern u <a href=\"{{ link }}\">Versandkosten<\/a> werden an der Kasse berechnet",
+      "taxes_included_but_shipping_at_checkout": "Steuern inbegriffen und Versandkosten werden an der Kasse berechnet",
       "taxes_included_and_shipping_policy_html": "Steuern inklusive. <a href=\"{{ link }}\">Portokosten<\/a> werden an der Kasse berechnet.",
       "taxes_and_shipping_at_checkout": "Steuern und Versandkosten werden an der Kasse berechnet",
       "headings": {
