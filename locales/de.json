@@ -84,7 +84,7 @@
         "other": "{{ count }} Kommentare"
       },
       "moderated": "Hinweis: Kommentare müssen vor der Veröffentlichung genehmigt werden.",
-      "comment_form_title": "Einen Kommentar posten",
+      "comment_form_title": "Kommentar posten",
       "name": "Name",
       "email": "Email",
       "message": "Antwort",
@@ -106,10 +106,10 @@
       "on_sale": "Angebot",
       "product_variants": "Produktvarianten",
       "quantity": {
-        "label": "Nummer",
+        "label": "Höhe",
         "input_label": "Menge für {{ product }}",
-        "increase": "Anzahl für {{ product }} erhöhen",
-        "decrease": "Anzahl für {{ product }} verringern"
+        "increase": "Zahl erhöhen für {{ product }}",
+        "decrease": "Menge verringern für {{ product }}"
       },
       "price": {
         "from_price_html": "Ab {{ price }}",
@@ -125,7 +125,7 @@
       "xr_button": "Sehen Sie in Ihrem Raum",
       "xr_button_label": "In Ihrem Raum anzeigen, Artikel im Augmented-Reality-Fenster laden",
       "pickup_availability": {
-        "view_store_info": "Shopdetails ansehen",
+        "view_store_info": "Ladendetails anzeigen",
         "check_other_stores": "Verfügbarkeit in anderen Geschäften prüfen",
         "pick_up_available": "Abholung ist möglich",
         "pick_up_available_at_html": "Abholung ist erhältlich unter <strong>{{ location_name }}<\/strong>",
