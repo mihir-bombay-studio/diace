@@ -501,9 +501,9 @@
         "removed_from_cart_notice": "Aus dem Warenkorb entfernt",
         "sold_out_label": "Ausverkauft",
         "reduced_label": "Reduziert",
-        "reduced_with_quantity_label": "Nur %{quantity_available} auf Lager",
+        "reduced_with_quantity_label": "Nur noch %{quantity_available} auf Lager",
         "remove_from_cart_button_label": "Aus dem Warenkorb entfernen",
-        "continue_shopping_button_label": "Weitermachen",
+        "continue_shopping_button_label": "Zusteigen, einsteigen, vorwärtskommen",
         "go_back_to_cart_button_label": "Zurück zu meinem Warenkorb"
       },
       "order_summary": {
