@@ -324,10 +324,10 @@
       "submit": "Passwort zurücksetzen"
     },
     "order": {
-      "title": "Bestellung {{ name }}",
-      "date_html": "Gepostet am {{ date }}",
+      "title": "Befehl {{ name }}",
+      "date_html": "Gesendet {{ date }}",
       "cancelled_html": "Bestellung storniert am {{ date }}",
-      "cancelled_reason": "Grund: {{ reason }}",
+      "cancelled_reason": "Ritt: {{ reason }}",
       "billing_address": "Rechnungsadresse",
       "payment_status": "Zahlungsstatus",
       "shipping_address": "Lieferadresse",
