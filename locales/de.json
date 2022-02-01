@@ -1207,7 +1207,7 @@
         "components": {
           "close": "Nah dran",
           "expand": "Mehr sehen",
-          "processing": "Verfahren...",
+          "processing": "Wird bearbeitet...",
           "submit": "einreichen"
         }
       },
