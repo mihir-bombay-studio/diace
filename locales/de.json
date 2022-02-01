@@ -1444,7 +1444,7 @@
       "checkpoint": "Kontrollpunkt",
       "search_results": {
         "one": "Suche: %{count} Ergebnis gefunden für '%{terms}'",
-        "other": "Suche: %{count} Ergebnisse für '%{terms}' gefunden"
+        "other": "Suche: %{count} Ergebnisse gefunden für '%{terms}'"
       },
       "blog_or_article_with_error": "Fehler - %{title}"
     },
