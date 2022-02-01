@@ -1482,8 +1482,8 @@
         "opt_out": {
           "opted_out_html": "<b>Sie haben sich vom E-Mail-Offen-Tracking abgemeldet.<\/b>",
           "visibility": "Wir sehen nicht, ob Sie unsere E-Mails geöffnet haben.",
-          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>Autorisieren<\/a> zum offenen Tracking von E-Mails.",
-          "preview_bar": "Sie sehen in der Vorschau, was Kunden sehen, wenn sie sich vom Erhalt offener Tracking-E-Mails abmelden."
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>Autorisieren<\/a> zur offenen Nachverfolgung von E-Mails.",
+          "preview_bar": "Sie zeigen eine Vorschau dessen an, was Kunden sehen, wenn sie sich vom Erhalt offener Tracking-E-Mails abmelden."
         },
         "no_longer_track": {
           "status_html": "<b>Wir verfolgen nicht mehr, ob E-Mails geöffnet werden.<\/b>",
