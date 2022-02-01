@@ -1190,8 +1190,8 @@
       "open_graph_meta_tag": {
         "title_with_products": {
           "zero": "%{product_name} kaufen",
-          "one": "%{product_name} und %{count} einen anderen Artikel kaufen",
-          "other": "%{product_name} und %{count} um andere Artikel zu kaufen"
+          "one": "%{product_name} und %{count} kaufen einen anderen Artikel",
+          "other": "%{product_name} und %{count}, um andere Artikel zu kaufen"
         }
       },
       "localized_fields": {
