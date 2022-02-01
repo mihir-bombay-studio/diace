@@ -869,14 +869,14 @@
         "payment_processing_no_retry": "Ihre Zahlung kann aus technischen Gründen nicht verarbeitet werden. Versuchen Sie es mit einer anderen Zahlungsmethode."
       },
       "shipping_errors": {
-        "shipping_method": "Ihr Warenkorb wurde aktualisiert und die bisherigen Versandkosten sind ungültig. Wählen Sie einen neuen Tarif.",
-        "shipping_method_not_available": "Ihr Warenkorb wurde aktualisiert und die von Ihnen hinzugefügten Artikel können nicht an Ihre Adresse versandt werden. Bitte entfernen Sie die Artikel, um Ihre Bestellung abzuschließen.",
+        "shipping_method": "Ihr Warenkorb wurde aktualisiert und die vorherigen Versandkosten sind ungültig. Wählen Sie einen neuen Tarif.",
+        "shipping_method_not_available": "Ihr Warenkorb wurde aktualisiert und die von Ihnen hinzugefügten Artikel können nicht an Ihre Adresse versendet werden. Bitte entfernen Sie die Artikel, um Ihre Bestellung abzuschließen.",
         "shipping_method_not_available_generic": {
           "one": "Diese Bestellung kann nicht an die angegebene Adresse versendet werden. Bitte überprüfen Sie die Adresse und stellen Sie sicher, dass alle Felder korrekt ausgefüllt sind. Dann versuchen Sie es erneut.",
-          "other": "Einige Artikel in Ihrem Warenkorb können nicht an die angegebene Adresse versendet werden. Bitte überprüfen Sie die Adresse und stellen Sie sicher, dass alle Felder korrekt ausgefüllt sind. Dann versuchen Sie es erneut."
+          "other": "Einige Artikel in Ihrem Warenkorb können nicht an die eingegebene Adresse versendet werden. Bitte überprüfen Sie die Adresse und stellen Sie sicher, dass alle Felder korrekt ausgefüllt sind. Dann versuchen Sie es erneut."
         },
         "shipping_method_not_available_updated": {
-          "one": "Der hinzugefügte Artikel wird nicht an Ihren Standort versendet. Bitte entfernen Sie diesen Artikel, um zu bezahlen, oder wenden Sie sich an den Shop.",
+          "one": "Der Artikel, den Sie hinzugefügt haben, wird nicht an Ihren Standort geliefert. Bitte entfernen Sie diesen Artikel, um zu bezahlen, oder wenden Sie sich an das Geschäft.",
           "other": "Mindestens ein Artikel, den Sie hinzugefügt haben, kann nicht an Ihren Standort geliefert werden. Entfernen Sie die zu bezahlenden Artikel oder wenden Sie sich an das Geschäft."
         }
       },
