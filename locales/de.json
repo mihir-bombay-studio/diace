@@ -907,7 +907,7 @@
         "page_title": "Die Bestellung wird bearbeitet",
         "title": "Die Bestellung wird bearbeitet",
         "your_order_has_been_received_title": "Danke für Ihre Bestellung",
-        "you_will_receive_confirmation": "Wir erhalten derzeit viele Bestellungen. Sie sollten in Kürze eine Bestätigung per E-Mail oder SMS erhalten. Lassen Sie es uns wissen, wenn Sie es nicht innerhalb einer Stunde erhalten haben.",
+        "you_will_receive_confirmation": "Wir erhalten derzeit sehr viele Bestellungen. Sie sollten in Kürze eine Bestätigung per E-Mail oder SMS erhalten. Teilen Sie uns mit, wenn Sie es nicht innerhalb einer Stunde erhalten haben.",
         "wait": {
           "short": "Ihre Bestellung wird bearbeitet.",
           "medium": {
@@ -921,8 +921,8 @@
         "you_will_not_be_charged": "Es werden noch keine Gebühren erhoben"
       },
       "failed_payment": {
-        "page_title": "Zahlung konnte nicht verarbeitet werden",
-        "title": "Zahlung konnte nicht verarbeitet werden",
+        "page_title": "Die Zahlung konnte nicht verarbeitet werden",
+        "title": "Die Zahlung konnte nicht verarbeitet werden",
         "payment_not_processed_title": "Ihre Zahlung kann nicht verarbeitet werden.",
         "payment_not_processed_text": "Es wurden keine Gebühren erhoben. Kehren Sie zu Ihrem Warenkorb zurück, um Ihren Einkauf abzuschließen.",
         "return_to_cart_button_label": "Zurück zum Warenkorb"
