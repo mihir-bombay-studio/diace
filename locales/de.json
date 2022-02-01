@@ -1161,7 +1161,7 @@
           "removed": "Gelöscht",
           "subtracted": "%{count} gelöscht"
         },
-        "additional_payment_requested": "Zahlung von %{total_outstanding} ist erforderlich",
+        "additional_payment_requested": "Die Zahlung von %{total_outstanding} ist erforderlich",
         "checkout_review_and_pay": "Ihre Bestellung %{order_name} wurde aktualisiert. Überprüfen Sie diese Änderungen und bezahlen Sie dann, um Ihre Bestellung zu bestätigen.",
         "order_updated_on": "Ihre Bestellung wurde am %{last_edited_at} aktualisiert.",
         "order_review_and_pay": "Ihre Bestellung wurde aktualisiert. Überprüfen und bezahlen Sie, um Ihre Bestellung zu bestätigen.",
@@ -1172,13 +1172,13 @@
         "credit_card_will_be_charged_html": "Ihre Kreditkarte wird %{amount} belastet",
         "payment_total_label": "Gesamtzahlungen",
         "conversion_rate": "1 %{from_currency_code} = %{rate} %{to_currency_code}",
-        "change_currency_link": "Zu %{currency_name} ändern",
-        "card_provider_fx_charges_warning": "Ihr Kartenaussteller kann für %{currency_code} Transaktionen Gebühren erheben.",
-        "currency_not_supported_by_shop": "Die von Ihnen ausgewählte Währung ist nicht mehr verfügbar. Alle Preise sind jetzt in %{currency_code}."
+        "change_currency_link": "Wechseln Sie zu %{currency_name}",
+        "card_provider_fx_charges_warning": "Ihr Kartenaussteller kann %{currency_code} Transaktionen in Rechnung stellen.",
+        "currency_not_supported_by_shop": "Die ausgewählte Währung ist nicht mehr verfügbar. Alle Preise sind jetzt in %{currency_code}."
       },
       "tips": {
         "title": "Tipp hinzufügen",
-        "description": "Zeigen Sie Ihre Unterstützung für das %{shop_name}-Team",
+        "description": "Zeigen Sie Ihre Unterstützung für das Team %{shop_name}",
         "presets_description": "Wählen Sie einen Trinkgeldprozentsatz",
         "custom_label": "Benutzerdefinierter Tipp",
         "add_tip": "Tipp hinzufügen",
