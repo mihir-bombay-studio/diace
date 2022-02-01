@@ -404,7 +404,7 @@
         "autocomplete_close": "Vorschläge schließen",
         "forwarding_indicator": {
           "new_window": "Öffnet in einem neuen Fenster.",
-          "external": "Öffnet eine externe Website.",
+          "external": "Öffnet externe Website.",
           "external_and_new_window": "Öffnet externe Website in einem neuen Fenster."
         },
         "checkout_context": {
