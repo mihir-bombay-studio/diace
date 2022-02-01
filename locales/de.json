@@ -142,8 +142,8 @@
     "search": {
       "no_results": "Keine Ergebnisse gefunden für „{{ terms }}“. Überprüfen Sie die Rechtschreibung oder verwenden Sie ein anderes Wort oder einen anderen Satz.",
       "results_with_count": {
-        "one": "{{ count }} Ergebnis gefunden für „{{ terms }}“",
-        "other": "{{ count }} Ergebnisse gefunden für „{{ terms }}“"
+        "one": "{{ count }} Ergebnis gefunden für „{{ terms }}”",
+        "other": "{{ count }} Ergebnisse gefunden für „{{ terms }}”"
       },
       "title": "Suchergebnisse",
       "page": "Buchseite"
