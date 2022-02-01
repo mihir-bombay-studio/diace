@@ -1112,9 +1112,13 @@
         "sms": {
           "disclaimer": {
             "privacy_policy": "Datenschutz-Bestimmungen",
-            "terms_of_service": "Nutzungsbedingungen"
+            "terms_of_service": "Nutzungsbedingungen",
+            "description_html": "Indem Sie sich per SMS anmelden, erklären Sie sich damit einverstanden, unter der angegebenen Telefonnummer automatisierte Marketingnachrichten zu erhalten, einschließlich Warenkorberinnerungen. Die Zustimmung ist keine Kaufbedingung. Antworten Sie mit STOP, um sich abzumelden. Antworten Sie HELP, um Hilfe zu erhalten. Die Häufigkeit der Nachrichten variiert. Es können Nachrichten- und Datengebühren anfallen. Schauen Sie sich unsere %{privacy_policy_link} und unsere %{terms_of_service_link} an.",
+            "description_html_transactional": "Wir senden Ihnen eine Auftragsbestätigung und wiederkehrende Versandaktualisierungen per SMS. Antworten Sie mit STOP, um sich abzumelden. Antworten Sie mit HELP, um Hilfe zu erhalten. Die Häufigkeit der Nachrichten variiert. Es können Nachrichten- und Datengebühren anfallen. Sehen Sie sich unsere Datenschutzrichtlinie und Nutzungsbedingungen an."
           }
-        }
+        },
+        "post_accept_marketing_checkbox_label": "Sie sind angemeldet, um E-Mails mit Neuigkeiten und Angeboten zu erhalten",
+        "pending_accept_marketing_checkbox_label": "Überprüfen Sie Ihre E-Mails, um Ihr Abonnement für Neuigkeiten und Angebote zu bestätigen"
       },
       "shop_policies": {
         "refund_policy": "Rückgaberecht",
