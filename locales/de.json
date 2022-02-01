@@ -106,30 +106,30 @@
       "on_sale": "Angebot",
       "product_variants": "Produktvarianten",
       "quantity": {
-        "label": "Höhe",
+        "label": "Nummer",
         "input_label": "Menge für {{ product }}",
-        "increase": "Zahl erhöhen für {{ product }}",
-        "decrease": "Menge verringern für {{ product }}"
+        "increase": "Anzahl für {{ product }} erhöhen",
+        "decrease": "Anzahl für {{ product }} verringern"
       },
       "price": {
-        "from_price_html": "Ab {{ price }}",
+        "from_price_html": "Von {{ price }}",
         "regular_price": "Normaler Preis",
         "sale_price": "Angebotspreis",
         "unit_price": "Stückpreis"
       },
-      "share": "Teile dieses Produkt",
-      "sold_out": "Nicht vorrättig",
+      "share": "Teilen Sie dieses Produkt",
+      "sold_out": "Ausverkauft",
       "unavailable": "Nicht verfügbar",
       "vendor": "Verkäufer",
-      "video_exit_message": "{{ title }} öffnet ein Vollbild-Video im selben Fenster.",
+      "video_exit_message": "{{ title }} öffnet ein Vollbildvideo im selben Fenster.",
       "xr_button": "Sehen Sie in Ihrem Raum",
       "xr_button_label": "In Ihrem Raum anzeigen, Artikel im Augmented-Reality-Fenster laden",
       "pickup_availability": {
-        "view_store_info": "Ladendetails anzeigen",
-        "check_other_stores": "Verfügbarkeit in anderen Geschäften prüfen",
+        "view_store_info": "Shopdetails ansehen",
+        "check_other_stores": "Überprüfen Sie die Verfügbarkeit in anderen Geschäften",
         "pick_up_available": "Abholung ist möglich",
-        "pick_up_available_at_html": "Abholung ist erhältlich unter <strong>{{ location_name }}<\/strong>",
-        "pick_up_unavailable_at_html": "Abholung ist derzeit nicht möglich unter <strong>{{ location_name }}<\/strong>",
+        "pick_up_available_at_html": "Die Abholung ist unter möglich <strong>{{ location_name }}<\/strong>",
+        "pick_up_unavailable_at_html": "Eine Abholung ist derzeit nicht möglich unter <strong>{{ location_name }}<\/strong>",
         "unavailable": "Abholverfügbarkeit kann nicht geladen werden",
         "refresh": "Aktualisierung"
       }
