@@ -1250,11 +1250,11 @@
         }
       },
       "customer_payment_methods": {
-        "page_title": "Zahlungsmethoden",
-        "title": "Zahlungsmethoden",
+        "page_title": "Zahlungsarten",
+        "title": "Zahlungsarten",
         "update_card_button_label": "Karte aktualisieren",
         "delete_customer_mandate": {
-          "generic_error": "Bei der Bearbeitung Ihrer Anfrage ist ein Problem aufgetreten.",
+          "generic_error": "Bei der Verarbeitung Ihrer Anfrage ist ein Problem aufgetreten.",
           "success_message": "Ihre Zahlungsmethode wurde entfernt"
         }
       }
