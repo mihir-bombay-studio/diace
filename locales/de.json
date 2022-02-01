@@ -1287,7 +1287,7 @@
       "region": "Region",
       "prefecture": "Präfektur",
       "province": "Provinz",
-      "state": "Steht",
+      "state": "Zustand",
       "state_and_territory": "Staat\/Gebiet",
       "county": "Provinz",
       "emirate": "Emirat",
@@ -1296,7 +1296,7 @@
     },
     "collections": {
       "sorting": {
-        "manual": "Empfohlen",
+        "manual": "Hervorgehoben",
         "best_selling": "Meistverkauft",
         "az": "Alphabetisch: A-Z",
         "za": "Alphabetisch: Z-A",
