@@ -22,7 +22,7 @@
         "facebook": "Facebook",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
-        "tumblr": "tumblr",
+        "tumblr": "Tumblr",
         "snapchat": "Snapchat",
         "youtube": "Youtube",
         "vimeo": "Vimeo",
@@ -40,11 +40,11 @@
       "search": "Suchen"
     },
     "cart": {
-      "view": "Warenkorb anzeigen ({{ count }})",
-      "item_added": "Artikel zum Warenkorb hinzugefügt"
+      "view": "Einkaufswagen anzeigen ({{ count }})",
+      "item_added": "Artikel wurde dem Warenkorb hinzugefügt"
     },
     "share": {
-      "copy_to_clipboard": "URL in Zwischenablage kopieren",
+      "copy_to_clipboard": "URL in die Zwischenablage kopieren",
       "share": "Teilen",
       "share_url": "URL teilen",
       "success_message": "In die Zwischenablage kopiert!"
