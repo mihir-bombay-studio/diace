@@ -1382,7 +1382,7 @@
           "complete": "Vollständig",
           "partial": "Teilweise",
           "unfulfilled": "Offen",
-          "restocked": "Aufgefüllt"
+          "restocked": "Aufstocken"
         },
         "transaction_status": {
           "success": "Bestanden",
