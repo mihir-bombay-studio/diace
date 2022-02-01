@@ -72,11 +72,11 @@
     "next_slide": "Nach rechts schieben",
     "previous_slide": "Nach links schieben",
     "loading": "Wird geladen...",
-    "of": "von"
+    "of": "durch"
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
+      "blog": "Bloggen",
       "read_more_title": "Weiterlesen: {{ title }}",
       "read_more": "Weiterlesen",
       "comments": {
