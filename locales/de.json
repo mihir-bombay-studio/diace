@@ -6,10 +6,10 @@
       "login_form_password_label": "Passwort",
       "login_form_password_placeholder": "Ihr Passwort",
       "login_form_error": "Falsches Passwort!",
-      "login_form_submit": "Eintreten",
+      "login_form_submit": "Eingeben",
       "modal": "Modal für Passwort",
       "admin_link_html": "Sind Sie der Ladenbesitzer? <a href=\"\/admin\" class=\"link underlined-link\">Hier anmelden<\/a>",
-      "powered_by_shopify_html": "Dieser Shop wird betrieben von {{ shopify }}"
+      "powered_by_shopify_html": "Dieser Laden wird betrieben von {{ shopify }} angetrieben"
     },
     "social": {
       "alt_text": {
