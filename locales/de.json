@@ -605,14 +605,14 @@
         "shipping_line_phone": "Ihr Mobilfunkanbieter kann diese Nummer verwenden, um Sie zu kontaktieren.",
         "other_method": {
           "zero": "Keine anderen Methoden verfügbar",
-          "one": "1 weitere Methode verfügbar für",
-          "other": "%{count} andere Methoden erhältlich von"
+          "one": "%{count} andere Methode erhältlich bei",
+          "other": "%{count} andere Methoden erhältlich bei"
         },
         "shipping_rate_discounted_amount": "Waschen: %{original_amount}. Jetzt: %{amount}",
-        "shipping_line_delivery_phone": "Wir können diese Nummer verwenden, um Sie über Ihre Lieferung anzurufen oder Ihnen eine Nachricht zu senden.",
-        "optional_shipping_line_delivery_instructions_label": "Lieferhinweise (optional)",
+        "shipping_line_delivery_phone": "Wir können diese Nummer verwenden, um Sie wegen Ihrer Lieferung anzurufen oder Ihnen eine Nachricht zu senden.",
+        "optional_shipping_line_delivery_instructions_label": "Lieferanweisungen (optional)",
         "shipping_line_delivery_phone_label": "Handy Nummer",
-        "shipping_line_delivery_instructions": "Geben Sie die erforderlichen Informationen wie Türcodes und Lieferanweisungen ein.",
+        "shipping_line_delivery_instructions": "Geben Sie erforderliche Informationen wie Türcodes und Lieferanweisungen ein.",
         "local_delivery": "Lieferung vor Ort",
         "subscription_shipping": "Abonnement zum Versenden",
         "shipping_method_one_time_purchase_group_title": "Einmaliger kauf",
