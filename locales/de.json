@@ -195,12 +195,12 @@
         "product": "Produkt",
         "price": "Preis",
         "total": "Gesamt",
-        "quantity": "Nummer"
+        "quantity": "Höhe"
       },
-      "update": "Aktualisieren"
+      "update": "Aktualisierung"
     },
     "footer": {
-      "payment": "Zahlungsmethoden",
+      "payment": "Zahlungsarten",
       "social_placeholder": "Folgen Sie uns in den sozialen Medien."
     },
     "featured_blog": {
