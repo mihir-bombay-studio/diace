@@ -889,7 +889,7 @@
         "button_label": "Zur Kasse gehen mit: %{method}"
       },
       "paypal": {
-        "button_html": "Zur Kasse mit %{logo}"
+        "button_html": "Kasse erfüllt %{logo}"
       },
       "apple_pay": {
         "button_html": "Kaufen mit %{logo}"
