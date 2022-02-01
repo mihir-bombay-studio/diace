@@ -217,21 +217,21 @@
     },
     "collection_template": {
       "title": "Sammlung",
-      "sort_by_label": "sortieren",
+      "sort_by_label": "sortiere weiter",
       "sort_button": "Sortieren",
       "product_count": "{{ count }} Produkte",
       "empty": "keine Produkte gefunden",
       "apply": "Bewerben",
-      "clear": "Zu löschen",
-      "clear_all": "Alles löschen",
-      "from": "Von",
+      "clear": "Wissen",
+      "clear_all": "Alles wissen",
+      "from": "Durch",
       "filter_and_sort": "Filtern und sortieren",
       "filter_by_label": "Filter ein",
       "filter_button": "Filter",
       "max_price": "Der höchste Preis ist {{ price }}",
       "reset": "Zurücksetzen",
       "to": "Auf",
-      "use_fewer_filters_html": "Verwenden Sie weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">alles löschen<\/a>"
+      "use_fewer_filters_html": "Weniger Filter verwenden bzw <a class=\"{{ class }}\" href=\"{{ link }}\">alles wissen<\/a>"
     }
   },
   "localization": {
