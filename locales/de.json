@@ -1086,7 +1086,7 @@
       "review": {
         "title": "Rezension",
         "review_title": "Prüfe die Reihenfolge",
-        "checkout_as_guest": "Check out als Gast",
+        "checkout_as_guest": "als Gast auschecken",
         "blocks": {
           "contact_method_title": "Kontakt",
           "billing_address_title": "Abrechnung",
