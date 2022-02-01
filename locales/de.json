@@ -317,8 +317,8 @@
       "submit": "Schaffen"
     },
     "reset_password": {
-      "title": "Kontopasswort zurücksetzen",
-      "subtext": "Geben Sie ein neues Passwort für {{ email }} ein",
+      "title": "Kontokennwort zurücksetzen",
+      "subtext": "Geben Sie ein neues Passwort für ein {{ email }}",
       "password": "Passwort",
       "password_confirm": "Kennwort bestätigen",
       "submit": "Passwort zurücksetzen"
