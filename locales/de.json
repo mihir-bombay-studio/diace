@@ -698,7 +698,7 @@
         "card_issue_number_label": "Ausgabe Nummer",
         "card_issue_number_placeholder": "Ausgabe Nummer",
         "card_change_label": "Ändern",
-        "ends_with_label": "endet in %{last_digits}",
+        "ends_with_label": "endet auf %{last_digits}",
         "masked_digits_label": "•••• %{last_digits}",
         "saved_by_payment_method": "Gespeichert mit %{payment_method}",
         "pay_with_payment_method": "Bezahlen mit %{payment_method}",
