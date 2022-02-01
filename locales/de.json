@@ -572,16 +572,17 @@
         "no_pickup_location": "Ihre Bestellung kann nicht abgeholt werden. Geben Sie eine Lieferadresse ein.",
         "calculating_shipping": "Berechnung...",
         "estimated_taxes_label": "Steuern (geschätzt)",
-        "gift_card_ending": "Geschenkkarte mit Endung %{last_characters}",
-        "estimated_tax_label": "Geschätzte Last",
+        "gift_card_ending": "Geschenkkarte endet auf %{last_characters}",
+        "estimated_tax_label": "Geschätzte Belastung",
         "multiple_shipping_lines_label": "Summe senden",
         "applied_free_shipping_discount_label": "Angewandt",
         "original_price": "Original Preis",
         "sale_price": "Angebotspreis",
         "recurring_total_label": "Wiederkehrende Summe",
-        "recurring_total_tooltip": "Ohne Versandkosten, Mehrwertsteuer, Zölle oder Rabatte.",
+        "recurring_total_tooltip": "Ohne Versand, Mehrwertsteuer, Zölle oder etwaige Rabatte.",
         "gift_card_subscriptions_notice": "Geschenkkarten werden nur auf Ihre erste Zahlung angewendet",
-        "confirmation_number_label": "Bestätigungsnummer %{confirmation_number}"
+        "confirmation_number_label": "Bestätigungsnummer %{confirmation_number}",
+        "higher_value_discount_already_applied": "Ein Rabatt mit einem höheren Wert wurde bereits angewendet."
       },
       "shipping": {
         "title": "Versenden",
