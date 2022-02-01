@@ -637,7 +637,7 @@
               "other": "alle %{count} Monate"
             },
             "year": {
-              "one": "jedes Jahr",
+              "one": "jährlich",
               "other": "alle %{count} Jahr"
             }
           },
