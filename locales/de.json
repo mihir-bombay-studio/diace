@@ -531,7 +531,7 @@
         "discount_already_applied": "Auf diese Bestellung wurde ein Rabatt gewährt. Sie können keinen weiteren Rabatt hinzufügen.",
         "cart_does_not_meet_discount_requirements_notice": "Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> gilt nicht für die Artikel in Ihrem Warenkorb",
         "discount_requires_customer_notice": "Geben Sie Ihre Versanddaten ein, um den Rabattcode zu erhalten <strong style=\"text-transform:uppercase\">%{code}<\/strong> bewirbt sich",
-        "customer_does_not_meet_discount_requirements_notice": "Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> steht Ihnen derzeit nicht zur Verfügung",
+        "customer_does_not_meet_discount_requirements_notice": "Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> ist derzeit nicht für Sie verfügbar",
         "shipping_information_does_not_meet_discount_requirements_notice": "Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> ist für Ihre Lieferadresse nicht verfügbar",
         "customer_already_used_once_per_customer_discount_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> wurde schon verwendet",
         "subtotal_label": "Zwischensumme",
