@@ -772,13 +772,16 @@
         "delete_customer_mandate_modal_cancel": "Abbrechen",
         "maximum_vaulted_card_info": {
           "one": "Sie können %{count} Kreditkarte auf Ihrem Konto speichern.",
-          "other": "Sie können bis zu %{count} Kreditkarten auf Ihrem Konto speichern."
+          "other": "Sie können bis zu %{count} Kreditkarten in Ihrem Konto speichern."
         },
         "billing_address_associated_with_mandate": "Verwenden Sie die mit Ihrer Zahlungsmethode verknüpfte Adresse",
-        "billing_address_associated_with_mandate_info": "Wenn Sie die Rechnungsadresse ändern möchten, löschen Sie bitte Ihre Kreditkarteninformationen und geben Sie sie erneut ein"
+        "billing_address_associated_with_mandate_info": "Wenn Sie die Rechnungsadresse ändern möchten, löschen Sie bitte Ihre Kreditkarteninformationen und geben Sie sie erneut ein",
+        "credit_card_vaulting_sign_in_banner_title": "Speichern Sie Ihre Kreditkarte",
+        "credit_card_vaulting_sign_in_banner_info": "Melden Sie sich an oder erstellen Sie ein Konto, um Ihre Kreditkarte für zukünftige Einkäufe zu speichern.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Anmeldung"
       },
       "payment_summary": {
-        "gift_card_current_balance_notice": "Aktueller Kontostand %{amount}",
+        "gift_card_current_balance_notice": "Aktuelles Guthaben %{amount}",
         "credit_card_expires_on_notice": "Läuft am %{month}\/%{year} ab",
         "express_payment_gateway_label": "ausdrücken",
         "manual_payment_gateway_label": "Manuell",
