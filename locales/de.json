@@ -705,25 +705,25 @@
         "same_billing_address_label": "Wie Lieferadresse",
         "different_billing_address_label": "Verwenden Sie eine andere Rechnungsadresse",
         "free_order_notice_html": "Ihre Bestellung ist <strong>kostenlos<\/strong>. Es ist keine Zahlung erforderlich.",
-        "express_checkout_free_order": "Für eine kostenlose Bestellung fallen keine Gebühren an",
+        "express_checkout_free_order": "Für eine kostenlose Bestellung fallen keine Kosten an",
         "order_covered_by_gift_cards_notice": {
-          "one": "Ihre Bestellung wird mit Ihrem Geschenkgutschein bezahlt.",
-          "other": "Ihre Bestellung wird mit Ihren Geschenkkarten bezahlt."
+          "one": "Ihre Bestellung wird mit Ihrer Geschenkkarte bezahlt.",
+          "other": "Ihre Bestellung wird mit Ihren Geschenkgutscheinen bezahlt."
         },
-        "offsite_gateway_redirect_hint": "Nachdem Sie auf „%{button_label}“ geklickt haben, werden Sie zu %{gateway_label} weitergeleitet, um Ihren Einkauf sicher abzuschließen.",
-        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} gesamt %{total_shop_price}",
+        "offsite_gateway_redirect_hint": "Nachdem Sie auf „%{button_label}“ geklickt haben, werden Sie zu %{gateway_label} weitergeleitet, um Ihren Kauf sicher abzuschließen.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} insgesamt %{total_shop_price}",
         "billing_address_title": "Rechnungsadresse",
         "billing_address_description": "Wählen Sie die Adresse aus, die Ihrer Karte oder Zahlungsmethode entspricht.",
         "billing_address_description_no_shipping_address": "Geben Sie die Adresse ein, die Ihrer Karte oder Zahlungsmethode entspricht.",
         "no_js_credit_card_fields_redirect_hint": "Sie werden weitergeleitet, um Ihre Zahlungsinformationen hinzuzufügen.",
         "card_fields_container_prefix": "Dieses Feld enthält:",
         "card_fields_unavailable_html": {
-          "one": "Die Zahlung per Kredit- oder Debitkarte ist derzeit nicht möglich.<br><a href=\"%{current_url}\">Diese Seite aktualisieren<\/a> oder versuchen Sie es später erneut.",
-          "other": "Die Zahlung per Kredit- oder Debitkarte ist derzeit nicht möglich.<br><a href=\"%{current_url}\">Diese Seite aktualisieren<\/a> oder versuchen Sie es mit einer anderen Zahlungsmethode."
+          "one": "Die Zahlung per Kredit- oder Debitkarte ist derzeit nicht möglich.<br><a href=\"%{current_url}\">Aktualisieren Sie diese Seite<\/a> oder versuchen Sie es später erneut.",
+          "other": "Die Zahlung per Kredit- oder Debitkarte ist derzeit nicht möglich.<br><a href=\"%{current_url}\">Aktualisieren Sie diese Seite<\/a> oder versuchen Sie es mit einer anderen Zahlungsmethode."
         },
         "card_fields_processing_error": "Bei der Verarbeitung der Zahlung ist ein Problem aufgetreten. Bitte aktualisieren Sie diese Seite oder überprüfen Sie Ihre Internetverbindung.",
-        "technical_error": "Aufgrund eines technischen Problems können derzeit keine Zahlungen bearbeitet werden. Versuchen Sie es in ein paar Minuten noch einmal.",
-        "no_method_error": "Dieser Shop kann derzeit keine Zahlungen akzeptieren.",
+        "technical_error": "Aufgrund eines technischen Problems können Zahlungen derzeit nicht verarbeitet werden. Versuchen Sie es in ein paar Minuten erneut.",
+        "no_method_error": "Dieser Shop kann derzeit keine Zahlungen annehmen.",
         "not_configured_error": "Dieser Shop kann derzeit keine Zahlungen akzeptieren.",
         "missing_credit_card_error": "Geben Sie Ihre Kartendaten ein, um die Zahlung abzuschließen",
         "generic_incorrect_card_info": "Ihre Zahlungsdaten können nicht verifiziert werden. Bitte überprüfen Sie Ihre Kartendaten und versuchen Sie es erneut.",
