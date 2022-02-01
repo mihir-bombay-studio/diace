@@ -1004,8 +1004,8 @@
         "login_description_phone": "Ihre Bestellnummer finden Sie in der Rechnung, die Sie per SMS erhalten haben.",
         "login_not_customer_html": "Nicht %{name}? Sie können %{link}",
         "login_reorder_link_text": {
-          "one": "auch dieses Produkt kaufen",
-          "other": "auch diese Produkte kaufen"
+          "one": "kaufe auch dieses Produkt",
+          "other": "kaufen Sie auch diese Produkte"
         },
         "customer_information_hidden_fields_message": "Melden Sie sich an, um alle Kundeninformationen anzuzeigen.",
         "cancelled_title": "Ihre Bestellung wurde storniert",
