@@ -1519,7 +1519,7 @@
         "label": "Verfügbarkeit",
         "value": {
           "in_stock": "Auf Lager",
-          "out_of_stock": "Nicht vorrättig"
+          "out_of_stock": "Ausverkauft"
         }
       },
       "vendor": {
