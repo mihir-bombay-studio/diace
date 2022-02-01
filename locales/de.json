@@ -1423,8 +1423,8 @@
         "invalid_password": "Passwort falsch, bitte versuchen Sie es erneut."
       },
       "tags": {
-        "add_articles": "Beschränken Sie die Suche auf Artikel mit dem Tag %{tag}",
-        "add_products": "Beschränken Sie die Suche auf Produkte mit dem passenden Tag %{tag}",
+        "add_articles": "Begrenzen Sie die Suche auf Artikel mit dem Schlagwort %{tag}",
+        "add_products": "Begrenzen Sie die Suche auf Produkte mit dem passenden Tag %{tag}",
         "remove_articles": "Erweitern Sie die Suche auf Artikel, die nicht mit %{tag} gekennzeichnet sind",
         "remove_products": "Tag entfernen %{tag}"
       }
