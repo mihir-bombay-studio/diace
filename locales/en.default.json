@@ -202,9 +202,9 @@
         "product": "Product",
         "price": "Price",
         "total": "Total",
-        "quantity": "Number"
+        "quantity": "Amount"
       },
-      "update": "To update"
+      "update": "Updating"
     },
     "footer": {
       "social_placeholder": "Follow us on social media.",
@@ -224,8 +224,8 @@
     },
     "collection_template": {
       "apply": "To apply",
-      "clear": "To clear",
-      "clear_all": "Clear all",
+      "clear": "knowledge",
+      "clear_all": "Know everything",
       "empty": "no products found",
       "from": "By",
       "filter_and_sort": "Filter and sort",
