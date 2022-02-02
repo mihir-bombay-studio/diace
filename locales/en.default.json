@@ -40,7 +40,7 @@
       "search": "To search"
     },
     "cart": {
-      "view": "View Cart ({{ count }})",
+      "view": "View shopping cart ({{ count }})",
       "item_added": "Item added to cart"
     },
     "share": {
@@ -62,7 +62,7 @@
     "skip_to_text": "Straight to the content",
     "skip_to_product_info": "Skip to product information",
     "close": "Close",
-    "unit_price_separator": "per",
+    "unit_price_separator": "for",
     "vendor": "Seller:",
     "error": "Wrong",
     "refresh_page": "Choosing a selection results in a complete refresh of the page.",
