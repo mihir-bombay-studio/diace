@@ -1393,10 +1393,10 @@
         },
         "fulfillment_status": {
           "fulfilled": "Done",
-          "complete": "Complete",
+          "complete": "Completely",
           "partial": "Partially",
-          "unfulfilled": "Open",
-          "restocked": "Restocked"
+          "unfulfilled": "open",
+          "restocked": "Re-stock"
         },
         "transaction_status": {
           "success": "Passed",
