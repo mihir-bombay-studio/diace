@@ -373,7 +373,7 @@
       "qr_image_alt": "QR code — scan to redeem gift card",
       "copy_code": "Copy code",
       "expired": "Expired",
-      "copy_code_success": "Code copied successfully",
+      "copy_code_success": "Code copied",
       "print_gift_card": "Print"
     }
   },
@@ -388,8 +388,8 @@
         "page_title": "checkout",
         "error_page_title": "Wrong",
         "skip_to_content": "Straight to the content",
-        "breadcrumb": "breadcrumbs",
-        "continue_button_label": "Further",
+        "breadcrumb": "Breadcrumbs",
+        "continue_button_label": "Get on",
         "complete_purchase_button_label": "Complete order",
         "pay_now_button_label": "Pay now",
         "authenticate_purchase_button_label": "Validate payment",
