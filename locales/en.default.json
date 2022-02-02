@@ -747,7 +747,7 @@
         "klarna_pay_now_label": "Pay now with Klarna",
         "klarna_pay_later_label": "Pay afterwards with Klarna",
         "bancontact_label": "Bancontact",
-        "eps_label": "eps-Überweisung (eps transfer)",
+        "eps_label": "eps transfer (eps-overdracht)",
         "klarna_slice_it_label": "Finance with Klarna",
         "card_expiration_month_label": "Expiration month",
         "card_expiration_year_label": "Expiration year",
