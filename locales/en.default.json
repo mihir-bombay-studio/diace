@@ -611,7 +611,7 @@
         "cheapest_rate_label": "cheapest",
         "please_enter_your_shipping_information_notice": "Enter your shipping information.",
         "estimated_delivery_date": {
-          "one": "1 working day",
+          "one": "%{count} working day",
           "other": "%{count} working days"
         },
         "estimated_delivery_date_range": "%{minimum} to %{maximum} working days",
@@ -619,7 +619,7 @@
         "shipping_line_phone": "Your carrier can use this number to contact you.",
         "other_method": {
           "zero": "No other methods available",
-          "one": "1 other method available for",
+          "one": "%{count} other method available from",
           "other": "%{count} other methods available from"
         },
         "shipping_rate_discounted_amount": "Wash: %{original_amount}. Now: %{amount}",
@@ -630,7 +630,7 @@
         "local_delivery": "Local delivery",
         "subscription_shipping": "Subscription for sending",
         "shipping_method_one_time_purchase_group_title": "One-time-purchase",
-        "shipping_method_subscription_group_title": "Subscription",
+        "shipping_method_subscription_group_title": "subscription",
         "one_time_purchase_shipping": "Send once",
         "subscription_delivery_description": {
           "prepaid_delivery_frequency": {
