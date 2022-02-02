@@ -309,9 +309,9 @@
     },
     "order": {
       "title": "Order {{ name }}",
-      "date_html": "Posted on {{ date }}",
+      "date_html": "Posted {{ date }}",
       "cancelled_html": "Order canceled on {{ date }}",
-      "cancelled_reason": "Reason: {{ reason }}",
+      "cancelled_reason": "Rode: {{ reason }}",
       "billing_address": "Billing address",
       "payment_status": "Payment status",
       "shipping_address": "Delivery address",
