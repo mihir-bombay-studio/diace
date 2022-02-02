@@ -851,7 +851,12 @@
         "payment_gateway_not_in_test_mode": "is not built for test orders. This store cannot accept real orders or process real payments.",
         "tips_invalid_tip_amount": "Please enter a tip of no more than %{amount}",
         "payment_gateway_unsupported_for_subscriptions": "This payment method is not available for subscription orders.",
-        "sms_marketing_phone_invalid": "enter a valid phone number"
+        "sms_marketing_phone_invalid": "enter a valid phone number",
+        "address_last_name_too_long": "Last name is too long (maximum is 255 characters)",
+        "address_address1_too_long": "The first address line is too long (the maximum is 255 characters)",
+        "address_address2_too_long": "The second address line is too long (the maximum is 255 characters)",
+        "address_city_too_long": "Place is too long (maximum is 255 characters)",
+        "address_company_too_long": "Company name is too long (maximum is 255 characters)"
       },
       "payment_errors": {
         "generic_error": "There was a problem processing your payment. Please try again or use a different payment method.",
