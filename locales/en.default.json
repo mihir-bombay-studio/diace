@@ -1126,9 +1126,13 @@
         "sms": {
           "disclaimer": {
             "privacy_policy": "Privacy Policy",
-            "terms_of_service": "Terms of Service"
+            "terms_of_service": "Terms of Service",
+            "description_html": "By signing up via SMS, you agree to receive automated marketing messages, including cart reminders, at the phone number provided. Consent is not a condition of purchase. Reply STOP to unsubscribe. Reply HELP for help. Frequency of messages varies. Message and data charges may apply. Check out our %{privacy_policy_link} and our %{terms_of_service_link}.",
+            "description_html_transactional": "We'll send you an order confirmation and recurring shipping updates via SMS. Reply with STOP to unsubscribe. Reply with HELP for help. Frequency of messages varies. Message and data charges may apply. View our privacy policy and terms of service."
           }
-        }
+        },
+        "post_accept_marketing_checkbox_label": "You are signed up to receive emails with news and offers",
+        "pending_accept_marketing_checkbox_label": "Check your email to confirm your subscription for news and offers"
       },
       "shop_policies": {
         "refund_policy": "Refund Policy",
