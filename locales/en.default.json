@@ -1408,7 +1408,7 @@
           "declined": "Payment declined",
           "inventory": "Items not available",
           "fraud": "Fraudulent order",
-          "customer": "Customer changed\/cancelled order",
+          "customer": "Customer changed\/canceled order",
           "other": "Different"
         },
         "cash_on_delivery": "cash on delivery"
