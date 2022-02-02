@@ -903,7 +903,7 @@
         "button_label": "Checkout with: %{method}"
       },
       "paypal": {
-        "button_html": "Checkout with %{logo}"
+        "button_html": "Checkout met %{logo}"
       },
       "apple_pay": {
         "button_html": "Buy with %{logo}"
