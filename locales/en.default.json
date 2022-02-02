@@ -787,7 +787,9 @@
         "maximum_vaulted_card_info": {
           "one": "You can save %{count} credit card to your account.",
           "other": "You can store up to %{count} credit cards on your account."
-        }
+        },
+        "billing_address_associated_with_mandate": "Use address associated with your payment method",
+        "billing_address_associated_with_mandate_info": "If you want to change the billing address, please delete and re-enter your credit card information"
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Current Balance %{amount}",
