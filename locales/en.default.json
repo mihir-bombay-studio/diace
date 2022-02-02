@@ -1221,7 +1221,7 @@
         "components": {
           "close": "Close",
           "expand": "View more",
-          "processing": "Process...",
+          "processing": "Processing...",
           "submit": "Submit"
         }
       },
