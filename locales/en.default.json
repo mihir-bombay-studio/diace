@@ -856,13 +856,14 @@
         "address_address1_too_long": "The first address line is too long (the maximum is 255 characters)",
         "address_address2_too_long": "The second address line is too long (the maximum is 255 characters)",
         "address_city_too_long": "Place is too long (maximum is 255 characters)",
-        "address_company_too_long": "Company name is too long (maximum is 255 characters)"
+        "address_company_too_long": "Company name is too long (maximum is 255 characters)",
+        "address_company_contains_html_tags": "Company must not contain HTML tags."
       },
       "payment_errors": {
         "generic_error": "There was a problem processing your payment. Please try again or use a different payment method.",
         "rejected_transaction": "Your payment has been declined. Please try again or use a different payment method.",
         "credit_card_processing": "Your payment cannot be processed for technical reasons. Please try again in a few minutes or use a different payment method.",
-        "order_total_changed": "The total of your order has changed. Please refresh your cart and try again.",
+        "order_total_changed": "Your payment could not be processed because the total of your order has changed. View the total of your order and try again.",
         "payment_processing": "Your payment cannot be processed for technical reasons. Please try again or use a different payment method.",
         "paypal_zero_amount": "You cannot use PayPal for %{amount} orders. Confirm that your order is correct and pay without PayPal.",
         "paypal_invalid_token": "PayPal was not available. Please try again or use a different checkout method.",
