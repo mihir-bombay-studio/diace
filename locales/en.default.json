@@ -1385,7 +1385,7 @@
           "pending": "Pending",
           "paid": "Paid",
           "unpaid": "Unpaid",
-          "voided": "Expired",
+          "voided": "Cancelled",
           "partially_paid": "Partly paid",
           "partially_refunded": "Partially refunded",
           "refunded": "Refunded",
