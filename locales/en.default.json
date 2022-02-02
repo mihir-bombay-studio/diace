@@ -593,9 +593,10 @@
         "original_price": "Original price",
         "sale_price": "Offer price",
         "recurring_total_label": "Recurring Total",
-        "recurring_total_tooltip": "Excluding shipping, VAT, duties or any discounts.",
+        "recurring_total_tooltip": "Excluding shipping, VAT, customs duties or any discounts.",
         "gift_card_subscriptions_notice": "Gift cards are only applied to your first payment",
-        "confirmation_number_label": "Confirmation number %{confirmation_number}"
+        "confirmation_number_label": "Confirmation number %{confirmation_number}",
+        "higher_value_discount_already_applied": "A discount with a higher value has already been applied."
       },
       "shipping": {
         "title": "Dispatch",
