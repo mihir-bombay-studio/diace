@@ -1367,7 +1367,8 @@
       "customer": {
         "password_reset_error": "Error resetting the password",
         "no_account_found": "No account found with that email address.",
-        "invalid_credentials": "Incorrect email or password."
+        "invalid_credentials": "Incorrect email or password.",
+        "denylisted_reset_password": "Your account cannot be opened because the current password is not secure. You will receive an email to reset your password."
       },
       "address": {
         "updated": "Address updated.",
