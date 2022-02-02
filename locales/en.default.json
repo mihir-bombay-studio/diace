@@ -681,7 +681,7 @@
       "payment": {
         "amazon_payments_label": "Amazon Pay",
         "amazon_payments_login_hint": "You will be asked to log in to Amazon.",
-        "amazon_payments_logout": "Log out of Amazon Pay",
+        "amazon_payments_logout": "Sign out of Amazon Pay",
         "amazon_payments_failed_mfa_challenge": "The selected payment method cannot be used. Select another method or contact your bank or card issuer.",
         "amazon_payments_abandoned_mfa_challenge": "Your payment could not be completed. Try another payment method or contact your bank or card issuer.",
         "amazon_payments_could_not_enqueue_authorize": "There was a problem processing your payment. Please try again or use a different payment method.",
