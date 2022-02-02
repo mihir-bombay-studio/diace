@@ -283,7 +283,7 @@
       "city": "Venue",
       "country": "Country\/Region",
       "province": "Province",
-      "zip": "Postal Code",
+      "zip": "Postcode",
       "phone": "phone number",
       "set_default": "Set as default address",
       "add": "add address",
