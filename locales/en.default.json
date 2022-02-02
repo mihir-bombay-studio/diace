@@ -495,7 +495,7 @@
         "pick_up_in_two_to_four_hours": "Ready for pick up in 4 hours",
         "free_total_label": "For free",
         "shipping_address": "Delivery address",
-        "pick_up_locations": "Pickup Locations"
+        "pick_up_locations": "Pick up locations"
       },
       "customer_account": {
         "not_user_label": "Aren't you %{first_name}?",
