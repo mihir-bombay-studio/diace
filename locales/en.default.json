@@ -1449,7 +1449,7 @@
       "account": "Account",
       "create_account": "create an account",
       "reset_account": "Reset account",
-      "addresses": "Addresses",
+      "addresses": "addresses",
       "order": "Order %{name}",
       "search": "To search",
       "collections": "Collections",
