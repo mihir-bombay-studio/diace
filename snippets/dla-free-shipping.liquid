@@ -1,0 +1,30 @@
+<link href="https://static.dla.group/free-shipping-emoji.css" rel="stylesheet">
+<style type="text/css">
+  .dla-free-shipping {
+    display: none;
+  }
+  .dla-free-shipping p {
+    margin: 0;
+  }
+  .dla-free-shipping .em-svg {
+    height: 1rem;
+    width: 1rem;
+  }
+  .dla-free-shipping.dla-free-shipping-visible {
+    display: block;
+    margin: 0px 0px 0px 0px;
+  }
+</style>
+<div class="dla-free-shipping">
+    <p>🚚 Free Shipping to {flag} <strong>{country}</strong></p><p>📦 Order <strong>today</strong> to get it by <strong>{shipping_date}</strong></p>
+</div>
+<script type="text/javascript">
+  window.DLA = window.DLA || {};
+  window.DLA['freeShipping'] = window.DLA['freeShipping'] || {};
+  window.DLA['freeShipping'] = {
+    delivery_time: 14,
+    express_shipping: false,
+    express_time: 10,
+    delivery_time_country: []
+  };
+</script>
