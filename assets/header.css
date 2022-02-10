@@ -462,6 +462,11 @@ transform: rotate(180deg);
   .right-nav-upper li {
     margin-left: 0;
   }
+  
+  .header-nav-list-sub li{
+  	margin-right: 8px;
+    margin-left: 8px;
+  }
 
 
   /* ======================= MOBILE NAV=============================== */
