@@ -247,6 +247,13 @@
         $(this).addClass('no-disp');
         $('#main-lang .m-lang').text(sel_lang);
       });
+      
+      $('.lang-selector-mobile li a').click(function() {
+      	$('.lang-selector-mobile li a').removeClass('active');
+        $('.lang-selector-mobile li a').addClass('light');
+        $(this).addClass('active');
+        $(this).removeClass('light');
+      });
     </script>
 <!-- Active Cart Code End --></body>
 </html>
