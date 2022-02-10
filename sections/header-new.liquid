@@ -40,6 +40,7 @@
                                     {% include 'icon-grey-down-chevron' %}
                                 </a>
                                 <ul class="header-nav-list-sub">
+                                  {% comment %}
                                   {% for locale in shop.published_locales %}   
                                   {% unless request.locale.iso_code == locale.iso_code  %}
                                     <li>
@@ -47,6 +48,7 @@
                                     </li>
                                   {% endunless %}
                                   {% endfor %}
+                                  {% endcomment %}
                                 </ul>
                             </li>
                             <li class="right-nav-list dropdown bold no-mobile">
