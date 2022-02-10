@@ -68,13 +68,7 @@
           {% endcomment %}
         </ul>
       </li>
-      <li class="mobile-nav-langs">        
-        {% for locale in shop.published_locales %}   
-        <span class="{% if request.locale.iso_code == locale.iso_code  %}active{% endif %}">
-          <a href="{{ shop.url }}{{locale.root_url}}">{{ locale.iso_code | upcase }}</a>
-        </span>
-      {% endfor %}
-      </li>
+      
       <li class="mobile-nav-social-icons">
         <a href="{{ settings.social_facebook_link }}" target="_blank"><span>{% render 'facebook' %}</span></a>
         <a href="{{ settings.social_instagram_link }}" target="_blank"><span>{% render 'instagram' %}</span></a>
