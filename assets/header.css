@@ -533,6 +533,11 @@ transform: rotate(180deg);
     display: flex;
     gap: 16px;
   }
+  
+  .lang-selector-mobile {
+    display: flex;
+    gap: 16px;
+}
 
 }
 
