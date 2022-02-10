@@ -194,53 +194,54 @@
 <!-- Active Cart Code Start -->
 {{ 'https://www.activecartapp.com/activecart/assets/js/activecart.js' | script_tag }}
     <script>
-    	 var full = window.location.host;
-                        var parts = full.split('.');
-          var subDomain = parts[0];
-          if(subDomain == 'nl') {
-            $('#main-lang .m-lang').text('EN');
-            $('.lang-selector #lang-en').remove();
-            console.log('Lang EN');
-            window.lang = "en";
-          } else {
-            if(subDomain == 'fr') {
-              $('#main-lang .m-lang').text('FR');
-              $('.lang-selector #lang-fr').remove();
-              console.log('Lang FR');
-              window.lang = "fr";
-            } else if(subDomain == 'ar'){
-            	$('#main-lang .m-lang').text('AR');
-              $('.lang-selector #lang-ar').remove();
-              console.log('Lang AR');
-              window.lang = "ar";
-            }else if(subDomain == 'de'){
-            	$('#main-lang .m-lang').text('DE');
-              $('.lang-selector #lang-de').remove();
-              console.log('Lang DE');
-              window.lang = "de";
-            }else if(subDomain == 'it'){
-            	$('#main-lang .m-lang').text('IT');
-              $('.lang-selector #lang-it').remove();
-              console.log('Lang IT');
-              window.lang = "it";
-            }else if(subDomain == 'es'){
-            	$('#main-lang .m-lang').text('ES');
-              $('.lang-selector #lang-es').remove();
-              console.log('Lang ES');
-              window.lang = "es";
-            }
+//     	 var full = window.location.host;
+//                         var parts = full.split('.');
+//           var subDomain = parts[0];
+//           if(subDomain == 'nl') {
+//             $('#main-lang .m-lang').text('EN');
+//             $('.lang-selector #lang-en').remove();
+//             console.log('Lang EN');
+//             window.lang = "en";
+//           } else {
+//             if(subDomain == 'fr') {
+//               $('#main-lang .m-lang').text('FR');
+//               $('.lang-selector #lang-fr').remove();
+//               console.log('Lang FR');
+//               window.lang = "fr";
+//             } else if(subDomain == 'ar'){
+//             	$('#main-lang .m-lang').text('AR');
+//               $('.lang-selector #lang-ar').remove();
+//               console.log('Lang AR');
+//               window.lang = "ar";
+//             }else if(subDomain == 'de'){
+//             	$('#main-lang .m-lang').text('DE');
+//               $('.lang-selector #lang-de').remove();
+//               console.log('Lang DE');
+//               window.lang = "de";
+//             }else if(subDomain == 'it'){
+//             	$('#main-lang .m-lang').text('IT');
+//               $('.lang-selector #lang-it').remove();
+//               console.log('Lang IT');
+//               window.lang = "it";
+//             }else if(subDomain == 'es'){
+//             	$('#main-lang .m-lang').text('ES');
+//               $('.lang-selector #lang-es').remove();
+//               console.log('Lang ES');
+//               window.lang = "es";
+//             }
             
-            else {              
-              $('#main-lang .m-lang').text('NL');
-              $('.lang-selector #lang-nl').remove();
-              $('.shopicam-video-wrap').removeClass('no-disp');
-              console.log('Lang NL');
-              window.lang = "nl";
-            }
-          }
+//             else {              
+//               $('#main-lang .m-lang').text('NL');
+//               $('.lang-selector #lang-nl').remove();
+//               $('.shopicam-video-wrap').removeClass('no-disp');
+//               console.log('Lang NL');
+//               window.lang = "nl";
+//             }
+//           }
       
       	
       $('.lang-selector li').click(function() {
+        console.log('click');
       	var sel_lang = $(this).text();
         $('.lang-selector li').removeClass('no-disp');
         $(this).addClass('no-disp');
