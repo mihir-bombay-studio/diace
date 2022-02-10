@@ -34,12 +34,19 @@
                                     </li>
                                 {% endfor %}
                             {% endfor %}
-                            <li class="right-nav-list dropdown lang bold">
-                                <a href="#">
-                                    {{ request.locale.iso_code | upcase }}
+                            <li class="right-nav-list dropdown lang bold no-translate">
+                                <a id="main-lang" href="#" class="no-translate">
+                                  <span class="m-lang">{{ cart.attributes.lang | upcase }}</span>
                                     {% include 'icon-grey-down-chevron' %}
                                 </a>
-                                <ul class="header-nav-list-sub">
+                                <ul class="header-nav-list-sub lang-selector">
+                                  <li id="lang-en">
+                                    <a href="#Weglot-en" class="no-translate">EN</a>
+                                  </li>
+                                  <li id="lang-de">
+                                    <a href="#Weglot-de" class="no-translate">DE</a>
+                                  </li>
+                                  {% comment %}
                                   {% for locale in shop.published_locales %}   
                                   {% unless request.locale.iso_code == locale.iso_code  %}
                                     <li>
@@ -47,7 +54,9 @@
                                     </li>
                                   {% endunless %}
                                   {% endfor %}
+                                  {% endcomment %}
                                 </ul>
+                            </li>
                             </li>
                             <li class="right-nav-list dropdown bold no-mobile">
                                 <div id="account-btn" class="account-btn">
