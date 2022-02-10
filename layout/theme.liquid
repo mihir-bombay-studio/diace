@@ -241,7 +241,7 @@
       
       	
       $('.lang-selector li').click(function() {
-        console.log('click');
+        console.log(Weglot.getCurrentLang());
       	var sel_lang = $(this).text();
         $('.lang-selector li').removeClass('no-disp');
         $(this).addClass('no-disp');
