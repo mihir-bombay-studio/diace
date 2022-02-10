@@ -198,10 +198,10 @@
                         var parts = full.split('.');
           var subDomain = parts[0];
           if(subDomain == 'nl') {
-            $('#main-lang .m-lang').text('NL');
-            $('.lang-selector #lang-nl').remove();
-            console.log('Lang NL');
-            window.lang = "nl";
+            $('#main-lang .m-lang').text('EN');
+            $('.lang-selector #lang-en').remove();
+            console.log('Lang EN');
+            window.lang = "en";
           } else {
             if(subDomain == 'fr') {
               $('#main-lang .m-lang').text('FR');
@@ -231,11 +231,11 @@
             }
             
             else {              
-              $('#main-lang .m-lang').text('EN');
-              $('.lang-selector #lang-en').remove();
+              $('#main-lang .m-lang').text('NL');
+              $('.lang-selector #lang-nl').remove();
               $('.shopicam-video-wrap').removeClass('no-disp');
-              console.log('Lang EN');
-              window.lang = "en";
+              console.log('Lang NL');
+              window.lang = "nl";
             }
           }
     </script>
