@@ -36,7 +36,7 @@
                             {% endfor %}
                             <li class="right-nav-list dropdown lang bold">
                                 <a href="#">
-                                    {{ request.locale.iso_code | upcase }}
+                                    {{ cart.attributes.lang | upcase }}
                                     {% include 'icon-grey-down-chevron' %}
                                 </a>
                                 <ul class="header-nav-list-sub">
