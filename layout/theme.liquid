@@ -193,5 +193,51 @@
     {% render "cart-scripts" %}
 <!-- Active Cart Code Start -->
 {{ 'https://www.activecartapp.com/activecart/assets/js/activecart.js' | script_tag }}
+    <script>
+    	 var full = window.location.host;
+                        var parts = full.split('.');
+          var subDomain = parts[0];
+          if(subDomain == 'nl') {
+            $('#main-lang .m-lang').text('NL');
+            $('.lang-selector #lang-nl').remove();
+            console.log('Lang NL');
+            window.lang = "nl";
+          } else {
+            if(subDomain == 'fr') {
+              $('#main-lang .m-lang').text('FR');
+              $('.lang-selector #lang-fr').remove();
+              console.log('Lang FR');
+              window.lang = "fr";
+            } else if(subDomain == 'se'){
+            	$('#main-lang .m-lang').text('SV');
+              $('.lang-selector #lang-sv').remove();
+              console.log('Lang SV');
+              window.lang = "sv";
+            }else if(subDomain == 'dk'){
+            	$('#main-lang .m-lang').text('DA');
+              $('.lang-selector #lang-da').remove();
+              console.log('Lang DA');
+              window.lang = "da";
+            }else if(subDomain == 'it'){
+            	$('#main-lang .m-lang').text('IT');
+              $('.lang-selector #lang-it').remove();
+              console.log('Lang IT');
+              window.lang = "it";
+            }else if(subDomain == 'es'){
+            	$('#main-lang .m-lang').text('ES');
+              $('.lang-selector #lang-es').remove();
+              console.log('Lang ES');
+              window.lang = "es";
+            }
+            
+            else {              
+              $('#main-lang .m-lang').text('EN');
+              $('.lang-selector #lang-en').remove();
+              $('.shopicam-video-wrap').removeClass('no-disp');
+              console.log('Lang EN');
+              window.lang = "en";
+            }
+          }
+    </script>
 <!-- Active Cart Code End --></body>
 </html>
