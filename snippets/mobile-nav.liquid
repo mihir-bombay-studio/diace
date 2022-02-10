@@ -36,13 +36,42 @@
         </div>
         {% endif %}
       </li>
-      <li class="mobile-nav-langs">        
-        {% for locale in shop.published_locales %}   
-        <span class="{% if request.locale.iso_code == locale.iso_code  %}active{% endif %}">
-          <a href="{{ shop.url }}{{locale.root_url}}">{{ locale.iso_code | upcase }}</a>
-        </span>
-      {% endfor %}
-      </li>
+           
+        <li class="right-nav-list dropdown lang bold no-translate mobile-nav-langs">
+                                <a id="main-lang" href="#" class="no-translate">
+                                  <span class="m-lang">{{ cart.attributes.lang | upcase }}</span>
+                                    {% include 'icon-grey-down-chevron' %}
+                                </a>
+                                <ul class="header-nav-list-sub lang-selector">
+                                  <li id="lang-nl">
+                                    <a href="#Weglot-nl" class="no-translate active">NL</a>
+                                  </li>
+                                  <li id="lang-en">
+                                    <a href="#Weglot-en" class="no-translate">EN</a>
+                                  </li>
+                                  <li id="lang-de">
+                                    <a href="#Weglot-de" class="no-translate">DE</a>
+                                  </li>
+                                  <li id="lang-ar">
+                                    <a href="#Weglot-ar" class="no-translate">AR</a>
+                                  </li>
+                                  <li id="lang-fr">
+                                    <a href="#Weglot-fr" class="no-translate">FR</a>
+                                  </li>
+                                  <li id="lang-es">
+                                    <a href="#Weglot-es" class="no-translate">ES</a>
+                                  </li>
+                                  {% comment %}
+                                  {% for locale in shop.published_locales %}   
+                                  {% unless request.locale.iso_code == locale.iso_code  %}
+                                    <li>
+                                        <a href="{{ shop.url }}{{locale.root_url}}">{{ locale.iso_code | upcase }}</a>
+                                    </li>
+                                  {% endunless %}
+                                  {% endfor %}
+                                  {% endcomment %}
+                                </ul>
+                            </li>
       <li class="mobile-nav-social-icons">
         <a href="{{ settings.social_facebook_link }}" target="_blank"><span>{% render 'facebook' %}</span></a>
         <a href="{{ settings.social_instagram_link }}" target="_blank"><span>{% render 'instagram' %}</span></a>
