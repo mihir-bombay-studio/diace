@@ -102,6 +102,10 @@ nav .dropdown {
 }
 
 .header-nav-list-sub{
+	left: -9px;
+}
+
+.header-nav-list-sub{
   z-index: 2;
 }
 
