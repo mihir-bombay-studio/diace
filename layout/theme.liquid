@@ -238,6 +238,14 @@
               window.lang = "nl";
             }
           }
+      
+      	
+      $('.lang-selector li').click(function() {
+      	var sel_lang = $(this).text();
+        $('.lang-selector li').removeClass('no-disp');
+        $(this).addClass('no-disp');
+        $('#main-lang .m-lang').text(sel_lang);
+      });
     </script>
 <!-- Active Cart Code End --></body>
 </html>
