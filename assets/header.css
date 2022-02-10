@@ -70,6 +70,11 @@
   margin-left: 26px;
 }
 
+.header-nav-list-sub li{
+  	margin-right: 8px;
+    margin-left: 8px;
+  }
+
 .right-nav-upper .dropdown, .right-nav-upper .dropdown a {
   color: #737373;
 }
@@ -463,10 +468,7 @@ transform: rotate(180deg);
     margin-left: 0;
   }
   
-  .header-nav-list-sub li{
-  	margin-right: 8px;
-    margin-left: 8px;
-  }
+  
 
 
   /* ======================= MOBILE NAV=============================== */
