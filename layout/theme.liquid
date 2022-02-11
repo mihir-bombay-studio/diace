@@ -246,11 +246,14 @@
         $('.lang-selector li a').removeClass('no-disp');
         $(this).addClass('no-disp');
         $('#main-lang .m-lang').text(sel_lang);
-//         $('.lang-selector-mobile li a').each(function() {
-//           if($(this).text() == sel_lang){
-//           	$(this).trigger( "click" );
-//           }
-//         });
+        $('.lang-selector-mobile li a').each(function() {
+          if($(this).text() == sel_lang){
+            $('.lang-selector-mobile li a').removeClass('active');
+            $('.lang-selector-mobile li a').addClass('light');
+            $(this).addClass('active');
+            $(this).removeClass('light');
+          }
+        });
       });
       
       $('.lang-selector-mobile li a').click(function() {
@@ -259,11 +262,13 @@
         $('.lang-selector-mobile li a').addClass('light');
         $(this).addClass('active');
         $(this).removeClass('light');
-//         $('.lang-selector li a').each(function() {
-//           if($(this).text() == sel_lang){
-//           	$(this).trigger( "click" );
-//           }
-//         });
+        $('.lang-selector li a').each(function() {
+          if($(this).text() == sel_lang){
+            $('.lang-selector li a').removeClass('no-disp');
+            $(this).addClass('no-disp');
+            $('#main-lang .m-lang').text(sel_lang);
+          }
+        });
       });
     </script>
 <!-- Active Cart Code End --></body>
