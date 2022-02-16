@@ -212,7 +212,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--     <script src="{{ "cart-new.js" | asset_url }}" defer="defer"></script> -->
     {% render "cart-scripts" %}
 <!-- Active Cart Code Start -->
+    {% comment %}
 {{ 'https://www.activecartapp.com/activecart/assets/js/activecart.js' | script_tag }}
+    {% endcomment %}
     <script>
     	 var full = window.location.host;
                         var parts = full.split('.');
