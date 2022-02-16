@@ -88,14 +88,14 @@ function cartItemCount(cart){
   }
 }
 
-function getCartDetails(){
-  jQuery.getJSON('/cart.js', function(cart) {
-     // update quantity of cart items
-    cartItemCount(cart);
-//     console.log(1);
-    refreshCart(cart);
-  });
-}
+// function getCartDetails(){
+//   jQuery.getJSON('/cart.js', function(cart) {
+//      // update quantity of cart items
+//     cartItemCount(cart);
+// //     console.log(1);
+//     refreshCart(cart);
+//   });
+// }
 
 function convertNumber(num){
   {% for currency in shop.enabled_currencies  %}
@@ -266,7 +266,7 @@ $("body").on('click', '.AddToCart', function (e) {
   })
   .done(function (cart) {
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
-    getCartDetails();
+//     getCartDetails();
     $(`#${success_handler}`).css("bottom","0");
     
     setTimeout(function(){ 
