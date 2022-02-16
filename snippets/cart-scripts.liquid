@@ -91,9 +91,9 @@ function cartItemCount(cart){
 function getCartDetails(){
   jQuery.getJSON('/cart.js', function(cart) {
      // update quantity of cart items
-//     cartItemCount(cart);
-    console.log(1);
-//     refreshCart(cart);
+    cartItemCount(cart);
+//     console.log(1);
+    refreshCart(cart);
   });
 }
 
