@@ -246,42 +246,42 @@ output += `
 
 
 $("body").on('click', '.AddToCart', function (e) {
-//   let variant_id = parseInt(this.getAttribute("data-variant-id"));
-// //   console.log();
-//   let success_handler = $(this).data("success-id");
-//   let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
-//   console.log(variant_id);
-//   let formData = {
-//     'items': [{
-//       'id': variant_id,
-//       'quantity': parseInt(variant_quantity)
-//     }]
-//   };
+  let variant_id = parseInt(this.getAttribute("data-variant-id"));
+//   console.log();
+  let success_handler = $(this).data("success-id");
+  let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
+  console.log(variant_id);
+  let formData = {
+    'items': [{
+      'id': variant_id,
+      'quantity': parseInt(variant_quantity)
+    }]
+  };
 
-//   $.ajax({
-//     url: "/cart/add.js",
-//     method: "POST",
-//     dataType: "json",
-//     data: formData,
-//   })
-//   .done(function (cart) {
-//     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
-//     getCartDetails();
-//     $(`#${success_handler}`).css("bottom","0");
+  $.ajax({
+    url: "/cart/add.js",
+    method: "POST",
+    dataType: "json",
+    data: formData,
+  })
+  .done(function (cart) {
+    variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
+    getCartDetails();
+    $(`#${success_handler}`).css("bottom","0");
     
-//     setTimeout(function(){ 
+    setTimeout(function(){ 
      
-//       $(`#${success_handler}`).css("bottom","-50%"); 
-//       $(".product_coll_variant , .other-variants").removeClass("flex"); 
-//     }, 3000);
+      $(`#${success_handler}`).css("bottom","-50%"); 
+      $(".product_coll_variant , .other-variants").removeClass("flex"); 
+    }, 3000);
     
-//     $(".variant-pop").removeClass("no-disp");
-//     $(".response-message").text('');
-//   })
-//   .fail(function (error) {
-//     console.log(error);
-//     $(".response-message").text(error.responseJSON.description);
-//   });
+    $(".variant-pop").removeClass("no-disp");
+    $(".response-message").text('');
+  })
+  .fail(function (error) {
+    console.log(error);
+    $(".response-message").text(error.responseJSON.description);
+  });
   
 });
 
