@@ -246,17 +246,17 @@ output += `
 
 
 $("body").on('click', '.AddToCart', function (e) {
-//   let variant_id = parseInt(this.getAttribute("data-variant-id"));
-// //   console.log();
-//   let success_handler = $(this).data("success-id");
-//   let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
-//   console.log(variant_id);
-//   let formData = {
-//     'items': [{
-//       'id': variant_id,
-//       'quantity': parseInt(variant_quantity)
-//     }]
-//   };
+  let variant_id = parseInt(this.getAttribute("data-variant-id"));
+//   console.log();
+  let success_handler = $(this).data("success-id");
+  let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
+  console.log(variant_id);
+  let formData = {
+    'items': [{
+      'id': variant_id,
+      'quantity': parseInt(variant_quantity)
+    }]
+  };
 
   $.ajax({
     url: "/cart/add.js",
