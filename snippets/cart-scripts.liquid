@@ -92,7 +92,8 @@ function getCartDetails(){
   jQuery.getJSON('/cart.js', function(cart) {
      // update quantity of cart items
     cartItemCount(cart);
-    refreshCart(cart);
+    console.log(1);
+//     refreshCart(cart);
   });
 }
 
@@ -266,17 +267,16 @@ $("body").on('click', '.AddToCart', function (e) {
   .done(function (cart) {
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
     getCartDetails();
-    console.log(1);
-//     $(`#${success_handler}`).css("bottom","0");
+    $(`#${success_handler}`).css("bottom","0");
     
-//     setTimeout(function(){ 
+    setTimeout(function(){ 
      
-//       $(`#${success_handler}`).css("bottom","-50%"); 
-//       $(".product_coll_variant , .other-variants").removeClass("flex"); 
-//     }, 3000);
+      $(`#${success_handler}`).css("bottom","-50%"); 
+      $(".product_coll_variant , .other-variants").removeClass("flex"); 
+    }, 3000);
     
-//     $(".variant-pop").removeClass("no-disp");
-//     $(".response-message").text('');
+    $(".variant-pop").removeClass("no-disp");
+    $(".response-message").text('');
   })
   .fail(function (error) {
     console.log(error);
