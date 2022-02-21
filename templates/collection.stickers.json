@@ -91,6 +91,12 @@
             "type": "Glucomen CGM"
           }
         },
+        "d39e44d6-6045-41e7-94f7-031616a89232": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Glucomen Meter"
+          }
+        },
         "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf": {
           "type": "button",
           "settings": {
@@ -119,6 +125,7 @@
         "4cc4d3d1-d18e-4c1e-8afe-05d034e1ef06",
         "b8121208-c5b3-4ed2-8fcc-57c1ea7d52f1",
         "8487da3d-6e7a-4a54-b274-eabf35e89532",
+        "d39e44d6-6045-41e7-94f7-031616a89232",
         "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf",
         "6d09e288-9a07-4cbb-90e8-1b92a9489b59"
       ],
