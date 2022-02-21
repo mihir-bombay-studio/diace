@@ -111,6 +111,12 @@
             "show_price_filter": true,
             "show_price_filter_heading": "PRIJS"
           }
+        },
+        "bcf8681f-d1d8-43a3-af74-74fd09b49008": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Freestyle libre 3 sensor"
+          }
         }
       },
       "block_order": [
@@ -127,7 +133,8 @@
         "8487da3d-6e7a-4a54-b274-eabf35e89532",
         "d39e44d6-6045-41e7-94f7-031616a89232",
         "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf",
-        "6d09e288-9a07-4cbb-90e8-1b92a9489b59"
+        "6d09e288-9a07-4cbb-90e8-1b92a9489b59",
+        "bcf8681f-d1d8-43a3-af74-74fd09b49008"
       ],
       "settings": {
         "enable_filtering": true,
