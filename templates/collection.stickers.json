@@ -55,16 +55,16 @@
             "type": "Freestyle libre sensor"
           }
         },
-        "70415147-f5f0-45b2-987d-87183c3dc694": {
-          "type": "type_filter",
-          "settings": {
-            "type": "Medtronic 780G 670G 640G"
-          }
-        },
         "bcf8681f-d1d8-43a3-af74-74fd09b49008": {
           "type": "type_filter",
           "settings": {
             "type": "Freestyle libre 3 sensor"
+          }
+        },
+        "70415147-f5f0-45b2-987d-87183c3dc694": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Medtronic 780G 670G 640G"
           }
         },
         "f231cd9d-93a0-4591-8e21-4d73e1a3b83e": {
@@ -125,8 +125,8 @@
         "fd088983-7b93-4de8-850e-cebceac9ce6b",
         "1409ee08-d374-4089-88a6-198cf1e8e326",
         "c3fd733a-decd-4ef6-a30a-bbd364655bb7",
-        "70415147-f5f0-45b2-987d-87183c3dc694",
         "bcf8681f-d1d8-43a3-af74-74fd09b49008",
+        "70415147-f5f0-45b2-987d-87183c3dc694",
         "f231cd9d-93a0-4591-8e21-4d73e1a3b83e",
         "1c9f80dc-5aaa-45d2-ab67-81b25e1d6116",
         "4cc4d3d1-d18e-4c1e-8afe-05d034e1ef06",
