@@ -74,6 +74,12 @@
           "settings": {
             "type": "Infusieset"
           }
+        },
+        "5aed1210-1d01-4f29-ae31-b3154f06b795": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Freestyle Libre 3"
+          }
         }
       },
       "block_order": [
@@ -84,7 +90,8 @@
         "79870a55-0eca-4d9f-b40a-6f0d0aaf9797",
         "d4fc4c44-baee-4b73-804b-dfea8206f8fc",
         "a1e6a804-948c-49c5-9ad5-48da1e6b509b",
-        "c8658382-dfc1-4190-be1d-350add76c327"
+        "c8658382-dfc1-4190-be1d-350add76c327",
+        "5aed1210-1d01-4f29-ae31-b3154f06b795"
       ],
       "settings": {
         "enable_filtering": true,
