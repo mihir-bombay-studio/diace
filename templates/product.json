@@ -11,6 +11,30 @@
         "cont_shopping_btn_txt": "Verder winkelen"
       }
     },
+    "1634189346f895f445": {
+      "type": "related-products",
+      "blocks": {
+        "2610b275-4898-4dc1-b9d8-7dbfb3093dbf": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections",
+            "button-color": "yellow"
+          }
+        }
+      },
+      "block_order": [
+        "2610b275-4898-4dc1-b9d8-7dbfb3093dbf"
+      ],
+      "settings": {
+        "featured_collection_title": "NIEUWE PRODUCTEN",
+        "featured_collection_desc": "Met Diacé zijn er volop bezig met de ontwikkeling van eigen producten, ontdek onze laatste innovaties:",
+        "new_featured_collection": "stickers",
+        "hover_text": "KOPEN",
+        "more_colors_text": "Meer kleuren beschikbaar",
+        "marg_top": "medium"
+      }
+    },
     "16336209926af228d4": {
       "type": "our-values",
       "blocks": {
@@ -129,30 +153,6 @@
         "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
       }
     },
-    "1634189346f895f445": {
-      "type": "related-products",
-      "blocks": {
-        "2610b275-4898-4dc1-b9d8-7dbfb3093dbf": {
-          "type": "button",
-          "settings": {
-            "button_label": "ALLE CATEGORIEËN",
-            "button_link": "shopify:\/\/collections",
-            "button-color": "yellow"
-          }
-        }
-      },
-      "block_order": [
-        "2610b275-4898-4dc1-b9d8-7dbfb3093dbf"
-      ],
-      "settings": {
-        "featured_collection_title": "NIEUWE PRODUCTEN",
-        "featured_collection_desc": "Met Diacé zijn er volop bezig met de ontwikkeling van eigen producten, ontdek onze laatste innovaties:",
-        "new_featured_collection": "stickers",
-        "hover_text": "KOPEN",
-        "more_colors_text": "Meer kleuren beschikbaar",
-        "marg_top": "medium"
-      }
-    },
     "1633621467157b4204": {
       "type": "featured-collection-new",
       "disabled": true,
@@ -240,10 +240,10 @@
   },
   "order": [
     "1632117875e7ef7fbe",
+    "1634189346f895f445",
     "16336209926af228d4",
     "163362115027b57f6f",
     "1633621187288eeba0",
-    "1634189346f895f445",
     "1633621467157b4204",
     "1633621996c72e5409",
     "16336220533f137fd8"
