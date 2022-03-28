@@ -1,1 +1,50 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "16484782459fcf281a": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "164847824558cd86c9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hey superheld, je hebt onze familiedag gevonden!"
+          }
+        },
+        "164847824558cd86c9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "164847824558cd86c9-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SCHRIJF JE HIER IN!",
+            "button_link": "https:\/\/forms.gle\/DvceH6LrMDMEC5Yb6",
+            "button-color": "yellow"
+          }
+        }
+      },
+      "block_order": [
+        "164847824558cd86c9-0",
+        "164847824558cd86c9-1",
+        "164847824558cd86c9-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/FAMILIEDAG_DIACE_1.png",
+        "img_preference": "image second",
+        "text_over_img": "",
+        "padd-top": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "16484782459fcf281a",
+    "main"
+  ]
+}
