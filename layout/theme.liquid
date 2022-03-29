@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
+{% include 'limespot' %}
         
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125081529-1"></script>
@@ -192,6 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
+<limespot></limespot>
     </main>
 
     {% section 'footer-new' %}
