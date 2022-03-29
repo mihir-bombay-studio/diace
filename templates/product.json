@@ -14,22 +14,40 @@
     "1648559058b6dee59a": {
       "type": "apps",
       "blocks": {
-        "85430f77-71f3-4f1f-bbca-84b51092df46": {
-          "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "3132ea0d-1cbe-43bb-a80b-ce2e2b956f1e": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
-            "product": "{{product}}"
+            "star": "#ffc23b",
+            "review_type": "product_review",
+            "per_page": 8,
+            "primary_btn_bg_color": "#ffc23b",
+            "primary_btn_border_color": "#ffc23b",
+            "primary_btn_text_color": "#fff",
+            "secondary_btn_bg_color": "rgba(0,0,0,0)",
+            "secondary_btn_border_color": "#d9d9d9",
+            "secondary_btn_text_color": "#d9d9d9",
+            "border_color": "rgba(0,0,0,0.15)",
+            "heading_font": "helvetica_n4",
+            "enable_rich_snippets": true,
+            "show_location": true,
+            "show_dates": true,
+            "show_avatar": true,
+            "enable_replies": false,
+            "capitalise_headers": false,
+            "capitalise_buttons": false,
+            "show_review_title": false,
+            "default_sort": "date_desc"
           }
         },
-        "ca4ad37f-e3ef-475a-a58f-2ac7b0b379c8": {
-          "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "ebf91566-02c9-4abd-b123-710e6e2ebc26": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
-            "product": "{{product}}"
           }
         }
       },
       "block_order": [
-        "85430f77-71f3-4f1f-bbca-84b51092df46",
-        "ca4ad37f-e3ef-475a-a58f-2ac7b0b379c8"
+        "3132ea0d-1cbe-43bb-a80b-ce2e2b956f1e",
+        "ebf91566-02c9-4abd-b123-710e6e2ebc26"
       ],
       "settings": {
         "include_margins": false
