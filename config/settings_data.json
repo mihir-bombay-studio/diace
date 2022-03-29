@@ -6,6 +6,7 @@
     "container_width": "1246px",
     "container_padding_tablet": "40px",
     "social_facebook_link": "https:\/\/www.facebook.com\/diace.eu",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/diabetesaccessoires\/_shop\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/diace.eu\/",
     "favicon": "shopify:\/\/shop_images\/favicon_1.png",
     "vendor_image_1": "shopify:\/\/shop_images\/email-envelope-button-svgrepo-com.png",
@@ -180,7 +181,7 @@
     "blocks": {
       "10830403595879607806": {
         "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "url_key": "diace.be",
           "lang": "auto"
@@ -188,9 +189,9 @@
       },
       "15316669992541710076": {
         "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": false,
+        "disabled": true,
         "settings": {
-          "star": "#000",
+          "star": "#000000",
           "snippet_mode": "default",
           "text": "Reviews",
           "line_break": false,
