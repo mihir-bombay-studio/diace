@@ -11,49 +11,6 @@
         "cont_shopping_btn_txt": "Verder winkelen"
       }
     },
-    "1648559058b6dee59a": {
-      "type": "apps",
-      "disabled": true,
-      "blocks": {
-        "3132ea0d-1cbe-43bb-a80b-ce2e2b956f1e": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {
-            "star": "#ffc23b",
-            "review_type": "product_review",
-            "per_page": 8,
-            "primary_btn_bg_color": "#ffc23b",
-            "primary_btn_border_color": "#ffc23b",
-            "primary_btn_text_color": "#fff",
-            "secondary_btn_bg_color": "rgba(0,0,0,0)",
-            "secondary_btn_border_color": "#d9d9d9",
-            "secondary_btn_text_color": "#d9d9d9",
-            "border_color": "rgba(0,0,0,0.15)",
-            "heading_font": "helvetica_n4",
-            "enable_rich_snippets": true,
-            "show_location": true,
-            "show_dates": true,
-            "show_avatar": true,
-            "enable_replies": false,
-            "capitalise_headers": false,
-            "capitalise_buttons": false,
-            "show_review_title": false,
-            "default_sort": "date_desc"
-          }
-        },
-        "ebf91566-02c9-4abd-b123-710e6e2ebc26": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "3132ea0d-1cbe-43bb-a80b-ce2e2b956f1e",
-        "ebf91566-02c9-4abd-b123-710e6e2ebc26"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
     "1634189346f895f445": {
       "type": "related-products",
       "blocks": {
@@ -283,7 +240,6 @@
   },
   "order": [
     "1632117875e7ef7fbe",
-    "1648559058b6dee59a",
     "1634189346f895f445",
     "16336209926af228d4",
     "163362115027b57f6f",
