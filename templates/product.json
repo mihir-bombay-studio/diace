@@ -11,6 +11,30 @@
         "cont_shopping_btn_txt": "Verder winkelen"
       }
     },
+    "1648559058b6dee59a": {
+      "type": "apps",
+      "blocks": {
+        "85430f77-71f3-4f1f-bbca-84b51092df46": {
+          "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "ca4ad37f-e3ef-475a-a58f-2ac7b0b379c8": {
+          "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "85430f77-71f3-4f1f-bbca-84b51092df46",
+        "ca4ad37f-e3ef-475a-a58f-2ac7b0b379c8"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "1634189346f895f445": {
       "type": "related-products",
       "blocks": {
@@ -240,6 +264,7 @@
   },
   "order": [
     "1632117875e7ef7fbe",
+    "1648559058b6dee59a",
     "1634189346f895f445",
     "16336209926af228d4",
     "163362115027b57f6f",
