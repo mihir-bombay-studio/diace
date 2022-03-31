@@ -4,9 +4,30 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "164871331153b34785": {
+      "type": "artboard",
+      "blocks": {
+        "20ca84c5-c41e-48b0-827c-51d07c0b83a7": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Dreamteam_stefanie.png",
+            "heading": "Stefanie - director of today",
+            "Subtext": "",
+            "hero_text_link": "",
+            "hero_other_img_text": "get to know me"
+          }
+        }
+      },
+      "block_order": [
+        "20ca84c5-c41e-48b0-827c-51d07c0b83a7"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "164871331153b34785"
   ]
 }
