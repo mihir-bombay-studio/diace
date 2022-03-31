@@ -1,37 +1,37 @@
 {
   "sections": {
-    "1648654298164dc63a": {
+    "16487166114939f9a7": {
       "type": "image-with-text-new",
       "blocks": {
-        "16486542983c3ddd32-0": {
+        "1648716611451d6b26-0": {
           "type": "heading",
           "settings": {
-            "heading": "hI sUPERHELD, je hebt onze familiedag gevonden!"
+            "heading": "WHO IS NICK, THE DIRECTOR OF TOMORROW?"
           }
         },
-        "16486542983c3ddd32-1": {
+        "1648716611451d6b26-1": {
           "type": "text",
           "disabled": true,
           "settings": {
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
-        "16486542983c3ddd32-2": {
+        "1648716611451d6b26-2": {
           "type": "button",
           "settings": {
-            "button_label": "SCHRIJF JE HIER IN",
-            "button_link": "",
+            "button_label": "THE WHOLE DREAMTEAM",
+            "button_link": "https:\/\/diace.be\/pages\/een-kijkje-achter-de-schermen",
             "button-color": "yellow"
           }
         }
       },
       "block_order": [
-        "16486542983c3ddd32-0",
-        "16486542983c3ddd32-1",
-        "16486542983c3ddd32-2"
+        "1648716611451d6b26-0",
+        "1648716611451d6b26-1",
+        "1648716611451d6b26-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/FAMILIEDAG_DIACE_4.png",
+        "image": "shopify:\/\/shop_images\/Dreamteam_nick.png",
         "img_preference": "image second",
         "text_over_img": "",
         "padd-top": false
@@ -44,7 +44,7 @@
     }
   },
   "order": [
-    "1648654298164dc63a",
+    "16487166114939f9a7",
     "main"
   ]
 }
