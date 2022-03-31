@@ -285,7 +285,7 @@
           "type": "button",
           "settings": {
             "button_label": "MEET OUR DREAMTEAM",
-            "button_link": "shopify:\/\/pages\/een-kijkje-achter-de-schermen",
+            "button_link": "shopify:\/\/pages\/meet-our-dreamteam",
             "button-color": "yellow"
           }
         }
