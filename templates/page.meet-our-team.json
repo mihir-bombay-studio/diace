@@ -17,10 +17,65 @@
             "hero_text_link": "",
             "hero_other_img_text": "get to know me"
           }
+        },
+        "89789a19-bb83-43db-9149-660b22a6d3e4": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Dreamteam_nick.png",
+            "heading": "nick - director of tomorrow",
+            "Subtext": "",
+            "hero_text_link": "",
+            "hero_other_img_text": "get to know me"
+          }
+        },
+        "96478576-65be-4174-aa21-c8fa9e3335ac": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Dreamteam_laurien.png",
+            "heading": "laurien - product designer",
+            "Subtext": "",
+            "hero_text_link": "",
+            "hero_other_img_text": "get to know me"
+          }
+        },
+        "3882437b-f55a-4b78-845f-348063fc5086": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Dreamteam_talitha.png",
+            "heading": "talitha - content creator",
+            "Subtext": "",
+            "hero_text_link": "",
+            "hero_other_img_text": "get to know me"
+          }
+        },
+        "4b02fa17-4df5-4cd9-b8ef-8365d215f063": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Dreamteam_sara.png",
+            "heading": "sara - performance marketeer",
+            "Subtext": "",
+            "hero_text_link": "",
+            "hero_other_img_text": "get to know me"
+          }
+        },
+        "0edb17f3-7d46-45b4-931b-671c4d750b1b": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Dreamteam_stephanie.png",
+            "heading": "stephanie - Logistician",
+            "Subtext": "",
+            "hero_text_link": "",
+            "hero_other_img_text": "get to know me"
+          }
         }
       },
       "block_order": [
-        "20ca84c5-c41e-48b0-827c-51d07c0b83a7"
+        "20ca84c5-c41e-48b0-827c-51d07c0b83a7",
+        "89789a19-bb83-43db-9149-660b22a6d3e4",
+        "96478576-65be-4174-aa21-c8fa9e3335ac",
+        "3882437b-f55a-4b78-845f-348063fc5086",
+        "4b02fa17-4df5-4cd9-b8ef-8365d215f063",
+        "0edb17f3-7d46-45b4-931b-671c4d750b1b"
       ],
       "settings": {
       }
