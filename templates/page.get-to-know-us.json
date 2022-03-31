@@ -18,11 +18,10 @@
         },
         "164871603247e82987-2": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button-color": "grey"
+            "button_label": "MEET OUR DREAMTEAM",
+            "button_link": "https:\/\/diace.be\/pages\/een-kijkje-achter-de-schermen",
+            "button-color": "yellow"
           }
         }
       },
