@@ -284,8 +284,8 @@
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "LEES ONS VERHAAL",
-            "button_link": "shopify:\/\/blogs\/news\/het-verhaal-achter-diace",
+            "button_label": "MEET OUR DREAMTEAM",
+            "button_link": "shopify:\/\/pages\/blik-achter-de-schermen",
             "button-color": "yellow"
           }
         }
