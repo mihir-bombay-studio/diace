@@ -1,10 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-      }
-    },
     "1648716850b0a26850": {
       "type": "image-with-text-new",
       "blocks": {
@@ -41,10 +36,15 @@
         "text_over_img": "",
         "padd-top": false
       }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main",
-    "1648716850b0a26850"
+    "1648716850b0a26850",
+    "main"
   ]
 }
