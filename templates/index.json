@@ -40,7 +40,7 @@
           "settings": {
             "button_label": "ALLE CATEGORIEËN",
             "button_link": "shopify:\/\/collections",
-            "button-color": "yellow"
+            "button-color": "grey"
           }
         }
       },
@@ -110,7 +110,7 @@
           "settings": {
             "button_label": "LEES ONS VERHAAL",
             "button_link": "shopify:\/\/pages\/over-ons",
-            "button-color": "grey"
+            "button-color": "yellow"
           }
         }
       },
