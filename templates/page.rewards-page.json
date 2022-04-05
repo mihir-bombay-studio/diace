@@ -13,10 +13,17 @@
           "settings": {
             "instance_placeholder_id": "141740"
           }
+        },
+        "8ad2818d-7301-4e5c-932c-d7d4b0f46f3c": {
+          "type": "shopify:\/\/apps\/yotpo-loyalty-rewards\/blocks\/rewards-module-app-block\/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
+          "settings": {
+            "instance_placeholder_id": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"141743\"><\/div>"
+          }
         }
       },
       "block_order": [
-        "b48dc111-ac02-40e7-a5bc-f022c77cd91c"
+        "b48dc111-ac02-40e7-a5bc-f022c77cd91c",
+        "8ad2818d-7301-4e5c-932c-d7d4b0f46f3c"
       ],
       "settings": {
         "include_margins": false
