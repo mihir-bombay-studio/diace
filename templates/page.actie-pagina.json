@@ -37,7 +37,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Hypo-pot.png",
         "img_preference": "image second",
-        "text_over_img": "Paasactie",
+        "text_over_img": "",
         "padd-top": false
       }
     }
