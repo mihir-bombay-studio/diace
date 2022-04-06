@@ -5,31 +5,45 @@
       "settings": {
       }
     },
-    "1649243693cbb052c3": {
-      "type": "collection-list",
+    "1649243845a691f801": {
+      "type": "image-with-text-new",
       "blocks": {
-        "1649243693b69d8761-0": {
-          "type": "featured_collection",
+        "16492438459dee8ac6-0": {
+          "type": "heading",
           "settings": {
-            "collection": "acties"
+            "heading": "paasactie 🐣"
+          }
+        },
+        "16492438459dee8ac6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Plaats een product in je winkelmandje, klik op het konijn en zo kan je genieten van je gratis product.<\/p>"
+          }
+        },
+        "16492438459dee8ac6-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "KIJK PRODUCT",
+            "button_link": "shopify:\/\/products\/paasverrassing",
+            "button-color": "grey"
           }
         }
       },
       "block_order": [
-        "1649243693b69d8761-0"
+        "16492438459dee8ac6-0",
+        "16492438459dee8ac6-1",
+        "16492438459dee8ac6-2"
       ],
       "settings": {
-        "title": "Collections",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": true
+        "image": "shopify:\/\/shop_images\/Hypo-pot.png",
+        "img_preference": "image second",
+        "text_over_img": "Paasactie",
+        "padd-top": false
       }
     }
   },
   "order": [
     "main",
-    "1649243693cbb052c3"
+    "1649243845a691f801"
   ]
 }
