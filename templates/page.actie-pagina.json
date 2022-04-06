@@ -5,41 +5,31 @@
       "settings": {
       }
     },
-    "164924348845296c72": {
-      "type": "product-collection",
-      "settings": {
-        "featured_collection": "acties",
-        "hover_text": "KOPEN"
-      }
-    },
-    "1649243521887068de": {
-      "type": "related-products",
+    "1649243693cbb052c3": {
+      "type": "collection-list",
       "blocks": {
-        "9fd7f7da-19fc-476b-bd15-f5414c376ba4": {
-          "type": "button",
+        "1649243693b69d8761-0": {
+          "type": "featured_collection",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button-color": "grey"
+            "collection": "acties"
           }
         }
       },
       "block_order": [
-        "9fd7f7da-19fc-476b-bd15-f5414c376ba4"
+        "1649243693b69d8761-0"
       ],
       "settings": {
-        "featured_collection_title": "",
-        "featured_collection_desc": "",
-        "new_featured_collection": "acties",
-        "hover_text": "KOPEN",
-        "more_colors_text": "Meer kleuren beschikbaar",
-        "marg_top": "medium"
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
       }
     }
   },
   "order": [
     "main",
-    "164924348845296c72",
-    "1649243521887068de"
+    "1649243693cbb052c3"
   ]
 }
