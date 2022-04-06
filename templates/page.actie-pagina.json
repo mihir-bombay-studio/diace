@@ -4,9 +4,32 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "164924311075d03f9b": {
+      "type": "collection-list",
+      "blocks": {
+        "1649243110dec33bc3-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "acties"
+          }
+        }
+      },
+      "block_order": [
+        "1649243110dec33bc3-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "164924311075d03f9b"
   ]
 }
