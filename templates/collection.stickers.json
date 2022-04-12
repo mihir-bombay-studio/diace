@@ -25,6 +25,20 @@
     "16330268764c434e3c": {
       "type": "collection-filter",
       "blocks": {
+        "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf": {
+          "type": "button",
+          "settings": {
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "6d09e288-9a07-4cbb-90e8-1b92a9489b59": {
+          "type": "price_filter",
+          "settings": {
+            "show_price_filter": true,
+            "show_price_filter_heading": "PRIJS"
+          }
+        },
         "021362b9-6d49-494f-94d6-11f67cc03515": {
           "type": "type_filter",
           "settings": {
@@ -102,24 +116,11 @@
           "settings": {
             "type": "Glucomen Meter"
           }
-        },
-        "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf": {
-          "type": "button",
-          "settings": {
-            "button_label": "ALLE CATEGORIEËN",
-            "button_link": "shopify:\/\/collections"
-          }
-        },
-        "6d09e288-9a07-4cbb-90e8-1b92a9489b59": {
-          "type": "price_filter",
-          "disabled": true,
-          "settings": {
-            "show_price_filter": true,
-            "show_price_filter_heading": "PRIJS"
-          }
         }
       },
       "block_order": [
+        "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf",
+        "6d09e288-9a07-4cbb-90e8-1b92a9489b59",
         "021362b9-6d49-494f-94d6-11f67cc03515",
         "8c953991-51d0-49e6-a5d2-7ecd29e75cf3",
         "fd088983-7b93-4de8-850e-cebceac9ce6b",
@@ -132,9 +133,7 @@
         "4cc4d3d1-d18e-4c1e-8afe-05d034e1ef06",
         "b8121208-c5b3-4ed2-8fcc-57c1ea7d52f1",
         "8487da3d-6e7a-4a54-b274-eabf35e89532",
-        "d39e44d6-6045-41e7-94f7-031616a89232",
-        "f4cc7d0d-a19f-4842-a93c-c0d424a58cdf",
-        "6d09e288-9a07-4cbb-90e8-1b92a9489b59"
+        "d39e44d6-6045-41e7-94f7-031616a89232"
       ],
       "settings": {
         "enable_filtering": true,
