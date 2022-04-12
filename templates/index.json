@@ -1,5 +1,42 @@
 {
   "sections": {
+    "1649760693ac3805f4": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "1649760693c3ffb2fa-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "VIND DE PAASEIEREN EN KRIJG EEN SUPRISE! 🐣",
+            "heading_size": "small"
+          }
+        },
+        "1649760693c3ffb2fa-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Er zijn verschillende <strong>paaseitjes <\/strong>verstopt op onze website. Tussen de paaseitjes zit een<strong> konijn<\/strong> verstopt die al onze eitjes wilt stelen. Kan jij het konijn vinden dan win je een <strong>gratis product<\/strong>! Veel succes. 🥚🥚🥚<\/p>"
+          }
+        },
+        "1649760693c3ffb2fa-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1649760693c3ffb2fa-0",
+        "1649760693c3ffb2fa-1",
+        "1649760693c3ffb2fa-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "16316849519d264fc8": {
       "type": "hero-new",
       "blocks": {
@@ -414,6 +451,7 @@
     }
   },
   "order": [
+    "1649760693ac3805f4",
     "16316849519d264fc8",
     "image_banner",
     "image_with_text",
