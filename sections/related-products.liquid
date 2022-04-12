@@ -44,8 +44,8 @@
 
         </div>          
         {% else %}
-        {% for variant in product.variants limit:1%}
-        {%- for option in product.options_with_values limit: 2 -%}
+        {% for variant in product.variants limit: 2 %}
+        {%- for option in product.options_with_values limit: 1 -%}
         <div class="product-color">
           <span>{{option.name}}: </span>
           <span>
