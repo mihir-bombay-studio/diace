@@ -44,19 +44,17 @@
 
         </div>          
         {% else %}
-        {% for variant in product.variants limit: 3 %}
-        {%- for option in product.options_with_values limit: 3 -%}
-        <div class="product-color">
-          <span>{{option.name}}: </span>
-          <span>
-            {{variant.title}}
-          </span>
-        </div>
-        {% endfor %}
-        {% endfor %}
-        <div class="other-available-colors">
-          <a class="featured-product-link" href="{{product.url}}">{{ section.settings.more_colors_text }}</a>
-        </div>
+          {% for variant in product.variants limit: 1 %}
+            {%- for option in product.options_with_values limit: 1 -%}
+            <div class="product-color">
+              <span>{{option.name}}: </span>
+              <span>
+                {{variant.title}}
+              </span>
+            </div>
+            {% endfor %}
+          {% endfor %}
+    
         {% endif %}
       </div>
     </div>
