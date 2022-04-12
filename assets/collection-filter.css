@@ -651,6 +651,7 @@ background-color : #FEC23B;
     z-index: 12;
     border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, .1);
   }
   .collection-filter-left{
     position: fixed;
