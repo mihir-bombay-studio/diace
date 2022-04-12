@@ -488,6 +488,7 @@ a.active-facets__button {
 .filter-tags{
   max-height : 500px;
   overflow-y : auto;
+  display: none;
 }
 
 
