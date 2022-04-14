@@ -242,7 +242,7 @@ input::-webkit-slider-thumb {
   height: 8px;
   -moz-border-radius: 7.5px;
   -webkit-border-radius: 7.5px;
-  margin-right: 4px;
+  margin-right: 10px;
   border-radius: 7.5px;
   background-color: #FEC23B;
   border: 1px solid #FEC23B;
