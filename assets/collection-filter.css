@@ -499,6 +499,13 @@ a.active-facets__button {
 	display: block;
 }
 
+.collection-tags.curr-tag {
+	max-height: none;
+}
+
+.active-collection-tags .collection-tag {
+    margin-left: 0;
+}
 
 /* .other-variants .color_wrapper span:hover{
 background-color : #FEC23B;
