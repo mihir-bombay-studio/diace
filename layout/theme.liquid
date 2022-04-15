@@ -204,6 +204,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
   <body>
+<script>window.KlarnaThemeGlobals={};{%case template.name%} {%when"product"%} window.KlarnaThemeGlobals.data_purchase_amount={{product.first_available_variant.price}};window.KlarnaThemeGlobals.productVariants={{product.variants|json}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%when"cart"%} window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%endcase%}</script>
+
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMJQW8T"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
