@@ -47,13 +47,12 @@
     },
     "1633690490a978ff8a": {
       "type": "section-with-divider",
-      "disabled": true,
       "blocks": {
         "54a1ff4b-ada3-4b40-ace7-e62f17e5d006": {
           "type": "social",
           "settings": {
             "social_icon": "shopify:\/\/shop_images\/facebook-svgrepo-com.png",
-            "social_icon_link": ""
+            "social_icon_link": "https:\/\/diace.be\/blogs\/news\/paasbrunch"
           }
         },
         "6ac79c46-7615-492a-bc4b-200d90fba1a8": {
