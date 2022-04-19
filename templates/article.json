@@ -52,7 +52,7 @@
           "type": "social",
           "settings": {
             "social_icon": "shopify:\/\/shop_images\/facebook-svgrepo-com.png",
-            "social_icon_link": "https:\/\/diace.be\/blogs\/news\/paasbrunch"
+            "social_icon_link": ""
           }
         },
         "6ac79c46-7615-492a-bc4b-200d90fba1a8": {
@@ -95,9 +95,9 @@
         "share_heading": "Deel dit artikel",
         "previous_heading": "Vorig artikel",
         "next_heading": "Volgend artikel",
-        "share_link": "https:\/\/diace.be\/blogs\/news\/ik-ga-op-reis-en-ik-neem-mee",
+        "share_link": "",
         "share_title": "Premium bands",
-        "website_url": "https:\/\/diace-store.myshopify.com",
+        "website_url": "https:\/\/diace.be\/",
         "share_mail": ""
       }
     },
