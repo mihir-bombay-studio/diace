@@ -45,32 +45,32 @@
     "1632806201e2d1d8bf": {
       "type": "artboard",
       "blocks": {
+        "865b076a-8a80-419d-b6a9-0b98c777bc5c": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Image_2x_99f9033f-f4ad-42c9-8759-38adee431812.png",
+            "heading": "CONTENT CREATOR\/marketeer",
+            "Subtext": "full-time",
+            "hero_text_link": "https:\/\/diace-store.myshopify.com\/pages\/job",
+            "hero_other_img_text": "full-time"
+          }
+        },
         "c6d65c6d-50d1-44e2-bf2e-97c430009955": {
           "type": "artboard",
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/art-image.png",
             "heading": "DIGITAL MARKETEER",
-            "Subtext": "internship",
+            "Subtext": "stage",
             "hero_text_link": "https:\/\/diace-store.myshopify.com\/pages\/job-digital-marketing-stage",
             "hero_other_img_text": "internship"
-          }
-        },
-        "865b076a-8a80-419d-b6a9-0b98c777bc5c": {
-          "type": "artboard",
-          "settings": {
-            "artphoto": "shopify:\/\/shop_images\/Image_2x_99f9033f-f4ad-42c9-8759-38adee431812.png",
-            "heading": "DIGITAL MARKETEER",
-            "Subtext": "full-time",
-            "hero_text_link": "https:\/\/diace-store.myshopify.com\/pages\/job",
-            "hero_other_img_text": "full-time"
           }
         },
         "415aa432-b8b8-45c5-bfed-7e374ac74870": {
           "type": "artboard",
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/Image_2x_9ed6b00b-b1de-4c5d-8a76-df75462c6527.png",
-            "heading": "CONTENT MARKETEER",
-            "Subtext": "internship",
+            "heading": "CONTENT MARKETEER\/creator",
+            "Subtext": "stage",
             "hero_text_link": "",
             "hero_other_img_text": "internship"
           }
@@ -79,8 +79,8 @@
           "type": "artboard",
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/Image_2x_91f667a0-f283-4972-8006-c2a0866992ec.png",
-            "heading": "VIDEO MARKETEER",
-            "Subtext": "internship",
+            "heading": "logistiek",
+            "Subtext": "stage",
             "hero_text_link": "",
             "hero_other_img_text": "internship"
           }
@@ -90,7 +90,7 @@
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/Image_2x_6abba74b-24e0-4416-bbcc-202e3aefb47c.png",
             "heading": "PRODUCT DESIGNER",
-            "Subtext": "internship",
+            "Subtext": "stage",
             "hero_text_link": "",
             "hero_other_img_text": "internship"
           }
@@ -100,15 +100,15 @@
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/Image_2x_5d1578ef-855e-4149-884e-d15e1a10bd35.png",
             "heading": "OPEN APPLICATION",
-            "Subtext": "E-mail us",
+            "Subtext": "verras ons",
             "hero_text_link": "mailto:info@diace.be",
-            "hero_other_img_text": "E-MAIL US"
+            "hero_other_img_text": "MAIL ONS"
           }
         }
       },
       "block_order": [
-        "c6d65c6d-50d1-44e2-bf2e-97c430009955",
         "865b076a-8a80-419d-b6a9-0b98c777bc5c",
+        "c6d65c6d-50d1-44e2-bf2e-97c430009955",
         "415aa432-b8b8-45c5-bfed-7e374ac74870",
         "4bc49469-1aba-4cbf-8f2a-f6508e4a11b1",
         "a0579324-9279-4c08-a13b-775c024c681f",
