@@ -61,7 +61,7 @@
             "artphoto": "shopify:\/\/shop_images\/art-image.png",
             "heading": "DIGITAL MARKETEER",
             "Subtext": "stage",
-            "hero_text_link": "https:\/\/diace-store.myshopify.com\/pages\/job-digital-marketing-stage",
+            "hero_text_link": "shopify:\/\/pages\/job-digital-marketing-stage",
             "hero_other_img_text": "internship"
           }
         },
@@ -91,7 +91,7 @@
             "artphoto": "shopify:\/\/shop_images\/Image_2x_6abba74b-24e0-4416-bbcc-202e3aefb47c.png",
             "heading": "PRODUCT DESIGNER",
             "Subtext": "stage",
-            "hero_text_link": "",
+            "hero_text_link": "shopify:\/\/pages\/job-product-desginer-stage",
             "hero_other_img_text": "internship"
           }
         },
