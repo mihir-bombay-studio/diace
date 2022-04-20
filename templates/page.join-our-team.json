@@ -153,12 +153,25 @@
         "text_over_img": "NICK & STEFANIE",
         "padd-top": false
       }
+    },
+    "1650461131a1452176": {
+      "type": "section-with-divider",
+      "settings": {
+        "share_heading": "Deel onze vacatures.",
+        "previous_heading": "",
+        "next_heading": "",
+        "share_link": "shopify:\/\/pages\/join-our-team",
+        "share_title": "",
+        "website_url": "shopify:\/\/pages\/join-our-team",
+        "share_mail": ""
+      }
     }
   },
   "order": [
     "main",
     "1632806194415e12e9",
     "1632806201e2d1d8bf",
-    "1632806816259f14f2"
+    "1632806816259f14f2",
+    "1650461131a1452176"
   ]
 }
