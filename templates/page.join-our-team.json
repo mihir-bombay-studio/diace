@@ -61,7 +61,7 @@
             "artphoto": "shopify:\/\/shop_images\/art-image.png",
             "heading": "DIGITAL MARKETEER",
             "Subtext": "stage",
-            "hero_text_link": "https:\/\/diace.be\/pages\/job-digital-marketing-stage",
+            "hero_text_link": "shopify:\/\/pages\/job-digital-marketing-stage",
             "hero_other_img_text": "stage"
           }
         },
@@ -81,7 +81,7 @@
             "artphoto": "shopify:\/\/shop_images\/Image_2x_99f9033f-f4ad-42c9-8759-38adee431812.png",
             "heading": "logistiek",
             "Subtext": "stage",
-            "hero_text_link": "https:\/\/diace.be\/pages\/logistiek",
+            "hero_text_link": "shopify:\/\/pages\/logistiek",
             "hero_other_img_text": "stage"
           }
         },
@@ -91,7 +91,7 @@
             "artphoto": "shopify:\/\/shop_images\/Image_2x_6abba74b-24e0-4416-bbcc-202e3aefb47c.png",
             "heading": "PRODUCT DESIGNER",
             "Subtext": "stage",
-            "hero_text_link": "https:\/\/diace.be\/pages\/jobs-product-desginer",
+            "hero_text_link": "shopify:\/\/pages\/jobs-product-desginer",
             "hero_other_img_text": "stage"
           }
         },
