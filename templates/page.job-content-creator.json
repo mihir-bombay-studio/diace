@@ -39,13 +39,14 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
     "16506301881d5eec43": {
       "type": "text-with-background",
       "settings": {
-        "text": "<body>Diacé familiedag<\/body>",
+        "text": "Diacé familiedag",
         "description": "Wij nodigen jou en jouw gezelschap uit voor een leuke en interactieve dag, om nooit te vergeten. <br>\n\n<br><b>Wat mag je verwachten?<\/b><br>\n\n<br>Voor de kinderen voorzien wij leuke spelletjes en springkastelen. Onder toezicht van vrijwilligers en medewerkers, kunnen zij hier heel de dag ravotten. Wij nemen graag de zorgen even van je over.<br>\n\n<br>De ouders worden meegenomen in een middag vol inspirerende sprekers, leuke tips en tricks en innovatie rond diabetes.<br>\n\n<br>Doorheen de dag bieden we diabetesvriendelijke hapjes en drankjes aan. We sluiten de dag af met lekkere en verse broodjes.<br>\n\n<br><b>What’s in it for you?<\/b><br>\n\n<br>Jou helpen om jouw diabetes gemakkelijker te maken. En ja, het kan gemakkelijker.\nJe kent het wel op een wilde zomerdag en die sensor is los… . Dit valt te vermijden met de leuke sensorhouders of fixtapes. Of wil je jouw sensor pimpen? Met de stickers maak je jouw sensor 10x zo leuk en unieker. Glitter, luipaard, artistiek of gamelover? Jouw favoriet bestaat in geuren en kleuren.<br>\n\n<br>Op deze dag leer je al de Diacé producten kennen aan ons standje!<br>\n\n<br><b>Wanneer?<\/b><br>\n\n<br>Wij verwachten jou op 4 juni om 14:00. Je vindt ons op het adres: Duwijckstraat 17 2500 Lier. Er is een gratis auto- en fietsenparking voorzien op ons adres.<br>\n\n<br><b>Wat moet jij doen?<\/b><br>\n\n<br>Je moet je enkel even inschrijven, want de inkom is volledig GRATIS.\nInschrijven doe je via de knop hieronder.<br>\n\n<br>https:\/\/forms.gle\/DvceH6LrMDMEC5Yb6<br>",
         "show_btn": false,
         "link_text": "Terug",
