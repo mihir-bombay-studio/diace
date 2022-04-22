@@ -24,9 +24,9 @@
         "1632806194415e12e9-2": {
           "type": "button",
           "settings": {
-            "button_label": "BEKIJK VACATURES",
+            "button_label": "CHECK ONZE VACATURES ONDERAAN",
             "button_link": "https:\/\/diace-store.myshopify.com\/pages\/join-our-team",
-            "button-color": "grey"
+            "button-color": "yellow"
           }
         }
       },
