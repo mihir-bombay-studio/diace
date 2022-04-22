@@ -334,8 +334,8 @@
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "MEET OUR DREAMTEAM",
-            "button_link": "shopify:\/\/pages\/meet-our-dreamteam",
+            "button_label": "JOIN OUR TEAM",
+            "button_link": "shopify:\/\/pages\/join-our-team",
             "button-color": "yellow"
           }
         }
