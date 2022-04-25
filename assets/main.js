@@ -54,7 +54,8 @@ $('.collection-tag').click(function() {
     lastClass = arr[arr.length - 2];
   }
   
-  $(`.${lastClass}`).removeClass("underline-selected");
+  $('.collection-tag').removeClass("underline-selected");
+  $(`.${lastClass}`).toggleClass("underline-selected");
   console.log(lastClass);
 //   $(this).toggleClass("underline-selected");
   
