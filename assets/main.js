@@ -47,18 +47,23 @@ for (i = 0; i < acc.length; i++) {
 
 $('.collection-tag').click(function() {
   $('.nocurr-tag').removeClass("underline-selected");
+  
   var lastClass = $(this).attr('class').split(' ').pop();
   if(lastClass == "underline-selected" ){
     let arr = $(this).attr('class').split(' ');
     lastClass = arr[arr.length - 2];
   }
-  $(`.${lastClass}`).toggleClass("underline-selected");
+  
+  $(`.${lastClass}`).removeClass("underline-selected");
   console.log(lastClass);
 //   $(this).toggleClass("underline-selected");
+  
   var filter_tags = [];
+  
   $('.collection-tag.underline-selected').each(function() {
     filter_tags.push($(this).data('tfilter'));
   });
+  
   var filters_length = $('.collection-tag.underline-selected').length;
   if(filters_length > 0) {
     $('.product-collection-card').addClass('no-disp');
