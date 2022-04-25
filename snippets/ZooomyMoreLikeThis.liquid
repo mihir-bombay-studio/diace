@@ -51,7 +51,7 @@
 {% if zooomy__related__fields['zooomy_relate_by'] == "product_type" %}
 <div id="zooomy-related-productss" class="zooomyrp-carousel">
 {% assign protype = product.type %}
-{% paginate collections.all.products by 100 %}
+{% paginate collections.all.products by 1000 %}
 {% for relatedproduct in collections.all.products %}
 {% if relatedproduct.type == protype %}
 {% unless relatedproduct.id == product.id%}
