@@ -1,22 +1,12 @@
 {{ 'text-with-background.css' | asset_url | stylesheet_tag }}
 
+
 <div class="text-background">
   <div class=" back-btn {% if section.settings.show_btn == false %} no-disp {% endif %} ">
     <a class="" href="{{section.settings.link_url}}">{% include "back-icon"%} {{section.settings.link_text}}</a> 
   </div>
   <div class="heading-container">
     {{section.settings.text}}
-{,
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-    text-align: left;
-    font: 700 32px/48px Myriad Pro;
-    letter-spacing: 0px;
-    color: #000;
-    text-transform: uppercase;
-}
   </div> 
 </div>
 <div class="container content-container {% if section.settings.btm_padding %} btm_padding {% endif %}">
