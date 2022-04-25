@@ -39,10 +39,23 @@
         "link_text": "Verder lezen",
         "load_more_link_text": "LOAD MORE"
       }
+    },
+    "165089128947bd5f72": {
+      "type": "section-with-divider",
+      "settings": {
+        "share_heading": "Deel onze blogs",
+        "previous_heading": "",
+        "next_heading": "",
+        "share_link": "https:\/\/diace.be\/blogs\/news",
+        "share_title": "",
+        "website_url": "https:\/\/diace.be\/blogs\/news",
+        "share_mail": ""
+      }
     }
   },
   "order": [
     "main",
-    "16326405238bea2bac"
+    "16326405238bea2bac",
+    "165089128947bd5f72"
   ]
 }
