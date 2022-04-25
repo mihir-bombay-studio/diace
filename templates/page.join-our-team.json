@@ -8,6 +8,7 @@
     },
     "1632806194415e12e9": {
       "type": "image-with-text-new",
+      "disabled": true,
       "blocks": {
         "1632806194415e12e9-0": {
           "type": "heading",
@@ -40,6 +41,42 @@
         "img_preference": "image second",
         "text_over_img": "",
         "padd-top": true
+      }
+    },
+    "16508947665048bbc7": {
+      "type": "rich-text",
+      "blocks": {
+        "1650894766e15fb249-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "1650894766e15fb249-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "JOIN OUR TEAM",
+            "heading_size": "small"
+          }
+        },
+        "1650894766e15fb249-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Diacé is the online place-to-go voor alles wat met diabetes accessoires te maken heeft. Het is onze missie om het leven van mensen met diabetes aangenamer te maken en met elkaar in contact te brengen via producten, media en evenementen.<\/p><p><\/p><p> Als jong bedrijf met internationale ambities zijn wij steeds op zoek naar versterking. Ben je klaar voor een nieuw avontuur? Dan ben je misschien wel dé persoon die wij zoeken! Denk je dat je ons team kan versterken, maar staat jouw profiel hier niet bij? Grijp dan snel je kans en stuur ons een e-mail naar info@diace.be met meer informatie over jezelf. Overtuig ons en wie weet maak je binnenkort deel uit van het Diacé Kickass Team!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1650894766e15fb249-2",
+        "1650894766e15fb249-0",
+        "1650894766e15fb249-1"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true
       }
     },
     "1632806201e2d1d8bf": {
@@ -171,6 +208,7 @@
   "order": [
     "main",
     "1632806194415e12e9",
+    "16508947665048bbc7",
     "1632806201e2d1d8bf",
     "1632806816259f14f2",
     "1650461131a1452176"
