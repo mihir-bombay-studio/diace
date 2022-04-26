@@ -11,30 +11,6 @@
         "cont_shopping_btn_txt": "Verder winkelen"
       }
     },
-    "1634189346f895f445": {
-      "type": "related-products",
-      "blocks": {
-        "2610b275-4898-4dc1-b9d8-7dbfb3093dbf": {
-          "type": "button",
-          "settings": {
-            "button_label": "ALLE CATEGORIEËN",
-            "button_link": "shopify:\/\/collections",
-            "button-color": "yellow"
-          }
-        }
-      },
-      "block_order": [
-        "2610b275-4898-4dc1-b9d8-7dbfb3093dbf"
-      ],
-      "settings": {
-        "featured_collection_title": "nieuwe producten",
-        "featured_collection_desc": "Met Diacé zijn er volop bezig met de ontwikkeling van eigen producten, ontdek onze laatste innovaties:",
-        "new_featured_collection": "opbergen",
-        "hover_text": "KOPEN",
-        "more_colors_text": "Meer kleuren beschikbaar",
-        "marg_top": "medium"
-      }
-    },
     "16336209926af228d4": {
       "type": "our-values",
       "blocks": {
@@ -282,7 +258,6 @@
   },
   "order": [
     "1632117875e7ef7fbe",
-    "1634189346f895f445",
     "16336209926af228d4",
     "163362115027b57f6f",
     "1633621187288eeba0",
