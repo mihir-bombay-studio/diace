@@ -11,6 +11,17 @@
         "cont_shopping_btn_txt": "Verder winkelen"
       }
     },
+    "16509662653faa1f2d": {
+      "type": "related-products",
+      "settings": {
+        "featured_collection_title": "",
+        "featured_collection_desc": "",
+        "new_featured_collection": "",
+        "hover_text": "KOPEN",
+        "more_colors_text": "Meer kleuren beschikbaar",
+        "marg_top": "medium"
+      }
+    },
     "16336209926af228d4": {
       "type": "our-values",
       "blocks": {
@@ -258,6 +269,7 @@
   },
   "order": [
     "1632117875e7ef7fbe",
+    "16509662653faa1f2d",
     "16336209926af228d4",
     "163362115027b57f6f",
     "1633621187288eeba0",
