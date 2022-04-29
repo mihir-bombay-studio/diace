@@ -8,6 +8,7 @@
     },
     "1650459071b619d38d": {
       "type": "text-with-background",
+      "disabled": true,
       "settings": {
         "text": "CONTENT CREATOR\/marketeer",
         "description": "Diacé is the online place-to-go voor alles wat me diabetes accessoires te maken heft.\nJe kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 750 producten brengen wij kleur in het leven met diabetes, op een leuke en aangename manier.\nAls jong bedrijf met internationale ambities zijn wij op zoek naar versterking. Ben je klaar voor een zot avontuur? Dan ben je misschien wel de persoon die wij zoeken!\n<br><br>\n<strong>FUNCTIEOMSCHRIJVING<\/strong>\n<br><br>\nSocial-, SEA- en mailcampagnes opzetten kan je als geen ander en je voelt je als een vis in het water wanneer je in de (Google) Analytics duikt om campagnes steeds performanter te maken. Je switcht vlot van SEO naar social naar mailcampagnes en combineert dit met het nodige strategische &amp; analytische denkvermogen om doelstellingen om te zetten in resultaten. LinkedIn, Facebook, Instagram, YouTube, … hebben ondertussen geen geheimen meer voor jou.\nBruis je van enthousiasme en nieuwe ideeën? Ben je een echte teamspeler en niet bang andere talen te spreken? Heb je een beetje kennis over Google ads, analytics en weet je wat een conversie inhoudt? Dan nemen wij je graag digitaal mee op reis! \n<br><br>\n<strong>PROFIEL<\/strong>\n<br><br>Je bruist van enthousiasme, passie en nieuwe ideeën.<br>Je weet van aanpakken, out-of-the-box denken en gaat er met volle goesting tegenaan.<br> Je vindt het niet erg om vlogs te maken en video's te maken waar je zelf in voorkomt. <br>Je hebt een beetje ervaring in het nmaken van sociale media posts. <br> Je kan je goed uitdrukken in het Nederlands en Engels en hebt geen bang voor andere talen. <br> Je bent een krak in foutloos schrijven en hebt een leuke schrijfstijl. <br><br><strong>AANBOD<\/strong>\n<br><br>Een leuke plek waar je creativiteit de loop kan gaan. Hier staat alles voor je klaar om het zo comfortabel mogelijk te maken. Toffe collega’s en veel koffie om wakker te blijven!",
@@ -15,6 +16,80 @@
         "link_text": "Terug",
         "link_url": "shopify:\/\/pages\/join-our-team",
         "btm_padding": true
+      }
+    },
+    "16512218897ab5faa2": {
+      "type": "rich-text",
+      "blocks": {
+        "1651221889fa1e8407-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DIGITAL MARKETEER",
+            "heading_size": "small"
+          }
+        },
+        "1651221889fa1e8407-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Diacé is the online place-to-go voor alles wat me diabetes accessoires te maken heft.<br\/>Je kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 750 producten brengen wij kleur in het leven met diabetes, op een leuke en aangename manier.<br\/>Als jong bedrijf met internationale ambities zijn wij op zoek naar versterking. Ben je klaar voor een zot avontuur? Dan ben je misschien wel de persoon die wij zoeken!<br\/><br\/><br\/><br\/><strong>FUNCTIEOMSCHRIJVING<\/strong><br\/><br\/><br\/><br\/>Social-, SEA- en mailcampagnes opzetten kan je als geen ander en je voelt je als een vis in het water wanneer je in de (Google) Analytics duikt om campagnes steeds performanter te maken. Je switcht vlot van SEO naar social naar mailcampagnes en combineert dit met het nodige strategische & analytische denkvermogen om doelstellingen om te zetten in resultaten. LinkedIn, Facebook, Instagram, YouTube, … hebben ondertussen geen geheimen meer voor jou.<br\/>Bruis je van enthousiasme en nieuwe ideeën? Ben je een echte teamspeler en niet bang andere talen te spreken? Heb je een beetje kennis over Google ads, analytics en weet je wat een conversie inhoudt? Dan nemen wij je graag digitaal mee op reis! <br\/><br\/><br\/><br\/><strong>PROFIEL<\/strong><br\/><br\/><br\/>Je bruist van enthousiasme, passie en nieuwe ideeën.<br\/>Je weet van aanpakken, out-of-the-box denken en gaat er met volle goesting tegenaan.<br\/> Je vindt het niet erg om vlogs te maken en video's te maken waar je zelf in voorkomt. <br\/>Je hebt een beetje ervaring in het nmaken van sociale media posts. <br\/> Je kan je goed uitdrukken in het Nederlands en Engels en hebt geen bang voor andere talen. <br\/> Je bent een krak in foutloos schrijven en hebt een leuke schrijfstijl. <br\/><br\/><strong>AANBOD<\/strong><br\/><br\/><br\/>Een leuke plek waar je creativiteit de loop kan gaan. Hier staat alles voor je klaar om het zo comfortabel mogelijk te maken. Toffe collega’s en veel koffie om wakker te blijven!<\/p>"
+          }
+        },
+        "1651221889fa1e8407-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1651221889fa1e8407-0",
+        "1651221889fa1e8407-1",
+        "1651221889fa1e8407-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true
+      }
+    },
+    "1651221952a4de4042": {
+      "type": "rich-text",
+      "blocks": {
+        "165122195231f45f12-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
+        "165122195231f45f12-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Diacé is the online place-to-go voor alles wat me diabetes accessoires te maken heft.<br\/>Je kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 750 producten brengen wij kleur in het leven met diabetes, op een leuke en aangename manier.<br\/>Als jong bedrijf met internationale ambities zijn wij op zoek naar versterking. Ben je klaar voor een zot avontuur? Dan ben je misschien wel de persoon die wij zoeken!<br\/><br\/><strong>FUNCTIEOMSCHRIJVING<\/strong><br\/><br\/>Social-, SEA- en mailcampagnes opzetten kan je als geen ander en je voelt je als een vis in het water wanneer je in de (Google) Analytics duikt om campagnes steeds performanter te maken. Je switcht vlot van SEO naar social naar mailcampagnes en combineert dit met het nodige strategische & analytische denkvermogen om doelstellingen om te zetten in resultaten. LinkedIn, Facebook, Instagram, YouTube, … hebben ondertussen geen geheimen meer voor jou.<br\/>Bruis je van enthousiasme en nieuwe ideeën? Ben je een echte teamspeler en niet bang andere talen te spreken? Heb je een beetje kennis over Google ads, analytics en weet je wat een conversie inhoudt? Dan nemen wij je graag digitaal mee op reis! <br\/><br\/><strong>PROFIEL<br\/><\/strong><br\/>Je bruist van enthousiasme, passie en nieuwe ideeën.<br\/>Je weet van aanpakken, out-of-the-box denken en gaat er met volle goesting tegenaan.<br\/> Je vindt het niet erg om vlogs te maken en video's te maken waar je zelf in voorkomt. <br\/>Je hebt een beetje ervaring in het nmaken van sociale media posts. <br\/> Je kan je goed uitdrukken in het Nederlands en Engels en hebt geen bang voor andere talen. <br\/> Je bent een krak in foutloos schrijven en hebt een leuke schrijfstijl. <br\/><br\/><strong>AANBOD<\/strong><br\/><br\/>Een leuke plek waar je creativiteit de loop kan gaan. Hier staat alles voor je klaar om het zo comfortabel mogelijk te maken. Toffe collega’s en veel koffie om wakker te blijven!<\/p>"
+          }
+        },
+        "165122195231f45f12-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "165122195231f45f12-0",
+        "165122195231f45f12-1",
+        "165122195231f45f12-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
       }
     },
     "1650459486b45955e4": {
@@ -47,6 +122,8 @@
   "order": [
     "main",
     "1650459071b619d38d",
+    "16512218897ab5faa2",
+    "1651221952a4de4042",
     "1650459486b45955e4",
     "16504595071a4e4c0a"
   ]
