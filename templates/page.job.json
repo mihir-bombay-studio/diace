@@ -8,6 +8,7 @@
     },
     "16327568795ab9a08e": {
       "type": "text-with-background",
+      "disabled": true,
       "settings": {
         "text": "MODE - STAGE",
         "description": "Diacé is the online place-to-go voor alles wat met diabetes accessoires te maken heeft. Je kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 750 artikels brengen wij meer kleur in het leven met diabetes, op een leuke en aangename manier. Als jonge startup met internationale ambities zijn wij op zoek naar versterking. Ben jij klaar voor een nieuw avontuur? Dan ben jij misschien wel dé persoon die wij zoeken!\n<br><br>\n<strong>FUNCTIEOMSCHRIJVING<\/strong>\n<br><br>\nBen je helemaal verzot op het naaien, stikken en maken van nieuwe ontwerpen? Dan zoeken wij jou! Je komt in aanraking met verschillende stoffen, producten en ontwerpen, niets is hier te gek. Zin om je dagen te spenderen in ons naaiatelier en krijg je hier nog meer energie van? Je bent meer dan welkom!\nNaast het maken van onze producten, sta je ook in voor het maken van bestellingen. Zo zie je je zelfgemaakte product ook vertrekken naar onze klanten. Hoe cool is dat?\n<br><br>\n<strong>PROFIEL<\/strong>\n<br><br>Je bruist van enthousiasme, passie en nieuwe ideeën.<br>Je weet van aanpakken, out-of-the-box denken en gaat er met volle goesting tegenaan.<br> Je vindt het niet erg om mee orders in te pakken en te verzenden<br>Je hebt een beetje ervaring in het naaien, stikken en snijden van stof.<br><strong>AANBOD<\/strong>\n<br><br>Een leuke plek waar je creativiteit de loop kan gaan. Hier staat alles voor je klaar om het zo comfortabel mogelijk te maken. Toffe collega’s en veel koffie om wakker te blijven!",
@@ -15,6 +16,80 @@
         "link_text": "Terug",
         "link_url": "shopify:\/\/pages\/join-our-team",
         "btm_padding": false
+      }
+    },
+    "1651222167f3bd33f7": {
+      "type": "rich-text",
+      "blocks": {
+        "16512221674daf66ec-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "MODE",
+            "heading_size": "small"
+          }
+        },
+        "16512221674daf66ec-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "16512221674daf66ec-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16512221674daf66ec-0",
+        "16512221674daf66ec-1",
+        "16512221674daf66ec-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true
+      }
+    },
+    "1651222174360dfd0c": {
+      "type": "rich-text",
+      "blocks": {
+        "165122217431312c39-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
+        "165122217431312c39-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Diacé is the online place-to-go voor alles wat met diabetes accessoires te maken heeft. Je kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 750 artikels brengen wij meer kleur in het leven met diabetes, op een leuke en aangename manier. Als jonge startup met internationale ambities zijn wij op zoek naar versterking. Ben jij klaar voor een nieuw avontuur? Dan ben jij misschien wel dé persoon die wij zoeken!<br\/><br\/><strong>FUNCTIEOMSCHRIJVING<\/strong><br\/><br\/>Ben je helemaal verzot op het naaien, stikken en maken van nieuwe ontwerpen? Dan zoeken wij jou! Je komt in aanraking met verschillende stoffen, producten en ontwerpen, niets is hier te gek. Zin om je dagen te spenderen in ons naaiatelier en krijg je hier nog meer energie van? Je bent meer dan welkom!<br\/>Naast het maken van onze producten, sta je ook in voor het maken van bestellingen. Zo zie je je zelfgemaakte product ook vertrekken naar onze klanten. Hoe cool is dat?<br\/><br\/><strong>PROFIEL<\/strong><br\/><br\/>Je bruist van enthousiasme, passie en nieuwe ideeën.<br\/>Je weet van aanpakken, out-of-the-box denken en gaat er met volle goesting tegenaan.<br\/> Je vindt het niet erg om mee orders in te pakken en te verzenden<br\/>Je hebt een beetje ervaring in het naaien, stikken en snijden van stof.<\/p><p><br\/><strong>AANBOD<\/strong><br\/><br\/>Een leuke plek waar je creativiteit de loop kan gaan. Hier staat alles voor je klaar om het zo comfortabel mogelijk te maken. Toffe collega’s en veel koffie om wakker te blijven!<\/p>"
+          }
+        },
+        "165122217431312c39-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "165122217431312c39-0",
+        "165122217431312c39-1",
+        "165122217431312c39-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
       }
     },
     "1633675664df953849": {
@@ -83,6 +158,8 @@
   "order": [
     "main",
     "16327568795ab9a08e",
+    "1651222167f3bd33f7",
+    "1651222174360dfd0c",
     "1633675664df953849",
     "163368746876cc4524"
   ]
