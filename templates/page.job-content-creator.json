@@ -37,8 +37,83 @@
         "padd-top": false
       }
     },
+    "16512226321a0edc4c": {
+      "type": "rich-text",
+      "blocks": {
+        "16512226320c069032-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DIACE FAMILIEDAG",
+            "heading_size": "small"
+          }
+        },
+        "16512226320c069032-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "16512226320c069032-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16512226320c069032-0",
+        "16512226320c069032-1",
+        "16512226320c069032-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true
+      }
+    },
+    "165122264636b477ae": {
+      "type": "rich-text",
+      "blocks": {
+        "1651222646c9308938-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
+        "1651222646c9308938-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wij nodigen jou en jouw gezelschap uit voor een leuke en interactieve dag, om nooit te vergeten. <br\/><br\/><strong>Wat mag je verwachten?<\/strong><br\/><br\/>Voor de kinderen voorzien wij <strong>leuke spelletjes en springkastelen<\/strong>. Onder toezicht van vrijwilligers en medewerkers, kunnen zij hier heel de dag ravotten. Wij nemen graag de zorgen even van je over.<br\/><br\/>De ouders worden meegenomen in een middag vol inspirerende sprekers, leuke tips en tricks en innovatie rond diabetes.<br\/><br\/>Doorheen de dag bieden we <strong>diabetesvriendelijke hapjes<\/strong> en drankjes aan. We sluiten de dag af met <strong>lekkere en verse broodjes<\/strong>.<br\/><br\/><strong>What’s in it for you?<\/strong><br\/><br\/>Jou helpen om jouw diabetes gemakkelijker te maken. En ja, het kan gemakkelijker.<br\/>Je kent het wel op een wilde zomerdag en die sensor is los… . Dit valt te vermijden met de leuke <strong>sensorhouders of fixtapes<\/strong>. Of wil je jouw sensor pimpen? Met de <strong>stickers<\/strong> maak je jouw sensor 10x zo leuk en unieker. Glitter, luipaard, artistiek of gamelover? Jouw favoriet bestaat in geuren en kleuren.<br\/><br\/>Op deze dag leer je al de Diacé producten kennen aan ons standje!<br\/><br\/><strong>Wanneer?<\/strong><br\/><br\/>Wij verwachten jou op <strong>4 juni om 14:00<\/strong>. Je vindt ons op het adres: <strong>Duwijckstraat 17 2500 Lier<\/strong>. Er is een <strong>gratis auto- en fietsenparking<\/strong> voorzien op ons adres.<br\/><br\/><strong>Wat moet jij doen?<\/strong><br\/><br\/>Je moet je enkel even inschrijven, want de inkom is volledig <strong>GRATIS.<\/strong><br\/>Inschrijven doe je via de knop hieronder.<br\/><br\/><strong>https:\/\/forms.gle\/DvceH6LrMDMEC5Yb6<br\/><\/strong><\/p>"
+          }
+        },
+        "1651222646c9308938-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1651222646c9308938-0",
+        "1651222646c9308938-1",
+        "1651222646c9308938-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
@@ -57,6 +132,8 @@
   },
   "order": [
     "1648654298164dc63a",
+    "16512226321a0edc4c",
+    "165122264636b477ae",
     "main",
     "16506301881d5eec43"
   ]
