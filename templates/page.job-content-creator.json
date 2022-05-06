@@ -93,10 +93,9 @@
         },
         "1651222646c9308938-2": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "SCHRIJF JE HIER IN!",
+            "button_link": "https:\/\/forms.gle\/DvceH6LrMDMEC5Yb6",
             "button_style_secondary": false
           }
         }
