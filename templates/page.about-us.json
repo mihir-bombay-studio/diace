@@ -118,6 +118,7 @@
     },
     "1631792126f68d761a": {
       "type": "our-values",
+      "disabled": true,
       "blocks": {
         "dbfd94c7-fcff-4499-b7f3-60b30e006a14": {
           "type": "value",
