@@ -1,42 +1,5 @@
 {
   "sections": {
-    "1648717141a3ae084c": {
-      "type": "image-with-text-new",
-      "blocks": {
-        "164871714113090666-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "WHO IS STEPHANIE, OUR LOGISTICIAN?"
-          }
-        },
-        "164871714113090666-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "164871714113090666-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "MEET OUR DREAMTEAM",
-            "button_link": "https:\/\/diace.be\/pages\/een-kijkje-achter-de-schermen",
-            "button-color": "yellow"
-          }
-        }
-      },
-      "block_order": [
-        "164871714113090666-0",
-        "164871714113090666-1",
-        "164871714113090666-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Dreamteam_stephanie.png",
-        "img_preference": "image second",
-        "text_over_img": "",
-        "padd-top": false
-      }
-    },
     "16528629523b51a7d2": {
       "type": "rich-text",
       "blocks": {
@@ -72,12 +35,6 @@
       "settings": {
         "color_scheme": "accent-2",
         "full_width": true
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
       }
     },
     "165286329030095393": {
@@ -116,12 +73,55 @@
         "color_scheme": "background-1",
         "full_width": true
       }
+    },
+    "1648717141a3ae084c": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "164871714113090666-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "WHO IS STEPHANIE, OUR LOGISTICIAN?"
+          }
+        },
+        "164871714113090666-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "164871714113090666-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "MEET OUR DREAMTEAM",
+            "button_link": "https:\/\/diace.be\/pages\/een-kijkje-achter-de-schermen",
+            "button-color": "yellow"
+          }
+        }
+      },
+      "block_order": [
+        "164871714113090666-0",
+        "164871714113090666-1",
+        "164871714113090666-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_69.png",
+        "img_preference": "image second",
+        "text_over_img": "",
+        "padd-top": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
     }
   },
   "order": [
-    "1648717141a3ae084c",
     "16528629523b51a7d2",
-    "main",
-    "165286329030095393"
+    "165286329030095393",
+    "1648717141a3ae084c",
+    "main"
   ]
 }
