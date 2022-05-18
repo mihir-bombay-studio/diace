@@ -1,5 +1,79 @@
 {
   "sections": {
+    "16528652045c48e452": {
+      "type": "rich-text",
+      "blocks": {
+        "165286520445d06b4c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "MEET LAURIEN",
+            "heading_size": "small"
+          }
+        },
+        "165286520445d06b4c-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "165286520445d06b4c-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "165286520445d06b4c-0",
+        "165286520445d06b4c-1",
+        "165286520445d06b4c-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true
+      }
+    },
+    "165286521219d0b6ed": {
+      "type": "rich-text",
+      "blocks": {
+        "16528652124ae4792d-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
+        "16528652124ae4792d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "16528652124ae4792d-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16528652124ae4792d-0",
+        "16528652124ae4792d-1",
+        "16528652124ae4792d-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "1648716850b0a26850": {
       "type": "image-with-text-new",
       "blocks": {
@@ -31,7 +105,7 @@
         "1648716850b3ad6dda-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Dreamteam_laurien.png",
+        "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_73.png",
         "img_preference": "image second",
         "text_over_img": "",
         "padd-top": false
@@ -39,11 +113,14 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     }
   },
   "order": [
+    "16528652045c48e452",
+    "165286521219d0b6ed",
     "1648716850b0a26850",
     "main"
   ]
