@@ -37,14 +37,91 @@
         "padd-top": false
       }
     },
+    "16528629523b51a7d2": {
+      "type": "rich-text",
+      "blocks": {
+        "165286295230e6a112-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "MEET STEPHANIE",
+            "heading_size": "small"
+          }
+        },
+        "165286295230e6a112-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "165286295230e6a112-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "165286295230e6a112-0",
+        "165286295230e6a112-1",
+        "165286295230e6a112-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "165286329030095393": {
+      "type": "rich-text",
+      "blocks": {
+        "1652863290e08e5da7-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
+        "1652863290e08e5da7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1652863290e08e5da7-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1652863290e08e5da7-0",
+        "1652863290e08e5da7-1",
+        "1652863290e08e5da7-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
       }
     }
   },
   "order": [
     "1648717141a3ae084c",
-    "main"
+    "16528629523b51a7d2",
+    "main",
+    "165286329030095393"
   ]
 }
