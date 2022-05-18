@@ -1,12 +1,86 @@
 {
   "sections": {
+    "165286420184482c13": {
+      "type": "rich-text",
+      "blocks": {
+        "1652864201d3777520-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "MEET STEFANIE",
+            "heading_size": "small"
+          }
+        },
+        "1652864201d3777520-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1652864201d3777520-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1652864201d3777520-0",
+        "1652864201d3777520-1",
+        "1652864201d3777520-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true
+      }
+    },
+    "16528642063e44664c": {
+      "type": "rich-text",
+      "blocks": {
+        "1652864206c3978a87-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
+        "1652864206c3978a87-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1652864206c3978a87-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1652864206c3978a87-0",
+        "1652864206c3978a87-1",
+        "1652864206c3978a87-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "1648716437deeb88e8": {
       "type": "image-with-text-new",
       "blocks": {
         "16487164375eeebcf7-0": {
           "type": "heading",
           "settings": {
-            "heading": "WHO IS STEFANIE, OUR DIRECTOR OF TODAY?"
+            "heading": "WIE IS STEFANIE, ONZE DIRECTOR OF TODAY?"
           }
         },
         "16487164375eeebcf7-1": {
@@ -31,7 +105,7 @@
         "16487164375eeebcf7-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Dreamteam_stefanie.png",
+        "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_72.png",
         "img_preference": "image second",
         "text_over_img": "",
         "padd-top": false
@@ -39,11 +113,14 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     }
   },
   "order": [
+    "165286420184482c13",
+    "16528642063e44664c",
     "1648716437deeb88e8",
     "main"
   ]
