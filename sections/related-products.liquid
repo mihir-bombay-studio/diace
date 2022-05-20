@@ -1,0 +1,111 @@
+{% render 'ZooomyMoreLikeThis' %}
+{{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
+{% comment %}
+{% assign product_handle = section.settings.featured_collection %} 
+{% endcomment %}
+<div class="featured-collection-wrapper container {{ section.settings.marg_top }}" >
+  <h2 class="featured-collection-heading yellow-text bold">{{ section.settings.featured_collection_title }}</h2>
+  {% for collection in product.collections limit:1%}
+  {% assign product_handle = collection.handle %}
+  {% endfor %}
+  <div class="featured-collection-desc semibold">{{ section.settings.featured_collection_desc }}</div>
+
+{% schema %}
+  {
+    "name": "Related Products",
+    "settings": [
+        {
+          "type": "text",
+          "id": "featured_collection_title",
+          "label": "Featured Collection Title"
+        },
+        {
+          "type": "text",
+          "id": "featured_collection_desc",
+          "label": "Featured Collection Desc"
+        },
+        {
+          "type": "collection",
+          "id": "new_featured_collection",
+          "label": "Featured Collection"
+        },
+        {
+            "type": "text",
+            "id": "hover_text",
+            "label": "Hover Text",
+            "default": "KOPEN"
+        },
+        {
+            "type": "text",
+            "id": "more_colors_text",
+            "label": "More Colours Text",
+            "default": "Meer kleuren beschikbaar"
+        },
+        {
+            "type": "select",
+            "id": "marg_top",
+            "label": "Margin Top",
+            "options": [
+              {
+                "value": "big",
+                "label": "Big"
+              },
+              {
+                "value": "medium",
+                "label": "Medium"
+              }
+            ],
+            "default": "medium"
+          }
+    ],
+    "blocks": [
+    {
+          "type": "button",
+          "name": "Button",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "text",
+              "id": "button_label",
+              "default": "Button label",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+              "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+            },
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+            },
+            {
+              "type": "select",
+              "id": "button-color",
+              "options": [
+                {
+                  "value": "grey",
+                  "label": "Grey"
+                },
+                {
+                  "value": "yellow",
+                  "label": "Yellow"
+                }
+              ],
+              "default": "grey",
+              "label": "Grey"
+            }
+          ]
+        }
+  ],
+  "presets": [
+    {
+      "name": "Related Products",
+        "category":"section"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
