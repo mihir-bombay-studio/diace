@@ -33,7 +33,7 @@
         <div class="featured-product-img rel">
           {% if recommendation.featured_image != blank %}
           <a href="{{recommendation.url}}">
-            <img class="product-img" src="{{ recommendation.featured_image.src | img_url: section.settings.image_ratio }}"></a>
+            <img class="product-img" src="{{ recommendation.featured_image.src | img_url: '300x300' }}"></a>
           {% else %}
           {{ 'product-1' | placeholder_svg_tag: 'my-custom-class' }}
           {% endif %}
