@@ -24,53 +24,6 @@
         </li>
       {% endfor %}
     </ul>
-  
-  <div class="collection container">
-    <div class="product-collection flex-box">
-      {% for recommendation in recommendations.products %}
-
-      <div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}">
-        <div class="featured-product-img rel">
-          {% if recommendation.featured_image != blank %}
-          <a href="{{recommendation.url}}">
-
-          <img srcset="{%- if recommendation.featured_media.width >= 165 -%}{{ recommendation.featured_media | img_url: '165x' }} 165w,{%- endif -%}
-                {%- if recommendation.featured_media.width >= 360 -%}{{ recommendation.featured_media | img_url: '360x' }} 360w,{%- endif -%}
-                {%- if recommendation.featured_media.width >= 533 -%}{{ recommendation.featured_media | img_url: '533x' }} 533w,{%- endif -%}
-                {%- if recommendation.featured_media.width >= 720 -%}{{ recommendation.featured_media | img_url: '720x' }} 720w,{%- endif -%}
-                {%- if recommendation.featured_media.width >= 940 -%}{{ recommendation.featured_media | img_url: '940x' }} 940w,{%- endif -%}
-                {%- if recommendation.featured_media.width >= 1066 -%}{{ recommendation.featured_media | img_url: '1066x' }} 1066w{%- endif -%}"
-                src="{{ recommendation.featured_media | img_url: '533x' }}"
-                sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                alt="{{ recommendation.featured_media.alt | escape }}"
-                loading="lazy"
-                class="motion-reduce"
-                width="{{ recommendation.featured_media.width }}"
-                height="{{ recommendation.featured_media.height }}"
-              >
-            </a>
-          {% else %}
-          {{ 'product-1' | placeholder_svg_tag: 'my-custom-class' }}
-          {% endif %}
-
-
-          <div class="AddToCart product-hover-text flex-box align-center" data-variant-id="{{product.first_available_variant.id}}" data-quantity = "1">
-            <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
-            <span class="hover-text bold">{{ section.settings.hover_text }}</span>
-          </div>
-        </div>
-
-        <div class="product-title-price flex-direction flex-box justify-between">
-          <div class="product-title semibold"><a href="{{recommendation.url}}">{{ recommendation.title | escape  | capitalize}}</a></div>
-          <div class="product-compare-to-and-price">
-            {% if recommendation.compare_at_price %}<span class="compare-to-price light">{{ recommendation.compare_at_price | money }}</span>{% endif %}
-            <span class="product-price semibold{% if recommendation.compare_at_price %} yellow-text{% endif %}">{{ recommendation.price | money  }}</span>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
   {% endif %}
 </product-recommendations>
 
