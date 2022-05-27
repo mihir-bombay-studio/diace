@@ -40,6 +40,7 @@
             "badge_text_color": "#d9d9d9",
             "enable_rich_snippets": true,
             "show_location": true,
+            "show_tab_selector": false,
             "show_dates": true,
             "show_avatar": true,
             "enable_replies": false,
@@ -93,6 +94,16 @@
       ],
       "settings": {
         "include_margins": false
+      }
+    },
+    "1653664612b4654616": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
       }
     },
     "16509662653faa1f2d": {
@@ -312,6 +323,7 @@
   "order": [
     "1632117875e7ef7fbe",
     "16510507306843669b",
+    "1653664612b4654616",
     "16509662653faa1f2d",
     "16336209926af228d4",
     "163362115027b57f6f",
