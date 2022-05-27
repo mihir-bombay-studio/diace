@@ -24,6 +24,38 @@
         </li>
       {% endfor %}
     </ul>
+  
+  <div class="collection container">
+    <div class="product-collection flex-box">
+      {% for product in collection.products %}
+
+      <div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}">
+        <div class="featured-product-img rel">
+          {% if product.featured_image != blank %}
+          <a href="{{product.url}}">
+            <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
+          {% else %}
+          {{ 'product-1' | placeholder_svg_tag: 'my-custom-class' }}
+          {% endif %}
+
+
+          <div class="AddToCart product-hover-text flex-box align-center" data-variant-id="{{product.first_available_variant.id}}" data-quantity = "1">
+            <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+            <span class="hover-text bold">{{ section.settings.hover_text }}</span>
+          </div>
+        </div>
+
+        <div class="product-title-price flex-direction flex-box justify-between">
+          <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  | capitalize}}</a></div>
+          <div class="product-compare-to-and-price">
+            {% if product.compare_at_price %}<span class="compare-to-price light">{{ product.compare_at_price | money }}</span>{% endif %}
+            <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money  }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
   {% endif %}
 </product-recommendations>
 
