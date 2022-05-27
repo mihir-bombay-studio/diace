@@ -31,9 +31,9 @@
 
       <div class="product-collection-card" id="main-collection-product-grid" data-id="{{ section.id }}">
         <div class="featured-product-img rel">
-          {% if product.featured_image != blank %}
-          <a href="{{product.url}}">
-            <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
+          {% if recommendation.featured_image != blank %}
+          <a href="{{recommendation.url}}">
+            <img class="product-img" src="{{ recommendation.featured_image.src | img_url: 'x282' }}"></a>
           {% else %}
           {{ 'product-1' | placeholder_svg_tag: 'my-custom-class' }}
           {% endif %}
@@ -46,10 +46,10 @@
         </div>
 
         <div class="product-title-price flex-direction flex-box justify-between">
-          <div class="product-title semibold"><a href="{{product.url}}">{{ product.title | escape  | capitalize}}</a></div>
+          <div class="product-title semibold"><a href="{{recommendation.url}}">{{ recommendation.title | escape  | capitalize}}</a></div>
           <div class="product-compare-to-and-price">
-            {% if product.compare_at_price %}<span class="compare-to-price light">{{ product.compare_at_price | money }}</span>{% endif %}
-            <span class="product-price semibold{% if product.compare_at_price %} yellow-text{% endif %}">{{ product.price | money  }}</span>
+            {% if recommendation.compare_at_price %}<span class="compare-to-price light">{{ recommendation.compare_at_price | money }}</span>{% endif %}
+            <span class="product-price semibold{% if recommendation.compare_at_price %} yellow-text{% endif %}">{{ recommendation.price | money  }}</span>
           </div>
         </div>
       </div>
