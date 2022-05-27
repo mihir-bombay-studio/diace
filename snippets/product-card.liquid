@@ -62,6 +62,11 @@
                 height="{{ product_card_product.media[1].height }}"
                 >
               {%- endif -%}
+              
+              <div class="AddToCart product-hover-text flex-box align-center" data-variant-id="{{product.first_available_variant.id}}" data-quantity = "1">
+                <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
+                <span class="hover-text bold">{{ section.settings.hover_text }}</span>
+              </div>
             </div>
           </div>
         {%- else -%}
