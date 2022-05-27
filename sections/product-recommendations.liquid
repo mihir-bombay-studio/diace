@@ -33,7 +33,22 @@
         <div class="featured-product-img rel">
           {% if recommendation.featured_image != blank %}
           <a href="{{recommendation.url}}">
-            <img class="product-img" src="{{ recommendation.featured_image.src | img_url: 'square' }}"></a>
+
+          <img srcset="{%- if recommendation.featured_media.width >= 165 -%}{{ recommendation.featured_media | img_url: '165x' }} 165w,{%- endif -%}
+                {%- if recommendation.featured_media.width >= 360 -%}{{ recommendation.featured_media | img_url: '360x' }} 360w,{%- endif -%}
+                {%- if recommendation.featured_media.width >= 533 -%}{{ recommendation.featured_media | img_url: '533x' }} 533w,{%- endif -%}
+                {%- if recommendation.featured_media.width >= 720 -%}{{ recommendation.featured_media | img_url: '720x' }} 720w,{%- endif -%}
+                {%- if recommendation.featured_media.width >= 940 -%}{{ recommendation.featured_media | img_url: '940x' }} 940w,{%- endif -%}
+                {%- if recommendation.featured_media.width >= 1066 -%}{{ recommendation.featured_media | img_url: '1066x' }} 1066w{%- endif -%}"
+                src="{{ recommendation.featured_media | img_url: '533x' }}"
+                sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                alt="{{ recommendation.featured_media.alt | escape }}"
+                loading="lazy"
+                class="motion-reduce"
+                width="{{ recommendation.featured_media.width }}"
+                height="{{ recommendation.featured_media.height }}"
+              >
+            </a>
           {% else %}
           {{ 'product-1' | placeholder_svg_tag: 'my-custom-class' }}
           {% endif %}
