@@ -189,13 +189,17 @@
   color: var(--color-foreground);
 }
 
-.card-information__wrapper > .price .price-item{
+..product-recommendations .grid__item {
+	margin-bottom: 1rem;
+}
+
+.product-recommendations .card-information__wrapper > .price .price-item{
   font-size: 1.2rem !important;
   line-height: 1.5;
   color: #fec23b !important;
 }
 
-.card-information__wrapper > .price .incl-tax {
+.product-recommendations .card-information__wrapper > .price .incl-tax {
     font-size: 1.2rem !important;
 }
 
