@@ -190,9 +190,13 @@
 }
 
 .card-information__wrapper > .price .price-item{
-  font-size: 1rem !important;
+  font-size: 1.2rem !important;
   line-height: 1.5;
   color: #fec23b !important;
+}
+
+.card-information__wrapper > .price .incl-tax {
+    font-size: 1.2rem !important;
 }
 
 .card-information__wrapper > *:not(.visually-hidden:first-child) + * {
