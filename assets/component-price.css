@@ -3,11 +3,22 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  color: #fec23b;
+}
+
+/* .price {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
   line-height: 1.5;
   color: var(--color-foreground);
-}
+} */
 
 .price.price--unavailable {
   visibility: hidden;
