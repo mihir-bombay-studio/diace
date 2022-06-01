@@ -189,7 +189,7 @@
   color: var(--color-foreground);
 }
 
-..product-recommendations .grid__item {
+.product-recommendations .grid__item {
 	margin-bottom: 1rem;
 }
 
