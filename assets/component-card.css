@@ -187,9 +187,9 @@
 
 .card-information__wrapper > .price {
 /*   color: var(--color-foreground); */
-  font-size: 1rem;
+  font-size: 1rem !important;
   line-height: 1.5;
-  color: #fec23b;
+  color: #fec23b !important;
 }
 
 .card-information__wrapper > *:not(.visually-hidden:first-child) + * {
