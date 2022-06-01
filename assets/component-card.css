@@ -186,7 +186,10 @@
 }
 
 .card-information__wrapper > .price {
-/*   color: var(--color-foreground); */
+  color: var(--color-foreground);
+}
+
+.card-information__wrapper > .price .price-item{
   font-size: 1rem !important;
   line-height: 1.5;
   color: #fec23b !important;
