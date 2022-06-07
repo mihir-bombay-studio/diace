@@ -196,7 +196,7 @@
 .product-recommendations .card-information__wrapper > .price .price-item{
   font-size: 1.2rem !important;
   line-height: 1.5;
-  color: #fec23b !important;
+/*   color: #fec23b !important; */
 }
 
 .product-recommendations .card-information__wrapper > .price .incl-tax {
