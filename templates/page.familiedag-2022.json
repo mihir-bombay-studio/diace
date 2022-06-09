@@ -163,7 +163,6 @@
       "blocks": {
         "16547937228a30950d-0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "Diacé familiedag 2022"
           }
@@ -196,7 +195,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_02.jpg",
         "desktop_text_box_position": "flex-end",
-        "color_scheme": "accent-1",
+        "color_scheme": "accent-2",
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
       }
