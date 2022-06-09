@@ -241,6 +241,7 @@
     },
     "1654793846407da4de": {
       "type": "newsletter-new",
+      "disabled": true,
       "settings": {
         "subscription_heading": "",
         "subscription_desc": "",
