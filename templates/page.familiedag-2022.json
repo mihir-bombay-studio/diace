@@ -276,7 +276,7 @@
       ],
       "settings": {
         "title": "",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "color_scheme": "background-1",
         "swipe_on_mobile": false,
         "image_padding": false,
@@ -285,7 +285,6 @@
     },
     "1654793846407da4de": {
       "type": "newsletter-new",
-      "disabled": true,
       "settings": {
         "subscription_heading": "",
         "subscription_desc": "",
