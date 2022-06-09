@@ -67,9 +67,9 @@
         "165479009484e24e66-2"
       ],
       "settings": {
-        "img_preference": "image second",
+        "img_preference": "image first",
         "text_over_img": "",
-        "padd-top": true
+        "padd-top": false
       }
     },
     "1654787641e601c9c8": {
