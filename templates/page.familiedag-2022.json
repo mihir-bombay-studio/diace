@@ -196,7 +196,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_18.jpg",
-        "img_preference": "image second",
+        "img_preference": "image first",
         "text_over_img": "",
         "padd-top": true
       }
@@ -285,12 +285,11 @@
     },
     "1654793846407da4de": {
       "type": "newsletter-new",
-      "disabled": true,
       "settings": {
         "subscription_heading": "",
         "subscription_desc": "",
         "submit_btn_text": "",
-        "marg_bott": "small"
+        "marg_bott": "big"
       }
     }
   },
