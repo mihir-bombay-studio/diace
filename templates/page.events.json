@@ -1,5 +1,86 @@
 {
   "sections": {
+    "16547875750798268b": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "1654787575e4985ea6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Familiedag 2022"
+          }
+        },
+        "1654787575e4985ea6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1654787575e4985ea6-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "1654787575e4985ea6-0",
+        "1654787575e4985ea6-1",
+        "1654787575e4985ea6-2"
+      ],
+      "settings": {
+        "img_preference": "image second",
+        "text_over_img": "",
+        "padd-top": false
+      }
+    },
+    "1654787641e601c9c8": {
+      "type": "image-banner",
+      "blocks": {
+        "1654787641e196242d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "1654787641e196242d-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1654787641e196242d-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1654787641e196242d-0",
+        "1654787641e196242d-1",
+        "1654787641e196242d-2"
+      ],
+      "settings": {
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
+    },
+    "165478740952435016": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -45,12 +126,88 @@
         "website_url": "shopify:\/\/pages\/familiedag",
         "share_mail": ""
       }
+    },
+    "16547876088326ebe6": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "16547876086f9f1b63-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "16547876086f9f1b63-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16547876086f9f1b63-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16547876086f9f1b63-0",
+        "16547876086f9f1b63-1",
+        "16547876086f9f1b63-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "1654787622b2d10a14": {
+      "type": "image-with-text-new",
+      "disabled": true,
+      "blocks": {
+        "165478762268756e2e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "165478762268756e2e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "165478762268756e2e-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "165478762268756e2e-0",
+        "165478762268756e2e-1",
+        "165478762268756e2e-2"
+      ],
+      "settings": {
+        "img_preference": "image second",
+        "text_over_img": "",
+        "padd-top": false
+      }
     }
   },
   "order": [
+    "16547875750798268b",
+    "1654787641e601c9c8",
+    "165478740952435016",
     "main",
     "1650459071b619d38d",
     "1650459486b45955e4",
-    "16504595071a4e4c0a"
+    "16504595071a4e4c0a",
+    "16547876088326ebe6",
+    "1654787622b2d10a14"
   ]
 }
