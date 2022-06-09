@@ -1,5 +1,40 @@
 {
   "sections": {
+    "1654791016a7caf637": {
+      "type": "rich-text",
+      "blocks": {
+        "1654791016ab17d103-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Events",
+            "heading_size": "medium"
+          }
+        },
+        "1654791016ab17d103-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1654791016ab17d103-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1654791016ab17d103-0",
+        "1654791016ab17d103-1",
+        "1654791016ab17d103-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -76,49 +111,13 @@
       ],
       "settings": {
       }
-    },
-    "1654791016a7caf637": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "1654791016ab17d103-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "medium"
-          }
-        },
-        "1654791016ab17d103-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "1654791016ab17d103-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "1654791016ab17d103-0",
-        "1654791016ab17d103-1",
-        "1654791016ab17d103-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
     }
   },
   "order": [
+    "1654791016a7caf637",
     "main",
     "16504595071a4e4c0a",
     "1654790775bb4a9a35",
-    "1654790098963ec839",
-    "1654791016a7caf637"
+    "1654790098963ec839"
   ]
 }
