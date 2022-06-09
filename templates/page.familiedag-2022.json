@@ -164,8 +164,7 @@
         "16547941319b7d9158-0": {
           "type": "video",
           "settings": {
-            "cover_image": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_12.jpg",
-            "video_url": "",
+            "video_url": "https:\/\/vimeo.com\/718802953",
             "description": "Describe the video for customers using screen readers",
             "image_padding": false
           }
