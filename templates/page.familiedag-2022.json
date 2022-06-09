@@ -120,44 +120,6 @@
         "padd-top": false
       }
     },
-    "1654793289e85470ea": {
-      "type": "image-with-text-new",
-      "blocks": {
-        "1654793289cc935f8f-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image with text"
-          }
-        },
-        "1654793289cc935f8f-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Voor de kinderen waren er leuke spelletjes, springkastelen, grimme en zoveel meer. Onder toezicht van vrijwilligers en medewerkers, hebben zij hier heel de dag kunnen ravotten. Wij namen graag de zorgen even van de ouders over. <\/p>"
-          }
-        },
-        "1654793289cc935f8f-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button-color": "grey"
-          }
-        }
-      },
-      "block_order": [
-        "1654793289cc935f8f-0",
-        "1654793289cc935f8f-1",
-        "1654793289cc935f8f-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_18.jpg",
-        "img_preference": "image second",
-        "text_over_img": "",
-        "padd-top": false
-      }
-    },
     "1654794131e47a822f": {
       "type": "collage",
       "blocks": {
@@ -199,6 +161,44 @@
         "heading": "",
         "desktop_layout": "left",
         "mobile_layout": "collage"
+      }
+    },
+    "1654793289e85470ea": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "1654793289cc935f8f-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1654793289cc935f8f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Voor de kinderen waren er leuke spelletjes, springkastelen, grimme en zoveel meer. Onder toezicht van vrijwilligers en medewerkers, hebben zij hier heel de dag kunnen ravotten. Wij namen graag de zorgen even van de ouders over. <\/p>"
+          }
+        },
+        "1654793289cc935f8f-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "1654793289cc935f8f-0",
+        "1654793289cc935f8f-1",
+        "1654793289cc935f8f-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_18.jpg",
+        "img_preference": "image second",
+        "text_over_img": "",
+        "padd-top": true
       }
     },
     "1654793723bbc9f1da": {
@@ -299,8 +299,8 @@
     "1654792887d2fa44dc",
     "16547875750798268b",
     "1654793285af4d8df4",
-    "1654793289e85470ea",
     "1654794131e47a822f",
+    "1654793289e85470ea",
     "1654793723bbc9f1da",
     "1654793912ad824f4a",
     "1654793846407da4de"
