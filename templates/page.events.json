@@ -2,6 +2,7 @@
   "sections": {
     "16547875750798268b": {
       "type": "image-with-text-new",
+      "disabled": true,
       "blocks": {
         "1654787575e4985ea6-0": {
           "type": "heading",
@@ -38,6 +39,7 @@
     },
     "16547900945578c825": {
       "type": "image-with-text-new",
+      "disabled": true,
       "blocks": {
         "165479009484e24e66-0": {
           "type": "heading",
@@ -74,6 +76,7 @@
     },
     "1654787641e601c9c8": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "1654787641e196242d-0": {
           "type": "heading",
@@ -133,15 +136,15 @@
     },
     "1654790098963ec839": {
       "type": "artboard",
-      "disabled": true,
       "blocks": {
         "5e2bae56-f124-47ea-9cbe-accd108a8a51": {
           "type": "artboard",
           "settings": {
-            "heading": "",
-            "Subtext": "",
-            "hero_text_link": "",
-            "hero_other_img_text": ""
+            "artphoto": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_01.jpg",
+            "heading": "Familiedag 2022",
+            "Subtext": "Geniet mee van onze 1ste editie!",
+            "hero_text_link": "shopify:\/\/pages\/familiedag-2022",
+            "hero_other_img_text": "beleef"
           }
         }
       },
