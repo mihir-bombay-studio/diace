@@ -1,16 +1,7 @@
 {
   "sections": {
-    "1654791456f2380fc1": {
-      "type": "shop-by-category-banner",
-      "settings": {
-        "banner_img": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_09.jpg",
-        "banner_title": "Events",
-        "banner_desc": "Beleef hier jouw favoriete evenement!"
-      }
-    },
     "1654791016a7caf637": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "1654791016ab17d103-0": {
           "type": "heading",
@@ -45,6 +36,14 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
+      }
+    },
+    "1654791456f2380fc1": {
+      "type": "shop-by-category-banner",
+      "settings": {
+        "banner_img": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_09.jpg",
+        "banner_title": "Events",
+        "banner_desc": "Beleef hier jouw favoriete evenement!"
       }
     },
     "main": {
@@ -113,8 +112,8 @@
     }
   },
   "order": [
-    "1654791456f2380fc1",
     "1654791016a7caf637",
+    "1654791456f2380fc1",
     "main",
     "1654790775bb4a9a35",
     "1654790098963ec839"
