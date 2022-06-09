@@ -1,10 +1,20 @@
 {
   "sections": {
+    "1654791456f2380fc1": {
+      "type": "shop-by-category-banner",
+      "settings": {
+        "banner_img": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_09.jpg",
+        "banner_title": "Events",
+        "banner_desc": "Beleef hier jouw favoriete evenement!"
+      }
+    },
     "1654791016a7caf637": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1654791016ab17d103-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Events",
             "heading_size": "medium"
@@ -12,12 +22,14 @@
         },
         "1654791016ab17d103-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
         },
         "1654791016ab17d103-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": "",
@@ -41,21 +53,9 @@
       "settings": {
       }
     },
-    "16504595071a4e4c0a": {
-      "type": "section-with-divider",
-      "disabled": true,
-      "settings": {
-        "share_heading": "Deel deze vacature.",
-        "previous_heading": "",
-        "next_heading": "",
-        "share_link": "shopify:\/\/pages\/familiedag",
-        "share_title": "",
-        "website_url": "shopify:\/\/pages\/familiedag",
-        "share_mail": ""
-      }
-    },
     "1654790775bb4a9a35": {
       "type": "image-with-text-new",
+      "disabled": true,
       "blocks": {
         "16547907753bb4e375-0": {
           "type": "heading",
@@ -65,7 +65,6 @@
         },
         "16547907753bb4e375-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
@@ -114,9 +113,9 @@
     }
   },
   "order": [
+    "1654791456f2380fc1",
     "1654791016a7caf637",
     "main",
-    "16504595071a4e4c0a",
     "1654790775bb4a9a35",
     "1654790098963ec839"
   ]
