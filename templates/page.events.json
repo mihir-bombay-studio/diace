@@ -2,6 +2,7 @@
   "sections": {
     "1654791016a7caf637": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1654791016ab17d103-0": {
           "type": "heading",
