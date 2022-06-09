@@ -69,10 +69,11 @@
         "1654787641e196242d-2"
       ],
       "settings": {
-        "desktop_text_box_position": "center",
-        "color_scheme": "background-1",
+        "image": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_02.jpg",
+        "desktop_text_box_position": "flex-end",
+        "color_scheme": "accent-2",
         "stack_images_on_mobile": true,
-        "adapt_height_first_image": false
+        "adapt_height_first_image": true
       }
     },
     "165478740952435016": {
