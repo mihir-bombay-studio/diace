@@ -1,5 +1,11 @@
 {
   "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
     "1654791016a7caf637": {
       "type": "rich-text",
       "blocks": {
@@ -46,50 +52,6 @@
         "banner_desc": "Beleef hier jouw favoriete evenement!"
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "1654790775bb4a9a35": {
-      "type": "image-with-text-new",
-      "disabled": true,
-      "blocks": {
-        "16547907753bb4e375-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Events"
-          }
-        },
-        "16547907753bb4e375-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "16547907753bb4e375-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button-color": "grey"
-          }
-        }
-      },
-      "block_order": [
-        "16547907753bb4e375-0",
-        "16547907753bb4e375-1",
-        "16547907753bb4e375-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_09.jpg",
-        "img_preference": "image second",
-        "text_over_img": "",
-        "padd-top": false
-      }
-    },
     "1654790098963ec839": {
       "type": "artboard",
       "blocks": {
@@ -121,10 +83,9 @@
     }
   },
   "order": [
+    "main",
     "1654791016a7caf637",
     "1654791456f2380fc1",
-    "main",
-    "1654790775bb4a9a35",
     "1654790098963ec839",
     "165479215030473bf0"
   ]
