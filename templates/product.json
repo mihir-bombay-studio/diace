@@ -15,11 +15,6 @@
       "type": "apps",
       "disabled": true,
       "blocks": {
-        "52d07bc0-026a-4d70-8a36-1e78c9f15708": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {
-          }
-        },
         "b1feabd0-ff78-426f-ac54-a0573e17e14a": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
@@ -49,51 +44,13 @@
             "show_review_title": false,
             "default_sort": "date_desc"
           }
-        },
-        "3ef0b6d0-3c02-45ec-b891-5253d1be79a5": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-text-banner\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "disabled": true,
-          "settings": {
-            "star": "#fec23b",
-            "text_color": "#000000"
-          }
-        },
-        "ced054a8-b45e-4b2d-9b70-a86ba9b32813": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "disabled": true,
-          "settings": {
-            "star": "#000000",
-            "review_type": "product",
-            "reviews_shown": 40,
-            "header_bg_colour": "#fec23b",
-            "header_colour": "#ffffff",
-            "header_star_colour": "#ffffff",
-            "heading_text_colour": "#fec23b",
-            "heading_font": "helvetica_n4",
-            "body_text_colour": "#0e1311",
-            "badge_icon_colour": "#0e1311",
-            "badge_text_colour": "#0e1311",
-            "bg_start_colour": "#ffffff",
-            "bg_end_colour": "#ffffff",
-            "item_border_width": "0px",
-            "item_border_colour": "#000000",
-            "item_border_radius": "0px",
-            "item_shadow_size": "10px",
-            "item_shadow_colour": "#000000",
-            "enable_rich_snippets": false,
-            "disable_same_customer": false,
-            "logo_colour": "var(--logo-inverted)"
-          }
         }
       },
       "block_order": [
-        "52d07bc0-026a-4d70-8a36-1e78c9f15708",
-        "b1feabd0-ff78-426f-ac54-a0573e17e14a",
-        "3ef0b6d0-3c02-45ec-b891-5253d1be79a5",
-        "ced054a8-b45e-4b2d-9b70-a86ba9b32813"
+        "b1feabd0-ff78-426f-ac54-a0573e17e14a"
       ],
       "settings": {
-        "include_margins": false
+        "include_margins": true
       }
     },
     "1653664612b4654616": {
@@ -103,7 +60,8 @@
         "image_ratio": "square",
         "show_secondary_image": false,
         "add_image_padding": false,
-        "show_vendor": false
+        "show_vendor": false,
+        "hover_text": "KOPEN"
       }
     },
     "16509662653faa1f2d": {
