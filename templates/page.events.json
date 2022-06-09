@@ -30,6 +30,7 @@
         },
         "16547907753bb4e375-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
@@ -50,6 +51,7 @@
         "16547907753bb4e375-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_09.jpg",
         "img_preference": "image second",
         "text_over_img": "",
         "padd-top": false
