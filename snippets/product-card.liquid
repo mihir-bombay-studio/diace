@@ -71,7 +71,6 @@
           </div>
         {%- else -%}
           <div class="card__content"><h2 class="card__text h2">{{ product_card_product.title }}</h2></div>
-          <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
         {%- endif -%}
 
         <div class="card__badge">
@@ -99,7 +98,6 @@
           <span class="card-information__text h5">
             {{ product_card_product.title | escape }}
           </span>
-          <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
         {%- endif -%}
 
         {% comment %} TODO: metafield {% endcomment %}
