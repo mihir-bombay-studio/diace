@@ -103,6 +103,7 @@
     </div>
     <div class="product-block-right">
       <h2 class="product-title bold">{{ product.title }}</h2>
+      <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
       <div class="product-price-wrapper">
         <div class="no-js-hidden" id="price-{{ section.id }}">
           {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
