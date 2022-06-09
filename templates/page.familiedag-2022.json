@@ -158,6 +158,49 @@
         "padd-top": false
       }
     },
+    "1654794131e47a822f": {
+      "type": "collage",
+      "blocks": {
+        "16547941319b7d9158-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_12.jpg",
+            "video_url": "",
+            "description": "Describe the video for customers using screen readers",
+            "image_padding": false
+          }
+        },
+        "16547941319b7d9158-1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "secondary_background": false,
+            "second_image": false,
+            "image_padding": false
+          }
+        },
+        "16547941319b7d9158-2": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "16547941319b7d9158-0",
+        "16547941319b7d9158-1",
+        "16547941319b7d9158-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
     "1654793723bbc9f1da": {
       "type": "image-banner",
       "blocks": {
@@ -256,6 +299,7 @@
     "16547875750798268b",
     "1654793285af4d8df4",
     "1654793289e85470ea",
+    "1654794131e47a822f",
     "1654793723bbc9f1da",
     "1654793912ad824f4a",
     "1654793846407da4de"
