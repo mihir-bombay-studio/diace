@@ -109,6 +109,15 @@
       ],
       "settings": {
       }
+    },
+    "165479215030473bf0": {
+      "type": "newsletter-new",
+      "settings": {
+        "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
+        "subscription_desc": "Blijf op de hoogte van de nieuwste producten.",
+        "submit_btn_text": "VERZENDEN",
+        "marg_bott": "small"
+      }
     }
   },
   "order": [
@@ -116,6 +125,7 @@
     "1654791456f2380fc1",
     "main",
     "1654790775bb4a9a35",
-    "1654790098963ec839"
+    "1654790098963ec839",
+    "165479215030473bf0"
   ]
 }
