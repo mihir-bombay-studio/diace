@@ -157,6 +157,49 @@
         "text_over_img": "",
         "padd-top": false
       }
+    },
+    "1654793723bbc9f1da": {
+      "type": "image-banner",
+      "blocks": {
+        "16547937228a30950d-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Diacé familiedag 2022"
+          }
+        },
+        "16547937228a30950d-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "16547937228a30950d-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16547937228a30950d-0",
+        "16547937228a30950d-1",
+        "16547937228a30950d-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_02.jpg",
+        "desktop_text_box_position": "flex-end",
+        "color_scheme": "accent-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
     }
   },
   "order": [
@@ -164,6 +207,7 @@
     "1654792887d2fa44dc",
     "16547875750798268b",
     "1654793285af4d8df4",
-    "1654793289e85470ea"
+    "1654793289e85470ea",
+    "1654793723bbc9f1da"
   ]
 }
