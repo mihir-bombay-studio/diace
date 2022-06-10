@@ -11,6 +11,46 @@
         "cont_shopping_btn_txt": "Verder winkelen"
       }
     },
+    "1654871042583eeb93": {
+      "type": "collage",
+      "blocks": {
+        "165487104293a7de46-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video for customers using screen readers",
+            "image_padding": false
+          }
+        },
+        "165487104293a7de46-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "secondary_background": false,
+            "second_image": false,
+            "image_padding": false
+          }
+        },
+        "165487104293a7de46-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "165487104293a7de46-0",
+        "165487104293a7de46-1",
+        "165487104293a7de46-2"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
     "16510507306843669b": {
       "type": "apps",
       "blocks": {
@@ -279,6 +319,7 @@
   },
   "order": [
     "1632117875e7ef7fbe",
+    "1654871042583eeb93",
     "16510507306843669b",
     "1653664612b4654616",
     "16509662653faa1f2d",
