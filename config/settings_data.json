@@ -206,7 +206,7 @@
           "listen_for_changes": false,
           "show_popup": false,
           "anchor_to_reviews_widget": true,
-          "show_empty_stars": true
+          "show_empty_stars": false
         }
       }
     }
