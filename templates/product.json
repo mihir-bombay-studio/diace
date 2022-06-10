@@ -17,7 +17,7 @@
         "b1feabd0-ff78-426f-ac54-a0573e17e14a": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
-            "star": "#000000",
+            "star": "#fec23b",
             "review_type": "product_review",
             "per_page": 8,
             "primary_btn_bg_color": "#fec23b",
