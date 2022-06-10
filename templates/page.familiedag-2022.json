@@ -286,10 +286,10 @@
     "1654793846407da4de": {
       "type": "newsletter-new",
       "settings": {
-        "subscription_heading": "",
-        "subscription_desc": "",
-        "submit_btn_text": "",
-        "marg_bott": "big"
+        "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
+        "subscription_desc": "Blijf op de hoogte van de nieuwste producten.",
+        "submit_btn_text": "VERZENDEN",
+        "marg_bott": "small"
       }
     }
   },
