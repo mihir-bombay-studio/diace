@@ -17,7 +17,8 @@
         "1654871173720a3917-0": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "cover_image": "shopify:\/\/shop_images\/Infusion_Fixtape_3.png",
+            "video_url": "",
             "description": "Describe the video for customers using screen readers",
             "image_padding": false
           }
@@ -47,7 +48,7 @@
         "1654871173720a3917-2"
       ],
       "settings": {
-        "heading": "Multimedia collage",
+        "heading": "HOW TO USE?",
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
