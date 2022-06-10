@@ -11,48 +11,6 @@
         "cont_shopping_btn_txt": "Verder winkelen"
       }
     },
-    "1654871173d05cb7b0": {
-      "type": "collage",
-      "blocks": {
-        "1654871173720a3917-0": {
-          "type": "video",
-          "settings": {
-            "cover_image": "shopify:\/\/shop_images\/Infusion_Fixtape_3.png",
-            "video_url": "https:\/\/vimeo.com\/719124903",
-            "description": "Describe the video for customers using screen readers",
-            "image_padding": false
-          }
-        },
-        "1654871173720a3917-1": {
-          "type": "product",
-          "settings": {
-            "product": "infusieset-fixtape-pleister-ring-nude",
-            "secondary_background": true,
-            "second_image": true,
-            "image_padding": false
-          }
-        },
-        "1654871173720a3917-2": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
-          }
-        }
-      },
-      "block_order": [
-        "1654871173720a3917-0",
-        "1654871173720a3917-1",
-        "1654871173720a3917-2"
-      ],
-      "settings": {
-        "heading": "HOW TO USE?",
-        "desktop_layout": "left",
-        "mobile_layout": "collage"
-      }
-    },
     "16510507306843669b": {
       "type": "apps",
       "blocks": {
@@ -321,7 +279,6 @@
   },
   "order": [
     "1632117875e7ef7fbe",
-    "1654871173d05cb7b0",
     "16510507306843669b",
     "1653664612b4654616",
     "16509662653faa1f2d",
