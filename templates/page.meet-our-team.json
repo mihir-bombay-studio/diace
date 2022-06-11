@@ -2,7 +2,16 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "165494057660ff9cd1": {
+      "type": "shop-by-category-banner",
+      "settings": {
+        "banner_img": "shopify:\/\/shop_images\/Zonder_titel_Instagram-bericht_1.png",
+        "banner_title": "MEET OUR TEAM!",
+        "banner_desc": "Hi! Wie zijn de gezichten achter Diacé? Neem een kijkje achter de schermen en ontdek wie er achter je favoriete producten zit. 💙"
       }
     },
     "164871331153b34785": {
@@ -94,6 +103,7 @@
   },
   "order": [
     "main",
+    "165494057660ff9cd1",
     "164871331153b34785"
   ]
 }
