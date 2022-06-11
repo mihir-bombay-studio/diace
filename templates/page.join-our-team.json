@@ -45,7 +45,6 @@
     },
     "1654938426569ed4e5": {
       "type": "shop-by-category-banner",
-      "disabled": true,
       "settings": {
         "banner_img": "shopify:\/\/shop_images\/Zonder_titel_Instagram-bericht_1.png",
         "banner_title": "JOIN OUR TEAM!",
@@ -54,6 +53,7 @@
     },
     "16508947665048bbc7": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1650894766e15fb249-2": {
           "type": "button",
