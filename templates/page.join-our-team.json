@@ -43,6 +43,14 @@
         "padd-top": true
       }
     },
+    "1654938426569ed4e5": {
+      "type": "shop-by-category-banner",
+      "settings": {
+        "banner_img": "shopify:\/\/shop_images\/Zonder_titel_Instagram-bericht_1.png",
+        "banner_title": "JOIN OUR TEAM!",
+        "banner_desc": "Diacé is the online place-to-go voor alles wat met diabetes accessoires te maken heeft. Het is onze missie om het leven van mensen met diabetes aangenamer te maken en met elkaar in contact te brengen via producten, media en evenementen. Als jong bedrijf met internationale ambities zijn wij steeds op zoek naar versterking. Ben je klaar voor een nieuw avontuur? Dan ben je misschien wel dé persoon die wij zoeken! Denk je dat je ons team kan versterken, maar staat jouw profiel hier niet bij? Grijp dan snel je kans en stuur ons een e-mail naar info@diace.be met meer informatie over jezelf. Overtuig ons en wie weet maak je binnenkort deel uit van het Diacé Kickass Team! 🥊"
+      }
+    },
     "16508947665048bbc7": {
       "type": "rich-text",
       "blocks": {
@@ -208,6 +216,7 @@
   "order": [
     "main",
     "1632806194415e12e9",
+    "1654938426569ed4e5",
     "16508947665048bbc7",
     "1632806201e2d1d8bf",
     "1632806816259f14f2",
