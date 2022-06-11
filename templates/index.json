@@ -126,6 +126,48 @@
         "padd-top": false
       }
     },
+    "16549323338de7d877": {
+      "type": "collage",
+      "blocks": {
+        "16549323335dce8d01-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video for customers using screen readers",
+            "image_padding": false
+          }
+        },
+        "16549323335dce8d01-1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "secondary_background": false,
+            "second_image": false,
+            "image_padding": false
+          }
+        },
+        "16549323335dce8d01-2": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "16549323335dce8d01-0",
+        "16549323335dce8d01-1",
+        "16549323335dce8d01-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
     "1631620069de812214": {
       "type": "latest-blogs",
       "blocks": {
@@ -417,6 +459,7 @@
     "16316849519d264fc8",
     "image_banner",
     "image_with_text",
+    "16549323338de7d877",
     "1631620069de812214",
     "1631695632e79ff00a",
     "16317046102c025894",
