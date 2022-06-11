@@ -126,19 +126,18 @@
         "padd-top": false
       }
     },
-    "16549323338de7d877": {
+    "16549323466b1af11d": {
       "type": "collage",
       "blocks": {
-        "16549323335dce8d01-0": {
+        "16549323466b7f2490-0": {
           "type": "video",
           "settings": {
-            "cover_image": "shopify:\/\/shop_images\/Diace_familiedag_2022_Videocollage_liggend.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=g9SxE0hdDSI",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": "Describe the video for customers using screen readers",
             "image_padding": false
           }
         },
-        "16549323335dce8d01-1": {
+        "16549323466b7f2490-1": {
           "type": "product",
           "disabled": true,
           "settings": {
@@ -148,7 +147,7 @@
             "image_padding": false
           }
         },
-        "16549323335dce8d01-2": {
+        "16549323466b7f2490-2": {
           "type": "collection",
           "disabled": true,
           "settings": {
@@ -159,9 +158,9 @@
         }
       },
       "block_order": [
-        "16549323335dce8d01-0",
-        "16549323335dce8d01-1",
-        "16549323335dce8d01-2"
+        "16549323466b7f2490-0",
+        "16549323466b7f2490-1",
+        "16549323466b7f2490-2"
       ],
       "settings": {
         "heading": "",
@@ -460,7 +459,7 @@
     "16316849519d264fc8",
     "image_banner",
     "image_with_text",
-    "16549323338de7d877",
+    "16549323466b1af11d",
     "1631620069de812214",
     "1631695632e79ff00a",
     "16317046102c025894",
