@@ -132,7 +132,8 @@
         "16549323466b7f2490-0": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "cover_image": "shopify:\/\/shop_images\/Diace_familiedag_2022_Videocollage_liggend.png",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=g9SxE0hdDSI",
             "description": "Describe the video for customers using screen readers",
             "image_padding": false
           }
