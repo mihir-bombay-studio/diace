@@ -2,9 +2,11 @@
   "sections": {
     "165286357733e364be": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "165286357781cee94b-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "MEET NICK",
             "heading_size": "small"
@@ -50,6 +52,7 @@
         },
         "16528635823e5e208c-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
@@ -80,7 +83,7 @@
         "1648716611451d6b26-0": {
           "type": "heading",
           "settings": {
-            "heading": "WHO IS NICK, THE DIRECTOR OF TOMORROW?"
+            "heading": "WIE IS NICK?"
           }
         },
         "1648716611451d6b26-1": {
@@ -92,6 +95,7 @@
         },
         "1648716611451d6b26-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "THE WHOLE DREAMTEAM",
             "button_link": "https:\/\/diace.be\/pages\/een-kijkje-achter-de-schermen",
