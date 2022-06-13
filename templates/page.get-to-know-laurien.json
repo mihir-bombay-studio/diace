@@ -2,9 +2,11 @@
   "sections": {
     "16528652045c48e452": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "165286520445d06b4c-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "MEET LAURIEN",
             "heading_size": "small"
@@ -51,7 +53,7 @@
         "16528652124ae4792d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": ""
           }
         },
         "16528652124ae4792d-2": {
@@ -80,7 +82,7 @@
         "1648716850b3ad6dda-0": {
           "type": "heading",
           "settings": {
-            "heading": "WHO IS LAURIEN, OUR PRODUCT DESIGNER?"
+            "heading": "WIE IS LAURIEN, ONZE PRODUCT DESIGNER?"
           }
         },
         "1648716850b3ad6dda-1": {
