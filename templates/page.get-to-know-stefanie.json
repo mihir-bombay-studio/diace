@@ -215,7 +215,6 @@
     },
     "1655116899855b1ff4": {
       "type": "newsletter-new",
-      "disabled": true,
       "settings": {
         "subscription_heading": "",
         "subscription_desc": "",
