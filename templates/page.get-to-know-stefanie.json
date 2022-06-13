@@ -107,7 +107,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Zonder_titel_Instagram-bericht_3.png",
-        "img_preference": "image first",
+        "img_preference": "image second",
         "text_over_img": "",
         "padd-top": false
       }
@@ -148,13 +148,14 @@
         "1655115116ab0f728d-2"
       ],
       "settings": {
-        "img_preference": "image second",
+        "img_preference": "image first",
         "text_over_img": "",
         "padd-top": false
       }
     },
     "1655116936d66e1405": {
       "type": "shop-by-category-banner",
+      "disabled": true,
       "settings": {
         "banner_title": "",
         "banner_desc": ""
@@ -162,9 +163,11 @@
     },
     "1655116964df6e8c7c": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "165511696495af93b4-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Talk about your brand",
             "heading_size": "medium"
@@ -173,13 +176,13 @@
         "165511696495af93b4-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": ""
           }
         },
         "165511696495af93b4-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false
           }
