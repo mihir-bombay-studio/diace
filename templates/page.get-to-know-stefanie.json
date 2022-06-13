@@ -87,7 +87,7 @@
         "16487164375eeebcf7-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Ik ben getrouwd met Nick, ben moeder van Hailey en Cédric. Cédric heeft sinds zijn 4 jaar diabetes type 1. Door de saaie apparatuur zijn we op zoek gegaan naar leuke accessoires, door het gebrek van accessoires om het leven met diabetes aangenamer te maken hebben we Diacé opgericht. Sinds juni 2021 werk ik voltijds bij Diacé, een enorm spannende stap, maar nog geen seconde spijt. <\/p><p>De vraag die we vaak krijgen is: van waar komt de naam Diacé? Voor ons is dit heel simpel, diabetes en Cédric. Voor Cédric was dit natuurlijk heel fijn dat hij als eerste alle producten mag testen. <\/p>"
+            "text": "<p>Ik ben getrouwd met Nick, ben moeder van Hailey en Cédric. Cédric heeft sinds zijn 4 jaar diabetes type 1. Door de saaie apparaturen zijn we op zoek gegaan naar leuke accessoires. Door het gebrek van accessoires om het leven met diabetes aangenamer te maken hebben we Diacé opgericht. Sinds juni 2021 werk ik voltijds bij Diacé, een enorm spannende stap, maar nog geen seconde spijt. <\/p><p>De vraag die we vaak krijgen is: van waar komt de naam Diacé? Voor ons is dit heel simpel, diabetes en Cédric. Voor Cédric was dit natuurlijk heel fijn dat hij als eerste alle producten mag testen. <\/p>"
           }
         },
         "16487164375eeebcf7-2": {
@@ -123,6 +123,7 @@
       "blocks": {
         "1655115116ab0f728d-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Director of today?"
           }
@@ -130,7 +131,7 @@
         "1655115116ab0f728d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Ik zorg voor de de dagelijkse taakverdeling, boekhouding, website onderhoud en nieuwe producten ontwikkelen en nog zoveel meer...<\/p><p><strong>Wat zeggen mijn collega's over mij?<\/strong><\/p><p><\/p><p><strong>Mijn favoriete product<\/strong><\/p><p>Moeilijke vraag, elk product dat we verkopen, daar sta ik 100% achter! Als ik dan toch een keuze moet maken,... kies ik voor het <a href=\"\/products\/comfort-insuline-pomptas-geometric\" target=\"_blank\" title=\"Comfort insuline pomptas - Geometric\"><strong>insuline pomptasje<\/strong><\/a>! Zo'n leuk product met verschillende designs en gemakkelijk in gebruik!<\/p><p><\/p>"
+            "text": "<p><strong>Mijn taken<\/strong><\/p><p>Ik zorg voor de de dagelijkse taakverdeling, boekhouding, website onderhoud en nieuwe producten ontwikkelen en nog zoveel meer...<\/p><p><strong>Wat zeggen mijn collega's over mij?<\/strong><\/p><p><\/p><p><strong>Mijn favoriete product<\/strong><\/p><p>Moeilijke vraag, elk product dat we verkopen, daar sta ik 100% achter! Als ik dan toch een keuze moet maken,... kies ik voor het <a href=\"\/products\/comfort-insuline-pomptas-geometric\" target=\"_blank\" title=\"Comfort insuline pomptas - Geometric\"><strong>insuline pomptasje<\/strong><\/a>! Zo'n leuk product met verschillende designs en gemakkelijk in gebruik!<\/p><p><\/p>"
           }
         },
         "1655115116ab0f728d-2": {
