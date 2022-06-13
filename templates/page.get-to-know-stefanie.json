@@ -2,6 +2,7 @@
   "sections": {
     "165286420184482c13": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1652864201d3777520-0": {
           "type": "heading",
@@ -105,8 +106,8 @@
         "16487164375eeebcf7-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_72.png",
-        "img_preference": "image second",
+        "image": "shopify:\/\/shop_images\/Zonder_titel_Instagram-bericht_3.png",
+        "img_preference": "image first",
         "text_over_img": "",
         "padd-top": false
       }
@@ -129,7 +130,7 @@
         "1655115116ab0f728d-1": {
           "type": "text",
           "settings": {
-            "text": ""
+            "text": "<p>Ik zorg voor de de dagelijkse taakverdeling, boekhouding, website onderhoud en nieuwe producten ontwikkelen en nog zoveel meer...<\/p><p><strong>Wat zeggen mijn collega's over mij?<\/strong><\/p><p><\/p>"
           }
         },
         "1655115116ab0f728d-2": {
@@ -147,15 +148,60 @@
         "1655115116ab0f728d-2"
       ],
       "settings": {
-        "img_preference": "image first",
+        "img_preference": "image second",
         "text_over_img": "",
         "padd-top": false
       }
     },
-    "1655116190c5f725f9": {
-      "type": "product-with-text",
+    "1655116936d66e1405": {
+      "type": "shop-by-category-banner",
       "settings": {
-        "product_with_text": "comfort-insuline-pomptas-geometric"
+        "banner_title": "",
+        "banner_desc": ""
+      }
+    },
+    "1655116964df6e8c7c": {
+      "type": "rich-text",
+      "blocks": {
+        "165511696495af93b4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
+        "165511696495af93b4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "165511696495af93b4-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "165511696495af93b4-0",
+        "165511696495af93b4-1",
+        "165511696495af93b4-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "1655116899855b1ff4": {
+      "type": "newsletter-new",
+      "settings": {
+        "subscription_heading": "",
+        "subscription_desc": "",
+        "submit_btn_text": "",
+        "marg_bott": "small"
       }
     }
   },
@@ -165,6 +211,8 @@
     "1648716437deeb88e8",
     "main",
     "16551151165078cb64",
-    "1655116190c5f725f9"
+    "1655116936d66e1405",
+    "1655116964df6e8c7c",
+    "1655116899855b1ff4"
   ]
 }
