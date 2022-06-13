@@ -169,52 +169,44 @@
         "swipe_on_mobile": false
       }
     },
-    "16551239431111371d": {
-      "type": "collage",
-      "disabled": true,
+    "1655124206aecba787": {
+      "type": "rich-text",
       "blocks": {
-        "1655123943dcacba88-0": {
-          "type": "video",
-          "disabled": true,
+        "16551242066d965d3f-0": {
+          "type": "heading",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video for customers using screen readers",
-            "image_padding": false
+            "heading": "",
+            "heading_size": "medium"
           }
         },
-        "1655123943dcacba88-1": {
-          "type": "product",
-          "disabled": true,
+        "16551242066d965d3f-1": {
+          "type": "text",
           "settings": {
-            "product": "",
-            "secondary_background": false,
-            "second_image": false,
-            "image_padding": false
+            "text": ""
           }
         },
-        "1655123943dcacba88-2": {
-          "type": "collection",
-          "disabled": true,
+        "16551242066d965d3f-2": {
+          "type": "button",
           "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "1655123943dcacba88-0",
-        "1655123943dcacba88-1",
-        "1655123943dcacba88-2"
+        "16551242066d965d3f-0",
+        "16551242066d965d3f-1",
+        "16551242066d965d3f-2"
       ],
       "settings": {
-        "heading": "",
-        "desktop_layout": "left",
-        "mobile_layout": "collage"
+        "color_scheme": "background-1",
+        "full_width": true
       }
     },
     "1655116899855b1ff4": {
       "type": "newsletter-new",
+      "disabled": true,
       "settings": {
         "subscription_heading": "",
         "subscription_desc": "",
@@ -230,7 +222,7 @@
     "16551151165078cb64",
     "1655116936d66e1405",
     "16551227553298d990",
-    "16551239431111371d",
+    "1655124206aecba787",
     "1655116899855b1ff4"
   ]
 }
