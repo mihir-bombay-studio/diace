@@ -1,43 +1,5 @@
 {
   "sections": {
-    "165286420184482c13": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "1652864201d3777520-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "MEET STEFANIE",
-            "heading_size": "small"
-          }
-        },
-        "1652864201d3777520-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "1652864201d3777520-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "1652864201d3777520-0",
-        "1652864201d3777520-1",
-        "1652864201d3777520-2"
-      ],
-      "settings": {
-        "color_scheme": "accent-2",
-        "full_width": true
-      }
-    },
     "16528642063e44664c": {
       "type": "rich-text",
       "blocks": {
@@ -163,43 +125,6 @@
         "banner_desc": ""
       }
     },
-    "1655116964df6e8c7c": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "165511696495af93b4-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "medium"
-          }
-        },
-        "165511696495af93b4-1": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        },
-        "165511696495af93b4-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "165511696495af93b4-0",
-        "165511696495af93b4-1",
-        "165511696495af93b4-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "16551227553298d990": {
       "type": "multicolumn",
       "blocks": {
@@ -244,6 +169,50 @@
         "swipe_on_mobile": false
       }
     },
+    "16551239431111371d": {
+      "type": "collage",
+      "disabled": true,
+      "blocks": {
+        "1655123943dcacba88-0": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video for customers using screen readers",
+            "image_padding": false
+          }
+        },
+        "1655123943dcacba88-1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "secondary_background": false,
+            "second_image": false,
+            "image_padding": false
+          }
+        },
+        "1655123943dcacba88-2": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "1655123943dcacba88-0",
+        "1655123943dcacba88-1",
+        "1655123943dcacba88-2"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
     "1655116899855b1ff4": {
       "type": "newsletter-new",
       "disabled": true,
@@ -256,14 +225,13 @@
     }
   },
   "order": [
-    "165286420184482c13",
     "16528642063e44664c",
     "1648716437deeb88e8",
     "main",
     "16551151165078cb64",
     "1655116936d66e1405",
-    "1655116964df6e8c7c",
     "16551227553298d990",
+    "16551239431111371d",
     "1655116899855b1ff4"
   ]
 }
