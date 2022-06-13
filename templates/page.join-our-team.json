@@ -150,6 +150,15 @@
             "hero_text_link": "mailto:info@diace.be",
             "hero_other_img_text": "MAIL ONS"
           }
+        },
+        "7076296b-b731-4f86-aac9-7b9989c63f38": {
+          "type": "artboard",
+          "settings": {
+            "heading": "digital marketeer",
+            "Subtext": "full-time",
+            "hero_text_link": "shopify:\/\/pages\/job-digital-marketeer-full-time",
+            "hero_other_img_text": "full-time"
+          }
         }
       },
       "block_order": [
@@ -158,7 +167,8 @@
         "415aa432-b8b8-45c5-bfed-7e374ac74870",
         "865b076a-8a80-419d-b6a9-0b98c777bc5c",
         "a0579324-9279-4c08-a13b-775c024c681f",
-        "6495a0f1-21d6-463d-8233-4a00ecc60a06"
+        "6495a0f1-21d6-463d-8233-4a00ecc60a06",
+        "7076296b-b731-4f86-aac9-7b9989c63f38"
       ],
       "settings": {
       }
