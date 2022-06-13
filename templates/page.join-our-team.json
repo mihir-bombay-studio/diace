@@ -101,6 +101,16 @@
             "hero_other_img_text": "full-time"
           }
         },
+        "7076296b-b731-4f86-aac9-7b9989c63f38": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_35_1_eb40abac-3418-4971-b8c8-348c26d4e01a.png",
+            "heading": "digital marketeer",
+            "Subtext": "full-time",
+            "hero_text_link": "shopify:\/\/pages\/job-digital-marketeer-full-time",
+            "hero_other_img_text": "full-time"
+          }
+        },
         "c6d65c6d-50d1-44e2-bf2e-97c430009955": {
           "type": "artboard",
           "settings": {
@@ -150,26 +160,16 @@
             "hero_text_link": "mailto:info@diace.be",
             "hero_other_img_text": "MAIL ONS"
           }
-        },
-        "7076296b-b731-4f86-aac9-7b9989c63f38": {
-          "type": "artboard",
-          "settings": {
-            "artphoto": "shopify:\/\/shop_images\/Zonder_titel_Facebook-bericht.png",
-            "heading": "digital marketeer",
-            "Subtext": "full-time",
-            "hero_text_link": "shopify:\/\/pages\/job-digital-marketeer-full-time",
-            "hero_other_img_text": "full-time"
-          }
         }
       },
       "block_order": [
         "4bc49469-1aba-4cbf-8f2a-f6508e4a11b1",
+        "7076296b-b731-4f86-aac9-7b9989c63f38",
         "c6d65c6d-50d1-44e2-bf2e-97c430009955",
         "415aa432-b8b8-45c5-bfed-7e374ac74870",
         "865b076a-8a80-419d-b6a9-0b98c777bc5c",
         "a0579324-9279-4c08-a13b-775c024c681f",
-        "6495a0f1-21d6-463d-8233-4a00ecc60a06",
-        "7076296b-b731-4f86-aac9-7b9989c63f38"
+        "6495a0f1-21d6-463d-8233-4a00ecc60a06"
       ],
       "settings": {
       }
