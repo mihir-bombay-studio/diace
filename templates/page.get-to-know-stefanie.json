@@ -151,17 +151,26 @@
             "title": "Laurien",
             "text": "<p>Product designer<\/p>"
           }
+        },
+        "fbed1683-28ca-4ad2-aa3d-ed56dbdc3481": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
         }
       },
       "block_order": [
         "165512275553386704-0",
         "165512275553386704-1",
-        "165512275553386704-2"
+        "165512275553386704-2",
+        "fbed1683-28ca-4ad2-aa3d-ed56dbdc3481"
       ],
       "settings": {
         "title": "Mijn collega's",
         "image_width": "full",
-        "image_ratio": "square",
+        "image_ratio": "circle",
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
