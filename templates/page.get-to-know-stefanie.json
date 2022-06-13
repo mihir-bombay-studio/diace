@@ -80,13 +80,13 @@
         "16487164375eeebcf7-0": {
           "type": "heading",
           "settings": {
-            "heading": "WIE IS STEFANIE, ONZE DIRECTOR OF TODAY?"
+            "heading": "WIE IS STEFANIE?"
           }
         },
         "16487164375eeebcf7-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Hi, ik ben Stefanie<\/p>"
+            "text": "<p>Ik ben getrouwd met Nick, ben moeder van Hailey en Cédric. Cédric heeft sinds zijn 4 jaar diabetes type 1. Door de saaie apparatuur zijn we op zoek gegaan naar leuke accessoires, door het gebrek van accessoires om het leven met diabetes aangenamer te maken hebben we Diacé opgericht. Sinds juni 2021 werk ik voltijds bij Diacé, een enorm spannende stap, maar nog geen seconde spijt. <\/p><p>De vraag die we vaak krijgen is: van waar komt de naam Diacé? Voor ons is dit heel simpel, diabetes en Cédric. Voor Cédric was dit natuurlijk heel fijn dat hij als eerste alle producten mag testen. <\/p>"
           }
         },
         "16487164375eeebcf7-2": {
@@ -151,6 +151,12 @@
         "text_over_img": "",
         "padd-top": false
       }
+    },
+    "1655115988152423c9": {
+      "type": "product-with-text",
+      "settings": {
+        "product_with_text": "comfort-insuline-pomptas-geometric"
+      }
     }
   },
   "order": [
@@ -158,6 +164,7 @@
     "16528642063e44664c",
     "1648716437deeb88e8",
     "main",
-    "16551151165078cb64"
+    "16551151165078cb64",
+    "1655115988152423c9"
   ]
 }
