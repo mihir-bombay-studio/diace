@@ -2,6 +2,7 @@
   "sections": {
     "16528629523b51a7d2": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "165286295230e6a112-0": {
           "type": "heading",
@@ -51,7 +52,7 @@
         "1652863290e08e5da7-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": ""
           }
         },
         "1652863290e08e5da7-2": {
