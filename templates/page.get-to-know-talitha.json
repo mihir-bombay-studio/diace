@@ -79,6 +79,7 @@
       "blocks": {
         "165519359991f71208-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Image with text"
           }
@@ -92,9 +93,9 @@
         "165519359991f71208-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button-color": "grey"
+            "button_label": "MEET OUR TEAM",
+            "button_link": "https:\/\/diace.be\/pages\/meet-our-team",
+            "button-color": "yellow"
           }
         }
       },
