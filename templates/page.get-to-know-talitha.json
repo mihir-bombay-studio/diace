@@ -115,12 +115,54 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "1655193754ed5bcdab": {
+      "type": "multicolumn",
+      "blocks": {
+        "165519375404ec85a5-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "165519375404ec85a5-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "165519375404ec85a5-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "165519375404ec85a5-0",
+        "165519375404ec85a5-1",
+        "165519375404ec85a5-2"
+      ],
+      "settings": {
+        "title": "MIJN COLLEGA'S",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
     "16551935964a9a4a60",
     "16487170288604e6cd",
     "16551935993432b1f3",
-    "main"
+    "main",
+    "1655193754ed5bcdab"
   ]
 }
