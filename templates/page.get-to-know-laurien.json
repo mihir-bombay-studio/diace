@@ -87,7 +87,6 @@
         },
         "1648716850b3ad6dda-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
@@ -125,6 +124,7 @@
       "blocks": {
         "16551253738b7fdc19-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Image with text"
           }
@@ -154,6 +154,47 @@
         "text_over_img": "",
         "padd-top": false
       }
+    },
+    "1655192220194cb766": {
+      "type": "multicolumn",
+      "blocks": {
+        "16551922202475f290-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16551922202475f290-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16551922202475f290-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16551922202475f290-0",
+        "16551922202475f290-1",
+        "16551922202475f290-2"
+      ],
+      "settings": {
+        "title": "MIJN COLLEGA'S",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
@@ -161,6 +202,7 @@
     "165286521219d0b6ed",
     "1648716850b0a26850",
     "main",
-    "16551253731fbbdc4c"
+    "16551253731fbbdc4c",
+    "1655192220194cb766"
   ]
 }
