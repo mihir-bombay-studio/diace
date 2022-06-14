@@ -168,8 +168,9 @@
         "16551933663a4539af-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_40.png",
+            "title": "Laurien",
+            "text": "<p>Product designer<\/p>"
           }
         },
         "16551933663a4539af-2": {
