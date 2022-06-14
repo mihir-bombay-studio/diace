@@ -137,9 +137,9 @@
         "1655193159e473e453-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button-color": "grey"
+            "button_label": "MEET OUR TEAM",
+            "button_link": "https:\/\/diace.be\/pages\/meet-our-team",
+            "button-color": "yellow"
           }
         }
       },
