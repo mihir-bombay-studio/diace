@@ -11,28 +11,6 @@
         "cont_shopping_btn_txt": "Verder winkelen"
       }
     },
-    "16509662653faa1f2d": {
-      "type": "related-products",
-      "settings": {
-        "featured_collection_title": "",
-        "featured_collection_desc": "",
-        "new_featured_collection": "",
-        "hover_text": "KOPEN",
-        "more_colors_text": "Meer kleuren beschikbaar",
-        "marg_top": "medium"
-      }
-    },
-    "1653664612b4654616": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "AANBEVOLEN PRODUCTEN",
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false,
-        "hover_text": "KOPEN"
-      }
-    },
     "16510507306843669b": {
       "type": "apps",
       "blocks": {
@@ -72,6 +50,28 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "16509662653faa1f2d": {
+      "type": "related-products",
+      "settings": {
+        "featured_collection_title": "",
+        "featured_collection_desc": "",
+        "new_featured_collection": "",
+        "hover_text": "KOPEN",
+        "more_colors_text": "Meer kleuren beschikbaar",
+        "marg_top": "medium"
+      }
+    },
+    "1653664612b4654616": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "AANBEVOLEN PRODUCTEN",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false,
+        "hover_text": "KOPEN"
       }
     },
     "16336209926af228d4": {
@@ -279,9 +279,9 @@
   },
   "order": [
     "1632117875e7ef7fbe",
+    "16510507306843669b",
     "16509662653faa1f2d",
     "1653664612b4654616",
-    "16510507306843669b",
     "16336209926af228d4",
     "163362115027b57f6f",
     "1633621187288eeba0",
