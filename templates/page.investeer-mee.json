@@ -56,7 +56,7 @@
         "1656410676879efde1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Wij willen verder timmeren aan een wereld waarin diabetici het een pak makkelijker hebben. <\/p><p>Via een winwinlening of crowdlening kan je ons helpen onze dromen te realiseren.<\/p>"
+            "text": "<p>Wij willen verder timmeren aan een wereld waarin diabetici het een pak makkelijker hebben. En dat leidde tot een groeiende onderneming. <\/p><p>Via een winwinlening of crowdlening kan je ons helpen onze dromen te realiseren.<\/p>"
           }
         },
         "1656410676879efde1-2": {
@@ -79,11 +79,54 @@
         "text_over_img": "",
         "padd-top": false
       }
+    },
+    "1656411262132de9f0": {
+      "type": "multicolumn",
+      "blocks": {
+        "16564112629b23999f-0": {
+          "type": "column",
+          "settings": {
+            "title": "Waarom investeren in Diacé?",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16564112629b23999f-1": {
+          "type": "column",
+          "settings": {
+            "title": "Wat gaan wij met dat geld doen?",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16564112629b23999f-2": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16564112629b23999f-0",
+        "16564112629b23999f-1",
+        "16564112629b23999f-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "half",
+        "image_ratio": "portrait",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Meer info",
+        "button_link": "https:\/\/invest.winwinner.be\/nl\/projects\/421-diace",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
     "main",
     "16564107996cec7263",
-    "165641067622dfb14e"
+    "165641067622dfb14e",
+    "1656411262132de9f0"
   ]
 }
