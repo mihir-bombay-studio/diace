@@ -56,7 +56,7 @@
         "1656410676879efde1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Wij willen verder timmeren aan een wereld waarin diabetici het een pak makkelijker hebben. En dat leidde tot een groeiende onderneming. <\/p><p>Via een winwinlening of crowdlening kan je ons helpen onze dromen te realiseren.<\/p><p>Lees hieronder meer...<\/p>"
+            "text": "<p>Wij werken verder aan een wereld waarin diabetici het een stuk makkelijker hebben. En dat leidde tot een groeiende onderneming.<\/p><p>Via een investeringsproject kan je ons helpen onze dromen te realiseren.<\/p><p>Lees hieronder meer...<\/p>"
           }
         },
         "1656410676879efde1-2": {
@@ -121,12 +121,49 @@
         "button_link": "https:\/\/invest.winwinner.be\/nl\/projects\/421-diace",
         "swipe_on_mobile": false
       }
+    },
+    "165641213337476e35": {
+      "type": "rich-text",
+      "blocks": {
+        "16564121332a12d3bf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "medium"
+          }
+        },
+        "16564121332a12d3bf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>❕ <strong>Geld lenen aan een onderneming is risicovol. <\/strong>❕<\/p><p>Als investeerder loopt u het risico dat het ontleende bedrag geheel of gedeeltelijk niet kan worden terugbetaald.<\/p>"
+          }
+        },
+        "16564121332a12d3bf-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "16564121332a12d3bf-0",
+        "16564121332a12d3bf-1",
+        "16564121332a12d3bf-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
     }
   },
   "order": [
     "main",
     "16564107996cec7263",
     "165641067622dfb14e",
-    "1656411262132de9f0"
+    "1656411262132de9f0",
+    "165641213337476e35"
   ]
 }
