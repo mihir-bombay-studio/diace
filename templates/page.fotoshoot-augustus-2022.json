@@ -24,9 +24,9 @@
         "16578806707dfb9586-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "SCHRIJF JE SNEL IN",
             "button_link": "",
-            "button-color": "grey"
+            "button-color": "yellow"
           }
         }
       },
