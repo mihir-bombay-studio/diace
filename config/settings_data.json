@@ -179,7 +179,7 @@
           "footer_about_title": "OVER DIACÉ",
           "footer_help_title": "HULP NODIG?",
           "footer_general_title": "ALGEMEEN",
-          "payment_enable": true
+          "payment_enable": false
         }
       }
     },
