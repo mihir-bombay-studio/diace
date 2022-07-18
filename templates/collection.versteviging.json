@@ -86,6 +86,12 @@
           "settings": {
             "type": "Medtrum"
           }
+        },
+        "8ad6c397-932a-47c9-acf9-9844a66a12ed": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Glucomen Day"
+          }
         }
       },
       "block_order": [
@@ -98,7 +104,8 @@
         "a1e6a804-948c-49c5-9ad5-48da1e6b509b",
         "5aed1210-1d01-4f29-ae31-b3154f06b795",
         "c8658382-dfc1-4190-be1d-350add76c327",
-        "dff312f8-c9ab-436a-ab22-22f7419bfd81"
+        "dff312f8-c9ab-436a-ab22-22f7419bfd81",
+        "8ad6c397-932a-47c9-acf9-9844a66a12ed"
       ],
       "settings": {
         "enable_filtering": true,
