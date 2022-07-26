@@ -91,47 +91,6 @@
         "submit_btn_text": "VERZENDEN",
         "marg_bott": "small"
       }
-    },
-    "165882489670c9cf68": {
-      "type": "multicolumn",
-      "blocks": {
-        "16588248969bd5a11f-0": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "16588248969bd5a11f-1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "16588248969bd5a11f-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16588248969bd5a11f-0",
-        "16588248969bd5a11f-1",
-        "16588248969bd5a11f-2"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
     }
   },
   "order": [
@@ -139,7 +98,6 @@
     "1654791016a7caf637",
     "1654791456f2380fc1",
     "1654790098963ec839",
-    "165479215030473bf0",
-    "165882489670c9cf68"
+    "165479215030473bf0"
   ]
 }
