@@ -64,10 +64,21 @@
             "hero_text_link": "shopify:\/\/pages\/familiedag-2022",
             "hero_other_img_text": "beleef"
           }
+        },
+        "37f2ef88-052e-44fb-9dd2-3f0c45fb520e": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/IMG-20210513-WA0000.jpg",
+            "heading": "Fotoshoot augustus 2022",
+            "Subtext": "Diabetes in the spotlight!",
+            "hero_text_link": "shopify:\/\/pages\/fotoshoot-augustus-2022",
+            "hero_other_img_text": "ontdek"
+          }
         }
       },
       "block_order": [
-        "5e2bae56-f124-47ea-9cbe-accd108a8a51"
+        "5e2bae56-f124-47ea-9cbe-accd108a8a51",
+        "37f2ef88-052e-44fb-9dd2-3f0c45fb520e"
       ],
       "settings": {
       }
