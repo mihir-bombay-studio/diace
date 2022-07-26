@@ -236,6 +236,12 @@
         "submit_btn_text": "VERZENDEN",
         "marg_bott": "medium"
       }
+    },
+    "1658828306974f95dd": {
+      "type": "product-with-text",
+      "settings": {
+        "product_with_text": "hypo-pots"
+      }
     }
   },
   "order": [
@@ -246,6 +252,7 @@
     "1633621187288eeba0",
     "1633621467157b4204",
     "1633621996c72e5409",
-    "16336220533f137fd8"
+    "16336220533f137fd8",
+    "1658828306974f95dd"
   ]
 }
