@@ -91,6 +91,42 @@
         "submit_btn_text": "VERZENDEN",
         "marg_bott": "small"
       }
+    },
+    "16588248014788f3a4": {
+      "type": "collection-list",
+      "blocks": {
+        "165882480178f73f75-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "165882480178f73f75-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "165882480178f73f75-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "165882480178f73f75-0",
+        "165882480178f73f75-1",
+        "165882480178f73f75-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_ratio": "adapt",
+        "color_scheme": "inverse",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
@@ -98,6 +134,7 @@
     "1654791016a7caf637",
     "1654791456f2380fc1",
     "1654790098963ec839",
-    "165479215030473bf0"
+    "165479215030473bf0",
+    "16588248014788f3a4"
   ]
 }
