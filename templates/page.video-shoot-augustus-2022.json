@@ -8,6 +8,7 @@
     },
     "1650459071b619d38d": {
       "type": "text-with-background",
+      "disabled": true,
       "settings": {
         "text": "CONTENT CREATOR\/marketeer",
         "description": "Diacé is the online place-to-go voor alles wat me diabetes accessoires te maken heft.\nJe kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 750 producten brengen wij kleur in het leven met diabetes, op een leuke en aangename manier.\nAls jong bedrijf met internationale ambities zijn wij op zoek naar versterking. Ben je klaar voor een zot avontuur? Dan ben je misschien wel de persoon die wij zoeken!\n<br><br>\n<strong>FUNCTIEOMSCHRIJVING<\/strong>\n<br><br>\nContent creeëren op de leukste en een aangename manier. Helemaal in de ban van tik tok? Waag de sprong en maak zelf een aantal filmpjes. Mee met de nieuwste trends en reels? Baan je weg in de wereld van sociale media en wordt de nieuwe trendsetter.\n<br><br>\n<strong>PROFIEL<\/strong>\n<br><br>Je bruist van enthousiasme, passie en nieuwe ideeën.<br>Je weet van aanpakken, out-of-the-box denken en gaat er met volle goesting tegenaan.<br> Je vindt het niet erg om vlogs te maken en video's te maken waar je zelf in voorkomt. <br>Je hebt een beetje ervaring in het nmaken van sociale media posts. <br> Je kan je goed uitdrukken in het Nederlands en Engels en hebt geen bang voor andere talen. <br> Je bent een krak in foutloos schrijven en hebt een leuke schrijfstijl. <br><br><strong>AANBOD<\/strong>\n<br><br>Een leuke plek waar je creativiteit de loop kan gaan. Hier staat alles voor je klaar om het zo comfortabel mogelijk te maken. Toffe collega’s en veel koffie om wakker te blijven!",
@@ -19,6 +20,7 @@
     },
     "1650459486b45955e4": {
       "type": "contact-form-plain",
+      "disabled": true,
       "settings": {
         "contact_text": "IS DEZE JOB OP JOUW LIJF GESCHREVEN? SOLLICITEER NU!",
         "section_padding": "padding-y-0",
@@ -33,6 +35,7 @@
     },
     "16504595071a4e4c0a": {
       "type": "section-with-divider",
+      "disabled": true,
       "settings": {
         "share_heading": "Deel deze vacature.",
         "previous_heading": "",
@@ -42,12 +45,85 @@
         "website_url": "shopify:\/\/pages\/familiedag",
         "share_mail": ""
       }
+    },
+    "165936454867479506": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "16593645486838063b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Video party for kids!"
+          }
+        },
+        "16593645486838063b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16593645486838063b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "16593645486838063b-0",
+        "16593645486838063b-1",
+        "16593645486838063b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-08-01T163903.488.png",
+        "img_preference": "image second",
+        "text_over_img": "",
+        "padd-top": true
+      }
+    },
+    "165936456613346f0e": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "1659364566d9106c75-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1659364566d9106c75-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1659364566d9106c75-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "1659364566d9106c75-0",
+        "1659364566d9106c75-1",
+        "1659364566d9106c75-2"
+      ],
+      "settings": {
+        "img_preference": "image first",
+        "text_over_img": "",
+        "padd-top": false
+      }
     }
   },
   "order": [
     "main",
     "1650459071b619d38d",
     "1650459486b45955e4",
-    "16504595071a4e4c0a"
+    "16504595071a4e4c0a",
+    "165936454867479506",
+    "165936456613346f0e"
   ]
 }
