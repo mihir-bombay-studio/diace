@@ -34,6 +34,7 @@
     },
     "1633587959e856023f": {
       "type": "collection-list-new",
+      "disabled": true,
       "settings": {
       }
     },
