@@ -6,6 +6,14 @@
       "settings": {
       }
     },
+    "165962422201c7c8ef": {
+      "type": "shop-by-category-banner",
+      "settings": {
+        "banner_img": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-08-01T163903.488.png",
+        "banner_title": "diabetes faq",
+        "banner_desc": "de meest gestelde diabetes vragen."
+      }
+    },
     "16596241066d103a8a": {
       "type": "faq",
       "blocks": {
@@ -108,6 +116,7 @@
   },
   "order": [
     "main",
+    "165962422201c7c8ef",
     "16596241066d103a8a",
     "165962417533b5c9fc"
   ]
