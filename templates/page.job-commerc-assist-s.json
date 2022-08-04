@@ -42,6 +42,7 @@
       "blocks": {
         "165960179645861fcc-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "",
             "heading_size": "medium"
@@ -50,11 +51,12 @@
         "165960179645861fcc-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p><strong>Functieomschrijving: <\/strong> <\/p><p>De wereld draait om kopen en verkopen. Dat is bij Diacé niet anders. Als commercieel assistent ondersteun je onze salesambities. Je zal met klanten praten, campagnes opzetten en onze community beheren. Vindt je niet erg om variatie te hebben in een job? Dan is deze functie perfect voor jou. Elke dag is er een nieuwe uitdaging om te overwinnen, waardoor je job vol variatie zal zitten. <\/p><p><strong>Profiel: <\/strong> <\/p><p>Je bruist van enthousiasme, passie en nieuwe ideeën. <\/p><p>Je weet van aanpakken, out-of-the-box denken en gaat er met volle goesting tegenaan. <\/p><p>Wij zijn een internationaal bedrijf, dus Nederlands en Engels zijn dagelijks nodig. Bonuspunten voor Frans en Duits. <\/p><p>Jij bent niet verlegen en durft zelf voorstellen te doen, ook naar externe toe. <\/p><p>Cijfers schrikken je niet af.  <\/p><p>Je bent mee met de laatste salestrends, maar weet nog steeds hoe je authentiek blijft. <\/p><p><strong>AANBOD<\/strong><\/p><p>Een leuke plek waar je creativiteit de loop kan gaan. Hier staat alles voor je klaar om het zo comfortabel mogelijk te maken. Toffe collega’s en veel koffie om wakker te blijven!<\/p>"
           }
         },
         "165960179645861fcc-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": "",
