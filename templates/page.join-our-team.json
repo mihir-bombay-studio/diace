@@ -53,7 +53,6 @@
     },
     "16508947665048bbc7": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "1650894766e15fb249-2": {
           "type": "button",
@@ -84,7 +83,7 @@
         "1650894766e15fb249-1"
       ],
       "settings": {
-        "color_scheme": "accent-2",
+        "color_scheme": "background-1",
         "full_width": true
       }
     },
