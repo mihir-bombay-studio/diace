@@ -1,5 +1,79 @@
 {
   "sections": {
+    "165960225510947b18": {
+      "type": "rich-text",
+      "blocks": {
+        "1659602255f8fccfed-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "GROWTHMARKETEER - STAGE",
+            "heading_size": "small"
+          }
+        },
+        "1659602255f8fccfed-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1659602255f8fccfed-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1659602255f8fccfed-0",
+        "1659602255f8fccfed-1",
+        "1659602255f8fccfed-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true
+      }
+    },
+    "1659602268e0040237": {
+      "type": "rich-text",
+      "blocks": {
+        "1659602268477c992d-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
+        "1659602268477c992d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1659602268477c992d-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1659602268477c992d-0",
+        "1659602268477c992d-1",
+        "1659602268477c992d-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -8,6 +82,7 @@
     },
     "1650459071b619d38d": {
       "type": "text-with-background",
+      "disabled": true,
       "settings": {
         "text": "CONTENT CREATOR\/marketeer",
         "description": "Diacé is the online place-to-go voor alles wat me diabetes accessoires te maken heft.\nJe kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 750 producten brengen wij kleur in het leven met diabetes, op een leuke en aangename manier.\nAls jong bedrijf met internationale ambities zijn wij op zoek naar versterking. Ben je klaar voor een zot avontuur? Dan ben je misschien wel de persoon die wij zoeken!\n<br><br>\n<strong>FUNCTIEOMSCHRIJVING<\/strong>\n<br><br>\nContent creeëren op de leukste en een aangename manier. Helemaal in de ban van tik tok? Waag de sprong en maak zelf een aantal filmpjes. Mee met de nieuwste trends en reels? Baan je weg in de wereld van sociale media en wordt de nieuwe trendsetter.\n<br><br>\n<strong>PROFIEL<\/strong>\n<br><br>Je bruist van enthousiasme, passie en nieuwe ideeën.<br>Je weet van aanpakken, out-of-the-box denken en gaat er met volle goesting tegenaan.<br> Je vindt het niet erg om vlogs te maken en video's te maken waar je zelf in voorkomt. <br>Je hebt een beetje ervaring in het nmaken van sociale media posts. <br> Je kan je goed uitdrukken in het Nederlands en Engels en hebt geen bang voor andere talen. <br> Je bent een krak in foutloos schrijven en hebt een leuke schrijfstijl. <br><br><strong>AANBOD<\/strong>\n<br><br>Een leuke plek waar je creativiteit de loop kan gaan. Hier staat alles voor je klaar om het zo comfortabel mogelijk te maken. Toffe collega’s en veel koffie om wakker te blijven!",
@@ -45,6 +120,8 @@
     }
   },
   "order": [
+    "165960225510947b18",
+    "1659602268e0040237",
     "main",
     "1650459071b619d38d",
     "1650459486b45955e4",
