@@ -6,48 +6,69 @@
       "settings": {
       }
     },
-    "1650459071b619d38d": {
-      "type": "text-with-background",
+    "16596241066d103a8a": {
+      "type": "faq",
+      "blocks": {
+        "90927455-8b1a-4bba-b133-8c02950fda69": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "473d6ba0-9c7f-49c2-a3e6-1471da680818": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "13d24ba7-24b2-4468-aa18-ca0d18c61cd3": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "5b1cfd1f-c1cc-4e14-88f0-528fb4f70500": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "6aa60ab4-b921-417b-8690-002e4713bc56": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        },
+        "c2a167fd-1c8f-4314-8745-1788394b0d3a": {
+          "type": "cta",
+          "disabled": true,
+          "settings": {
+            "cta_label": "CTA label",
+            "cta_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "90927455-8b1a-4bba-b133-8c02950fda69",
+        "473d6ba0-9c7f-49c2-a3e6-1471da680818",
+        "13d24ba7-24b2-4468-aa18-ca0d18c61cd3",
+        "5b1cfd1f-c1cc-4e14-88f0-528fb4f70500",
+        "6aa60ab4-b921-417b-8690-002e4713bc56",
+        "c2a167fd-1c8f-4314-8745-1788394b0d3a"
+      ],
       "settings": {
-        "text": "CONTENT CREATOR\/marketeer",
-        "description": "Diacé is the online place-to-go voor alles wat me diabetes accessoires te maken heft.\nJe kan bij ons terecht voor een ruim assortiment aan handige diabetes accessoires. Met meer dan 750 producten brengen wij kleur in het leven met diabetes, op een leuke en aangename manier.\nAls jong bedrijf met internationale ambities zijn wij op zoek naar versterking. Ben je klaar voor een zot avontuur? Dan ben je misschien wel de persoon die wij zoeken!\n<br><br>\n<strong>FUNCTIEOMSCHRIJVING<\/strong>\n<br><br>\nContent creeëren op de leukste en een aangename manier. Helemaal in de ban van tik tok? Waag de sprong en maak zelf een aantal filmpjes. Mee met de nieuwste trends en reels? Baan je weg in de wereld van sociale media en wordt de nieuwe trendsetter.\n<br><br>\n<strong>PROFIEL<\/strong>\n<br><br>Je bruist van enthousiasme, passie en nieuwe ideeën.<br>Je weet van aanpakken, out-of-the-box denken en gaat er met volle goesting tegenaan.<br> Je vindt het niet erg om vlogs te maken en video's te maken waar je zelf in voorkomt. <br>Je hebt een beetje ervaring in het nmaken van sociale media posts. <br> Je kan je goed uitdrukken in het Nederlands en Engels en hebt geen bang voor andere talen. <br> Je bent een krak in foutloos schrijven en hebt een leuke schrijfstijl. <br><br><strong>AANBOD<\/strong>\n<br><br>Een leuke plek waar je creativiteit de loop kan gaan. Hier staat alles voor je klaar om het zo comfortabel mogelijk te maken. Toffe collega’s en veel koffie om wakker te blijven!",
-        "show_btn": true,
-        "link_text": "Terug",
-        "link_url": "shopify:\/\/pages\/join-our-team",
-        "btm_padding": true
-      }
-    },
-    "1650459486b45955e4": {
-      "type": "contact-form-plain",
-      "settings": {
-        "contact_text": "IS DEZE JOB OP JOUW LIJF GESCHREVEN? SOLLICITEER NU!",
-        "section_padding": "padding-y-0",
-        "section_margin": "margin-y-0",
-        "name_label": "Naam",
-        "email_label": "E-MAIL",
-        "phone_label": "TELEFOONNUMMER",
-        "motivation_label": "CV - MOTIVATIE",
-        "message_label": "UW BERICHT",
-        "sbmtbtn_label": "VERZENDEN"
-      }
-    },
-    "16504595071a4e4c0a": {
-      "type": "section-with-divider",
-      "settings": {
-        "share_heading": "Deel deze vacature.",
-        "previous_heading": "",
-        "next_heading": "",
-        "share_link": "shopify:\/\/pages\/familiedag",
-        "share_title": "",
-        "website_url": "shopify:\/\/pages\/familiedag",
-        "share_mail": ""
+        "faq_heading": "diabetes faq"
       }
     }
   },
   "order": [
     "main",
-    "1650459071b619d38d",
-    "1650459486b45955e4",
-    "16504595071a4e4c0a"
+    "16596241066d103a8a"
   ]
 }
