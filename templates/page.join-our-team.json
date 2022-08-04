@@ -91,6 +91,16 @@
     "1632806201e2d1d8bf": {
       "type": "artboard",
       "blocks": {
+        "a0579324-9279-4c08-a13b-775c024c681f": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Image_2x_6abba74b-24e0-4416-bbcc-202e3aefb47c.png",
+            "heading": "MODE- EN CREATIE",
+            "Subtext": "half-time\/ full-time",
+            "hero_text_link": "shopify:\/\/pages\/job-mode-en-creatie-stage",
+            "hero_other_img_text": "half-time\/full-time"
+          }
+        },
         "4bc49469-1aba-4cbf-8f2a-f6508e4a11b1": {
           "type": "artboard",
           "settings": {
@@ -115,7 +125,7 @@
           "type": "artboard",
           "settings": {
             "artphoto": "shopify:\/\/shop_images\/art-image.png",
-            "heading": "DIGITAL MARKETEER",
+            "heading": "content creator",
             "Subtext": "stage",
             "hero_text_link": "shopify:\/\/pages\/job-content-creator-stage",
             "hero_other_img_text": "stage"
@@ -141,16 +151,6 @@
             "hero_other_img_text": "stage"
           }
         },
-        "a0579324-9279-4c08-a13b-775c024c681f": {
-          "type": "artboard",
-          "settings": {
-            "artphoto": "shopify:\/\/shop_images\/Image_2x_6abba74b-24e0-4416-bbcc-202e3aefb47c.png",
-            "heading": "MODE- EN CREATIE",
-            "Subtext": "half-time\/ full-time",
-            "hero_text_link": "shopify:\/\/pages\/job-mode-en-creatie-stage",
-            "hero_other_img_text": "half-time\/full-time"
-          }
-        },
         "6495a0f1-21d6-463d-8233-4a00ecc60a06": {
           "type": "artboard",
           "settings": {
@@ -163,12 +163,12 @@
         }
       },
       "block_order": [
+        "a0579324-9279-4c08-a13b-775c024c681f",
         "4bc49469-1aba-4cbf-8f2a-f6508e4a11b1",
         "7076296b-b731-4f86-aac9-7b9989c63f38",
         "c6d65c6d-50d1-44e2-bf2e-97c430009955",
         "415aa432-b8b8-45c5-bfed-7e374ac74870",
         "865b076a-8a80-419d-b6a9-0b98c777bc5c",
-        "a0579324-9279-4c08-a13b-775c024c681f",
         "6495a0f1-21d6-463d-8233-4a00ecc60a06"
       ],
       "settings": {
