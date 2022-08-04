@@ -90,6 +90,16 @@
     "1632806201e2d1d8bf": {
       "type": "artboard",
       "blocks": {
+        "0347a65c-03d6-456b-b24d-36604527562b": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-08-04T113418.973_7ec65a02-33a0-4bf2-8cdf-7bfa4cc752fa.png",
+            "heading": "mode - en creatie",
+            "Subtext": "half-time\/full-time",
+            "hero_text_link": "shopify:\/\/pages\/job-mode-en-creatie",
+            "hero_other_img_text": "half-time\/full-time"
+          }
+        },
         "a0579324-9279-4c08-a13b-775c024c681f": {
           "type": "artboard",
           "settings": {
@@ -150,14 +160,14 @@
             "hero_other_img_text": "stage"
           }
         },
-        "0347a65c-03d6-456b-b24d-36604527562b": {
+        "4c269e0a-4f1f-4388-bc68-8b36c28162df": {
           "type": "artboard",
           "settings": {
-            "artphoto": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-08-04T113418.973_7ec65a02-33a0-4bf2-8cdf-7bfa4cc752fa.png",
-            "heading": "mode - en creatie",
-            "Subtext": "half-time\/full-time",
-            "hero_text_link": "shopify:\/\/pages\/job-mode-en-creatie",
-            "hero_other_img_text": "half-time\/full-time"
+            "artphoto": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-08-04T114209.809.png",
+            "heading": "logistiek assistent",
+            "Subtext": "stage",
+            "hero_text_link": "shopify:\/\/pages\/job-logistiek-stage",
+            "hero_other_img_text": "stage"
           }
         },
         "6495a0f1-21d6-463d-8233-4a00ecc60a06": {
@@ -172,13 +182,14 @@
         }
       },
       "block_order": [
+        "0347a65c-03d6-456b-b24d-36604527562b",
         "a0579324-9279-4c08-a13b-775c024c681f",
         "4bc49469-1aba-4cbf-8f2a-f6508e4a11b1",
         "7076296b-b731-4f86-aac9-7b9989c63f38",
         "c6d65c6d-50d1-44e2-bf2e-97c430009955",
         "415aa432-b8b8-45c5-bfed-7e374ac74870",
         "865b076a-8a80-419d-b6a9-0b98c777bc5c",
-        "0347a65c-03d6-456b-b24d-36604527562b",
+        "4c269e0a-4f1f-4388-bc68-8b36c28162df",
         "6495a0f1-21d6-463d-8233-4a00ecc60a06"
       ],
       "settings": {
