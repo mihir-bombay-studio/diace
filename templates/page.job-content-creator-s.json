@@ -1,5 +1,40 @@
 {
   "sections": {
+    "1659601342b3c27073": {
+      "type": "rich-text",
+      "blocks": {
+        "1659601342a1cad411-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "LOGISTIEK ASSISTENT - STAGE",
+            "heading_size": "medium"
+          }
+        },
+        "1659601342a1cad411-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1659601342a1cad411-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1659601342a1cad411-0",
+        "1659601342a1cad411-1",
+        "1659601342a1cad411-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -43,48 +78,13 @@
         "website_url": "shopify:\/\/pages\/familiedag",
         "share_mail": ""
       }
-    },
-    "1659601342b3c27073": {
-      "type": "rich-text",
-      "blocks": {
-        "1659601342a1cad411-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "medium"
-          }
-        },
-        "1659601342a1cad411-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "1659601342a1cad411-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "1659601342a1cad411-0",
-        "1659601342a1cad411-1",
-        "1659601342a1cad411-2"
-      ],
-      "settings": {
-        "color_scheme": "accent-2",
-        "full_width": true
-      }
     }
   },
   "order": [
+    "1659601342b3c27073",
     "main",
     "1650459071b619d38d",
     "1650459486b45955e4",
-    "16504595071a4e4c0a",
-    "1659601342b3c27073"
+    "16504595071a4e4c0a"
   ]
 }
