@@ -39,6 +39,7 @@
         },
         "6aa60ab4-b921-417b-8690-002e4713bc56": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": "",
@@ -63,12 +64,51 @@
         "c2a167fd-1c8f-4314-8745-1788394b0d3a"
       ],
       "settings": {
-        "faq_heading": "diabetes faq"
+        "faq_heading": ""
+      }
+    },
+    "165962417533b5c9fc": {
+      "type": "multiple-faqs",
+      "disabled": true,
+      "blocks": {
+        "cc3c61fd-a7a1-4c45-996f-02f12d872729": {
+          "type": "subject_1",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "413a97bc-019b-4235-98ec-1cb7887ba86d": {
+          "type": "subject_2",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "ba7506ee-99e0-4cbb-a067-5e6326f9dda3": {
+          "type": "subject_3",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "cc3c61fd-a7a1-4c45-996f-02f12d872729",
+        "413a97bc-019b-4235-98ec-1cb7887ba86d",
+        "ba7506ee-99e0-4cbb-a067-5e6326f9dda3"
+      ],
+      "settings": {
+        "section_heading": "",
+        "faq_heading_1": "",
+        "faq_heading_2": "",
+        "faq_heading_3": ""
       }
     }
   },
   "order": [
     "main",
-    "16596241066d103a8a"
+    "16596241066d103a8a",
+    "165962417533b5c9fc"
   ]
 }
