@@ -150,6 +150,16 @@
             "hero_other_img_text": "stage"
           }
         },
+        "0347a65c-03d6-456b-b24d-36604527562b": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-08-04T113418.973.png",
+            "heading": "mode - en creatie",
+            "Subtext": "half-time\/full-time",
+            "hero_text_link": "shopify:\/\/pages\/job-mode-en-creatie",
+            "hero_other_img_text": "half-time\/full-time"
+          }
+        },
         "6495a0f1-21d6-463d-8233-4a00ecc60a06": {
           "type": "artboard",
           "settings": {
@@ -168,6 +178,7 @@
         "c6d65c6d-50d1-44e2-bf2e-97c430009955",
         "415aa432-b8b8-45c5-bfed-7e374ac74870",
         "865b076a-8a80-419d-b6a9-0b98c777bc5c",
+        "0347a65c-03d6-456b-b24d-36604527562b",
         "6495a0f1-21d6-463d-8233-4a00ecc60a06"
       ],
       "settings": {
