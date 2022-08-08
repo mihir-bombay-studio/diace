@@ -1,4 +1,4 @@
-{{ 'social-media.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'social-media.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 <div class="container">
   <div class="social-media  socila-media-lower newsletter-container {{ section.settings.marg_bott }}">

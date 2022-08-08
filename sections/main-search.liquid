@@ -1,14 +1,14 @@
-{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'template-collection.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 <link rel="stylesheet" href="{{ 'component-badge.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-badge.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-card.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-price.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-search.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
 
 <style>
   .template-search__search {

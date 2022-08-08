@@ -1,4 +1,4 @@
-{{ 'our-values.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'our-values.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 <div class="our-values-wrapper container">
 	<h2 class="our-values-heading bold">{{section.settings.our_value_heading}}</h2>

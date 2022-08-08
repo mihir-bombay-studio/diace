@@ -1,4 +1,4 @@
-{{ 'faq.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'faq.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 <section id="veelgestelde-vragen" class="faq-section">
     <div class="faq-wrapper container">
         <h2 class="section-heading bold text-center">{{ section.settings.section_heading }}</h2>

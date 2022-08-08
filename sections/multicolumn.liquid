@@ -1,6 +1,6 @@
-{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'section-multicolumn.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-slider.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
 
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
