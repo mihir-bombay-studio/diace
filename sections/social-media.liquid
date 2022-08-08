@@ -4,7 +4,7 @@
       <div class="text-new-btn bold">{{section.settings.text_over_img}}</div>
   <div class="social-media flex-box justify-between">
     <div class="sm-left rel">
-    	<img alt="{{ section.settings.sm_main_img.alt | escape }}" class="lazyload hs-lazyload hs-id-3a5be750" data-src="{{ section.settings.sm_main_img | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    	<img alt="{{ section.settings.sm_main_img.alt | escape }}" class="hs-id-3a5be750 lazyload hs-lazyload" data-src="{{ section.settings.sm_main_img | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
       <div class="text-over-sm bold">{{section.settings.text_over_img}}</div>
       <div class="bg-yellow-dots dots-left-down">
       	{% include 'bg-grey-dots' %}
@@ -18,7 +18,7 @@
       {% for block in section.blocks %}
       {% if block.type == "sm_other_imgs" %}
       <div class="sm-other-img rel">
-      	<img alt="{{ block.settings.sm_other_img.alt | escape }}" class="lazyload hs-lazyload hs-id-9c702606" data-src="{{ block.settings.sm_other_img | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+      	<img alt="{{ block.settings.sm_other_img.alt | escape }}" class="hs-id-9c702606 lazyload hs-lazyload" data-src="{{ block.settings.sm_other_img | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
         {% if block.settings.sm_logo == 'facebook' %}
         <a href="{{block.settings.sm_link}}" target="_blank" class="social-logo">
         	{% include 'icon-fb' %}
@@ -40,7 +40,7 @@
           {%- if block.settings.sm_mobile_svg != blank -%}
           	{{ block.settings.sm_mobile_svg }}
           {%- else -%}
-          <img alt="{{ block.settings.sm_mobile_img.alt | escape }}" class="lazyload hs-lazyload hs-id-2806ec92" data-src="{{ block.settings.sm_mobile_img | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          <img alt="{{ block.settings.sm_mobile_img.alt | escape }}" class="hs-id-2806ec92 lazyload hs-lazyload" data-src="{{ block.settings.sm_mobile_img | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           {%- endif -%}
       	</div>
       {% endif %}

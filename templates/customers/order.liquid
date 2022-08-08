@@ -31,7 +31,7 @@
           {%- for line_item in order.line_items -%}
           <div class="product-block">
             <a href="{{ line_item.product.url }}" class="product-img">
-              <img alt="{{ line_item.title | escape }}" class="cart-item__image lazyload hs-lazyload hs-id-c1e88dd3" data-src="{{ line_item.image | img_url: '150x' }}" height="{{ 75 | divided_by: item.image.aspect_ratio | ceil }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="75">
+              <img alt="{{ line_item.title | escape }}" class="cart-item__image hs-id-c1e88dd3 lazyload hs-lazyload" data-src="{{ line_item.image | img_url: '150x' }}" height="{{ 75 | divided_by: item.image.aspect_ratio | ceil }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="75">
             </a>
             <div class="product-info">
               <a href="{{ line_item.product.url }}" class="product-name">{{ line_item.title }}</a>
