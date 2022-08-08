@@ -1,5 +1,5 @@
-{{ 'customer.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'customer.js' | asset_url }}" defer></script>
+{% render 'hs-defer-css' with filename: 'customer.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+<script defer src="{{ 'customer.js' | asset_url }}"></script>
 
 {%- paginate customer.addresses by 5 -%}
   <div class="customer addresses container" data-customer-addresses>

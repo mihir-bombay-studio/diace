@@ -1,4 +1,4 @@
-{{ 'form-with-text.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'form-with-text.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 
     <div class="form-with-text">
