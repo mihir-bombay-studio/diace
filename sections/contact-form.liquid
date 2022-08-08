@@ -1,4 +1,4 @@
-{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'section-contact-form.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 <div class="contact page-width page-width--narrow spaced-section">
   {%- form 'contact', id: 'ContactForm' -%}

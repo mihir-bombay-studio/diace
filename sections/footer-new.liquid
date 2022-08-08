@@ -1,4 +1,4 @@
-{{ 'footer.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'footer.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 <footer>
   <div class="container footer-wrapper">

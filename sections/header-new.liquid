@@ -1,4 +1,4 @@
-{{ 'header.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'header.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 <header>
     <span class="header-anouncement flex-box semibold justify-center align-center no-mobile no-disp">
         {{ section.settings.announcement_text }}
@@ -113,7 +113,7 @@
                                                                     {{ collections[collhand].description }}
                                                                 </div>
                                                                 <div class="image-block">
-                                                                    <img src="{{ collections[collhand].featured_image | img_url: '278x'}}" alt="{{collections[collhand].title}}"></div>
+                                                                    <img alt="{{collections[collhand].title}}" class="lazyload hs-lazyload hs-id-25186326" data-src="{{ collections[collhand].featured_image | img_url: '278x'}}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -131,7 +131,7 @@
             {% render "mobile-nav" %}
         </header>
 
-          <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+          <script src="https://cdn.weglot.com/weglot.min.js" type="text/javascript"></script>
 <script>
     Weglot.initialize({
         api_key: 'wg_b9ac4e47cec706a8e7b88c68763878422'

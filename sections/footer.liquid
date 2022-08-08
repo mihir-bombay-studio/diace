@@ -1,5 +1,5 @@
 {% comment %}theme-check-disable UndefinedObject{% endcomment %}
-{{ 'section-footer.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'section-footer.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 <link rel="stylesheet" href="{{ 'component-newsletter.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-accordion.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -8,13 +8,13 @@
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'disclosure.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<noscript>{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-accordion.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-list-social.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-newsletter.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-accordion.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-list-menu.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-list-payment.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-list-social.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-rte.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'disclosure.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
 
 <footer class="footer color-{{ section.settings.color_scheme }}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
