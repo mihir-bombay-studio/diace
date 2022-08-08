@@ -1,6 +1,6 @@
-{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'component-article-card.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{% render 'hs-defer-css' with filename: 'component-card.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{% render 'hs-defer-css' with filename: 'section-main-blog.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 
 {%- paginate blog.articles by 6 -%}

@@ -1,17 +1,17 @@
-{{ 'template-collection.css' | asset_url | stylesheet_tag }}
-{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
-{{ 'product-collection.css' | asset_url | stylesheet_tag }}
-{{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'template-collection.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{% render 'hs-defer-css' with filename: 'component-loading-overlay.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{% render 'hs-defer-css' with filename: 'product-collection.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{% render 'hs-defer-css' with filename: 'featured-collection-new.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 <link rel="preload" href="{{ 'component-card.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="{{ 'component-price.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="{{ 'component-badge.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-<noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-card.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-price.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-badge.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{% render 'hs-defer-css' with filename: 'component-rte.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
 
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
@@ -385,7 +385,7 @@
   {%- endif -%}
 </div>
 
-<script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
+<script defer src="{{ 'collection-filters-form.min.js' | asset_url }}"></script>
 
 <div id="CollectionProductGrid">
   {% paginate collection.products by limit %}
@@ -403,7 +403,7 @@
         <div class="featured-product-img rel">
           {% if product.featured_image != blank %}
           <a href="{{product.url}}">
-            <img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
+            <img class="product-img lazyload hs-lazyload hs-id-24952ba7" data-src="{{ product.featured_image.src | img_url: 'x282' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           {% else %}
           {{ 'product-1' | placeholder_svg_tag: 'my-custom-class' }}
           {% endif %}

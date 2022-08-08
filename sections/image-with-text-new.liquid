@@ -1,4 +1,4 @@
-{{ 'image-with-text-new.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'image-with-text-new.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 <div class="image-with-text container rel {% if section.settings.padd-top %} pt {% endif %}">
   <div class="flex-box justify-between align-center grid grid--gapless grid--1-col grid--2-col-tablet {% if section.settings.img_preference == 'image first' %}raw-reverse{% endif %}">
@@ -28,10 +28,7 @@
     <div class="image-with-text-grid-item">
       <div class="rel img-with-text-img">
         {%- if section.settings.image != blank -%}
-          <img 
-            src="{{ section.settings.image | img_url: '533x' }}"
-            alt="{{ section.settings.image.alt | escape }}"
-          >
+          <img alt="{{ section.settings.image.alt | escape }}" class="lazyload hs-lazyload hs-id-b0bc08db" data-src="{{ section.settings.image | img_url: '533x' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
