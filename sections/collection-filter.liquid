@@ -258,7 +258,7 @@
         <div class="collection-banner flex-box justify-between">
           <div class="bg-gray-dots">{% include "image-banner-gray-dots" %}</div>
           <div class="banner-right">
-            <img class="lazyload hs-lazyload hs-id-fae6218f" data-src="{{ collection.image | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img class="hs-id-fae6218f lazyload hs-lazyload" data-src="{{ collection.image | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           </div>
           <div class="banner-left">
             <div class="banner-title bold">{{ collection.title }}</div>
@@ -279,7 +279,7 @@
       
       <div class="collection-banner-wrapper small">
         <div class="banner-small">
-          <img class="lazyload hs-lazyload hs-id-7c72733d" data-src="{{ collection.image | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          <img class="hs-id-7c72733d lazyload hs-lazyload" data-src="{{ collection.image | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
         </div>
         <div class="">
             <div class="banner-title bold">{{ collection.title }}</div>
@@ -735,7 +735,7 @@
                 <div>
                 <div class="featured-product-img rel">
                   {% if product.featured_image != blank %}
-                  <a href="{{product.url}}" ><img class="product-img lazyload hs-lazyload hs-id-1500558c" data-src="{{ product.featured_image.src | img_url: 'x282' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+                  <a href="{{product.url}}" ><img class="product-img hs-id-1500558c lazyload hs-lazyload" data-src="{{ product.featured_image.src | img_url: 'x282' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
                   {% else %}
                   {{ 'product-1' | placeholder_svg_tag }}
                   {% endif %}
