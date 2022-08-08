@@ -21,4 +21,4 @@
 </script>
 
     <script src="https://amaicdn.com/timer-app/common.js"></script>
-    <link href="https://amaicdn.com/timer-app/common.css" rel="stylesheet" type="text/css" media="all">
+    {% render 'hs-defer-css' with filename: 'https://amaicdn.com/timer-app/common.css', pages: 'collection,index,product' | split: ',', minify: false, local: false %}

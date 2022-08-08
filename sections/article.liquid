@@ -1,4 +1,4 @@
-{{ 'article.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'article.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 {%- assign article_content = article.content  -%}{%- assign readtime = '' -%}
 {%- assign words = article_content | number_of_words | strip_html | split:' ' -%}
@@ -15,10 +15,10 @@
         <span class="date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
       </div>
       <div class="article-image">
-        <img src="{{ article.image.src | img_url: 'master' }}" alt="">
+        <img alt="" class="lazyload hs-lazyload hs-id-aa5abf74" data-src="{{ article.image.src | img_url: 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
       </div>
       <div class="author">
-        <img src="{{ article.image.src | img_url: 'master' }}" alt="author">
+        <img alt="author" class="lazyload hs-lazyload hs-id-3a9aac35" data-src="{{ article.image.src | img_url: 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
         <span class="author-name">{{ article.author }}</span>
       </div>
       <div class="article-content">

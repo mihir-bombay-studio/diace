@@ -1,11 +1,11 @@
-{{ 'artboard.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'artboard.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 <div class="container filtered-container">
   {% for block in section.blocks %}
   <div class="artboard">
     <div class="art-image">
       <a href="">
-        <img src="{{ block.settings.artphoto | img_url: 'master' }}" loading="lazy" alt="Art Image" class="artimage">
+        <img alt="Art Image" class="artimage lazyload hs-lazyload hs-id-174697de" data-src="{{ block.settings.artphoto | img_url: 'master' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
       </a>
       <div class="hero-hover-text flex-box align-center">
         <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>

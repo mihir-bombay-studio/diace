@@ -1,6 +1,6 @@
-{{ 'collage.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: 'collage.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{% render 'hs-defer-css' with filename: 'component-card.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{% render 'hs-defer-css' with filename: 'component-price.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -258,9 +258,11 @@
                 </button>
                 <template>
                   {%- if block.settings.video_url.type == 'youtube' -%}
-                    <iframe src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                    <iframe allow="autoplay; encrypted-media" allowfullscreen="" class="js-youtube lazyload hs-id-0e6c937b" data-src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1" title="{{ block.settings.description | escape }}">
+</iframe>
                   {%- else -%}
-                    <iframe src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                    <iframe allow="autoplay; encrypted-media" allowfullscreen="" class="js-vimeo lazyload hs-id-c174d2f4" data-src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}" title="{{ block.settings.description | escape }}">
+</iframe>
                   {%- endif -%}
                 </template>
               </deferred-media>
@@ -305,9 +307,11 @@
                   <deferred-media class="collage-video__modal-video template-popup">
                     <template>
                       {%- if block.settings.video_url.type == 'youtube' -%}
-                        <iframe src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        <iframe allow="autoplay; encrypted-media" allowfullscreen="" class="js-youtube lazyload hs-id-0e6c937b" data-src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1" title="{{ block.settings.description | escape }}">
+</iframe>
                       {%- else -%}
-                        <iframe src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        <iframe allow="autoplay; encrypted-media" allowfullscreen="" class="js-vimeo lazyload hs-id-c174d2f4" data-src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}" title="{{ block.settings.description | escape }}">
+</iframe>
                       {%- endif -%}
                     </template>
                   </deferred-media>
