@@ -1,4 +1,4 @@
-<link href="https://static.dla.group/free-shipping-emoji.css" rel="stylesheet">
+{% render 'hs-defer-css' with filename: 'https://static.dla.group/free-shipping-emoji.css', pages: 'collection,index,product' | split: ',', minify: false, local: false %}
 <style type="text/css">
   .dla-free-shipping {
     display: none;
