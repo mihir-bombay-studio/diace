@@ -97,7 +97,7 @@
         {% paginate collections[section.settings.grouping_collection].products by 1000 %}
         {%- for productx in collections[section.settings.grouping_collection].products -%}
         {% for image in productx.images %}
-        <img alt="{{ productx.title | escape }}" class="lazyload hs-lazyload hs-id-c2c134ff" data-src="{{ image.src | img_url: 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width: 100%;">
+        <img alt="{{ productx.title | escape }}" class="hs-id-c2c134ff lazyload hs-lazyload" data-src="{{ image.src | img_url: 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width: 100%;">
         {% endfor %}
         {% endfor %}
         {% endpaginate %}
@@ -106,7 +106,7 @@
         {% paginate collections[section.settings.grouping_collection].products by 1000 %}
         {%- for productx in collections[section.settings.grouping_collection].products -%}
         {% for image in productx.images %}
-        <img alt="{{ productx.title | escape }}" class="lazyload hs-lazyload hs-id-30e3a018" data-src="{{ image.src | img_url: 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width: 100%;">
+        <img alt="{{ productx.title | escape }}" class="hs-id-30e3a018 lazyload hs-lazyload" data-src="{{ image.src | img_url: 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width: 100%;">
         {% endfor %}
         {% endfor %}
         {% endpaginate %}
@@ -155,7 +155,7 @@
               <div class="show modal-btn" aria-haspopup="true">{{ section.settings.size_label }}</div>
               <div class="mask" role="dialog"></div>
               <div class="modal style-scrollbar" role="alert">
-                <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"><img class="size-guide-img lazyload hs-lazyload hs-id-3ec28ccc" data-src="{{ product.metafields.my_fields.size_image | img_url }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+                <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"><img class="size-guide-img hs-id-3ec28ccc lazyload hs-lazyload" data-src="{{ product.metafields.my_fields.size_image | img_url }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div> 
               {%- elsif dwncase contains "kleur" or dwncase contains "color" -%}
@@ -222,7 +222,7 @@
             <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}" title="{{ value }}">
               <span class="color-swatch" >
                 {% comment %}
-                <img class="{{ value }} colors-color lazyload hs-lazyload hs-id-d521bb7e" data-src="{{ variantImg | img_url }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                <img class="{{ value }} colors-color hs-id-d521bb7e" src="{{ variantImg | img_url }}">
                 {% endcomment %}
                 {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
                 {% for colors in colorsSch %}
