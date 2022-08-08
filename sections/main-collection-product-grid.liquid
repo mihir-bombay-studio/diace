@@ -403,7 +403,7 @@
         <div class="featured-product-img rel">
           {% if product.featured_image != blank %}
           <a href="{{product.url}}">
-            <img class="product-img lazyload hs-lazyload hs-id-24952ba7" data-src="{{ product.featured_image.src | img_url: 'x282' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+            <img class="product-img hs-id-24952ba7 lazyload hs-lazyload" data-src="{{ product.featured_image.src | img_url: 'x282' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           {% else %}
           {{ 'product-1' | placeholder_svg_tag: 'my-custom-class' }}
           {% endif %}
