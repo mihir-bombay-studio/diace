@@ -110,7 +110,7 @@
                                                             </div>
                                                             <div class="drop-right-wrap">
                                                                 <div class="text-block">
-                                                                    {{ collections[collhand].description }}
+                                                                    {{ collections[collhand].description | strip_html }}
                                                                 </div>
                                                                 <div class="image-block">
                                                                     <img alt="{{collections[collhand].title}}" class="hs-id-25186326 lazyload hs-lazyload" data-src="{{ collections[collhand].featured_image | img_url: '278x'}}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
