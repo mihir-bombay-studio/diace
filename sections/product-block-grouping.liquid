@@ -120,7 +120,7 @@
         </div>
       </div>
 
-      <div class="product-desc light style-scrollbar test">{{ product.description }}</div>
+      <div class="product-desc light style-scrollbar">{{ product.description }}</div>
 	  {% for option in product.options_with_values %}
       {% if forloop.last %}
       {% assign opt_sel_val = opt_sel_val | append: option.selected_value %}
