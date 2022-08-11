@@ -133,6 +133,7 @@
       "blocks": {
         "16549323466b7f2490-0": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video_url": "https:\/\/youtu.be\/zZ0H660lIaU",
             "description": "Describe the video for customers using screen readers",
