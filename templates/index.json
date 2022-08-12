@@ -94,38 +94,6 @@
         "padd-top": false
       }
     },
-    "1660292907337f3fc0": {
-      "type": "collage",
-      "blocks": {
-        "16602929079876c159-0": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "cover_image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
-            "video_url": "",
-            "description": "Describe the video for customers using screen readers",
-            "image_padding": false
-          }
-        },
-        "7f8d0594-07d3-48bb-9e74-915d0b91339f": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
-            "image_padding": false,
-            "color_scheme": "background-1"
-          }
-        }
-      },
-      "block_order": [
-        "16602929079876c159-0",
-        "7f8d0594-07d3-48bb-9e74-915d0b91339f"
-      ],
-      "settings": {
-        "heading": "",
-        "desktop_layout": "left",
-        "mobile_layout": "column"
-      }
-    },
     "1631695632e79ff00a": {
       "type": "featured-collection-new",
       "disabled": true,
@@ -416,7 +384,6 @@
   "order": [
     "16316849519d264fc8",
     "image_with_text",
-    "1660292907337f3fc0",
     "1631695632e79ff00a",
     "1631620069de812214",
     "1631611375b605aa08",
