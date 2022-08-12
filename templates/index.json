@@ -129,6 +129,7 @@
     },
     "1660292907337f3fc0": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "16602929079876c159-0": {
           "type": "video",
