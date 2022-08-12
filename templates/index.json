@@ -99,16 +99,26 @@
       "blocks": {
         "16602929079876c159-0": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "cover_image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=zZ0H660lIaU",
+            "video_url": "",
             "description": "Describe the video for customers using screen readers",
             "image_padding": false
+          }
+        },
+        "7f8d0594-07d3-48bb-9e74-915d0b91339f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
+            "image_padding": false,
+            "color_scheme": "background-1"
           }
         }
       },
       "block_order": [
-        "16602929079876c159-0"
+        "16602929079876c159-0",
+        "7f8d0594-07d3-48bb-9e74-915d0b91339f"
       ],
       "settings": {
         "heading": "",
