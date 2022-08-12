@@ -96,7 +96,6 @@
     },
     "1660292907337f3fc0": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "16602929079876c159-0": {
           "type": "video",
@@ -110,7 +109,6 @@
         },
         "7f8d0594-07d3-48bb-9e74-915d0b91339f": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
             "image_padding": false,
