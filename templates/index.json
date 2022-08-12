@@ -94,6 +94,26 @@
         "padd-top": false
       }
     },
+    "1660298430ebd83fa8": {
+      "type": "artboard",
+      "blocks": {
+        "33da0e37-267e-453c-9993-c83c6f28afad": {
+          "type": "artboard",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "Subtext": "",
+            "hero_text_link": "",
+            "hero_other_img_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "33da0e37-267e-453c-9993-c83c6f28afad"
+      ],
+      "settings": {
+      }
+    },
     "1660292907337f3fc0": {
       "type": "collage",
       "disabled": true,
@@ -418,6 +438,7 @@
   "order": [
     "16316849519d264fc8",
     "image_with_text",
+    "1660298430ebd83fa8",
     "1660292907337f3fc0",
     "1631695632e79ff00a",
     "1631620069de812214",
