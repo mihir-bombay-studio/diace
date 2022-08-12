@@ -127,6 +127,49 @@
         "padd-top": false
       }
     },
+    "1660292907337f3fc0": {
+      "type": "collage",
+      "blocks": {
+        "16602929079876c159-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=zZ0H660lIaU",
+            "description": "Describe the video for customers using screen readers",
+            "image_padding": false
+          }
+        },
+        "16602929079876c159-1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "secondary_background": false,
+            "second_image": false,
+            "image_padding": false
+          }
+        },
+        "16602929079876c159-2": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "16602929079876c159-0",
+        "16602929079876c159-1",
+        "16602929079876c159-2"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
     "1631695632e79ff00a": {
       "type": "featured-collection-new",
       "disabled": true,
@@ -412,55 +455,13 @@
       "settings": {
         "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
       }
-    },
-    "1660292907337f3fc0": {
-      "type": "collage",
-      "blocks": {
-        "16602929079876c159-0": {
-          "type": "video",
-          "settings": {
-            "cover_image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=zZ0H660lIaU",
-            "description": "Describe the video for customers using screen readers",
-            "image_padding": false
-          }
-        },
-        "16602929079876c159-1": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "",
-            "secondary_background": false,
-            "second_image": false,
-            "image_padding": false
-          }
-        },
-        "16602929079876c159-2": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
-          }
-        }
-      },
-      "block_order": [
-        "16602929079876c159-0",
-        "16602929079876c159-1",
-        "16602929079876c159-2"
-      ],
-      "settings": {
-        "heading": "",
-        "desktop_layout": "left",
-        "mobile_layout": "collage"
-      }
     }
   },
   "order": [
     "16316849519d264fc8",
     "image_banner",
     "image_with_text",
+    "1660292907337f3fc0",
     "1631695632e79ff00a",
     "1631620069de812214",
     "1631611375b605aa08",
@@ -468,7 +469,6 @@
     "image_with_text_2",
     "16317046102c025894",
     "1633285415946466ea",
-    "16316243304aadf5de",
-    "1660292907337f3fc0"
+    "16316243304aadf5de"
   ]
 }
