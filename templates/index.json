@@ -455,6 +455,49 @@
       "settings": {
         "faq_heading": "WAT VRAGEN ONZE KLANTEN?"
       }
+    },
+    "16602934919af4309f": {
+      "type": "image-banner",
+      "blocks": {
+        "1660293491bcd00f52-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "1660293491bcd00f52-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1660293491bcd00f52-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1660293491bcd00f52-0",
+        "1660293491bcd00f52-1",
+        "1660293491bcd00f52-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
+        "desktop_text_box_position": "flex-end",
+        "color_scheme": "accent-2",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
     }
   },
   "order": [
@@ -469,6 +512,7 @@
     "image_with_text_2",
     "16317046102c025894",
     "1633285415946466ea",
-    "16316243304aadf5de"
+    "16316243304aadf5de",
+    "16602934919af4309f"
   ]
 }
