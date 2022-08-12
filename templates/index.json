@@ -127,48 +127,29 @@
         "padd-top": false
       }
     },
-    "1660292237d39c5e02": {
-      "type": "collage",
+    "1631695632e79ff00a": {
+      "type": "featured-collection-new",
       "blocks": {
-        "16602922373349473b-0": {
-          "type": "video",
-          "disabled": true,
+        "08778c1d-6b55-4513-ba50-a1b161c7ef0b": {
+          "type": "button",
           "settings": {
-            "cover_image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=zZ0H660lIaU",
-            "description": "Describe the video for customers using screen readers",
-            "image_padding": false
-          }
-        },
-        "16602922373349473b-1": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "",
-            "secondary_background": false,
-            "second_image": false,
-            "image_padding": false
-          }
-        },
-        "16602922373349473b-2": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
+            "button_label": "ALLE CATEGORIEËN",
+            "button_link": "shopify:\/\/collections",
+            "button-color": "yellow"
           }
         }
       },
       "block_order": [
-        "16602922373349473b-0",
-        "16602922373349473b-1",
-        "16602922373349473b-2"
+        "08778c1d-6b55-4513-ba50-a1b161c7ef0b"
       ],
       "settings": {
-        "heading": "",
-        "desktop_layout": "left",
-        "mobile_layout": "column"
+        "featured_collection_title": "NIEUWE PRODUCTEN",
+        "featured_collection_desc": "Met Diacé zijn we volop bezig met de ontwikkeling van eigen producten, ontdek onze laatste innovaties:",
+        "featured_collection": "stickers",
+        "more_color_text": "Meer kleuren beschikbaar",
+        "more_options_text": "",
+        "hover_text": "KOPEN",
+        "marg_top": "medium"
       }
     },
     "1631620069de812214": {
@@ -226,32 +207,6 @@
       ],
       "settings": {
         "our_value_heading": "ONZE WAARDEN"
-      }
-    },
-    "1631695632e79ff00a": {
-      "type": "featured-collection-new",
-      "disabled": true,
-      "blocks": {
-        "08778c1d-6b55-4513-ba50-a1b161c7ef0b": {
-          "type": "button",
-          "settings": {
-            "button_label": "ALLE CATEGORIEËN",
-            "button_link": "shopify:\/\/collections",
-            "button-color": "yellow"
-          }
-        }
-      },
-      "block_order": [
-        "08778c1d-6b55-4513-ba50-a1b161c7ef0b"
-      ],
-      "settings": {
-        "featured_collection_title": "NIEUWE PRODUCTEN",
-        "featured_collection_desc": "Met Diacé zijn we volop bezig met de ontwikkeling van eigen producten, ontdek onze laatste innovaties:",
-        "featured_collection": "stickers",
-        "more_color_text": "Meer kleuren beschikbaar",
-        "more_options_text": "",
-        "hover_text": "KOPEN",
-        "marg_top": "medium"
       }
     },
     "1631768996518add79": {
@@ -462,10 +417,9 @@
     "16316849519d264fc8",
     "image_banner",
     "image_with_text",
-    "1660292237d39c5e02",
+    "1631695632e79ff00a",
     "1631620069de812214",
     "1631611375b605aa08",
-    "1631695632e79ff00a",
     "1631768996518add79",
     "image_with_text_2",
     "16317046102c025894",
