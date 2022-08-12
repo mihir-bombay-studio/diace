@@ -132,6 +132,7 @@
       "blocks": {
         "16602922373349473b-0": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "cover_image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
             "video_url": "https:\/\/www.youtube.com\/watch?v=zZ0H660lIaU",
