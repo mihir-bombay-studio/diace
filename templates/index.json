@@ -96,7 +96,6 @@
     },
     "1660292907337f3fc0": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "16602929079876c159-0": {
           "type": "video",
@@ -106,36 +105,15 @@
             "description": "Describe the video for customers using screen readers",
             "image_padding": false
           }
-        },
-        "16602929079876c159-1": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "",
-            "secondary_background": false,
-            "second_image": false,
-            "image_padding": false
-          }
-        },
-        "16602929079876c159-2": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
-          }
         }
       },
       "block_order": [
-        "16602929079876c159-0",
-        "16602929079876c159-1",
-        "16602929079876c159-2"
+        "16602929079876c159-0"
       ],
       "settings": {
         "heading": "",
         "desktop_layout": "left",
-        "mobile_layout": "collage"
+        "mobile_layout": "column"
       }
     },
     "1631695632e79ff00a": {
