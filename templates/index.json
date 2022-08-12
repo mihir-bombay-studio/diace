@@ -129,12 +129,11 @@
     },
     "16549323466b1af11d": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "16549323466b7f2490-0": {
           "type": "video",
-          "disabled": true,
           "settings": {
+            "cover_image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
             "video_url": "https:\/\/youtu.be\/zZ0H660lIaU",
             "description": "Describe the video for customers using screen readers",
             "image_padding": false
