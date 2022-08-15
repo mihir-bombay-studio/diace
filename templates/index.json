@@ -53,9 +53,9 @@
         "7beee7c4-03c3-44c2-9611-bfb6dc7825fd"
       ],
       "settings": {
-        "hero_main_img": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-08-04T092405.828.png",
-        "text_over_hero": "ready, set, action! ontmoet dia-buddies! 🎥",
-        "hero_image_link": "shopify:\/\/pages\/video-shoot-augustus-2022"
+        "hero_main_img": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-08-06T141749.753.png",
+        "text_over_hero": "NEW NEW NEW! STAY HAPPY COLLECTION STICKERS! 🍒",
+        "hero_image_link": "shopify:\/\/collections\/stickers"
       }
     },
     "image_with_text": {
@@ -96,6 +96,7 @@
     },
     "166030072332985a69": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "166030072346e74b08-0": {
           "type": "video",
