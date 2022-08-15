@@ -100,6 +100,7 @@
         },
         "1659364566d9106c75-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "SCHRIJF JE SNEL IN!",
             "button_link": "https:\/\/forms.office.com\/r\/CyHYABsqg5",
@@ -115,7 +116,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-08-01T165436.312.png",
         "img_preference": "image first",
-        "text_over_img": "",
+        "text_over_img": "GEANNULEERD",
         "padd-top": false
       }
     }
