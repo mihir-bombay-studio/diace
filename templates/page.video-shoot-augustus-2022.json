@@ -63,6 +63,7 @@
         },
         "16593645486838063b-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "KOM JIJ MEE FEESTEN? SCHRIJF JE SNEL IN!",
             "button_link": "https:\/\/forms.office.com\/r\/eFk742PSBD",
@@ -78,7 +79,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-08-01T163903.488.png",
         "img_preference": "image second",
-        "text_over_img": "",
+        "text_over_img": "VOLZET",
         "padd-top": true
       }
     },
