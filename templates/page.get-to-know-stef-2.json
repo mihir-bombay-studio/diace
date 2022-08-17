@@ -141,8 +141,9 @@
         "1660732324826827eb-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_75_bf9953bd-f560-4634-8a92-634c009c9ba5.png",
+            "title": "Emma",
+            "text": "<p><a href=\"\/pages\/leer-emma-kennen\" title=\"Leer Emma hier kennen\">Atelier Assistent<\/a><\/p>"
           }
         }
       },
