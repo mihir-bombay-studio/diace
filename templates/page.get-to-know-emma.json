@@ -126,8 +126,9 @@
         "1660732159c7a80cef-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_42.png",
+            "title": "Talitha",
+            "text": "<p><a href=\"\/pages\/get-to-know-talitha\" title=\"LEER TALITHA HIER KENNEN\">Content Creator<\/a><\/p>"
           }
         },
         "1660732159c7a80cef-1": {
