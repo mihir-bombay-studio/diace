@@ -136,14 +136,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_37.png",
             "title": "Stephanie",
-            "text": "<p>Logistician<\/p>"
+            "text": "<p><a href=\"\/pages\/get-to-know-stephanie\" title=\"LEER STEPHANIE HIER KENNEN\">Logistician<\/a><\/p>"
           }
         },
         "1660732159c7a80cef-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_73_25e7d57c-c1cc-4b99-adc5-fbcfc96a0696.png",
+            "title": "Stef",
+            "text": "<p><a href=\"\/pages\/leer-stef-hier-kennen\" title=\"Leer Stef hier kennen\">Content & Video Creator<\/a><\/p>"
           }
         }
       },
