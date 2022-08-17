@@ -52,7 +52,7 @@
         "16607319380be5514f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "Wie is Emma?"
           }
         },
         "16607319380be5514f-1": {
@@ -63,6 +63,7 @@
         },
         "16607319380be5514f-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": "",
@@ -87,6 +88,7 @@
       "blocks": {
         "1660731944499d5e25-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Image with text"
           }
@@ -94,15 +96,15 @@
         "1660731944499d5e25-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p><strong>Mijn taken<\/strong><\/p><p><strong>Wat zeggen mijn collega's over mij?<\/strong><\/p><p><strong>Mijn favoriete product<\/strong><\/p><p><\/p>"
           }
         },
         "1660731944499d5e25-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button-color": "grey"
+            "button_label": "MEET OUR TEAM",
+            "button_link": "https:\/\/diace.be\/pages\/meet-our-team",
+            "button-color": "yellow"
           }
         }
       },
