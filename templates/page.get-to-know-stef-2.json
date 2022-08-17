@@ -125,8 +125,9 @@
         "1660732324826827eb-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_41.png",
+            "title": "Stefanie",
+            "text": "<p><a href=\"\/pages\/get-to-know-stefanie\" title=\"LEER STEFANIE HIER KENNEN\">Director of Today<\/a><\/p>"
           }
         },
         "1660732324826827eb-1": {
