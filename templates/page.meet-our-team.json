@@ -57,17 +57,6 @@
             "hero_other_img_text": "get to know me"
           }
         },
-        "4b02fa17-4df5-4cd9-b8ef-8365d215f063": {
-          "type": "artboard",
-          "disabled": true,
-          "settings": {
-            "artphoto": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_74.png",
-            "heading": "sara - performance marketeer",
-            "Subtext": "",
-            "hero_text_link": "https:\/\/diace.be\/pages\/get-to-know-sara",
-            "hero_other_img_text": "get to know me"
-          }
-        },
         "0edb17f3-7d46-45b4-931b-671c4d750b1b": {
           "type": "artboard",
           "settings": {
@@ -76,6 +65,24 @@
             "Subtext": "",
             "hero_text_link": "https:\/\/diace.be\/pages\/get-to-know-stephanie",
             "hero_other_img_text": "get to know me"
+          }
+        },
+        "c2b43268-3665-47bc-be0f-b9cd703a0e89": {
+          "type": "artboard",
+          "settings": {
+            "heading": "Stef - Content & Video Creator",
+            "Subtext": "",
+            "hero_text_link": "",
+            "hero_other_img_text": ""
+          }
+        },
+        "6b8c74f8-0454-447a-ad6a-88dee19b900c": {
+          "type": "artboard",
+          "settings": {
+            "heading": "",
+            "Subtext": "",
+            "hero_text_link": "",
+            "hero_other_img_text": ""
           }
         },
         "4496d657-adf6-4b3a-bb64-80c9575f3d12": {
@@ -94,8 +101,9 @@
         "89789a19-bb83-43db-9149-660b22a6d3e4",
         "96478576-65be-4174-aa21-c8fa9e3335ac",
         "3882437b-f55a-4b78-845f-348063fc5086",
-        "4b02fa17-4df5-4cd9-b8ef-8365d215f063",
         "0edb17f3-7d46-45b4-931b-671c4d750b1b",
+        "c2b43268-3665-47bc-be0f-b9cd703a0e89",
+        "6b8c74f8-0454-447a-ad6a-88dee19b900c",
         "4496d657-adf6-4b3a-bb64-80c9575f3d12"
       ],
       "settings": {
