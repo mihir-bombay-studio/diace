@@ -1,9 +1,9 @@
-{% render 'hs-defer-css' with filename: 'component-cart.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'component-cart-items.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'component-totals.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'component-price.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'component-discounts.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'component-loading-overlay.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
   <div class="title-wrapper-with-link">
@@ -217,7 +217,7 @@
   </form>
 </cart-items>
 
-<script defer src="{{ 'cart.min.js' | asset_url }}"></script>
+<script defer src="{{ 'cart.js' | asset_url }}"></script>
 
 {% schema %}
 {

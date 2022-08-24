@@ -1,5 +1,5 @@
-{% render 'hs-defer-css' with filename: 'component-newsletter.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'newsletter-section.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
+{{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
 <div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }}">
