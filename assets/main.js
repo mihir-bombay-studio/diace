@@ -1,5 +1,7 @@
 // Mobile navigation
+console.log('test2');
 $(".menu-btn").click(function () {
+  console.log('test');
   $(this).toggleClass("active");
   $("#mobile_nav_container").toggleClass("open-nav");
 });
