@@ -1,4 +1,4 @@
-{% render 'hs-defer-css' with filename: 'featured-collection-new.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
 
 
 {% assign product_handle = section.settings.featured_collection %} 
@@ -14,7 +14,7 @@
     <div class="featured-product-card">
 
       <div class="featured-product-img rel">
-        <a href="{{product.url}}"><img class="product-img hs-id-637474f2 lazyload hs-lazyload" data-src="{{ product.featured_image.src | img_url: 'x282' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+        <a href="{{product.url}}"><img class="product-img" src="{{ product.featured_image.src | img_url: 'x282' }}"></a>
         <div class="AddToCart fp-hover-text flex-box align-center " data-variant-id="{{product.first_available_variant.id}}" data-quantity = "1">
           <span class="plus-icon">{% include 'icon-yellow-plus' %}</span>
           <span class="hover-text bold">{{ section.settings.hover_text }}</span>

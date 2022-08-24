@@ -1,10 +1,10 @@
-{% render 'hs-defer-css' with filename: 'hero-new.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{{ 'hero-new.css' | asset_url | stylesheet_tag }}
 
 <div class="hero-new-wrapper container">
   <div class="hero flex-box justify-between">
     <div class="hero-left rel">
      
-    	<img alt="{{ section.settings.hero_main_img.alt | escape }}" class="hs-id-a9a3a95d lazyload hs-lazyload" data-src="{{ section.settings.hero_main_img | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    	<img alt="{{ section.settings.hero_main_img.alt | escape }}" loading="lazy" src="{{ section.settings.hero_main_img | img_url: '533x' }}">
       <a href="{{section.settings.hero_image_link}}">
         <div class="text-over-hero bold new">{{section.settings.text_over_hero}}</div>
       </a>
@@ -16,7 +16,7 @@
       {% for block in section.blocks %}
       {% if block.type == "hero_other_img" %}
       <div class="hero-other-img rel">
-      	<img alt="{{ block.settings.hero_other_img.alt | escape }}" class="hs-id-971cd8ad lazyload hs-lazyload" data-src="{{ block.settings.hero_other_img | img_url: '533x' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+      	<img alt="{{ block.settings.hero_other_img.alt | escape }}" loading="lazy" src="{{ block.settings.hero_other_img | img_url: '533x' }}">
         <div class="hero-hover-text flex-box align-center no-t-m">
           <a href="{{ block.settings.hero_text_link }}"><span class="plus-icon">{% include 'icon-yellow-plus' %}</span></a>
           <a href="{{ block.settings.hero_text_link }}" class="hover-text bold">{{ block.settings.hero_other_img_text }}</a>

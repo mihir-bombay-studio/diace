@@ -1,4 +1,4 @@
-{% render 'hs-defer-css' with filename: 'header.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{{ 'header.css' | asset_url | stylesheet_tag }}
 <header>
     <span class="header-anouncement flex-box semibold justify-center align-center no-mobile no-disp">
         {{ section.settings.announcement_text }}
@@ -113,7 +113,7 @@
                                                                     {{ collections[collhand].description | strip_html }}
                                                                 </div>
                                                                 <div class="image-block">
-                                                                    <img alt="{{collections[collhand].title}}" class="hs-id-25186326 lazyload hs-lazyload" data-src="{{ collections[collhand].featured_image | img_url: '278x'}}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+                                                                    <img alt="{{collections[collhand].title}}" src="{{ collections[collhand].featured_image | img_url: '278x'}}"></div>
                                                                 </div>
                                                             </div>
                                                         </div>

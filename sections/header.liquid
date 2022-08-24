@@ -3,10 +3,10 @@
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<noscript>{% render 'hs-defer-css' with filename: 'component-list-menu.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
-<noscript>{% render 'hs-defer-css' with filename: 'component-search.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
-<noscript>{% render 'hs-defer-css' with filename: 'component-menu-drawer.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
-<noscript>{% render 'hs-defer-css' with filename: 'component-cart-notification.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}</noscript>
+<noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
   header-drawer {
@@ -60,8 +60,8 @@
   }
 </style>
 
-<script defer src="{{ 'details-disclosure.min.js' | asset_url }}"></script>
-<script defer src="{{ 'details-modal.min.js' | asset_url }}"></script>
+<script defer src="{{ 'details-disclosure.js' | asset_url }}"></script>
+<script defer src="{{ 'details-modal.js' | asset_url }}"></script>
 
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
   <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
@@ -540,7 +540,7 @@
   </script>
 {%- endif -%}
 
-<script defer src="{{ 'cart-notification.min.js' | asset_url }}"></script>
+<script defer src="{{ 'cart-notification.js' | asset_url }}"></script>
 
 {% schema %}
 {

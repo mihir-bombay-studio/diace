@@ -1,4 +1,4 @@
-{% render 'hs-defer-css' with filename: 'faq.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{{ 'faq.css' | asset_url | stylesheet_tag }}
 <div class="faq-wrapper container">
     <h2 class="faq-heading bold">{{ section.settings.faq_heading }}</h2>
     {% for block in section.blocks %}
