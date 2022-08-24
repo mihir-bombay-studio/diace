@@ -1,7 +1,7 @@
-{% render 'hs-defer-css' with filename: 'faq.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'component-price.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'product-block.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'image-with-text-new.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{{ 'faq.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'product-block.css' | asset_url | stylesheet_tag }}
+{{ 'image-with-text-new.css' | asset_url | stylesheet_tag }}
 <style>
   .slick-next {
     right: 8px;
@@ -83,12 +83,12 @@
   </div>
       <div class="slider-for">
         {% for image in product.images %}
-        <img alt="{{ product.title | escape }}" class="hs-id-c1fe57d1 lazyload hs-lazyload" data-src="{{ image.src | img_url: 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width: 100%;">
+        <img alt="{{ product.title | escape }}" src="{{ image.src | img_url: 'master' }}" style="width: 100%;">
         {% endfor %}
       </div>
       <div class="slider-nav">
         {% for image in product.images %}
-        <img alt="{{ product.title | escape }}" class="hs-id-231a0ba6 lazyload hs-lazyload" data-src="{{ image.src | img_url: 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width: 100%;">
+        <img alt="{{ product.title | escape }}" src="{{ image.src | img_url: 'master' }}" style="width: 100%;">
         {% endfor %}
       </div>
     </div>

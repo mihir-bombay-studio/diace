@@ -1,6 +1,6 @@
 
-{% render 'hs-defer-css' with filename: 'orders.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'social-media.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{{ 'orders.css' | asset_url | stylesheet_tag }}
+{{ 'social-media.css' | asset_url | stylesheet_tag }}
 
 
 

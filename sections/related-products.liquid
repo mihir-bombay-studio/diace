@@ -1,7 +1,7 @@
 <!-- {% render 'ZooomyMoreLikeThis' %} -->
 <!-- {% render 'Product Recommendations' %} -->
 
-{% render 'hs-defer-css' with filename: 'featured-collection-new.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{{ 'featured-collection-new.css' | asset_url | stylesheet_tag }}
 {% comment %}
 {% assign product_handle = section.settings.featured_collection %} 
 {% endcomment %}

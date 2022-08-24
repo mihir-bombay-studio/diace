@@ -1,8 +1,8 @@
 {% include "colors-snippet" %}
-{% render 'hs-defer-css' with filename: 'faq.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'component-price.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'product-block.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
-{% render 'hs-defer-css' with filename: 'image-with-text-new.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{{ 'faq.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'product-block.css' | asset_url | stylesheet_tag }}
+{{ 'image-with-text-new.css' | asset_url | stylesheet_tag }}
 <style>
   .slick-next {
     right: 8px;
@@ -92,12 +92,12 @@
   </div>
       <div class="slider-for">
         {% for image in product.images %}
-        <img alt="{{ product.title | escape }}" class="hs-id-306eac8b lazyload hs-lazyload" data-src="{{ image.src | img_url: 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width: 100%;">
+        <img alt="{{ product.title | escape }}" src="{{ image.src | img_url: 'master' }}" style="width: 100%;">
         {% endfor %}
       </div>
       <div class="slider-nav">
         {% for image in product.images %}
-        <img alt="{{ product.title | escape }}" class="hs-id-83162e83 lazyload hs-lazyload" data-src="{{ image.src | img_url: 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width: 100%;">
+        <img alt="{{ product.title | escape }}" src="{{ image.src | img_url: 'master' }}" style="width: 100%;">
         {% endfor %}
       </div>
     </div>
@@ -134,7 +134,7 @@
               <div class="show modal-btn" aria-haspopup="true">{{ section.settings.size_label }}</div>
               <div class="mask" role="dialog"></div>
               <div class="modal style-scrollbar" role="alert">
-                <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"><img class="size-guide-img hs-id-db8510ef lazyload hs-lazyload" data-src="{{ product.metafields.my_fields.size_image | image_url: width: 700 }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+                <div style="width: 100%;min-height: 520px;background-color: #D9D9D9;border: 1px solid #707070;display: block;"><img class="size-guide-img" src="{{ product.metafields.my_fields.size_image | image_url: width: 700 }}"></div>
                 <button class="close" role="button">{% render "icon-close-1" %}</button>
               </div>
               {%- elsif dwncase contains "kleur" or dwncase contains "color" -%}
@@ -189,7 +189,7 @@
             <label class="{{ option.name }} color-label" for="{{ section.id }}-{{ value }}-{{ forloop.index0 }}" title="{{value}}">
               <span class="color-swatch" >
                 {% comment %}
-                <img class="{{ value }} colors-color hs-id-b64684e8" src="{{ variantImg | img_url }}">
+                <img class="{{ value }} colors-color" src="{{ variantImg | img_url }}">
                 {% endcomment %}
                 {% assign colorsSch = colorScheme | strip_newlines | split: "," %}
                 {% for colors in colorsSch %}
