@@ -108,7 +108,7 @@
               {% endcomment %}
               
               {% for linkx in linklists[section.settings.header-list].links %}
-            {%- for coll in collections -%}
+              {%- for coll in collections -%}
               {% assign collhandx = linkx.url | split: "/" | last %}
               {% if collhandx == coll.handle %}
                 {% if coll.image %}
