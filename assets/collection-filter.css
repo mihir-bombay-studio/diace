@@ -490,9 +490,11 @@ a.active-facets__button {
   overflow-y : auto;
 }
 
-.filter-tags,
+.filter-tags {
+/* 	display: none; */
+}
 .all-collection-title {
-	display: none;
+/* 	display: none; */
 }
 
 .filter-tags.small {
