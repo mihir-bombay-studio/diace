@@ -131,7 +131,7 @@
               <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
               {% endfor %}
               {% endcomment %}
-              
+              {% comment %}
               {% for linkx in linklists[section.settings.header-list].links %}
               {%- for coll in collections -%}
               {% assign collhandx = linkx.url | split: "/" | last %}
@@ -163,6 +163,8 @@
               {% endif %}
             {% endfor %}
           {% endfor %}
+              {% endcomment %}
+          
             </div>
           </div>
 
