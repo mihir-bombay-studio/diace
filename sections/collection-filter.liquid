@@ -84,10 +84,11 @@
                   {{ tagx }}
                       
                       {% for tag in collection.tags %}
-                  {{ tag }}
                         
                         {% assign tagsm = tag | downcase %}
                         {% assign linksm = tagx | downcase %}
+                        {{ tagsm }}
+                        {{ linksm }}
                         {% if tagsm == linksm %}
                           <div class="collection-tag semibold tag-{{ tag | handleize}}" data-tfilter="{{ tag }}">{{ tag }}</div>
                         {% endif %}
