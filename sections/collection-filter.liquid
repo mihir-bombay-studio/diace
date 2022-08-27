@@ -88,6 +88,11 @@
 
           {{ collection | pprint }}
           {{- collection.title | escape -}}
+          {%- for coll in collections -%}
+          {{ coll | pprint }}
+          {% endfor %}
+      
+          
         </div>
 
         <div class="product-filter-mask close disp-no">
