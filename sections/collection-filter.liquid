@@ -93,7 +93,7 @@
               {% if collhand == collection.handle %}
                 <div class="collection-tags curr-tag">
                     {%- for child_link in link.links -%}
-                      {{ link.links }}
+                      {{ child_link }}
                       {% assign tagx = child_link.url | split: "tag=" | last %}
                       {% for tag in collection.tags %}
                         {% assign tagsm = tag | downcase %}
