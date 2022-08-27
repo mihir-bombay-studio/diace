@@ -57,7 +57,7 @@
                           {% assign tagsm = tag | downcase %}
                           {% assign linksm = tagx | downcase %}
                           {% if tagsm == linksm %}
-                            <div class="collection-tag semibold">{{ tag }}</div>
+                            <div class="collection-tag semibold tag-{{ tag | handleize}}" data-tfilter="{{ tag }}">{{ tag }}</div>
                           {% endif %}
                           {% endfor %}
                         {% endfor %}
@@ -82,7 +82,7 @@
                     {%- for child_link in link.links -%}
                       {% assign tagtitle = child_link.title | split: "tag=" | last %}
                       {% assign tagurl = child_link.url | split: "tag=" | last %}
-                        <div class="collection-tag semibold tag-{{ tag | handleize}}" data-tfilter="{{ tag }}">
+                        <div class="collection-tag semibold">
                           <a href="{{ tagurl }}">
                             {{ tagtitle }}
                           </a>
