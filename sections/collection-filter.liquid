@@ -81,12 +81,12 @@
                 <div class="collection-tags curr-tag">
                     {%- for child_link in link.links -%}
                       {% assign tagtitle = child_link.title | split: "tag=" | last %}
-                      {% assign tagx = child_link.url | split: "tag=" | last %}
+                      {% assign tagurl = child_link.url | split: "tag=" | last %}
                         <div class="collection-tag semibold tag-{{ tag | handleize}}" data-tfilter="{{ tag }}">
-                          {{ tagtitle }}
+                          <a href="{{ tagurl }}">
+                            {{ tagtitle }}
+                          </a>
                         </div>
-                      
-                      
                     {% endfor %}
                 </div>
               {% endif %}
