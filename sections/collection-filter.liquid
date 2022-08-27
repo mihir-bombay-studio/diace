@@ -89,7 +89,25 @@
           {{ collection | pprint }}
           {{- collection.title | escape -}}
           {%- for coll in collections -%}
-          {{ coll.title | pprint }}
+          {% if coll.title == collection.title %}
+                    {% for link in linklists[section.settings.header-list].links %}
+                    {% assign collhand = link.url | split: "/" | last %}
+                    {% if collhand == collection.handle %}
+                    <div class="collection-tags curr-tag">
+                        {%- for child_link in link.links -%}
+                          {% assign tagx = child_link.url | split: "tag=" | last %}
+                          {% for tag in collection.tags %}
+                          {% assign tagsm = tag | downcase %}
+                          {% assign linksm = tagx | downcase %}
+                          {% if tagsm == linksm %}
+                            <div class="collection-tag semibold tag-{{ tag | handleize}}" data-tfilter="{{ tag }}">{{ tag }}</div>
+                          {% endif %}
+                          {% endfor %}
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+                    {% endfor %}
+                  {% endif %}
           {% endfor %}
       
           
