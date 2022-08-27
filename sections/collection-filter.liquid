@@ -73,19 +73,6 @@
         </div>
 
         <div class="funkhaus filter-tags small">
-{% comment %}
-    {%- for coll in collections -%}
-        <div class="collection-types {% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %}{% endif %}">{{ coll.title }} {% render "back-icon" %}</div>
-        <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}"></div>
-    {% endfor %}
-{% endcomment %}
-              
-{% comment %}
-      {% for tag in collection.tags %}
-          <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
-      {% endfor %}
-{% endcomment %}
-
           {%- for coll in collections -%}
             {% if coll.title == collection.title %}
               {% for link in linklists[section.settings.header-list].links %}
@@ -95,7 +82,10 @@
                     {%- for child_link in link.links -%}
                       {% assign tagx = child_link.url | split: "tag=" | last %}
                   {{ tagx }}
+                      
                       {% for tag in collection.tags %}
+                  {{ tag }}
+                        
                         {% assign tagsm = tag | downcase %}
                         {% assign linksm = tagx | downcase %}
                         {% if tagsm == linksm %}
