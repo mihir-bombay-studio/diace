@@ -91,13 +91,16 @@
                 </div>
               {% else %}
                 <!-- subcategory -->
-                {% assign tagtitle = link.title | split: "tag=" | last %}
-                {% assign tagurl = link.url | split: "tag=" | last %}
-                  <div class="collection-tag semibold" style="padding: .5rem 0; margin: 0;">
-                    <a href="{{ tagurl }}">
-                      {{ tagtitle }}
-                    </a>
-                  </div>
+                {% if link.links == null %}
+                  {% assign tagtitle = link.title | split: "tag=" | last %}
+                  {% assign tagurl = link.url | split: "tag=" | last %}
+                    <div class="collection-tag semibold" style="padding: .5rem 0; margin: 0;">
+                      <a href="{{ tagurl }}">
+                        {{ tagtitle }}
+                      </a>
+                    </div>
+                {% endif %}
+                  
               {% endif %}
               {% endfor %}
             {% endif %}
