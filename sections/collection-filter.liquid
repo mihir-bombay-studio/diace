@@ -73,14 +73,18 @@
         </div>
 
         <div class="funkhaus filter-tags small">
-          {%- for coll in collections -%}
-              <div class="collection-types {% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %}{% endif %}">{{ coll.title }} {% render "back-icon" %}</div>
-              <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}"></div>
-          {% endfor %}
-
-          {% for tag in collection.tags %}
-              <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
-              {% endfor %}
+{% comment %}
+    {%- for coll in collections -%}
+        <div class="collection-types {% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %}{% endif %}">{{ coll.title }} {% render "back-icon" %}</div>
+        <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}"></div>
+    {% endfor %}
+{% endcomment %}
+              
+{% comment %}
+      {% for tag in collection.tags %}
+          <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
+      {% endfor %}
+{% endcomment %}
 
           {{ collection.tags | pprint }}
         </div>
