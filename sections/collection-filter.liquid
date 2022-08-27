@@ -78,11 +78,11 @@
               {% for link in linklists[section.settings.header-list].links %}
               {% assign collhand = link.url | split: "/" | last %}
               {% if collhand == collection.handle %}
-                <div class="collection-tags">
+                <div class="collection-tags curr-tag">
                     {%- for child_link in link.links -%}
                       {% assign tagtitle = child_link.title | split: "tag=" | last %}
                       {% assign tagurl = child_link.url | split: "tag=" | last %}
-                        <div class="collection-tag semibold" style="padding: .5rem 0;">
+                        <div class="collection-tag semibold" style="padding: .5rem 0; margin: 0;">
                           <a href="{{ tagurl }}">
                             {{ tagtitle }}
                           </a>
