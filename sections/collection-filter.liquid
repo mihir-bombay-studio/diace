@@ -72,6 +72,13 @@
 
         </div>
 
+        <div class="funkhaus filter-tags small">
+          {%- for coll in collections -%}
+              <div class="collection-types {% if coll.title == collection.title %} current {% elsif coll.title == "Grouping collection" %} no-disp {% else %}{% endif %}">{{ coll.title }} {% render "back-icon" %}</div>
+              <div class="collection-tags{% if coll.title != collection.title %} no-disp{% endif %}"></div>
+              {% endfor %}
+        </div>
+
         <div class="product-filter-mask close disp-no">
           <span class="product-filter-heading">{{ section.settings.filter_products }}</span>
           <span class="product-filter-close filter-close">{% render "icon-close-1" %}</span>
@@ -101,9 +108,11 @@
           {% endfor %}
             </div>
             <div class="active-collection-tags">
+              {% comment %}
               {% for tag in collection.tags %}
               <div class="collection-tag semibold" data-tfilter="{{ tag }}">{{ tag }}</div>
               {% endfor %}
+              {% endcomment %}
               
               {% for linkx in linklists[section.settings.header-list].links %}
               {%- for coll in collections -%}
