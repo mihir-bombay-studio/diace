@@ -57,7 +57,7 @@
                           {% assign tagsm = tag | downcase %}
                           {% assign linksm = tagx | downcase %}
                           {% if tagsm == linksm %}
-                            <div class="collection-tag semibold tag-{{ tag | handleize}}" data-tfilter="{{ tag }}">{{ tag }}</div>
+                            <div class="collection-tag semibold">{{ tag }}</div>
                           {% endif %}
                           {% endfor %}
                         {% endfor %}
