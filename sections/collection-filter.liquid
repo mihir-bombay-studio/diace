@@ -89,7 +89,7 @@
           {{ collection | pprint }}
           {{- collection.title | escape -}}
           {%- for coll in collections -%}
-          {{ coll | pprint }}
+          {{ coll.title | pprint }}
           {% endfor %}
       
           
