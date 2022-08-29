@@ -77,20 +77,22 @@
             {% if coll.title == collection.title %}
               {% for link in linklists[section.settings.header-list].links %}
               {% assign collhand = link.url | split: "/" | last %}
+              
               {% if collhand == collection.handle %}
                 <div class="collection-tags curr-tag">
-                    {%- for child_link in link.links -%}
-                      {% assign tagtitle = child_link.title | split: "tag=" | last %}
-                      {% assign tagurl = child_link.url | split: "tag=" | last %}
-                        <div class="collection-tag semibold" style="padding: .5rem 0; margin: 0;">
-                          <a href="{{ tagurl }}">
-                            {{ tagtitle }}
-                          </a>
-                        </div>
-                    {% endfor %}
+                  {%- for child_link in link.links -%}
+                    {% assign tagtitle = child_link.title | split: "tag=" | last %}
+                    {% assign tagurl = child_link.url | split: "tag=" | last %}
+                      <div class="collection-tag semibold" style="padding: .5rem 0; margin: 0;">
+                        <a href="{{ tagurl }}">
+                          {{ tagtitle }}
+                        </a>
+                      </div>
+                  {% endfor %}
                 </div>
               {% else %}
                 <!-- subcategory - to fix! -->
+                {{ link.links }}
                 {% if link.links == null %}
                   {% assign tagtitle = link.title | split: "tag=" | last %}
                   {% assign tagurl = link.url | split: "tag=" | last %}
@@ -100,8 +102,8 @@
                       </a>
                     </div>
                 {% endif %}
-                  
               {% endif %}
+                
               {% endfor %}
             {% endif %}
           {% endfor %}
