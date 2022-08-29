@@ -92,8 +92,7 @@
                 </div>
               {% else %}
                 <!-- subcategory - to fix! -->
-                {{ link.links }}
-                test
+                {{ link.links | json }}
                 {% if link.links == null %}
                   {% assign tagtitle = link.title | split: "tag=" | last %}
                   {% assign tagurl = link.url | split: "tag=" | last %}
