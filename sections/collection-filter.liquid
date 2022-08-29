@@ -93,6 +93,7 @@
               {% else %}
                 <!-- subcategory - to fix! -->
                 {{ link.links | json }}
+                {{ link.links | pprint }}
                 {% if link.links == null %}
                   {% assign tagtitle = link.title | split: "tag=" | last %}
                   {% assign tagurl = link.url | split: "tag=" | last %}
