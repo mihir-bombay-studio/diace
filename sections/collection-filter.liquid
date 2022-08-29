@@ -93,8 +93,8 @@
               {% else %}
                 <!-- subcategory - to fix! -->
                 {% if link.links == null %}
-                  {% assign tagtitle = link.title | split: "tag=" %}
-                  {% assign tagurl = link.url | split: "tag=" %}
+                  {% assign tagtitle = link.title | split: "tag=" | last %}
+                  {% assign tagurl = link.url | split: "tag=" | last %}
                     <div class="collection-tag semibold" style="padding: .5rem 0; margin: 0;">
                       <a href="{{ tagurl }}">
                         {{ tagtitle }}
