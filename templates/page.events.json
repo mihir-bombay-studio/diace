@@ -52,6 +52,44 @@
         "banner_desc": "Beleef hier jouw favoriete evenement! Blijf je graag op de hoogte van de nieuwste events? Schrijf je hier onderaan in op onze nieuwsbrief."
       }
     },
+    "1662621749de6d7dbe": {
+      "type": "rich-text",
+      "blocks": {
+        "1662621749991b174b-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
+        "1662621749991b174b-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1662621749991b174b-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1662621749991b174b-0",
+        "1662621749991b174b-1",
+        "1662621749991b174b-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "1654790098963ec839": {
       "type": "artboard",
       "blocks": {
@@ -85,6 +123,7 @@
     },
     "165479215030473bf0": {
       "type": "newsletter-new",
+      "disabled": true,
       "settings": {
         "subscription_heading": "WIL JE NIETS MISSEN? SCHRIJF JE IN OP ONZE NIEUWSBRIEF",
         "subscription_desc": "Blijf op de hoogte van de nieuwste producten.",
@@ -97,6 +136,7 @@
     "main",
     "1654791016a7caf637",
     "1654791456f2380fc1",
+    "1662621749de6d7dbe",
     "1654790098963ec839",
     "165479215030473bf0"
   ]
