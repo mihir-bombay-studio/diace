@@ -245,9 +245,9 @@
         "1663058038dcfac408-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button-color": "grey"
+            "button_label": "STEUN JIJ MEE?",
+            "button_link": "shopify:\/\/products\/hippo-friends-kalender-2023",
+            "button-color": "yellow"
           }
         }
       },
