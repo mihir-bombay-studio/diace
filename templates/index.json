@@ -227,6 +227,12 @@
         "our_value_heading": "ONZE WAARDEN"
       }
     },
+    "1663058031fd1aa9cb": {
+      "type": "product-with-text",
+      "settings": {
+        "product_with_text": "hippo-friends-kalender-2023"
+      }
+    },
     "1631768996518add79": {
       "type": "review-section",
       "blocks": {
@@ -439,6 +445,7 @@
     "16617589698cf14c5a",
     "1631620069de812214",
     "1631611375b605aa08",
+    "1663058031fd1aa9cb",
     "1631768996518add79",
     "image_with_text_2",
     "16317046102c025894",
