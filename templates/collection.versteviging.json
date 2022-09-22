@@ -92,6 +92,12 @@
           "settings": {
             "type": "Glucomen Day"
           }
+        },
+        "219eac85-338e-4f5b-bc88-6773460b101b": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Dexcom One"
+          }
         }
       },
       "block_order": [
@@ -105,7 +111,8 @@
         "5aed1210-1d01-4f29-ae31-b3154f06b795",
         "c8658382-dfc1-4190-be1d-350add76c327",
         "dff312f8-c9ab-436a-ab22-22f7419bfd81",
-        "8ad6c397-932a-47c9-acf9-9844a66a12ed"
+        "8ad6c397-932a-47c9-acf9-9844a66a12ed",
+        "219eac85-338e-4f5b-bc88-6773460b101b"
       ],
       "settings": {
         "enable_filtering": true,
