@@ -57,6 +57,12 @@
             "type": "Dexcom G5"
           }
         },
+        "84290f45-1233-4fe6-b663-b3075cb72450": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Dexcom One"
+          }
+        },
         "1409ee08-d374-4089-88a6-198cf1e8e326": {
           "type": "type_filter",
           "settings": {
@@ -116,12 +122,6 @@
           "settings": {
             "type": "Glucomen Meter"
           }
-        },
-        "84290f45-1233-4fe6-b663-b3075cb72450": {
-          "type": "type_filter",
-          "settings": {
-            "type": "Dexcom One"
-          }
         }
       },
       "block_order": [
@@ -130,6 +130,7 @@
         "021362b9-6d49-494f-94d6-11f67cc03515",
         "8c953991-51d0-49e6-a5d2-7ecd29e75cf3",
         "fd088983-7b93-4de8-850e-cebceac9ce6b",
+        "84290f45-1233-4fe6-b663-b3075cb72450",
         "1409ee08-d374-4089-88a6-198cf1e8e326",
         "c3fd733a-decd-4ef6-a30a-bbd364655bb7",
         "bcf8681f-d1d8-43a3-af74-74fd09b49008",
@@ -139,8 +140,7 @@
         "4cc4d3d1-d18e-4c1e-8afe-05d034e1ef06",
         "b8121208-c5b3-4ed2-8fcc-57c1ea7d52f1",
         "8487da3d-6e7a-4a54-b274-eabf35e89532",
-        "d39e44d6-6045-41e7-94f7-031616a89232",
-        "84290f45-1233-4fe6-b663-b3075cb72450"
+        "d39e44d6-6045-41e7-94f7-031616a89232"
       ],
       "settings": {
         "enable_filtering": true,
