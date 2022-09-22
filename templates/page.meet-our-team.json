@@ -110,11 +110,56 @@
       ],
       "settings": {
       }
+    },
+    "1663853860bf5b5299": {
+      "type": "collage",
+      "disabled": true,
+      "blocks": {
+        "166385386025c3ae54-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_63_f67b0fcc-30d5-463e-9964-40f3ca9b564b.png",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=zZ0H660lIaU",
+            "description": "meet our team!",
+            "image_padding": false
+          }
+        },
+        "166385386025c3ae54-1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "secondary_background": false,
+            "second_image": false,
+            "image_padding": false
+          }
+        },
+        "166385386025c3ae54-2": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "166385386025c3ae54-0",
+        "166385386025c3ae54-1",
+        "166385386025c3ae54-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
     }
   },
   "order": [
     "main",
     "165494057660ff9cd1",
-    "164871331153b34785"
+    "164871331153b34785",
+    "1663853860bf5b5299"
   ]
 }
