@@ -45,6 +45,12 @@
             "type": "Dexcom G6"
           }
         },
+        "219eac85-338e-4f5b-bc88-6773460b101b": {
+          "type": "type_filter",
+          "settings": {
+            "type": "Dexcom One"
+          }
+        },
         "694460e7-0c68-48b9-becc-5f145abb07bf": {
           "type": "type_filter",
           "settings": {
@@ -92,18 +98,13 @@
           "settings": {
             "type": "Glucomen Day"
           }
-        },
-        "219eac85-338e-4f5b-bc88-6773460b101b": {
-          "type": "type_filter",
-          "settings": {
-            "type": "Dexcom One"
-          }
         }
       },
       "block_order": [
         "0781f627-0692-472a-a08e-999c58dfd4b9",
         "3675c6c1-a77c-40de-b03b-b8a9141401ba",
         "302a453d-7891-4c4f-995b-29f15f7ce2f2",
+        "219eac85-338e-4f5b-bc88-6773460b101b",
         "694460e7-0c68-48b9-becc-5f145abb07bf",
         "79870a55-0eca-4d9f-b40a-6f0d0aaf9797",
         "d4fc4c44-baee-4b73-804b-dfea8206f8fc",
@@ -111,8 +112,7 @@
         "5aed1210-1d01-4f29-ae31-b3154f06b795",
         "c8658382-dfc1-4190-be1d-350add76c327",
         "dff312f8-c9ab-436a-ab22-22f7419bfd81",
-        "8ad6c397-932a-47c9-acf9-9844a66a12ed",
-        "219eac85-338e-4f5b-bc88-6773460b101b"
+        "8ad6c397-932a-47c9-acf9-9844a66a12ed"
       ],
       "settings": {
         "enable_filtering": true,
