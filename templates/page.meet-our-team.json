@@ -113,7 +113,6 @@
     },
     "1663853860bf5b5299": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "166385386025c3ae54-0": {
           "type": "video",
@@ -150,7 +149,7 @@
         "166385386025c3ae54-2"
       ],
       "settings": {
-        "heading": "Multimedia collage",
+        "heading": "",
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
