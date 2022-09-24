@@ -146,6 +146,42 @@
         "link_text": "Verder lezen"
       }
     },
+    "16630580388c9240d9": {
+      "type": "image-with-text-new",
+      "blocks": {
+        "1663058038dcfac408-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hippo & friends kalender 2023"
+          }
+        },
+        "1663058038dcfac408-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>De opbrengst van de verkoop van deze kalender gaat volledig naar wetenschappelijk onderzoek, preventie en genezing van type 1 diabetes.<\/strong><\/p><p>Deze bewustwordingskalender van Hippo & Friendsmoet type 1 diabetes meer naambekendheid geven en tonen dat dit geen kinderen zijn die teveel gesnoept hebben of met overgewicht kampen! Type 1 diabetes overvalt je gewoon!<\/p>"
+          }
+        },
+        "1663058038dcfac408-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "STEUN JIJ MEE?",
+            "button_link": "shopify:\/\/products\/hippo-friends-kalender-2023",
+            "button-color": "yellow"
+          }
+        }
+      },
+      "block_order": [
+        "1663058038dcfac408-0",
+        "1663058038dcfac408-1",
+        "1663058038dcfac408-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_82.png",
+        "img_preference": "image second",
+        "text_over_img": "",
+        "padd-top": false
+      }
+    },
     "1631611375b605aa08": {
       "type": "our-values",
       "blocks": {
@@ -181,42 +217,6 @@
       ],
       "settings": {
         "our_value_heading": "ONZE WAARDEN"
-      }
-    },
-    "16630580388c9240d9": {
-      "type": "image-with-text-new",
-      "blocks": {
-        "1663058038dcfac408-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Hippo & friends kalender 2023"
-          }
-        },
-        "1663058038dcfac408-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>De opbrengst van de verkoop van deze kalender gaat volledig naar wetenschappelijk onderzoek, preventie en genezing van type 1 diabetes.<\/strong><\/p><p>Deze bewustwordingskalender van Hippo & Friendsmoet type 1 diabetes meer naambekendheid geven en tonen dat dit geen kinderen zijn die teveel gesnoept hebben of met overgewicht kampen! Type 1 diabetes overvalt je gewoon!<\/p>"
-          }
-        },
-        "1663058038dcfac408-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "STEUN JIJ MEE?",
-            "button_link": "shopify:\/\/products\/hippo-friends-kalender-2023",
-            "button-color": "yellow"
-          }
-        }
-      },
-      "block_order": [
-        "1663058038dcfac408-0",
-        "1663058038dcfac408-1",
-        "1663058038dcfac408-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_82.png",
-        "img_preference": "image second",
-        "text_over_img": "",
-        "padd-top": false
       }
     },
     "1631768996518add79": {
@@ -429,8 +429,8 @@
     "16617589698cf14c5a",
     "1631695632e79ff00a",
     "1631620069de812214",
-    "1631611375b605aa08",
     "16630580388c9240d9",
+    "1631611375b605aa08",
     "1631768996518add79",
     "image_with_text_2",
     "16317046102c025894",
