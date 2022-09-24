@@ -96,6 +96,7 @@
     },
     "166030072332985a69": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "166030072346e74b08-0": {
           "type": "video",
@@ -132,7 +133,7 @@
         "166030072346e74b08-2"
       ],
       "settings": {
-        "heading": "",
+        "heading": "Multimedia collage",
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
@@ -161,6 +162,12 @@
         "more_options_text": "",
         "hover_text": "KOPEN",
         "marg_top": "medium"
+      }
+    },
+    "16617589698cf14c5a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }<\/style>\n<div class=\"container\">\n<div class='embed-container'><iframe src='https:\/\/www.youtube.com\/embed\/_2_EXGnpWEs' frameborder='0' allowfullscreen><\/iframe><\/div>"
       }
     },
     "1631620069de812214": {
@@ -465,6 +472,7 @@
     "image_with_text",
     "166030072332985a69",
     "1631695632e79ff00a",
+    "16617589698cf14c5a",
     "1631620069de812214",
     "1631611375b605aa08",
     "16630580388c9240d9",
