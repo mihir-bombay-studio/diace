@@ -122,12 +122,23 @@
             "hero_text_link": "shopify:\/\/pages\/familiedag-2022",
             "hero_other_img_text": "beleef"
           }
+        },
+        "e43646d0-6070-4fc0-8588-c07d7334a62a": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-10-02T164154.719.png",
+            "heading": "Videoshoot augustus 2022",
+            "Subtext": "Videoparty!",
+            "hero_text_link": "shopify:\/\/pages\/video-shoot-augustus-2022",
+            "hero_other_img_text": "beleef"
+          }
         }
       },
       "block_order": [
         "e3b3cd29-06dc-4766-9b12-956c459ebe2c",
         "37f2ef88-052e-44fb-9dd2-3f0c45fb520e",
-        "5e2bae56-f124-47ea-9cbe-accd108a8a51"
+        "5e2bae56-f124-47ea-9cbe-accd108a8a51",
+        "e43646d0-6070-4fc0-8588-c07d7334a62a"
       ],
       "settings": {
       }
