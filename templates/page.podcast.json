@@ -43,6 +43,49 @@
         "padd-top": false
       }
     },
+    "1664711090d51666ed": {
+      "type": "collage",
+      "blocks": {
+        "166471108989bb6ad2-0": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video for customers using screen readers",
+            "image_padding": false
+          }
+        },
+        "166471108989bb6ad2-1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "secondary_background": false,
+            "second_image": false,
+            "image_padding": false
+          }
+        },
+        "166471108989bb6ad2-2": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "166471108989bb6ad2-0",
+        "166471108989bb6ad2-1",
+        "166471108989bb6ad2-2"
+      ],
+      "settings": {
+        "heading": "Onze eerste aflevering 'over diabetes gesproken', hierin interviewt Stef Nick en Stefanie over Diacé, deze geweldige podcast en hun verhaal! Beluister hier.",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
     "16647101785b494018": {
       "type": "custom-liquid",
       "settings": {
@@ -53,6 +96,7 @@
   "order": [
     "main",
     "1664710141aa74ffd9",
+    "1664711090d51666ed",
     "16647101785b494018"
   ]
 }
