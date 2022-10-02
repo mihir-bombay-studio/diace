@@ -89,7 +89,7 @@
     "16647101785b494018": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<iframe style=\"border-radius:12px\" src=\"https:\/\/open.spotify.com\/embed\/show\/76phnHr3apm0EYZsW60qZ8?utm_source=generator\" width=\"50%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"><\/iframe>"
+        "custom_liquid": "<iframe style=\"border-radius:12px\" src=\"https:\/\/open.spotify.com\/embed\/show\/76phnHr3apm0EYZsW60qZ8?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"><\/iframe>"
       }
     }
   },
