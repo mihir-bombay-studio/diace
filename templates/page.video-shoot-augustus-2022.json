@@ -85,6 +85,7 @@
     },
     "165936456613346f0e": {
       "type": "image-with-text-new",
+      "disabled": true,
       "blocks": {
         "1659364566d9106c75-0": {
           "type": "heading",
@@ -119,6 +120,12 @@
         "text_over_img": "GEANNULEERD",
         "padd-top": false
       }
+    },
+    "1664721815c54c0c5d": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
     }
   },
   "order": [
@@ -127,6 +134,7 @@
     "1650459486b45955e4",
     "16504595071a4e4c0a",
     "165936454867479506",
-    "165936456613346f0e"
+    "165936456613346f0e",
+    "1664721815c54c0c5d"
   ]
 }
