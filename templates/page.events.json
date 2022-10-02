@@ -93,6 +93,16 @@
     "1654790098963ec839": {
       "type": "artboard",
       "blocks": {
+        "e3b3cd29-06dc-4766-9b12-956c459ebe2c": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-10-02T162850.704.png",
+            "heading": "Koop- en kijkdagen 2022 - 2023",
+            "Subtext": "Kom jij ook?",
+            "hero_text_link": "shopify:\/\/pages\/koopdagen",
+            "hero_other_img_text": "koopdagen"
+          }
+        },
         "37f2ef88-052e-44fb-9dd2-3f0c45fb520e": {
           "type": "artboard",
           "settings": {
@@ -106,28 +116,18 @@
         "5e2bae56-f124-47ea-9cbe-accd108a8a51": {
           "type": "artboard",
           "settings": {
-            "artphoto": "shopify:\/\/shop_images\/Diace_familiedag_Jaime_Korbee_01.jpg",
+            "artphoto": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-10-02T163550.746.png",
             "heading": "Familiedag 2022",
             "Subtext": "Geniet mee van onze 1ste editie!",
             "hero_text_link": "shopify:\/\/pages\/familiedag-2022",
             "hero_other_img_text": "beleef"
           }
-        },
-        "e3b3cd29-06dc-4766-9b12-956c459ebe2c": {
-          "type": "artboard",
-          "settings": {
-            "artphoto": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-10-02T162850.704.png",
-            "heading": "Koop- en kijkdagen 2022 - 2023",
-            "Subtext": "Kom jij ook?",
-            "hero_text_link": "shopify:\/\/pages\/koopdagen",
-            "hero_other_img_text": "koopdagen"
-          }
         }
       },
       "block_order": [
+        "e3b3cd29-06dc-4766-9b12-956c459ebe2c",
         "37f2ef88-052e-44fb-9dd2-3f0c45fb520e",
-        "5e2bae56-f124-47ea-9cbe-accd108a8a51",
-        "e3b3cd29-06dc-4766-9b12-956c459ebe2c"
+        "5e2bae56-f124-47ea-9cbe-accd108a8a51"
       ],
       "settings": {
       }
