@@ -58,70 +58,36 @@
           "settings": {
             "text": "<p>Nick en Stefanie bespreken in elke aflevering een nieuw diabetesonderwerp. Van advies tot dad-jokes, deze podcast combineert expertise met puur entertainment. Verwacht geen saaie medische uitleg maar een leerzame, menselijke en knotsgekke internet diabetes show.<\/p><p>Beluister hieronder de nieuwste aflevering van onze podcast.<\/p><p><\/p><p><\/p><p><\/p>"
           }
-        },
-        "166471014127d0a4d8-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button-color": "grey"
-          }
         }
       },
       "block_order": [
         "166471014127d0a4d8-0",
-        "166471014127d0a4d8-1",
-        "166471014127d0a4d8-2"
+        "166471014127d0a4d8-1"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-09-15_at_13.51.29.jpg",
         "img_preference": "image second",
         "text_over_img": "",
-        "padd-top": false
+        "padd-top": true
       }
     },
-    "1664711090d51666ed": {
-      "type": "collage",
+    "1664711330d2655b3e": {
+      "type": "rich-text",
       "blocks": {
-        "166471108989bb6ad2-0": {
-          "type": "video",
-          "disabled": true,
+        "166471133048ecf723-0": {
+          "type": "heading",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video for customers using screen readers",
-            "image_padding": false
-          }
-        },
-        "166471108989bb6ad2-1": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "",
-            "secondary_background": false,
-            "second_image": false,
-            "image_padding": false
-          }
-        },
-        "166471108989bb6ad2-2": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
+            "heading": "Onze eerste aflevering 'over diabetes gesproken', hierin interviewt Stef Nick en Stefanie over Diacé, deze geweldige podcast en hun verhaal! Beluister hier.",
+            "heading_size": "small"
           }
         }
       },
       "block_order": [
-        "166471108989bb6ad2-0",
-        "166471108989bb6ad2-1",
-        "166471108989bb6ad2-2"
+        "166471133048ecf723-0"
       ],
       "settings": {
-        "heading": "Onze eerste aflevering 'over diabetes gesproken', hierin interviewt Stef Nick en Stefanie over Diacé, deze geweldige podcast en hun verhaal! Beluister hier.",
-        "desktop_layout": "left",
-        "mobile_layout": "collage"
+        "color_scheme": "background-2",
+        "full_width": true
       }
     },
     "16647101785b494018": {
@@ -135,7 +101,7 @@
     "166471129100b0600f",
     "main",
     "1664710141aa74ffd9",
-    "1664711090d51666ed",
+    "1664711330d2655b3e",
     "16647101785b494018"
   ]
 }
