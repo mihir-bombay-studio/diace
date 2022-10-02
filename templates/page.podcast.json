@@ -12,13 +12,13 @@
         "166471014127d0a4d8-0": {
           "type": "heading",
           "settings": {
-            "heading": "Podcast: over diabetes gesproken"
+            "heading": "Podcast: over diabetes gesproken 🎙💛"
           }
         },
         "166471014127d0a4d8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Nick en Stefanie bespreken in elke aflevering een nieuw diabetesonderwerp. Van advies tot dad-jokes, deze podcast combineert expertise met puur entertainment. Verwacht geen saaie medische uitleg maar een leerzame, menselijke en knotsgekke internet diabetes show.<\/p><p>Beluister hieronder de nieuwste aflevering van onze podcast.<\/p><p><\/p><p><\/p><p><\/p>"
+            "text": "<p>Nick en Stefanie bespreken in elke aflevering een nieuw diabetesonderwerp. Van advies tot dad-jokes, deze podcast combineert expertise met puur entertainment. Verwacht geen saaie medische uitleg maar een leerzame, menselijke en knotsgekke internet diabetes show.<\/p><p>Beluister hieronder de nieuwste aflevering van onze podcast. 🎧<\/p><p><\/p><p><\/p><p><\/p>"
           }
         }
       },
@@ -57,12 +57,19 @@
         "color_scheme": "background-1",
         "full_width": true
       }
+    },
+    "16647115711195012c": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
     }
   },
   "order": [
     "main",
     "1664710141aa74ffd9",
     "16647101785b494018",
-    "1664711330d2655b3e"
+    "1664711330d2655b3e",
+    "16647115711195012c"
   ]
 }
