@@ -60,6 +60,7 @@
     },
     "16647115711195012c": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": ""
       }
