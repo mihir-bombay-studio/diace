@@ -84,7 +84,46 @@
     "5cf12785-f57a-4c81-b2dd-5832ee908159": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }<\/style>\n<div class=\"container\">\n<div class='embed-container'><iframe src='https:\/\/www.youtube.com\/embed\/eF8Ucsj0T0k' frameborder='0'"
+        "custom_liquid": ""
+      }
+    },
+    "4dcf0896-abe0-4c78-af94-cc2d11b7da1d": {
+      "type": "image-with-text-new",
+      "disabled": true,
+      "blocks": {
+        "template--15700308820143__4dcf0896-abe0-4c78-af94-cc2d11b7da1d-166496422822fb5119-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "template--15700308820143__4dcf0896-abe0-4c78-af94-cc2d11b7da1d-166496422822fb5119-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "template--15700308820143__4dcf0896-abe0-4c78-af94-cc2d11b7da1d-166496422822fb5119-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button-color": "grey"
+          }
+        }
+      },
+      "block_order": [
+        "template--15700308820143__4dcf0896-abe0-4c78-af94-cc2d11b7da1d-166496422822fb5119-0",
+        "template--15700308820143__4dcf0896-abe0-4c78-af94-cc2d11b7da1d-166496422822fb5119-1",
+        "template--15700308820143__4dcf0896-abe0-4c78-af94-cc2d11b7da1d-166496422822fb5119-2"
+      ],
+      "settings": {
+        "img_preference": "image second",
+        "text_over_img": "",
+        "padd-top": false
       }
     }
   },
@@ -92,6 +131,7 @@
     "main",
     "16578813784dcb7e72",
     "1657880670f44c1863",
-    "5cf12785-f57a-4c81-b2dd-5832ee908159"
+    "5cf12785-f57a-4c81-b2dd-5832ee908159",
+    "4dcf0896-abe0-4c78-af94-cc2d11b7da1d"
   ]
 }
