@@ -42,12 +42,19 @@
         "website_url": "shopify:\/\/pages\/familiedag",
         "share_mail": ""
       }
+    },
+    "9576c3ab-92ff-46a2-a78d-791ff14edd12": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
     }
   },
   "order": [
     "main",
     "1650459071b619d38d",
     "1650459486b45955e4",
-    "16504595071a4e4c0a"
+    "16504595071a4e4c0a",
+    "9576c3ab-92ff-46a2-a78d-791ff14edd12"
   ]
 }
