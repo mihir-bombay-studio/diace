@@ -34,12 +34,14 @@
         },
         "130f5c27-fb04-4faf-88fe-aa2fe08bc903": {
           "type": "type_filter",
+          "disabled": true,
           "settings": {
             "type": "Medtronic pomp"
           }
         },
         "b77ce676-6356-4da0-aeb2-e28f61842309": {
           "type": "type_filter",
+          "disabled": true,
           "settings": {
             "type": "Freestyle Libre reader"
           }
@@ -50,20 +52,27 @@
             "show_price_filter": true,
             "show_price_filter_heading": "PRIJS"
           }
+        },
+        "cbafc799-49d3-40cc-9168-fe634fa568dc": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Vrouwen"
+          }
         }
       },
       "block_order": [
         "b5898956-67a5-4f73-861e-bb8c77f2334f",
         "130f5c27-fb04-4faf-88fe-aa2fe08bc903",
         "b77ce676-6356-4da0-aeb2-e28f61842309",
-        "91f90e45-f325-4f26-8c43-7a7e05e94eba"
+        "91f90e45-f325-4f26-8c43-7a7e05e94eba",
+        "cbafc799-49d3-40cc-9168-fe634fa568dc"
       ],
       "settings": {
-        "enable_filtering": true,
-        "enable_sorting": true,
+        "enable_filtering": false,
+        "enable_sorting": false,
         "gender_show": false,
         "size_show": false,
-        "type_show": true,
+        "type_show": false,
         "brand_show": false,
         "gender_filter_title": "",
         "size_filter_title": "",
