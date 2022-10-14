@@ -58,6 +58,24 @@
           "settings": {
             "gender": "Vrouwen"
           }
+        },
+        "43828c0c-e8fd-4b92-9ed8-88800c45cee4": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Mannen"
+          }
+        },
+        "a5c3f540-ab86-4fd7-bf8f-9162f950c1a6": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Meisjes"
+          }
+        },
+        "d2f989a3-3e94-40b4-b5b6-4e348ae4d47d": {
+          "type": "gender_filter",
+          "settings": {
+            "gender": "Jongens"
+          }
         }
       },
       "block_order": [
@@ -65,7 +83,10 @@
         "130f5c27-fb04-4faf-88fe-aa2fe08bc903",
         "b77ce676-6356-4da0-aeb2-e28f61842309",
         "91f90e45-f325-4f26-8c43-7a7e05e94eba",
-        "cbafc799-49d3-40cc-9168-fe634fa568dc"
+        "cbafc799-49d3-40cc-9168-fe634fa568dc",
+        "43828c0c-e8fd-4b92-9ed8-88800c45cee4",
+        "a5c3f540-ab86-4fd7-bf8f-9162f950c1a6",
+        "d2f989a3-3e94-40b4-b5b6-4e348ae4d47d"
       ],
       "settings": {
         "enable_filtering": false,
