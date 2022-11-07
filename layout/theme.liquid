@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
+{% if content_for_header contains "eh-anti-theft-protection" %}{{ 'easy-hide-checkout.css' | asset_url | stylesheet_tag }}{% endif %}
+{% if content_for_header contains "eh-anti-theft-protection" %}{{ 'easy-hide.css' | asset_url | stylesheet_tag }}{% endif %}
 {% include 'hyperspeed-imports' %}
 
 	<!-- Added by AVADA SEO Suite -->
@@ -312,6 +314,7 @@
   <script defer src="//video-background.shopcircleapp.co/js/core/main.min.js?timestamp=1655300174&shop=diace-store.myshopify.com"></script>
 {{ '//cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/booster-page-speed-optimizer.js?23' | script_tag }}
   <script defer src="//video-background.shopcircleapp.co/js/core/main.min.js?timestamp=1660224342&shop=diace-store.myshopify.com"></script>
+{% if content_for_header contains "eh-anti-theft-protection" %}<div class="additional-checkout-buttons" style="display: none !important;">{{ content_for_additional_checkout_buttons }}</div>{% endif %}
 </body>
 </html>
 
