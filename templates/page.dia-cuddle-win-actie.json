@@ -18,7 +18,7 @@
         "template--15823428157615__5b961554-fc01-4d2d-a2e1-6a50214aec3a-167153952599f15df0-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Wat is beter dan een dia-cuddle? Een gratis dia-cuddle! Jazeker, deze maand kun je er echt één gratis krijgen. En weet je wat nog mooier is? Je doet automatisch mee. <\/p><p><\/p><p><strong>Wat valt er te winnen?<\/strong><\/p><p>Er valt één dia-cuddle te winnen. De winnaar van dit product kan zelf nog kiezen welke versie hij\/zij\/hen liever ontvangt. De keuzes zijn kind, tiener en volwassenen.<\/p><p><strong>Hoe kan je winnen?<\/strong><\/p><p>Doorheen heel januari steken wij een kaartje bij je bestelling. Eender welke bestelling, uit welk land dan ook, gaat dus gepaard met een kaart. Op deze kaart zal een unieke combinatie van nummers en symbolen staan. Er zal een loting georganiseerd worden om te bepalen welke combinatie de winnende is. <\/p><p><\/p>"
           }
         },
         "template--15823428157615__5b961554-fc01-4d2d-a2e1-6a50214aec3a-167153952599f15df0-2": {
@@ -49,22 +49,22 @@
         "template--15823428157615__89e65894-229d-488f-9c62-829a244e9698-167153957085f452de-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "title": "Er staat geen limiet op je aantal kaarten",
+            "text": "<p>Het kan dus zijn dat je meerdere kaarten hebt. Elke kaart die je ontvangt kan de winnende combinatie hebben. Het is dus aangeraden om ze allemaal bij te houden.<\/p>"
           }
         },
         "template--15823428157615__89e65894-229d-488f-9c62-829a244e9698-167153957085f452de-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "title": "Winnaar wordt gekozen door een loting",
+            "text": "<p>Deze zal live te volgen op ons YouTube kanaal en zal doorgaan op __\/__ om __ uur. Volg onze socials om up-to-date te zijn met deze loting. <\/p>"
           }
         },
         "template--15823428157615__89e65894-229d-488f-9c62-829a244e9698-167153957085f452de-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "title": "Eén week om je prijs te claimen",
+            "text": "<p>Je stuurt een mail naar info@diace.be met een foto van je ticket. Wij zullen dan bevestigen dat je hebt gewonnen en het product naar je opsturen. Als we na één week nog niks hebben gehoord wordt er een nieuwe loting georganiseerd.<\/p>"
           }
         }
       },
