@@ -93,6 +93,16 @@
     "1654790098963ec839": {
       "type": "artboard",
       "blocks": {
+        "2ccda5e8-ad04-45f1-878a-bf208763033f": {
+          "type": "artboard",
+          "settings": {
+            "artphoto": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_-_2022-08-01T165436.312.png",
+            "heading": "Familiedag 2023",
+            "Subtext": "Inschrijvingen binnenkort beschikbaar",
+            "hero_text_link": "shopify:\/\/pages\/familiedag",
+            "hero_other_img_text": "Kom jij ook?"
+          }
+        },
         "e3b3cd29-06dc-4766-9b12-956c459ebe2c": {
           "type": "artboard",
           "settings": {
@@ -135,6 +145,7 @@
         }
       },
       "block_order": [
+        "2ccda5e8-ad04-45f1-878a-bf208763033f",
         "e3b3cd29-06dc-4766-9b12-956c459ebe2c",
         "e43646d0-6070-4fc0-8588-c07d7334a62a",
         "37f2ef88-052e-44fb-9dd2-3f0c45fb520e",
