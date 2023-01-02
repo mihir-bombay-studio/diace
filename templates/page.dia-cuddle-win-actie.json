@@ -88,12 +88,51 @@
       "settings": {
         "custom_liquid": "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }<\/style>\n<div class=\"container\">\n<div class='embed-container'><iframe src='https:\/\/www.youtube.com\/embed\/DleQs3dwcg8' frameborder='0' allowfullscreen><\/iframe><\/div>"
       }
+    },
+    "23c0f452-6106-4913-af98-30da96e0eafb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15823428157615__23c0f452-6106-4913-af98-30da96e0eafb-16726643777bc2e3f9-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
+        "template--15823428157615__23c0f452-6106-4913-af98-30da96e0eafb-16726643777bc2e3f9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--15823428157615__23c0f452-6106-4913-af98-30da96e0eafb-16726643777bc2e3f9-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15823428157615__23c0f452-6106-4913-af98-30da96e0eafb-16726643777bc2e3f9-0",
+        "template--15823428157615__23c0f452-6106-4913-af98-30da96e0eafb-16726643777bc2e3f9-1",
+        "template--15823428157615__23c0f452-6106-4913-af98-30da96e0eafb-16726643777bc2e3f9-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
     }
   },
   "order": [
     "main",
     "5b961554-fc01-4d2d-a2e1-6a50214aec3a",
     "89e65894-229d-488f-9c62-829a244e9698",
-    "9576c3ab-92ff-46a2-a78d-791ff14edd12"
+    "9576c3ab-92ff-46a2-a78d-791ff14edd12",
+    "23c0f452-6106-4913-af98-30da96e0eafb"
   ]
 }
