@@ -242,6 +242,11 @@ $("body").on('click', '.AddToCart', function () {
   let variant_id = parseInt($(this).data('variant-id'));
   let variant_quantity = $(this).data('quantity') != "" ? $(this).data('quantity') : $(".product-qty .qty").data("qty");
   console.log(variant_id);
+    console.log('cart');
+    console.log(cart);
+    console.log(upsell);
+
+  
   let formData = {
     'items': [{
       'id': variant_id,
@@ -256,8 +261,6 @@ $("body").on('click', '.AddToCart', function () {
     data: formData,
   })
   .done(function (cart) {
-    console.log('cart');
-    console.log(cart);
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
     getCartDetails();
   })
