@@ -257,6 +257,7 @@ $("body").on('click', '.AddToCart', function () {
     data: formData,
   })
   .done(function (cart) {
+    var upsell = cart.items[0];
     variant_id == upsell.id ? $("#cart_container .upsell-container").fadeOut('slow') : null;
     getCartDetails();
   })
