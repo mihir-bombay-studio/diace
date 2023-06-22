@@ -1506,20 +1506,10 @@
     },
     "filters": {
       "availability": {
-        "label": "disponibilité",
         "value": {
           "in_stock": "En stock",
           "out_of_stock": "En rupture de stock"
         }
-      },
-      "vendor": {
-        "label": "Marque"
-      },
-      "price": {
-        "label": "Prix"
-      },
-      "product_type": {
-        "label": "Type de produit"
       }
     },
     "search": {
